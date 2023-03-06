@@ -91,6 +91,8 @@
 <img src="../resources/manual/importCityModels/plateauWindowImport.png" alt=""></li>
 <li>インポート先で<code>ローカル</code>または<code>サーバー</code>を選択します。</li>
 </ul>
+<div class="NOTE"><h5>Note</h5><p>今のところ、「サーバー」ではなく「ローカル」を推奨します。<br>すみませんが、現状ではサーバーで利用できるデータは少ないためです。<br>今後サーバー上にデータを整備していく予定です。</p>
+</div>
 <h4 id="ローカルからインポートする場合">ローカルからインポートする場合</h4>
 <ul>
 <li>導入したい都市データが自分のコンピュータにある場合はローカルを選択します。<br>3D都市モデルは <a href="https://www.geospatial.jp/ckan/dataset/plateau">G空間情報センターのPLATEAUポータルサイト</a> からダウンロードできます。<br>CityGML形式のものをダウンロードしてください。<ul>
@@ -190,8 +192,10 @@
 <div class="NOTE"><h5>Note</h5><p><strong>現実の景観と異なる地物について</strong><br>地物の種類で「土地利用」と「災害リスク」については、<br>情報の範囲を示す目印として白い板の3Dモデルが表示されます。<br>この白い板はリアルな景観のみを求める際には不要になるので、<br>土地利用と災害リスクに関するデータが不要な場合は<br>インポートしないか、インポート後オフにすることを推奨します。
 <img src="../resources/manual/importCityModels/fldAndLandUse.png" alt=""><br>上図は白い板として現れる災害リスク範囲の目印です。</p>
 </div>
+<div class="NOTE"><h5>Note</h5><p><strong>道路の高さについて</strong><br>LOD1 の道路は、PLATEAUの仕様上、高さのデータを含みません。<br>したがって、インポートするとすべて高さ 0 で表現されます。<br>LOD2 以上の道路は高さが反映されます。</p>
+</div>
 <h3 id="基準座標系からのオフセット値の設定">基準座標系からのオフセット値の設定</h3>
-<p>3Dモデルの原点をどこに置くかを指定します。<br>デフォルト値として、選択したGMLファイルの中心位置が自動入力されるので、<br>このままの値でインポート可能です。<br>3Dモデルの原点位置を調整したい場合のみ値を編集してください。
+<p>3Dモデルの原点をどこに置くかを指定します。<br>デフォルト値として、範囲選択画面で選択した範囲の中心が自動入力されるので、<br>このままの値でインポート可能です。<br>3Dモデルの原点位置を調整したい場合のみ値を編集してください。
 <img src="../resources/manual/importCityModels/referencePointConfig.png" alt=""><br><strong>値の意味:</strong><br>上のインポート設定で選択した「基準座標系」の原点から、<br>東西・南北・高さ方向にそれぞれ何メートルの地点を3Dモデルの原点とするかを表します。<br>基準座標系の原点は次の国土地理院のWebサイトで示されます:<br><a href="https://www.gsi.go.jp/sokuchikijun/jpc.html">国土地理院のサイト</a></p>
 <h3 id="インポートの実行">インポートの実行</h3>
 <ul>
@@ -216,7 +220,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Synesthesias/PLATEAU-SDK-for-Unity/blob/main/Documentation~/manual/ImportCityModels.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Project-PLATEAU/PLATEAU-SDK-for-Unity/blob/main/Documentation~/manual/ImportCityModels.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

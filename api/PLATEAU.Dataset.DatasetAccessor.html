@@ -165,9 +165,9 @@ C++の内部ではこれは基底クラスとなっており、継承により�
   <div class="markdown level1 summary"><p>ローカルの場合:
 存在するパッケージ種をフラグ形式で返します。</p>
 <p>サーバーの場合:
-<a class="xref" href="PLATEAU.Dataset.DatasetAccessor.html#PLATEAU_Dataset_DatasetAccessor_GetGmlFilesForPackage_PLATEAU_Dataset_PredefinedCityModelPackage_">GetGmlFilesForPackage(PredefinedCityModelPackage)</a> したことのある <see cref="!:Extent"></see> に関して、
+<see cref="!:GetGmlFilesForPackage"></see> したことのある <see cref="!:Extent"></see> に関して、
 存在するパッケージ種をフラグ形式で返します。
-<a class="xref" href="PLATEAU.Dataset.DatasetAccessor.html#PLATEAU_Dataset_DatasetAccessor_GetGmlFilesForPackage_PLATEAU_Dataset_PredefinedCityModelPackage_">GetGmlFilesForPackage(PredefinedCityModelPackage)</a> を実行した後でないと None が返ります。</p>
+<see cref="!:GetGmlFilesForPackage"></see> を実行した後でないと None が返ります。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -331,13 +331,13 @@ C++の内部ではこれは基底クラスとなっており、継承により�
   </table>
   
   
-  <a id="PLATEAU_Dataset_DatasetAccessor_GetGmlFiles_" data-uid="PLATEAU.Dataset.DatasetAccessor.GetGmlFiles*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetAccessor_GetGmlFiles" data-uid="PLATEAU.Dataset.DatasetAccessor.GetGmlFiles">GetGmlFiles()</h4>
+  <a id="PLATEAU_Dataset_DatasetAccessor_GetAllGmlFiles_" data-uid="PLATEAU.Dataset.DatasetAccessor.GetAllGmlFiles*"></a>
+  <h4 id="PLATEAU_Dataset_DatasetAccessor_GetAllGmlFiles" data-uid="PLATEAU.Dataset.DatasetAccessor.GetAllGmlFiles">GetAllGmlFiles()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NativeVectorGmlFile GetGmlFiles()</code></pre>
+    <pre><code class="lang-csharp hljs">public NativeVectorGmlFile GetAllGmlFiles()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -356,13 +356,15 @@ C++の内部ではこれは基底クラスとなっており、継承により�
   </table>
   
   
-  <a id="PLATEAU_Dataset_DatasetAccessor_GetGmlFilesForPackage_" data-uid="PLATEAU.Dataset.DatasetAccessor.GetGmlFilesForPackage*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetAccessor_GetGmlFilesForPackage_PLATEAU_Dataset_PredefinedCityModelPackage_" data-uid="PLATEAU.Dataset.DatasetAccessor.GetGmlFilesForPackage(PLATEAU.Dataset.PredefinedCityModelPackage)">GetGmlFilesForPackage(PredefinedCityModelPackage)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="PLATEAU_Dataset_DatasetAccessor_GetGmlFiles_" data-uid="PLATEAU.Dataset.DatasetAccessor.GetGmlFiles*"></a>
+  <h4 id="PLATEAU_Dataset_DatasetAccessor_GetGmlFiles_PLATEAU_Dataset_PredefinedCityModelPackage_" data-uid="PLATEAU.Dataset.DatasetAccessor.GetGmlFiles(PLATEAU.Dataset.PredefinedCityModelPackage)">GetGmlFiles(PredefinedCityModelPackage)</h4>
+  <div class="markdown level1 summary"><p>引数のパッケージに対応する <a class="xref" href="PLATEAU.Dataset.GmlFile.html">GmlFile</a> を取得して vector で返します。
+引数のパッケージは、複数のビットを立てることで複数指定可能です。 </p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NativeVectorGmlFile GetGmlFilesForPackage(PredefinedCityModelPackage package)</code></pre>
+    <pre><code class="lang-csharp hljs">public NativeVectorGmlFile GetGmlFiles(PredefinedCityModelPackage package)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

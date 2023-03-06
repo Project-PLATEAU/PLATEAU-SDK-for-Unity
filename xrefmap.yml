@@ -2830,12 +2830,25 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Dataset.DatasetAccessor.FilterByMeshCodes
   nameWithType: DatasetAccessor.FilterByMeshCodes
-- uid: PLATEAU.Dataset.DatasetAccessor.GetGmlFiles
-  name: GetGmlFiles()
-  href: api/PLATEAU.Dataset.DatasetAccessor.html#PLATEAU_Dataset_DatasetAccessor_GetGmlFiles
-  commentId: M:PLATEAU.Dataset.DatasetAccessor.GetGmlFiles
-  fullName: PLATEAU.Dataset.DatasetAccessor.GetGmlFiles()
-  nameWithType: DatasetAccessor.GetGmlFiles()
+- uid: PLATEAU.Dataset.DatasetAccessor.GetAllGmlFiles
+  name: GetAllGmlFiles()
+  href: api/PLATEAU.Dataset.DatasetAccessor.html#PLATEAU_Dataset_DatasetAccessor_GetAllGmlFiles
+  commentId: M:PLATEAU.Dataset.DatasetAccessor.GetAllGmlFiles
+  fullName: PLATEAU.Dataset.DatasetAccessor.GetAllGmlFiles()
+  nameWithType: DatasetAccessor.GetAllGmlFiles()
+- uid: PLATEAU.Dataset.DatasetAccessor.GetAllGmlFiles*
+  name: GetAllGmlFiles
+  href: api/PLATEAU.Dataset.DatasetAccessor.html#PLATEAU_Dataset_DatasetAccessor_GetAllGmlFiles_
+  commentId: Overload:PLATEAU.Dataset.DatasetAccessor.GetAllGmlFiles
+  isSpec: "True"
+  fullName: PLATEAU.Dataset.DatasetAccessor.GetAllGmlFiles
+  nameWithType: DatasetAccessor.GetAllGmlFiles
+- uid: PLATEAU.Dataset.DatasetAccessor.GetGmlFiles(PLATEAU.Dataset.PredefinedCityModelPackage)
+  name: GetGmlFiles(PredefinedCityModelPackage)
+  href: api/PLATEAU.Dataset.DatasetAccessor.html#PLATEAU_Dataset_DatasetAccessor_GetGmlFiles_PLATEAU_Dataset_PredefinedCityModelPackage_
+  commentId: M:PLATEAU.Dataset.DatasetAccessor.GetGmlFiles(PLATEAU.Dataset.PredefinedCityModelPackage)
+  fullName: PLATEAU.Dataset.DatasetAccessor.GetGmlFiles(PLATEAU.Dataset.PredefinedCityModelPackage)
+  nameWithType: DatasetAccessor.GetGmlFiles(PredefinedCityModelPackage)
 - uid: PLATEAU.Dataset.DatasetAccessor.GetGmlFiles*
   name: GetGmlFiles
   href: api/PLATEAU.Dataset.DatasetAccessor.html#PLATEAU_Dataset_DatasetAccessor_GetGmlFiles_
@@ -2843,19 +2856,6 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Dataset.DatasetAccessor.GetGmlFiles
   nameWithType: DatasetAccessor.GetGmlFiles
-- uid: PLATEAU.Dataset.DatasetAccessor.GetGmlFilesForPackage(PLATEAU.Dataset.PredefinedCityModelPackage)
-  name: GetGmlFilesForPackage(PredefinedCityModelPackage)
-  href: api/PLATEAU.Dataset.DatasetAccessor.html#PLATEAU_Dataset_DatasetAccessor_GetGmlFilesForPackage_PLATEAU_Dataset_PredefinedCityModelPackage_
-  commentId: M:PLATEAU.Dataset.DatasetAccessor.GetGmlFilesForPackage(PLATEAU.Dataset.PredefinedCityModelPackage)
-  fullName: PLATEAU.Dataset.DatasetAccessor.GetGmlFilesForPackage(PLATEAU.Dataset.PredefinedCityModelPackage)
-  nameWithType: DatasetAccessor.GetGmlFilesForPackage(PredefinedCityModelPackage)
-- uid: PLATEAU.Dataset.DatasetAccessor.GetGmlFilesForPackage*
-  name: GetGmlFilesForPackage
-  href: api/PLATEAU.Dataset.DatasetAccessor.html#PLATEAU_Dataset_DatasetAccessor_GetGmlFilesForPackage_
-  commentId: Overload:PLATEAU.Dataset.DatasetAccessor.GetGmlFilesForPackage
-  isSpec: "True"
-  fullName: PLATEAU.Dataset.DatasetAccessor.GetGmlFilesForPackage
-  nameWithType: DatasetAccessor.GetGmlFilesForPackage
 - uid: PLATEAU.Dataset.DatasetAccessor.MeshCodes
   name: MeshCodes
   href: api/PLATEAU.Dataset.DatasetAccessor.html#PLATEAU_Dataset_DatasetAccessor_MeshCodes
@@ -6428,19 +6428,6 @@ references:
   commentId: T:PLATEAU.Util.PathUtil
   fullName: PLATEAU.Util.PathUtil
   nameWithType: PathUtil
-- uid: PLATEAU.Util.PathUtil.AssetsPathToFullPath(System.String)
-  name: AssetsPathToFullPath(String)
-  href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_AssetsPathToFullPath_System_String_
-  commentId: M:PLATEAU.Util.PathUtil.AssetsPathToFullPath(System.String)
-  fullName: PLATEAU.Util.PathUtil.AssetsPathToFullPath(System.String)
-  nameWithType: PathUtil.AssetsPathToFullPath(String)
-- uid: PLATEAU.Util.PathUtil.AssetsPathToFullPath*
-  name: AssetsPathToFullPath
-  href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_AssetsPathToFullPath_
-  commentId: Overload:PLATEAU.Util.PathUtil.AssetsPathToFullPath
-  isSpec: "True"
-  fullName: PLATEAU.Util.PathUtil.AssetsPathToFullPath
-  nameWithType: PathUtil.AssetsPathToFullPath
 - uid: PLATEAU.Util.PathUtil.FullPathToAssetsPath(System.String)
   name: FullPathToAssetsPath(String)
   href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_FullPathToAssetsPath_System_String_
@@ -6454,35 +6441,6 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Util.PathUtil.FullPathToAssetsPath
   nameWithType: PathUtil.FullPathToAssetsPath
-- uid: PLATEAU.Util.PathUtil.GetRelativePath(System.String,System.String)
-  name: GetRelativePath(String, String)
-  href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_GetRelativePath_System_String_System_String_
-  commentId: M:PLATEAU.Util.PathUtil.GetRelativePath(System.String,System.String)
-  fullName: PLATEAU.Util.PathUtil.GetRelativePath(System.String, System.String)
-  nameWithType: PathUtil.GetRelativePath(String, String)
-- uid: PLATEAU.Util.PathUtil.GetRelativePath*
-  name: GetRelativePath
-  href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_GetRelativePath_
-  commentId: Overload:PLATEAU.Util.PathUtil.GetRelativePath
-  isSpec: "True"
-  fullName: PLATEAU.Util.PathUtil.GetRelativePath
-  nameWithType: PathUtil.GetRelativePath
-- uid: PLATEAU.Util.PathUtil.IsStringArrContainsName(System.String,System.String[])
-  name: IsStringArrContainsName(String, String[])
-  href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_IsStringArrContainsName_System_String_System_String___
-  commentId: M:PLATEAU.Util.PathUtil.IsStringArrContainsName(System.String,System.String[])
-  name.vb: IsStringArrContainsName(String, String())
-  fullName: PLATEAU.Util.PathUtil.IsStringArrContainsName(System.String, System.String[])
-  fullName.vb: PLATEAU.Util.PathUtil.IsStringArrContainsName(System.String, System.String())
-  nameWithType: PathUtil.IsStringArrContainsName(String, String[])
-  nameWithType.vb: PathUtil.IsStringArrContainsName(String, String())
-- uid: PLATEAU.Util.PathUtil.IsStringArrContainsName*
-  name: IsStringArrContainsName
-  href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_IsStringArrContainsName_
-  commentId: Overload:PLATEAU.Util.PathUtil.IsStringArrContainsName
-  isSpec: "True"
-  fullName: PLATEAU.Util.PathUtil.IsStringArrContainsName
-  nameWithType: PathUtil.IsStringArrContainsName
 - uid: PLATEAU.Util.PathUtil.IsSubDirectory(System.String,System.String)
   name: IsSubDirectory(String, String)
   href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_IsSubDirectory_System_String_System_String_
@@ -6541,19 +6499,6 @@ references:
   commentId: F:PLATEAU.Util.PathUtil.PLATEAUSrcFetchDir
   fullName: PLATEAU.Util.PathUtil.PLATEAUSrcFetchDir
   nameWithType: PathUtil.PLATEAUSrcFetchDir
-- uid: PLATEAU.Util.PathUtil.RemoveExtension(System.String)
-  name: RemoveExtension(String)
-  href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_RemoveExtension_System_String_
-  commentId: M:PLATEAU.Util.PathUtil.RemoveExtension(System.String)
-  fullName: PLATEAU.Util.PathUtil.RemoveExtension(System.String)
-  nameWithType: PathUtil.RemoveExtension(String)
-- uid: PLATEAU.Util.PathUtil.RemoveExtension*
-  name: RemoveExtension
-  href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_RemoveExtension_
-  commentId: Overload:PLATEAU.Util.PathUtil.RemoveExtension
-  isSpec: "True"
-  fullName: PLATEAU.Util.PathUtil.RemoveExtension
-  nameWithType: PathUtil.RemoveExtension
 - uid: PLATEAU.Util.PathUtil.UdxFolderName
   name: UdxFolderName
   href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_UdxFolderName
