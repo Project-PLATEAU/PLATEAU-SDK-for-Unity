@@ -701,6 +701,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityGML.AttributeValue.AsAttrSet
   nameWithType: AttributeValue.AsAttrSet
+- uid: PLATEAU.CityGML.AttributeValue.AsBool
+  name: AsBool
+  href: api/PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsBool
+  commentId: P:PLATEAU.CityGML.AttributeValue.AsBool
+  fullName: PLATEAU.CityGML.AttributeValue.AsBool
+  nameWithType: AttributeValue.AsBool
+- uid: PLATEAU.CityGML.AttributeValue.AsBool*
+  name: AsBool
+  href: api/PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsBool_
+  commentId: Overload:PLATEAU.CityGML.AttributeValue.AsBool
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.AttributeValue.AsBool
+  nameWithType: AttributeValue.AsBool
 - uid: PLATEAU.CityGML.AttributeValue.AsDouble
   name: AsDouble
   href: api/PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsDouble
