@@ -3515,6 +3515,18 @@ references:
   commentId: T:PLATEAU.Dataset.PredefinedCityModelPackage
   fullName: PLATEAU.Dataset.PredefinedCityModelPackage
   nameWithType: PredefinedCityModelPackage
+- uid: PLATEAU.Dataset.PredefinedCityModelPackage.Area
+  name: Area
+  href: api/PLATEAU.Dataset.PredefinedCityModelPackage.html#PLATEAU_Dataset_PredefinedCityModelPackage_Area
+  commentId: F:PLATEAU.Dataset.PredefinedCityModelPackage.Area
+  fullName: PLATEAU.Dataset.PredefinedCityModelPackage.Area
+  nameWithType: PredefinedCityModelPackage.Area
+- uid: PLATEAU.Dataset.PredefinedCityModelPackage.Bridge
+  name: Bridge
+  href: api/PLATEAU.Dataset.PredefinedCityModelPackage.html#PLATEAU_Dataset_PredefinedCityModelPackage_Bridge
+  commentId: F:PLATEAU.Dataset.PredefinedCityModelPackage.Bridge
+  fullName: PLATEAU.Dataset.PredefinedCityModelPackage.Bridge
+  nameWithType: PredefinedCityModelPackage.Bridge
 - uid: PLATEAU.Dataset.PredefinedCityModelPackage.Building
   name: Building
   href: api/PLATEAU.Dataset.PredefinedCityModelPackage.html#PLATEAU_Dataset_PredefinedCityModelPackage_Building
@@ -3533,6 +3545,12 @@ references:
   commentId: F:PLATEAU.Dataset.PredefinedCityModelPackage.DisasterRisk
   fullName: PLATEAU.Dataset.PredefinedCityModelPackage.DisasterRisk
   nameWithType: PredefinedCityModelPackage.DisasterRisk
+- uid: PLATEAU.Dataset.PredefinedCityModelPackage.Generic
+  name: Generic
+  href: api/PLATEAU.Dataset.PredefinedCityModelPackage.html#PLATEAU_Dataset_PredefinedCityModelPackage_Generic
+  commentId: F:PLATEAU.Dataset.PredefinedCityModelPackage.Generic
+  fullName: PLATEAU.Dataset.PredefinedCityModelPackage.Generic
+  nameWithType: PredefinedCityModelPackage.Generic
 - uid: PLATEAU.Dataset.PredefinedCityModelPackage.LandUse
   name: LandUse
   href: api/PLATEAU.Dataset.PredefinedCityModelPackage.html#PLATEAU_Dataset_PredefinedCityModelPackage_LandUse
@@ -3545,6 +3563,18 @@ references:
   commentId: F:PLATEAU.Dataset.PredefinedCityModelPackage.None
   fullName: PLATEAU.Dataset.PredefinedCityModelPackage.None
   nameWithType: PredefinedCityModelPackage.None
+- uid: PLATEAU.Dataset.PredefinedCityModelPackage.OtherConstruction
+  name: OtherConstruction
+  href: api/PLATEAU.Dataset.PredefinedCityModelPackage.html#PLATEAU_Dataset_PredefinedCityModelPackage_OtherConstruction
+  commentId: F:PLATEAU.Dataset.PredefinedCityModelPackage.OtherConstruction
+  fullName: PLATEAU.Dataset.PredefinedCityModelPackage.OtherConstruction
+  nameWithType: PredefinedCityModelPackage.OtherConstruction
+- uid: PLATEAU.Dataset.PredefinedCityModelPackage.Railway
+  name: Railway
+  href: api/PLATEAU.Dataset.PredefinedCityModelPackage.html#PLATEAU_Dataset_PredefinedCityModelPackage_Railway
+  commentId: F:PLATEAU.Dataset.PredefinedCityModelPackage.Railway
+  fullName: PLATEAU.Dataset.PredefinedCityModelPackage.Railway
+  nameWithType: PredefinedCityModelPackage.Railway
 - uid: PLATEAU.Dataset.PredefinedCityModelPackage.Relief
   name: Relief
   href: api/PLATEAU.Dataset.PredefinedCityModelPackage.html#PLATEAU_Dataset_PredefinedCityModelPackage_Relief
@@ -3557,6 +3587,36 @@ references:
   commentId: F:PLATEAU.Dataset.PredefinedCityModelPackage.Road
   fullName: PLATEAU.Dataset.PredefinedCityModelPackage.Road
   nameWithType: PredefinedCityModelPackage.Road
+- uid: PLATEAU.Dataset.PredefinedCityModelPackage.Square
+  name: Square
+  href: api/PLATEAU.Dataset.PredefinedCityModelPackage.html#PLATEAU_Dataset_PredefinedCityModelPackage_Square
+  commentId: F:PLATEAU.Dataset.PredefinedCityModelPackage.Square
+  fullName: PLATEAU.Dataset.PredefinedCityModelPackage.Square
+  nameWithType: PredefinedCityModelPackage.Square
+- uid: PLATEAU.Dataset.PredefinedCityModelPackage.Track
+  name: Track
+  href: api/PLATEAU.Dataset.PredefinedCityModelPackage.html#PLATEAU_Dataset_PredefinedCityModelPackage_Track
+  commentId: F:PLATEAU.Dataset.PredefinedCityModelPackage.Track
+  fullName: PLATEAU.Dataset.PredefinedCityModelPackage.Track
+  nameWithType: PredefinedCityModelPackage.Track
+- uid: PLATEAU.Dataset.PredefinedCityModelPackage.Tunnel
+  name: Tunnel
+  href: api/PLATEAU.Dataset.PredefinedCityModelPackage.html#PLATEAU_Dataset_PredefinedCityModelPackage_Tunnel
+  commentId: F:PLATEAU.Dataset.PredefinedCityModelPackage.Tunnel
+  fullName: PLATEAU.Dataset.PredefinedCityModelPackage.Tunnel
+  nameWithType: PredefinedCityModelPackage.Tunnel
+- uid: PLATEAU.Dataset.PredefinedCityModelPackage.UndergroundBuilding
+  name: UndergroundBuilding
+  href: api/PLATEAU.Dataset.PredefinedCityModelPackage.html#PLATEAU_Dataset_PredefinedCityModelPackage_UndergroundBuilding
+  commentId: F:PLATEAU.Dataset.PredefinedCityModelPackage.UndergroundBuilding
+  fullName: PLATEAU.Dataset.PredefinedCityModelPackage.UndergroundBuilding
+  nameWithType: PredefinedCityModelPackage.UndergroundBuilding
+- uid: PLATEAU.Dataset.PredefinedCityModelPackage.UndergroundFacility
+  name: UndergroundFacility
+  href: api/PLATEAU.Dataset.PredefinedCityModelPackage.html#PLATEAU_Dataset_PredefinedCityModelPackage_UndergroundFacility
+  commentId: F:PLATEAU.Dataset.PredefinedCityModelPackage.UndergroundFacility
+  fullName: PLATEAU.Dataset.PredefinedCityModelPackage.UndergroundFacility
+  nameWithType: PredefinedCityModelPackage.UndergroundFacility
 - uid: PLATEAU.Dataset.PredefinedCityModelPackage.Unknown
   name: Unknown
   href: api/PLATEAU.Dataset.PredefinedCityModelPackage.html#PLATEAU_Dataset_PredefinedCityModelPackage_Unknown
@@ -3575,12 +3635,37 @@ references:
   commentId: F:PLATEAU.Dataset.PredefinedCityModelPackage.Vegetation
   fullName: PLATEAU.Dataset.PredefinedCityModelPackage.Vegetation
   nameWithType: PredefinedCityModelPackage.Vegetation
+- uid: PLATEAU.Dataset.PredefinedCityModelPackage.WaterBody
+  name: WaterBody
+  href: api/PLATEAU.Dataset.PredefinedCityModelPackage.html#PLATEAU_Dataset_PredefinedCityModelPackage_WaterBody
+  commentId: F:PLATEAU.Dataset.PredefinedCityModelPackage.WaterBody
+  fullName: PLATEAU.Dataset.PredefinedCityModelPackage.WaterBody
+  nameWithType: PredefinedCityModelPackage.WaterBody
+- uid: PLATEAU.Dataset.PredefinedCityModelPackage.Waterway
+  name: Waterway
+  href: api/PLATEAU.Dataset.PredefinedCityModelPackage.html#PLATEAU_Dataset_PredefinedCityModelPackage_Waterway
+  commentId: F:PLATEAU.Dataset.PredefinedCityModelPackage.Waterway
+  fullName: PLATEAU.Dataset.PredefinedCityModelPackage.Waterway
+  nameWithType: PredefinedCityModelPackage.Waterway
 - uid: PLATEAU.Dataset.PredefinedCityModelPackageExtension
   name: PredefinedCityModelPackageExtension
   href: api/PLATEAU.Dataset.PredefinedCityModelPackageExtension.html
   commentId: T:PLATEAU.Dataset.PredefinedCityModelPackageExtension
   fullName: PLATEAU.Dataset.PredefinedCityModelPackageExtension
   nameWithType: PredefinedCityModelPackageExtension
+- uid: PLATEAU.Dataset.PredefinedCityModelPackageExtension.All
+  name: All()
+  href: api/PLATEAU.Dataset.PredefinedCityModelPackageExtension.html#PLATEAU_Dataset_PredefinedCityModelPackageExtension_All
+  commentId: M:PLATEAU.Dataset.PredefinedCityModelPackageExtension.All
+  fullName: PLATEAU.Dataset.PredefinedCityModelPackageExtension.All()
+  nameWithType: PredefinedCityModelPackageExtension.All()
+- uid: PLATEAU.Dataset.PredefinedCityModelPackageExtension.All*
+  name: All
+  href: api/PLATEAU.Dataset.PredefinedCityModelPackageExtension.html#PLATEAU_Dataset_PredefinedCityModelPackageExtension_All_
+  commentId: Overload:PLATEAU.Dataset.PredefinedCityModelPackageExtension.All
+  isSpec: "True"
+  fullName: PLATEAU.Dataset.PredefinedCityModelPackageExtension.All
+  nameWithType: PredefinedCityModelPackageExtension.All
 - uid: PLATEAU.Dataset.PredefinedCityModelPackageExtension.ToJapaneseName(PLATEAU.Dataset.PredefinedCityModelPackage)
   name: ToJapaneseName(PredefinedCityModelPackage)
   href: api/PLATEAU.Dataset.PredefinedCityModelPackageExtension.html#PLATEAU_Dataset_PredefinedCityModelPackageExtension_ToJapaneseName_PLATEAU_Dataset_PredefinedCityModelPackage_
