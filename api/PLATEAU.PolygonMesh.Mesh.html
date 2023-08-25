@@ -124,37 +124,33 @@ Unity や Unreal Engine でメッシュを生成するために必要な情報�
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class Mesh</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h3 id="properties">Properties
   </h3>
   
   
-  <a id="PLATEAU_PolygonMesh_Mesh__ctor_" data-uid="PLATEAU.PolygonMesh.Mesh.#ctor*"></a>
-  <h4 id="PLATEAU_PolygonMesh_Mesh__ctor_IntPtr_" data-uid="PLATEAU.PolygonMesh.Mesh.#ctor(IntPtr)">Mesh(IntPtr)</h4>
+  <a id="PLATEAU_PolygonMesh_Mesh_CityObjectList_" data-uid="PLATEAU.PolygonMesh.Mesh.CityObjectList*"></a>
+  <h4 id="PLATEAU_PolygonMesh_Mesh_CityObjectList" data-uid="PLATEAU.PolygonMesh.Mesh.CityObjectList">CityObjectList</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Mesh(IntPtr handle)</code></pre>
+    <pre><code class="lang-csharp hljs">public CityObjectList CityObjectList { get; }</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
-        <td><span class="parametername">handle</span></td>
+        <td><a class="xref" href="PLATEAU.PolygonMesh.CityObjectList.html">CityObjectList</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
-  </h3>
   
   
   <a id="PLATEAU_PolygonMesh_Mesh_Handle_" data-uid="PLATEAU.PolygonMesh.Mesh.Handle*"></a>
@@ -290,6 +286,63 @@ Unity や Unreal Engine でメッシュを生成するために必要な情報�
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">subMeshEndIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_PolygonMesh_Mesh_Create_" data-uid="PLATEAU.PolygonMesh.Mesh.Create*"></a>
+  <h4 id="PLATEAU_PolygonMesh_Mesh_Create_PlateauVector3d___System_UInt32___PlateauVector2f___PLATEAU_PolygonMesh_SubMesh___" data-uid="PLATEAU.PolygonMesh.Mesh.Create(PlateauVector3d[],System.UInt32[],PlateauVector2f[],PLATEAU.PolygonMesh.SubMesh[])">Create(PlateauVector3d[], UInt32[], PlateauVector2f[], SubMesh[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Mesh Create(PlateauVector3d[] vertices, uint[] indices, PlateauVector2f[] uv1, SubMesh[] subMeshes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span>[]</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a>[]</td>
+        <td><span class="parametername">indices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">PlateauVector2f</span>[]</td>
+        <td><span class="parametername">uv1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.PolygonMesh.SubMesh.html">SubMesh</a>[]</td>
+        <td><span class="parametername">subMeshes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.PolygonMesh.Mesh.html">Mesh</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -488,38 +541,13 @@ Unity や Unreal Engine でメッシュを生成するために必要な情報�
   </table>
   
   
-  <a id="PLATEAU_PolygonMesh_Mesh_GetUv2_" data-uid="PLATEAU.PolygonMesh.Mesh.GetUv2*"></a>
-  <h4 id="PLATEAU_PolygonMesh_Mesh_GetUv2" data-uid="PLATEAU.PolygonMesh.Mesh.GetUv2">GetUv2()</h4>
+  <a id="PLATEAU_PolygonMesh_Mesh_GetUv4_" data-uid="PLATEAU.PolygonMesh.Mesh.GetUv4*"></a>
+  <h4 id="PLATEAU_PolygonMesh_Mesh_GetUv4" data-uid="PLATEAU.PolygonMesh.Mesh.GetUv4">GetUv4()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PlateauVector2f[] GetUv2()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">PlateauVector2f</span>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_PolygonMesh_Mesh_GetUv3_" data-uid="PLATEAU.PolygonMesh.Mesh.GetUv3*"></a>
-  <h4 id="PLATEAU_PolygonMesh_Mesh_GetUv3" data-uid="PLATEAU.PolygonMesh.Mesh.GetUv3">GetUv3()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PlateauVector2f[] GetUv3()</code></pre>
+    <pre><code class="lang-csharp hljs">public PlateauVector2f[] GetUv4()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -611,63 +639,6 @@ Unity や Unreal Engine でメッシュを生成するために必要な情報�
       <tr>
         <td><a class="xref" href="PLATEAU.PolygonMesh.Mesh.html">Mesh</a></td>
         <td><span class="parametername">otherMesh</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">includeTexture</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_PolygonMesh_Mesh_MergeMeshInfo_" data-uid="PLATEAU.PolygonMesh.Mesh.MergeMeshInfo*"></a>
-  <h4 id="PLATEAU_PolygonMesh_Mesh_MergeMeshInfo_PlateauVector3d___System_UInt32___PlateauVector2f___PLATEAU_PolygonMesh_SubMesh___CoordinateSystem_CoordinateSystem_System_Boolean_" data-uid="PLATEAU.PolygonMesh.Mesh.MergeMeshInfo(PlateauVector3d[],System.UInt32[],PlateauVector2f[],PLATEAU.PolygonMesh.SubMesh[],CoordinateSystem,CoordinateSystem,System.Boolean)">MergeMeshInfo(PlateauVector3d[], UInt32[], PlateauVector2f[], SubMesh[], CoordinateSystem, CoordinateSystem, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void MergeMeshInfo(PlateauVector3d[] vertices, uint[] indices, PlateauVector2f[] uv1, SubMesh[] subMeshes, CoordinateSystem meshAxisConvertFrom, CoordinateSystem meshAxisConvertTo, bool includeTexture)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">PlateauVector3d</span>[]</td>
-        <td><span class="parametername">vertices</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a>[]</td>
-        <td><span class="parametername">indices</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">PlateauVector2f</span>[]</td>
-        <td><span class="parametername">uv1</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="PLATEAU.PolygonMesh.SubMesh.html">SubMesh</a>[]</td>
-        <td><span class="parametername">subMeshes</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">CoordinateSystem</span></td>
-        <td><span class="parametername">meshAxisConvertFrom</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">CoordinateSystem</span></td>
-        <td><span class="parametername">meshAxisConvertTo</span></td>
         <td></td>
       </tr>
       <tr>

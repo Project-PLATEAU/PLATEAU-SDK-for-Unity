@@ -113,6 +113,100 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public struct MeshExtractOptions</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="PLATEAU_PolygonMesh_MeshExtractOptions__ctor_" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.#ctor*"></a>
+  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions__ctor_PlateauVector3d_CoordinateSystem_PLATEAU_PolygonMesh_MeshGranularity_System_UInt32_System_UInt32_System_Boolean_System_Int32_System_Single_System_Int32_System_Boolean_System_Boolean_System_Boolean_System_UInt32_Extent_" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.#ctor(PlateauVector3d,CoordinateSystem,PLATEAU.PolygonMesh.MeshGranularity,System.UInt32,System.UInt32,System.Boolean,System.Int32,System.Single,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.UInt32,Extent)">MeshExtractOptions(PlateauVector3d, CoordinateSystem, MeshGranularity, UInt32, UInt32, Boolean, Int32, Single, Int32, Boolean, Boolean, Boolean, UInt32, Extent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshExtractOptions(PlateauVector3d referencePoint, CoordinateSystem meshAxes, MeshGranularity meshGranularity, uint minLOD, uint maxLOD, bool exportAppearance, int gridCountOfSide, float unitScale, int coordinateZoneID, bool excludeCityObjectOutsideExtent, bool excludePolygonsOutsideExtent, bool enableTexturePacking, uint texturePackingResolution, Extent extent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td><span class="parametername">referencePoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CoordinateSystem</span></td>
+        <td><span class="parametername">meshAxes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.PolygonMesh.MeshGranularity.html">MeshGranularity</a></td>
+        <td><span class="parametername">meshGranularity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">minLOD</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">maxLOD</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">exportAppearance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">gridCountOfSide</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">unitScale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">coordinateZoneID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">excludeCityObjectOutsideExtent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">excludePolygonsOutsideExtent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">enableTexturePacking</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">texturePackingResolution</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Extent</span></td>
+        <td><span class="parametername">extent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="fields">Fields
   </h3>
   
@@ -138,6 +232,31 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_EnableTexturePacking" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.EnableTexturePacking">EnableTexturePacking</h4>
+  <div class="markdown level1 summary"><p>テクスチャ結合（複数のテクスチャ画像を結合する機能）を有効にするかどうかを bool で指定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableTexturePacking</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -173,7 +292,7 @@
   </table>
   
   
-  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_ExcludeTrianglesOutsideExtent" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.ExcludeTrianglesOutsideExtent">ExcludeTrianglesOutsideExtent</h4>
+  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_ExcludePolygonsOutsideExtent" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.ExcludePolygonsOutsideExtent">ExcludePolygonsOutsideExtent</h4>
   <div class="markdown level1 summary"><p>範囲外の3Dモデルを出力から除外するための、2つの方法のうち1つを有効にするかどうかを bool で指定します。
 その方法とは、メッシュ操作によって、範囲外に存在するポリゴンを除外します。
 この方法であれば 10km×10km の地形など巨大なオブジェクトにも対応できます。</p>
@@ -181,7 +300,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool ExcludeTrianglesOutsideExtent</code></pre>
+    <pre><code class="lang-csharp hljs">public bool ExcludePolygonsOutsideExtent</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -250,56 +369,6 @@
   </table>
   
   
-  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_GridCountOfSide" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.GridCountOfSide">GridCountOfSide</h4>
-  <div class="markdown level1 summary"><p>メッシュ結合の粒度が「都市モデル単位」の時のみ有効で、この設定では都市を格子状のグリッドに分割するので、その1辺あたりの分割数(縦の数 = 横の数)です。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int GridCountOfSide</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_MaxLOD" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.MaxLOD">MaxLOD</h4>
-  <div class="markdown level1 summary"><p>出力するLODの範囲上限です。 </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public uint MaxLOD</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_MeshAxes" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.MeshAxes">MeshAxes</h4>
   <div class="markdown level1 summary"><p>座標軸の向きです。 </p>
 </div>
@@ -350,31 +419,6 @@
   </table>
   
   
-  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_MinLOD" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.MinLOD">MinLOD</h4>
-  <div class="markdown level1 summary"><p>出力するLODの範囲の下限です。 </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public uint MinLOD</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_ReferencePoint" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.ReferencePoint">ReferencePoint</h4>
   <div class="markdown level1 summary"><p>直交座標系における座標で、3Dモデルの原点をどこに設定するかです。 </p>
 </div>
@@ -400,15 +444,67 @@
   </table>
   
   
-  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_UnitScale" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.UnitScale">UnitScale</h4>
-  <div class="markdown level1 summary"><p>大きさ補正です。  </p>
+  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_TexturePackingResolution" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.TexturePackingResolution">TexturePackingResolution</h4>
+  <div class="markdown level1 summary"><p>テクスチャ結合時の結合先のテクスチャ画像の解像度（縦：texture_packing_resolution x 横:texture_packing_resolution） </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float UnitScale</code></pre>
+    <pre><code class="lang-csharp hljs">public uint TexturePackingResolution</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PLATEAU_PolygonMesh_MeshExtractOptions_GridCountOfSide_" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.GridCountOfSide*"></a>
+  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_GridCountOfSide" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.GridCountOfSide">GridCountOfSide</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GridCountOfSide { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_PolygonMesh_MeshExtractOptions_UnitScale_" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.UnitScale*"></a>
+  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_UnitScale" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.UnitScale">UnitScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float UnitScale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -427,41 +523,13 @@
   </h3>
   
   
-  <a id="PLATEAU_PolygonMesh_MeshExtractOptions_DefaultValue_" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.DefaultValue*"></a>
-  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_DefaultValue" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.DefaultValue">DefaultValue()</h4>
-  <div class="markdown level1 summary"><p>デフォルト値の設定を返します。 </p>
-</div>
+  <a id="PLATEAU_PolygonMesh_MeshExtractOptions_SetLODRange_" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.SetLODRange*"></a>
+  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_SetLODRange_System_UInt32_System_UInt32_" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.SetLODRange(System.UInt32,System.UInt32)">SetLODRange(UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static MeshExtractOptions DefaultValue()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PLATEAU.PolygonMesh.MeshExtractOptions.html">MeshExtractOptions</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_PolygonMesh_MeshExtractOptions_Validate_" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.Validate*"></a>
-  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_Validate_System_String__" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.Validate(System.String@)">Validate(out String)</h4>
-  <div class="markdown level1 summary"><p>設定の値が正常なら true, 異常な点があれば false を返します。
-<param name="failureMessage">異常な点があれば、それを説明する文字列が入ります。正常なら空文字列になります。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Validate(out string failureMessage)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetLODRange(uint minLODArg, uint maxLODArg)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -474,23 +542,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">failureMessage</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">minLODArg</span></td>
         <td></td>
       </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">maxLODArg</span></td>
         <td></td>
       </tr>
     </tbody>

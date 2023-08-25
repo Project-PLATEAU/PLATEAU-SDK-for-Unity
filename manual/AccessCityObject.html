@@ -79,9 +79,23 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="都市情報へのアクセス">都市情報へのアクセス</h1>
 
-<p>C# APIによって都市オブジェクトの情報を取得できます。<br>このページでその方法を説明します。</p>
-<h2 id="サンプル">サンプル</h2>
-<p>クリックした建物の情報を表示するサンプルを用意しています。<br>次の方法で確認できます。</p>
+<p>C# APIやPLATEAU SDKの機能によって都市オブジェクトの情報を取得できます。<br>このページでその方法を説明します。</p>
+<h2 id="属性情報を確認するplateau-sdkのエディタ機能">属性情報を確認する(PLATEAU SDKのエディタ機能)</h2>
+<p>PLATEAU SDKウィンドウの「属性情報」タブを開いた状態で地物をクリックすると、<br>その地物IDと属性情報が表示されます。
+<img src="../resources/manual/accessCityObject/ShowAttributeMode.png" alt=""></p>
+<ul>
+<li>シーンビュー上のピンク色の線は、選択中の主要地物の範囲を示します。</li>
+<li>シーンビュー上の緑色の線は、選択中の最小地物の範囲を示します。</li>
+<li>地物IDがシーンビュー中の文字で表示され、属性情報は属性情報ウィンドウのテキストボックスに表示されます。</li>
+</ul>
+<h3 id="主要地物と最小地物について">主要地物と最小地物について</h3>
+<ul>
+<li>例えば、建物を主要地物単位でインポートした場合は、1つのゲームオブジェクトおよび1つのメッシュで1つの建物を表します。<br>その1つのメッシュを分解すると、「壁」「屋根」などのパーツになります。<br>この場合、建物全体が主要地物であり、壁、屋根などのパーツが最小地物に該当します。<br>ここで建物をクリックして属性情報を表示すると、主要地物（建物全体、1つのメッシュ）としての属性情報と、最小地物（壁や屋根など、メッシュの一部分）としての属性情報が両方表示されます。</li>
+<li>建物を最小地物単位でインポートした場合、壁や屋根ごとにゲームオブジェクトおよびメッシュが分かれます。<br>この場合、最小地物ゲームオブジェクトの親ゲームオブジェクトから主要地物の情報を取得します。</li>
+<li>建物を地域単位でインポートした場合、複数の主要地物が結合されます。<br>この場合、メッシュの一部分として主要地物および最小地物の情報を取得できます。</li>
+</ul>
+<h2 id="属性情報を確認するランタイム">属性情報を確認する（ランタイム）</h2>
+<p>ランタイムで、クリックした建物の情報を表示するサンプルを用意しています。<br>次の方法で確認できます。</p>
 <ul>
 <li>下図のボタンをクリックして <code>Attributes Sample</code> をインポートします。
 <img src="../resources/manual/accessCityObject/importSample.png" alt=""><br>　　図は Package Manager の Import ボタンを押している様子です。</li>
@@ -90,30 +104,25 @@
 <li>クリックした建物の情報が画面に表示されます。<br><img src="../resources/manual/accessCityObject/attributeDisplay.png" alt=""></li>
 <li>ソースコード <code>ClickToShowAttributes.cs</code> の中に、この実装とコメントでの説明が記載されています。</li>
 </ul>
-<h2 id="都市モデルのロード">都市モデルのロード</h2>
-<p>都市に関するデータは、GMLファイルをパースすることで得られます。<br><code>PLATEAUCityGmlProxy.LoadAsync</code> によってGMLファイルがパースされ、<br>パース結果が <code>CityModel</code> 型で返ります。<br><code>CityModel</code> の中には <code>CityObject</code> が木構造で格納されています。<br>木構造をたどるか <code>CityModel.GetCityObjectById</code> メソッドによって <code>CityObject</code>を取得できます。<br>このメソッドに渡すべきIDは、インポート時にメッシュ結合単位を &quot;最小地物単位&quot; または &quot;主要地物単位&quot; にすることでゲームオブジェクト名に記載されます。<br><code>CityObject</code>の属性を取得することで地物（建物など）の情報を取得できます。</p>
+<h2 id="都市モデルの情報を表示">都市モデルの情報を表示</h2>
+<p>PlateauSDKでインポートした都市オブジェクトには属性等の情報が含まれています。<br>情報にアクセスするには、都市オブジェクトであるGameObjectにアタッチされた<code>PLATEAUCityObjectGroup</code>コンポーネントを使用します。<br><code>PLATEAUCityObjectGroup</code>コンポーネントには都市オブジェクトの持つ個別の情報がJson形式で表示されています。  </p>
+<p>  <img src="../resources/manual/accessCityObject/cityObjectGroup.png" alt=""></p>
+<p>このJsonの内容は、<code>PLATEAUCityObjectGroup.CityObjects</code>から利用可能なデータ<code>CityObjectList</code>として取得できます。<br><code>CityObjectList.rootCityObjects</code>リストには、<code>CityObject</code>が格納されています。これは地域単位でのインポートの場合は複数になり、そうでないときは1つになります。<br><code>CityObject</code>の属性を取得することで地物（建物など）の情報を取得できます。
+<code>CityObject.Children</code>には、都市オブジェクトの階層の子に当たる<code>CityObject</code>が格納されます。  </p>
 <h2 id="属性とは">属性とは</h2>
 <p>都市オブジェクトの情報は「属性」として取得できます。<br>属性は例えば  </p>
 <pre><code class="lang-text">(String) 大字・町コード =&gt; 42,
 (String) 防火及び準防火地域 =&gt; 準防火地域
-</code></pre><p>のように、キーと値のペアからなる辞書形式の情報です。<br>属性辞書は <code>CityObject.AttributesSet</code> メソッドで取得できます。<br><code>AttributesSet.ToString()</code> をコールすると、属性情報をすべて文字列にして返します。　　
-<code>AttributesSet.GetValueOrNull(&quot;key&quot;)</code> によってキーに対応する<code>AttributeValue</code> を取得できます。<br><code>AttributeValue</code> の具体的な値は文字列型として取得できるか、または<br>子の属性（属性は入れ子になることもあります）として取得できるかのいずれかです。<br>属性が入れ子になっている例は次のとおりです。</p>
+</code></pre><p>のように、キーと値のペアからなる辞書形式の情報です。<br>属性辞書<code>Attributes</code>は <code>CityObject.AttributesMap</code> メソッドで取得できます。<br><code>Attributes.DebugString()</code> をコールすると、属性情報をすべて文字列にして返します。　　
+<code>Attributes.TryGetValue(&quot;key&quot;, out value)</code> によってキーに対応する<code>Attributes.Value</code> を取得できます。<br><code>Attributes.Value</code> の具体的な値は文字列型として取得できるか、または<br>子の属性（属性は入れ子になることもあります）として取得できるかのいずれかです。<br>属性が入れ子になっている例は次のとおりです。</p>
 <pre><code class="lang-text"> (AttributeSet) 多摩水系多摩川、浅川、大栗川洪水浸水想定区域（想定最大規模） =&gt; 
     [ { (String) 浸水ランク =&gt; 2 }
     { (Measure) 浸水深 =&gt; 0.990 }
     { (Measure) 継続時間 =&gt; 0.68 }
     { (String) 規模 =&gt; L2 }  
 ]}
-</code></pre><p>上の例において、(括弧)内の文字は属性の型を示します。<br>属性値は次の型があります。:<br><code>AttributeSet, String, Double, Integer, Data, Uri, Measure</code><br>AttributeSet以外の型はすべて内部的には文字列型であり、<br><code>AttributeValue.AsString</code> で値を取得できます。<br>入れ子AttributeSetの値は <code>AsString</code> ではなく <code>AttributeValue.AsAttrSet</code>で取得できます。<br>属性値の型は <code>AttributeValue.Type</code> で取得でき、この値が <code>AttributeSet</code> である場合は　　
-<code>AttributeValue.AsAttrSet</code>で子の <code>AttributesMap</code> を取得できます。<br><code>AttributeValue.Type</code> がそれ以外 (String, Doubleなど) である場合は <code>AttributeValue.AsString</code> で文字列を取得できます。</p>
-<h3 id="シーンのヒエラルキー">シーンのヒエラルキー</h3>
-<p>PlateauデータをUnityにインポートすると、<br>サンプルシーンにあるとおり、次の階層構造でオブジェクトが配置されます。</p>
-<pre><code class="lang-text"> 都市モデルルート( PLATEAUInstancedCityObject がアタッチされます )
-   → 子 : GMLファイルに対応するゲームオブジェクト
-       → 子 : LODに対応するゲームオブジェクト
-           → 子 : CityObject に対応するゲームオブジェクト
-</code></pre><p><img src="../resources/manual/accessCityObject/hierarchy.png" alt=""></p>
-<p>ただし、インポート時のメッシュ粒度設定が <code>地域単位</code> だった場合、<br>メッシュは結合されて出力されるので CityObject とは対応しません。</p>
+</code></pre><p>上の例において、(括弧)内の文字は属性の型を示します。<br>属性値は次の型があります。:<br><code>AttributeSet, String, Double, Integer, Data, Uri, Measure</code><br>AttributeSet以外の型はすべて内部的には文字列型であり、<br><code>Attributes.Value.StringValue</code> で値を取得できます。<br>入れ子AttributeSetの値は <code>StringValue</code> ではなく <code>Attributes.Value.AttributesMapValue</code>で取得できます。<br>属性値の型は <code>Attributes.Value.Type</code> で取得でき、この値が <code>AttributeSet</code> である場合は　　
+<code>Attributes.Value.AttributesMapValue</code>で子の <code>Attributes</code> を取得できます。<br><code>Attributes.Value.Type</code> がそれ以外 (String, Doubleなど) である場合は <code>Attributes.Value.StringValue</code> で文字列を取得できます。</p>
 </article>
           </div>
           

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Struct CitygmlParserParams
+    <title>Struct CityObjectIndex
    | PLATEAU SDK for Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Struct CitygmlParserParams
+    <meta name="title" content="Struct CityObjectIndex
    | PLATEAU SDK for Unity ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,13 +78,12 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PLATEAU.CityGML.CitygmlParserParams">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.PolygonMesh.CityObjectIndex">
   
   
-  <h1 id="PLATEAU_CityGML_CitygmlParserParams" data-uid="PLATEAU.CityGML.CitygmlParserParams" class="text-break">Struct CitygmlParserParams
+  <h1 id="PLATEAU_PolygonMesh_CityObjectIndex" data-uid="PLATEAU.PolygonMesh.CityObjectIndex" class="text-break">Struct CityObjectIndex
   </h1>
-  <div class="markdown level0 summary"><p>GMLファイルのパース時の設定です。</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -107,23 +106,73 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityGML.html">PLATEAU.CityGML</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.PolygonMesh.html">PLATEAU.PolygonMesh</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="PLATEAU_CityGML_CitygmlParserParams_syntax">Syntax</h5>
+  <h5 id="PLATEAU_PolygonMesh_CityObjectIndex_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct CitygmlParserParams</code></pre>
+    <pre><code class="lang-csharp hljs">public struct CityObjectIndex</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h3 id="fields">Fields
   </h3>
   
   
-  <a id="PLATEAU_CityGML_CitygmlParserParams__ctor_" data-uid="PLATEAU.CityGML.CitygmlParserParams.#ctor*"></a>
-  <h4 id="PLATEAU_CityGML_CitygmlParserParams__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="PLATEAU.CityGML.CitygmlParserParams.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">CitygmlParserParams(Boolean, Boolean, Boolean, Boolean)</h4>
+  <h4 id="PLATEAU_PolygonMesh_CityObjectIndex_AtomicIndex" data-uid="PLATEAU.PolygonMesh.CityObjectIndex.AtomicIndex">AtomicIndex</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CitygmlParserParams(bool optimize, bool keepVertices, bool tessellate, bool ignoreGeometries)</code></pre>
+    <pre><code class="lang-csharp hljs">public int AtomicIndex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="PLATEAU_PolygonMesh_CityObjectIndex_PrimaryIndex" data-uid="PLATEAU.PolygonMesh.CityObjectIndex.PrimaryIndex">PrimaryIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PrimaryIndex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PLATEAU_PolygonMesh_CityObjectIndex_FromUV_" data-uid="PLATEAU.PolygonMesh.CityObjectIndex.FromUV*"></a>
+  <h4 id="PLATEAU_PolygonMesh_CityObjectIndex_FromUV_PlateauVector2f_" data-uid="PLATEAU.PolygonMesh.CityObjectIndex.FromUV(PlateauVector2f)">FromUV(PlateauVector2f)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CityObjectIndex FromUV(PlateauVector2f uv)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -136,40 +185,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">optimize</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">keepVertices</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">tessellate</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">ignoreGeometries</span></td>
+        <td><span class="xref">PlateauVector2f</span></td>
+        <td><span class="parametername">uv</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="PLATEAU_CityGML_CitygmlParserParams_IgnoreGeometries_" data-uid="PLATEAU.CityGML.CitygmlParserParams.IgnoreGeometries*"></a>
-  <h4 id="PLATEAU_CityGML_CitygmlParserParams_IgnoreGeometries" data-uid="PLATEAU.CityGML.CitygmlParserParams.IgnoreGeometries">IgnoreGeometries</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IgnoreGeometries { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -179,83 +201,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_CityGML_CitygmlParserParams_KeepVertices_" data-uid="PLATEAU.CityGML.CitygmlParserParams.KeepVertices*"></a>
-  <h4 id="PLATEAU_CityGML_CitygmlParserParams_KeepVertices" data-uid="PLATEAU.CityGML.CitygmlParserParams.KeepVertices">KeepVertices</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool KeepVertices { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_CityGML_CitygmlParserParams_Optimize_" data-uid="PLATEAU.CityGML.CitygmlParserParams.Optimize*"></a>
-  <h4 id="PLATEAU_CityGML_CitygmlParserParams_Optimize" data-uid="PLATEAU.CityGML.CitygmlParserParams.Optimize">Optimize</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Optimize { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_CityGML_CitygmlParserParams_Tesselate_" data-uid="PLATEAU.CityGML.CitygmlParserParams.Tesselate*"></a>
-  <h4 id="PLATEAU_CityGML_CitygmlParserParams_Tesselate" data-uid="PLATEAU.CityGML.CitygmlParserParams.Tesselate">Tesselate</h4>
-  <div class="markdown level1 summary"><p><see cref="!:Tessellate"></see> を false に設定すると、 <a class="xref" href="PLATEAU.CityGML.Polygon.html">Polygon</a> が頂点を保持する代わりに <a class="xref" href="PLATEAU.CityGML.LinearRing.html">LinearRing</a> を保持します。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Tesselate { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="PLATEAU.PolygonMesh.CityObjectIndex.html">CityObjectIndex</a></td>
         <td></td>
       </tr>
     </tbody>

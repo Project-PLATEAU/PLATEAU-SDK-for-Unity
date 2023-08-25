@@ -170,7 +170,7 @@ CityGMLにおける都市オブジェクトです。</p>
       <h4><a class="xref" href="PLATEAU.CityGML.Polygon.html">Polygon</a></h4>
       <section><p>建築物の形状におけるポリゴンです。
 Vertices , Indices を保持します。
-ただし、GMLファイルのパース時に <span class="xref">PLATEAU.CityGML.CitygmlParserParams.Tessellate</span> を false に設定した時に限り、
+ただし、GMLファイルのパース時に <see cref="!:CitygmlParserParams.Tessellate"></see> を false に設定した時に限り、
 Vertices, Indices の代わりに <a class="xref" href="PLATEAU.CityGML.Polygon.html#PLATEAU_CityGML_Polygon_ExteriorRing">ExteriorRing</a> , <a class="xref" href="PLATEAU.CityGML.Polygon.html#PLATEAU_CityGML_Polygon_InteriorRings">InteriorRings</a> を保持することがあります。
 Vertex と Ring を両方保持する場合もあれば、片方だけの場合もあります。
 <a class="xref" href="PLATEAU.CityGML.Polygon.html">Polygon</a> は <a class="xref" href="PLATEAU.CityGML.Geometry.html">Geometry</a> によって保持されます。</p>
@@ -199,7 +199,7 @@ Vertex と Ring を両方保持する場合もあれば、片方だけの場合�
   </h3>
       <h4><a class="xref" href="PLATEAU.CityGML.AttributeType.html">AttributeType</a></h4>
       <section><p>属性の値の想定形式です。
-形式が String, Double, Integer, Data, Uri, Measure である場合、内部的にはデータは string です。
+形式が String, Double, Integer, Date, Uri, Measure である場合、内部的にはデータは string です。
 AttributeSet である場合、内部的にはデータは <a class="xref" href="PLATEAU.CityGML.AttributesMap.html">AttributesMap</a> への参照です。</p>
 </section>
       <h4><a class="xref" href="PLATEAU.CityGML.CityObjectType.html">CityObjectType</a></h4>
