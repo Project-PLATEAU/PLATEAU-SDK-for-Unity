@@ -1651,6 +1651,123 @@ references:
   commentId: T:PLATEAU.CityGML.Material
   fullName: PLATEAU.CityGML.Material
   nameWithType: Material
+- uid: PLATEAU.CityGML.Material.AmbientIntensity
+  name: AmbientIntensity
+  href: api/PLATEAU.CityGML.Material.html#PLATEAU_CityGML_Material_AmbientIntensity
+  commentId: P:PLATEAU.CityGML.Material.AmbientIntensity
+  fullName: PLATEAU.CityGML.Material.AmbientIntensity
+  nameWithType: Material.AmbientIntensity
+- uid: PLATEAU.CityGML.Material.AmbientIntensity*
+  name: AmbientIntensity
+  href: api/PLATEAU.CityGML.Material.html#PLATEAU_CityGML_Material_AmbientIntensity_
+  commentId: Overload:PLATEAU.CityGML.Material.AmbientIntensity
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.Material.AmbientIntensity
+  nameWithType: Material.AmbientIntensity
+- uid: PLATEAU.CityGML.Material.Diffuse
+  name: Diffuse
+  href: api/PLATEAU.CityGML.Material.html#PLATEAU_CityGML_Material_Diffuse
+  commentId: P:PLATEAU.CityGML.Material.Diffuse
+  fullName: PLATEAU.CityGML.Material.Diffuse
+  nameWithType: Material.Diffuse
+- uid: PLATEAU.CityGML.Material.Diffuse*
+  name: Diffuse
+  href: api/PLATEAU.CityGML.Material.html#PLATEAU_CityGML_Material_Diffuse_
+  commentId: Overload:PLATEAU.CityGML.Material.Diffuse
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.Material.Diffuse
+  nameWithType: Material.Diffuse
+- uid: PLATEAU.CityGML.Material.Emissive
+  name: Emissive
+  href: api/PLATEAU.CityGML.Material.html#PLATEAU_CityGML_Material_Emissive
+  commentId: P:PLATEAU.CityGML.Material.Emissive
+  fullName: PLATEAU.CityGML.Material.Emissive
+  nameWithType: Material.Emissive
+- uid: PLATEAU.CityGML.Material.Emissive*
+  name: Emissive
+  href: api/PLATEAU.CityGML.Material.html#PLATEAU_CityGML_Material_Emissive_
+  commentId: Overload:PLATEAU.CityGML.Material.Emissive
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.Material.Emissive
+  nameWithType: Material.Emissive
+- uid: PLATEAU.CityGML.Material.Equals(PLATEAU.CityGML.Material)
+  name: Equals(Material)
+  href: api/PLATEAU.CityGML.Material.html#PLATEAU_CityGML_Material_Equals_PLATEAU_CityGML_Material_
+  commentId: M:PLATEAU.CityGML.Material.Equals(PLATEAU.CityGML.Material)
+  fullName: PLATEAU.CityGML.Material.Equals(PLATEAU.CityGML.Material)
+  nameWithType: Material.Equals(Material)
+- uid: PLATEAU.CityGML.Material.Equals*
+  name: Equals
+  href: api/PLATEAU.CityGML.Material.html#PLATEAU_CityGML_Material_Equals_
+  commentId: Overload:PLATEAU.CityGML.Material.Equals
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.Material.Equals
+  nameWithType: Material.Equals
+- uid: PLATEAU.CityGML.Material.GetHashCode
+  name: GetHashCode()
+  href: api/PLATEAU.CityGML.Material.html#PLATEAU_CityGML_Material_GetHashCode
+  commentId: M:PLATEAU.CityGML.Material.GetHashCode
+  fullName: PLATEAU.CityGML.Material.GetHashCode()
+  nameWithType: Material.GetHashCode()
+- uid: PLATEAU.CityGML.Material.GetHashCode*
+  name: GetHashCode
+  href: api/PLATEAU.CityGML.Material.html#PLATEAU_CityGML_Material_GetHashCode_
+  commentId: Overload:PLATEAU.CityGML.Material.GetHashCode
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.Material.GetHashCode
+  nameWithType: Material.GetHashCode
+- uid: PLATEAU.CityGML.Material.IsSmooth
+  name: IsSmooth
+  href: api/PLATEAU.CityGML.Material.html#PLATEAU_CityGML_Material_IsSmooth
+  commentId: P:PLATEAU.CityGML.Material.IsSmooth
+  fullName: PLATEAU.CityGML.Material.IsSmooth
+  nameWithType: Material.IsSmooth
+- uid: PLATEAU.CityGML.Material.IsSmooth*
+  name: IsSmooth
+  href: api/PLATEAU.CityGML.Material.html#PLATEAU_CityGML_Material_IsSmooth_
+  commentId: Overload:PLATEAU.CityGML.Material.IsSmooth
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.Material.IsSmooth
+  nameWithType: Material.IsSmooth
+- uid: PLATEAU.CityGML.Material.Shininess
+  name: Shininess
+  href: api/PLATEAU.CityGML.Material.html#PLATEAU_CityGML_Material_Shininess
+  commentId: P:PLATEAU.CityGML.Material.Shininess
+  fullName: PLATEAU.CityGML.Material.Shininess
+  nameWithType: Material.Shininess
+- uid: PLATEAU.CityGML.Material.Shininess*
+  name: Shininess
+  href: api/PLATEAU.CityGML.Material.html#PLATEAU_CityGML_Material_Shininess_
+  commentId: Overload:PLATEAU.CityGML.Material.Shininess
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.Material.Shininess
+  nameWithType: Material.Shininess
+- uid: PLATEAU.CityGML.Material.Specular
+  name: Specular
+  href: api/PLATEAU.CityGML.Material.html#PLATEAU_CityGML_Material_Specular
+  commentId: P:PLATEAU.CityGML.Material.Specular
+  fullName: PLATEAU.CityGML.Material.Specular
+  nameWithType: Material.Specular
+- uid: PLATEAU.CityGML.Material.Specular*
+  name: Specular
+  href: api/PLATEAU.CityGML.Material.html#PLATEAU_CityGML_Material_Specular_
+  commentId: Overload:PLATEAU.CityGML.Material.Specular
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.Material.Specular
+  nameWithType: Material.Specular
+- uid: PLATEAU.CityGML.Material.Transparency
+  name: Transparency
+  href: api/PLATEAU.CityGML.Material.html#PLATEAU_CityGML_Material_Transparency
+  commentId: P:PLATEAU.CityGML.Material.Transparency
+  fullName: PLATEAU.CityGML.Material.Transparency
+  nameWithType: Material.Transparency
+- uid: PLATEAU.CityGML.Material.Transparency*
+  name: Transparency
+  href: api/PLATEAU.CityGML.Material.html#PLATEAU_CityGML_Material_Transparency_
+  commentId: Overload:PLATEAU.CityGML.Material.Transparency
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.Material.Transparency
+  nameWithType: Material.Transparency
 - uid: PLATEAU.CityGML.MaterialTargetDefinition
   name: MaterialTargetDefinition
   href: api/PLATEAU.CityGML.MaterialTargetDefinition.html
@@ -6070,6 +6187,108 @@ references:
   commentId: F:PLATEAU.Native.PlateauVector3d.Z
   fullName: PLATEAU.Native.PlateauVector3d.Z
   nameWithType: PlateauVector3d.Z
+- uid: PLATEAU.Native.PlateauVector3f
+  name: PlateauVector3f
+  href: api/PLATEAU.Native.PlateauVector3f.html
+  commentId: T:PLATEAU.Native.PlateauVector3f
+  fullName: PLATEAU.Native.PlateauVector3f
+  nameWithType: PlateauVector3f
+- uid: PLATEAU.Native.PlateauVector3f.#ctor(System.Single,System.Single,System.Single)
+  name: PlateauVector3f(Single, Single, Single)
+  href: api/PLATEAU.Native.PlateauVector3f.html#PLATEAU_Native_PlateauVector3f__ctor_System_Single_System_Single_System_Single_
+  commentId: M:PLATEAU.Native.PlateauVector3f.#ctor(System.Single,System.Single,System.Single)
+  fullName: PLATEAU.Native.PlateauVector3f.PlateauVector3f(System.Single, System.Single, System.Single)
+  nameWithType: PlateauVector3f.PlateauVector3f(Single, Single, Single)
+- uid: PLATEAU.Native.PlateauVector3f.#ctor*
+  name: PlateauVector3f
+  href: api/PLATEAU.Native.PlateauVector3f.html#PLATEAU_Native_PlateauVector3f__ctor_
+  commentId: Overload:PLATEAU.Native.PlateauVector3f.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.Native.PlateauVector3f.PlateauVector3f
+  nameWithType: PlateauVector3f.PlateauVector3f
+- uid: PLATEAU.Native.PlateauVector3f.op_Addition(PLATEAU.Native.PlateauVector3f,PLATEAU.Native.PlateauVector3f)
+  name: Addition(PlateauVector3f, PlateauVector3f)
+  href: api/PLATEAU.Native.PlateauVector3f.html#PLATEAU_Native_PlateauVector3f_op_Addition_PLATEAU_Native_PlateauVector3f_PLATEAU_Native_PlateauVector3f_
+  commentId: M:PLATEAU.Native.PlateauVector3f.op_Addition(PLATEAU.Native.PlateauVector3f,PLATEAU.Native.PlateauVector3f)
+  fullName: PLATEAU.Native.PlateauVector3f.Addition(PLATEAU.Native.PlateauVector3f, PLATEAU.Native.PlateauVector3f)
+  nameWithType: PlateauVector3f.Addition(PlateauVector3f, PlateauVector3f)
+- uid: PLATEAU.Native.PlateauVector3f.op_Addition*
+  name: Addition
+  href: api/PLATEAU.Native.PlateauVector3f.html#PLATEAU_Native_PlateauVector3f_op_Addition_
+  commentId: Overload:PLATEAU.Native.PlateauVector3f.op_Addition
+  isSpec: "True"
+  fullName: PLATEAU.Native.PlateauVector3f.Addition
+  nameWithType: PlateauVector3f.Addition
+- uid: PLATEAU.Native.PlateauVector3f.op_Division(PLATEAU.Native.PlateauVector3f,System.Single)
+  name: Division(PlateauVector3f, Single)
+  href: api/PLATEAU.Native.PlateauVector3f.html#PLATEAU_Native_PlateauVector3f_op_Division_PLATEAU_Native_PlateauVector3f_System_Single_
+  commentId: M:PLATEAU.Native.PlateauVector3f.op_Division(PLATEAU.Native.PlateauVector3f,System.Single)
+  fullName: PLATEAU.Native.PlateauVector3f.Division(PLATEAU.Native.PlateauVector3f, System.Single)
+  nameWithType: PlateauVector3f.Division(PlateauVector3f, Single)
+- uid: PLATEAU.Native.PlateauVector3f.op_Division*
+  name: Division
+  href: api/PLATEAU.Native.PlateauVector3f.html#PLATEAU_Native_PlateauVector3f_op_Division_
+  commentId: Overload:PLATEAU.Native.PlateauVector3f.op_Division
+  isSpec: "True"
+  fullName: PLATEAU.Native.PlateauVector3f.Division
+  nameWithType: PlateauVector3f.Division
+- uid: PLATEAU.Native.PlateauVector3f.op_Multiply(PLATEAU.Native.PlateauVector3f,System.Single)
+  name: Multiply(PlateauVector3f, Single)
+  href: api/PLATEAU.Native.PlateauVector3f.html#PLATEAU_Native_PlateauVector3f_op_Multiply_PLATEAU_Native_PlateauVector3f_System_Single_
+  commentId: M:PLATEAU.Native.PlateauVector3f.op_Multiply(PLATEAU.Native.PlateauVector3f,System.Single)
+  fullName: PLATEAU.Native.PlateauVector3f.Multiply(PLATEAU.Native.PlateauVector3f, System.Single)
+  nameWithType: PlateauVector3f.Multiply(PlateauVector3f, Single)
+- uid: PLATEAU.Native.PlateauVector3f.op_Multiply*
+  name: Multiply
+  href: api/PLATEAU.Native.PlateauVector3f.html#PLATEAU_Native_PlateauVector3f_op_Multiply_
+  commentId: Overload:PLATEAU.Native.PlateauVector3f.op_Multiply
+  isSpec: "True"
+  fullName: PLATEAU.Native.PlateauVector3f.Multiply
+  nameWithType: PlateauVector3f.Multiply
+- uid: PLATEAU.Native.PlateauVector3f.op_Subtraction(PLATEAU.Native.PlateauVector3f,PLATEAU.Native.PlateauVector3f)
+  name: Subtraction(PlateauVector3f, PlateauVector3f)
+  href: api/PLATEAU.Native.PlateauVector3f.html#PLATEAU_Native_PlateauVector3f_op_Subtraction_PLATEAU_Native_PlateauVector3f_PLATEAU_Native_PlateauVector3f_
+  commentId: M:PLATEAU.Native.PlateauVector3f.op_Subtraction(PLATEAU.Native.PlateauVector3f,PLATEAU.Native.PlateauVector3f)
+  fullName: PLATEAU.Native.PlateauVector3f.Subtraction(PLATEAU.Native.PlateauVector3f, PLATEAU.Native.PlateauVector3f)
+  nameWithType: PlateauVector3f.Subtraction(PlateauVector3f, PlateauVector3f)
+- uid: PLATEAU.Native.PlateauVector3f.op_Subtraction*
+  name: Subtraction
+  href: api/PLATEAU.Native.PlateauVector3f.html#PLATEAU_Native_PlateauVector3f_op_Subtraction_
+  commentId: Overload:PLATEAU.Native.PlateauVector3f.op_Subtraction
+  isSpec: "True"
+  fullName: PLATEAU.Native.PlateauVector3f.Subtraction
+  nameWithType: PlateauVector3f.Subtraction
+- uid: PLATEAU.Native.PlateauVector3f.ToString
+  name: ToString()
+  href: api/PLATEAU.Native.PlateauVector3f.html#PLATEAU_Native_PlateauVector3f_ToString
+  commentId: M:PLATEAU.Native.PlateauVector3f.ToString
+  fullName: PLATEAU.Native.PlateauVector3f.ToString()
+  nameWithType: PlateauVector3f.ToString()
+- uid: PLATEAU.Native.PlateauVector3f.ToString*
+  name: ToString
+  href: api/PLATEAU.Native.PlateauVector3f.html#PLATEAU_Native_PlateauVector3f_ToString_
+  commentId: Overload:PLATEAU.Native.PlateauVector3f.ToString
+  isSpec: "True"
+  fullName: PLATEAU.Native.PlateauVector3f.ToString
+  nameWithType: PlateauVector3f.ToString
+- uid: PLATEAU.Native.PlateauVector3f.X
+  name: X
+  href: api/PLATEAU.Native.PlateauVector3f.html#PLATEAU_Native_PlateauVector3f_X
+  commentId: F:PLATEAU.Native.PlateauVector3f.X
+  fullName: PLATEAU.Native.PlateauVector3f.X
+  nameWithType: PlateauVector3f.X
+- uid: PLATEAU.Native.PlateauVector3f.Y
+  name: Y
+  href: api/PLATEAU.Native.PlateauVector3f.html#PLATEAU_Native_PlateauVector3f_Y
+  commentId: F:PLATEAU.Native.PlateauVector3f.Y
+  fullName: PLATEAU.Native.PlateauVector3f.Y
+  nameWithType: PlateauVector3f.Y
+- uid: PLATEAU.Native.PlateauVector3f.Z
+  name: Z
+  href: api/PLATEAU.Native.PlateauVector3f.html#PLATEAU_Native_PlateauVector3f_Z
+  commentId: F:PLATEAU.Native.PlateauVector3f.Z
+  fullName: PLATEAU.Native.PlateauVector3f.Z
+  nameWithType: PlateauVector3f.Z
 - uid: PLATEAU.Network
   name: PLATEAU.Network
   href: api/PLATEAU.Network.html
@@ -7062,6 +7281,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.PolygonMesh.SubMesh.Handle
   nameWithType: SubMesh.Handle
+- uid: PLATEAU.PolygonMesh.SubMesh.Material
+  name: Material
+  href: api/PLATEAU.PolygonMesh.SubMesh.html#PLATEAU_PolygonMesh_SubMesh_Material
+  commentId: P:PLATEAU.PolygonMesh.SubMesh.Material
+  fullName: PLATEAU.PolygonMesh.SubMesh.Material
+  nameWithType: SubMesh.Material
+- uid: PLATEAU.PolygonMesh.SubMesh.Material*
+  name: Material
+  href: api/PLATEAU.PolygonMesh.SubMesh.html#PLATEAU_PolygonMesh_SubMesh_Material_
+  commentId: Overload:PLATEAU.PolygonMesh.SubMesh.Material
+  isSpec: "True"
+  fullName: PLATEAU.PolygonMesh.SubMesh.Material
+  nameWithType: SubMesh.Material
 - uid: PLATEAU.PolygonMesh.SubMesh.StartIndex
   name: StartIndex
   href: api/PLATEAU.PolygonMesh.SubMesh.html#PLATEAU_PolygonMesh_SubMesh_StartIndex
@@ -7340,6 +7572,45 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Util.RenderUtil.DefaultMaterial
   nameWithType: RenderUtil.DefaultMaterial
+- uid: PLATEAU.Util.RenderUtil.GetPLATEAUX3DMaterialByCityGMLMaterial(PLATEAU.CityGML.Material)
+  name: GetPLATEAUX3DMaterialByCityGMLMaterial(Material)
+  href: api/PLATEAU.Util.RenderUtil.html#PLATEAU_Util_RenderUtil_GetPLATEAUX3DMaterialByCityGMLMaterial_PLATEAU_CityGML_Material_
+  commentId: M:PLATEAU.Util.RenderUtil.GetPLATEAUX3DMaterialByCityGMLMaterial(PLATEAU.CityGML.Material)
+  fullName: PLATEAU.Util.RenderUtil.GetPLATEAUX3DMaterialByCityGMLMaterial(PLATEAU.CityGML.Material)
+  nameWithType: RenderUtil.GetPLATEAUX3DMaterialByCityGMLMaterial(Material)
+- uid: PLATEAU.Util.RenderUtil.GetPLATEAUX3DMaterialByCityGMLMaterial*
+  name: GetPLATEAUX3DMaterialByCityGMLMaterial
+  href: api/PLATEAU.Util.RenderUtil.html#PLATEAU_Util_RenderUtil_GetPLATEAUX3DMaterialByCityGMLMaterial_
+  commentId: Overload:PLATEAU.Util.RenderUtil.GetPLATEAUX3DMaterialByCityGMLMaterial
+  isSpec: "True"
+  fullName: PLATEAU.Util.RenderUtil.GetPLATEAUX3DMaterialByCityGMLMaterial
+  nameWithType: RenderUtil.GetPLATEAUX3DMaterialByCityGMLMaterial
+- uid: PLATEAU.Util.RenderUtil.PLATEAUX3DMaterial
+  name: PLATEAUX3DMaterial
+  href: api/PLATEAU.Util.RenderUtil.html#PLATEAU_Util_RenderUtil_PLATEAUX3DMaterial
+  commentId: P:PLATEAU.Util.RenderUtil.PLATEAUX3DMaterial
+  fullName: PLATEAU.Util.RenderUtil.PLATEAUX3DMaterial
+  nameWithType: RenderUtil.PLATEAUX3DMaterial
+- uid: PLATEAU.Util.RenderUtil.PLATEAUX3DMaterial*
+  name: PLATEAUX3DMaterial
+  href: api/PLATEAU.Util.RenderUtil.html#PLATEAU_Util_RenderUtil_PLATEAUX3DMaterial_
+  commentId: Overload:PLATEAU.Util.RenderUtil.PLATEAUX3DMaterial
+  isSpec: "True"
+  fullName: PLATEAU.Util.RenderUtil.PLATEAUX3DMaterial
+  nameWithType: RenderUtil.PLATEAUX3DMaterial
+- uid: PLATEAU.Util.RenderUtil.PLATEAUX3DMaterial_Transparent
+  name: PLATEAUX3DMaterial_Transparent
+  href: api/PLATEAU.Util.RenderUtil.html#PLATEAU_Util_RenderUtil_PLATEAUX3DMaterial_Transparent
+  commentId: P:PLATEAU.Util.RenderUtil.PLATEAUX3DMaterial_Transparent
+  fullName: PLATEAU.Util.RenderUtil.PLATEAUX3DMaterial_Transparent
+  nameWithType: RenderUtil.PLATEAUX3DMaterial_Transparent
+- uid: PLATEAU.Util.RenderUtil.PLATEAUX3DMaterial_Transparent*
+  name: PLATEAUX3DMaterial_Transparent
+  href: api/PLATEAU.Util.RenderUtil.html#PLATEAU_Util_RenderUtil_PLATEAUX3DMaterial_Transparent_
+  commentId: Overload:PLATEAU.Util.RenderUtil.PLATEAUX3DMaterial_Transparent
+  isSpec: "True"
+  fullName: PLATEAU.Util.RenderUtil.PLATEAUX3DMaterial_Transparent
+  nameWithType: RenderUtil.PLATEAUX3DMaterial_Transparent
 - uid: PLATEAU.Util.StringBuilderWithIndent
   name: StringBuilderWithIndent
   href: api/PLATEAU.Util.StringBuilderWithIndent.html
