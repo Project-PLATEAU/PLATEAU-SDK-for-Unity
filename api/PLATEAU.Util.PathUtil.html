@@ -171,6 +171,36 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PLATEAU_Util_PathUtil_SdkBasePath_" data-uid="PLATEAU.Util.PathUtil.SdkBasePath*"></a>
+  <h4 id="PLATEAU_Util_PathUtil_SdkBasePath" data-uid="PLATEAU.Util.PathUtil.SdkBasePath">SdkBasePath</h4>
+  <div class="markdown level1 summary"><p>PLATEAU SDK のパスは、 GitHub からインポートした場合は Packages 以下になり、
+Unity Asset Store からインポートした場合は Assets 以下になります。
+SDKの基本パスを返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SdkBasePath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
@@ -364,6 +394,49 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_PathUtil_SdkPathToAssetPath_" data-uid="PLATEAU.Util.PathUtil.SdkPathToAssetPath*"></a>
+  <h4 id="PLATEAU_Util_PathUtil_SdkPathToAssetPath_System_String_" data-uid="PLATEAU.Util.PathUtil.SdkPathToAssetPath(System.String)">SdkPathToAssetPath(String)</h4>
+  <div class="markdown level1 summary"><p>SdkBasePath からの相対パスを受け取り、アセットパスに変換して返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SdkPathToAssetPath(string sdkPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sdkPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>

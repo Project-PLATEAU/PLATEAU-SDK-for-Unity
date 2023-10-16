@@ -87,12 +87,10 @@
 <h2 id="インポート手順">インポート手順</h2>
 <h3 id="インポート元の選択">インポート元の選択</h3>
 <ul>
-<li>Unityのメニューバーから <code>PLATEAU → PLATEAU SDK</code> を選択します。<br>表示されるウィンドウの上部に3つのタブ「インポート、モデル調整、エクスポート」があります。<br>このうちインポートを選択します。
+<li>Unityのメニューバーから <code>PLATEAU → PLATEAU SDK</code> を選択します。<br>表示されるウィンドウの上部に4つのタブ「インポート、モデル調整、エクスポート、属性情報」があります。<br>このうちインポートを選択します。
 <img src="../resources/manual/importCityModels/plateauWindowImport.png" alt=""></li>
 <li>インポート先で<code>ローカル</code>または<code>サーバー</code>を選択します。</li>
 </ul>
-<div class="NOTE"><h5>Note</h5><p>今のところ、「サーバー」ではなく「ローカル」を推奨します。<br>すみませんが、現状ではサーバーで利用できるデータは少ないためです。<br>2023年度中にSDK向けのサーバーデータの範囲を拡充予定です。</p>
-</div>
 <h4 id="ローカルからインポートする場合">ローカルからインポートする場合</h4>
 <ul>
 <li>導入したい都市データが自分のコンピュータにある場合はローカルを選択します。<br>3D都市モデルは <a href="https://www.geospatial.jp/ckan/dataset/plateau">G空間情報センターのPLATEAUポータルサイト</a> からダウンロードできます。<br>CityGML形式のものをダウンロードしてください。<ul>
@@ -125,13 +123,22 @@
 <li>範囲選択画面の操作方法：<ul>
 <li>マウスホイールを上下に回してズームアウト、ズームインします。</li>
 <li>マウスホイールを押し込んだままドラッグしてカメラ移動します。</li>
-<li>オレンジ色の球体をドラッグして範囲を選択します。</li>
+<li>範囲の選択方法については、画面右下に説明があるとおり、<ul>
+<li>クリックで選択/選択解除</li>
+<li>ドラッグで矩形での選択追加</li>
+<li>Shift+ドラッグで矩形での選択除外をします。</li>
+</ul>
+</li>
 <li>シーンビュー左上の<code>決定</code>ボタンを押して範囲を確定します。すると元のシーンに戻ります。</li>
 </ul>
 </li>
 <li>画面のみかた：<ul>
 <li>青色の線は利用可能な地域を示します。</li>
-<li>地域ごとに利用可能なGML種別と対応LODがアイコン形式で表示されます。</li>
+<li>地域ごとに利用可能なGML種別と対応LODがアイコン形式で表示されます。<ul>
+<li>対応LODは色で表現されます。画面左下の凡例の色と対応します。</li>
+</ul>
+</li>
+<li>アイコンが多すぎると感じる場合は、画面左下の凡例のチェックを切り替えることでアイコンの表示/非表示をLODごとに切り替えることができます。</li>
 <li>地図は国土地理院のサイトから自動でダウンロードされて表示されます。インターネットへの接続が必要です。</li>
 <li>区域に表示される番号は、後述の<code>indexmap.pdf</code> に記載の番号と同じです。</li>
 </ul>
@@ -153,23 +160,28 @@
 <li>チェックが付いている地物タイプのみインポートします。</li>
 </ul>
 </li>
-<li><code>Mesh Collider をセットする</code><ul>
-<li>チェックが付いている場合、各モデルに Mesh Collider が追加されます。</li>
-</ul>
-</li>
 <li><code>テクスチャを含める</code><ul>
 <li>テクスチャが存在する地物タイプで表示される設定項目です。<br>チェックが付いていて、かつテクスチャがある場合はそれを含めてインポートします。<br>都市データによってはテクスチャがない場合があり、<br>その場合はチェックを外した時と同様に真っ白な3Dモデルが出力されます。</li>
+</ul>
+</li>
+<li><code>テクスチャを結合する</code><ul>
+<li>テクスチャを含める場合、テクスチャを結合するかしないかを設定します。</li>
+<li>PLATEAUのデータはテクスチャの枚数が多い傾向にあり、結合しないと描画負荷が高くなる傾向にあります。<br>結合機能を有効にすると、複数のテクスチャを1枚の画像にまとめ、3DモデルのUVも合わせて調整されます。それによって描画負荷を改善できます。</li>
+</ul>
+</li>
+<li><code>テクスチャ解像度</code><ul>
+<li>テクスチャを結合する場合の、結合後のテクスチャの大きさを指定します。</li>
+</ul>
+</li>
+<li><code>Mesh Collider をセットする</code><ul>
+<li>チェックが付いている場合、各モデルに Mesh Colliderが追加されます。</li>
+<li>インポート後、クリックで属性情報を表示する機能を利用する場合、Mesh Colliderが必要です。</li>
 </ul>
 </li>
 <li><code>LOD描画設定</code><ul>
 <li>複数のLODを利用可能な地物タイプで表示される設定項目です。<br>バーの左端と右端をドラッグして、インポートするLODの範囲を指定できます。</li>
 </ul>
 </li>
-</ul>
-<div class="NOTE"><h5>Note</h5><p><strong>LODとは</strong><br>gmlファイルの中には、都市モデルの形状の細かさを指定したいという需要に対応するため、<br>複数の形状データが格納されている場合があります。<br>LOD0がもっとも大雑把な形状で、LOD1, LOD2 と数字が上がるほど細かい形状になります。<br>建築物の場合、LOD0 は平面、LOD1は平面に一定の高さを付けたもの、LOD2はより細かい形状です。  </p>
-<p>なお、ここでいう LOD とは PLATEAU の仕様上の LOD を指します。<br>Unity の機能としての LOD とは異なる概念です。</p>
-</div>
-<ul>
 <li><code>モデル結合</code><ul>
 <li><code>主要地物単位（建築物,道路等）</code><ul>
 <li>モデルのメッシュは建物ごとに結合されて出力されます。</li>
@@ -189,13 +201,73 @@
 </ul>
 </li>
 </ul>
+<div class="NOTE"><h5>Note</h5><p><strong>LODとは</strong><br>gmlファイルの中には、都市モデルの形状の細かさを指定したいという需要に対応するため、<br>複数の形状データが格納されている場合があります。<br>LOD0がもっとも大雑把な形状で、LOD1, LOD2 と数字が上がるほど細かい形状になります。<br>建築物の場合、LOD0 は平面、LOD1は平面に一定の高さを付けたもの、LOD2はより細かい形状です。</p>
+<p>なお、ここでいう LOD とは PLATEAU の仕様上の LOD を指します。<br>Unity の機能としての LOD とは異なる概念です。</p>
+</div>
+<ul>
+<li><code>属性情報を含める</code><ul>
+<li>有効化すると、地物の属性情報がシーン中にコンポーネントで保存されます。</li>
+<li>下図のように、PLATEAUCityObjectGroupコンポーネント内で属性情報が保持されます。
+<img src="../resources/manual/importCityModels/plateauCityObjectGroupComponent.png" alt=""></li>
+</ul>
+</li>
+<li><code>デフォルトマテリアル</code><ul>
+<li>PLATEAUの3Dモデルのうち、テクスチャやマテリアル指定がない箇所のマテリアルを指定します。</li>
+<li>デフォルトでは、地物タイプに応じたマテリアルが指定されています。</li>
+</ul>
+</li>
+</ul>
 <div class="NOTE"><h5>Note</h5><p><strong>地物の選択について</strong><br>地物の中にはインポートに時間がかかるものもあるのでご注意ください。<br>例えば 土地起伏 はデータの範囲が 10km × 10km と非常に広く、<br>データ容量が重く処理に時間がかかるのでご注意ください。</p>
 </div>
-<div class="NOTE"><h5>Note</h5><p><strong>現実の景観と異なる地物について</strong><br>地物の種類で「土地利用」と「災害リスク」については、<br>情報の範囲を示す目印として白い板の3Dモデルが表示されます。<br>この白い板はリアルな景観のみを求める際には不要になるので、<br>土地利用と災害リスクに関するデータが不要な場合は<br>インポートしないか、インポート後オフにすることを推奨します。
-<img src="../resources/manual/importCityModels/fldAndLandUse.png" alt=""><br>上図は白い板として現れる災害リスク範囲の目印です。</p>
+<div class="NOTE"><h5>Note</h5><p><strong>現実の景観と異なる地物について</strong><br>地物の種類で「土地利用」と「災害リスク」については、<br>情報の範囲を示す目印として板状の3Dモデルが表示されます。<br>土地利用と災害リスクに関するデータが不要な場合は<br>インポートしないか、インポート後オフにすることを推奨します。
+<img src="../resources/manual/importCityModels/fldAndLandUse.png" alt=""><br>上図で赤い格子模様になっている板は、災害リスク範囲の目印です。</p>
 </div>
 <div class="NOTE"><h5>Note</h5><p><strong>道路の高さについて</strong><br>LOD1 の道路は、PLATEAUの仕様上、高さのデータを含みません。<br>したがって、インポートするとすべて高さ 0 で表現されます。<br>LOD2 以上の道路は高さが反映されます。</p>
 </div>
+<h3 id="土地に衛星写真や地図を貼り付ける">土地に衛星写真や地図を貼り付ける</h3>
+<p>土地に衛星写真や地図を貼り付けることができます。</p>
+<p><img src="../resources/manual/importCityModels/landPhotoSample.png" alt=""></p>
+<h4 id="設定方法">設定方法</h4>
+<ul>
+<li>範囲選択画面で土地起伏の3Dモデルが存在する地域を選択すると、インポート設定に「土地起伏」が表示されます。
+<img src="../resources/manual/importCityModels/landConfig.png" alt=""></li>
+<li>土地起伏では、上述の地物別設定に加えて土地起伏専用の設定項目があります。</li>
+<li><code>航空写真または地図を貼り付け</code><ul>
+<li>チェックがONになっていると機能が有効化されます。</li>
+</ul>
+</li>
+<li><code>URL</code><ul>
+<li>航空写真または地図の画像をダウンロードするためのURLです。</li>
+<li>デフォルトでは地理院地図の航空写真のURLが入力されています。</li>
+<li>このURLを変更すれば、航空写真だけでなく、国土地理院が提供している多種多様な地図や写真を土地に貼り付けることができます。<br>利用できる地図については<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院のページ</a>を参照してください。<br>そのページに記載されているURLを貼り付けることで地図を利用できます。</li>
+<li>下図は地図を貼り付けた例です。
+<img src="../resources/manual/importCityModels/mapExample.png" alt=""></li>
+<li>下図は陰影起伏図を貼り付けた例です。
+<img src="../resources/manual/importCityModels/mapLatitudeExample.png" alt=""></li>
+<li>URLには文字列 <code>{z}, {x}, {y}</code>を含めるようにしてください。これは地図タイルのxyz座標に変換されます。<ul>
+<li>地図タイルのxyz座標については<a href="https://maps.gsi.go.jp/development/siyou.html">国土地理院のページ</a>を参照してください。 </li>
+<li>SDKの機能により、土地の座標をもとに文字列<code>{z}, {x}, {y}</code>を適切な数値に置き換えて画像をダウンロードします。  </li>
+</ul>
+</li>
+<li><code>ズームレベル</code><ul>
+<li>地図タイルのズームレベルです。<ul>
+<li>数値が大きいほど高精細な画像になります。</li>
+<li>数値が1つ下がると、画素数が4分の1になります。</li>
+<li>ズームレベルは、地図タイルxyz座標のzの値に相当します。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>利用可能なズームレベルの検索</code><ul>
+<li>ボタンを押すと、現在入力されているURLでどのズームレベルが利用可能なのかを検索します。</li>
+<li>検索が完了すると、ズームレベルの入力欄がドロップダウンに変化し、利用可能なズームレベルから選択できるようになります。
+<img src="../resources/manual/importCityModels/zoomLevelSelect.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>この機能でダウンロードされた地図タイルは、自動で1枚の画像に結合され、土地のUVとマテリアルが設定されてインポートされます。</p>
 <h3 id="基準座標系からのオフセット値の設定">基準座標系からのオフセット値の設定</h3>
 <p>3Dモデルの原点をどこに置くかを指定します。<br>デフォルト値として、範囲選択画面で選択した範囲の中心が自動入力されるので、<br>このままの値でインポート可能です。<br>3Dモデルの原点位置を調整したい場合のみ値を編集してください。
 <img src="../resources/manual/importCityModels/referencePointConfig.png" alt=""><br><strong>値の意味:</strong><br>上のインポート設定で選択した「基準座標系」の原点から、<br>東西・南北・高さ方向にそれぞれ何メートルの地点を3Dモデルの原点とするかを表します。<br>基準座標系の原点は次の国土地理院のWebサイトで示されます:<br><a href="https://www.gsi.go.jp/sokuchikijun/jpc.html">国土地理院のサイト</a></p>
@@ -218,8 +290,54 @@
 <div class="NOTE"><h5>Note</h5><p>  インポートされた都市モデルは、プレハブ化するとメッシュとテクスチャが missing になってしまいます。<br>  データはシーンに埋め込まれているためです。<br>  プレハブ化またはモデルとテクスチャを別ファイルに分けたい場合は、エクスポート機能を利用して別ファイルに書き出してください。</p>
 </div>
 <p>配置されたゲームオブジェクト階層のトップには、コンポーネント<code>PLATEAUInstancedCityModel</code> がアタッチされます。<br>このインスペクタから緯度、経度などの情報を確認できます。<br><img src="../resources/manual/importCityModels/InstancedCityModelInspector.png" alt=""></p>
+<h3 id="デフォルトマテリアルの見た目を変えたいとき">デフォルトマテリアルの見た目を変えたいとき</h3>
+<p>PLATEAU SDKでは地物タイプごとにデフォルトマテリアルが用意されています。<br>例えば、下図の建物には建築物のデフォルトマテリアルが適用されています。
+<img src="../resources/manual/importCityModels/defaultBuilding.png" alt="">
+このマテリアルは独自のPlateauTriplanarシェーダーを利用しているため、UVのない地物にもテクスチャを投影できます。<br>PLATEAUのモデルにはUVが<strong>ない</strong>場合があります。<br>そのため、ご自分で見た目をカスタマイズする場合でも、SDK付属のPlateauTriplanarシェーダー、またはそれと同様のTriplanar機能を有したシェーダーを利用することを推奨します。<br>以下に同シェーダーを使ったマテリアルの作成方法を説明します。  </p>
+<h4 id="sdk付属のシェーダーについて">SDK付属のシェーダーについて</h4>
+<p>PLATEAU SDKには以下の3つのシェーダーが付属しています。<br>どれもUVなしでテクスチャを投影できるのが特徴です。</p>
+<ul>
+<li><code>PlateauTriplanarShader(Opaque)</code><ul>
+<li>通常のTriplanarシェーダーです。</li>
+</ul>
+</li>
+<li><code>PlateauTriplanarShader(Transparent)</code><ul>
+<li>半透明なTriplanarシェーダーです。</li>
+</ul>
+</li>
+<li><code>PlateauTriplanarShader(DualTextures)</code><ul>
+<li>上下を向いた面と横を向いた面で異なる見た目を表現するTriplanarシェーダーです。</li>
+<li>利用例：建築物の上を向いた面をコンクリートの屋根に、側面を窓付きの壁にしたい場合などに利用できます。</li>
+</ul>
+</li>
+</ul>
+<p>このシェーダーを使ってマテリアルを作成する手順は次のとおりです：  </p>
+<ul>
+<li>新しいマテリアルを新規作成し、そのシェーダーを PlateauTriplanarShader/PlateauTriplanarShader(Opaque, Transparent, DualTexturesのいずれか)にします。</li>
+<li><p>マテリアルにテクスチャを割り当て、設定します。設定項目は次のとおりです：</p>
+<ul>
+<li><code>MainTexture</code> : メインのテクスチャです。</li>
+<li><code>NormalMap</code> : ノーマルマップです。</li>
+<li><code>NormalMapStrength</code> : ノーマルマップの強さです。</li>
+<li><code>Tiling</code> : テクスチャをタイリングさせる大きさです。</li>
+<li><code>Blend</code> : ポリゴンの向きに応じてテクスチャをブレンドさせる程度です。</li>
+<li><code>Metallic</code> : メタリック（金属感の強さ）です。</li>
+<li><code>MetallicTexture</code> : メタリックを表現するテクスチャです。</li>
+<li><code>Roughness</code> : ラフネス（ざらざら感の強さ）です。</li>
+<li><code>RoughnessTexture</code> : ラフネスを表現する強さです。</li>
+<li><code>AmbientOcclusion</code> : アンビエントオクルージョン(環境光の影響を受ける程度)です。</li>
+<li><code>AmbientOcclusionTex</code> : アンビエントオクルージョンを表現するテクスチャです。</li>
+<li><code>EmissionColor</code> : エミッション（発光）の色です。</li>
+<li><code>EmissionTexture</code> : エミッションを表現するテクスチャです。</li>
+<li><code>Opacity</code>(Transparentシェーダーのみ) : 不透明度です。</li>
+</ul>
+<p>DualTextureシェーダーでは、上記の設定値がそれぞれ<code>Top</code>と<code>Side</code>の2つに分かれます。Topは上下面、Sideは側面の見た目を設定します。</p>
+</li>
+<li><p>自作したマテリアルは、インポート後にドラッグ＆ドロップ等で適用できるほか、インポートの設定項目として「デフォルトマテリアル」に指定できます。</p>
+</li>
+</ul>
 <h3 id="エラーログの確認">エラーログの確認</h3>
-<p>インポートの結果、計算状況ウィンドウの内容がすべて「完了」となれば良いですが、<br>ロードできなかったgmlファイルに関しては「失敗」と表示されます。<br>そのような場合でも、一部のgmlファイルのロードが成功していれば、そのgmlに関しては正常にインポートされています。<br>失敗の場合は Unityのコンソールにエラーログが出力されます。</p>
+<p>インポートの結果、計算状況ウィンドウの内容がすべて「完了」となれば良いですが、<br>ロードできなかったgmlファイルに関しては「失敗」と表示されます。<br>そのような場合でも、他のgmlファイルのロードが成功していれば、そのgmlに関しては正常にインポートされています。<br>失敗の場合は Unityのコンソールにエラーログが出力されます。</p>
 </article>
           </div>
           

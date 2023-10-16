@@ -82,12 +82,12 @@
 <p>このページでは PLATEAU SDK for Unity のインストール方法を説明します。</p>
 <h2 id="対応unityバージョンのインストール">対応Unityバージョンのインストール</h2>
 <ul>
-<li>PLATEAU SDK for Unity は、Unityバージョン <code>2021.3</code> を想定しています。<br>そのバージョンがインストールされていない場合は、次の手順でインストールしてください。<ul>
+<li>PLATEAU SDK for Unity で想定するUnityバージョンが<a href="https://github.com/Project-PLATEAU/PLATEAU-SDK-for-Unity/releases">リリースページ</a>に記載されています。<br>そのバージョンがインストールされていない場合は、次の手順でインストールしてください。<ul>
 <li><a href="https://unity3d.com/jp/get-unity/download">Unity Hub をこちらからインストールします</a>。</li>
 <li>Unity Hub とは、Unityのお好きなバージョンをインストールして起動することのできるソフトウェアです。</li>
 <li>Unity Hubを起動し、左のサイドバーから<code>インストール</code> → 右上のボタンから<code>エディターをインストール</code> をクリックします。
 <img src="../resources/manual/installation/unityHub.png" alt=""></li>
-<li>Unity 2021.3 で始まるバージョンを選択し、<code>インストール</code>を押します。
+<li>SDK対応のUnityバージョンを選択し、<code>インストール</code>を押します。
 <img src="../resources/manual/installation/unityHubSelectVersion.png" alt=""></li>
 </ul>
 </li>
@@ -97,7 +97,7 @@
 <li>Unity Hub の左サイドバーの<code>プロジェクト</code> を押し、右上の<code>新しいプロジェクト</code>ボタンをクリックします。
 <img src="../resources/manual/installation/unityHubNewProjectVersion.png" alt=""></li>
 <li>新しいプロジェクトの設定画面で、次のように設定します。<ul>
-<li>画面上部の <code>エディターバージョン</code> を <code>2021.3</code> で始まる番号にします。</li>
+<li>画面上部の <code>エディターバージョン</code> を、<a href="https://github.com/Project-PLATEAU/PLATEAU-SDK-for-Unity/releases">リリースページ</a>に記載のバージョンにします。</li>
 <li>画面中部の<code>テンプレート</code> は <code>3D</code> を選択します。</li>
 <li>画面右下のプロジェクト名をお好みのものに設定します。</li>
 <li><code>プロジェクトを作成</code>ボタンを押します。
@@ -114,15 +114,22 @@
 <p>どちらか1つを行ってください。</p>
 <h3 id="tgzファイルから導入する方法">tgzファイルから導入する方法</h3>
 <ul>
-<li><a href="https://github.com/Project-PLATEAU/PLATEAU-SDK-for-Unity/releases">PLATEAU SDK for Unity のリリースページ</a> から tgzファイルをダウンロードします。</li>
+<li><a href="https://github.com/Project-PLATEAU/PLATEAU-SDK-for-Unity/releases">PLATEAU SDK for Unity のリリースページ</a> から tgzファイルをダウンロードします。<ul>
+<li>ファイルは解凍せず、そのまま利用します。</li>
+</ul>
+</li>
 <li>Unityのメニューバーから <code>Window</code> → <code>Package Manager</code> を選択します。</li>
 <li>Package Manager ウィンドウの左上の＋ボタンから <code>Add pacakge from tarball...</code> を選択します。
 <img src="../resources/manual/installation/addPackageFromTarball.png" alt=""></li>
 <li>ウィンドウのパッケージ一覧に <code>Plateau Unity SDK</code> が表示されたら完了です。
 <img src="../resources/manual/installation/packageInstalled.png" alt=""></li>
 </ul>
-<h3 id="gitのurl指定で導入する方法">gitのURL指定で導入する方法</h3>
+<h3 id="gitのurl指定で導入する方法">GitのURL指定で導入する方法</h3>
 <ul>
+<li>Gitを用いて導入するには、Git LFSがお使いのコンピュータにインストールされている必要があります。<ul>
+<li>Git LFSのインストール方法については<a href="https://docs.github.com/ja/repositories/working-with-files/managing-large-files/installing-git-large-file-storage">こちら</a>を参照してください。</li>
+</ul>
+</li>
 <li>導入したいバージョンを確認するため、 <a href="https://github.com/Project-PLATEAU/PLATEAU-SDK-for-Unity/releases">PLATEAU SDK for Unity のリリースページ</a> にアクセスします。</li>
 <li>リリースのリンクをクリックし、導入したいバージョンのタグ（画像の箇所）をメモします。
 <img src="../resources/manual/installation/releaseTag.png" alt=""></li>
@@ -138,6 +145,11 @@
 <li><code>Add</code> ボタンを押します。</li>
 <li>ウィンドウのパッケージ一覧に <code>Plateau Unity SDK</code> が表示されたら完了です。
 <img src="../resources/manual/installation/packageInstalled.png" alt=""></li>
+</ul>
+<h3 id="トラブルシューティング">トラブルシューティング</h3>
+<p>うまく導入できない場合、次のことをご確認ください。</p>
+<ul>
+<li>お使いのウイルス対策ソフトによっては、SDKに含まれるバイナリファイルが削除されることがあります。ウィルス対策ソフトによってSDKのファイルが削除されないよう設定をお願いします。</li>
 </ul>
 </article>
           </div>

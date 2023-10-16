@@ -2138,15 +2138,15 @@ references:
   commentId: T:PLATEAU.CityImport.AreaSelector.AreaSelectResult
   fullName: PLATEAU.CityImport.AreaSelector.AreaSelectResult
   nameWithType: AreaSelectResult
-- uid: PLATEAU.CityImport.AreaSelector.AreaSelectResult.#ctor(System.String[],Extent,PackageToLodDict)
-  name: AreaSelectResult(String[], Extent, PackageToLodDict)
-  href: api/PLATEAU.CityImport.AreaSelector.AreaSelectResult.html#PLATEAU_CityImport_AreaSelector_AreaSelectResult__ctor_System_String___Extent_PackageToLodDict_
-  commentId: M:PLATEAU.CityImport.AreaSelector.AreaSelectResult.#ctor(System.String[],Extent,PackageToLodDict)
-  name.vb: AreaSelectResult(String(), Extent, PackageToLodDict)
-  fullName: PLATEAU.CityImport.AreaSelector.AreaSelectResult.AreaSelectResult(System.String[], Extent, PackageToLodDict)
-  fullName.vb: PLATEAU.CityImport.AreaSelector.AreaSelectResult.AreaSelectResult(System.String(), Extent, PackageToLodDict)
-  nameWithType: AreaSelectResult.AreaSelectResult(String[], Extent, PackageToLodDict)
-  nameWithType.vb: AreaSelectResult.AreaSelectResult(String(), Extent, PackageToLodDict)
+- uid: PLATEAU.CityImport.AreaSelector.AreaSelectResult.#ctor(System.String[],PackageToLodDict)
+  name: AreaSelectResult(String[], PackageToLodDict)
+  href: api/PLATEAU.CityImport.AreaSelector.AreaSelectResult.html#PLATEAU_CityImport_AreaSelector_AreaSelectResult__ctor_System_String___PackageToLodDict_
+  commentId: M:PLATEAU.CityImport.AreaSelector.AreaSelectResult.#ctor(System.String[],PackageToLodDict)
+  name.vb: AreaSelectResult(String(), PackageToLodDict)
+  fullName: PLATEAU.CityImport.AreaSelector.AreaSelectResult.AreaSelectResult(System.String[], PackageToLodDict)
+  fullName.vb: PLATEAU.CityImport.AreaSelector.AreaSelectResult.AreaSelectResult(System.String(), PackageToLodDict)
+  nameWithType: AreaSelectResult.AreaSelectResult(String[], PackageToLodDict)
+  nameWithType.vb: AreaSelectResult.AreaSelectResult(String(), PackageToLodDict)
 - uid: PLATEAU.CityImport.AreaSelector.AreaSelectResult.#ctor*
   name: AreaSelectResult
   href: api/PLATEAU.CityImport.AreaSelector.AreaSelectResult.html#PLATEAU_CityImport_AreaSelector_AreaSelectResult__ctor_
@@ -2167,19 +2167,6 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityImport.AreaSelector.AreaSelectResult.AreaMeshCodes
   nameWithType: AreaSelectResult.AreaMeshCodes
-- uid: PLATEAU.CityImport.AreaSelector.AreaSelectResult.Extent
-  name: Extent
-  href: api/PLATEAU.CityImport.AreaSelector.AreaSelectResult.html#PLATEAU_CityImport_AreaSelector_AreaSelectResult_Extent
-  commentId: P:PLATEAU.CityImport.AreaSelector.AreaSelectResult.Extent
-  fullName: PLATEAU.CityImport.AreaSelector.AreaSelectResult.Extent
-  nameWithType: AreaSelectResult.Extent
-- uid: PLATEAU.CityImport.AreaSelector.AreaSelectResult.Extent*
-  name: Extent
-  href: api/PLATEAU.CityImport.AreaSelector.AreaSelectResult.html#PLATEAU_CityImport_AreaSelector_AreaSelectResult_Extent_
-  commentId: Overload:PLATEAU.CityImport.AreaSelector.AreaSelectResult.Extent
-  isSpec: "True"
-  fullName: PLATEAU.CityImport.AreaSelector.AreaSelectResult.Extent
-  nameWithType: AreaSelectResult.Extent
 - uid: PLATEAU.CityImport.AreaSelector.AreaSelectResult.PackageToLodDict
   name: PackageToLodDict
   href: api/PLATEAU.CityImport.AreaSelector.AreaSelectResult.html#PLATEAU_CityImport_AreaSelector_AreaSelectResult_PackageToLodDict
@@ -2234,6 +2221,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.DrawSceneGUI
   nameWithType: AreaLodController.DrawSceneGUI
+- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.SwitchLodIcon(System.Int32,System.Boolean)
+  name: SwitchLodIcon(Int32, Boolean)
+  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodController_SwitchLodIcon_System_Int32_System_Boolean_
+  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.SwitchLodIcon(System.Int32,System.Boolean)
+  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.SwitchLodIcon(System.Int32, System.Boolean)
+  nameWithType: AreaLodController.SwitchLodIcon(Int32, Boolean)
+- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.SwitchLodIcon*
+  name: SwitchLodIcon
+  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodController_SwitchLodIcon_
+  commentId: Overload:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.SwitchLodIcon
+  isSpec: "True"
+  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.SwitchLodIcon
+  nameWithType: AreaLodController.SwitchLodIcon
 - uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.Update(Extent)
   name: Update(Extent)
   href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodController_Update_Extent_
@@ -2298,12 +2298,31 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.AreaLodView
   nameWithType: AreaLodView.AreaLodView
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.DrawHandles(Camera)
-  name: DrawHandles(Camera)
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_DrawHandles_Camera_
-  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.DrawHandles(Camera)
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.DrawHandles(Camera)
-  nameWithType: AreaLodView.DrawHandles(Camera)
+- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.CalculateLodViewParam(Camera,ICollection{System.Int32})
+  name: CalculateLodViewParam(Camera, ICollection<Int32>)
+  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_CalculateLodViewParam_Camera_ICollection_System_Int32__
+  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.CalculateLodViewParam(Camera,ICollection{System.Int32})
+  name.vb: CalculateLodViewParam(Camera, ICollection(Of Int32))
+  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.CalculateLodViewParam(Camera, ICollection<System.Int32>)
+  fullName.vb: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.CalculateLodViewParam(Camera, ICollection(Of System.Int32))
+  nameWithType: AreaLodView.CalculateLodViewParam(Camera, ICollection<Int32>)
+  nameWithType.vb: AreaLodView.CalculateLodViewParam(Camera, ICollection(Of Int32))
+- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.CalculateLodViewParam*
+  name: CalculateLodViewParam
+  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_CalculateLodViewParam_
+  commentId: Overload:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.CalculateLodViewParam
+  isSpec: "True"
+  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.CalculateLodViewParam
+  nameWithType: AreaLodView.CalculateLodViewParam
+- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.DrawHandles(Camera,HashSet{System.Int32})
+  name: DrawHandles(Camera, HashSet<Int32>)
+  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_DrawHandles_Camera_HashSet_System_Int32__
+  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.DrawHandles(Camera,HashSet{System.Int32})
+  name.vb: DrawHandles(Camera, HashSet(Of Int32))
+  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.DrawHandles(Camera, HashSet<System.Int32>)
+  fullName.vb: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.DrawHandles(Camera, HashSet(Of System.Int32))
+  nameWithType: AreaLodView.DrawHandles(Camera, HashSet<Int32>)
+  nameWithType.vb: AreaLodView.DrawHandles(Camera, HashSet(Of Int32))
 - uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.DrawHandles*
   name: DrawHandles
   href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_DrawHandles_
@@ -5815,6 +5834,77 @@ references:
   fullName.vb: PLATEAU.Native.NativeVectorDisposableBase(Of T).Length
   nameWithType: NativeVectorDisposableBase<T>.Length
   nameWithType.vb: NativeVectorDisposableBase(Of T).Length
+- uid: PLATEAU.Native.NativeVectorExtent
+  name: NativeVectorExtent
+  href: api/PLATEAU.Native.NativeVectorExtent.html
+  commentId: T:PLATEAU.Native.NativeVectorExtent
+  fullName: PLATEAU.Native.NativeVectorExtent
+  nameWithType: NativeVectorExtent
+- uid: PLATEAU.Native.NativeVectorExtent.Add(PLATEAU.Native.Extent)
+  name: Add(Extent)
+  href: api/PLATEAU.Native.NativeVectorExtent.html#PLATEAU_Native_NativeVectorExtent_Add_PLATEAU_Native_Extent_
+  commentId: M:PLATEAU.Native.NativeVectorExtent.Add(PLATEAU.Native.Extent)
+  fullName: PLATEAU.Native.NativeVectorExtent.Add(PLATEAU.Native.Extent)
+  nameWithType: NativeVectorExtent.Add(Extent)
+- uid: PLATEAU.Native.NativeVectorExtent.Add*
+  name: Add
+  href: api/PLATEAU.Native.NativeVectorExtent.html#PLATEAU_Native_NativeVectorExtent_Add_
+  commentId: Overload:PLATEAU.Native.NativeVectorExtent.Add
+  isSpec: "True"
+  fullName: PLATEAU.Native.NativeVectorExtent.Add
+  nameWithType: NativeVectorExtent.Add
+- uid: PLATEAU.Native.NativeVectorExtent.At(System.Int32)
+  name: At(Int32)
+  href: api/PLATEAU.Native.NativeVectorExtent.html#PLATEAU_Native_NativeVectorExtent_At_System_Int32_
+  commentId: M:PLATEAU.Native.NativeVectorExtent.At(System.Int32)
+  fullName: PLATEAU.Native.NativeVectorExtent.At(System.Int32)
+  nameWithType: NativeVectorExtent.At(Int32)
+- uid: PLATEAU.Native.NativeVectorExtent.At*
+  name: At
+  href: api/PLATEAU.Native.NativeVectorExtent.html#PLATEAU_Native_NativeVectorExtent_At_
+  commentId: Overload:PLATEAU.Native.NativeVectorExtent.At
+  isSpec: "True"
+  fullName: PLATEAU.Native.NativeVectorExtent.At
+  nameWithType: NativeVectorExtent.At
+- uid: PLATEAU.Native.NativeVectorExtent.Create
+  name: Create()
+  href: api/PLATEAU.Native.NativeVectorExtent.html#PLATEAU_Native_NativeVectorExtent_Create
+  commentId: M:PLATEAU.Native.NativeVectorExtent.Create
+  fullName: PLATEAU.Native.NativeVectorExtent.Create()
+  nameWithType: NativeVectorExtent.Create()
+- uid: PLATEAU.Native.NativeVectorExtent.Create*
+  name: Create
+  href: api/PLATEAU.Native.NativeVectorExtent.html#PLATEAU_Native_NativeVectorExtent_Create_
+  commentId: Overload:PLATEAU.Native.NativeVectorExtent.Create
+  isSpec: "True"
+  fullName: PLATEAU.Native.NativeVectorExtent.Create
+  nameWithType: NativeVectorExtent.Create
+- uid: PLATEAU.Native.NativeVectorExtent.DisposeNative
+  name: DisposeNative()
+  href: api/PLATEAU.Native.NativeVectorExtent.html#PLATEAU_Native_NativeVectorExtent_DisposeNative
+  commentId: M:PLATEAU.Native.NativeVectorExtent.DisposeNative
+  fullName: PLATEAU.Native.NativeVectorExtent.DisposeNative()
+  nameWithType: NativeVectorExtent.DisposeNative()
+- uid: PLATEAU.Native.NativeVectorExtent.DisposeNative*
+  name: DisposeNative
+  href: api/PLATEAU.Native.NativeVectorExtent.html#PLATEAU_Native_NativeVectorExtent_DisposeNative_
+  commentId: Overload:PLATEAU.Native.NativeVectorExtent.DisposeNative
+  isSpec: "True"
+  fullName: PLATEAU.Native.NativeVectorExtent.DisposeNative
+  nameWithType: NativeVectorExtent.DisposeNative
+- uid: PLATEAU.Native.NativeVectorExtent.Length
+  name: Length
+  href: api/PLATEAU.Native.NativeVectorExtent.html#PLATEAU_Native_NativeVectorExtent_Length
+  commentId: P:PLATEAU.Native.NativeVectorExtent.Length
+  fullName: PLATEAU.Native.NativeVectorExtent.Length
+  nameWithType: NativeVectorExtent.Length
+- uid: PLATEAU.Native.NativeVectorExtent.Length*
+  name: Length
+  href: api/PLATEAU.Native.NativeVectorExtent.html#PLATEAU_Native_NativeVectorExtent_Length_
+  commentId: Overload:PLATEAU.Native.NativeVectorExtent.Length
+  isSpec: "True"
+  fullName: PLATEAU.Native.NativeVectorExtent.Length
+  nameWithType: NativeVectorExtent.Length
 - uid: PLATEAU.Native.NativeVectorGmlFile
   name: NativeVectorGmlFile
   href: api/PLATEAU.Native.NativeVectorGmlFile.html
@@ -6780,12 +6870,12 @@ references:
   commentId: T:PLATEAU.PolygonMesh.MeshExtractOptions
   fullName: PLATEAU.PolygonMesh.MeshExtractOptions
   nameWithType: MeshExtractOptions
-- uid: PLATEAU.PolygonMesh.MeshExtractOptions.#ctor(PlateauVector3d,CoordinateSystem,PLATEAU.PolygonMesh.MeshGranularity,System.UInt32,System.UInt32,System.Boolean,System.Int32,System.Single,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.UInt32,Extent)
-  name: MeshExtractOptions(PlateauVector3d, CoordinateSystem, MeshGranularity, UInt32, UInt32, Boolean, Int32, Single, Int32, Boolean, Boolean, Boolean, UInt32, Extent)
-  href: api/PLATEAU.PolygonMesh.MeshExtractOptions.html#PLATEAU_PolygonMesh_MeshExtractOptions__ctor_PlateauVector3d_CoordinateSystem_PLATEAU_PolygonMesh_MeshGranularity_System_UInt32_System_UInt32_System_Boolean_System_Int32_System_Single_System_Int32_System_Boolean_System_Boolean_System_Boolean_System_UInt32_Extent_
-  commentId: M:PLATEAU.PolygonMesh.MeshExtractOptions.#ctor(PlateauVector3d,CoordinateSystem,PLATEAU.PolygonMesh.MeshGranularity,System.UInt32,System.UInt32,System.Boolean,System.Int32,System.Single,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.UInt32,Extent)
-  fullName: PLATEAU.PolygonMesh.MeshExtractOptions.MeshExtractOptions(PlateauVector3d, CoordinateSystem, PLATEAU.PolygonMesh.MeshGranularity, System.UInt32, System.UInt32, System.Boolean, System.Int32, System.Single, System.Int32, System.Boolean, System.Boolean, System.Boolean, System.UInt32, Extent)
-  nameWithType: MeshExtractOptions.MeshExtractOptions(PlateauVector3d, CoordinateSystem, MeshGranularity, UInt32, UInt32, Boolean, Int32, Single, Int32, Boolean, Boolean, Boolean, UInt32, Extent)
+- uid: PLATEAU.PolygonMesh.MeshExtractOptions.#ctor(PlateauVector3d,CoordinateSystem,PLATEAU.PolygonMesh.MeshGranularity,System.UInt32,System.UInt32,System.Boolean,System.Int32,System.Single,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.UInt32,System.Boolean,System.Int32,System.String)
+  name: MeshExtractOptions(PlateauVector3d, CoordinateSystem, MeshGranularity, UInt32, UInt32, Boolean, Int32, Single, Int32, Boolean, Boolean, Boolean, UInt32, Boolean, Int32, String)
+  href: api/PLATEAU.PolygonMesh.MeshExtractOptions.html#PLATEAU_PolygonMesh_MeshExtractOptions__ctor_PlateauVector3d_CoordinateSystem_PLATEAU_PolygonMesh_MeshGranularity_System_UInt32_System_UInt32_System_Boolean_System_Int32_System_Single_System_Int32_System_Boolean_System_Boolean_System_Boolean_System_UInt32_System_Boolean_System_Int32_System_String_
+  commentId: M:PLATEAU.PolygonMesh.MeshExtractOptions.#ctor(PlateauVector3d,CoordinateSystem,PLATEAU.PolygonMesh.MeshGranularity,System.UInt32,System.UInt32,System.Boolean,System.Int32,System.Single,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.UInt32,System.Boolean,System.Int32,System.String)
+  fullName: PLATEAU.PolygonMesh.MeshExtractOptions.MeshExtractOptions(PlateauVector3d, CoordinateSystem, PLATEAU.PolygonMesh.MeshGranularity, System.UInt32, System.UInt32, System.Boolean, System.Int32, System.Single, System.Int32, System.Boolean, System.Boolean, System.Boolean, System.UInt32, System.Boolean, System.Int32, System.String)
+  nameWithType: MeshExtractOptions.MeshExtractOptions(PlateauVector3d, CoordinateSystem, MeshGranularity, UInt32, UInt32, Boolean, Int32, Single, Int32, Boolean, Boolean, Boolean, UInt32, Boolean, Int32, String)
 - uid: PLATEAU.PolygonMesh.MeshExtractOptions.#ctor*
   name: MeshExtractOptions
   href: api/PLATEAU.PolygonMesh.MeshExtractOptions.html#PLATEAU_PolygonMesh_MeshExtractOptions__ctor_
@@ -6793,6 +6883,12 @@ references:
   isSpec: "True"
   fullName: PLATEAU.PolygonMesh.MeshExtractOptions.MeshExtractOptions
   nameWithType: MeshExtractOptions.MeshExtractOptions
+- uid: PLATEAU.PolygonMesh.MeshExtractOptions.AttachMapTile
+  name: AttachMapTile
+  href: api/PLATEAU.PolygonMesh.MeshExtractOptions.html#PLATEAU_PolygonMesh_MeshExtractOptions_AttachMapTile
+  commentId: F:PLATEAU.PolygonMesh.MeshExtractOptions.AttachMapTile
+  fullName: PLATEAU.PolygonMesh.MeshExtractOptions.AttachMapTile
+  nameWithType: MeshExtractOptions.AttachMapTile
 - uid: PLATEAU.PolygonMesh.MeshExtractOptions.CoordinateZoneID
   name: CoordinateZoneID
   href: api/PLATEAU.PolygonMesh.MeshExtractOptions.html#PLATEAU_PolygonMesh_MeshExtractOptions_CoordinateZoneID
@@ -6823,12 +6919,6 @@ references:
   commentId: F:PLATEAU.PolygonMesh.MeshExtractOptions.ExportAppearance
   fullName: PLATEAU.PolygonMesh.MeshExtractOptions.ExportAppearance
   nameWithType: MeshExtractOptions.ExportAppearance
-- uid: PLATEAU.PolygonMesh.MeshExtractOptions.Extent
-  name: Extent
-  href: api/PLATEAU.PolygonMesh.MeshExtractOptions.html#PLATEAU_PolygonMesh_MeshExtractOptions_Extent
-  commentId: F:PLATEAU.PolygonMesh.MeshExtractOptions.Extent
-  fullName: PLATEAU.PolygonMesh.MeshExtractOptions.Extent
-  nameWithType: MeshExtractOptions.Extent
 - uid: PLATEAU.PolygonMesh.MeshExtractOptions.GridCountOfSide
   name: GridCountOfSide
   href: api/PLATEAU.PolygonMesh.MeshExtractOptions.html#PLATEAU_PolygonMesh_MeshExtractOptions_GridCountOfSide
@@ -6842,6 +6932,25 @@ references:
   isSpec: "True"
   fullName: PLATEAU.PolygonMesh.MeshExtractOptions.GridCountOfSide
   nameWithType: MeshExtractOptions.GridCountOfSide
+- uid: PLATEAU.PolygonMesh.MeshExtractOptions.MapTileURL
+  name: MapTileURL
+  href: api/PLATEAU.PolygonMesh.MeshExtractOptions.html#PLATEAU_PolygonMesh_MeshExtractOptions_MapTileURL
+  commentId: P:PLATEAU.PolygonMesh.MeshExtractOptions.MapTileURL
+  fullName: PLATEAU.PolygonMesh.MeshExtractOptions.MapTileURL
+  nameWithType: MeshExtractOptions.MapTileURL
+- uid: PLATEAU.PolygonMesh.MeshExtractOptions.MapTileURL*
+  name: MapTileURL
+  href: api/PLATEAU.PolygonMesh.MeshExtractOptions.html#PLATEAU_PolygonMesh_MeshExtractOptions_MapTileURL_
+  commentId: Overload:PLATEAU.PolygonMesh.MeshExtractOptions.MapTileURL
+  isSpec: "True"
+  fullName: PLATEAU.PolygonMesh.MeshExtractOptions.MapTileURL
+  nameWithType: MeshExtractOptions.MapTileURL
+- uid: PLATEAU.PolygonMesh.MeshExtractOptions.MapTileZoomLevel
+  name: MapTileZoomLevel
+  href: api/PLATEAU.PolygonMesh.MeshExtractOptions.html#PLATEAU_PolygonMesh_MeshExtractOptions_MapTileZoomLevel
+  commentId: F:PLATEAU.PolygonMesh.MeshExtractOptions.MapTileZoomLevel
+  fullName: PLATEAU.PolygonMesh.MeshExtractOptions.MapTileZoomLevel
+  nameWithType: MeshExtractOptions.MapTileZoomLevel
 - uid: PLATEAU.PolygonMesh.MeshExtractOptions.MeshAxes
   name: MeshAxes
   href: api/PLATEAU.PolygonMesh.MeshExtractOptions.html#PLATEAU_PolygonMesh_MeshExtractOptions_MeshAxes
@@ -6914,6 +7023,22 @@ references:
   isSpec: "True"
   fullName: PLATEAU.PolygonMesh.MeshExtractor.Extract
   nameWithType: MeshExtractor.Extract
+- uid: PLATEAU.PolygonMesh.MeshExtractor.ExtractInExtents(PLATEAU.PolygonMesh.Model@,CityModel,PLATEAU.PolygonMesh.MeshExtractOptions,List{Extent})
+  name: ExtractInExtents(ref Model, CityModel, MeshExtractOptions, List<Extent>)
+  href: api/PLATEAU.PolygonMesh.MeshExtractor.html#PLATEAU_PolygonMesh_MeshExtractor_ExtractInExtents_PLATEAU_PolygonMesh_Model__CityModel_PLATEAU_PolygonMesh_MeshExtractOptions_List_Extent__
+  commentId: M:PLATEAU.PolygonMesh.MeshExtractor.ExtractInExtents(PLATEAU.PolygonMesh.Model@,CityModel,PLATEAU.PolygonMesh.MeshExtractOptions,List{Extent})
+  name.vb: ExtractInExtents(ByRef Model, CityModel, MeshExtractOptions, List(Of Extent))
+  fullName: PLATEAU.PolygonMesh.MeshExtractor.ExtractInExtents(ref PLATEAU.PolygonMesh.Model, CityModel, PLATEAU.PolygonMesh.MeshExtractOptions, List<Extent>)
+  fullName.vb: PLATEAU.PolygonMesh.MeshExtractor.ExtractInExtents(ByRef PLATEAU.PolygonMesh.Model, CityModel, PLATEAU.PolygonMesh.MeshExtractOptions, List(Of Extent))
+  nameWithType: MeshExtractor.ExtractInExtents(ref Model, CityModel, MeshExtractOptions, List<Extent>)
+  nameWithType.vb: MeshExtractor.ExtractInExtents(ByRef Model, CityModel, MeshExtractOptions, List(Of Extent))
+- uid: PLATEAU.PolygonMesh.MeshExtractor.ExtractInExtents*
+  name: ExtractInExtents
+  href: api/PLATEAU.PolygonMesh.MeshExtractor.html#PLATEAU_PolygonMesh_MeshExtractor_ExtractInExtents_
+  commentId: Overload:PLATEAU.PolygonMesh.MeshExtractor.ExtractInExtents
+  isSpec: "True"
+  fullName: PLATEAU.PolygonMesh.MeshExtractor.ExtractInExtents
+  nameWithType: MeshExtractor.ExtractInExtents
 - uid: PLATEAU.PolygonMesh.MeshGranularity
   name: MeshGranularity
   href: api/PLATEAU.PolygonMesh.MeshGranularity.html
@@ -7320,6 +7445,55 @@ references:
   isSpec: "True"
   fullName: PLATEAU.PolygonMesh.SubMesh.TexturePath
   nameWithType: SubMesh.TexturePath
+- uid: PLATEAU.Texture
+  name: PLATEAU.Texture
+  href: api/PLATEAU.Texture.html
+  commentId: N:PLATEAU.Texture
+  fullName: PLATEAU.Texture
+  nameWithType: PLATEAU.Texture
+- uid: PLATEAU.Texture.MapZoomLevelSearcher
+  name: MapZoomLevelSearcher
+  href: api/PLATEAU.Texture.MapZoomLevelSearcher.html
+  commentId: T:PLATEAU.Texture.MapZoomLevelSearcher
+  fullName: PLATEAU.Texture.MapZoomLevelSearcher
+  nameWithType: MapZoomLevelSearcher
+- uid: PLATEAU.Texture.MapZoomLevelSearcher.Search(System.String,System.Double,System.Double)
+  name: Search(String, Double, Double)
+  href: api/PLATEAU.Texture.MapZoomLevelSearcher.html#PLATEAU_Texture_MapZoomLevelSearcher_Search_System_String_System_Double_System_Double_
+  commentId: M:PLATEAU.Texture.MapZoomLevelSearcher.Search(System.String,System.Double,System.Double)
+  fullName: PLATEAU.Texture.MapZoomLevelSearcher.Search(System.String, System.Double, System.Double)
+  nameWithType: MapZoomLevelSearcher.Search(String, Double, Double)
+- uid: PLATEAU.Texture.MapZoomLevelSearcher.Search*
+  name: Search
+  href: api/PLATEAU.Texture.MapZoomLevelSearcher.html#PLATEAU_Texture_MapZoomLevelSearcher_Search_
+  commentId: Overload:PLATEAU.Texture.MapZoomLevelSearcher.Search
+  isSpec: "True"
+  fullName: PLATEAU.Texture.MapZoomLevelSearcher.Search
+  nameWithType: MapZoomLevelSearcher.Search
+- uid: PLATEAU.Texture.MapZoomLevelSearchResult
+  name: MapZoomLevelSearchResult
+  href: api/PLATEAU.Texture.MapZoomLevelSearchResult.html
+  commentId: T:PLATEAU.Texture.MapZoomLevelSearchResult
+  fullName: PLATEAU.Texture.MapZoomLevelSearchResult
+  nameWithType: MapZoomLevelSearchResult
+- uid: PLATEAU.Texture.MapZoomLevelSearchResult.AvailableZoomLevelMax
+  name: AvailableZoomLevelMax
+  href: api/PLATEAU.Texture.MapZoomLevelSearchResult.html#PLATEAU_Texture_MapZoomLevelSearchResult_AvailableZoomLevelMax
+  commentId: F:PLATEAU.Texture.MapZoomLevelSearchResult.AvailableZoomLevelMax
+  fullName: PLATEAU.Texture.MapZoomLevelSearchResult.AvailableZoomLevelMax
+  nameWithType: MapZoomLevelSearchResult.AvailableZoomLevelMax
+- uid: PLATEAU.Texture.MapZoomLevelSearchResult.AvailableZoomLevelMin
+  name: AvailableZoomLevelMin
+  href: api/PLATEAU.Texture.MapZoomLevelSearchResult.html#PLATEAU_Texture_MapZoomLevelSearchResult_AvailableZoomLevelMin
+  commentId: F:PLATEAU.Texture.MapZoomLevelSearchResult.AvailableZoomLevelMin
+  fullName: PLATEAU.Texture.MapZoomLevelSearchResult.AvailableZoomLevelMin
+  nameWithType: MapZoomLevelSearchResult.AvailableZoomLevelMin
+- uid: PLATEAU.Texture.MapZoomLevelSearchResult.IsValid
+  name: IsValid
+  href: api/PLATEAU.Texture.MapZoomLevelSearchResult.html#PLATEAU_Texture_MapZoomLevelSearchResult_IsValid
+  commentId: F:PLATEAU.Texture.MapZoomLevelSearchResult.IsValid
+  fullName: PLATEAU.Texture.MapZoomLevelSearchResult.IsValid
+  nameWithType: MapZoomLevelSearchResult.IsValid
 - uid: PLATEAU.Util
   name: PLATEAU.Util
   href: api/PLATEAU.Util.html
@@ -7483,6 +7657,51 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Util.IProgressDisplay.SetProgress
   nameWithType: IProgressDisplay.SetProgress
+- uid: PLATEAU.Util.MaterialPathUtil
+  name: MaterialPathUtil
+  href: api/PLATEAU.Util.MaterialPathUtil.html
+  commentId: T:PLATEAU.Util.MaterialPathUtil
+  fullName: PLATEAU.Util.MaterialPathUtil
+  nameWithType: MaterialPathUtil
+- uid: PLATEAU.Util.MaterialPathUtil.GetMapMatPath
+  name: GetMapMatPath()
+  href: api/PLATEAU.Util.MaterialPathUtil.html#PLATEAU_Util_MaterialPathUtil_GetMapMatPath
+  commentId: M:PLATEAU.Util.MaterialPathUtil.GetMapMatPath
+  fullName: PLATEAU.Util.MaterialPathUtil.GetMapMatPath()
+  nameWithType: MaterialPathUtil.GetMapMatPath()
+- uid: PLATEAU.Util.MaterialPathUtil.GetMapMatPath*
+  name: GetMapMatPath
+  href: api/PLATEAU.Util.MaterialPathUtil.html#PLATEAU_Util_MaterialPathUtil_GetMapMatPath_
+  commentId: Overload:PLATEAU.Util.MaterialPathUtil.GetMapMatPath
+  isSpec: "True"
+  fullName: PLATEAU.Util.MaterialPathUtil.GetMapMatPath
+  nameWithType: MaterialPathUtil.GetMapMatPath
+- uid: PLATEAU.Util.MaterialPathUtil.GetRenderPipelineType
+  name: GetRenderPipelineType()
+  href: api/PLATEAU.Util.MaterialPathUtil.html#PLATEAU_Util_MaterialPathUtil_GetRenderPipelineType
+  commentId: M:PLATEAU.Util.MaterialPathUtil.GetRenderPipelineType
+  fullName: PLATEAU.Util.MaterialPathUtil.GetRenderPipelineType()
+  nameWithType: MaterialPathUtil.GetRenderPipelineType()
+- uid: PLATEAU.Util.MaterialPathUtil.GetRenderPipelineType*
+  name: GetRenderPipelineType
+  href: api/PLATEAU.Util.MaterialPathUtil.html#PLATEAU_Util_MaterialPathUtil_GetRenderPipelineType_
+  commentId: Overload:PLATEAU.Util.MaterialPathUtil.GetRenderPipelineType
+  isSpec: "True"
+  fullName: PLATEAU.Util.MaterialPathUtil.GetRenderPipelineType
+  nameWithType: MaterialPathUtil.GetRenderPipelineType
+- uid: PLATEAU.Util.MaterialPathUtil.LoadDefaultFallbackMaterial(PredefinedCityModelPackage)
+  name: LoadDefaultFallbackMaterial(PredefinedCityModelPackage)
+  href: api/PLATEAU.Util.MaterialPathUtil.html#PLATEAU_Util_MaterialPathUtil_LoadDefaultFallbackMaterial_PredefinedCityModelPackage_
+  commentId: M:PLATEAU.Util.MaterialPathUtil.LoadDefaultFallbackMaterial(PredefinedCityModelPackage)
+  fullName: PLATEAU.Util.MaterialPathUtil.LoadDefaultFallbackMaterial(PredefinedCityModelPackage)
+  nameWithType: MaterialPathUtil.LoadDefaultFallbackMaterial(PredefinedCityModelPackage)
+- uid: PLATEAU.Util.MaterialPathUtil.LoadDefaultFallbackMaterial*
+  name: LoadDefaultFallbackMaterial
+  href: api/PLATEAU.Util.MaterialPathUtil.html#PLATEAU_Util_MaterialPathUtil_LoadDefaultFallbackMaterial_
+  commentId: Overload:PLATEAU.Util.MaterialPathUtil.LoadDefaultFallbackMaterial
+  isSpec: "True"
+  fullName: PLATEAU.Util.MaterialPathUtil.LoadDefaultFallbackMaterial
+  nameWithType: MaterialPathUtil.LoadDefaultFallbackMaterial
 - uid: PLATEAU.Util.PathUtil
   name: PathUtil
   href: api/PLATEAU.Util.PathUtil.html
@@ -7547,18 +7766,81 @@ references:
   commentId: F:PLATEAU.Util.PathUtil.PLATEAUSrcFetchDir
   fullName: PLATEAU.Util.PathUtil.PLATEAUSrcFetchDir
   nameWithType: PathUtil.PLATEAUSrcFetchDir
+- uid: PLATEAU.Util.PathUtil.SdkBasePath
+  name: SdkBasePath
+  href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_SdkBasePath
+  commentId: P:PLATEAU.Util.PathUtil.SdkBasePath
+  fullName: PLATEAU.Util.PathUtil.SdkBasePath
+  nameWithType: PathUtil.SdkBasePath
+- uid: PLATEAU.Util.PathUtil.SdkBasePath*
+  name: SdkBasePath
+  href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_SdkBasePath_
+  commentId: Overload:PLATEAU.Util.PathUtil.SdkBasePath
+  isSpec: "True"
+  fullName: PLATEAU.Util.PathUtil.SdkBasePath
+  nameWithType: PathUtil.SdkBasePath
+- uid: PLATEAU.Util.PathUtil.SdkPathToAssetPath(System.String)
+  name: SdkPathToAssetPath(String)
+  href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_SdkPathToAssetPath_System_String_
+  commentId: M:PLATEAU.Util.PathUtil.SdkPathToAssetPath(System.String)
+  fullName: PLATEAU.Util.PathUtil.SdkPathToAssetPath(System.String)
+  nameWithType: PathUtil.SdkPathToAssetPath(String)
+- uid: PLATEAU.Util.PathUtil.SdkPathToAssetPath*
+  name: SdkPathToAssetPath
+  href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_SdkPathToAssetPath_
+  commentId: Overload:PLATEAU.Util.PathUtil.SdkPathToAssetPath
+  isSpec: "True"
+  fullName: PLATEAU.Util.PathUtil.SdkPathToAssetPath
+  nameWithType: PathUtil.SdkPathToAssetPath
 - uid: PLATEAU.Util.PathUtil.UdxFolderName
   name: UdxFolderName
   href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_UdxFolderName
   commentId: F:PLATEAU.Util.PathUtil.UdxFolderName
   fullName: PLATEAU.Util.PathUtil.UdxFolderName
   nameWithType: PathUtil.UdxFolderName
+- uid: PLATEAU.Util.PipeLineType
+  name: PipeLineType
+  href: api/PLATEAU.Util.PipeLineType.html
+  commentId: T:PLATEAU.Util.PipeLineType
+  fullName: PLATEAU.Util.PipeLineType
+  nameWithType: PipeLineType
+- uid: PLATEAU.Util.PipeLineType.BuildIn
+  name: BuildIn
+  href: api/PLATEAU.Util.PipeLineType.html#PLATEAU_Util_PipeLineType_BuildIn
+  commentId: F:PLATEAU.Util.PipeLineType.BuildIn
+  fullName: PLATEAU.Util.PipeLineType.BuildIn
+  nameWithType: PipeLineType.BuildIn
+- uid: PLATEAU.Util.PipeLineType.HDRenderPipelineAsset
+  name: HDRenderPipelineAsset
+  href: api/PLATEAU.Util.PipeLineType.html#PLATEAU_Util_PipeLineType_HDRenderPipelineAsset
+  commentId: F:PLATEAU.Util.PipeLineType.HDRenderPipelineAsset
+  fullName: PLATEAU.Util.PipeLineType.HDRenderPipelineAsset
+  nameWithType: PipeLineType.HDRenderPipelineAsset
+- uid: PLATEAU.Util.PipeLineType.UniversalRenderPipelineAsset
+  name: UniversalRenderPipelineAsset
+  href: api/PLATEAU.Util.PipeLineType.html#PLATEAU_Util_PipeLineType_UniversalRenderPipelineAsset
+  commentId: F:PLATEAU.Util.PipeLineType.UniversalRenderPipelineAsset
+  fullName: PLATEAU.Util.PipeLineType.UniversalRenderPipelineAsset
+  nameWithType: PipeLineType.UniversalRenderPipelineAsset
 - uid: PLATEAU.Util.RenderUtil
   name: RenderUtil
   href: api/PLATEAU.Util.RenderUtil.html
   commentId: T:PLATEAU.Util.RenderUtil
   fullName: PLATEAU.Util.RenderUtil
   nameWithType: RenderUtil
+- uid: PLATEAU.Util.RenderUtil.CreateDefaultMaterial
+  name: CreateDefaultMaterial()
+  href: api/PLATEAU.Util.RenderUtil.html#PLATEAU_Util_RenderUtil_CreateDefaultMaterial
+  commentId: M:PLATEAU.Util.RenderUtil.CreateDefaultMaterial
+  fullName: PLATEAU.Util.RenderUtil.CreateDefaultMaterial()
+  nameWithType: RenderUtil.CreateDefaultMaterial()
+- uid: PLATEAU.Util.RenderUtil.CreateDefaultMaterial*
+  name: CreateDefaultMaterial
+  href: api/PLATEAU.Util.RenderUtil.html#PLATEAU_Util_RenderUtil_CreateDefaultMaterial_
+  commentId: Overload:PLATEAU.Util.RenderUtil.CreateDefaultMaterial
+  isSpec: "True"
+  fullName: PLATEAU.Util.RenderUtil.CreateDefaultMaterial
+  nameWithType: RenderUtil.CreateDefaultMaterial
 - uid: PLATEAU.Util.RenderUtil.DefaultMaterial
   name: DefaultMaterial
   href: api/PLATEAU.Util.RenderUtil.html#PLATEAU_Util_RenderUtil_DefaultMaterial

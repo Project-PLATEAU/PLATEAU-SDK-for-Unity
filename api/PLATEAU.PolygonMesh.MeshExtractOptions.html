@@ -118,12 +118,12 @@
   
   
   <a id="PLATEAU_PolygonMesh_MeshExtractOptions__ctor_" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.#ctor*"></a>
-  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions__ctor_PlateauVector3d_CoordinateSystem_PLATEAU_PolygonMesh_MeshGranularity_System_UInt32_System_UInt32_System_Boolean_System_Int32_System_Single_System_Int32_System_Boolean_System_Boolean_System_Boolean_System_UInt32_Extent_" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.#ctor(PlateauVector3d,CoordinateSystem,PLATEAU.PolygonMesh.MeshGranularity,System.UInt32,System.UInt32,System.Boolean,System.Int32,System.Single,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.UInt32,Extent)">MeshExtractOptions(PlateauVector3d, CoordinateSystem, MeshGranularity, UInt32, UInt32, Boolean, Int32, Single, Int32, Boolean, Boolean, Boolean, UInt32, Extent)</h4>
+  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions__ctor_PlateauVector3d_CoordinateSystem_PLATEAU_PolygonMesh_MeshGranularity_System_UInt32_System_UInt32_System_Boolean_System_Int32_System_Single_System_Int32_System_Boolean_System_Boolean_System_Boolean_System_UInt32_System_Boolean_System_Int32_System_String_" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.#ctor(PlateauVector3d,CoordinateSystem,PLATEAU.PolygonMesh.MeshGranularity,System.UInt32,System.UInt32,System.Boolean,System.Int32,System.Single,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.UInt32,System.Boolean,System.Int32,System.String)">MeshExtractOptions(PlateauVector3d, CoordinateSystem, MeshGranularity, UInt32, UInt32, Boolean, Int32, Single, Int32, Boolean, Boolean, Boolean, UInt32, Boolean, Int32, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MeshExtractOptions(PlateauVector3d referencePoint, CoordinateSystem meshAxes, MeshGranularity meshGranularity, uint minLOD, uint maxLOD, bool exportAppearance, int gridCountOfSide, float unitScale, int coordinateZoneID, bool excludeCityObjectOutsideExtent, bool excludePolygonsOutsideExtent, bool enableTexturePacking, uint texturePackingResolution, Extent extent)</code></pre>
+    <pre><code class="lang-csharp hljs">public MeshExtractOptions(PlateauVector3d referencePoint, CoordinateSystem meshAxes, MeshGranularity meshGranularity, uint minLOD, uint maxLOD, bool exportAppearance, int gridCountOfSide, float unitScale, int coordinateZoneID, bool excludeCityObjectOutsideExtent, bool excludePolygonsOutsideExtent, bool enableTexturePacking, uint texturePackingResolution, bool attachMapTile, int mapTileZoomLevel, string mapTileURL)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -201,14 +201,50 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">Extent</span></td>
-        <td><span class="parametername">extent</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">attachMapTile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">mapTileZoomLevel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">mapTileURL</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="fields">Fields
   </h3>
+  
+  
+  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_AttachMapTile" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.AttachMapTile">AttachMapTile</h4>
+  <div class="markdown level1 summary"><p>土地でのみ利用します。
+地図タイルを貼り付けるかどうかです。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AttachMapTile</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_CoordinateZoneID" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.CoordinateZoneID">CoordinateZoneID</h4>
@@ -344,13 +380,14 @@
   </table>
   
   
-  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_Extent" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.Extent">Extent</h4>
-  <div class="markdown level1 summary"><p>対象範囲を緯度・経度・高さで指定します。 </p>
+  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_MapTileZoomLevel" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.MapTileZoomLevel">MapTileZoomLevel</h4>
+  <div class="markdown level1 summary"><p>土地でのみ利用します。
+URLで地図タイルをダウンロードする場合のズームレベルです。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Extent Extent</code></pre>
+    <pre><code class="lang-csharp hljs">public int MapTileZoomLevel</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -362,7 +399,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Extent</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -490,6 +527,31 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_PolygonMesh_MeshExtractOptions_MapTileURL_" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.MapTileURL*"></a>
+  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_MapTileURL" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.MapTileURL">MapTileURL</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MapTileURL { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
