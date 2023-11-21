@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class PackageToLodDict
+    <title>Class AreaLodView
    | PLATEAU SDK for Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class PackageToLodDict
+    <meta name="title" content="Class AreaLodView
    | PLATEAU SDK for Unity ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,18 +78,19 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PLATEAU.CityImport.Setting.PackageToLodDict">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView">
   
   
-  <h1 id="PLATEAU_CityImport_Setting_PackageToLodDict" data-uid="PLATEAU.CityImport.Setting.PackageToLodDict" class="text-break">Class PackageToLodDict
+  <h1 id="PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView" data-uid="PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView" class="text-break">Class AreaLodView
   </h1>
-  <div class="markdown level0 summary"><p>パッケージとそこに含まれる最大LODの組です。</p>
+  <div class="markdown level0 summary"><p>範囲選択画面で、メッシュコードごとに利用可能なLODを表示します。
+<a class="xref" href="PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.html">AreaLodController</a> によって保持されます。</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">PackageToLodDict</span></div>
+    <div class="level1"><span class="xref">AreaLodView</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -115,23 +116,23 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityImport.Setting.html">PLATEAU.CityImport.Setting</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.html">PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="PLATEAU_CityImport_Setting_PackageToLodDict_syntax">Syntax</h5>
+  <h5 id="PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PackageToLodDict</code></pre>
+    <pre><code class="lang-csharp hljs">public class AreaLodView</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="PLATEAU_CityImport_Setting_PackageToLodDict_AddOrUpdate_" data-uid="PLATEAU.CityImport.Setting.PackageToLodDict.AddOrUpdate*"></a>
-  <h4 id="PLATEAU_CityImport_Setting_PackageToLodDict_AddOrUpdate_PredefinedCityModelPackage_System_Int32_" data-uid="PLATEAU.CityImport.Setting.PackageToLodDict.AddOrUpdate(PredefinedCityModelPackage,System.Int32)">AddOrUpdate(PredefinedCityModelPackage, Int32)</h4>
+  <a id="PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView__ctor_" data-uid="PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.#ctor*"></a>
+  <h4 id="PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView__ctor_PackageToLodDict_Vector3_Vector3_" data-uid="PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.#ctor(PackageToLodDict,Vector3,Vector3)">AreaLodView(PackageToLodDict, Vector3, Vector3)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddOrUpdate(PredefinedCityModelPackage package, int maxLod)</code></pre>
+    <pre><code class="lang-csharp hljs">public AreaLodView(PackageToLodDict packageToLodDict, Vector3 meshCodeUnityPositionUpperLeft, Vector3 meshCodeUnityPositionLowerRight)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -144,26 +145,98 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">PredefinedCityModelPackage</span></td>
-        <td><span class="parametername">package</span></td>
+        <td><span class="xref">PackageToLodDict</span></td>
+        <td><span class="parametername">packageToLodDict</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">maxLod</span></td>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">meshCodeUnityPositionUpperLeft</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">meshCodeUnityPositionLowerRight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView_CalculateLodViewParam_" data-uid="PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.CalculateLodViewParam*"></a>
+  <h4 id="PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView_CalculateLodViewParam_Camera_ICollection_System_Int32__" data-uid="PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.CalculateLodViewParam(Camera,ICollection{System.Int32})">CalculateLodViewParam(Camera, ICollection&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CalculateLodViewParam(Camera camera, ICollection&lt;int&gt; showLods)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Camera</span></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ICollection</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">showLods</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_CityImport_Setting_PackageToLodDict_Contains_" data-uid="PLATEAU.CityImport.Setting.PackageToLodDict.Contains*"></a>
-  <h4 id="PLATEAU_CityImport_Setting_PackageToLodDict_Contains_PredefinedCityModelPackage_" data-uid="PLATEAU.CityImport.Setting.PackageToLodDict.Contains(PredefinedCityModelPackage)">Contains(PredefinedCityModelPackage)</h4>
+  <a id="PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView_DrawHandles_" data-uid="PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.DrawHandles*"></a>
+  <h4 id="PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView_DrawHandles_Camera_HashSet_System_Int32__" data-uid="PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.DrawHandles(Camera,HashSet{System.Int32})">DrawHandles(Camera, HashSet&lt;Int32&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Contains(PredefinedCityModelPackage package)</code></pre>
+    <pre><code class="lang-csharp hljs">public void DrawHandles(Camera camera, HashSet&lt;int&gt; showLods)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Camera</span></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">HashSet</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">showLods</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView_HasIconOfPackage_" data-uid="PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.HasIconOfPackage*"></a>
+  <h4 id="PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView_HasIconOfPackage_PredefinedCityModelPackage_" data-uid="PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.HasIconOfPackage(PredefinedCityModelPackage)">HasIconOfPackage(PredefinedCityModelPackage)</h4>
+  <div class="markdown level1 summary"><p>このパッケージの利用可能LODを地図上で表示するかどうかを返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasIconOfPackage(PredefinedCityModelPackage package)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -199,132 +272,15 @@
   </table>
   
   
-  <a id="PLATEAU_CityImport_Setting_PackageToLodDict_GetEnumerator_" data-uid="PLATEAU.CityImport.Setting.PackageToLodDict.GetEnumerator*"></a>
-  <h4 id="PLATEAU_CityImport_Setting_PackageToLodDict_GetEnumerator" data-uid="PLATEAU.CityImport.Setting.PackageToLodDict.GetEnumerator">GetEnumerator()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerator&lt;KeyValuePair&lt;PredefinedCityModelPackage, int&gt;&gt; GetEnumerator()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IEnumerator</span>&lt;<span class="xref">KeyValuePair</span>&lt;<span class="xref">PredefinedCityModelPackage</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_CityImport_Setting_PackageToLodDict_GetLod_" data-uid="PLATEAU.CityImport.Setting.PackageToLodDict.GetLod*"></a>
-  <h4 id="PLATEAU_CityImport_Setting_PackageToLodDict_GetLod_PredefinedCityModelPackage_" data-uid="PLATEAU.CityImport.Setting.PackageToLodDict.GetLod(PredefinedCityModelPackage)">GetLod(PredefinedCityModelPackage)</h4>
-  <div class="markdown level1 summary"><p>引数の <code data-dev-comment-type="paramref" class="paramref">package</code> で利用可能な最大LODを返します。
-ない場合は -1 を返します。</p>
+  <a id="PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView_Init_" data-uid="PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.Init*"></a>
+  <h4 id="PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView_Init" data-uid="PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.Init">Init()</h4>
+  <div class="markdown level1 summary"><p>地図上に利用可能LODを表示するためのアイコンをロードします。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int GetLod(PredefinedCityModelPackage package)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Init()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">PredefinedCityModelPackage</span></td>
-        <td><span class="parametername">package</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_CityImport_Setting_PackageToLodDict_MargeDict_" data-uid="PLATEAU.CityImport.Setting.PackageToLodDict.MargeDict*"></a>
-  <h4 id="PLATEAU_CityImport_Setting_PackageToLodDict_MargeDict_PLATEAU_CityImport_Setting_PackageToLodDict_" data-uid="PLATEAU.CityImport.Setting.PackageToLodDict.MargeDict(PLATEAU.CityImport.Setting.PackageToLodDict)">MargeDict(PackageToLodDict)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void MargeDict(PackageToLodDict other)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PLATEAU.CityImport.Setting.PackageToLodDict.html">PackageToLodDict</a></td>
-        <td><span class="parametername">other</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_CityImport_Setting_PackageToLodDict_MergePackage_" data-uid="PLATEAU.CityImport.Setting.PackageToLodDict.MergePackage*"></a>
-  <h4 id="PLATEAU_CityImport_Setting_PackageToLodDict_MergePackage_PredefinedCityModelPackage_System_Int32_" data-uid="PLATEAU.CityImport.Setting.PackageToLodDict.MergePackage(PredefinedCityModelPackage,System.Int32)">MergePackage(PredefinedCityModelPackage, Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void MergePackage(PredefinedCityModelPackage package, int otherLod)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">PredefinedCityModelPackage</span></td>
-        <td><span class="parametername">package</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">otherLod</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           

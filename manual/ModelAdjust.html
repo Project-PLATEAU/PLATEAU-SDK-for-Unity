@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>&#12514;&#12487;&#12523;&#35519;&#25972; | PLATEAU SDK for Unity </title>
+    <title>&#12514;&#12487;&#12523;&#20462;&#27491; | PLATEAU SDK for Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="&#12514;&#12487;&#12523;&#35519;&#25972; | PLATEAU SDK for Unity ">
+    <meta name="title" content="&#12514;&#12487;&#12523;&#20462;&#27491; | PLATEAU SDK for Unity ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -77,15 +77,30 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="モデル調整">モデル調整</h1>
+<h1 id="モデル修正">モデル修正</h1>
 
-<p>インポートした都市オブジェクトに対して、条件指定で一括でアクティブ化・非アクティブ化する機能について説明します。  </p>
-<h2 id="モデル調整タブ">モデル調整タブ</h2>
+<h2 id="概要">概要</h2>
+<p>PLATEAUウィンドウの<code>モデル修正</code>では、インポートした都市モデルを編集できます。<br>次の機能があります。</p>
+<ul>
+<li>ゲームオブジェクトON/OFF<ul>
+<li>条件指定で一括でアクティブ化・非アクティブ化します。</li>
+</ul>
+</li>
+<li>結合・分離<ul>
+<li>モデルを結合・分離し、ゲームオブジェクトの粒度を変更します。</li>
+</ul>
+</li>
+</ul>
+<h3 id="操作画面の開き方">操作画面の開き方</h3>
 <ul>
 <li>Unityのメニューバーから <code>PLATEAU</code> → <code>PLATEAU SDK</code> を選択します。</li>
-<li>ウィンドウ上部のタブのうち <code>モデル調整</code> を選択します。
-<img src="../resources/manual/cityAdjust/cityAdjustTab.png" alt=""></li>
-<li>この画面で条件指定をしてフィルタリングできます。</li>
+<li>ウィンドウ上部のタブのうち <code>モデル調整</code> を選択します。</li>
+<li>その下のタブで<code>ゲームオブジェクトON/OFF</code>、<code>結合/分離</code>を切り替えて表示します。</li>
+</ul>
+<h2 id="ゲームオブジェクトonoff機能">ゲームオブジェクトON/OFF機能</h2>
+<p><img src="../resources/manual/cityAdjust/gameObjOnOff.png" alt=""></p>
+<ul>
+<li>条件指定をしてフィルタリングできます。</li>
 <li>ここでいうフィルタリングとは、条件に合致するゲームオブジェクトをアクティブにし、そうでないものを非アクティブにすることを指します。</li>
 <li>「重複する地物を表示」にチェックを入れた場合、フィルタリング後に重複している地物について、<br>もっともLODが高いもののみを残してそれ以外を非表示にします。</li>
 <li>表示したい地物の種類をチェックボックスで指定します。</li>
@@ -98,6 +113,29 @@
 </ul>
 <div class="NOTE"><h5>Note</h5><p>都市インポート時のメッシュ結合単位の設定によっては、第2階層の分類チェックマークが動作しない場合があります。<br>例えば、インポート時に建物を「最小地物単位」に指定した場合、「窓」「屋根面」などでゲームオブジェクトが分かれているので、細かい分類のチェックマークが動作します。<br>しかし、建物を「主要地物単位」にした場合、建物ごとにゲームオブジェクトが結合されているので、細かい「窓」「屋根面」といった分類は動作しません。<br>分類指定のチェックマークは入れ子構造になっていますが、第1階層の「建築物」「道路」といった分類は結合単位によらず必ず動作し、<br>第2階層の「窓」「屋根面」といった細かい分類はインポート時に「最小値物単位」にした場合のみ動作します。</p>
 </div>
+<h2 id="結合分離機能">結合/分離機能</h2>
+<p><img src="../resources/manual/cityAdjust/splitCombineWindow.png" alt=""></p>
+<h3 id="できること">できること</h3>
+<ul>
+<li>選択されたゲームオブジェクトの粒度を変更します。</li>
+<li>例えば、主要地物単位でインポートされたものを結合して地域単位にまとめたり、分解して最小地物単位にしたりできます。</li>
+<li>属性情報も合わせて分割・結合されます。</li>
+</ul>
+<h3 id="操作方法">操作方法</h3>
+<ul>
+<li><code>選択オブジェクト</code>には、現在選択中のゲームオブジェクトが表示されます。これが変換対象になります。<ul>
+<li>選び方は、変換したいゲームオブジェクトの親を1つ選択しても良いですし、変換したい地物を複数選択しても良いです。</li>
+</ul>
+</li>
+<li><code>単位</code>では変換後の結合粒度を指定します。<ul>
+<li><code>地域単位</code>： 3Dモデルが1つのゲームオブジェクトにまとまります。</li>
+<li><code>主要地物単位</code>： 例えば建築物の場合、建物1つごとに1つのゲームオブジェクトになります。</li>
+<li><code>最小地物単位</code>： 例えば建築物の場合、窓、屋根などのパーツごとに1つのゲームオブジェクトになります。</li>
+</ul>
+</li>
+<li><code>実行</code>ボタンで変換を実行します。</li>
+<li>実行後、ダイアログが表示され、変換前のゲームオブジェクトを削除するか残すかを選択できます。</li>
+</ul>
 </article>
           </div>
           

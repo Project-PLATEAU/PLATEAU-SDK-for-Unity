@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class AreaLodSearcher
+    <title>Class ProgressBar
    | PLATEAU SDK for Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class AreaLodSearcher
+    <meta name="title" content="Class ProgressBar
    | PLATEAU SDK for Unity ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,91 +78,49 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.Util.ProgressBar">
   
   
-  <h1 id="PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodSearcher" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher" class="text-break">Class AreaLodSearcher
+  <h1 id="PLATEAU_Util_ProgressBar" data-uid="PLATEAU.Util.ProgressBar" class="text-break">Class ProgressBar
   </h1>
-  <div class="markdown level0 summary"><p>メッシュコード内で利用可能なLODを検索します。
-<a class="xref" href="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.html">AreaLodController</a> によって保持されます。</p>
+  <div class="markdown level0 summary"><p>Editorの場合、<a class="xref" href="PLATEAU.Util.ProgressBar.html#PLATEAU_Util_ProgressBar_Display_System_String_System_Single_">Display(String, Single)</a>でプログレスバーを表示し、廃棄時にプログレスバーを消します。
+Editorでない場合、何もしません。
+<a class="xref" href="PLATEAU.Util.ProgressBar.html#PLATEAU_Util_ProgressBar_Display_System_String_System_Single_">Display(String, Single)</a>にinfo文字列を与えない場合に表示されるデフォルト文字列をコンストラクタで指定できます。
+指定しない場合は空文字列がデフォルトになります。</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">AreaLodSearcher</span></div>
+    <div class="level1"><span class="xref">ProgressBar</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityImport.AreaSelector.SceneObjs.html">PLATEAU.CityImport.AreaSelector.SceneObjs</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.Util.html">PLATEAU.Util</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodSearcher_syntax">Syntax</h5>
+  <h5 id="PLATEAU_Util_ProgressBar_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AreaLodSearcher</code></pre>
+    <pre><code class="lang-csharp hljs">public class ProgressBar : IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodSearcher__ctor_" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.#ctor*"></a>
-  <h4 id="PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodSearcher__ctor_DatasetSourceConfig_" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.#ctor(DatasetSourceConfig)">AreaLodSearcher(DatasetSourceConfig)</h4>
+  <a id="PLATEAU_Util_ProgressBar__ctor_" data-uid="PLATEAU.Util.ProgressBar.#ctor*"></a>
+  <h4 id="PLATEAU_Util_ProgressBar__ctor" data-uid="PLATEAU.Util.ProgressBar.#ctor">ProgressBar()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AreaLodSearcher(DatasetSourceConfig datasetSourceConfig)</code></pre>
+    <pre><code class="lang-csharp hljs">public ProgressBar()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DatasetSourceConfig</span></td>
-        <td><span class="parametername">datasetSourceConfig</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
   
   
-  <a id="PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodSearcher_LoadLodsInMeshCode_" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.LoadLodsInMeshCode*"></a>
-  <h4 id="PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodSearcher_LoadLodsInMeshCode_System_String_" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.LoadLodsInMeshCode(System.String)">LoadLodsInMeshCode(String)</h4>
-  <div class="markdown level1 summary"><p>与えられたメッシュコードと、その上位に含まれるパッケージとLODを返します。</p>
-</div>
+  <a id="PLATEAU_Util_ProgressBar__ctor_" data-uid="PLATEAU.Util.ProgressBar.#ctor*"></a>
+  <h4 id="PLATEAU_Util_ProgressBar__ctor_System_String_" data-uid="PLATEAU.Util.ProgressBar.#ctor(System.String)">ProgressBar(String)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PackageToLodDict LoadLodsInMeshCode(string meshCode)</code></pre>
+    <pre><code class="lang-csharp hljs">public ProgressBar(string defaultInfo)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -176,26 +134,82 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">meshCode</span></td>
+        <td><span class="parametername">defaultInfo</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PLATEAU_Util_ProgressBar_Display_" data-uid="PLATEAU.Util.ProgressBar.Display*"></a>
+  <h4 id="PLATEAU_Util_ProgressBar_Display_System_Single_" data-uid="PLATEAU.Util.ProgressBar.Display(System.Single)">Display(Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Display(float progress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">PackageToLodDict</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">progress</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="PLATEAU_Util_ProgressBar_Display_" data-uid="PLATEAU.Util.ProgressBar.Display*"></a>
+  <h4 id="PLATEAU_Util_ProgressBar_Display_System_String_System_Single_" data-uid="PLATEAU.Util.ProgressBar.Display(System.String,System.Single)">Display(String, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Display(string info, float progress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">progress</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_ProgressBar_Dispose_" data-uid="PLATEAU.Util.ProgressBar.Dispose*"></a>
+  <h4 id="PLATEAU_Util_ProgressBar_Dispose" data-uid="PLATEAU.Util.ProgressBar.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
 </article>
           </div>
           

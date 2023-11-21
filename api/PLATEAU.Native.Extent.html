@@ -252,14 +252,15 @@
   
   
   <a id="PLATEAU_Native_Extent_Intersection_" data-uid="PLATEAU.Native.Extent.Intersection*"></a>
-  <h4 id="PLATEAU_Native_Extent_Intersection_PLATEAU_Native_Extent_PLATEAU_Native_Extent_" data-uid="PLATEAU.Native.Extent.Intersection(PLATEAU.Native.Extent,PLATEAU.Native.Extent)">Intersection(Extent, Extent)</h4>
+  <h4 id="PLATEAU_Native_Extent_Intersection_PLATEAU_Native_Extent_PLATEAU_Native_Extent_System_Boolean_" data-uid="PLATEAU.Native.Extent.Intersection(PLATEAU.Native.Extent,PLATEAU.Native.Extent,System.Boolean)">Intersection(Extent, Extent, Boolean)</h4>
   <div class="markdown level1 summary"><p>共通部分を返します。
-なければ (-99, -99, -99), (-99, -99, -99)を返します。</p>
+なければ (-99, -99, -99), (-99, -99, -99)を返します。
+高さを考慮しない場合は、ignoreHeightをtrueにします。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Extent Intersection(Extent op1, Extent op2)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Extent Intersection(Extent op1, Extent op2, bool ignoreHeight = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -279,6 +280,11 @@
       <tr>
         <td><a class="xref" href="PLATEAU.Native.Extent.html">Extent</a></td>
         <td><span class="parametername">op2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">ignoreHeight</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NativeAttributeValue
+   | PLATEAU SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NativeAttributeValue
+   | PLATEAU SDK for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.CityGML.NativeAttributeValue">
+  
+  
+  <h1 id="PLATEAU_CityGML_NativeAttributeValue" data-uid="PLATEAU.CityGML.NativeAttributeValue" class="text-break">Class NativeAttributeValue
+  </h1>
+  <div class="markdown level0 summary"><p>
+Plateau のオブジェクトが持つ属性 (key と value のペア)　のうち、 value の部分です。
+value は、内部的には string または 子の属性セットへの参照 のどちらかのデータを保持します。</p>
+
+<p>
+value の値がどのような形式であるかを <a class="xref" href="PLATEAU.CityGML.AttributeType.html">AttributeType</a> 形式で保持し、<a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_Type">Type</a> で取得できます。</p>
+
+<p>
+<a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_Type">Type</a> が String, Double, Integer, Data, Uri, Measure の場合、内部的にはデータは単に string であり、 <a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsString">AsString</a> で取得できます。
+<a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsDouble">AsDouble</a>, <a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsInt">AsInt</a> プロパティもありますが、それは単に <a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsString">AsString</a> を数値にパースするものです。</p>
+
+<p>
+<a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_Type">Type</a> が <a class="xref" href="PLATEAU.CityGML.AttributeType.html#PLATEAU_CityGML_AttributeType_AttributeSet">AttributeSet</a> である場合、 この属性の子に属性セットがあることを意味します。
+この場合は <a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsString">AsString</a> は意味を成さず、代わりに <a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsAttrSet">AsAttrSet</a> で子の属性セットを取得できます。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">NativeAttributeValue</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityGML.html">PLATEAU.CityGML</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="PLATEAU_CityGML_NativeAttributeValue_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NativeAttributeValue</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="PLATEAU_CityGML_NativeAttributeValue__ctor_" data-uid="PLATEAU.CityGML.NativeAttributeValue.#ctor*"></a>
+  <h4 id="PLATEAU_CityGML_NativeAttributeValue__ctor_IntPtr_" data-uid="PLATEAU.CityGML.NativeAttributeValue.#ctor(IntPtr)">NativeAttributeValue(IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeAttributeValue(IntPtr handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">handle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PLATEAU_CityGML_NativeAttributeValue_AsAttrSet_" data-uid="PLATEAU.CityGML.NativeAttributeValue.AsAttrSet*"></a>
+  <h4 id="PLATEAU_CityGML_NativeAttributeValue_AsAttrSet" data-uid="PLATEAU.CityGML.NativeAttributeValue.AsAttrSet">AsAttrSet</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_Type">Type</a> が <a class="xref" href="PLATEAU.CityGML.AttributeType.html#PLATEAU_CityGML_AttributeType_AttributeSet">AttributeSet</a> であることを前提に、
+子の <a class="xref" href="PLATEAU.CityGML.NativeAttributesMap.html">NativeAttributesMap</a> を返します。
+<a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_Type">Type</a> がその他である場合は意味を成しません。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeAttributesMap AsAttrSet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.CityGML.NativeAttributesMap.html">NativeAttributesMap</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityGML_NativeAttributeValue_AsBool_" data-uid="PLATEAU.CityGML.NativeAttributeValue.AsBool*"></a>
+  <h4 id="PLATEAU_CityGML_NativeAttributeValue_AsBool" data-uid="PLATEAU.CityGML.NativeAttributeValue.AsBool">AsBool</h4>
+  <div class="markdown level1 summary"><p>属性値を bool にパースして返します。 </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AsBool { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityGML_NativeAttributeValue_AsDouble_" data-uid="PLATEAU.CityGML.NativeAttributeValue.AsDouble*"></a>
+  <h4 id="PLATEAU_CityGML_NativeAttributeValue_AsDouble" data-uid="PLATEAU.CityGML.NativeAttributeValue.AsDouble">AsDouble</h4>
+  <div class="markdown level1 summary"><p>属性値を double にパースして返します。 </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double AsDouble { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityGML_NativeAttributeValue_AsInt_" data-uid="PLATEAU.CityGML.NativeAttributeValue.AsInt*"></a>
+  <h4 id="PLATEAU_CityGML_NativeAttributeValue_AsInt" data-uid="PLATEAU.CityGML.NativeAttributeValue.AsInt">AsInt</h4>
+  <div class="markdown level1 summary"><p>属性値を int にパースして返します。 </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AsInt { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityGML_NativeAttributeValue_AsString_" data-uid="PLATEAU.CityGML.NativeAttributeValue.AsString*"></a>
+  <h4 id="PLATEAU_CityGML_NativeAttributeValue_AsString" data-uid="PLATEAU.CityGML.NativeAttributeValue.AsString">AsString</h4>
+  <div class="markdown level1 summary"><p>属性値を string 形式で取得します。
+<a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_Type">Type</a> が String, Double, Integer, Data, Uri, Measure の場合に有効です。
+<a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_Type">Type</a> が <a class="xref" href="PLATEAU.CityGML.AttributeType.html#PLATEAU_CityGML_AttributeType_AttributeSet">AttributeSet</a> の場合は意味を成しません。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AsString { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityGML_NativeAttributeValue_Type_" data-uid="PLATEAU.CityGML.NativeAttributeValue.Type*"></a>
+  <h4 id="PLATEAU_CityGML_NativeAttributeValue_Type" data-uid="PLATEAU.CityGML.NativeAttributeValue.Type">Type</h4>
+  <div class="markdown level1 summary"><p>属性の値の想定形式です。<a class="xref" href="PLATEAU.CityGML.AttributeType.html">AttributeType</a> 型で返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttributeType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.CityGML.AttributeType.html">AttributeType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            PLATEAU SDK for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

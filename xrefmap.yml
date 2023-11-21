@@ -1,12 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: PLATEAU
-  name: PLATEAU
-  href: api/PLATEAU.html
-  commentId: N:PLATEAU
-  fullName: PLATEAU
-  nameWithType: PLATEAU
 - uid: PLATEAU.Basemap
   name: PLATEAU.Basemap
   href: api/PLATEAU.Basemap.html
@@ -498,135 +492,6 @@ references:
   fullName.vb: PLATEAU.CityGML.AppearanceTargetDefinition(Of T).TargetID
   nameWithType: AppearanceTargetDefinition<T>.TargetID
   nameWithType.vb: AppearanceTargetDefinition(Of T).TargetID
-- uid: PLATEAU.CityGML.AttributesMap
-  name: AttributesMap
-  href: api/PLATEAU.CityGML.AttributesMap.html
-  commentId: T:PLATEAU.CityGML.AttributesMap
-  fullName: PLATEAU.CityGML.AttributesMap
-  nameWithType: AttributesMap
-- uid: PLATEAU.CityGML.AttributesMap.ContainsKey(System.String)
-  name: ContainsKey(String)
-  href: api/PLATEAU.CityGML.AttributesMap.html#PLATEAU_CityGML_AttributesMap_ContainsKey_System_String_
-  commentId: M:PLATEAU.CityGML.AttributesMap.ContainsKey(System.String)
-  fullName: PLATEAU.CityGML.AttributesMap.ContainsKey(System.String)
-  nameWithType: AttributesMap.ContainsKey(String)
-- uid: PLATEAU.CityGML.AttributesMap.ContainsKey*
-  name: ContainsKey
-  href: api/PLATEAU.CityGML.AttributesMap.html#PLATEAU_CityGML_AttributesMap_ContainsKey_
-  commentId: Overload:PLATEAU.CityGML.AttributesMap.ContainsKey
-  isSpec: "True"
-  fullName: PLATEAU.CityGML.AttributesMap.ContainsKey
-  nameWithType: AttributesMap.ContainsKey
-- uid: PLATEAU.CityGML.AttributesMap.Count
-  name: Count
-  href: api/PLATEAU.CityGML.AttributesMap.html#PLATEAU_CityGML_AttributesMap_Count
-  commentId: P:PLATEAU.CityGML.AttributesMap.Count
-  fullName: PLATEAU.CityGML.AttributesMap.Count
-  nameWithType: AttributesMap.Count
-- uid: PLATEAU.CityGML.AttributesMap.Count*
-  name: Count
-  href: api/PLATEAU.CityGML.AttributesMap.html#PLATEAU_CityGML_AttributesMap_Count_
-  commentId: Overload:PLATEAU.CityGML.AttributesMap.Count
-  isSpec: "True"
-  fullName: PLATEAU.CityGML.AttributesMap.Count
-  nameWithType: AttributesMap.Count
-- uid: PLATEAU.CityGML.AttributesMap.GetEnumerator
-  name: GetEnumerator()
-  href: api/PLATEAU.CityGML.AttributesMap.html#PLATEAU_CityGML_AttributesMap_GetEnumerator
-  commentId: M:PLATEAU.CityGML.AttributesMap.GetEnumerator
-  fullName: PLATEAU.CityGML.AttributesMap.GetEnumerator()
-  nameWithType: AttributesMap.GetEnumerator()
-- uid: PLATEAU.CityGML.AttributesMap.GetEnumerator*
-  name: GetEnumerator
-  href: api/PLATEAU.CityGML.AttributesMap.html#PLATEAU_CityGML_AttributesMap_GetEnumerator_
-  commentId: Overload:PLATEAU.CityGML.AttributesMap.GetEnumerator
-  isSpec: "True"
-  fullName: PLATEAU.CityGML.AttributesMap.GetEnumerator
-  nameWithType: AttributesMap.GetEnumerator
-- uid: PLATEAU.CityGML.AttributesMap.GetValueOrNull(System.String)
-  name: GetValueOrNull(String)
-  href: api/PLATEAU.CityGML.AttributesMap.html#PLATEAU_CityGML_AttributesMap_GetValueOrNull_System_String_
-  commentId: M:PLATEAU.CityGML.AttributesMap.GetValueOrNull(System.String)
-  fullName: PLATEAU.CityGML.AttributesMap.GetValueOrNull(System.String)
-  nameWithType: AttributesMap.GetValueOrNull(String)
-- uid: PLATEAU.CityGML.AttributesMap.GetValueOrNull*
-  name: GetValueOrNull
-  href: api/PLATEAU.CityGML.AttributesMap.html#PLATEAU_CityGML_AttributesMap_GetValueOrNull_
-  commentId: Overload:PLATEAU.CityGML.AttributesMap.GetValueOrNull
-  isSpec: "True"
-  fullName: PLATEAU.CityGML.AttributesMap.GetValueOrNull
-  nameWithType: AttributesMap.GetValueOrNull
-- uid: PLATEAU.CityGML.AttributesMap.Item(System.String)
-  name: Item[String]
-  href: api/PLATEAU.CityGML.AttributesMap.html#PLATEAU_CityGML_AttributesMap_Item_System_String_
-  commentId: P:PLATEAU.CityGML.AttributesMap.Item(System.String)
-  name.vb: Item(String)
-  fullName: PLATEAU.CityGML.AttributesMap.Item[System.String]
-  fullName.vb: PLATEAU.CityGML.AttributesMap.Item(System.String)
-  nameWithType: AttributesMap.Item[String]
-  nameWithType.vb: AttributesMap.Item(String)
-- uid: PLATEAU.CityGML.AttributesMap.Item*
-  name: Item
-  href: api/PLATEAU.CityGML.AttributesMap.html#PLATEAU_CityGML_AttributesMap_Item_
-  commentId: Overload:PLATEAU.CityGML.AttributesMap.Item
-  isSpec: "True"
-  fullName: PLATEAU.CityGML.AttributesMap.Item
-  nameWithType: AttributesMap.Item
-- uid: PLATEAU.CityGML.AttributesMap.Keys
-  name: Keys
-  href: api/PLATEAU.CityGML.AttributesMap.html#PLATEAU_CityGML_AttributesMap_Keys
-  commentId: P:PLATEAU.CityGML.AttributesMap.Keys
-  fullName: PLATEAU.CityGML.AttributesMap.Keys
-  nameWithType: AttributesMap.Keys
-- uid: PLATEAU.CityGML.AttributesMap.Keys*
-  name: Keys
-  href: api/PLATEAU.CityGML.AttributesMap.html#PLATEAU_CityGML_AttributesMap_Keys_
-  commentId: Overload:PLATEAU.CityGML.AttributesMap.Keys
-  isSpec: "True"
-  fullName: PLATEAU.CityGML.AttributesMap.Keys
-  nameWithType: AttributesMap.Keys
-- uid: PLATEAU.CityGML.AttributesMap.ToString
-  name: ToString()
-  href: api/PLATEAU.CityGML.AttributesMap.html#PLATEAU_CityGML_AttributesMap_ToString
-  commentId: M:PLATEAU.CityGML.AttributesMap.ToString
-  fullName: PLATEAU.CityGML.AttributesMap.ToString()
-  nameWithType: AttributesMap.ToString()
-- uid: PLATEAU.CityGML.AttributesMap.ToString*
-  name: ToString
-  href: api/PLATEAU.CityGML.AttributesMap.html#PLATEAU_CityGML_AttributesMap_ToString_
-  commentId: Overload:PLATEAU.CityGML.AttributesMap.ToString
-  isSpec: "True"
-  fullName: PLATEAU.CityGML.AttributesMap.ToString
-  nameWithType: AttributesMap.ToString
-- uid: PLATEAU.CityGML.AttributesMap.TryGetValue(System.String,PLATEAU.CityGML.AttributeValue@)
-  name: TryGetValue(String, out AttributeValue)
-  href: api/PLATEAU.CityGML.AttributesMap.html#PLATEAU_CityGML_AttributesMap_TryGetValue_System_String_PLATEAU_CityGML_AttributeValue__
-  commentId: M:PLATEAU.CityGML.AttributesMap.TryGetValue(System.String,PLATEAU.CityGML.AttributeValue@)
-  name.vb: TryGetValue(String, ByRef AttributeValue)
-  fullName: PLATEAU.CityGML.AttributesMap.TryGetValue(System.String, out PLATEAU.CityGML.AttributeValue)
-  fullName.vb: PLATEAU.CityGML.AttributesMap.TryGetValue(System.String, ByRef PLATEAU.CityGML.AttributeValue)
-  nameWithType: AttributesMap.TryGetValue(String, out AttributeValue)
-  nameWithType.vb: AttributesMap.TryGetValue(String, ByRef AttributeValue)
-- uid: PLATEAU.CityGML.AttributesMap.TryGetValue*
-  name: TryGetValue
-  href: api/PLATEAU.CityGML.AttributesMap.html#PLATEAU_CityGML_AttributesMap_TryGetValue_
-  commentId: Overload:PLATEAU.CityGML.AttributesMap.TryGetValue
-  isSpec: "True"
-  fullName: PLATEAU.CityGML.AttributesMap.TryGetValue
-  nameWithType: AttributesMap.TryGetValue
-- uid: PLATEAU.CityGML.AttributesMap.Values
-  name: Values
-  href: api/PLATEAU.CityGML.AttributesMap.html#PLATEAU_CityGML_AttributesMap_Values
-  commentId: P:PLATEAU.CityGML.AttributesMap.Values
-  fullName: PLATEAU.CityGML.AttributesMap.Values
-  nameWithType: AttributesMap.Values
-- uid: PLATEAU.CityGML.AttributesMap.Values*
-  name: Values
-  href: api/PLATEAU.CityGML.AttributesMap.html#PLATEAU_CityGML_AttributesMap_Values_
-  commentId: Overload:PLATEAU.CityGML.AttributesMap.Values
-  isSpec: "True"
-  fullName: PLATEAU.CityGML.AttributesMap.Values
-  nameWithType: AttributesMap.Values
 - uid: PLATEAU.CityGML.AttributeType
   name: AttributeType
   href: api/PLATEAU.CityGML.AttributeType.html
@@ -675,103 +540,6 @@ references:
   commentId: F:PLATEAU.CityGML.AttributeType.Uri
   fullName: PLATEAU.CityGML.AttributeType.Uri
   nameWithType: AttributeType.Uri
-- uid: PLATEAU.CityGML.AttributeValue
-  name: AttributeValue
-  href: api/PLATEAU.CityGML.AttributeValue.html
-  commentId: T:PLATEAU.CityGML.AttributeValue
-  fullName: PLATEAU.CityGML.AttributeValue
-  nameWithType: AttributeValue
-- uid: PLATEAU.CityGML.AttributeValue.#ctor(IntPtr)
-  name: AttributeValue(IntPtr)
-  href: api/PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue__ctor_IntPtr_
-  commentId: M:PLATEAU.CityGML.AttributeValue.#ctor(IntPtr)
-  fullName: PLATEAU.CityGML.AttributeValue.AttributeValue(IntPtr)
-  nameWithType: AttributeValue.AttributeValue(IntPtr)
-- uid: PLATEAU.CityGML.AttributeValue.#ctor*
-  name: AttributeValue
-  href: api/PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue__ctor_
-  commentId: Overload:PLATEAU.CityGML.AttributeValue.#ctor
-  isSpec: "True"
-  fullName: PLATEAU.CityGML.AttributeValue.AttributeValue
-  nameWithType: AttributeValue.AttributeValue
-- uid: PLATEAU.CityGML.AttributeValue.AsAttrSet
-  name: AsAttrSet
-  href: api/PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsAttrSet
-  commentId: P:PLATEAU.CityGML.AttributeValue.AsAttrSet
-  fullName: PLATEAU.CityGML.AttributeValue.AsAttrSet
-  nameWithType: AttributeValue.AsAttrSet
-- uid: PLATEAU.CityGML.AttributeValue.AsAttrSet*
-  name: AsAttrSet
-  href: api/PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsAttrSet_
-  commentId: Overload:PLATEAU.CityGML.AttributeValue.AsAttrSet
-  isSpec: "True"
-  fullName: PLATEAU.CityGML.AttributeValue.AsAttrSet
-  nameWithType: AttributeValue.AsAttrSet
-- uid: PLATEAU.CityGML.AttributeValue.AsBool
-  name: AsBool
-  href: api/PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsBool
-  commentId: P:PLATEAU.CityGML.AttributeValue.AsBool
-  fullName: PLATEAU.CityGML.AttributeValue.AsBool
-  nameWithType: AttributeValue.AsBool
-- uid: PLATEAU.CityGML.AttributeValue.AsBool*
-  name: AsBool
-  href: api/PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsBool_
-  commentId: Overload:PLATEAU.CityGML.AttributeValue.AsBool
-  isSpec: "True"
-  fullName: PLATEAU.CityGML.AttributeValue.AsBool
-  nameWithType: AttributeValue.AsBool
-- uid: PLATEAU.CityGML.AttributeValue.AsDouble
-  name: AsDouble
-  href: api/PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsDouble
-  commentId: P:PLATEAU.CityGML.AttributeValue.AsDouble
-  fullName: PLATEAU.CityGML.AttributeValue.AsDouble
-  nameWithType: AttributeValue.AsDouble
-- uid: PLATEAU.CityGML.AttributeValue.AsDouble*
-  name: AsDouble
-  href: api/PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsDouble_
-  commentId: Overload:PLATEAU.CityGML.AttributeValue.AsDouble
-  isSpec: "True"
-  fullName: PLATEAU.CityGML.AttributeValue.AsDouble
-  nameWithType: AttributeValue.AsDouble
-- uid: PLATEAU.CityGML.AttributeValue.AsInt
-  name: AsInt
-  href: api/PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsInt
-  commentId: P:PLATEAU.CityGML.AttributeValue.AsInt
-  fullName: PLATEAU.CityGML.AttributeValue.AsInt
-  nameWithType: AttributeValue.AsInt
-- uid: PLATEAU.CityGML.AttributeValue.AsInt*
-  name: AsInt
-  href: api/PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsInt_
-  commentId: Overload:PLATEAU.CityGML.AttributeValue.AsInt
-  isSpec: "True"
-  fullName: PLATEAU.CityGML.AttributeValue.AsInt
-  nameWithType: AttributeValue.AsInt
-- uid: PLATEAU.CityGML.AttributeValue.AsString
-  name: AsString
-  href: api/PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsString
-  commentId: P:PLATEAU.CityGML.AttributeValue.AsString
-  fullName: PLATEAU.CityGML.AttributeValue.AsString
-  nameWithType: AttributeValue.AsString
-- uid: PLATEAU.CityGML.AttributeValue.AsString*
-  name: AsString
-  href: api/PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsString_
-  commentId: Overload:PLATEAU.CityGML.AttributeValue.AsString
-  isSpec: "True"
-  fullName: PLATEAU.CityGML.AttributeValue.AsString
-  nameWithType: AttributeValue.AsString
-- uid: PLATEAU.CityGML.AttributeValue.Type
-  name: Type
-  href: api/PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_Type
-  commentId: P:PLATEAU.CityGML.AttributeValue.Type
-  fullName: PLATEAU.CityGML.AttributeValue.Type
-  nameWithType: AttributeValue.Type
-- uid: PLATEAU.CityGML.AttributeValue.Type*
-  name: Type
-  href: api/PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_Type_
-  commentId: Overload:PLATEAU.CityGML.AttributeValue.Type
-  isSpec: "True"
-  fullName: PLATEAU.CityGML.AttributeValue.Type
-  nameWithType: AttributeValue.Type
 - uid: PLATEAU.CityGML.CityGml
   name: CityGml
   href: api/PLATEAU.CityGML.CityGml.html
@@ -1329,6 +1097,12 @@ references:
   commentId: F:PLATEAU.CityGML.CityObjectType.COT_Tunnel
   fullName: PLATEAU.CityGML.CityObjectType.COT_Tunnel
   nameWithType: CityObjectType.COT_Tunnel
+- uid: PLATEAU.CityGML.CityObjectType.COT_Unknown
+  name: COT_Unknown
+  href: api/PLATEAU.CityGML.CityObjectType.html#PLATEAU_CityGML_CityObjectType_COT_Unknown
+  commentId: F:PLATEAU.CityGML.CityObjectType.COT_Unknown
+  fullName: PLATEAU.CityGML.CityObjectType.COT_Unknown
+  nameWithType: CityObjectType.COT_Unknown
 - uid: PLATEAU.CityGML.CityObjectType.COT_WallSurface
   name: COT_WallSurface
   href: api/PLATEAU.CityGML.CityObjectType.html#PLATEAU_CityGML_CityObjectType_COT_WallSurface
@@ -1341,6 +1115,12 @@ references:
   commentId: F:PLATEAU.CityGML.CityObjectType.COT_WaterBody
   fullName: PLATEAU.CityGML.CityObjectType.COT_WaterBody
   nameWithType: CityObjectType.COT_WaterBody
+- uid: PLATEAU.CityGML.CityObjectType.COT_WaterSurface
+  name: COT_WaterSurface
+  href: api/PLATEAU.CityGML.CityObjectType.html#PLATEAU_CityGML_CityObjectType_COT_WaterSurface
+  commentId: F:PLATEAU.CityGML.CityObjectType.COT_WaterSurface
+  fullName: PLATEAU.CityGML.CityObjectType.COT_WaterSurface
+  nameWithType: CityObjectType.COT_WaterSurface
 - uid: PLATEAU.CityGML.CityObjectType.COT_Window
   name: COT_Window
   href: api/PLATEAU.CityGML.CityObjectType.html#PLATEAU_CityGML_CityObjectType_COT_Window
@@ -1774,25 +1554,238 @@ references:
   commentId: T:PLATEAU.CityGML.MaterialTargetDefinition
   fullName: PLATEAU.CityGML.MaterialTargetDefinition
   nameWithType: MaterialTargetDefinition
+- uid: PLATEAU.CityGML.NativeAttributesMap
+  name: NativeAttributesMap
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html
+  commentId: T:PLATEAU.CityGML.NativeAttributesMap
+  fullName: PLATEAU.CityGML.NativeAttributesMap
+  nameWithType: NativeAttributesMap
+- uid: PLATEAU.CityGML.NativeAttributesMap.ContainsKey(System.String)
+  name: ContainsKey(String)
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html#PLATEAU_CityGML_NativeAttributesMap_ContainsKey_System_String_
+  commentId: M:PLATEAU.CityGML.NativeAttributesMap.ContainsKey(System.String)
+  fullName: PLATEAU.CityGML.NativeAttributesMap.ContainsKey(System.String)
+  nameWithType: NativeAttributesMap.ContainsKey(String)
+- uid: PLATEAU.CityGML.NativeAttributesMap.ContainsKey*
+  name: ContainsKey
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html#PLATEAU_CityGML_NativeAttributesMap_ContainsKey_
+  commentId: Overload:PLATEAU.CityGML.NativeAttributesMap.ContainsKey
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.NativeAttributesMap.ContainsKey
+  nameWithType: NativeAttributesMap.ContainsKey
+- uid: PLATEAU.CityGML.NativeAttributesMap.Count
+  name: Count
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html#PLATEAU_CityGML_NativeAttributesMap_Count
+  commentId: P:PLATEAU.CityGML.NativeAttributesMap.Count
+  fullName: PLATEAU.CityGML.NativeAttributesMap.Count
+  nameWithType: NativeAttributesMap.Count
+- uid: PLATEAU.CityGML.NativeAttributesMap.Count*
+  name: Count
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html#PLATEAU_CityGML_NativeAttributesMap_Count_
+  commentId: Overload:PLATEAU.CityGML.NativeAttributesMap.Count
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.NativeAttributesMap.Count
+  nameWithType: NativeAttributesMap.Count
+- uid: PLATEAU.CityGML.NativeAttributesMap.GetEnumerator
+  name: GetEnumerator()
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html#PLATEAU_CityGML_NativeAttributesMap_GetEnumerator
+  commentId: M:PLATEAU.CityGML.NativeAttributesMap.GetEnumerator
+  fullName: PLATEAU.CityGML.NativeAttributesMap.GetEnumerator()
+  nameWithType: NativeAttributesMap.GetEnumerator()
+- uid: PLATEAU.CityGML.NativeAttributesMap.GetEnumerator*
+  name: GetEnumerator
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html#PLATEAU_CityGML_NativeAttributesMap_GetEnumerator_
+  commentId: Overload:PLATEAU.CityGML.NativeAttributesMap.GetEnumerator
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.NativeAttributesMap.GetEnumerator
+  nameWithType: NativeAttributesMap.GetEnumerator
+- uid: PLATEAU.CityGML.NativeAttributesMap.GetValueOrNull(System.String)
+  name: GetValueOrNull(String)
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html#PLATEAU_CityGML_NativeAttributesMap_GetValueOrNull_System_String_
+  commentId: M:PLATEAU.CityGML.NativeAttributesMap.GetValueOrNull(System.String)
+  fullName: PLATEAU.CityGML.NativeAttributesMap.GetValueOrNull(System.String)
+  nameWithType: NativeAttributesMap.GetValueOrNull(String)
+- uid: PLATEAU.CityGML.NativeAttributesMap.GetValueOrNull*
+  name: GetValueOrNull
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html#PLATEAU_CityGML_NativeAttributesMap_GetValueOrNull_
+  commentId: Overload:PLATEAU.CityGML.NativeAttributesMap.GetValueOrNull
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.NativeAttributesMap.GetValueOrNull
+  nameWithType: NativeAttributesMap.GetValueOrNull
+- uid: PLATEAU.CityGML.NativeAttributesMap.Item(System.String)
+  name: Item[String]
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html#PLATEAU_CityGML_NativeAttributesMap_Item_System_String_
+  commentId: P:PLATEAU.CityGML.NativeAttributesMap.Item(System.String)
+  name.vb: Item(String)
+  fullName: PLATEAU.CityGML.NativeAttributesMap.Item[System.String]
+  fullName.vb: PLATEAU.CityGML.NativeAttributesMap.Item(System.String)
+  nameWithType: NativeAttributesMap.Item[String]
+  nameWithType.vb: NativeAttributesMap.Item(String)
+- uid: PLATEAU.CityGML.NativeAttributesMap.Item*
+  name: Item
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html#PLATEAU_CityGML_NativeAttributesMap_Item_
+  commentId: Overload:PLATEAU.CityGML.NativeAttributesMap.Item
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.NativeAttributesMap.Item
+  nameWithType: NativeAttributesMap.Item
+- uid: PLATEAU.CityGML.NativeAttributesMap.Keys
+  name: Keys
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html#PLATEAU_CityGML_NativeAttributesMap_Keys
+  commentId: P:PLATEAU.CityGML.NativeAttributesMap.Keys
+  fullName: PLATEAU.CityGML.NativeAttributesMap.Keys
+  nameWithType: NativeAttributesMap.Keys
+- uid: PLATEAU.CityGML.NativeAttributesMap.Keys*
+  name: Keys
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html#PLATEAU_CityGML_NativeAttributesMap_Keys_
+  commentId: Overload:PLATEAU.CityGML.NativeAttributesMap.Keys
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.NativeAttributesMap.Keys
+  nameWithType: NativeAttributesMap.Keys
+- uid: PLATEAU.CityGML.NativeAttributesMap.ToString
+  name: ToString()
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html#PLATEAU_CityGML_NativeAttributesMap_ToString
+  commentId: M:PLATEAU.CityGML.NativeAttributesMap.ToString
+  fullName: PLATEAU.CityGML.NativeAttributesMap.ToString()
+  nameWithType: NativeAttributesMap.ToString()
+- uid: PLATEAU.CityGML.NativeAttributesMap.ToString*
+  name: ToString
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html#PLATEAU_CityGML_NativeAttributesMap_ToString_
+  commentId: Overload:PLATEAU.CityGML.NativeAttributesMap.ToString
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.NativeAttributesMap.ToString
+  nameWithType: NativeAttributesMap.ToString
+- uid: PLATEAU.CityGML.NativeAttributesMap.TryGetValue(System.String,PLATEAU.CityGML.NativeAttributeValue@)
+  name: TryGetValue(String, out NativeAttributeValue)
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html#PLATEAU_CityGML_NativeAttributesMap_TryGetValue_System_String_PLATEAU_CityGML_NativeAttributeValue__
+  commentId: M:PLATEAU.CityGML.NativeAttributesMap.TryGetValue(System.String,PLATEAU.CityGML.NativeAttributeValue@)
+  name.vb: TryGetValue(String, ByRef NativeAttributeValue)
+  fullName: PLATEAU.CityGML.NativeAttributesMap.TryGetValue(System.String, out PLATEAU.CityGML.NativeAttributeValue)
+  fullName.vb: PLATEAU.CityGML.NativeAttributesMap.TryGetValue(System.String, ByRef PLATEAU.CityGML.NativeAttributeValue)
+  nameWithType: NativeAttributesMap.TryGetValue(String, out NativeAttributeValue)
+  nameWithType.vb: NativeAttributesMap.TryGetValue(String, ByRef NativeAttributeValue)
+- uid: PLATEAU.CityGML.NativeAttributesMap.TryGetValue*
+  name: TryGetValue
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html#PLATEAU_CityGML_NativeAttributesMap_TryGetValue_
+  commentId: Overload:PLATEAU.CityGML.NativeAttributesMap.TryGetValue
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.NativeAttributesMap.TryGetValue
+  nameWithType: NativeAttributesMap.TryGetValue
+- uid: PLATEAU.CityGML.NativeAttributesMap.Values
+  name: Values
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html#PLATEAU_CityGML_NativeAttributesMap_Values
+  commentId: P:PLATEAU.CityGML.NativeAttributesMap.Values
+  fullName: PLATEAU.CityGML.NativeAttributesMap.Values
+  nameWithType: NativeAttributesMap.Values
+- uid: PLATEAU.CityGML.NativeAttributesMap.Values*
+  name: Values
+  href: api/PLATEAU.CityGML.NativeAttributesMap.html#PLATEAU_CityGML_NativeAttributesMap_Values_
+  commentId: Overload:PLATEAU.CityGML.NativeAttributesMap.Values
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.NativeAttributesMap.Values
+  nameWithType: NativeAttributesMap.Values
+- uid: PLATEAU.CityGML.NativeAttributeValue
+  name: NativeAttributeValue
+  href: api/PLATEAU.CityGML.NativeAttributeValue.html
+  commentId: T:PLATEAU.CityGML.NativeAttributeValue
+  fullName: PLATEAU.CityGML.NativeAttributeValue
+  nameWithType: NativeAttributeValue
+- uid: PLATEAU.CityGML.NativeAttributeValue.#ctor(IntPtr)
+  name: NativeAttributeValue(IntPtr)
+  href: api/PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue__ctor_IntPtr_
+  commentId: M:PLATEAU.CityGML.NativeAttributeValue.#ctor(IntPtr)
+  fullName: PLATEAU.CityGML.NativeAttributeValue.NativeAttributeValue(IntPtr)
+  nameWithType: NativeAttributeValue.NativeAttributeValue(IntPtr)
+- uid: PLATEAU.CityGML.NativeAttributeValue.#ctor*
+  name: NativeAttributeValue
+  href: api/PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue__ctor_
+  commentId: Overload:PLATEAU.CityGML.NativeAttributeValue.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.NativeAttributeValue.NativeAttributeValue
+  nameWithType: NativeAttributeValue.NativeAttributeValue
+- uid: PLATEAU.CityGML.NativeAttributeValue.AsAttrSet
+  name: AsAttrSet
+  href: api/PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsAttrSet
+  commentId: P:PLATEAU.CityGML.NativeAttributeValue.AsAttrSet
+  fullName: PLATEAU.CityGML.NativeAttributeValue.AsAttrSet
+  nameWithType: NativeAttributeValue.AsAttrSet
+- uid: PLATEAU.CityGML.NativeAttributeValue.AsAttrSet*
+  name: AsAttrSet
+  href: api/PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsAttrSet_
+  commentId: Overload:PLATEAU.CityGML.NativeAttributeValue.AsAttrSet
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.NativeAttributeValue.AsAttrSet
+  nameWithType: NativeAttributeValue.AsAttrSet
+- uid: PLATEAU.CityGML.NativeAttributeValue.AsBool
+  name: AsBool
+  href: api/PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsBool
+  commentId: P:PLATEAU.CityGML.NativeAttributeValue.AsBool
+  fullName: PLATEAU.CityGML.NativeAttributeValue.AsBool
+  nameWithType: NativeAttributeValue.AsBool
+- uid: PLATEAU.CityGML.NativeAttributeValue.AsBool*
+  name: AsBool
+  href: api/PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsBool_
+  commentId: Overload:PLATEAU.CityGML.NativeAttributeValue.AsBool
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.NativeAttributeValue.AsBool
+  nameWithType: NativeAttributeValue.AsBool
+- uid: PLATEAU.CityGML.NativeAttributeValue.AsDouble
+  name: AsDouble
+  href: api/PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsDouble
+  commentId: P:PLATEAU.CityGML.NativeAttributeValue.AsDouble
+  fullName: PLATEAU.CityGML.NativeAttributeValue.AsDouble
+  nameWithType: NativeAttributeValue.AsDouble
+- uid: PLATEAU.CityGML.NativeAttributeValue.AsDouble*
+  name: AsDouble
+  href: api/PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsDouble_
+  commentId: Overload:PLATEAU.CityGML.NativeAttributeValue.AsDouble
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.NativeAttributeValue.AsDouble
+  nameWithType: NativeAttributeValue.AsDouble
+- uid: PLATEAU.CityGML.NativeAttributeValue.AsInt
+  name: AsInt
+  href: api/PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsInt
+  commentId: P:PLATEAU.CityGML.NativeAttributeValue.AsInt
+  fullName: PLATEAU.CityGML.NativeAttributeValue.AsInt
+  nameWithType: NativeAttributeValue.AsInt
+- uid: PLATEAU.CityGML.NativeAttributeValue.AsInt*
+  name: AsInt
+  href: api/PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsInt_
+  commentId: Overload:PLATEAU.CityGML.NativeAttributeValue.AsInt
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.NativeAttributeValue.AsInt
+  nameWithType: NativeAttributeValue.AsInt
+- uid: PLATEAU.CityGML.NativeAttributeValue.AsString
+  name: AsString
+  href: api/PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsString
+  commentId: P:PLATEAU.CityGML.NativeAttributeValue.AsString
+  fullName: PLATEAU.CityGML.NativeAttributeValue.AsString
+  nameWithType: NativeAttributeValue.AsString
+- uid: PLATEAU.CityGML.NativeAttributeValue.AsString*
+  name: AsString
+  href: api/PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsString_
+  commentId: Overload:PLATEAU.CityGML.NativeAttributeValue.AsString
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.NativeAttributeValue.AsString
+  nameWithType: NativeAttributeValue.AsString
+- uid: PLATEAU.CityGML.NativeAttributeValue.Type
+  name: Type
+  href: api/PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_Type
+  commentId: P:PLATEAU.CityGML.NativeAttributeValue.Type
+  fullName: PLATEAU.CityGML.NativeAttributeValue.Type
+  nameWithType: NativeAttributeValue.Type
+- uid: PLATEAU.CityGML.NativeAttributeValue.Type*
+  name: Type
+  href: api/PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_Type_
+  commentId: Overload:PLATEAU.CityGML.NativeAttributeValue.Type
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.NativeAttributeValue.Type
+  nameWithType: NativeAttributeValue.Type
 - uid: PLATEAU.CityGML.Object
   name: Object
   href: api/PLATEAU.CityGML.Object.html
   commentId: T:PLATEAU.CityGML.Object
   fullName: PLATEAU.CityGML.Object
   nameWithType: Object
-- uid: PLATEAU.CityGML.Object.AttributesMap
-  name: AttributesMap
-  href: api/PLATEAU.CityGML.Object.html#PLATEAU_CityGML_Object_AttributesMap
-  commentId: P:PLATEAU.CityGML.Object.AttributesMap
-  fullName: PLATEAU.CityGML.Object.AttributesMap
-  nameWithType: Object.AttributesMap
-- uid: PLATEAU.CityGML.Object.AttributesMap*
-  name: AttributesMap
-  href: api/PLATEAU.CityGML.Object.html#PLATEAU_CityGML_Object_AttributesMap_
-  commentId: Overload:PLATEAU.CityGML.Object.AttributesMap
-  isSpec: "True"
-  fullName: PLATEAU.CityGML.Object.AttributesMap
-  nameWithType: Object.AttributesMap
 - uid: PLATEAU.CityGML.Object.Handle
   name: Handle
   href: api/PLATEAU.CityGML.Object.html#PLATEAU_CityGML_Object_Handle
@@ -1819,6 +1812,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityGML.Object.ID
   nameWithType: Object.ID
+- uid: PLATEAU.CityGML.Object.NativeAttributesMap
+  name: NativeAttributesMap
+  href: api/PLATEAU.CityGML.Object.html#PLATEAU_CityGML_Object_NativeAttributesMap
+  commentId: P:PLATEAU.CityGML.Object.NativeAttributesMap
+  fullName: PLATEAU.CityGML.Object.NativeAttributesMap
+  nameWithType: Object.NativeAttributesMap
+- uid: PLATEAU.CityGML.Object.NativeAttributesMap*
+  name: NativeAttributesMap
+  href: api/PLATEAU.CityGML.Object.html#PLATEAU_CityGML_Object_NativeAttributesMap_
+  commentId: Overload:PLATEAU.CityGML.Object.NativeAttributesMap
+  isSpec: "True"
+  fullName: PLATEAU.CityGML.Object.NativeAttributesMap
+  nameWithType: Object.NativeAttributesMap
 - uid: PLATEAU.CityGML.Polygon
   name: Polygon
   href: api/PLATEAU.CityGML.Polygon.html
@@ -2180,360 +2186,372 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityImport.AreaSelector.AreaSelectResult.PackageToLodDict
   nameWithType: AreaSelectResult.PackageToLodDict
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs
-  name: PLATEAU.CityImport.AreaSelector.SceneObjs
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.html
-  commentId: N:PLATEAU.CityImport.AreaSelector.SceneObjs
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs
-  nameWithType: PLATEAU.CityImport.AreaSelector.SceneObjs
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos
+  name: PLATEAU.CityImport.AreaSelector.Display.Gizmos
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.html
+  commentId: N:PLATEAU.CityImport.AreaSelector.Display.Gizmos
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos
+  nameWithType: PLATEAU.CityImport.AreaSelector.Display.Gizmos
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.HandlesBase
+  name: HandlesBase
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.HandlesBase.html
+  commentId: T:PLATEAU.CityImport.AreaSelector.Display.Gizmos.HandlesBase
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.HandlesBase
+  nameWithType: HandlesBase
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons
+  name: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.html
+  commentId: N:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons
+  nameWithType: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController
   name: AreaLodController
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.html
-  commentId: T:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.html
+  commentId: T:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController
   nameWithType: AreaLodController
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.#ctor(DatasetSourceConfig,GeoReference,IEnumerable{MeshCode})
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.#ctor(DatasetSourceConfig,GeoReference,IEnumerable{MeshCode})
   name: AreaLodController(DatasetSourceConfig, GeoReference, IEnumerable<MeshCode>)
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodController__ctor_DatasetSourceConfig_GeoReference_IEnumerable_MeshCode__
-  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.#ctor(DatasetSourceConfig,GeoReference,IEnumerable{MeshCode})
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodController__ctor_DatasetSourceConfig_GeoReference_IEnumerable_MeshCode__
+  commentId: M:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.#ctor(DatasetSourceConfig,GeoReference,IEnumerable{MeshCode})
   name.vb: AreaLodController(DatasetSourceConfig, GeoReference, IEnumerable(Of MeshCode))
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.AreaLodController(DatasetSourceConfig, GeoReference, IEnumerable<MeshCode>)
-  fullName.vb: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.AreaLodController(DatasetSourceConfig, GeoReference, IEnumerable(Of MeshCode))
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.AreaLodController(DatasetSourceConfig, GeoReference, IEnumerable<MeshCode>)
+  fullName.vb: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.AreaLodController(DatasetSourceConfig, GeoReference, IEnumerable(Of MeshCode))
   nameWithType: AreaLodController.AreaLodController(DatasetSourceConfig, GeoReference, IEnumerable<MeshCode>)
   nameWithType.vb: AreaLodController.AreaLodController(DatasetSourceConfig, GeoReference, IEnumerable(Of MeshCode))
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.#ctor*
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.#ctor*
   name: AreaLodController
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodController__ctor_
-  commentId: Overload:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.#ctor
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodController__ctor_
+  commentId: Overload:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.#ctor
   isSpec: "True"
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.AreaLodController
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.AreaLodController
   nameWithType: AreaLodController.AreaLodController
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.DrawSceneGUI(Camera)
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.DrawSceneGUI(Camera)
   name: DrawSceneGUI(Camera)
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodController_DrawSceneGUI_Camera_
-  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.DrawSceneGUI(Camera)
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.DrawSceneGUI(Camera)
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodController_DrawSceneGUI_Camera_
+  commentId: M:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.DrawSceneGUI(Camera)
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.DrawSceneGUI(Camera)
   nameWithType: AreaLodController.DrawSceneGUI(Camera)
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.DrawSceneGUI*
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.DrawSceneGUI*
   name: DrawSceneGUI
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodController_DrawSceneGUI_
-  commentId: Overload:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.DrawSceneGUI
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodController_DrawSceneGUI_
+  commentId: Overload:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.DrawSceneGUI
   isSpec: "True"
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.DrawSceneGUI
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.DrawSceneGUI
   nameWithType: AreaLodController.DrawSceneGUI
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.SwitchLodIcon(System.Int32,System.Boolean)
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.SwitchLodIcon(System.Int32,System.Boolean)
   name: SwitchLodIcon(Int32, Boolean)
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodController_SwitchLodIcon_System_Int32_System_Boolean_
-  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.SwitchLodIcon(System.Int32,System.Boolean)
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.SwitchLodIcon(System.Int32, System.Boolean)
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodController_SwitchLodIcon_System_Int32_System_Boolean_
+  commentId: M:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.SwitchLodIcon(System.Int32,System.Boolean)
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.SwitchLodIcon(System.Int32, System.Boolean)
   nameWithType: AreaLodController.SwitchLodIcon(Int32, Boolean)
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.SwitchLodIcon*
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.SwitchLodIcon*
   name: SwitchLodIcon
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodController_SwitchLodIcon_
-  commentId: Overload:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.SwitchLodIcon
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodController_SwitchLodIcon_
+  commentId: Overload:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.SwitchLodIcon
   isSpec: "True"
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.SwitchLodIcon
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.SwitchLodIcon
   nameWithType: AreaLodController.SwitchLodIcon
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.Update(Extent)
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.Update(Extent)
   name: Update(Extent)
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodController_Update_Extent_
-  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.Update(Extent)
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.Update(Extent)
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodController_Update_Extent_
+  commentId: M:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.Update(Extent)
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.Update(Extent)
   nameWithType: AreaLodController.Update(Extent)
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.Update*
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.Update*
   name: Update
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodController_Update_
-  commentId: Overload:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.Update
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodController_Update_
+  commentId: Overload:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.Update
   isSpec: "True"
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.Update
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.Update
   nameWithType: AreaLodController.Update
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher
   name: AreaLodSearcher
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.html
-  commentId: T:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.html
+  commentId: T:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher
   nameWithType: AreaLodSearcher
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.#ctor(DatasetSourceConfig)
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.#ctor(DatasetSourceConfig)
   name: AreaLodSearcher(DatasetSourceConfig)
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodSearcher__ctor_DatasetSourceConfig_
-  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.#ctor(DatasetSourceConfig)
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.AreaLodSearcher(DatasetSourceConfig)
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodSearcher__ctor_DatasetSourceConfig_
+  commentId: M:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.#ctor(DatasetSourceConfig)
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.AreaLodSearcher(DatasetSourceConfig)
   nameWithType: AreaLodSearcher.AreaLodSearcher(DatasetSourceConfig)
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.#ctor*
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.#ctor*
   name: AreaLodSearcher
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodSearcher__ctor_
-  commentId: Overload:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.#ctor
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodSearcher__ctor_
+  commentId: Overload:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.#ctor
   isSpec: "True"
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.AreaLodSearcher
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.AreaLodSearcher
   nameWithType: AreaLodSearcher.AreaLodSearcher
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.LoadLodsInMeshCode(System.String)
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.LoadLodsInMeshCode(System.String)
   name: LoadLodsInMeshCode(String)
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodSearcher_LoadLodsInMeshCode_System_String_
-  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.LoadLodsInMeshCode(System.String)
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.LoadLodsInMeshCode(System.String)
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodSearcher_LoadLodsInMeshCode_System_String_
+  commentId: M:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.LoadLodsInMeshCode(System.String)
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.LoadLodsInMeshCode(System.String)
   nameWithType: AreaLodSearcher.LoadLodsInMeshCode(String)
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.LoadLodsInMeshCode*
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.LoadLodsInMeshCode*
   name: LoadLodsInMeshCode
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodSearcher_LoadLodsInMeshCode_
-  commentId: Overload:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.LoadLodsInMeshCode
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodSearcher_LoadLodsInMeshCode_
+  commentId: Overload:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.LoadLodsInMeshCode
   isSpec: "True"
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodSearcher.LoadLodsInMeshCode
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.LoadLodsInMeshCode
   nameWithType: AreaLodSearcher.LoadLodsInMeshCode
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView
   name: AreaLodView
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.html
-  commentId: T:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.html
+  commentId: T:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView
   nameWithType: AreaLodView
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.#ctor(PackageToLodDict,Vector3,Vector3)
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.#ctor(PackageToLodDict,Vector3,Vector3)
   name: AreaLodView(PackageToLodDict, Vector3, Vector3)
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView__ctor_PackageToLodDict_Vector3_Vector3_
-  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.#ctor(PackageToLodDict,Vector3,Vector3)
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.AreaLodView(PackageToLodDict, Vector3, Vector3)
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView__ctor_PackageToLodDict_Vector3_Vector3_
+  commentId: M:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.#ctor(PackageToLodDict,Vector3,Vector3)
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.AreaLodView(PackageToLodDict, Vector3, Vector3)
   nameWithType: AreaLodView.AreaLodView(PackageToLodDict, Vector3, Vector3)
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.#ctor*
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.#ctor*
   name: AreaLodView
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView__ctor_
-  commentId: Overload:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.#ctor
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView__ctor_
+  commentId: Overload:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.#ctor
   isSpec: "True"
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.AreaLodView
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.AreaLodView
   nameWithType: AreaLodView.AreaLodView
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.CalculateLodViewParam(Camera,ICollection{System.Int32})
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.CalculateLodViewParam(Camera,ICollection{System.Int32})
   name: CalculateLodViewParam(Camera, ICollection<Int32>)
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_CalculateLodViewParam_Camera_ICollection_System_Int32__
-  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.CalculateLodViewParam(Camera,ICollection{System.Int32})
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView_CalculateLodViewParam_Camera_ICollection_System_Int32__
+  commentId: M:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.CalculateLodViewParam(Camera,ICollection{System.Int32})
   name.vb: CalculateLodViewParam(Camera, ICollection(Of Int32))
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.CalculateLodViewParam(Camera, ICollection<System.Int32>)
-  fullName.vb: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.CalculateLodViewParam(Camera, ICollection(Of System.Int32))
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.CalculateLodViewParam(Camera, ICollection<System.Int32>)
+  fullName.vb: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.CalculateLodViewParam(Camera, ICollection(Of System.Int32))
   nameWithType: AreaLodView.CalculateLodViewParam(Camera, ICollection<Int32>)
   nameWithType.vb: AreaLodView.CalculateLodViewParam(Camera, ICollection(Of Int32))
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.CalculateLodViewParam*
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.CalculateLodViewParam*
   name: CalculateLodViewParam
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_CalculateLodViewParam_
-  commentId: Overload:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.CalculateLodViewParam
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView_CalculateLodViewParam_
+  commentId: Overload:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.CalculateLodViewParam
   isSpec: "True"
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.CalculateLodViewParam
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.CalculateLodViewParam
   nameWithType: AreaLodView.CalculateLodViewParam
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.DrawHandles(Camera,HashSet{System.Int32})
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.DrawHandles(Camera,HashSet{System.Int32})
   name: DrawHandles(Camera, HashSet<Int32>)
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_DrawHandles_Camera_HashSet_System_Int32__
-  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.DrawHandles(Camera,HashSet{System.Int32})
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView_DrawHandles_Camera_HashSet_System_Int32__
+  commentId: M:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.DrawHandles(Camera,HashSet{System.Int32})
   name.vb: DrawHandles(Camera, HashSet(Of Int32))
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.DrawHandles(Camera, HashSet<System.Int32>)
-  fullName.vb: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.DrawHandles(Camera, HashSet(Of System.Int32))
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.DrawHandles(Camera, HashSet<System.Int32>)
+  fullName.vb: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.DrawHandles(Camera, HashSet(Of System.Int32))
   nameWithType: AreaLodView.DrawHandles(Camera, HashSet<Int32>)
   nameWithType.vb: AreaLodView.DrawHandles(Camera, HashSet(Of Int32))
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.DrawHandles*
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.DrawHandles*
   name: DrawHandles
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_DrawHandles_
-  commentId: Overload:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.DrawHandles
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView_DrawHandles_
+  commentId: Overload:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.DrawHandles
   isSpec: "True"
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.DrawHandles
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.DrawHandles
   nameWithType: AreaLodView.DrawHandles
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.HasIconOfPackage(PredefinedCityModelPackage)
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.HasIconOfPackage(PredefinedCityModelPackage)
   name: HasIconOfPackage(PredefinedCityModelPackage)
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_HasIconOfPackage_PredefinedCityModelPackage_
-  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.HasIconOfPackage(PredefinedCityModelPackage)
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.HasIconOfPackage(PredefinedCityModelPackage)
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView_HasIconOfPackage_PredefinedCityModelPackage_
+  commentId: M:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.HasIconOfPackage(PredefinedCityModelPackage)
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.HasIconOfPackage(PredefinedCityModelPackage)
   nameWithType: AreaLodView.HasIconOfPackage(PredefinedCityModelPackage)
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.HasIconOfPackage*
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.HasIconOfPackage*
   name: HasIconOfPackage
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_HasIconOfPackage_
-  commentId: Overload:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.HasIconOfPackage
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView_HasIconOfPackage_
+  commentId: Overload:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.HasIconOfPackage
   isSpec: "True"
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.HasIconOfPackage
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.HasIconOfPackage
   nameWithType: AreaLodView.HasIconOfPackage
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.Init
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.Init
   name: Init()
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_Init
-  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.Init
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.Init()
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView_Init
+  commentId: M:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.Init
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.Init()
   nameWithType: AreaLodView.Init()
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.Init*
+- uid: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.Init*
   name: Init
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.html#PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_Init_
-  commentId: Overload:PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.Init
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.html#PLATEAU_CityImport_AreaSelector_Display_Gizmos_LODIcons_AreaLodView_Init_
+  commentId: Overload:PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.Init
   isSpec: "True"
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.Init
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.Init
   nameWithType: AreaLodView.Init
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader
+- uid: PLATEAU.CityImport.AreaSelector.Display.Maps
+  name: PLATEAU.CityImport.AreaSelector.Display.Maps
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Maps.html
+  commentId: N:PLATEAU.CityImport.AreaSelector.Display.Maps
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Maps
+  nameWithType: PLATEAU.CityImport.AreaSelector.Display.Maps
+- uid: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader
   name: GSIMapLoader
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader.html
-  commentId: T:PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader.html
+  commentId: T:PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader
   nameWithType: GSIMapLoader
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader.DownloadAndPlaceAsync(Extent,GeoReference,System.Int32,CancellationToken)
+- uid: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader.DownloadAndPlaceAsync(Extent,GeoReference,System.Int32,CancellationToken)
   name: DownloadAndPlaceAsync(Extent, GeoReference, Int32, CancellationToken)
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader.html#PLATEAU_CityImport_AreaSelector_SceneObjs_GSIMapLoader_DownloadAndPlaceAsync_Extent_GeoReference_System_Int32_CancellationToken_
-  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader.DownloadAndPlaceAsync(Extent,GeoReference,System.Int32,CancellationToken)
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader.DownloadAndPlaceAsync(Extent, GeoReference, System.Int32, CancellationToken)
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader.html#PLATEAU_CityImport_AreaSelector_Display_Maps_GSIMapLoader_DownloadAndPlaceAsync_Extent_GeoReference_System_Int32_CancellationToken_
+  commentId: M:PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader.DownloadAndPlaceAsync(Extent,GeoReference,System.Int32,CancellationToken)
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader.DownloadAndPlaceAsync(Extent, GeoReference, System.Int32, CancellationToken)
   nameWithType: GSIMapLoader.DownloadAndPlaceAsync(Extent, GeoReference, Int32, CancellationToken)
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader.DownloadAndPlaceAsync*
+- uid: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader.DownloadAndPlaceAsync*
   name: DownloadAndPlaceAsync
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader.html#PLATEAU_CityImport_AreaSelector_SceneObjs_GSIMapLoader_DownloadAndPlaceAsync_
-  commentId: Overload:PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader.DownloadAndPlaceAsync
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader.html#PLATEAU_CityImport_AreaSelector_Display_Maps_GSIMapLoader_DownloadAndPlaceAsync_
+  commentId: Overload:PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader.DownloadAndPlaceAsync
   isSpec: "True"
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader.DownloadAndPlaceAsync
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader.DownloadAndPlaceAsync
   nameWithType: GSIMapLoader.DownloadAndPlaceAsync
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader.MapRootObjName
+- uid: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader.MapRootObjName
   name: MapRootObjName
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader.html#PLATEAU_CityImport_AreaSelector_SceneObjs_GSIMapLoader_MapRootObjName
-  commentId: F:PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader.MapRootObjName
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader.MapRootObjName
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader.html#PLATEAU_CityImport_AreaSelector_Display_Maps_GSIMapLoader_MapRootObjName
+  commentId: F:PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader.MapRootObjName
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader.MapRootObjName
   nameWithType: GSIMapLoader.MapRootObjName
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch
+- uid: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch
   name: GSIMapLoaderZoomSwitch
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.html
-  commentId: T:PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.html
+  commentId: T:PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch
   nameWithType: GSIMapLoaderZoomSwitch
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.#ctor(GeoReference,Extent)
+- uid: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.#ctor(GeoReference,Extent)
   name: GSIMapLoaderZoomSwitch(GeoReference, Extent)
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.html#PLATEAU_CityImport_AreaSelector_SceneObjs_GSIMapLoaderZoomSwitch__ctor_GeoReference_Extent_
-  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.#ctor(GeoReference,Extent)
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.GSIMapLoaderZoomSwitch(GeoReference, Extent)
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.html#PLATEAU_CityImport_AreaSelector_Display_Maps_GSIMapLoaderZoomSwitch__ctor_GeoReference_Extent_
+  commentId: M:PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.#ctor(GeoReference,Extent)
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.GSIMapLoaderZoomSwitch(GeoReference, Extent)
   nameWithType: GSIMapLoaderZoomSwitch.GSIMapLoaderZoomSwitch(GeoReference, Extent)
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.#ctor*
+- uid: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.#ctor*
   name: GSIMapLoaderZoomSwitch
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.html#PLATEAU_CityImport_AreaSelector_SceneObjs_GSIMapLoaderZoomSwitch__ctor_
-  commentId: Overload:PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.#ctor
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.html#PLATEAU_CityImport_AreaSelector_Display_Maps_GSIMapLoaderZoomSwitch__ctor_
+  commentId: Overload:PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.#ctor
   isSpec: "True"
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.GSIMapLoaderZoomSwitch
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.GSIMapLoaderZoomSwitch
   nameWithType: GSIMapLoaderZoomSwitch.GSIMapLoaderZoomSwitch
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.CalcCameraExtent(Camera,GeoReference)
+- uid: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.CalcCameraExtent(Camera,GeoReference)
   name: CalcCameraExtent(Camera, GeoReference)
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.html#PLATEAU_CityImport_AreaSelector_SceneObjs_GSIMapLoaderZoomSwitch_CalcCameraExtent_Camera_GeoReference_
-  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.CalcCameraExtent(Camera,GeoReference)
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.CalcCameraExtent(Camera, GeoReference)
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.html#PLATEAU_CityImport_AreaSelector_Display_Maps_GSIMapLoaderZoomSwitch_CalcCameraExtent_Camera_GeoReference_
+  commentId: M:PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.CalcCameraExtent(Camera,GeoReference)
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.CalcCameraExtent(Camera, GeoReference)
   nameWithType: GSIMapLoaderZoomSwitch.CalcCameraExtent(Camera, GeoReference)
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.CalcCameraExtent*
+- uid: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.CalcCameraExtent*
   name: CalcCameraExtent
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.html#PLATEAU_CityImport_AreaSelector_SceneObjs_GSIMapLoaderZoomSwitch_CalcCameraExtent_
-  commentId: Overload:PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.CalcCameraExtent
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.html#PLATEAU_CityImport_AreaSelector_Display_Maps_GSIMapLoaderZoomSwitch_CalcCameraExtent_
+  commentId: Overload:PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.CalcCameraExtent
   isSpec: "True"
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.CalcCameraExtent
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.CalcCameraExtent
   nameWithType: GSIMapLoaderZoomSwitch.CalcCameraExtent
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.Dispose
+- uid: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.Dispose
   name: Dispose()
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.html#PLATEAU_CityImport_AreaSelector_SceneObjs_GSIMapLoaderZoomSwitch_Dispose
-  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.Dispose
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.Dispose()
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.html#PLATEAU_CityImport_AreaSelector_Display_Maps_GSIMapLoaderZoomSwitch_Dispose
+  commentId: M:PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.Dispose
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.Dispose()
   nameWithType: GSIMapLoaderZoomSwitch.Dispose()
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.Dispose*
+- uid: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.Dispose*
   name: Dispose
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.html#PLATEAU_CityImport_AreaSelector_SceneObjs_GSIMapLoaderZoomSwitch_Dispose_
-  commentId: Overload:PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.Dispose
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.html#PLATEAU_CityImport_AreaSelector_Display_Maps_GSIMapLoaderZoomSwitch_Dispose_
+  commentId: Overload:PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.Dispose
   isSpec: "True"
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.Dispose
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.Dispose
   nameWithType: GSIMapLoaderZoomSwitch.Dispose
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.Update(Camera)
+- uid: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.Update(Camera)
   name: Update(Camera)
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.html#PLATEAU_CityImport_AreaSelector_SceneObjs_GSIMapLoaderZoomSwitch_Update_Camera_
-  commentId: M:PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.Update(Camera)
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.Update(Camera)
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.html#PLATEAU_CityImport_AreaSelector_Display_Maps_GSIMapLoaderZoomSwitch_Update_Camera_
+  commentId: M:PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.Update(Camera)
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.Update(Camera)
   nameWithType: GSIMapLoaderZoomSwitch.Update(Camera)
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.Update*
+- uid: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.Update*
   name: Update
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.html#PLATEAU_CityImport_AreaSelector_SceneObjs_GSIMapLoaderZoomSwitch_Update_
-  commentId: Overload:PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.Update
+  href: api/PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.html#PLATEAU_CityImport_AreaSelector_Display_Maps_GSIMapLoaderZoomSwitch_Update_
+  commentId: Overload:PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.Update
   isSpec: "True"
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoaderZoomSwitch.Update
+  fullName: PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.Update
   nameWithType: GSIMapLoaderZoomSwitch.Update
-- uid: PLATEAU.CityImport.AreaSelector.SceneObjs.HandlesBase
-  name: HandlesBase
-  href: api/PLATEAU.CityImport.AreaSelector.SceneObjs.HandlesBase.html
-  commentId: T:PLATEAU.CityImport.AreaSelector.SceneObjs.HandlesBase
-  fullName: PLATEAU.CityImport.AreaSelector.SceneObjs.HandlesBase
-  nameWithType: HandlesBase
-- uid: PLATEAU.CityImport.Setting
-  name: PLATEAU.CityImport.Setting
-  href: api/PLATEAU.CityImport.Setting.html
-  commentId: N:PLATEAU.CityImport.Setting
-  fullName: PLATEAU.CityImport.Setting
-  nameWithType: PLATEAU.CityImport.Setting
-- uid: PLATEAU.CityImport.Setting.PackageToLodDict
+- uid: PLATEAU.CityImport.Config.PackageLoadConfigs
+  name: PLATEAU.CityImport.Config.PackageLoadConfigs
+  href: api/PLATEAU.CityImport.Config.PackageLoadConfigs.html
+  commentId: N:PLATEAU.CityImport.Config.PackageLoadConfigs
+  fullName: PLATEAU.CityImport.Config.PackageLoadConfigs
+  nameWithType: PLATEAU.CityImport.Config.PackageLoadConfigs
+- uid: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict
   name: PackageToLodDict
-  href: api/PLATEAU.CityImport.Setting.PackageToLodDict.html
-  commentId: T:PLATEAU.CityImport.Setting.PackageToLodDict
-  fullName: PLATEAU.CityImport.Setting.PackageToLodDict
+  href: api/PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.html
+  commentId: T:PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict
+  fullName: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict
   nameWithType: PackageToLodDict
-- uid: PLATEAU.CityImport.Setting.PackageToLodDict.AddOrUpdate(PredefinedCityModelPackage,System.Int32)
+- uid: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.AddOrUpdate(PredefinedCityModelPackage,System.Int32)
   name: AddOrUpdate(PredefinedCityModelPackage, Int32)
-  href: api/PLATEAU.CityImport.Setting.PackageToLodDict.html#PLATEAU_CityImport_Setting_PackageToLodDict_AddOrUpdate_PredefinedCityModelPackage_System_Int32_
-  commentId: M:PLATEAU.CityImport.Setting.PackageToLodDict.AddOrUpdate(PredefinedCityModelPackage,System.Int32)
-  fullName: PLATEAU.CityImport.Setting.PackageToLodDict.AddOrUpdate(PredefinedCityModelPackage, System.Int32)
+  href: api/PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.html#PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_AddOrUpdate_PredefinedCityModelPackage_System_Int32_
+  commentId: M:PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.AddOrUpdate(PredefinedCityModelPackage,System.Int32)
+  fullName: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.AddOrUpdate(PredefinedCityModelPackage, System.Int32)
   nameWithType: PackageToLodDict.AddOrUpdate(PredefinedCityModelPackage, Int32)
-- uid: PLATEAU.CityImport.Setting.PackageToLodDict.AddOrUpdate*
+- uid: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.AddOrUpdate*
   name: AddOrUpdate
-  href: api/PLATEAU.CityImport.Setting.PackageToLodDict.html#PLATEAU_CityImport_Setting_PackageToLodDict_AddOrUpdate_
-  commentId: Overload:PLATEAU.CityImport.Setting.PackageToLodDict.AddOrUpdate
+  href: api/PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.html#PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_AddOrUpdate_
+  commentId: Overload:PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.AddOrUpdate
   isSpec: "True"
-  fullName: PLATEAU.CityImport.Setting.PackageToLodDict.AddOrUpdate
+  fullName: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.AddOrUpdate
   nameWithType: PackageToLodDict.AddOrUpdate
-- uid: PLATEAU.CityImport.Setting.PackageToLodDict.Contains(PredefinedCityModelPackage)
+- uid: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.Contains(PredefinedCityModelPackage)
   name: Contains(PredefinedCityModelPackage)
-  href: api/PLATEAU.CityImport.Setting.PackageToLodDict.html#PLATEAU_CityImport_Setting_PackageToLodDict_Contains_PredefinedCityModelPackage_
-  commentId: M:PLATEAU.CityImport.Setting.PackageToLodDict.Contains(PredefinedCityModelPackage)
-  fullName: PLATEAU.CityImport.Setting.PackageToLodDict.Contains(PredefinedCityModelPackage)
+  href: api/PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.html#PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_Contains_PredefinedCityModelPackage_
+  commentId: M:PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.Contains(PredefinedCityModelPackage)
+  fullName: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.Contains(PredefinedCityModelPackage)
   nameWithType: PackageToLodDict.Contains(PredefinedCityModelPackage)
-- uid: PLATEAU.CityImport.Setting.PackageToLodDict.Contains*
+- uid: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.Contains*
   name: Contains
-  href: api/PLATEAU.CityImport.Setting.PackageToLodDict.html#PLATEAU_CityImport_Setting_PackageToLodDict_Contains_
-  commentId: Overload:PLATEAU.CityImport.Setting.PackageToLodDict.Contains
+  href: api/PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.html#PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_Contains_
+  commentId: Overload:PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.Contains
   isSpec: "True"
-  fullName: PLATEAU.CityImport.Setting.PackageToLodDict.Contains
+  fullName: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.Contains
   nameWithType: PackageToLodDict.Contains
-- uid: PLATEAU.CityImport.Setting.PackageToLodDict.GetEnumerator
+- uid: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetEnumerator
   name: GetEnumerator()
-  href: api/PLATEAU.CityImport.Setting.PackageToLodDict.html#PLATEAU_CityImport_Setting_PackageToLodDict_GetEnumerator
-  commentId: M:PLATEAU.CityImport.Setting.PackageToLodDict.GetEnumerator
-  fullName: PLATEAU.CityImport.Setting.PackageToLodDict.GetEnumerator()
+  href: api/PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.html#PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_GetEnumerator
+  commentId: M:PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetEnumerator
+  fullName: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetEnumerator()
   nameWithType: PackageToLodDict.GetEnumerator()
-- uid: PLATEAU.CityImport.Setting.PackageToLodDict.GetEnumerator*
+- uid: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetEnumerator*
   name: GetEnumerator
-  href: api/PLATEAU.CityImport.Setting.PackageToLodDict.html#PLATEAU_CityImport_Setting_PackageToLodDict_GetEnumerator_
-  commentId: Overload:PLATEAU.CityImport.Setting.PackageToLodDict.GetEnumerator
+  href: api/PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.html#PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_GetEnumerator_
+  commentId: Overload:PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetEnumerator
   isSpec: "True"
-  fullName: PLATEAU.CityImport.Setting.PackageToLodDict.GetEnumerator
+  fullName: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetEnumerator
   nameWithType: PackageToLodDict.GetEnumerator
-- uid: PLATEAU.CityImport.Setting.PackageToLodDict.GetLod(PredefinedCityModelPackage)
+- uid: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetLod(PredefinedCityModelPackage)
   name: GetLod(PredefinedCityModelPackage)
-  href: api/PLATEAU.CityImport.Setting.PackageToLodDict.html#PLATEAU_CityImport_Setting_PackageToLodDict_GetLod_PredefinedCityModelPackage_
-  commentId: M:PLATEAU.CityImport.Setting.PackageToLodDict.GetLod(PredefinedCityModelPackage)
-  fullName: PLATEAU.CityImport.Setting.PackageToLodDict.GetLod(PredefinedCityModelPackage)
+  href: api/PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.html#PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_GetLod_PredefinedCityModelPackage_
+  commentId: M:PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetLod(PredefinedCityModelPackage)
+  fullName: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetLod(PredefinedCityModelPackage)
   nameWithType: PackageToLodDict.GetLod(PredefinedCityModelPackage)
-- uid: PLATEAU.CityImport.Setting.PackageToLodDict.GetLod*
+- uid: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetLod*
   name: GetLod
-  href: api/PLATEAU.CityImport.Setting.PackageToLodDict.html#PLATEAU_CityImport_Setting_PackageToLodDict_GetLod_
-  commentId: Overload:PLATEAU.CityImport.Setting.PackageToLodDict.GetLod
+  href: api/PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.html#PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_GetLod_
+  commentId: Overload:PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetLod
   isSpec: "True"
-  fullName: PLATEAU.CityImport.Setting.PackageToLodDict.GetLod
+  fullName: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetLod
   nameWithType: PackageToLodDict.GetLod
-- uid: PLATEAU.CityImport.Setting.PackageToLodDict.MargeDict(PLATEAU.CityImport.Setting.PackageToLodDict)
+- uid: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MargeDict(PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict)
   name: MargeDict(PackageToLodDict)
-  href: api/PLATEAU.CityImport.Setting.PackageToLodDict.html#PLATEAU_CityImport_Setting_PackageToLodDict_MargeDict_PLATEAU_CityImport_Setting_PackageToLodDict_
-  commentId: M:PLATEAU.CityImport.Setting.PackageToLodDict.MargeDict(PLATEAU.CityImport.Setting.PackageToLodDict)
-  fullName: PLATEAU.CityImport.Setting.PackageToLodDict.MargeDict(PLATEAU.CityImport.Setting.PackageToLodDict)
+  href: api/PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.html#PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_MargeDict_PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_
+  commentId: M:PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MargeDict(PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict)
+  fullName: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MargeDict(PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict)
   nameWithType: PackageToLodDict.MargeDict(PackageToLodDict)
-- uid: PLATEAU.CityImport.Setting.PackageToLodDict.MargeDict*
+- uid: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MargeDict*
   name: MargeDict
-  href: api/PLATEAU.CityImport.Setting.PackageToLodDict.html#PLATEAU_CityImport_Setting_PackageToLodDict_MargeDict_
-  commentId: Overload:PLATEAU.CityImport.Setting.PackageToLodDict.MargeDict
+  href: api/PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.html#PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_MargeDict_
+  commentId: Overload:PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MargeDict
   isSpec: "True"
-  fullName: PLATEAU.CityImport.Setting.PackageToLodDict.MargeDict
+  fullName: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MargeDict
   nameWithType: PackageToLodDict.MargeDict
-- uid: PLATEAU.CityImport.Setting.PackageToLodDict.MergePackage(PredefinedCityModelPackage,System.Int32)
+- uid: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MergePackage(PredefinedCityModelPackage,System.Int32)
   name: MergePackage(PredefinedCityModelPackage, Int32)
-  href: api/PLATEAU.CityImport.Setting.PackageToLodDict.html#PLATEAU_CityImport_Setting_PackageToLodDict_MergePackage_PredefinedCityModelPackage_System_Int32_
-  commentId: M:PLATEAU.CityImport.Setting.PackageToLodDict.MergePackage(PredefinedCityModelPackage,System.Int32)
-  fullName: PLATEAU.CityImport.Setting.PackageToLodDict.MergePackage(PredefinedCityModelPackage, System.Int32)
+  href: api/PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.html#PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_MergePackage_PredefinedCityModelPackage_System_Int32_
+  commentId: M:PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MergePackage(PredefinedCityModelPackage,System.Int32)
+  fullName: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MergePackage(PredefinedCityModelPackage, System.Int32)
   nameWithType: PackageToLodDict.MergePackage(PredefinedCityModelPackage, Int32)
-- uid: PLATEAU.CityImport.Setting.PackageToLodDict.MergePackage*
+- uid: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MergePackage*
   name: MergePackage
-  href: api/PLATEAU.CityImport.Setting.PackageToLodDict.html#PLATEAU_CityImport_Setting_PackageToLodDict_MergePackage_
-  commentId: Overload:PLATEAU.CityImport.Setting.PackageToLodDict.MergePackage
+  href: api/PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.html#PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_MergePackage_
+  commentId: Overload:PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MergePackage
   isSpec: "True"
-  fullName: PLATEAU.CityImport.Setting.PackageToLodDict.MergePackage
+  fullName: PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MergePackage
   nameWithType: PackageToLodDict.MergePackage
 - uid: PLATEAU.CityInfo
   name: PLATEAU.CityInfo
@@ -2541,6 +2559,96 @@ references:
   commentId: N:PLATEAU.CityInfo
   fullName: PLATEAU.CityInfo
   nameWithType: PLATEAU.CityInfo
+- uid: PLATEAU.CityInfo.CityObjectGizmoDrawer
+  name: CityObjectGizmoDrawer
+  href: api/PLATEAU.CityInfo.CityObjectGizmoDrawer.html
+  commentId: T:PLATEAU.CityInfo.CityObjectGizmoDrawer
+  fullName: PLATEAU.CityInfo.CityObjectGizmoDrawer
+  nameWithType: CityObjectGizmoDrawer
+- uid: PLATEAU.CityInfo.CityObjectGizmoDrawer.ClearChildSelection
+  name: ClearChildSelection()
+  href: api/PLATEAU.CityInfo.CityObjectGizmoDrawer.html#PLATEAU_CityInfo_CityObjectGizmoDrawer_ClearChildSelection
+  commentId: M:PLATEAU.CityInfo.CityObjectGizmoDrawer.ClearChildSelection
+  fullName: PLATEAU.CityInfo.CityObjectGizmoDrawer.ClearChildSelection()
+  nameWithType: CityObjectGizmoDrawer.ClearChildSelection()
+- uid: PLATEAU.CityInfo.CityObjectGizmoDrawer.ClearChildSelection*
+  name: ClearChildSelection
+  href: api/PLATEAU.CityInfo.CityObjectGizmoDrawer.html#PLATEAU_CityInfo_CityObjectGizmoDrawer_ClearChildSelection_
+  commentId: Overload:PLATEAU.CityInfo.CityObjectGizmoDrawer.ClearChildSelection
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.CityObjectGizmoDrawer.ClearChildSelection
+  nameWithType: CityObjectGizmoDrawer.ClearChildSelection
+- uid: PLATEAU.CityInfo.CityObjectGizmoDrawer.ClearParentSelection
+  name: ClearParentSelection()
+  href: api/PLATEAU.CityInfo.CityObjectGizmoDrawer.html#PLATEAU_CityInfo_CityObjectGizmoDrawer_ClearParentSelection
+  commentId: M:PLATEAU.CityInfo.CityObjectGizmoDrawer.ClearParentSelection
+  fullName: PLATEAU.CityInfo.CityObjectGizmoDrawer.ClearParentSelection()
+  nameWithType: CityObjectGizmoDrawer.ClearParentSelection()
+- uid: PLATEAU.CityInfo.CityObjectGizmoDrawer.ClearParentSelection*
+  name: ClearParentSelection
+  href: api/PLATEAU.CityInfo.CityObjectGizmoDrawer.html#PLATEAU_CityInfo_CityObjectGizmoDrawer_ClearParentSelection_
+  commentId: Overload:PLATEAU.CityInfo.CityObjectGizmoDrawer.ClearParentSelection
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.CityObjectGizmoDrawer.ClearParentSelection
+  nameWithType: CityObjectGizmoDrawer.ClearParentSelection
+- uid: PLATEAU.CityInfo.CityObjectGizmoDrawer.ShowChildSelection(Transform,CityObjectIndex,System.String)
+  name: ShowChildSelection(Transform, CityObjectIndex, String)
+  href: api/PLATEAU.CityInfo.CityObjectGizmoDrawer.html#PLATEAU_CityInfo_CityObjectGizmoDrawer_ShowChildSelection_Transform_CityObjectIndex_System_String_
+  commentId: M:PLATEAU.CityInfo.CityObjectGizmoDrawer.ShowChildSelection(Transform,CityObjectIndex,System.String)
+  fullName: PLATEAU.CityInfo.CityObjectGizmoDrawer.ShowChildSelection(Transform, CityObjectIndex, System.String)
+  nameWithType: CityObjectGizmoDrawer.ShowChildSelection(Transform, CityObjectIndex, String)
+- uid: PLATEAU.CityInfo.CityObjectGizmoDrawer.ShowChildSelection*
+  name: ShowChildSelection
+  href: api/PLATEAU.CityInfo.CityObjectGizmoDrawer.html#PLATEAU_CityInfo_CityObjectGizmoDrawer_ShowChildSelection_
+  commentId: Overload:PLATEAU.CityInfo.CityObjectGizmoDrawer.ShowChildSelection
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.CityObjectGizmoDrawer.ShowChildSelection
+  nameWithType: CityObjectGizmoDrawer.ShowChildSelection
+- uid: PLATEAU.CityInfo.CityObjectGizmoDrawer.ShowParentSelection(Transform,CityObjectIndex,System.String)
+  name: ShowParentSelection(Transform, CityObjectIndex, String)
+  href: api/PLATEAU.CityInfo.CityObjectGizmoDrawer.html#PLATEAU_CityInfo_CityObjectGizmoDrawer_ShowParentSelection_Transform_CityObjectIndex_System_String_
+  commentId: M:PLATEAU.CityInfo.CityObjectGizmoDrawer.ShowParentSelection(Transform,CityObjectIndex,System.String)
+  fullName: PLATEAU.CityInfo.CityObjectGizmoDrawer.ShowParentSelection(Transform, CityObjectIndex, System.String)
+  nameWithType: CityObjectGizmoDrawer.ShowParentSelection(Transform, CityObjectIndex, String)
+- uid: PLATEAU.CityInfo.CityObjectGizmoDrawer.ShowParentSelection*
+  name: ShowParentSelection
+  href: api/PLATEAU.CityInfo.CityObjectGizmoDrawer.html#PLATEAU_CityInfo_CityObjectGizmoDrawer_ShowParentSelection_
+  commentId: Overload:PLATEAU.CityInfo.CityObjectGizmoDrawer.ShowParentSelection
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.CityObjectGizmoDrawer.ShowParentSelection
+  nameWithType: CityObjectGizmoDrawer.ShowParentSelection
+- uid: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits
+  name: CityObjectGroupInfoForToolkits
+  href: api/PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.html
+  commentId: T:PLATEAU.CityInfo.CityObjectGroupInfoForToolkits
+  fullName: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits
+  nameWithType: CityObjectGroupInfoForToolkits
+- uid: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.#ctor(System.Boolean)
+  name: CityObjectGroupInfoForToolkits(Boolean)
+  href: api/PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.html#PLATEAU_CityInfo_CityObjectGroupInfoForToolkits__ctor_System_Boolean_
+  commentId: M:PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.#ctor(System.Boolean)
+  fullName: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.CityObjectGroupInfoForToolkits(System.Boolean)
+  nameWithType: CityObjectGroupInfoForToolkits.CityObjectGroupInfoForToolkits(Boolean)
+- uid: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.#ctor*
+  name: CityObjectGroupInfoForToolkits
+  href: api/PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.html#PLATEAU_CityInfo_CityObjectGroupInfoForToolkits__ctor_
+  commentId: Overload:PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.CityObjectGroupInfoForToolkits
+  nameWithType: CityObjectGroupInfoForToolkits.CityObjectGroupInfoForToolkits
+- uid: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsTextureCombinedOrGranularityConverted
+  name: IsTextureCombinedOrGranularityConverted
+  href: api/PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.html#PLATEAU_CityInfo_CityObjectGroupInfoForToolkits_IsTextureCombinedOrGranularityConverted
+  commentId: P:PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsTextureCombinedOrGranularityConverted
+  fullName: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsTextureCombinedOrGranularityConverted
+  nameWithType: CityObjectGroupInfoForToolkits.IsTextureCombinedOrGranularityConverted
+- uid: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsTextureCombinedOrGranularityConverted*
+  name: IsTextureCombinedOrGranularityConverted
+  href: api/PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.html#PLATEAU_CityInfo_CityObjectGroupInfoForToolkits_IsTextureCombinedOrGranularityConverted_
+  commentId: Overload:PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsTextureCombinedOrGranularityConverted
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsTextureCombinedOrGranularityConverted
+  nameWithType: CityObjectGroupInfoForToolkits.IsTextureCombinedOrGranularityConverted
 - uid: PLATEAU.CityInfo.CityObjectList
   name: CityObjectList
   href: api/PLATEAU.CityInfo.CityObjectList.html
@@ -2553,6 +2661,38 @@ references:
   commentId: T:PLATEAU.CityInfo.CityObjectList.Attributes
   fullName: PLATEAU.CityInfo.CityObjectList.Attributes
   nameWithType: CityObjectList.Attributes
+- uid: PLATEAU.CityInfo.CityObjectList.Attributes.AddAttribute(System.String,AttributeType,System.Object)
+  name: AddAttribute(String, AttributeType, Object)
+  href: api/PLATEAU.CityInfo.CityObjectList.Attributes.html#PLATEAU_CityInfo_CityObjectList_Attributes_AddAttribute_System_String_AttributeType_System_Object_
+  commentId: M:PLATEAU.CityInfo.CityObjectList.Attributes.AddAttribute(System.String,AttributeType,System.Object)
+  fullName: PLATEAU.CityInfo.CityObjectList.Attributes.AddAttribute(System.String, AttributeType, System.Object)
+  nameWithType: CityObjectList.Attributes.AddAttribute(String, AttributeType, Object)
+- uid: PLATEAU.CityInfo.CityObjectList.Attributes.AddAttribute(System.String,NativeAttributeValue)
+  name: AddAttribute(String, NativeAttributeValue)
+  href: api/PLATEAU.CityInfo.CityObjectList.Attributes.html#PLATEAU_CityInfo_CityObjectList_Attributes_AddAttribute_System_String_NativeAttributeValue_
+  commentId: M:PLATEAU.CityInfo.CityObjectList.Attributes.AddAttribute(System.String,NativeAttributeValue)
+  fullName: PLATEAU.CityInfo.CityObjectList.Attributes.AddAttribute(System.String, NativeAttributeValue)
+  nameWithType: CityObjectList.Attributes.AddAttribute(String, NativeAttributeValue)
+- uid: PLATEAU.CityInfo.CityObjectList.Attributes.AddAttribute*
+  name: AddAttribute
+  href: api/PLATEAU.CityInfo.CityObjectList.Attributes.html#PLATEAU_CityInfo_CityObjectList_Attributes_AddAttribute_
+  commentId: Overload:PLATEAU.CityInfo.CityObjectList.Attributes.AddAttribute
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.CityObjectList.Attributes.AddAttribute
+  nameWithType: CityObjectList.Attributes.AddAttribute
+- uid: PLATEAU.CityInfo.CityObjectList.Attributes.AddAttributes(PLATEAU.CityInfo.CityObjectList.Attributes)
+  name: AddAttributes(CityObjectList.Attributes)
+  href: api/PLATEAU.CityInfo.CityObjectList.Attributes.html#PLATEAU_CityInfo_CityObjectList_Attributes_AddAttributes_PLATEAU_CityInfo_CityObjectList_Attributes_
+  commentId: M:PLATEAU.CityInfo.CityObjectList.Attributes.AddAttributes(PLATEAU.CityInfo.CityObjectList.Attributes)
+  fullName: PLATEAU.CityInfo.CityObjectList.Attributes.AddAttributes(PLATEAU.CityInfo.CityObjectList.Attributes)
+  nameWithType: CityObjectList.Attributes.AddAttributes(CityObjectList.Attributes)
+- uid: PLATEAU.CityInfo.CityObjectList.Attributes.AddAttributes*
+  name: AddAttributes
+  href: api/PLATEAU.CityInfo.CityObjectList.Attributes.html#PLATEAU_CityInfo_CityObjectList_Attributes_AddAttributes_
+  commentId: Overload:PLATEAU.CityInfo.CityObjectList.Attributes.AddAttributes
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.CityObjectList.Attributes.AddAttributes
+  nameWithType: CityObjectList.Attributes.AddAttributes
 - uid: PLATEAU.CityInfo.CityObjectList.Attributes.Count
   name: Count
   href: api/PLATEAU.CityInfo.CityObjectList.Attributes.html#PLATEAU_CityInfo_CityObjectList_Attributes_Count
@@ -2621,25 +2761,6 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityInfo.CityObjectList.Attributes.Keys
   nameWithType: CityObjectList.Attributes.Keys
-- uid: PLATEAU.CityInfo.CityObjectList.Attributes.SetAttribute(System.String,AttributeType,System.Object)
-  name: SetAttribute(String, AttributeType, Object)
-  href: api/PLATEAU.CityInfo.CityObjectList.Attributes.html#PLATEAU_CityInfo_CityObjectList_Attributes_SetAttribute_System_String_AttributeType_System_Object_
-  commentId: M:PLATEAU.CityInfo.CityObjectList.Attributes.SetAttribute(System.String,AttributeType,System.Object)
-  fullName: PLATEAU.CityInfo.CityObjectList.Attributes.SetAttribute(System.String, AttributeType, System.Object)
-  nameWithType: CityObjectList.Attributes.SetAttribute(String, AttributeType, Object)
-- uid: PLATEAU.CityInfo.CityObjectList.Attributes.SetAttribute(System.String,AttributeValue)
-  name: SetAttribute(String, AttributeValue)
-  href: api/PLATEAU.CityInfo.CityObjectList.Attributes.html#PLATEAU_CityInfo_CityObjectList_Attributes_SetAttribute_System_String_AttributeValue_
-  commentId: M:PLATEAU.CityInfo.CityObjectList.Attributes.SetAttribute(System.String,AttributeValue)
-  fullName: PLATEAU.CityInfo.CityObjectList.Attributes.SetAttribute(System.String, AttributeValue)
-  nameWithType: CityObjectList.Attributes.SetAttribute(String, AttributeValue)
-- uid: PLATEAU.CityInfo.CityObjectList.Attributes.SetAttribute*
-  name: SetAttribute
-  href: api/PLATEAU.CityInfo.CityObjectList.Attributes.html#PLATEAU_CityInfo_CityObjectList_Attributes_SetAttribute_
-  commentId: Overload:PLATEAU.CityInfo.CityObjectList.Attributes.SetAttribute
-  isSpec: "True"
-  fullName: PLATEAU.CityInfo.CityObjectList.Attributes.SetAttribute
-  nameWithType: CityObjectList.Attributes.SetAttribute
 - uid: PLATEAU.CityInfo.CityObjectList.Attributes.TryGetValue(System.String,PLATEAU.CityInfo.CityObjectList.Attributes.Value@)
   name: TryGetValue(String, out CityObjectList.Attributes.Value)
   href: api/PLATEAU.CityInfo.CityObjectList.Attributes.html#PLATEAU_CityInfo_CityObjectList_Attributes_TryGetValue_System_String_PLATEAU_CityInfo_CityObjectList_Attributes_Value__
@@ -2668,12 +2789,12 @@ references:
   commentId: M:PLATEAU.CityInfo.CityObjectList.Attributes.Value.#ctor(AttributeType,System.Object)
   fullName: PLATEAU.CityInfo.CityObjectList.Attributes.Value.Value(AttributeType, System.Object)
   nameWithType: CityObjectList.Attributes.Value.Value(AttributeType, Object)
-- uid: PLATEAU.CityInfo.CityObjectList.Attributes.Value.#ctor(AttributeValue)
-  name: Value(AttributeValue)
-  href: api/PLATEAU.CityInfo.CityObjectList.Attributes.Value.html#PLATEAU_CityInfo_CityObjectList_Attributes_Value__ctor_AttributeValue_
-  commentId: M:PLATEAU.CityInfo.CityObjectList.Attributes.Value.#ctor(AttributeValue)
-  fullName: PLATEAU.CityInfo.CityObjectList.Attributes.Value.Value(AttributeValue)
-  nameWithType: CityObjectList.Attributes.Value.Value(AttributeValue)
+- uid: PLATEAU.CityInfo.CityObjectList.Attributes.Value.#ctor(NativeAttributeValue)
+  name: Value(NativeAttributeValue)
+  href: api/PLATEAU.CityInfo.CityObjectList.Attributes.Value.html#PLATEAU_CityInfo_CityObjectList_Attributes_Value__ctor_NativeAttributeValue_
+  commentId: M:PLATEAU.CityInfo.CityObjectList.Attributes.Value.#ctor(NativeAttributeValue)
+  fullName: PLATEAU.CityInfo.CityObjectList.Attributes.Value.Value(NativeAttributeValue)
+  nameWithType: CityObjectList.Attributes.Value.Value(NativeAttributeValue)
 - uid: PLATEAU.CityInfo.CityObjectList.Attributes.Value.#ctor*
   name: Value
   href: api/PLATEAU.CityInfo.CityObjectList.Attributes.Value.html#PLATEAU_CityInfo_CityObjectList_Attributes_Value__ctor_
@@ -3134,6 +3255,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.CityObjects
   nameWithType: PLATEAUCityObjectGroup.CityObjects
+- uid: PLATEAU.CityInfo.PLATEAUCityObjectGroup.GetAllCityObjects
+  name: GetAllCityObjects()
+  href: api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html#PLATEAU_CityInfo_PLATEAUCityObjectGroup_GetAllCityObjects
+  commentId: M:PLATEAU.CityInfo.PLATEAUCityObjectGroup.GetAllCityObjects
+  fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.GetAllCityObjects()
+  nameWithType: PLATEAUCityObjectGroup.GetAllCityObjects()
+- uid: PLATEAU.CityInfo.PLATEAUCityObjectGroup.GetAllCityObjects*
+  name: GetAllCityObjects
+  href: api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html#PLATEAU_CityInfo_PLATEAUCityObjectGroup_GetAllCityObjects_
+  commentId: Overload:PLATEAU.CityInfo.PLATEAUCityObjectGroup.GetAllCityObjects
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.GetAllCityObjects
+  nameWithType: PLATEAUCityObjectGroup.GetAllCityObjects
 - uid: PLATEAU.CityInfo.PLATEAUCityObjectGroup.GetAtomicCityObject(RaycastHit)
   name: GetAtomicCityObject(RaycastHit)
   href: api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html#PLATEAU_CityInfo_PLATEAUCityObjectGroup_GetAtomicCityObject_RaycastHit_
@@ -3237,6 +3371,32 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.GetPrimaryCityObjectAsync
   nameWithType: PLATEAUCityObjectGroup.GetPrimaryCityObjectAsync
+- uid: PLATEAU.CityInfo.PLATEAUCityObjectGroup.InfoForToolkits
+  name: InfoForToolkits
+  href: api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html#PLATEAU_CityInfo_PLATEAUCityObjectGroup_InfoForToolkits
+  commentId: P:PLATEAU.CityInfo.PLATEAUCityObjectGroup.InfoForToolkits
+  fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.InfoForToolkits
+  nameWithType: PLATEAUCityObjectGroup.InfoForToolkits
+- uid: PLATEAU.CityInfo.PLATEAUCityObjectGroup.InfoForToolkits*
+  name: InfoForToolkits
+  href: api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html#PLATEAU_CityInfo_PLATEAUCityObjectGroup_InfoForToolkits_
+  commentId: Overload:PLATEAU.CityInfo.PLATEAUCityObjectGroup.InfoForToolkits
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.InfoForToolkits
+  nameWithType: PLATEAUCityObjectGroup.InfoForToolkits
+- uid: PLATEAU.CityInfo.PLATEAUCityObjectGroup.Init(PLATEAU.CityInfo.CityObjectList,PLATEAU.CityInfo.CityObjectGroupInfoForToolkits)
+  name: Init(CityObjectList, CityObjectGroupInfoForToolkits)
+  href: api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html#PLATEAU_CityInfo_PLATEAUCityObjectGroup_Init_PLATEAU_CityInfo_CityObjectList_PLATEAU_CityInfo_CityObjectGroupInfoForToolkits_
+  commentId: M:PLATEAU.CityInfo.PLATEAUCityObjectGroup.Init(PLATEAU.CityInfo.CityObjectList,PLATEAU.CityInfo.CityObjectGroupInfoForToolkits)
+  fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.Init(PLATEAU.CityInfo.CityObjectList, PLATEAU.CityInfo.CityObjectGroupInfoForToolkits)
+  nameWithType: PLATEAUCityObjectGroup.Init(CityObjectList, CityObjectGroupInfoForToolkits)
+- uid: PLATEAU.CityInfo.PLATEAUCityObjectGroup.Init*
+  name: Init
+  href: api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html#PLATEAU_CityInfo_PLATEAUCityObjectGroup_Init_
+  commentId: Overload:PLATEAU.CityInfo.PLATEAUCityObjectGroup.Init
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.Init
+  nameWithType: PLATEAUCityObjectGroup.Init
 - uid: PLATEAU.CityInfo.PLATEAUCityObjectGroup.PrimaryCityObjects
   name: PrimaryCityObjects
   href: api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html#PLATEAU_CityInfo_PLATEAUCityObjectGroup_PrimaryCityObjects
@@ -3250,25 +3410,25 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.PrimaryCityObjects
   nameWithType: PLATEAUCityObjectGroup.PrimaryCityObjects
-- uid: PLATEAU.CityInfo.PLATEAUCityObjectGroup.SetSerializableCityObject(PLATEAU.CityInfo.CityObjectList)
-  name: SetSerializableCityObject(CityObjectList)
-  href: api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html#PLATEAU_CityInfo_PLATEAUCityObjectGroup_SetSerializableCityObject_PLATEAU_CityInfo_CityObjectList_
-  commentId: M:PLATEAU.CityInfo.PLATEAUCityObjectGroup.SetSerializableCityObject(PLATEAU.CityInfo.CityObjectList)
-  fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.SetSerializableCityObject(PLATEAU.CityInfo.CityObjectList)
-  nameWithType: PLATEAUCityObjectGroup.SetSerializableCityObject(CityObjectList)
-- uid: PLATEAU.CityInfo.PLATEAUCityObjectGroup.SetSerializableCityObject*
-  name: SetSerializableCityObject
-  href: api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html#PLATEAU_CityInfo_PLATEAUCityObjectGroup_SetSerializableCityObject_
-  commentId: Overload:PLATEAU.CityInfo.PLATEAUCityObjectGroup.SetSerializableCityObject
-  isSpec: "True"
-  fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.SetSerializableCityObject
-  nameWithType: PLATEAUCityObjectGroup.SetSerializableCityObject
 - uid: PLATEAU.CityInfo.PLATEAUInstancedCityModel
   name: PLATEAUInstancedCityModel
   href: api/PLATEAU.CityInfo.PLATEAUInstancedCityModel.html
   commentId: T:PLATEAU.CityInfo.PLATEAUInstancedCityModel
   fullName: PLATEAU.CityInfo.PLATEAUInstancedCityModel
   nameWithType: PLATEAUInstancedCityModel
+- uid: PLATEAU.CityInfo.PLATEAUInstancedCityModel.CopyFrom(PLATEAU.CityInfo.PLATEAUInstancedCityModel)
+  name: CopyFrom(PLATEAUInstancedCityModel)
+  href: api/PLATEAU.CityInfo.PLATEAUInstancedCityModel.html#PLATEAU_CityInfo_PLATEAUInstancedCityModel_CopyFrom_PLATEAU_CityInfo_PLATEAUInstancedCityModel_
+  commentId: M:PLATEAU.CityInfo.PLATEAUInstancedCityModel.CopyFrom(PLATEAU.CityInfo.PLATEAUInstancedCityModel)
+  fullName: PLATEAU.CityInfo.PLATEAUInstancedCityModel.CopyFrom(PLATEAU.CityInfo.PLATEAUInstancedCityModel)
+  nameWithType: PLATEAUInstancedCityModel.CopyFrom(PLATEAUInstancedCityModel)
+- uid: PLATEAU.CityInfo.PLATEAUInstancedCityModel.CopyFrom*
+  name: CopyFrom
+  href: api/PLATEAU.CityInfo.PLATEAUInstancedCityModel.html#PLATEAU_CityInfo_PLATEAUInstancedCityModel_CopyFrom_
+  commentId: Overload:PLATEAU.CityInfo.PLATEAUInstancedCityModel.CopyFrom
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.PLATEAUInstancedCityModel.CopyFrom
+  nameWithType: PLATEAUInstancedCityModel.CopyFrom
 - uid: PLATEAU.CityInfo.PLATEAUInstancedCityModel.GeoReference
   name: GeoReference
   href: api/PLATEAU.CityInfo.PLATEAUInstancedCityModel.html#PLATEAU_CityInfo_PLATEAUInstancedCityModel_GeoReference
@@ -3334,6 +3494,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityInfo.PLATEAUInstancedCityModel.GmlTransforms
   nameWithType: PLATEAUInstancedCityModel.GmlTransforms
+- uid: PLATEAU.CityInfo.PLATEAUInstancedCityModel.Latitude
+  name: Latitude
+  href: api/PLATEAU.CityInfo.PLATEAUInstancedCityModel.html#PLATEAU_CityInfo_PLATEAUInstancedCityModel_Latitude
+  commentId: P:PLATEAU.CityInfo.PLATEAUInstancedCityModel.Latitude
+  fullName: PLATEAU.CityInfo.PLATEAUInstancedCityModel.Latitude
+  nameWithType: PLATEAUInstancedCityModel.Latitude
+- uid: PLATEAU.CityInfo.PLATEAUInstancedCityModel.Latitude*
+  name: Latitude
+  href: api/PLATEAU.CityInfo.PLATEAUInstancedCityModel.html#PLATEAU_CityInfo_PLATEAUInstancedCityModel_Latitude_
+  commentId: Overload:PLATEAU.CityInfo.PLATEAUInstancedCityModel.Latitude
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.PLATEAUInstancedCityModel.Latitude
+  nameWithType: PLATEAUInstancedCityModel.Latitude
 - uid: PLATEAU.CityInfo.PLATEAUInstancedCityModel.LoadGmlAsync(Transform)
   name: LoadGmlAsync(Transform)
   href: api/PLATEAU.CityInfo.PLATEAUInstancedCityModel.html#PLATEAU_CityInfo_PLATEAUInstancedCityModel_LoadGmlAsync_Transform_
@@ -3347,6 +3520,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityInfo.PLATEAUInstancedCityModel.LoadGmlAsync
   nameWithType: PLATEAUInstancedCityModel.LoadGmlAsync
+- uid: PLATEAU.CityInfo.PLATEAUInstancedCityModel.Longitude
+  name: Longitude
+  href: api/PLATEAU.CityInfo.PLATEAUInstancedCityModel.html#PLATEAU_CityInfo_PLATEAUInstancedCityModel_Longitude
+  commentId: P:PLATEAU.CityInfo.PLATEAUInstancedCityModel.Longitude
+  fullName: PLATEAU.CityInfo.PLATEAUInstancedCityModel.Longitude
+  nameWithType: PLATEAUInstancedCityModel.Longitude
+- uid: PLATEAU.CityInfo.PLATEAUInstancedCityModel.Longitude*
+  name: Longitude
+  href: api/PLATEAU.CityInfo.PLATEAUInstancedCityModel.html#PLATEAU_CityInfo_PLATEAUInstancedCityModel_Longitude_
+  commentId: Overload:PLATEAU.CityInfo.PLATEAUInstancedCityModel.Longitude
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.PLATEAUInstancedCityModel.Longitude
+  nameWithType: PLATEAUInstancedCityModel.Longitude
 - uid: PLATEAU.CityInfo.PLATEAUInstancedCityModel.TryParseLodGameObjectName(System.String,System.Int32@)
   name: TryParseLodGameObjectName(String, out Int32)
   href: api/PLATEAU.CityInfo.PLATEAUInstancedCityModel.html#PLATEAU_CityInfo_PLATEAUInstancedCityModel_TryParseLodGameObjectName_System_String_System_Int32__
@@ -3363,64 +3549,6 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityInfo.PLATEAUInstancedCityModel.TryParseLodGameObjectName
   nameWithType: PLATEAUInstancedCityModel.TryParseLodGameObjectName
-- uid: PLATEAU.CityObjectGizmoDrawer
-  name: CityObjectGizmoDrawer
-  href: api/PLATEAU.CityObjectGizmoDrawer.html
-  commentId: T:PLATEAU.CityObjectGizmoDrawer
-  fullName: PLATEAU.CityObjectGizmoDrawer
-  nameWithType: CityObjectGizmoDrawer
-- uid: PLATEAU.CityObjectGizmoDrawer.ClearChildSelection
-  name: ClearChildSelection()
-  href: api/PLATEAU.CityObjectGizmoDrawer.html#PLATEAU_CityObjectGizmoDrawer_ClearChildSelection
-  commentId: M:PLATEAU.CityObjectGizmoDrawer.ClearChildSelection
-  fullName: PLATEAU.CityObjectGizmoDrawer.ClearChildSelection()
-  nameWithType: CityObjectGizmoDrawer.ClearChildSelection()
-- uid: PLATEAU.CityObjectGizmoDrawer.ClearChildSelection*
-  name: ClearChildSelection
-  href: api/PLATEAU.CityObjectGizmoDrawer.html#PLATEAU_CityObjectGizmoDrawer_ClearChildSelection_
-  commentId: Overload:PLATEAU.CityObjectGizmoDrawer.ClearChildSelection
-  isSpec: "True"
-  fullName: PLATEAU.CityObjectGizmoDrawer.ClearChildSelection
-  nameWithType: CityObjectGizmoDrawer.ClearChildSelection
-- uid: PLATEAU.CityObjectGizmoDrawer.ClearParentSelection
-  name: ClearParentSelection()
-  href: api/PLATEAU.CityObjectGizmoDrawer.html#PLATEAU_CityObjectGizmoDrawer_ClearParentSelection
-  commentId: M:PLATEAU.CityObjectGizmoDrawer.ClearParentSelection
-  fullName: PLATEAU.CityObjectGizmoDrawer.ClearParentSelection()
-  nameWithType: CityObjectGizmoDrawer.ClearParentSelection()
-- uid: PLATEAU.CityObjectGizmoDrawer.ClearParentSelection*
-  name: ClearParentSelection
-  href: api/PLATEAU.CityObjectGizmoDrawer.html#PLATEAU_CityObjectGizmoDrawer_ClearParentSelection_
-  commentId: Overload:PLATEAU.CityObjectGizmoDrawer.ClearParentSelection
-  isSpec: "True"
-  fullName: PLATEAU.CityObjectGizmoDrawer.ClearParentSelection
-  nameWithType: CityObjectGizmoDrawer.ClearParentSelection
-- uid: PLATEAU.CityObjectGizmoDrawer.ShowChildSelection(Transform,CityObjectIndex,System.String)
-  name: ShowChildSelection(Transform, CityObjectIndex, String)
-  href: api/PLATEAU.CityObjectGizmoDrawer.html#PLATEAU_CityObjectGizmoDrawer_ShowChildSelection_Transform_CityObjectIndex_System_String_
-  commentId: M:PLATEAU.CityObjectGizmoDrawer.ShowChildSelection(Transform,CityObjectIndex,System.String)
-  fullName: PLATEAU.CityObjectGizmoDrawer.ShowChildSelection(Transform, CityObjectIndex, System.String)
-  nameWithType: CityObjectGizmoDrawer.ShowChildSelection(Transform, CityObjectIndex, String)
-- uid: PLATEAU.CityObjectGizmoDrawer.ShowChildSelection*
-  name: ShowChildSelection
-  href: api/PLATEAU.CityObjectGizmoDrawer.html#PLATEAU_CityObjectGizmoDrawer_ShowChildSelection_
-  commentId: Overload:PLATEAU.CityObjectGizmoDrawer.ShowChildSelection
-  isSpec: "True"
-  fullName: PLATEAU.CityObjectGizmoDrawer.ShowChildSelection
-  nameWithType: CityObjectGizmoDrawer.ShowChildSelection
-- uid: PLATEAU.CityObjectGizmoDrawer.ShowParentSelection(Transform,CityObjectIndex,System.String)
-  name: ShowParentSelection(Transform, CityObjectIndex, String)
-  href: api/PLATEAU.CityObjectGizmoDrawer.html#PLATEAU_CityObjectGizmoDrawer_ShowParentSelection_Transform_CityObjectIndex_System_String_
-  commentId: M:PLATEAU.CityObjectGizmoDrawer.ShowParentSelection(Transform,CityObjectIndex,System.String)
-  fullName: PLATEAU.CityObjectGizmoDrawer.ShowParentSelection(Transform, CityObjectIndex, System.String)
-  nameWithType: CityObjectGizmoDrawer.ShowParentSelection(Transform, CityObjectIndex, String)
-- uid: PLATEAU.CityObjectGizmoDrawer.ShowParentSelection*
-  name: ShowParentSelection
-  href: api/PLATEAU.CityObjectGizmoDrawer.html#PLATEAU_CityObjectGizmoDrawer_ShowParentSelection_
-  commentId: Overload:PLATEAU.CityObjectGizmoDrawer.ShowParentSelection
-  isSpec: "True"
-  fullName: PLATEAU.CityObjectGizmoDrawer.ShowParentSelection
-  nameWithType: CityObjectGizmoDrawer.ShowParentSelection
 - uid: PLATEAU.Dataset
   name: PLATEAU.Dataset
   href: api/PLATEAU.Dataset.html
@@ -4225,6 +4353,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Dataset.MeshCode.Level2
   nameWithType: MeshCode.Level2
+- uid: PLATEAU.Dataset.MeshCode.Level3
+  name: Level3()
+  href: api/PLATEAU.Dataset.MeshCode.html#PLATEAU_Dataset_MeshCode_Level3
+  commentId: M:PLATEAU.Dataset.MeshCode.Level3
+  fullName: PLATEAU.Dataset.MeshCode.Level3()
+  nameWithType: MeshCode.Level3()
+- uid: PLATEAU.Dataset.MeshCode.Level3*
+  name: Level3
+  href: api/PLATEAU.Dataset.MeshCode.html#PLATEAU_Dataset_MeshCode_Level3_
+  commentId: Overload:PLATEAU.Dataset.MeshCode.Level3
+  isSpec: "True"
+  fullName: PLATEAU.Dataset.MeshCode.Level3
+  nameWithType: MeshCode.Level3
 - uid: PLATEAU.Dataset.MeshCode.Parse(System.String)
   name: Parse(String)
   href: api/PLATEAU.Dataset.MeshCode.html#PLATEAU_Dataset_MeshCode_Parse_System_String_
@@ -4457,6 +4598,38 @@ references:
   commentId: N:PLATEAU.Editor.CityInfo
   fullName: PLATEAU.Editor.CityInfo
   nameWithType: PLATEAU.Editor.CityInfo
+- uid: PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor
+  name: PLATEAUCityObjectGroupEditor
+  href: api/PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor.html
+  commentId: T:PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor
+  fullName: PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor
+  nameWithType: PLATEAUCityObjectGroupEditor
+- uid: PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor.OnEnable
+  name: OnEnable()
+  href: api/PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor.html#PLATEAU_Editor_CityInfo_PLATEAUCityObjectGroupEditor_OnEnable
+  commentId: M:PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor.OnEnable
+  fullName: PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor.OnEnable()
+  nameWithType: PLATEAUCityObjectGroupEditor.OnEnable()
+- uid: PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor.OnEnable*
+  name: OnEnable
+  href: api/PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor.html#PLATEAU_Editor_CityInfo_PLATEAUCityObjectGroupEditor_OnEnable_
+  commentId: Overload:PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor.OnEnable
+  isSpec: "True"
+  fullName: PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor.OnEnable
+  nameWithType: PLATEAUCityObjectGroupEditor.OnEnable
+- uid: PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor.OnInspectorGUI
+  name: OnInspectorGUI()
+  href: api/PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor.html#PLATEAU_Editor_CityInfo_PLATEAUCityObjectGroupEditor_OnInspectorGUI
+  commentId: M:PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor.OnInspectorGUI
+  fullName: PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor.OnInspectorGUI()
+  nameWithType: PLATEAUCityObjectGroupEditor.OnInspectorGUI()
+- uid: PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor.OnInspectorGUI*
+  name: OnInspectorGUI
+  href: api/PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor.html#PLATEAU_Editor_CityInfo_PLATEAUCityObjectGroupEditor_OnInspectorGUI_
+  commentId: Overload:PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor.OnInspectorGUI
+  isSpec: "True"
+  fullName: PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor.OnInspectorGUI
+  nameWithType: PLATEAUCityObjectGroupEditor.OnInspectorGUI
 - uid: PLATEAU.Editor.CityInfo.PLATEAUInstancedCityModelEditor
   name: PLATEAUInstancedCityModelEditor
   href: api/PLATEAU.Editor.CityInfo.PLATEAUInstancedCityModelEditor.html
@@ -4787,6 +4960,230 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Geometries.GeoReference.ZoneIdExplanation
   nameWithType: GeoReference.ZoneIdExplanation
+- uid: PLATEAU.GranularityConvert
+  name: PLATEAU.GranularityConvert
+  href: api/PLATEAU.GranularityConvert.html
+  commentId: N:PLATEAU.GranularityConvert
+  fullName: PLATEAU.GranularityConvert
+  nameWithType: PLATEAU.GranularityConvert
+- uid: PLATEAU.GranularityConvert.CityGranularityConverter
+  name: CityGranularityConverter
+  href: api/PLATEAU.GranularityConvert.CityGranularityConverter.html
+  commentId: T:PLATEAU.GranularityConvert.CityGranularityConverter
+  fullName: PLATEAU.GranularityConvert.CityGranularityConverter
+  nameWithType: CityGranularityConverter
+- uid: PLATEAU.GranularityConvert.CityGranularityConverter.ConvertAsync(IReadOnlyList{GameObject},PLATEAU.GranularityConvert.GranularityConvertOption)
+  name: ConvertAsync(IReadOnlyList<GameObject>, GranularityConvertOption)
+  href: api/PLATEAU.GranularityConvert.CityGranularityConverter.html#PLATEAU_GranularityConvert_CityGranularityConverter_ConvertAsync_IReadOnlyList_GameObject__PLATEAU_GranularityConvert_GranularityConvertOption_
+  commentId: M:PLATEAU.GranularityConvert.CityGranularityConverter.ConvertAsync(IReadOnlyList{GameObject},PLATEAU.GranularityConvert.GranularityConvertOption)
+  name.vb: ConvertAsync(IReadOnlyList(Of GameObject), GranularityConvertOption)
+  fullName: PLATEAU.GranularityConvert.CityGranularityConverter.ConvertAsync(IReadOnlyList<GameObject>, PLATEAU.GranularityConvert.GranularityConvertOption)
+  fullName.vb: PLATEAU.GranularityConvert.CityGranularityConverter.ConvertAsync(IReadOnlyList(Of GameObject), PLATEAU.GranularityConvert.GranularityConvertOption)
+  nameWithType: CityGranularityConverter.ConvertAsync(IReadOnlyList<GameObject>, GranularityConvertOption)
+  nameWithType.vb: CityGranularityConverter.ConvertAsync(IReadOnlyList(Of GameObject), GranularityConvertOption)
+- uid: PLATEAU.GranularityConvert.CityGranularityConverter.ConvertAsync*
+  name: ConvertAsync
+  href: api/PLATEAU.GranularityConvert.CityGranularityConverter.html#PLATEAU_GranularityConvert_CityGranularityConverter_ConvertAsync_
+  commentId: Overload:PLATEAU.GranularityConvert.CityGranularityConverter.ConvertAsync
+  isSpec: "True"
+  fullName: PLATEAU.GranularityConvert.CityGranularityConverter.ConvertAsync
+  nameWithType: CityGranularityConverter.ConvertAsync
+- uid: PLATEAU.GranularityConvert.GmlIdToSerializedCityObj
+  name: GmlIdToSerializedCityObj
+  href: api/PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.html
+  commentId: T:PLATEAU.GranularityConvert.GmlIdToSerializedCityObj
+  fullName: PLATEAU.GranularityConvert.GmlIdToSerializedCityObj
+  nameWithType: GmlIdToSerializedCityObj
+- uid: PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.ComposeFrom(IEnumerable{GameObject})
+  name: ComposeFrom(IEnumerable<GameObject>)
+  href: api/PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.html#PLATEAU_GranularityConvert_GmlIdToSerializedCityObj_ComposeFrom_IEnumerable_GameObject__
+  commentId: M:PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.ComposeFrom(IEnumerable{GameObject})
+  name.vb: ComposeFrom(IEnumerable(Of GameObject))
+  fullName: PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.ComposeFrom(IEnumerable<GameObject>)
+  fullName.vb: PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.ComposeFrom(IEnumerable(Of GameObject))
+  nameWithType: GmlIdToSerializedCityObj.ComposeFrom(IEnumerable<GameObject>)
+  nameWithType.vb: GmlIdToSerializedCityObj.ComposeFrom(IEnumerable(Of GameObject))
+- uid: PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.ComposeFrom*
+  name: ComposeFrom
+  href: api/PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.html#PLATEAU_GranularityConvert_GmlIdToSerializedCityObj_ComposeFrom_
+  commentId: Overload:PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.ComposeFrom
+  isSpec: "True"
+  fullName: PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.ComposeFrom
+  nameWithType: GmlIdToSerializedCityObj.ComposeFrom
+- uid: PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.TryGet(System.String,CityObjectList.CityObject@)
+  name: TryGet(String, out CityObjectList.CityObject)
+  href: api/PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.html#PLATEAU_GranularityConvert_GmlIdToSerializedCityObj_TryGet_System_String_CityObjectList_CityObject__
+  commentId: M:PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.TryGet(System.String,CityObjectList.CityObject@)
+  name.vb: TryGet(String, ByRef CityObjectList.CityObject)
+  fullName: PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.TryGet(System.String, out CityObjectList.CityObject)
+  fullName.vb: PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.TryGet(System.String, ByRef CityObjectList.CityObject)
+  nameWithType: GmlIdToSerializedCityObj.TryGet(String, out CityObjectList.CityObject)
+  nameWithType.vb: GmlIdToSerializedCityObj.TryGet(String, ByRef CityObjectList.CityObject)
+- uid: PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.TryGet*
+  name: TryGet
+  href: api/PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.html#PLATEAU_GranularityConvert_GmlIdToSerializedCityObj_TryGet_
+  commentId: Overload:PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.TryGet
+  isSpec: "True"
+  fullName: PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.TryGet
+  nameWithType: GmlIdToSerializedCityObj.TryGet
+- uid: PLATEAU.GranularityConvert.GranularityConverter
+  name: GranularityConverter
+  href: api/PLATEAU.GranularityConvert.GranularityConverter.html
+  commentId: T:PLATEAU.GranularityConvert.GranularityConverter
+  fullName: PLATEAU.GranularityConvert.GranularityConverter
+  nameWithType: GranularityConverter
+- uid: PLATEAU.GranularityConvert.GranularityConverter.Convert(Model,PLATEAU.GranularityConvert.GranularityConvertOption)
+  name: Convert(Model, GranularityConvertOption)
+  href: api/PLATEAU.GranularityConvert.GranularityConverter.html#PLATEAU_GranularityConvert_GranularityConverter_Convert_Model_PLATEAU_GranularityConvert_GranularityConvertOption_
+  commentId: M:PLATEAU.GranularityConvert.GranularityConverter.Convert(Model,PLATEAU.GranularityConvert.GranularityConvertOption)
+  fullName: PLATEAU.GranularityConvert.GranularityConverter.Convert(Model, PLATEAU.GranularityConvert.GranularityConvertOption)
+  nameWithType: GranularityConverter.Convert(Model, GranularityConvertOption)
+- uid: PLATEAU.GranularityConvert.GranularityConverter.Convert*
+  name: Convert
+  href: api/PLATEAU.GranularityConvert.GranularityConverter.html#PLATEAU_GranularityConvert_GranularityConverter_Convert_
+  commentId: Overload:PLATEAU.GranularityConvert.GranularityConverter.Convert
+  isSpec: "True"
+  fullName: PLATEAU.GranularityConvert.GranularityConverter.Convert
+  nameWithType: GranularityConverter.Convert
+- uid: PLATEAU.GranularityConvert.GranularityConvertOption
+  name: GranularityConvertOption
+  href: api/PLATEAU.GranularityConvert.GranularityConvertOption.html
+  commentId: T:PLATEAU.GranularityConvert.GranularityConvertOption
+  fullName: PLATEAU.GranularityConvert.GranularityConvertOption
+  nameWithType: GranularityConvertOption
+- uid: PLATEAU.GranularityConvert.GranularityConvertOption.#ctor(MeshGranularity,System.Int32)
+  name: GranularityConvertOption(MeshGranularity, Int32)
+  href: api/PLATEAU.GranularityConvert.GranularityConvertOption.html#PLATEAU_GranularityConvert_GranularityConvertOption__ctor_MeshGranularity_System_Int32_
+  commentId: M:PLATEAU.GranularityConvert.GranularityConvertOption.#ctor(MeshGranularity,System.Int32)
+  fullName: PLATEAU.GranularityConvert.GranularityConvertOption.GranularityConvertOption(MeshGranularity, System.Int32)
+  nameWithType: GranularityConvertOption.GranularityConvertOption(MeshGranularity, Int32)
+- uid: PLATEAU.GranularityConvert.GranularityConvertOption.#ctor*
+  name: GranularityConvertOption
+  href: api/PLATEAU.GranularityConvert.GranularityConvertOption.html#PLATEAU_GranularityConvert_GranularityConvertOption__ctor_
+  commentId: Overload:PLATEAU.GranularityConvert.GranularityConvertOption.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.GranularityConvert.GranularityConvertOption.GranularityConvertOption
+  nameWithType: GranularityConvertOption.GranularityConvertOption
+- uid: PLATEAU.GranularityConvert.GranularityConvertOption.Granularity
+  name: Granularity
+  href: api/PLATEAU.GranularityConvert.GranularityConvertOption.html#PLATEAU_GranularityConvert_GranularityConvertOption_Granularity
+  commentId: F:PLATEAU.GranularityConvert.GranularityConvertOption.Granularity
+  fullName: PLATEAU.GranularityConvert.GranularityConvertOption.Granularity
+  nameWithType: GranularityConvertOption.Granularity
+- uid: PLATEAU.GranularityConvert.GranularityConvertOption.GridCount
+  name: GridCount
+  href: api/PLATEAU.GranularityConvert.GranularityConvertOption.html#PLATEAU_GranularityConvert_GranularityConvertOption_GridCount
+  commentId: F:PLATEAU.GranularityConvert.GranularityConvertOption.GridCount
+  fullName: PLATEAU.GranularityConvert.GranularityConvertOption.GridCount
+  nameWithType: GranularityConvertOption.GridCount
+- uid: PLATEAU.GranularityConvert.InstancedCityModelDict
+  name: InstancedCityModelDict
+  href: api/PLATEAU.GranularityConvert.InstancedCityModelDict.html
+  commentId: T:PLATEAU.GranularityConvert.InstancedCityModelDict
+  fullName: PLATEAU.GranularityConvert.InstancedCityModelDict
+  nameWithType: InstancedCityModelDict
+- uid: PLATEAU.GranularityConvert.InstancedCityModelDict.ComposeFrom(IEnumerable{GameObject})
+  name: ComposeFrom(IEnumerable<GameObject>)
+  href: api/PLATEAU.GranularityConvert.InstancedCityModelDict.html#PLATEAU_GranularityConvert_InstancedCityModelDict_ComposeFrom_IEnumerable_GameObject__
+  commentId: M:PLATEAU.GranularityConvert.InstancedCityModelDict.ComposeFrom(IEnumerable{GameObject})
+  name.vb: ComposeFrom(IEnumerable(Of GameObject))
+  fullName: PLATEAU.GranularityConvert.InstancedCityModelDict.ComposeFrom(IEnumerable<GameObject>)
+  fullName.vb: PLATEAU.GranularityConvert.InstancedCityModelDict.ComposeFrom(IEnumerable(Of GameObject))
+  nameWithType: InstancedCityModelDict.ComposeFrom(IEnumerable<GameObject>)
+  nameWithType.vb: InstancedCityModelDict.ComposeFrom(IEnumerable(Of GameObject))
+- uid: PLATEAU.GranularityConvert.InstancedCityModelDict.ComposeFrom*
+  name: ComposeFrom
+  href: api/PLATEAU.GranularityConvert.InstancedCityModelDict.html#PLATEAU_GranularityConvert_InstancedCityModelDict_ComposeFrom_
+  commentId: Overload:PLATEAU.GranularityConvert.InstancedCityModelDict.ComposeFrom
+  isSpec: "True"
+  fullName: PLATEAU.GranularityConvert.InstancedCityModelDict.ComposeFrom
+  nameWithType: InstancedCityModelDict.ComposeFrom
+- uid: PLATEAU.GranularityConvert.InstancedCityModelDict.Restore(IEnumerable{GameObject})
+  name: Restore(IEnumerable<GameObject>)
+  href: api/PLATEAU.GranularityConvert.InstancedCityModelDict.html#PLATEAU_GranularityConvert_InstancedCityModelDict_Restore_IEnumerable_GameObject__
+  commentId: M:PLATEAU.GranularityConvert.InstancedCityModelDict.Restore(IEnumerable{GameObject})
+  name.vb: Restore(IEnumerable(Of GameObject))
+  fullName: PLATEAU.GranularityConvert.InstancedCityModelDict.Restore(IEnumerable<GameObject>)
+  fullName.vb: PLATEAU.GranularityConvert.InstancedCityModelDict.Restore(IEnumerable(Of GameObject))
+  nameWithType: InstancedCityModelDict.Restore(IEnumerable<GameObject>)
+  nameWithType.vb: InstancedCityModelDict.Restore(IEnumerable(Of GameObject))
+- uid: PLATEAU.GranularityConvert.InstancedCityModelDict.Restore*
+  name: Restore
+  href: api/PLATEAU.GranularityConvert.InstancedCityModelDict.html#PLATEAU_GranularityConvert_InstancedCityModelDict_Restore_
+  commentId: Overload:PLATEAU.GranularityConvert.InstancedCityModelDict.Restore
+  isSpec: "True"
+  fullName: PLATEAU.GranularityConvert.InstancedCityModelDict.Restore
+  nameWithType: InstancedCityModelDict.Restore
+- uid: PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict
+  name: SerializedCityObjectGetterFromDict
+  href: api/PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.html
+  commentId: T:PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict
+  fullName: PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict
+  nameWithType: SerializedCityObjectGetterFromDict
+- uid: PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.#ctor(PLATEAU.GranularityConvert.GmlIdToSerializedCityObj)
+  name: SerializedCityObjectGetterFromDict(GmlIdToSerializedCityObj)
+  href: api/PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.html#PLATEAU_GranularityConvert_SerializedCityObjectGetterFromDict__ctor_PLATEAU_GranularityConvert_GmlIdToSerializedCityObj_
+  commentId: M:PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.#ctor(PLATEAU.GranularityConvert.GmlIdToSerializedCityObj)
+  fullName: PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.SerializedCityObjectGetterFromDict(PLATEAU.GranularityConvert.GmlIdToSerializedCityObj)
+  nameWithType: SerializedCityObjectGetterFromDict.SerializedCityObjectGetterFromDict(GmlIdToSerializedCityObj)
+- uid: PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.#ctor*
+  name: SerializedCityObjectGetterFromDict
+  href: api/PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.html#PLATEAU_GranularityConvert_SerializedCityObjectGetterFromDict__ctor_
+  commentId: Overload:PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.SerializedCityObjectGetterFromDict
+  nameWithType: SerializedCityObjectGetterFromDict.SerializedCityObjectGetterFromDict
+- uid: PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.Dispose
+  name: Dispose()
+  href: api/PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.html#PLATEAU_GranularityConvert_SerializedCityObjectGetterFromDict_Dispose
+  commentId: M:PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.Dispose
+  fullName: PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.Dispose()
+  nameWithType: SerializedCityObjectGetterFromDict.Dispose()
+- uid: PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.Dispose*
+  name: Dispose
+  href: api/PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.html#PLATEAU_GranularityConvert_SerializedCityObjectGetterFromDict_Dispose_
+  commentId: Overload:PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.Dispose
+  isSpec: "True"
+  fullName: PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.Dispose
+  nameWithType: SerializedCityObjectGetterFromDict.Dispose
+- uid: PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.GetByID(System.String,System.Nullable{CityObjectIndex})
+  name: GetByID(String, Nullable<CityObjectIndex>)
+  href: api/PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.html#PLATEAU_GranularityConvert_SerializedCityObjectGetterFromDict_GetByID_System_String_System_Nullable_CityObjectIndex__
+  commentId: M:PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.GetByID(System.String,System.Nullable{CityObjectIndex})
+  name.vb: GetByID(String, Nullable(Of CityObjectIndex))
+  fullName: PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.GetByID(System.String, System.Nullable<CityObjectIndex>)
+  fullName.vb: PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.GetByID(System.String, System.Nullable(Of CityObjectIndex))
+  nameWithType: SerializedCityObjectGetterFromDict.GetByID(String, Nullable<CityObjectIndex>)
+  nameWithType.vb: SerializedCityObjectGetterFromDict.GetByID(String, Nullable(Of CityObjectIndex))
+- uid: PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.GetByID*
+  name: GetByID
+  href: api/PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.html#PLATEAU_GranularityConvert_SerializedCityObjectGetterFromDict_GetByID_
+  commentId: Overload:PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.GetByID
+  isSpec: "True"
+  fullName: PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.GetByID
+  nameWithType: SerializedCityObjectGetterFromDict.GetByID
+- uid: PLATEAU.GranularityConvert.TransformBFS
+  name: TransformBFS
+  href: api/PLATEAU.GranularityConvert.TransformBFS.html
+  commentId: T:PLATEAU.GranularityConvert.TransformBFS
+  fullName: PLATEAU.GranularityConvert.TransformBFS
+  nameWithType: TransformBFS
+- uid: PLATEAU.GranularityConvert.TransformBFS.Exec(IEnumerable{Transform},Func{Transform,System.Boolean})
+  name: Exec(IEnumerable<Transform>, Func<Transform, Boolean>)
+  href: api/PLATEAU.GranularityConvert.TransformBFS.html#PLATEAU_GranularityConvert_TransformBFS_Exec_IEnumerable_Transform__Func_Transform_System_Boolean__
+  commentId: M:PLATEAU.GranularityConvert.TransformBFS.Exec(IEnumerable{Transform},Func{Transform,System.Boolean})
+  name.vb: Exec(IEnumerable(Of Transform), Func(Of Transform, Boolean))
+  fullName: PLATEAU.GranularityConvert.TransformBFS.Exec(IEnumerable<Transform>, Func<Transform, System.Boolean>)
+  fullName.vb: PLATEAU.GranularityConvert.TransformBFS.Exec(IEnumerable(Of Transform), Func(Of Transform, System.Boolean))
+  nameWithType: TransformBFS.Exec(IEnumerable<Transform>, Func<Transform, Boolean>)
+  nameWithType.vb: TransformBFS.Exec(IEnumerable(Of Transform), Func(Of Transform, Boolean))
+- uid: PLATEAU.GranularityConvert.TransformBFS.Exec*
+  name: Exec
+  href: api/PLATEAU.GranularityConvert.TransformBFS.html#PLATEAU_GranularityConvert_TransformBFS_Exec_
+  commentId: Overload:PLATEAU.GranularityConvert.TransformBFS.Exec
+  isSpec: "True"
+  fullName: PLATEAU.GranularityConvert.TransformBFS.Exec
+  nameWithType: TransformBFS.Exec
 - uid: PLATEAU.MeshWriter
   name: PLATEAU.MeshWriter
   href: api/PLATEAU.MeshWriter.html
@@ -5190,12 +5587,12 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Native.Extent.Center
   nameWithType: Extent.Center
-- uid: PLATEAU.Native.Extent.Intersection(PLATEAU.Native.Extent,PLATEAU.Native.Extent)
-  name: Intersection(Extent, Extent)
-  href: api/PLATEAU.Native.Extent.html#PLATEAU_Native_Extent_Intersection_PLATEAU_Native_Extent_PLATEAU_Native_Extent_
-  commentId: M:PLATEAU.Native.Extent.Intersection(PLATEAU.Native.Extent,PLATEAU.Native.Extent)
-  fullName: PLATEAU.Native.Extent.Intersection(PLATEAU.Native.Extent, PLATEAU.Native.Extent)
-  nameWithType: Extent.Intersection(Extent, Extent)
+- uid: PLATEAU.Native.Extent.Intersection(PLATEAU.Native.Extent,PLATEAU.Native.Extent,System.Boolean)
+  name: Intersection(Extent, Extent, Boolean)
+  href: api/PLATEAU.Native.Extent.html#PLATEAU_Native_Extent_Intersection_PLATEAU_Native_Extent_PLATEAU_Native_Extent_System_Boolean_
+  commentId: M:PLATEAU.Native.Extent.Intersection(PLATEAU.Native.Extent,PLATEAU.Native.Extent,System.Boolean)
+  fullName: PLATEAU.Native.Extent.Intersection(PLATEAU.Native.Extent, PLATEAU.Native.Extent, System.Boolean)
+  nameWithType: Extent.Intersection(Extent, Extent, Boolean)
 - uid: PLATEAU.Native.Extent.Intersection*
   name: Intersection
   href: api/PLATEAU.Native.Extent.html#PLATEAU_Native_Extent_Intersection_
@@ -6501,38 +6898,6 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Network.NetworkConfig.MockServerUrl
   nameWithType: NetworkConfig.MockServerUrl
-- uid: PLATEAU.PLATEAUCityObjectGroupEditor
-  name: PLATEAUCityObjectGroupEditor
-  href: api/PLATEAU.PLATEAUCityObjectGroupEditor.html
-  commentId: T:PLATEAU.PLATEAUCityObjectGroupEditor
-  fullName: PLATEAU.PLATEAUCityObjectGroupEditor
-  nameWithType: PLATEAUCityObjectGroupEditor
-- uid: PLATEAU.PLATEAUCityObjectGroupEditor.OnEnable
-  name: OnEnable()
-  href: api/PLATEAU.PLATEAUCityObjectGroupEditor.html#PLATEAU_PLATEAUCityObjectGroupEditor_OnEnable
-  commentId: M:PLATEAU.PLATEAUCityObjectGroupEditor.OnEnable
-  fullName: PLATEAU.PLATEAUCityObjectGroupEditor.OnEnable()
-  nameWithType: PLATEAUCityObjectGroupEditor.OnEnable()
-- uid: PLATEAU.PLATEAUCityObjectGroupEditor.OnEnable*
-  name: OnEnable
-  href: api/PLATEAU.PLATEAUCityObjectGroupEditor.html#PLATEAU_PLATEAUCityObjectGroupEditor_OnEnable_
-  commentId: Overload:PLATEAU.PLATEAUCityObjectGroupEditor.OnEnable
-  isSpec: "True"
-  fullName: PLATEAU.PLATEAUCityObjectGroupEditor.OnEnable
-  nameWithType: PLATEAUCityObjectGroupEditor.OnEnable
-- uid: PLATEAU.PLATEAUCityObjectGroupEditor.OnInspectorGUI
-  name: OnInspectorGUI()
-  href: api/PLATEAU.PLATEAUCityObjectGroupEditor.html#PLATEAU_PLATEAUCityObjectGroupEditor_OnInspectorGUI
-  commentId: M:PLATEAU.PLATEAUCityObjectGroupEditor.OnInspectorGUI
-  fullName: PLATEAU.PLATEAUCityObjectGroupEditor.OnInspectorGUI()
-  nameWithType: PLATEAUCityObjectGroupEditor.OnInspectorGUI()
-- uid: PLATEAU.PLATEAUCityObjectGroupEditor.OnInspectorGUI*
-  name: OnInspectorGUI
-  href: api/PLATEAU.PLATEAUCityObjectGroupEditor.html#PLATEAU_PLATEAUCityObjectGroupEditor_OnInspectorGUI_
-  commentId: Overload:PLATEAU.PLATEAUCityObjectGroupEditor.OnInspectorGUI
-  isSpec: "True"
-  fullName: PLATEAU.PLATEAUCityObjectGroupEditor.OnInspectorGUI
-  nameWithType: PLATEAUCityObjectGroupEditor.OnInspectorGUI
 - uid: PLATEAU.PolygonMesh
   name: PLATEAU.PolygonMesh
   href: api/PLATEAU.PolygonMesh.html
@@ -6545,6 +6910,19 @@ references:
   commentId: T:PLATEAU.PolygonMesh.CityObjectIndex
   fullName: PLATEAU.PolygonMesh.CityObjectIndex
   nameWithType: CityObjectIndex
+- uid: PLATEAU.PolygonMesh.CityObjectIndex.#ctor(System.Int32,System.Int32)
+  name: CityObjectIndex(Int32, Int32)
+  href: api/PLATEAU.PolygonMesh.CityObjectIndex.html#PLATEAU_PolygonMesh_CityObjectIndex__ctor_System_Int32_System_Int32_
+  commentId: M:PLATEAU.PolygonMesh.CityObjectIndex.#ctor(System.Int32,System.Int32)
+  fullName: PLATEAU.PolygonMesh.CityObjectIndex.CityObjectIndex(System.Int32, System.Int32)
+  nameWithType: CityObjectIndex.CityObjectIndex(Int32, Int32)
+- uid: PLATEAU.PolygonMesh.CityObjectIndex.#ctor*
+  name: CityObjectIndex
+  href: api/PLATEAU.PolygonMesh.CityObjectIndex.html#PLATEAU_PolygonMesh_CityObjectIndex__ctor_
+  commentId: Overload:PLATEAU.PolygonMesh.CityObjectIndex.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.PolygonMesh.CityObjectIndex.CityObjectIndex
+  nameWithType: CityObjectIndex.CityObjectIndex
 - uid: PLATEAU.PolygonMesh.CityObjectIndex.AtomicIndex
   name: AtomicIndex
   href: api/PLATEAU.PolygonMesh.CityObjectIndex.html#PLATEAU_PolygonMesh_CityObjectIndex_AtomicIndex
@@ -6576,6 +6954,45 @@ references:
   commentId: T:PLATEAU.PolygonMesh.CityObjectList
   fullName: PLATEAU.PolygonMesh.CityObjectList
   nameWithType: CityObjectList
+- uid: PLATEAU.PolygonMesh.CityObjectList.Add(PLATEAU.PolygonMesh.CityObjectIndex,System.String)
+  name: Add(CityObjectIndex, String)
+  href: api/PLATEAU.PolygonMesh.CityObjectList.html#PLATEAU_PolygonMesh_CityObjectList_Add_PLATEAU_PolygonMesh_CityObjectIndex_System_String_
+  commentId: M:PLATEAU.PolygonMesh.CityObjectList.Add(PLATEAU.PolygonMesh.CityObjectIndex,System.String)
+  fullName: PLATEAU.PolygonMesh.CityObjectList.Add(PLATEAU.PolygonMesh.CityObjectIndex, System.String)
+  nameWithType: CityObjectList.Add(CityObjectIndex, String)
+- uid: PLATEAU.PolygonMesh.CityObjectList.Add*
+  name: Add
+  href: api/PLATEAU.PolygonMesh.CityObjectList.html#PLATEAU_PolygonMesh_CityObjectList_Add_
+  commentId: Overload:PLATEAU.PolygonMesh.CityObjectList.Add
+  isSpec: "True"
+  fullName: PLATEAU.PolygonMesh.CityObjectList.Add
+  nameWithType: CityObjectList.Add
+- uid: PLATEAU.PolygonMesh.CityObjectList.Create
+  name: Create()
+  href: api/PLATEAU.PolygonMesh.CityObjectList.html#PLATEAU_PolygonMesh_CityObjectList_Create
+  commentId: M:PLATEAU.PolygonMesh.CityObjectList.Create
+  fullName: PLATEAU.PolygonMesh.CityObjectList.Create()
+  nameWithType: CityObjectList.Create()
+- uid: PLATEAU.PolygonMesh.CityObjectList.Create*
+  name: Create
+  href: api/PLATEAU.PolygonMesh.CityObjectList.html#PLATEAU_PolygonMesh_CityObjectList_Create_
+  commentId: Overload:PLATEAU.PolygonMesh.CityObjectList.Create
+  isSpec: "True"
+  fullName: PLATEAU.PolygonMesh.CityObjectList.Create
+  nameWithType: CityObjectList.Create
+- uid: PLATEAU.PolygonMesh.CityObjectList.Dispose
+  name: Dispose()
+  href: api/PLATEAU.PolygonMesh.CityObjectList.html#PLATEAU_PolygonMesh_CityObjectList_Dispose
+  commentId: M:PLATEAU.PolygonMesh.CityObjectList.Dispose
+  fullName: PLATEAU.PolygonMesh.CityObjectList.Dispose()
+  nameWithType: CityObjectList.Dispose()
+- uid: PLATEAU.PolygonMesh.CityObjectList.Dispose*
+  name: Dispose
+  href: api/PLATEAU.PolygonMesh.CityObjectList.html#PLATEAU_PolygonMesh_CityObjectList_Dispose_
+  commentId: Overload:PLATEAU.PolygonMesh.CityObjectList.Dispose
+  isSpec: "True"
+  fullName: PLATEAU.PolygonMesh.CityObjectList.Dispose
+  nameWithType: CityObjectList.Dispose
 - uid: PLATEAU.PolygonMesh.CityObjectList.GetAllKeys
   name: GetAllKeys()
   href: api/PLATEAU.PolygonMesh.CityObjectList.html#PLATEAU_PolygonMesh_CityObjectList_GetAllKeys
@@ -6641,6 +7058,35 @@ references:
   isSpec: "True"
   fullName: PLATEAU.PolygonMesh.CityObjectList.Handle
   nameWithType: CityObjectList.Handle
+- uid: PLATEAU.PolygonMesh.CityObjectList.Length
+  name: Length
+  href: api/PLATEAU.PolygonMesh.CityObjectList.html#PLATEAU_PolygonMesh_CityObjectList_Length
+  commentId: P:PLATEAU.PolygonMesh.CityObjectList.Length
+  fullName: PLATEAU.PolygonMesh.CityObjectList.Length
+  nameWithType: CityObjectList.Length
+- uid: PLATEAU.PolygonMesh.CityObjectList.Length*
+  name: Length
+  href: api/PLATEAU.PolygonMesh.CityObjectList.html#PLATEAU_PolygonMesh_CityObjectList_Length_
+  commentId: Overload:PLATEAU.PolygonMesh.CityObjectList.Length
+  isSpec: "True"
+  fullName: PLATEAU.PolygonMesh.CityObjectList.Length
+  nameWithType: CityObjectList.Length
+- uid: PLATEAU.PolygonMesh.CityObjectList.TryGetAtomicID(PLATEAU.PolygonMesh.CityObjectIndex,System.String@)
+  name: TryGetAtomicID(CityObjectIndex, out String)
+  href: api/PLATEAU.PolygonMesh.CityObjectList.html#PLATEAU_PolygonMesh_CityObjectList_TryGetAtomicID_PLATEAU_PolygonMesh_CityObjectIndex_System_String__
+  commentId: M:PLATEAU.PolygonMesh.CityObjectList.TryGetAtomicID(PLATEAU.PolygonMesh.CityObjectIndex,System.String@)
+  name.vb: TryGetAtomicID(CityObjectIndex, ByRef String)
+  fullName: PLATEAU.PolygonMesh.CityObjectList.TryGetAtomicID(PLATEAU.PolygonMesh.CityObjectIndex, out System.String)
+  fullName.vb: PLATEAU.PolygonMesh.CityObjectList.TryGetAtomicID(PLATEAU.PolygonMesh.CityObjectIndex, ByRef System.String)
+  nameWithType: CityObjectList.TryGetAtomicID(CityObjectIndex, out String)
+  nameWithType.vb: CityObjectList.TryGetAtomicID(CityObjectIndex, ByRef String)
+- uid: PLATEAU.PolygonMesh.CityObjectList.TryGetAtomicID*
+  name: TryGetAtomicID
+  href: api/PLATEAU.PolygonMesh.CityObjectList.html#PLATEAU_PolygonMesh_CityObjectList_TryGetAtomicID_
+  commentId: Overload:PLATEAU.PolygonMesh.CityObjectList.TryGetAtomicID
+  isSpec: "True"
+  fullName: PLATEAU.PolygonMesh.CityObjectList.TryGetAtomicID
+  nameWithType: CityObjectList.TryGetAtomicID
 - uid: PLATEAU.PolygonMesh.Mesh
   name: Mesh
   href: api/PLATEAU.PolygonMesh.Mesh.html
@@ -6673,15 +7119,15 @@ references:
   isSpec: "True"
   fullName: PLATEAU.PolygonMesh.Mesh.CityObjectList
   nameWithType: Mesh.CityObjectList
-- uid: PLATEAU.PolygonMesh.Mesh.Create(PlateauVector3d[],System.UInt32[],PlateauVector2f[],PLATEAU.PolygonMesh.SubMesh[])
-  name: Create(PlateauVector3d[], UInt32[], PlateauVector2f[], SubMesh[])
-  href: api/PLATEAU.PolygonMesh.Mesh.html#PLATEAU_PolygonMesh_Mesh_Create_PlateauVector3d___System_UInt32___PlateauVector2f___PLATEAU_PolygonMesh_SubMesh___
-  commentId: M:PLATEAU.PolygonMesh.Mesh.Create(PlateauVector3d[],System.UInt32[],PlateauVector2f[],PLATEAU.PolygonMesh.SubMesh[])
-  name.vb: Create(PlateauVector3d(), UInt32(), PlateauVector2f(), SubMesh())
-  fullName: PLATEAU.PolygonMesh.Mesh.Create(PlateauVector3d[], System.UInt32[], PlateauVector2f[], PLATEAU.PolygonMesh.SubMesh[])
-  fullName.vb: PLATEAU.PolygonMesh.Mesh.Create(PlateauVector3d(), System.UInt32(), PlateauVector2f(), PLATEAU.PolygonMesh.SubMesh())
-  nameWithType: Mesh.Create(PlateauVector3d[], UInt32[], PlateauVector2f[], SubMesh[])
-  nameWithType.vb: Mesh.Create(PlateauVector3d(), UInt32(), PlateauVector2f(), SubMesh())
+- uid: PLATEAU.PolygonMesh.Mesh.Create(PlateauVector3d[],System.UInt32[],PlateauVector2f[],PlateauVector2f[],PLATEAU.PolygonMesh.SubMesh[])
+  name: Create(PlateauVector3d[], UInt32[], PlateauVector2f[], PlateauVector2f[], SubMesh[])
+  href: api/PLATEAU.PolygonMesh.Mesh.html#PLATEAU_PolygonMesh_Mesh_Create_PlateauVector3d___System_UInt32___PlateauVector2f___PlateauVector2f___PLATEAU_PolygonMesh_SubMesh___
+  commentId: M:PLATEAU.PolygonMesh.Mesh.Create(PlateauVector3d[],System.UInt32[],PlateauVector2f[],PlateauVector2f[],PLATEAU.PolygonMesh.SubMesh[])
+  name.vb: Create(PlateauVector3d(), UInt32(), PlateauVector2f(), PlateauVector2f(), SubMesh())
+  fullName: PLATEAU.PolygonMesh.Mesh.Create(PlateauVector3d[], System.UInt32[], PlateauVector2f[], PlateauVector2f[], PLATEAU.PolygonMesh.SubMesh[])
+  fullName.vb: PLATEAU.PolygonMesh.Mesh.Create(PlateauVector3d(), System.UInt32(), PlateauVector2f(), PlateauVector2f(), PLATEAU.PolygonMesh.SubMesh())
+  nameWithType: Mesh.Create(PlateauVector3d[], UInt32[], PlateauVector2f[], PlateauVector2f[], SubMesh[])
+  nameWithType.vb: Mesh.Create(PlateauVector3d(), UInt32(), PlateauVector2f(), PlateauVector2f(), SubMesh())
 - uid: PLATEAU.PolygonMesh.Mesh.Create(System.String)
   name: Create(String)
   href: api/PLATEAU.PolygonMesh.Mesh.html#PLATEAU_PolygonMesh_Mesh_Create_System_String_
@@ -7069,6 +7515,19 @@ references:
   commentId: T:PLATEAU.PolygonMesh.Model
   fullName: PLATEAU.PolygonMesh.Model
   nameWithType: Model
+- uid: PLATEAU.PolygonMesh.Model.#ctor(IntPtr)
+  name: Model(IntPtr)
+  href: api/PLATEAU.PolygonMesh.Model.html#PLATEAU_PolygonMesh_Model__ctor_IntPtr_
+  commentId: M:PLATEAU.PolygonMesh.Model.#ctor(IntPtr)
+  fullName: PLATEAU.PolygonMesh.Model.Model(IntPtr)
+  nameWithType: Model.Model(IntPtr)
+- uid: PLATEAU.PolygonMesh.Model.#ctor*
+  name: Model
+  href: api/PLATEAU.PolygonMesh.Model.html#PLATEAU_PolygonMesh_Model__ctor_
+  commentId: Overload:PLATEAU.PolygonMesh.Model.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.PolygonMesh.Model.Model
+  nameWithType: Model.Model
 - uid: PLATEAU.PolygonMesh.Model.AddNodeByCppMove(PLATEAU.PolygonMesh.Node)
   name: AddNodeByCppMove(Node)
   href: api/PLATEAU.PolygonMesh.Model.html#PLATEAU_PolygonMesh_Model_AddNodeByCppMove_PLATEAU_PolygonMesh_Node_
@@ -7566,6 +8025,31 @@ references:
   fullName.vb: PLATEAU.Util.DebugUtil.EnumerableToString(Of T)(IEnumerable(Of T))
   nameWithType: DebugUtil.EnumerableToString<T>(IEnumerable<T>)
   nameWithType.vb: DebugUtil.EnumerableToString(Of T)(IEnumerable(Of T))
+- uid: PLATEAU.Util.Dialogue
+  name: Dialogue
+  href: api/PLATEAU.Util.Dialogue.html
+  commentId: T:PLATEAU.Util.Dialogue
+  fullName: PLATEAU.Util.Dialogue
+  nameWithType: Dialogue
+- uid: PLATEAU.Util.Dialogue.Display(System.String,System.String)
+  name: Display(String, String)
+  href: api/PLATEAU.Util.Dialogue.html#PLATEAU_Util_Dialogue_Display_System_String_System_String_
+  commentId: M:PLATEAU.Util.Dialogue.Display(System.String,System.String)
+  fullName: PLATEAU.Util.Dialogue.Display(System.String, System.String)
+  nameWithType: Dialogue.Display(String, String)
+- uid: PLATEAU.Util.Dialogue.Display(System.String,System.String,System.String)
+  name: Display(String, String, String)
+  href: api/PLATEAU.Util.Dialogue.html#PLATEAU_Util_Dialogue_Display_System_String_System_String_System_String_
+  commentId: M:PLATEAU.Util.Dialogue.Display(System.String,System.String,System.String)
+  fullName: PLATEAU.Util.Dialogue.Display(System.String, System.String, System.String)
+  nameWithType: Dialogue.Display(String, String, String)
+- uid: PLATEAU.Util.Dialogue.Display*
+  name: Display
+  href: api/PLATEAU.Util.Dialogue.html#PLATEAU_Util_Dialogue_Display_
+  commentId: Overload:PLATEAU.Util.Dialogue.Display
+  isSpec: "True"
+  fullName: PLATEAU.Util.Dialogue.Display
+  nameWithType: Dialogue.Display
 - uid: PLATEAU.Util.DisplayedProgress
   name: DisplayedProgress
   href: api/PLATEAU.Util.DisplayedProgress.html
@@ -7616,6 +8100,25 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Util.DisplayedProgress.PercentageStr
   nameWithType: DisplayedProgress.PercentageStr
+- uid: PLATEAU.Util.DummyProgressDisplay
+  name: DummyProgressDisplay
+  href: api/PLATEAU.Util.DummyProgressDisplay.html
+  commentId: T:PLATEAU.Util.DummyProgressDisplay
+  fullName: PLATEAU.Util.DummyProgressDisplay
+  nameWithType: DummyProgressDisplay
+- uid: PLATEAU.Util.DummyProgressDisplay.SetProgress(System.String,System.Single,System.String)
+  name: SetProgress(String, Single, String)
+  href: api/PLATEAU.Util.DummyProgressDisplay.html#PLATEAU_Util_DummyProgressDisplay_SetProgress_System_String_System_Single_System_String_
+  commentId: M:PLATEAU.Util.DummyProgressDisplay.SetProgress(System.String,System.Single,System.String)
+  fullName: PLATEAU.Util.DummyProgressDisplay.SetProgress(System.String, System.Single, System.String)
+  nameWithType: DummyProgressDisplay.SetProgress(String, Single, String)
+- uid: PLATEAU.Util.DummyProgressDisplay.SetProgress*
+  name: SetProgress
+  href: api/PLATEAU.Util.DummyProgressDisplay.html#PLATEAU_Util_DummyProgressDisplay_SetProgress_
+  commentId: Overload:PLATEAU.Util.DummyProgressDisplay.SetProgress
+  isSpec: "True"
+  fullName: PLATEAU.Util.DummyProgressDisplay.SetProgress
+  nameWithType: DummyProgressDisplay.SetProgress
 - uid: PLATEAU.Util.EnumUtil
   name: EnumUtil
   href: api/PLATEAU.Util.EnumUtil.html
@@ -7638,6 +8141,38 @@ references:
   fullName.vb: PLATEAU.Util.EnumUtil.EachFlags(Of TEnum)(TEnum)
   nameWithType: EnumUtil.EachFlags<TEnum>(TEnum)
   nameWithType.vb: EnumUtil.EachFlags(Of TEnum)(TEnum)
+- uid: PLATEAU.Util.FallbackMaterial
+  name: FallbackMaterial
+  href: api/PLATEAU.Util.FallbackMaterial.html
+  commentId: T:PLATEAU.Util.FallbackMaterial
+  fullName: PLATEAU.Util.FallbackMaterial
+  nameWithType: FallbackMaterial
+- uid: PLATEAU.Util.FallbackMaterial.ByMainTextureName(System.String)
+  name: ByMainTextureName(String)
+  href: api/PLATEAU.Util.FallbackMaterial.html#PLATEAU_Util_FallbackMaterial_ByMainTextureName_System_String_
+  commentId: M:PLATEAU.Util.FallbackMaterial.ByMainTextureName(System.String)
+  fullName: PLATEAU.Util.FallbackMaterial.ByMainTextureName(System.String)
+  nameWithType: FallbackMaterial.ByMainTextureName(String)
+- uid: PLATEAU.Util.FallbackMaterial.ByMainTextureName*
+  name: ByMainTextureName
+  href: api/PLATEAU.Util.FallbackMaterial.html#PLATEAU_Util_FallbackMaterial_ByMainTextureName_
+  commentId: Overload:PLATEAU.Util.FallbackMaterial.ByMainTextureName
+  isSpec: "True"
+  fullName: PLATEAU.Util.FallbackMaterial.ByMainTextureName
+  nameWithType: FallbackMaterial.ByMainTextureName
+- uid: PLATEAU.Util.FallbackMaterial.LoadByPackage(PredefinedCityModelPackage)
+  name: LoadByPackage(PredefinedCityModelPackage)
+  href: api/PLATEAU.Util.FallbackMaterial.html#PLATEAU_Util_FallbackMaterial_LoadByPackage_PredefinedCityModelPackage_
+  commentId: M:PLATEAU.Util.FallbackMaterial.LoadByPackage(PredefinedCityModelPackage)
+  fullName: PLATEAU.Util.FallbackMaterial.LoadByPackage(PredefinedCityModelPackage)
+  nameWithType: FallbackMaterial.LoadByPackage(PredefinedCityModelPackage)
+- uid: PLATEAU.Util.FallbackMaterial.LoadByPackage*
+  name: LoadByPackage
+  href: api/PLATEAU.Util.FallbackMaterial.html#PLATEAU_Util_FallbackMaterial_LoadByPackage_
+  commentId: Overload:PLATEAU.Util.FallbackMaterial.LoadByPackage
+  isSpec: "True"
+  fullName: PLATEAU.Util.FallbackMaterial.LoadByPackage
+  nameWithType: FallbackMaterial.LoadByPackage
 - uid: PLATEAU.Util.IProgressDisplay
   name: IProgressDisplay
   href: api/PLATEAU.Util.IProgressDisplay.html
@@ -7663,6 +8198,12 @@ references:
   commentId: T:PLATEAU.Util.MaterialPathUtil
   fullName: PLATEAU.Util.MaterialPathUtil
   nameWithType: MaterialPathUtil
+- uid: PLATEAU.Util.MaterialPathUtil.BaseMaterialDir
+  name: BaseMaterialDir
+  href: api/PLATEAU.Util.MaterialPathUtil.html#PLATEAU_Util_MaterialPathUtil_BaseMaterialDir
+  commentId: F:PLATEAU.Util.MaterialPathUtil.BaseMaterialDir
+  fullName: PLATEAU.Util.MaterialPathUtil.BaseMaterialDir
+  nameWithType: MaterialPathUtil.BaseMaterialDir
 - uid: PLATEAU.Util.MaterialPathUtil.GetMapMatPath
   name: GetMapMatPath()
   href: api/PLATEAU.Util.MaterialPathUtil.html#PLATEAU_Util_MaterialPathUtil_GetMapMatPath
@@ -7689,19 +8230,6 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Util.MaterialPathUtil.GetRenderPipelineType
   nameWithType: MaterialPathUtil.GetRenderPipelineType
-- uid: PLATEAU.Util.MaterialPathUtil.LoadDefaultFallbackMaterial(PredefinedCityModelPackage)
-  name: LoadDefaultFallbackMaterial(PredefinedCityModelPackage)
-  href: api/PLATEAU.Util.MaterialPathUtil.html#PLATEAU_Util_MaterialPathUtil_LoadDefaultFallbackMaterial_PredefinedCityModelPackage_
-  commentId: M:PLATEAU.Util.MaterialPathUtil.LoadDefaultFallbackMaterial(PredefinedCityModelPackage)
-  fullName: PLATEAU.Util.MaterialPathUtil.LoadDefaultFallbackMaterial(PredefinedCityModelPackage)
-  nameWithType: MaterialPathUtil.LoadDefaultFallbackMaterial(PredefinedCityModelPackage)
-- uid: PLATEAU.Util.MaterialPathUtil.LoadDefaultFallbackMaterial*
-  name: LoadDefaultFallbackMaterial
-  href: api/PLATEAU.Util.MaterialPathUtil.html#PLATEAU_Util_MaterialPathUtil_LoadDefaultFallbackMaterial_
-  commentId: Overload:PLATEAU.Util.MaterialPathUtil.LoadDefaultFallbackMaterial
-  isSpec: "True"
-  fullName: PLATEAU.Util.MaterialPathUtil.LoadDefaultFallbackMaterial
-  nameWithType: MaterialPathUtil.LoadDefaultFallbackMaterial
 - uid: PLATEAU.Util.PathUtil
   name: PathUtil
   href: api/PLATEAU.Util.PathUtil.html
@@ -7822,6 +8350,63 @@ references:
   commentId: F:PLATEAU.Util.PipeLineType.UniversalRenderPipelineAsset
   fullName: PLATEAU.Util.PipeLineType.UniversalRenderPipelineAsset
   nameWithType: PipeLineType.UniversalRenderPipelineAsset
+- uid: PLATEAU.Util.ProgressBar
+  name: ProgressBar
+  href: api/PLATEAU.Util.ProgressBar.html
+  commentId: T:PLATEAU.Util.ProgressBar
+  fullName: PLATEAU.Util.ProgressBar
+  nameWithType: ProgressBar
+- uid: PLATEAU.Util.ProgressBar.#ctor
+  name: ProgressBar()
+  href: api/PLATEAU.Util.ProgressBar.html#PLATEAU_Util_ProgressBar__ctor
+  commentId: M:PLATEAU.Util.ProgressBar.#ctor
+  fullName: PLATEAU.Util.ProgressBar.ProgressBar()
+  nameWithType: ProgressBar.ProgressBar()
+- uid: PLATEAU.Util.ProgressBar.#ctor(System.String)
+  name: ProgressBar(String)
+  href: api/PLATEAU.Util.ProgressBar.html#PLATEAU_Util_ProgressBar__ctor_System_String_
+  commentId: M:PLATEAU.Util.ProgressBar.#ctor(System.String)
+  fullName: PLATEAU.Util.ProgressBar.ProgressBar(System.String)
+  nameWithType: ProgressBar.ProgressBar(String)
+- uid: PLATEAU.Util.ProgressBar.#ctor*
+  name: ProgressBar
+  href: api/PLATEAU.Util.ProgressBar.html#PLATEAU_Util_ProgressBar__ctor_
+  commentId: Overload:PLATEAU.Util.ProgressBar.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.Util.ProgressBar.ProgressBar
+  nameWithType: ProgressBar.ProgressBar
+- uid: PLATEAU.Util.ProgressBar.Display(System.Single)
+  name: Display(Single)
+  href: api/PLATEAU.Util.ProgressBar.html#PLATEAU_Util_ProgressBar_Display_System_Single_
+  commentId: M:PLATEAU.Util.ProgressBar.Display(System.Single)
+  fullName: PLATEAU.Util.ProgressBar.Display(System.Single)
+  nameWithType: ProgressBar.Display(Single)
+- uid: PLATEAU.Util.ProgressBar.Display(System.String,System.Single)
+  name: Display(String, Single)
+  href: api/PLATEAU.Util.ProgressBar.html#PLATEAU_Util_ProgressBar_Display_System_String_System_Single_
+  commentId: M:PLATEAU.Util.ProgressBar.Display(System.String,System.Single)
+  fullName: PLATEAU.Util.ProgressBar.Display(System.String, System.Single)
+  nameWithType: ProgressBar.Display(String, Single)
+- uid: PLATEAU.Util.ProgressBar.Display*
+  name: Display
+  href: api/PLATEAU.Util.ProgressBar.html#PLATEAU_Util_ProgressBar_Display_
+  commentId: Overload:PLATEAU.Util.ProgressBar.Display
+  isSpec: "True"
+  fullName: PLATEAU.Util.ProgressBar.Display
+  nameWithType: ProgressBar.Display
+- uid: PLATEAU.Util.ProgressBar.Dispose
+  name: Dispose()
+  href: api/PLATEAU.Util.ProgressBar.html#PLATEAU_Util_ProgressBar_Dispose
+  commentId: M:PLATEAU.Util.ProgressBar.Dispose
+  fullName: PLATEAU.Util.ProgressBar.Dispose()
+  nameWithType: ProgressBar.Dispose()
+- uid: PLATEAU.Util.ProgressBar.Dispose*
+  name: Dispose
+  href: api/PLATEAU.Util.ProgressBar.html#PLATEAU_Util_ProgressBar_Dispose_
+  commentId: Overload:PLATEAU.Util.ProgressBar.Dispose
+  isSpec: "True"
+  fullName: PLATEAU.Util.ProgressBar.Dispose
+  nameWithType: ProgressBar.Dispose
 - uid: PLATEAU.Util.RenderUtil
   name: RenderUtil
   href: api/PLATEAU.Util.RenderUtil.html

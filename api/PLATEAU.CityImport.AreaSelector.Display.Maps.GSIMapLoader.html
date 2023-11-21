@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class AreaLodView
+    <title>Class GSIMapLoader
    | PLATEAU SDK for Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class AreaLodView
+    <meta name="title" content="Class GSIMapLoader
    | PLATEAU SDK for Unity ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,19 +78,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader">
   
   
-  <h1 id="PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView" class="text-break">Class AreaLodView
+  <h1 id="PLATEAU_CityImport_AreaSelector_Display_Maps_GSIMapLoader" data-uid="PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader" class="text-break">Class GSIMapLoader
   </h1>
-  <div class="markdown level0 summary"><p>範囲選択画面で、メッシュコードごとに利用可能なLODを表示します。
-<a class="xref" href="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodController.html">AreaLodController</a> によって保持されます。</p>
+  <div class="markdown level0 summary"><p>地理院地図タイルをダウンロードしてシーンに配置します。</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">AreaLodView</span></div>
+    <div class="level1"><span class="xref">GSIMapLoader</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -116,47 +115,34 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityImport.AreaSelector.SceneObjs.html">PLATEAU.CityImport.AreaSelector.SceneObjs</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityImport.AreaSelector.Display.Maps.html">PLATEAU.CityImport.AreaSelector.Display.Maps</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_syntax">Syntax</h5>
+  <h5 id="PLATEAU_CityImport_AreaSelector_Display_Maps_GSIMapLoader_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AreaLodView</code></pre>
+    <pre><code class="lang-csharp hljs">public static class GSIMapLoader</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h3 id="fields">Fields
   </h3>
   
   
-  <a id="PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView__ctor_" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.#ctor*"></a>
-  <h4 id="PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView__ctor_PackageToLodDict_Vector3_Vector3_" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.#ctor(PackageToLodDict,Vector3,Vector3)">AreaLodView(PackageToLodDict, Vector3, Vector3)</h4>
+  <h4 id="PLATEAU_CityImport_AreaSelector_Display_Maps_GSIMapLoader_MapRootObjName" data-uid="PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader.MapRootObjName">MapRootObjName</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AreaLodView(PackageToLodDict packageToLodDict, Vector3 meshCodeUnityPositionUpperLeft, Vector3 meshCodeUnityPositionLowerRight)</code></pre>
+    <pre><code class="lang-csharp hljs">public const string MapRootObjName = &quot;Basemap&quot;</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">PackageToLodDict</span></td>
-        <td><span class="parametername">packageToLodDict</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><span class="parametername">meshCodeUnityPositionUpperLeft</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><span class="parametername">meshCodeUnityPositionLowerRight</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -165,78 +151,15 @@
   </h3>
   
   
-  <a id="PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_CalculateLodViewParam_" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.CalculateLodViewParam*"></a>
-  <h4 id="PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_CalculateLodViewParam_Camera_ICollection_System_Int32__" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.CalculateLodViewParam(Camera,ICollection{System.Int32})">CalculateLodViewParam(Camera, ICollection&lt;Int32&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CalculateLodViewParam(Camera camera, ICollection&lt;int&gt; showLods)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Camera</span></td>
-        <td><span class="parametername">camera</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">ICollection</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
-        <td><span class="parametername">showLods</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_DrawHandles_" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.DrawHandles*"></a>
-  <h4 id="PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_DrawHandles_Camera_HashSet_System_Int32__" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.DrawHandles(Camera,HashSet{System.Int32})">DrawHandles(Camera, HashSet&lt;Int32&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void DrawHandles(Camera camera, HashSet&lt;int&gt; showLods)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Camera</span></td>
-        <td><span class="parametername">camera</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">HashSet</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
-        <td><span class="parametername">showLods</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_HasIconOfPackage_" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.HasIconOfPackage*"></a>
-  <h4 id="PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_HasIconOfPackage_PredefinedCityModelPackage_" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.HasIconOfPackage(PredefinedCityModelPackage)">HasIconOfPackage(PredefinedCityModelPackage)</h4>
-  <div class="markdown level1 summary"><p>このパッケージの利用可能LODを地図上で表示するかどうかを返します。</p>
+  <a id="PLATEAU_CityImport_AreaSelector_Display_Maps_GSIMapLoader_DownloadAndPlaceAsync_" data-uid="PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader.DownloadAndPlaceAsync*"></a>
+  <h4 id="PLATEAU_CityImport_AreaSelector_Display_Maps_GSIMapLoader_DownloadAndPlaceAsync_Extent_GeoReference_System_Int32_CancellationToken_" data-uid="PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader.DownloadAndPlaceAsync(Extent,GeoReference,System.Int32,CancellationToken)">DownloadAndPlaceAsync(Extent, GeoReference, Int32, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>地理院地図タイルをダウンロードして、シーンに配置します。
+メインスレッドで呼ぶ必要があります。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool HasIconOfPackage(PredefinedCityModelPackage package)</code></pre>
+    <pre><code class="lang-csharp hljs">public static async Task&lt;List&lt;Material&gt;&gt; DownloadAndPlaceAsync(Extent extent, GeoReference geoReference, int zoomLevel, CancellationToken cancel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -249,8 +172,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">PredefinedCityModelPackage</span></td>
-        <td><span class="parametername">package</span></td>
+        <td><span class="xref">Extent</span></td>
+        <td><span class="parametername">extent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">GeoReference</span></td>
+        <td><span class="parametername">geoReference</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">zoomLevel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancel</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -265,22 +203,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<span class="xref">Material</span>&gt;&gt;</td>
+        <td><p>生成したマテリアルのリストを返します。このマテリアルはメソッドの利用者が利用終了時に廃棄してください。</p>
+</td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_Init_" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.Init*"></a>
-  <h4 id="PLATEAU_CityImport_AreaSelector_SceneObjs_AreaLodView_Init" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.AreaLodView.Init">Init()</h4>
-  <div class="markdown level1 summary"><p>地図上に利用可能LODを表示するためのアイコンをロードします。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Init()</code></pre>
-  </div>
 </article>
           </div>
           

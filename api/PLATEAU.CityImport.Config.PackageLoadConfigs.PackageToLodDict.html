@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class AttributeValue
+    <title>Class PackageToLodDict
    | PLATEAU SDK for Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class AttributeValue
+    <meta name="title" content="Class PackageToLodDict
    | PLATEAU SDK for Unity ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,31 +78,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PLATEAU.CityGML.AttributeValue">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict">
   
   
-  <h1 id="PLATEAU_CityGML_AttributeValue" data-uid="PLATEAU.CityGML.AttributeValue" class="text-break">Class AttributeValue
+  <h1 id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict" class="text-break">Class PackageToLodDict
   </h1>
-  <div class="markdown level0 summary"><p>
-Plateau のオブジェクトが持つ属性 (key と value のペア)　のうち、 value の部分です。
-value は、内部的には string または 子の属性セットへの参照 のどちらかのデータを保持します。</p>
-
-<p>
-value の値がどのような形式であるかを <a class="xref" href="PLATEAU.CityGML.AttributeType.html">AttributeType</a> 形式で保持し、<a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_Type">Type</a> で取得できます。</p>
-
-<p>
-<a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_Type">Type</a> が String, Double, Integer, Data, Uri, Measure の場合、内部的にはデータは単に string であり、 <a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsString">AsString</a> で取得できます。
-<a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsDouble">AsDouble</a>, <a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsInt">AsInt</a> プロパティもありますが、それは単に <a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsString">AsString</a> を数値にパースするものです。</p>
-
-<p>
-<a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_Type">Type</a> が <a class="xref" href="PLATEAU.CityGML.AttributeType.html#PLATEAU_CityGML_AttributeType_AttributeSet">AttributeSet</a> である場合、 この属性の子に属性セットがあることを意味します。
-この場合は <a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsString">AsString</a> は意味を成さず、代わりに <a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsAttrSet">AsAttrSet</a> で子の属性セットを取得できます。</p>
+  <div class="markdown level0 summary"><p>パッケージとそこに含まれる最大LODの組です。</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">AttributeValue</span></div>
+    <div class="level1"><span class="xref">PackageToLodDict</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -128,23 +115,23 @@ value の値がどのような形式であるかを <a class="xref" href="PLATEA
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityGML.html">PLATEAU.CityGML</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityImport.Config.PackageLoadConfigs.html">PLATEAU.CityImport.Config.PackageLoadConfigs</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="PLATEAU_CityGML_AttributeValue_syntax">Syntax</h5>
+  <h5 id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AttributeValue</code></pre>
+    <pre><code class="lang-csharp hljs">public class PackageToLodDict</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h3 id="methods">Methods
   </h3>
   
   
-  <a id="PLATEAU_CityGML_AttributeValue__ctor_" data-uid="PLATEAU.CityGML.AttributeValue.#ctor*"></a>
-  <h4 id="PLATEAU_CityGML_AttributeValue__ctor_IntPtr_" data-uid="PLATEAU.CityGML.AttributeValue.#ctor(IntPtr)">AttributeValue(IntPtr)</h4>
+  <a id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_AddOrUpdate_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.AddOrUpdate*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_AddOrUpdate_PredefinedCityModelPackage_System_Int32_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.AddOrUpdate(PredefinedCityModelPackage,System.Int32)">AddOrUpdate(PredefinedCityModelPackage, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AttributeValue(IntPtr handle)</code></pre>
+    <pre><code class="lang-csharp hljs">public void AddOrUpdate(PredefinedCityModelPackage package, int maxLod)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -157,54 +144,45 @@ value の値がどのような形式であるかを <a class="xref" href="PLATEA
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
-        <td><span class="parametername">handle</span></td>
+        <td><span class="xref">PredefinedCityModelPackage</span></td>
+        <td><span class="parametername">package</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">maxLod</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
-  </h3>
   
   
-  <a id="PLATEAU_CityGML_AttributeValue_AsAttrSet_" data-uid="PLATEAU.CityGML.AttributeValue.AsAttrSet*"></a>
-  <h4 id="PLATEAU_CityGML_AttributeValue_AsAttrSet" data-uid="PLATEAU.CityGML.AttributeValue.AsAttrSet">AsAttrSet</h4>
-  <div class="markdown level1 summary"><p><a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_Type">Type</a> が <a class="xref" href="PLATEAU.CityGML.AttributeType.html#PLATEAU_CityGML_AttributeType_AttributeSet">AttributeSet</a> であることを前提に、
-子の <a class="xref" href="PLATEAU.CityGML.AttributesMap.html">AttributesMap</a> を返します。
-<a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_Type">Type</a> がその他である場合は意味を成しません。</p>
-</div>
+  <a id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_Contains_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.Contains*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_Contains_PredefinedCityModelPackage_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.Contains(PredefinedCityModelPackage)">Contains(PredefinedCityModelPackage)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AttributesMap AsAttrSet { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Contains(PredefinedCityModelPackage package)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="PLATEAU.CityGML.AttributesMap.html">AttributesMap</a></td>
+        <td><span class="xref">PredefinedCityModelPackage</span></td>
+        <td><span class="parametername">package</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="PLATEAU_CityGML_AttributeValue_AsBool_" data-uid="PLATEAU.CityGML.AttributeValue.AsBool*"></a>
-  <h4 id="PLATEAU_CityGML_AttributeValue_AsBool" data-uid="PLATEAU.CityGML.AttributeValue.AsBool">AsBool</h4>
-  <div class="markdown level1 summary"><p>属性値を bool にパースして返します。 </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool AsBool { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -221,16 +199,15 @@ value の値がどのような形式であるかを <a class="xref" href="PLATEA
   </table>
   
   
-  <a id="PLATEAU_CityGML_AttributeValue_AsDouble_" data-uid="PLATEAU.CityGML.AttributeValue.AsDouble*"></a>
-  <h4 id="PLATEAU_CityGML_AttributeValue_AsDouble" data-uid="PLATEAU.CityGML.AttributeValue.AsDouble">AsDouble</h4>
-  <div class="markdown level1 summary"><p>属性値を double にパースして返します。 </p>
-</div>
+  <a id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_GetEnumerator_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetEnumerator*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_GetEnumerator" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double AsDouble { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;KeyValuePair&lt;PredefinedCityModelPackage, int&gt;&gt; GetEnumerator()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -240,23 +217,41 @@ value の値がどのような形式であるかを <a class="xref" href="PLATEA
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="xref">IEnumerator</span>&lt;<span class="xref">KeyValuePair</span>&lt;<span class="xref">PredefinedCityModelPackage</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_CityGML_AttributeValue_AsInt_" data-uid="PLATEAU.CityGML.AttributeValue.AsInt*"></a>
-  <h4 id="PLATEAU_CityGML_AttributeValue_AsInt" data-uid="PLATEAU.CityGML.AttributeValue.AsInt">AsInt</h4>
-  <div class="markdown level1 summary"><p>属性値を int にパースして返します。 </p>
+  <a id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_GetLod_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetLod*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_GetLod_PredefinedCityModelPackage_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetLod(PredefinedCityModelPackage)">GetLod(PredefinedCityModelPackage)</h4>
+  <div class="markdown level1 summary"><p>引数の <code data-dev-comment-type="paramref" class="paramref">package</code> で利用可能な最大LODを返します。
+ない場合は -1 を返します。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int AsInt { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int GetLod(PredefinedCityModelPackage package)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PredefinedCityModelPackage</span></td>
+        <td><span class="parametername">package</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -273,54 +268,59 @@ value の値がどのような形式であるかを <a class="xref" href="PLATEA
   </table>
   
   
-  <a id="PLATEAU_CityGML_AttributeValue_AsString_" data-uid="PLATEAU.CityGML.AttributeValue.AsString*"></a>
-  <h4 id="PLATEAU_CityGML_AttributeValue_AsString" data-uid="PLATEAU.CityGML.AttributeValue.AsString">AsString</h4>
-  <div class="markdown level1 summary"><p>属性値を string 形式で取得します。
-<a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_Type">Type</a> が String, Double, Integer, Data, Uri, Measure の場合に有効です。
-<a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_Type">Type</a> が <a class="xref" href="PLATEAU.CityGML.AttributeType.html#PLATEAU_CityGML_AttributeType_AttributeSet">AttributeSet</a> の場合は意味を成しません。</p>
-</div>
+  <a id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_MargeDict_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MargeDict*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_MargeDict_PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MargeDict(PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict)">MargeDict(PackageToLodDict)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string AsString { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public void MargeDict(PackageToLodDict other)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.html">PackageToLodDict</a></td>
+        <td><span class="parametername">other</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_CityGML_AttributeValue_Type_" data-uid="PLATEAU.CityGML.AttributeValue.Type*"></a>
-  <h4 id="PLATEAU_CityGML_AttributeValue_Type" data-uid="PLATEAU.CityGML.AttributeValue.Type">Type</h4>
-  <div class="markdown level1 summary"><p>属性の値の想定形式です。<a class="xref" href="PLATEAU.CityGML.AttributeType.html">AttributeType</a> 型で返します。</p>
-</div>
+  <a id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_MergePackage_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MergePackage*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_MergePackage_PredefinedCityModelPackage_System_Int32_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MergePackage(PredefinedCityModelPackage,System.Int32)">MergePackage(PredefinedCityModelPackage, Int32)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AttributeType Type { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public void MergePackage(PredefinedCityModelPackage package, int otherLod)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="PLATEAU.CityGML.AttributeType.html">AttributeType</a></td>
+        <td><span class="xref">PredefinedCityModelPackage</span></td>
+        <td><span class="parametername">package</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">otherLod</span></td>
         <td></td>
       </tr>
     </tbody>

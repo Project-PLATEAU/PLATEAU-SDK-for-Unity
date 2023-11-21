@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class GSIMapLoader
+    <title>Class Dialogue
    | PLATEAU SDK for Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class GSIMapLoader
+    <meta name="title" content="Class Dialogue
    | PLATEAU SDK for Unity ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,18 +78,19 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.Util.Dialogue">
   
   
-  <h1 id="PLATEAU_CityImport_AreaSelector_SceneObjs_GSIMapLoader" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader" class="text-break">Class GSIMapLoader
+  <h1 id="PLATEAU_Util_Dialogue" data-uid="PLATEAU.Util.Dialogue" class="text-break">Class Dialogue
   </h1>
-  <div class="markdown level0 summary"><p>地理院地図タイルをダウンロードしてシーンに配置します。</p>
+  <div class="markdown level0 summary"><p>Editorの場合にUnityのダイアログを表示し、
+Runtimeの場合に何もしないクラスです。</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">GSIMapLoader</span></div>
+    <div class="level1"><span class="xref">Dialogue</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -115,51 +116,24 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityImport.AreaSelector.SceneObjs.html">PLATEAU.CityImport.AreaSelector.SceneObjs</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.Util.html">PLATEAU.Util</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="PLATEAU_CityImport_AreaSelector_SceneObjs_GSIMapLoader_syntax">Syntax</h5>
+  <h5 id="PLATEAU_Util_Dialogue_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class GSIMapLoader</code></pre>
+    <pre><code class="lang-csharp hljs">public class Dialogue</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="PLATEAU_CityImport_AreaSelector_SceneObjs_GSIMapLoader_MapRootObjName" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader.MapRootObjName">MapRootObjName</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string MapRootObjName = &quot;Basemap&quot;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="PLATEAU_CityImport_AreaSelector_SceneObjs_GSIMapLoader_DownloadAndPlaceAsync_" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader.DownloadAndPlaceAsync*"></a>
-  <h4 id="PLATEAU_CityImport_AreaSelector_SceneObjs_GSIMapLoader_DownloadAndPlaceAsync_Extent_GeoReference_System_Int32_CancellationToken_" data-uid="PLATEAU.CityImport.AreaSelector.SceneObjs.GSIMapLoader.DownloadAndPlaceAsync(Extent,GeoReference,System.Int32,CancellationToken)">DownloadAndPlaceAsync(Extent, GeoReference, Int32, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>地理院地図タイルをダウンロードして、シーンに配置します。
-メインスレッドで呼ぶ必要があります。</p>
+  <a id="PLATEAU_Util_Dialogue_Display_" data-uid="PLATEAU.Util.Dialogue.Display*"></a>
+  <h4 id="PLATEAU_Util_Dialogue_Display_System_String_System_String_" data-uid="PLATEAU.Util.Dialogue.Display(System.String,System.String)">Display(String, String)</h4>
+  <div class="markdown level1 summary"><p>Editorの場合、キャンセルボタンのないダイアログを表示します。 </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static async Task&lt;List&lt;Material&gt;&gt; DownloadAndPlaceAsync(Extent extent, GeoReference geoReference, int zoomLevel, CancellationToken cancel)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Display(string message, string ok)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -172,22 +146,50 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Extent</span></td>
-        <td><span class="parametername">extent</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">GeoReference</span></td>
-        <td><span class="parametername">geoReference</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">ok</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_Dialogue_Display_" data-uid="PLATEAU.Util.Dialogue.Display*"></a>
+  <h4 id="PLATEAU_Util_Dialogue_Display_System_String_System_String_System_String_" data-uid="PLATEAU.Util.Dialogue.Display(System.String,System.String,System.String)">Display(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Editorの場合、ダイアログで2択の選択肢を提示し、結果をboolで返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Display(string message, string ok, string cancel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">zoomLevel</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">ok</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">CancellationToken</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">cancel</span></td>
         <td></td>
       </tr>
@@ -203,9 +205,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<span class="xref">Material</span>&gt;&gt;</td>
-        <td><p>生成したマテリアルのリストを返します。このマテリアルはメソッドの利用者が利用終了時に廃棄してください。</p>
-</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

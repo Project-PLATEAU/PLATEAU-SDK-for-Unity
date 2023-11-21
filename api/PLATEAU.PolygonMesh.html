@@ -88,7 +88,12 @@
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="PLATEAU.PolygonMesh.CityObjectList.html">CityObjectList</a></h4>
-      <section></section>
+      <section><p><a class="xref" href="PLATEAU.PolygonMesh.CityObjectIndex.html">CityObjectIndex</a>とGML IDを対応付けるネイティブなmapです。
+注意:
+Meshと紐付けられたCityObjectListはMeshの削除時に一緒に削除されるので、Disposeを呼んではいけません。
+したがって勝手に削除される<see cref="!:PInvokeDisposable"></see>は実装しません。
+どことも紐付けられないCityObjectListに限って、手動でDisposeを呼んでください。</p>
+</section>
       <h4><a class="xref" href="PLATEAU.PolygonMesh.Mesh.html">Mesh</a></h4>
       <section><p>メッシュ情報です。
 Unity や Unreal Engine でメッシュを生成するために必要な情報が含まれるよう意図されています。

@@ -120,7 +120,7 @@
 <img src="../resources/manual/importCityModels/sceneSaveDialogue.png" alt=""></li>
 <li>シーンビューの表示が切り替わり、範囲選択画面になります。
 <img src="../resources/manual/importCityModels/areaSelectWindow.png" alt="">  </li>
-<li>範囲選択画面の操作方法：<ul>
+<li>範囲選択画面の操作方法<ul>
 <li>マウスホイールを上下に回してズームアウト、ズームインします。</li>
 <li>マウスホイールを押し込んだままドラッグしてカメラ移動します。</li>
 <li>範囲の選択方法については、画面右下に説明があるとおり、<ul>
@@ -132,7 +132,7 @@
 <li>シーンビュー左上の<code>決定</code>ボタンを押して範囲を確定します。すると元のシーンに戻ります。</li>
 </ul>
 </li>
-<li>画面のみかた：<ul>
+<li>画面のみかた<ul>
 <li>青色の線は利用可能な地域を示します。</li>
 <li>地域ごとに利用可能なGML種別と対応LODがアイコン形式で表示されます。<ul>
 <li>対応LODは色で表現されます。画面左下の凡例の色と対応します。</li>
@@ -143,7 +143,13 @@
 <li>区域に表示される番号は、後述の<code>indexmap.pdf</code> に記載の番号と同じです。</li>
 </ul>
 </li>
+<li>メッシュコード検索機能<ul>
+<li>シーンビュー左上の<code>メッシュコード検索</code>ボタンを押すと、メッシュコードの番号（地図上で青色で表示される数字）で検索できます。</li>
+<li>番号を入力してOKボタンを押すと、その範囲に視界が移動します。</li>
 </ul>
+</li>
+</ul>
+<p><img src="../resources/manual/importCityModels/searchByMeshCode.png" alt=""></p>
 <div class="NOTE"><h5>Note</h5><p>範囲選択画面では、通常はガイド線が格子状に並び、地図は隙間無く表示されます。<br>しかし、座標系の選択を誤ると、下図のようにガイド線の配置が歪み、地図に隙間ができます。
 <img src="../resources/manual/importCityModels/invalidCoordinateSystem.png" alt="">
 これは誤った座標系を選択したことによる座標計算の誤差が可視化されたものです。<br>球体の地球を平面の地図で表現する都合上、基準座標点から離れるほど座標計算の誤差は大きくなります。</p>
@@ -154,14 +160,22 @@
 <img src="../resources/manual/importCityModels/idmap.png" alt=""></li>
 </ul>
 <h3 id="地物別設定">地物別設定</h3>
-<p>地物の種類ごとにインポートに関する設定を行います。<br><img src="../resources/manual/importCityModels/importPerPackageConfig.png" alt=""><br><strong>設定項目について:</strong></p>
+<p>地物の種類ごとにインポートに関する設定を行います。<br><img src="../resources/manual/importCityModels/importPerPackageConfig.png" alt="">  </p>
+<h4 id="設定項目について">設定項目について:</h4>
 <ul>
+<li><code>一括設定</code><ul>
+<li>複数の地物タイプをまとめて設定したい場合に編集してください。 </li>
+<li>地物タイプごとの設定で「一括設定と同じ」を選択したときに、この設定が適用されます。</li>
+<li>「一括設定と同じ」のチェックを外したときは、一括設定にかかわらず、個別に設定を上書きするためのメニューが表示されます。</li>
+<li>各設定の意味については後述します。</li>
+</ul>
+</li>
 <li><code>インポートする</code><ul>
 <li>チェックが付いている地物タイプのみインポートします。</li>
 </ul>
 </li>
 <li><code>テクスチャを含める</code><ul>
-<li>テクスチャが存在する地物タイプで表示される設定項目です。<br>チェックが付いていて、かつテクスチャがある場合はそれを含めてインポートします。<br>都市データによってはテクスチャがない場合があり、<br>その場合はチェックを外した時と同様に真っ白な3Dモデルが出力されます。</li>
+<li>テクスチャが存在する地物タイプで表示される設定項目です。<br>チェックが付いていて、かつテクスチャがある場合はそれを含めてインポートします。<br>都市データによってはテクスチャがない場合があり、<br>その場合はチェックを外した時と同様にデフォルトマテリアルが適用されます。</li>
 </ul>
 </li>
 <li><code>テクスチャを結合する</code><ul>

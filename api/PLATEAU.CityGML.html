@@ -104,28 +104,6 @@
 <a class="xref" href="PLATEAU.CityGML.AppearanceTargetDefinition-1.html#PLATEAU_CityGML_AppearanceTargetDefinition_1_Appearance">Appearance</a> は <a class="xref" href="PLATEAU.CityGML.TextureTargetDefinition.html">TextureTargetDefinition</a> ならば <a class="xref" href="PLATEAU.CityGML.Texture.html">Texture</a> 型、
 <a class="xref" href="PLATEAU.CityGML.MaterialTargetDefinition.html">MaterialTargetDefinition</a> ならば <a class="xref" href="PLATEAU.CityGML.Material.html">Material</a> 型です。</p>
 </section>
-      <h4><a class="xref" href="PLATEAU.CityGML.AttributesMap.html">AttributesMap</a></h4>
-      <section><p>属性の辞書です。
-<see cref="!:IReadOnlyDictionary&lt;TKey,TValue>"></see> を実装します。
-string をキーとし、 <a class="xref" href="PLATEAU.CityGML.AttributeValue.html">AttributeValue</a> が値になります。
-this[key] で <a class="xref" href="PLATEAU.CityGML.AttributeValue.html">AttributeValue</a> が返ります。</p>
-</section>
-      <h4><a class="xref" href="PLATEAU.CityGML.AttributeValue.html">AttributeValue</a></h4>
-      <section><p>
-Plateau のオブジェクトが持つ属性 (key と value のペア)　のうち、 value の部分です。
-value は、内部的には string または 子の属性セットへの参照 のどちらかのデータを保持します。</p>
-
-<p>
-value の値がどのような形式であるかを <a class="xref" href="PLATEAU.CityGML.AttributeType.html">AttributeType</a> 形式で保持し、<a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_Type">Type</a> で取得できます。</p>
-
-<p>
-<a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_Type">Type</a> が String, Double, Integer, Data, Uri, Measure の場合、内部的にはデータは単に string であり、 <a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsString">AsString</a> で取得できます。
-<a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsDouble">AsDouble</a>, <a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsInt">AsInt</a> プロパティもありますが、それは単に <a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsString">AsString</a> を数値にパースするものです。</p>
-
-<p>
-<a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_Type">Type</a> が <a class="xref" href="PLATEAU.CityGML.AttributeType.html#PLATEAU_CityGML_AttributeType_AttributeSet">AttributeSet</a> である場合、 この属性の子に属性セットがあることを意味します。
-この場合は <a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsString">AsString</a> は意味を成さず、代わりに <a class="xref" href="PLATEAU.CityGML.AttributeValue.html#PLATEAU_CityGML_AttributeValue_AsAttrSet">AsAttrSet</a> で子の属性セットを取得できます。</p>
-</section>
       <h4><a class="xref" href="PLATEAU.CityGML.CityGml.html">CityGml</a></h4>
       <section></section>
       <h4><a class="xref" href="PLATEAU.CityGML.CityModel.html">CityModel</a></h4>
@@ -162,9 +140,31 @@ CityGMLにおける都市オブジェクトです。</p>
       <section><p>未実装です。
 マテリアルを含むGMLの例が見当たらないため</p>
 </section>
+      <h4><a class="xref" href="PLATEAU.CityGML.NativeAttributesMap.html">NativeAttributesMap</a></h4>
+      <section><p>属性の辞書です。
+<see cref="!:IReadOnlyDictionary&lt;TKey,TValue>"></see> を実装します。
+string をキーとし、 <a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html">NativeAttributeValue</a> が値になります。
+this[key] で <a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html">NativeAttributeValue</a> が返ります。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html">NativeAttributeValue</a></h4>
+      <section><p>
+Plateau のオブジェクトが持つ属性 (key と value のペア)　のうち、 value の部分です。
+value は、内部的には string または 子の属性セットへの参照 のどちらかのデータを保持します。</p>
+
+<p>
+value の値がどのような形式であるかを <a class="xref" href="PLATEAU.CityGML.AttributeType.html">AttributeType</a> 形式で保持し、<a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_Type">Type</a> で取得できます。</p>
+
+<p>
+<a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_Type">Type</a> が String, Double, Integer, Data, Uri, Measure の場合、内部的にはデータは単に string であり、 <a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsString">AsString</a> で取得できます。
+<a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsDouble">AsDouble</a>, <a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsInt">AsInt</a> プロパティもありますが、それは単に <a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsString">AsString</a> を数値にパースするものです。</p>
+
+<p>
+<a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_Type">Type</a> が <a class="xref" href="PLATEAU.CityGML.AttributeType.html#PLATEAU_CityGML_AttributeType_AttributeSet">AttributeSet</a> である場合、 この属性の子に属性セットがあることを意味します。
+この場合は <a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsString">AsString</a> は意味を成さず、代わりに <a class="xref" href="PLATEAU.CityGML.NativeAttributeValue.html#PLATEAU_CityGML_NativeAttributeValue_AsAttrSet">AsAttrSet</a> で子の属性セットを取得できます。</p>
+</section>
       <h4><a class="xref" href="PLATEAU.CityGML.Object.html">Object</a></h4>
       <section><p>CityGMLにおける全てのオブジェクトのベースクラスです。
-ユニークIDと0個以上の属性ペアを持ち、属性ペアはすべて <a class="xref" href="PLATEAU.CityGML.AttributesMap.html">AttributesMap</a> に格納されています。</p>
+ユニークIDと0個以上の属性ペアを持ち、属性ペアはすべて <a class="xref" href="PLATEAU.CityGML.Object.html#PLATEAU_CityGML_Object_NativeAttributesMap">NativeAttributesMap</a> に格納されています。</p>
 </section>
       <h4><a class="xref" href="PLATEAU.CityGML.Polygon.html">Polygon</a></h4>
       <section><p>建築物の形状におけるポリゴンです。
@@ -199,7 +199,7 @@ Vertex と Ring を両方保持する場合もあれば、片方だけの場合�
       <h4><a class="xref" href="PLATEAU.CityGML.AttributeType.html">AttributeType</a></h4>
       <section><p>属性の値の想定形式です。
 形式が String, Double, Integer, Date, Uri, Measure である場合、内部的にはデータは string です。
-AttributeSet である場合、内部的にはデータは <a class="xref" href="PLATEAU.CityGML.AttributesMap.html">AttributesMap</a> への参照です。</p>
+AttributeSet である場合、内部的にはデータは <a class="xref" href="PLATEAU.CityGML.NativeAttributesMap.html">NativeAttributesMap</a> への参照です。</p>
 </section>
       <h4><a class="xref" href="PLATEAU.CityGML.CityObjectType.html">CityObjectType</a></h4>
       <section></section>
