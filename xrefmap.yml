@@ -2623,12 +2623,12 @@ references:
   commentId: T:PLATEAU.CityInfo.CityObjectGroupInfoForToolkits
   fullName: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits
   nameWithType: CityObjectGroupInfoForToolkits
-- uid: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.#ctor(System.Boolean)
-  name: CityObjectGroupInfoForToolkits(Boolean)
-  href: api/PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.html#PLATEAU_CityInfo_CityObjectGroupInfoForToolkits__ctor_System_Boolean_
-  commentId: M:PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.#ctor(System.Boolean)
-  fullName: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.CityObjectGroupInfoForToolkits(System.Boolean)
-  nameWithType: CityObjectGroupInfoForToolkits.CityObjectGroupInfoForToolkits(Boolean)
+- uid: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.#ctor(System.Boolean,System.Boolean)
+  name: CityObjectGroupInfoForToolkits(Boolean, Boolean)
+  href: api/PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.html#PLATEAU_CityInfo_CityObjectGroupInfoForToolkits__ctor_System_Boolean_System_Boolean_
+  commentId: M:PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.#ctor(System.Boolean,System.Boolean)
+  fullName: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.CityObjectGroupInfoForToolkits(System.Boolean, System.Boolean)
+  nameWithType: CityObjectGroupInfoForToolkits.CityObjectGroupInfoForToolkits(Boolean, Boolean)
 - uid: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.#ctor*
   name: CityObjectGroupInfoForToolkits
   href: api/PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.html#PLATEAU_CityInfo_CityObjectGroupInfoForToolkits__ctor_
@@ -2636,19 +2636,32 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.CityObjectGroupInfoForToolkits
   nameWithType: CityObjectGroupInfoForToolkits.CityObjectGroupInfoForToolkits
-- uid: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsTextureCombinedOrGranularityConverted
-  name: IsTextureCombinedOrGranularityConverted
-  href: api/PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.html#PLATEAU_CityInfo_CityObjectGroupInfoForToolkits_IsTextureCombinedOrGranularityConverted
-  commentId: P:PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsTextureCombinedOrGranularityConverted
-  fullName: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsTextureCombinedOrGranularityConverted
-  nameWithType: CityObjectGroupInfoForToolkits.IsTextureCombinedOrGranularityConverted
-- uid: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsTextureCombinedOrGranularityConverted*
-  name: IsTextureCombinedOrGranularityConverted
-  href: api/PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.html#PLATEAU_CityInfo_CityObjectGroupInfoForToolkits_IsTextureCombinedOrGranularityConverted_
-  commentId: Overload:PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsTextureCombinedOrGranularityConverted
+- uid: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsGranularityConverted
+  name: IsGranularityConverted
+  href: api/PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.html#PLATEAU_CityInfo_CityObjectGroupInfoForToolkits_IsGranularityConverted
+  commentId: P:PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsGranularityConverted
+  fullName: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsGranularityConverted
+  nameWithType: CityObjectGroupInfoForToolkits.IsGranularityConverted
+- uid: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsGranularityConverted*
+  name: IsGranularityConverted
+  href: api/PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.html#PLATEAU_CityInfo_CityObjectGroupInfoForToolkits_IsGranularityConverted_
+  commentId: Overload:PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsGranularityConverted
   isSpec: "True"
-  fullName: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsTextureCombinedOrGranularityConverted
-  nameWithType: CityObjectGroupInfoForToolkits.IsTextureCombinedOrGranularityConverted
+  fullName: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsGranularityConverted
+  nameWithType: CityObjectGroupInfoForToolkits.IsGranularityConverted
+- uid: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsTextureCombined
+  name: IsTextureCombined
+  href: api/PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.html#PLATEAU_CityInfo_CityObjectGroupInfoForToolkits_IsTextureCombined
+  commentId: P:PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsTextureCombined
+  fullName: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsTextureCombined
+  nameWithType: CityObjectGroupInfoForToolkits.IsTextureCombined
+- uid: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsTextureCombined*
+  name: IsTextureCombined
+  href: api/PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.html#PLATEAU_CityInfo_CityObjectGroupInfoForToolkits_IsTextureCombined_
+  commentId: Overload:PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsTextureCombined
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.IsTextureCombined
+  nameWithType: CityObjectGroupInfoForToolkits.IsTextureCombined
 - uid: PLATEAU.CityInfo.CityObjectList
   name: CityObjectList
   href: api/PLATEAU.CityInfo.CityObjectList.html

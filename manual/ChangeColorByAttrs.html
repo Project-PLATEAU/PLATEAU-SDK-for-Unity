@@ -80,11 +80,163 @@
 <h1 id="属性情報によって色分けする">属性情報によって色分けする</h1>
 
 <p><img src="../resources/manual/changeColorByAttrs/screenShot.png" alt="">
-このサンプルでは、土地計画決定情報に関する属性情報を読み取り、それに応じてランタイムで色を変えます。  </p>
+このサンプルでは、土地計画決定情報および建物の水害時の想定浸水高に関する属性情報を読み取り、それに応じてランタイムで色を変えます。  </p>
+<h2 id="サンプルを開く">サンプルを開く</h2>
 <p>このサンプルは次の場所にあります：<br><code>(PLATEAU SDKのサンプルディレクトリ)/AttributesColorSample/AttributesSample.unity</code><br>サンプルシーンを開き、Unityの再生ボタンを押すと地域ごとに色が付きます。<br>なお、実行には時間がかかる場合があります。</p>
 <p>属性情報を読み取り、色を変えるスクリプトは次の場所にあります:<br><code>(PLATEAU SDKのサンプルディレクトリ)/AttributesColorSample/AttributesColorSample.cs</code></p>
-<p>このスクリプトでは、都市の各ゲームオブジェクトに付与されているコンポーネントである<code>PLATEAUCityObjectGroup</code>から情報を読み取ります。<br>同コンポーネントから<code>CityObject</code>を取得し、そこから属性情報である<code>AttributesMap</code>にアクセスできます。<br>詳しくはスクリプトを参照してください。</p>
-</article>
+<h2 id="サンプルコード">サンプルコード</h2>
+<h3 id="サンプルコード全文">サンプルコード全文</h3>
+<p>属性情報に応じて色分けするサンプルコード、<code>AttributesColorSample.cs</code>の内容は以下のとおりです。</p>
+<pre><code class="lang-csharp">using System.Collections;
+using System.Collections.Generic;
+using PLATEAU.CityInfo;
+using UnityEngine;
+
+/// &lt;summary&gt;
+/// ランタイムで、PLATEAUの属性情報に応じて色を分けるサンプルです。
+/// &lt;/summary&gt;
+public class AttributesColorSample : MonoBehaviour
+{
+    /// &lt;summary&gt; 色分けしたいターゲットを指定します。 &lt;/summary&gt;
+    [SerializeField] private Transform targetParent;
+    private void Start()
+    {
+        // PLATEAUCityObjectGroupコンポーネントに属性情報が格納されており、ランタイムで読み込むことができます。
+        var cityObjGroups = targetParent.GetComponentsInChildren&lt;PLATEAUCityObjectGroup&gt;();
+        foreach(var cityObjGroup in cityObjGroups)
+        {
+            var target = cityObjGroup.transform;
+            foreach (var cityObj in cityObjGroup.GetAllCityObjects())
+            {
+                // 属性情報（キーバリューペアが集まったもの）を取得します。
+                var attributes = cityObj.AttributesMap;
+
+                // 属性情報のうち、土地計画上の区分を取得して色分けします。
+                if (attributes.TryGetValue(&quot;urf:function&quot;, out var landFuncAttr))
+                {
+                    string landFuncName = landFuncAttr.StringValue;
+                    var color = ColorByLandFuncName(landFuncName);
+                    ChangeMaterialByColor(target, color);
+                }
+
+                // 属性情報のうち、水害時の想定浸水高さを取得します。
+                if (attributes.TryGetValue(&quot;uro:buildingDisasterRiskAttribute&quot;, out var disasterRiskAttr))
+                {
+                    if (disasterRiskAttr.AttributesMapValue.TryGetValue(&quot;uro:depth&quot;, out var depthValue))
+                    {
+                        var depth = depthValue.DoubleValue;
+                        var color = ColorByDepth(depth);
+                        ChangeMaterialByColor(target, color);
+                    }
+                }
+
+            }
+        }
+    }
+
+    private Color ColorByLandFuncName(string landFuncName)
+    {
+        Color matColor = Color.white;
+
+        if (landFuncName.Contains(&quot;第1種住居地域&quot;))
+        {
+            matColor = new Color(0.1f, 0.8f, 0.1f);
+        }
+        else if (landFuncName.Contains(&quot;第2種住居地域&quot;))
+        {
+            matColor = new Color(0.3f, 0.7f, 0.9f);
+        }
+        else if (landFuncName.Contains(&quot;商業地域&quot;))
+        {
+            matColor = new Color(0.8f, 0.8f, 0.5f);
+        }
+        else if (landFuncName.Contains(&quot;高度地区&quot;))
+        {
+            matColor = new Color(0.8f, 0.5f, 0.5f);
+        }
+        else if (landFuncName.Contains(&quot;準工業地域&quot;))
+        {
+            matColor = new Color(0.8f, 0.5f, 0f);
+        }
+        else if (landFuncName.Contains(&quot;準防火地域&quot;))
+        {
+            matColor = new Color(0.9f, 0.1f, 0.4f);
+        }
+        else if (landFuncName.Contains(&quot;防火地域&quot;))
+        {
+            matColor = new Color(0.9f, 0.2f, 0.2f);
+        }
+
+        return matColor;
+    }
+
+    private Color ColorByDepth(double depth)
+    {
+        float t = (float)depth / 3f;
+        return Color.Lerp(Color.blue, Color.red, t);
+    }
+
+    private void ChangeMaterialByColor(Transform target, Color color)
+    {
+        var meshRenderer = target.GetComponent&lt;MeshRenderer&gt;();
+        if (meshRenderer == null) return;
+        var material = new Material(meshRenderer.material)
+        {
+            color = color
+        };
+        meshRenderer.material = material;
+    }
+
+
+}
+</code></pre><h3 id="サンプルコード解説">サンプルコード解説</h3>
+<p>上のコードを解説します。<br>属性情報を取得するには、まず各地物ゲームオブジェクトに対してインポート時に付与される<code>PLATEAUCityObjectGroup</code>コンポーネントにアクセスします。</p>
+<pre><code class="lang-csharp">// コンポーネントにアクセスするところから始めます。
+var cityObjGroups = targetParent.GetComponentsInChildren&lt;PLATEAUCityObjectGroup&gt;();
+foreach(var cityObjGroup in cityObjGroups)
+{
+    // ここで各コンポーネントに保存されている属性情報にアクセスします。
+}
+</code></pre><p>コンポーネント内に地物に関する情報が保存されています。<br>インポート時に地域単位に設定した場合、<br>1つのコンポーネントの中に複数の地物情報(<code>CityObject</code>)が入っています。<br>主要地物単位、または最小地物単位の場合は<code>CityObject</code>は1つです。<br>いくつであっても、<code>cityObjectGroup.GetAllCityObjects()</code>で<code>CityObject</code>を取得できます。</p>
+<pre><code class="lang-csharp">foreach (var cityObj in cityObjGroup.GetAllCityObjects())
+{
+    // ここでCityObjectにアクセスします。
+}
+</code></pre><p><code>CityObject</code>から属性情報にアクセスしたり、地物型が何であるかを取得したりできます。</p>
+<pre><code class="lang-csharp">// 属性情報（キーバリューペアが集まったもの）を取得します。
+var attributes = cityObj.AttributesMap;
+</code></pre><p>属性情報はキーとバリューのペアが集まったものです。<br>バリューの型は、<code>String</code>型または入れ子の<code>AttributesMap</code>(キーバリューの組が集まったもの)<br>のどちらかであり、対応するgetterで値を取得できます。<br>なお、Double型など他の型のgetterもありますが、内部的には単にStringをパースしたものです。<br>下はString型の属性情報を取得する例です。</p>
+<pre><code class="lang-csharp">// 属性情報のうち、土地計画上の区分を取得して色分けします。
+if (attributes.TryGetValue(&quot;urf:function&quot;, out var landFuncAttr))
+{
+    string landFuncName = landFuncAttr.StringValue;
+    var color = // ここを&quot;第1種住居地域&quot;など属性情報の値に応じて場合分けで設定
+    ChangeMaterialByColor(target, color);
+}
+</code></pre><p>下は、属性情報が入れ子になっているパターン（バリューがキーバリューセットである）ときに値を取得する例です。<br><code>uro:buildingDisasterRiskAttribute</code>をキーとする入れ子で、キー<code>uro:depth</code>の値を取得しています。</p>
+<pre><code class="lang-csharp">// 属性情報のうち、水害時の想定浸水高さを取得します。
+if (attributes.TryGetValue(&quot;uro:buildingDisasterRiskAttribute&quot;, out var disasterRiskAttr))
+{
+    if (disasterRiskAttr.AttributesMapValue.TryGetValue(&quot;uro:depth&quot;, out var depthValue))
+    {
+        var depth = depthValue.DoubleValue; // stringをdoubleにパースした値を取得します。
+        var color = ColorByDepth(depth);
+        ChangeMaterialByColor(target, color);
+    }
+}
+</code></pre><p>属性値に応じてマテリアルのMainColorを変えることで、属性情報を可視化できます。</p>
+<pre><code class="lang-csharp">// マテリアルの色を変えます。
+private void ChangeMaterialByColor(Transform target, Color color)
+{
+    var meshRenderer = target.GetComponent&lt;MeshRenderer&gt;();
+    if (meshRenderer == null) return;
+    var material = new Material(meshRenderer.material)
+    {
+        color = color
+    };
+    meshRenderer.material = material;
+}
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

@@ -81,9 +81,9 @@
 
 <p><img src="../resources/manual/displayAttrs/screenShot.png" alt="">
 このサンプルを再生して地物をクリックすると、その属性情報が画面に表示されます。  </p>
+<h2 id="サンプルの開き方">サンプルの開き方</h2>
 <p>このサンプルは次の場所にあります：<br><code>(PLATEAU SDKのサンプルディレクトリ)/AttributesDisplaySample/AttributesDisplaySample.unity</code></p>
-<p>サンプルスクリプトは次の場所にあります：
-<code>(PLATEAU SDKのサンプルディレクトリ)/AttributesDisplaySample/Scripts</code>  </p>
+<p>サンプルスクリプトは次の場所にあります：<br><code>(PLATEAU SDKのサンプルディレクトリ)/AttributesDisplaySample/Scripts</code>  </p>
 <ul>
 <li>ClickToShowAttributes.cs<ul>
 <li>クリックされた地物の情報を取得し、UIに送ります。</li>
@@ -95,8 +95,232 @@
 </ul>
 </li>
 </ul>
-<p>詳しくはスクリプトを参照してください。</p>
-</article>
+<h2 id="サンプルスクリプト解説">サンプルスクリプト解説</h2>
+<h3 id="サンプルスクリプト全文">サンプルスクリプト全文</h3>
+<p><strong>ClickToShowAttributes.cs</strong></p>
+<pre><code class="lang-csharp">using System;
+using System.IO;
+using System.Linq;
+using System.Text;
+using PLATEAU.CityInfo;
+using PLATEAU.Util;
+using UnityEngine;
+
+namespace PLATEAU.Samples.Scripts
+{
+    /// &lt;summary&gt;
+    /// クリック位置にレイキャストして、当たった都市オブジェクトの属性を Canvas に表示します。
+    /// &lt;/summary&gt;
+    public class ClickToShowAttributes : MonoBehaviour
+    {
+        [SerializeField] private AttributesDisplay display;
+        private Camera mainCamera;
+
+        /// &lt;summary&gt; これ以上の文字数は省略して表示します &lt;/summary&gt;
+        private const int CharacterLimit = 15000;
+
+        private void Start()
+        {
+            this.mainCamera = Camera.main;
+            if (this.mainCamera == null)
+            {
+                Debug.LogError(&quot;メインカメラがありません。&quot;);
+            }
+        }
+
+        private void Update()
+        {
+            if (Input.GetMouseButtonDown(0)) // 左クリックで
+            {
+                var ray = this.mainCamera.ScreenPointToRay(Input.mousePosition); // クリック位置に
+                bool isOverUI = UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject();
+                if (Physics.Raycast(ray, out var hit) &amp; !isOverUI) // レイキャストして当たったとき
+                {
+                    var cityObjGroup = hit.transform.GetComponent&lt;PLATEAUCityObjectGroup&gt;(); // その都市オブジェクトを取得します。
+                    if (cityObjGroup != null)
+                    {
+                        PrintAttributesToCanvas(cityObjGroup);
+                    }
+                }
+            }
+        }
+
+        /// &lt;summary&gt;
+        /// 都市オブジェクトの属性を取得して表示します。
+        /// &lt;/summary&gt;
+        private void PrintAttributesToCanvas(PLATEAUCityObjectGroup cityObjGroup)
+        {
+            // インポートされた各ゲームオブジェクトには PLATEAUCityObjectGroup コンポーネントがアタッチされており、
+            // その中に属性情報が json で保存されています。 json をデシリアライズします。
+            var cityObjectList = cityObjGroup.CityObjects;
+            // 複数の PLATEAU 地物が結合されて1つのゲームオブジェクトになっている場合があるため、
+            // 1つのゲームオブジェクトから取得できる cityObjects の数は1つまたは複数になっています。
+            var rootCityObjects = cityObjectList.rootCityObjects;
+            var attributesSb = new StringBuilder();
+            foreach (var cityObj in rootCityObjects)
+            {
+                // 属性情報を見やすい形式の文字列にします。
+                attributesSb.Append(cityObj.DebugString());
+                attributesSb.Append(&quot;\n\n&quot;);
+            }
+
+
+            // 最大文字数の範囲内で属性情報を表示します。
+            string displayText = attributesSb.Length &gt; CharacterLimit
+                ? attributesSb.ToString()[..CharacterLimit] + &quot;\n\n(最大文字数に達しました)&quot;
+                : attributesSb.ToString();
+            this.display.AttributesText = displayText;
+
+            // クリックしたゲームオブジェクトの、最初の主要地物のGmlIDと高さと住所をヘッダーUIに表示します。
+            var headerSb = new StringBuilder();
+            var firstPrimaryObj = cityObjGroup.PrimaryCityObjects.FirstOrDefault();
+            if (firstPrimaryObj != null)
+            {
+                // 主要地物のGmlIDを取得します。
+                headerSb.Append(firstPrimaryObj.GmlID);
+                headerSb.Append(&quot;\n&quot;);
+                // 高さを取得します。
+                var attributesMap = firstPrimaryObj.AttributesMap;
+                // 高さは、PLATEAUの属性情報の中では &quot;bldg:measuredheight&quot; というキーで格納されています。
+                if (attributesMap.TryGetValue(&quot;bldg:measuredheight&quot;, out var attribute))
+                {
+                    // 属性は keyとvalue のペアですが、valueの型は string,double,attribute(入れ子)などいくつかパターンがあります。
+                    // attribute.Type で型を判別し、型に応じたゲッターを使って値を取得できます。例えば valueの型が文字列に変換可能であれば attribute.StringValue で値を取得できます。
+                    headerSb.Append($&quot;高さ: {Convert.ToString(attribute.StringValue)}&quot;); 
+                };
+                // 住所を取得します。
+                // 住所は、PLATEAUの属性情報では &quot;uro:buildingIDAttribute&quot;というキーの中で、キーバリュー辞書が入れ子になっている中の &quot;uro:city&quot; というキーで取得できます。
+                if (attributesMap.TryGetValue(&quot;uro:buildingIDAttribute&quot;, out var buildingAttr)) // 入れ子キーの外側です
+                {
+                    // 属性のキーバリューペア(Attributes)で入れ子になっているものを取得します。
+                    // キー uro:buildingIDAttribute の中に入れ子で0個以上のキーバリューペアがあり、
+                    // そのキー uro:city からバリュー（住所）を取得します。
+                    if(buildingAttr.AttributesMapValue.TryGetValue(&quot;uro:city&quot;, out var addressAttr)) // 入れ子キーの内側です
+                    {
+                        headerSb.Append($&quot;  住所: {addressAttr.StringValue}&quot;);
+                    }
+                }
+
+            }
+
+            this.display.TitleText = headerSb.ToString();
+        }
+
+        private void NotifyLoadFailure()
+        {
+            this.display.TitleText = &quot;&quot;;
+            this.display.AttributesText = &quot;読込失敗&quot;;
+        }
+
+        private void Awake()
+        {
+            if (this.display == null)
+            {
+                Debug.LogError($&quot;{nameof(AttributesDisplay)} が null です。インスペクタから設定してください。&quot;);
+            }
+        }
+    }
+}
+
+</code></pre><p><strong>AttributesDisplay.cs</strong></p>
+<pre><code class="lang-csharp">using UnityEngine;
+using UnityEngine.UI;
+
+namespace PLATEAU.Samples.Scripts
+{
+    public class AttributesDisplay : MonoBehaviour
+    {
+        [SerializeField] private Text titleText;
+        [SerializeField] private Text attributesText;
+
+        public string TitleText
+        {
+            set =&gt; this.titleText.text = value;
+        }
+
+        public string AttributesText
+        {
+            set =&gt; this.attributesText.text = value;
+        }
+
+        private void Awake()
+        {
+            if (this.titleText == null)
+            {
+                Debug.LogError($&quot;{nameof(this.titleText)} が null です。インスペクタから設定してください。&quot;);
+            }
+
+            if (this.attributesText == null)
+            {
+                Debug.LogError($&quot;{nameof(this.attributesText)} が null です。インスペクタから設定してください。&quot;);
+            }
+        }
+    }
+}
+</code></pre><h3 id="ソースコード解説">ソースコード解説</h3>
+<p>上のソースコードを解説します。<br>まずクリックした箇所の地物を取得するためにレイを飛ばします。<br>ここでは、レイを検出するために地物にはコライダーが付いていることを前提とします。<br>また、クリックしたのが地物であるかを検出するため、地物にはPLATEAUCityObjectGroupが付いていることを前提とします。</p>
+<pre><code class="lang-csharp">if (Input.GetMouseButtonDown(0)) // 左クリックで
+{
+    var ray = this.mainCamera.ScreenPointToRay(Input.mousePosition); // クリック位置に
+    bool isOverUI = UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject();
+    if (Physics.Raycast(ray, out var hit) &amp; !isOverUI) // レイキャストして当たったとき
+    {
+        var cityObjGroup = hit.transform.GetComponent&lt;PLATEAUCityObjectGroup&gt;(); // その都市オブジェクトを取得します。
+        if (cityObjGroup != null)
+        {
+            PrintAttributesToCanvas(cityObjGroup);
+        }
+    }
+}
+</code></pre><p>地物に付いているコンポーネント<code>PLATEAUCityObjectGroup</code>から情報を取得します。<br>地物の情報をデバッグ目的で確認するなら、<code>cityObject.DebugString()</code>を使って<br>地物の情報を整形されたテキストにまとめることができます。<br>今回は、DebugStringを画面に表示することにします。</p>
+<pre><code class="lang-csharp">// インポートされた各ゲームオブジェクトには PLATEAUCityObjectGroup コンポーネントがアタッチされており、
+// その中に属性情報が json で保存されています。 json をデシリアライズします。
+var cityObjectList = cityObjGroup.CityObjects;
+// 複数の PLATEAU 地物が結合されて1つのゲームオブジェクトになっている場合があるため、
+// 1つのゲームオブジェクトから取得できる cityObjects の数は1つまたは複数になっています。
+var rootCityObjects = cityObjectList.rootCityObjects;
+var attributesSb = new StringBuilder();
+foreach (var cityObj in rootCityObjects)
+{
+    // 属性情報を見やすい形式の文字列にします。
+    attributesSb.Append(cityObj.DebugString());
+    attributesSb.Append(&quot;\n\n&quot;);
+}
+</code></pre><p>上記のとおり、<code>DebugString()</code>でも属性情報を確認できますが、次に具体的な属性情報にアクセスしてみます。<br>今回のサンプルでは、建物を主要地物単位でインポートしたものを利用しています。<br>そのため、ゲームオブジェクトは1つの建物ごとの粒度で分かれているため、<br><code>cityObjectGroup.PrimaryCityObjects</code>で1つの建物の情報(CityObject)を取得できます。<br><code>cityObject.AttributesMap</code>で属性情報の組を取得でき、<br><code>attributesMap.TryGetValue</code>で属性情報のキーを元に値を取得できます。<br>下の例では、高さのキー<code>bldg.measuredheight</code>から高さを取得します。<br>また、住所を取得するために、キー<code>uro:buildingIDAttribute</code>の中に入れ子で入っている<br>属性情報マップのキー<code>uro:city</code>から値を取得します。</p>
+<pre><code class="lang-csharp">// クリックしたゲームオブジェクトの、最初の主要地物のGmlIDと高さと住所をヘッダーUIに表示します。
+var headerSb = new StringBuilder();
+var firstPrimaryObj = cityObjGroup.PrimaryCityObjects.FirstOrDefault();
+if (firstPrimaryObj != null)
+{
+    // 主要地物のGmlIDを取得します。
+    headerSb.Append(firstPrimaryObj.GmlID);
+    headerSb.Append(&quot;\n&quot;);
+    // 高さを取得します。
+    var attributesMap = firstPrimaryObj.AttributesMap;
+    // 高さは、PLATEAUの属性情報の中では &quot;bldg:measuredheight&quot; というキーで格納されています。
+    if (attributesMap.TryGetValue(&quot;bldg:measuredheight&quot;, out var attribute))
+    {
+        // 属性は keyとvalue のペアですが、valueの型は string,double,attribute(入れ子)などいくつかパターンがあります。
+        // attribute.Type で型を判別し、型に応じたゲッターを使って値を取得できます。例えば valueの型が文字列に変換可能であれば attribute.StringValue で値を取得できます。
+        headerSb.Append($&quot;高さ: {Convert.ToString(attribute.StringValue)}&quot;); 
+    };
+    // 住所を取得します。
+    // 住所は、PLATEAUの属性情報では &quot;uro:buildingIDAttribute&quot;というキーの中で、キーバリュー辞書が入れ子になっている中の &quot;uro:city&quot; というキーで取得できます。
+    if (attributesMap.TryGetValue(&quot;uro:buildingIDAttribute&quot;, out var buildingAttr)) // 入れ子キーの外側です
+    {
+        // 属性のキーバリューペア(Attributes)で入れ子になっているものを取得します。
+        // キー uro:buildingIDAttribute の中に入れ子で0個以上のキーバリューペアがあり、
+        // そのキー uro:city からバリュー（住所）を取得します。
+        if(buildingAttr.AttributesMapValue.TryGetValue(&quot;uro:city&quot;, out var addressAttr)) // 入れ子キーの内側です
+        {
+            headerSb.Append($&quot;  住所: {addressAttr.StringValue}&quot;);
+        }
+    }
+
+}
+
+this.display.TitleText = headerSb.ToString();
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
