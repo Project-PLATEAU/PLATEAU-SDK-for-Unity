@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class PackageToLodDict
+    <title>Class GranularityConvertResult
    | PLATEAU SDK for Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class PackageToLodDict
+    <meta name="title" content="Class GranularityConvertResult
    | PLATEAU SDK for Unity ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,18 +78,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.CityImport.Import.Convert.GranularityConvertResult">
   
   
-  <h1 id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict" class="text-break">Class PackageToLodDict
+  <h1 id="PLATEAU_CityImport_Import_Convert_GranularityConvertResult" data-uid="PLATEAU.CityImport.Import.Convert.GranularityConvertResult" class="text-break">Class GranularityConvertResult
   </h1>
-  <div class="markdown level0 summary"><p>パッケージとそこに含まれる最大LODの組です。</p>
+  <div class="markdown level0 summary"><p>粒度変換（分割結合）してシーンに配置した結果が格納されるクラスです。</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">PackageToLodDict</span></div>
+    <div class="level1"><span class="xref">GranularityConvertResult</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -115,74 +115,77 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityImport.Config.PackageLoadConfigs.html">PLATEAU.CityImport.Config.PackageLoadConfigs</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityImport.Import.Convert.html">PLATEAU.CityImport.Import.Convert</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_syntax">Syntax</h5>
+  <h5 id="PLATEAU_CityImport_Import_Convert_GranularityConvertResult_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PackageToLodDict</code></pre>
+    <pre><code class="lang-csharp hljs">public class GranularityConvertResult</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h3 id="properties">Properties
   </h3>
   
   
-  <a id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_AddOrUpdate_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.AddOrUpdate*"></a>
-  <h4 id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_AddOrUpdate_PredefinedCityModelPackage_System_Int32_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.AddOrUpdate(PredefinedCityModelPackage,System.Int32)">AddOrUpdate(PredefinedCityModelPackage, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="PLATEAU_CityImport_Import_Convert_GranularityConvertResult_GeneratedObjs_" data-uid="PLATEAU.CityImport.Import.Convert.GranularityConvertResult.GeneratedObjs*"></a>
+  <h4 id="PLATEAU_CityImport_Import_Convert_GranularityConvertResult_GeneratedObjs" data-uid="PLATEAU.CityImport.Import.Convert.GranularityConvertResult.GeneratedObjs">GeneratedObjs</h4>
+  <div class="markdown level1 summary"><p>変換によってシーンに配置したゲームオブジェクトのリスト </p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddOrUpdate(PredefinedCityModelPackage package, int maxLod)</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;GameObject&gt; GeneratedObjs { get; }</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">PredefinedCityModelPackage</span></td>
-        <td><span class="parametername">package</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">maxLod</span></td>
+        <td><span class="xref">List</span>&lt;<span class="xref">GameObject</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_Contains_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.Contains*"></a>
-  <h4 id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_Contains_PredefinedCityModelPackage_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.Contains(PredefinedCityModelPackage)">Contains(PredefinedCityModelPackage)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="PLATEAU_CityImport_Import_Convert_GranularityConvertResult_GeneratedRootObjs_" data-uid="PLATEAU.CityImport.Import.Convert.GranularityConvertResult.GeneratedRootObjs*"></a>
+  <h4 id="PLATEAU_CityImport_Import_Convert_GranularityConvertResult_GeneratedRootObjs" data-uid="PLATEAU.CityImport.Import.Convert.GranularityConvertResult.GeneratedRootObjs">GeneratedRootObjs</h4>
+  <div class="markdown level1 summary"><p>変換によってシーンに配置したゲームオブジェクトのうち、ヒエラルキーが最上位であるもののリスト</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Contains(PredefinedCityModelPackage package)</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;GameObject&gt; GeneratedRootObjs { get; }</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">PredefinedCityModelPackage</span></td>
-        <td><span class="parametername">package</span></td>
+        <td><span class="xref">List</span>&lt;<span class="xref">GameObject</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
+  
+  
+  <a id="PLATEAU_CityImport_Import_Convert_GranularityConvertResult_IsSucceed_" data-uid="PLATEAU.CityImport.Import.Convert.GranularityConvertResult.IsSucceed*"></a>
+  <h4 id="PLATEAU_CityImport_Import_Convert_GranularityConvertResult_IsSucceed" data-uid="PLATEAU.CityImport.Import.Convert.GranularityConvertResult.IsSucceed">IsSucceed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSucceed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -197,42 +200,18 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
   
   
-  <a id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_GetEnumerator_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetEnumerator*"></a>
-  <h4 id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_GetEnumerator" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetEnumerator">GetEnumerator()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerator&lt;KeyValuePair&lt;PredefinedCityModelPackage, int&gt;&gt; GetEnumerator()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IEnumerator</span>&lt;<span class="xref">KeyValuePair</span>&lt;<span class="xref">PredefinedCityModelPackage</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_GetLod_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetLod*"></a>
-  <h4 id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_GetLod_PredefinedCityModelPackage_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.GetLod(PredefinedCityModelPackage)">GetLod(PredefinedCityModelPackage)</h4>
-  <div class="markdown level1 summary"><p>引数の <code data-dev-comment-type="paramref" class="paramref">package</code> で利用可能な最大LODを返します。
-ない場合は -1 を返します。</p>
+  <a id="PLATEAU_CityImport_Import_Convert_GranularityConvertResult_Add_" data-uid="PLATEAU.CityImport.Import.Convert.GranularityConvertResult.Add*"></a>
+  <h4 id="PLATEAU_CityImport_Import_Convert_GranularityConvertResult_Add_GameObject_System_Boolean_" data-uid="PLATEAU.CityImport.Import.Convert.GranularityConvertResult.Add(GameObject,System.Boolean)">Add(GameObject, Boolean)</h4>
+  <div class="markdown level1 summary"><p>結果のゲームオブジェクトの一覧に追加します。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int GetLod(PredefinedCityModelPackage package)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Add(GameObject obj, bool isRoot)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -245,12 +224,27 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">PredefinedCityModelPackage</span></td>
-        <td><span class="parametername">package</span></td>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isRoot</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="PLATEAU_CityImport_Import_Convert_GranularityConvertResult_Fail_" data-uid="PLATEAU.CityImport.Import.Convert.GranularityConvertResult.Fail*"></a>
+  <h4 id="PLATEAU_CityImport_Import_Convert_GranularityConvertResult_Fail" data-uid="PLATEAU.CityImport.Import.Convert.GranularityConvertResult.Fail">Fail()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GranularityConvertResult Fail()</code></pre>
+  </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -261,20 +255,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="PLATEAU.CityImport.Import.Convert.GranularityConvertResult.html">GranularityConvertResult</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_MargeDict_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MargeDict*"></a>
-  <h4 id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_MargeDict_PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MargeDict(PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict)">MargeDict(PackageToLodDict)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="PLATEAU_CityImport_Import_Convert_GranularityConvertResult_Merge_" data-uid="PLATEAU.CityImport.Import.Convert.GranularityConvertResult.Merge*"></a>
+  <h4 id="PLATEAU_CityImport_Import_Convert_GranularityConvertResult_Merge_PLATEAU_CityImport_Import_Convert_GranularityConvertResult_" data-uid="PLATEAU.CityImport.Import.Convert.GranularityConvertResult.Merge(PLATEAU.CityImport.Import.Convert.GranularityConvertResult)">Merge(GranularityConvertResult)</h4>
+  <div class="markdown level1 summary"><p>複数の<a class="xref" href="PLATEAU.CityImport.Import.Convert.GranularityConvertResult.html">GranularityConvertResult</a>を統合します。 </p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void MargeDict(PackageToLodDict other)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Merge(GranularityConvertResult other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -287,40 +282,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.html">PackageToLodDict</a></td>
+        <td><a class="xref" href="PLATEAU.CityImport.Import.Convert.GranularityConvertResult.html">GranularityConvertResult</a></td>
         <td><span class="parametername">other</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_MergePackage_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MergePackage*"></a>
-  <h4 id="PLATEAU_CityImport_Config_PackageLoadConfigs_PackageToLodDict_MergePackage_PredefinedCityModelPackage_System_Int32_" data-uid="PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.MergePackage(PredefinedCityModelPackage,System.Int32)">MergePackage(PredefinedCityModelPackage, Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void MergePackage(PredefinedCityModelPackage package, int otherLod)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">PredefinedCityModelPackage</span></td>
-        <td><span class="parametername">package</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">otherLod</span></td>
         <td></td>
       </tr>
     </tbody>

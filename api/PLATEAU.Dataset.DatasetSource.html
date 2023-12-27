@@ -128,12 +128,14 @@
   
   
   <a id="PLATEAU_Dataset_DatasetSource_Create_" data-uid="PLATEAU.Dataset.DatasetSource.Create*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetSource_Create_PLATEAU_Dataset_DatasetSourceConfig_" data-uid="PLATEAU.Dataset.DatasetSource.Create(PLATEAU.Dataset.DatasetSourceConfig)">Create(DatasetSourceConfig)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="PLATEAU_Dataset_DatasetSource_Create_PLATEAU_Dataset_IDatasetSourceConfig_" data-uid="PLATEAU.Dataset.DatasetSource.Create(PLATEAU.Dataset.IDatasetSourceConfig)">Create(IDatasetSourceConfig)</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="PLATEAU.Dataset.DatasetSource.html">DatasetSource</a>を生成します。
+ローカルかサーバーかは、引数の型によって判別します。</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DatasetSource Create(DatasetSourceConfig config)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DatasetSource Create(IDatasetSourceConfig conf)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -146,8 +148,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="PLATEAU.Dataset.DatasetSourceConfig.html">DatasetSourceConfig</a></td>
-        <td><span class="parametername">config</span></td>
+        <td><a class="xref" href="PLATEAU.Dataset.IDatasetSourceConfig.html">IDatasetSourceConfig</a></td>
+        <td><span class="parametername">conf</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -190,102 +192,6 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">datasetID</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PLATEAU.Dataset.DatasetSource.html">DatasetSource</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_Dataset_DatasetSource_CreateLocal_" data-uid="PLATEAU.Dataset.DatasetSource.CreateLocal*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetSource_CreateLocal_System_String_" data-uid="PLATEAU.Dataset.DatasetSource.CreateLocal(System.String)">CreateLocal(String)</h4>
-  <div class="markdown level1 summary"><p>ローカルPCのデータセットを指す <a class="xref" href="PLATEAU.Dataset.DatasetSource.html">DatasetSource</a> を作ります。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DatasetSource CreateLocal(string path)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">path</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PLATEAU.Dataset.DatasetSource.html">DatasetSource</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_Dataset_DatasetSource_CreateServer_" data-uid="PLATEAU.Dataset.DatasetSource.CreateServer*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetSource_CreateServer_System_String_System_String_System_String_" data-uid="PLATEAU.Dataset.DatasetSource.CreateServer(System.String,System.String,System.String)">CreateServer(String, String, String)</h4>
-  <div class="markdown level1 summary"><p>リモートPCのデータセットを指す <a class="xref" href="PLATEAU.Dataset.DatasetSource.html">DatasetSource</a> を作ります。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DatasetSource CreateServer(string datasetID, string serverUrl, string apiToken)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">datasetID</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">serverUrl</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">apiToken</span></td>
         <td></td>
       </tr>
     </tbody>

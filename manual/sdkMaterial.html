@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PLATEAU SDK&#12398;&#12510;&#12486;&#12522;&#12450;&#12523;&#12395;&#12388;&#12356;&#12390; | PLATEAU SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="PLATEAU SDK&#12398;&#12510;&#12486;&#12522;&#12450;&#12523;&#12395;&#12388;&#12356;&#12390; | PLATEAU SDK for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="plateau-sdkのマテリアルについて">PLATEAU SDKのマテリアルについて</h1>
+
+<h2 id="デフォルトマテリアルの見た目を変えたいとき">デフォルトマテリアルの見た目を変えたいとき</h2>
+<p>PLATEAU SDKでは地物タイプごとにデフォルトマテリアルが用意されています。<br>例えば、下図の建物には建築物のデフォルトマテリアルが適用されています。
+<img src="../resources/manual/importCityModels/defaultBuilding.png" alt="">
+このマテリアルは独自のPlateauTriplanarシェーダーを利用しているため、UVのない地物にもテクスチャを投影できます。<br>PLATEAUのモデルにはUVが<strong>ない</strong>場合があります。<br>そのため、ご自分で見た目をカスタマイズする場合でも、SDK付属のPlateauTriplanarシェーダー、またはそれと同様のTriplanar機能を有したシェーダーを利用することを推奨します。<br>以下に同シェーダーを使ったマテリアルの作成方法を説明します。</p>
+<h3 id="sdk付属のシェーダーについて">SDK付属のシェーダーについて</h3>
+<p>PLATEAU SDKには以下の3つのシェーダーが付属しています。<br>どれもUVなしでテクスチャを投影できるのが特徴です。</p>
+<ul>
+<li><code>PlateauTriplanarShader(Opaque)</code><ul>
+<li>通常のTriplanarシェーダーです。</li>
+</ul>
+</li>
+<li><code>PlateauTriplanarShader(Transparent)</code><ul>
+<li>半透明なTriplanarシェーダーです。</li>
+</ul>
+</li>
+<li><code>PlateauTriplanarShader(DualTextures)</code><ul>
+<li>上下を向いた面と横を向いた面で異なる見た目を表現するTriplanarシェーダーです。</li>
+<li>利用例：建築物の上を向いた面をコンクリートの屋根に、側面を窓付きの壁にしたい場合などに利用できます。</li>
+</ul>
+</li>
+</ul>
+<h3 id="マテリアルの作り方">マテリアルの作り方</h3>
+<p>このシェーダーを使ってマテリアルを作成する手順は次のとおりです：</p>
+<ul>
+<li>新しいマテリアルを新規作成し、そのシェーダーを PlateauTriplanarShader/PlateauTriplanarShader(Opaque, Transparent, DualTexturesのいずれか)にします。</li>
+<li><p>マテリアルにテクスチャを割り当て、設定します。設定項目は次のとおりです：</p>
+<ul>
+<li><code>MainTexture</code> : メインのテクスチャです。</li>
+<li><code>NormalMap</code> : ノーマルマップです。</li>
+<li><code>NormalMapStrength</code> : ノーマルマップの強さです。</li>
+<li><code>Tiling</code> : テクスチャをタイリングさせる大きさです。</li>
+<li><code>Blend</code> : ポリゴンの向きに応じてテクスチャをブレンドさせる程度です。</li>
+<li><code>Metallic</code> : メタリック（金属感の強さ）です。</li>
+<li><code>MetallicTexture</code> : メタリックを表現するテクスチャです。</li>
+<li><code>Roughness</code> : ラフネス（ざらざら感の強さ）です。</li>
+<li><code>RoughnessTexture</code> : ラフネスを表現する強さです。</li>
+<li><code>AmbientOcclusion</code> : アンビエントオクルージョン(環境光の影響を受ける程度)です。</li>
+<li><code>AmbientOcclusionTex</code> : アンビエントオクルージョンを表現するテクスチャです。</li>
+<li><code>EmissionColor</code> : エミッション（発光）の色です。</li>
+<li><code>EmissionTexture</code> : エミッションを表現するテクスチャです。</li>
+<li><code>Opacity</code>(Transparentシェーダーのみ) : 不透明度です。</li>
+</ul>
+<p>DualTextureシェーダーでは、上記の設定値がそれぞれ<code>Top</code>と<code>Side</code>の2つに分かれます。Topは上下面、Sideは側面の見た目を設定します。</p>
+</li>
+<li><p>自作したマテリアルは、インポート後にドラッグ＆ドロップ等で適用できるほか、インポートの設定項目として「デフォルトマテリアル」に指定できます。</p>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Project-PLATEAU/PLATEAU-SDK-for-Unity/blob/main/Documentation~/manual/sdkMaterial.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            PLATEAU SDK for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

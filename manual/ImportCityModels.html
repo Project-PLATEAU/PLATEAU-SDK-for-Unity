@@ -180,9 +180,15 @@
 </li>
 <li><code>テクスチャを結合する</code><ul>
 <li>テクスチャを含める場合、テクスチャを結合するかしないかを設定します。</li>
-<li>PLATEAUのデータはテクスチャの枚数が多い傾向にあり、結合しないと描画負荷が高くなる傾向にあります。<br>結合機能を有効にすると、複数のテクスチャを1枚の画像にまとめ、3DモデルのUVも合わせて調整されます。それによって描画負荷を改善できます。</li>
 </ul>
 </li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p><strong>テクスチャ結合すると描画負荷が良くなります</strong>  </p>
+<p>PLATEAUのデータはテクスチャの枚数が多い傾向にあり、<br>結合しないと描画負荷が高くなる傾向にあります。   </p>
+<p>結合機能を有効にすると、複数のテクスチャを1枚の画像にまとめ、<br>3DモデルのUVも合わせて調整されます。<br>それによって描画負荷を改善できます。  </p>
+<p>例えば、新宿区の2km×2kmのデータについて<br>テクスチャ結合して4096×4096のテクスチャサイズにまとめたとき、<br>ドローコール数は4160から483に向上し、<br>あるPCではFPSが70から90に向上しました。</p>
+</div>
+<ul>
 <li><code>テクスチャ解像度</code><ul>
 <li>テクスチャを結合する場合の、結合後のテクスチャの大きさを指定します。</li>
 </ul>
@@ -304,52 +310,6 @@
 <div class="NOTE"><h5>Note</h5><p>  インポートされた都市モデルは、プレハブ化するとメッシュとテクスチャが missing になってしまいます。<br>  データはシーンに埋め込まれているためです。<br>  プレハブ化またはモデルとテクスチャを別ファイルに分けたい場合は、エクスポート機能を利用して別ファイルに書き出してください。</p>
 </div>
 <p>配置されたゲームオブジェクト階層のトップには、コンポーネント<code>PLATEAUInstancedCityModel</code> がアタッチされます。<br>このインスペクタから緯度、経度などの情報を確認できます。<br><img src="../resources/manual/importCityModels/InstancedCityModelInspector.png" alt=""></p>
-<h3 id="デフォルトマテリアルの見た目を変えたいとき">デフォルトマテリアルの見た目を変えたいとき</h3>
-<p>PLATEAU SDKでは地物タイプごとにデフォルトマテリアルが用意されています。<br>例えば、下図の建物には建築物のデフォルトマテリアルが適用されています。
-<img src="../resources/manual/importCityModels/defaultBuilding.png" alt="">
-このマテリアルは独自のPlateauTriplanarシェーダーを利用しているため、UVのない地物にもテクスチャを投影できます。<br>PLATEAUのモデルにはUVが<strong>ない</strong>場合があります。<br>そのため、ご自分で見た目をカスタマイズする場合でも、SDK付属のPlateauTriplanarシェーダー、またはそれと同様のTriplanar機能を有したシェーダーを利用することを推奨します。<br>以下に同シェーダーを使ったマテリアルの作成方法を説明します。  </p>
-<h4 id="sdk付属のシェーダーについて">SDK付属のシェーダーについて</h4>
-<p>PLATEAU SDKには以下の3つのシェーダーが付属しています。<br>どれもUVなしでテクスチャを投影できるのが特徴です。</p>
-<ul>
-<li><code>PlateauTriplanarShader(Opaque)</code><ul>
-<li>通常のTriplanarシェーダーです。</li>
-</ul>
-</li>
-<li><code>PlateauTriplanarShader(Transparent)</code><ul>
-<li>半透明なTriplanarシェーダーです。</li>
-</ul>
-</li>
-<li><code>PlateauTriplanarShader(DualTextures)</code><ul>
-<li>上下を向いた面と横を向いた面で異なる見た目を表現するTriplanarシェーダーです。</li>
-<li>利用例：建築物の上を向いた面をコンクリートの屋根に、側面を窓付きの壁にしたい場合などに利用できます。</li>
-</ul>
-</li>
-</ul>
-<p>このシェーダーを使ってマテリアルを作成する手順は次のとおりです：  </p>
-<ul>
-<li>新しいマテリアルを新規作成し、そのシェーダーを PlateauTriplanarShader/PlateauTriplanarShader(Opaque, Transparent, DualTexturesのいずれか)にします。</li>
-<li><p>マテリアルにテクスチャを割り当て、設定します。設定項目は次のとおりです：</p>
-<ul>
-<li><code>MainTexture</code> : メインのテクスチャです。</li>
-<li><code>NormalMap</code> : ノーマルマップです。</li>
-<li><code>NormalMapStrength</code> : ノーマルマップの強さです。</li>
-<li><code>Tiling</code> : テクスチャをタイリングさせる大きさです。</li>
-<li><code>Blend</code> : ポリゴンの向きに応じてテクスチャをブレンドさせる程度です。</li>
-<li><code>Metallic</code> : メタリック（金属感の強さ）です。</li>
-<li><code>MetallicTexture</code> : メタリックを表現するテクスチャです。</li>
-<li><code>Roughness</code> : ラフネス（ざらざら感の強さ）です。</li>
-<li><code>RoughnessTexture</code> : ラフネスを表現する強さです。</li>
-<li><code>AmbientOcclusion</code> : アンビエントオクルージョン(環境光の影響を受ける程度)です。</li>
-<li><code>AmbientOcclusionTex</code> : アンビエントオクルージョンを表現するテクスチャです。</li>
-<li><code>EmissionColor</code> : エミッション（発光）の色です。</li>
-<li><code>EmissionTexture</code> : エミッションを表現するテクスチャです。</li>
-<li><code>Opacity</code>(Transparentシェーダーのみ) : 不透明度です。</li>
-</ul>
-<p>DualTextureシェーダーでは、上記の設定値がそれぞれ<code>Top</code>と<code>Side</code>の2つに分かれます。Topは上下面、Sideは側面の見た目を設定します。</p>
-</li>
-<li><p>自作したマテリアルは、インポート後にドラッグ＆ドロップ等で適用できるほか、インポートの設定項目として「デフォルトマテリアル」に指定できます。</p>
-</li>
-</ul>
 <h3 id="エラーログの確認">エラーログの確認</h3>
 <p>インポートの結果、計算状況ウィンドウの内容がすべて「完了」となれば良いですが、<br>ロードできなかったgmlファイルに関しては「失敗」と表示されます。<br>そのような場合でも、他のgmlファイルのロードが成功していれば、そのgmlに関しては正常にインポートされています。<br>失敗の場合は Unityのコンソールにエラーログが出力されます。</p>
 </article>

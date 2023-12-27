@@ -1,0 +1,624 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PackageImportConfig
+   | PLATEAU SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PackageImportConfig
+   | PLATEAU SDK for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig">
+  
+  
+  <h1 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig" class="text-break">Class PackageImportConfig
+  </h1>
+  <div class="markdown level0 summary"><p>PLATEAUCityModelLoader の設定のうち、パッケージごとの設定です。
+<a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigDict.html">PackageImportConfigDict</a> によって保持されます。
+このクラスに対応するGUIクラスは PackageLoadConfigGUI です。
+設定のうち、一括設定可能な部分は<a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.html">PackageImportConfigExtendable</a>が担います。</p>
+<p>実装上の注意：
+・特定のパッケージ種で追加の設定項目がある場合はサブクラスで実装します。
+・この設定項目を追加・削除する場合、<a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.html#PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_ConvertToNativeOption_PlateauVector3d_System_Int32_">ConvertToNativeOption(PlateauVector3d, Int32)</a>も合わせて実装しないと反映されないことに注意してください。 </p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">PackageImportConfig</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.html">PLATEAU.CityImport.Config.PackageImportConfigs</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PackageImportConfig</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig__ctor_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.#ctor*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig__ctor_PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.#ctor(PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig)">PackageImportConfig(PackageImportConfig)</h4>
+  <div class="markdown level1 summary"><p>コピーコンストラクタ </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PackageImportConfig(PackageImportConfig src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.html">PackageImportConfig</a></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_MeshAxes" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.MeshAxes">MeshAxes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const CoordinateSystem MeshAxes = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CoordinateSystem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_UnitScale" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.UnitScale">UnitScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float UnitScale = 1F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_ConfExtendable_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.ConfExtendable*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_ConfExtendable" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.ConfExtendable">ConfExtendable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PackageImportConfigExtendable ConfExtendable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.html">PackageImportConfigExtendable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_DoSetAttrInfo_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.DoSetAttrInfo*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_DoSetAttrInfo" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.DoSetAttrInfo">DoSetAttrInfo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DoSetAttrInfo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_DoSetMeshCollider_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.DoSetMeshCollider*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_DoSetMeshCollider" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.DoSetMeshCollider">DoSetMeshCollider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DoSetMeshCollider { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_EnableTexturePacking_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.EnableTexturePacking*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_EnableTexturePacking" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.EnableTexturePacking">EnableTexturePacking</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableTexturePacking { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_FallbackMaterial_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.FallbackMaterial*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_FallbackMaterial" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.FallbackMaterial">FallbackMaterial</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Material FallbackMaterial { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Material</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_ImportPackage_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.ImportPackage*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_ImportPackage" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.ImportPackage">ImportPackage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ImportPackage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_IncludeTexture_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.IncludeTexture*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_IncludeTexture" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.IncludeTexture">IncludeTexture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IncludeTexture { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_LODRange_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.LODRange*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_LODRange" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.LODRange">LODRange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LODRange LODRange { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.LODRange.html">LODRange</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_MeshGranularity_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.MeshGranularity*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_MeshGranularity" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.MeshGranularity">MeshGranularity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshGranularity MeshGranularity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MeshGranularity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_Package_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.Package*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_Package" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.Package">Package</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PredefinedCityModelPackage Package { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PredefinedCityModelPackage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_TexturePackingResolution_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.TexturePackingResolution*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_TexturePackingResolution" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.TexturePackingResolution">TexturePackingResolution</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TexturePackingResolution TexturePackingResolution { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.TexturePackingResolution.html">TexturePackingResolution</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_ConvertToNativeOption_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.ConvertToNativeOption*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_ConvertToNativeOption_PlateauVector3d_System_Int32_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.ConvertToNativeOption(PlateauVector3d,System.Int32)">ConvertToNativeOption(PlateauVector3d, Int32)</h4>
+  <div class="markdown level1 summary"><p>インポート設定について、C++のstructに変換します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual MeshExtractOptions ConvertToNativeOption(PlateauVector3d referencePoint, int coordinateZoneID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td><span class="parametername">referencePoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">coordinateZoneID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MeshExtractOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_CreateConfigFor_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.CreateConfigFor*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_CreateConfigFor_PredefinedCityModelPackage_System_Int32_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.CreateConfigFor(PredefinedCityModelPackage,System.Int32)">CreateConfigFor(PredefinedCityModelPackage, Int32)</h4>
+  <div class="markdown level1 summary"><p><code data-dev-comment-type="paramref" class="paramref">package</code> に対応した<a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.html">PackageImportConfig</a> またはそのサブクラスを返します。
+具体的には、
+土地以外の場合は<a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.html">PackageImportConfig</a>を返します。
+土地の場合は追加の設定項目があるので、<a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.html">PackageImportConfig</a>のサブクラスである<span class="xref">PLATEAU.CityImport.Config.ReliefImportConfig</span>を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PackageImportConfig CreateConfigFor(PredefinedCityModelPackage package, int availableMaxLOD)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PredefinedCityModelPackage</span></td>
+        <td><span class="parametername">package</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">availableMaxLOD</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.html">PackageImportConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            PLATEAU SDK for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -173,6 +173,51 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="PLATEAU_Util_Async_TextureLoader_LoadPlateauTextureAsync_" data-uid="PLATEAU.Util.Async.TextureLoader.LoadPlateauTextureAsync*"></a>
+  <h4 id="PLATEAU_Util_Async_TextureLoader_LoadPlateauTextureAsync_System_String_" data-uid="PLATEAU.Util.Async.TextureLoader.LoadPlateauTextureAsync(System.String)">LoadPlateauTextureAsync(String)</h4>
+  <div class="markdown level1 summary"><p>テクスチャのURL（パス） から、PLATEAUのテクスチャを非同期でロードします。
+内容は<a class="xref" href="PLATEAU.Util.Async.TextureLoader.html#PLATEAU_Util_Async_TextureLoader_LoadAsync_System_String_System_Int32_">LoadAsync(String, Int32)</a>に、PLATEAUテクスチャ用の処理を加えたものになります。
+メインスレッドで実行する必要があります。 </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static async Task&lt;Texture2D&gt; LoadPlateauTextureAsync(string texturePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">texturePath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">Texture2D</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

@@ -83,7 +83,8 @@
   
   <h1 id="PLATEAU_GranularityConvert_CityGranularityConverter" data-uid="PLATEAU.GranularityConvert.CityGranularityConverter" class="text-break">Class CityGranularityConverter
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>オブジェクトの分割と結合を行います。</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -125,12 +126,12 @@
   
   
   <a id="PLATEAU_GranularityConvert_CityGranularityConverter_ConvertAsync_" data-uid="PLATEAU.GranularityConvert.CityGranularityConverter.ConvertAsync*"></a>
-  <h4 id="PLATEAU_GranularityConvert_CityGranularityConverter_ConvertAsync_IReadOnlyList_GameObject__PLATEAU_GranularityConvert_GranularityConvertOption_" data-uid="PLATEAU.GranularityConvert.CityGranularityConverter.ConvertAsync(IReadOnlyList{GameObject},PLATEAU.GranularityConvert.GranularityConvertOption)">ConvertAsync(IReadOnlyList&lt;GameObject&gt;, GranularityConvertOption)</h4>
+  <h4 id="PLATEAU_GranularityConvert_CityGranularityConverter_ConvertAsync_PLATEAU_GranularityConvert_GranularityConvertOptionUnity_" data-uid="PLATEAU.GranularityConvert.CityGranularityConverter.ConvertAsync(PLATEAU.GranularityConvert.GranularityConvertOptionUnity)">ConvertAsync(GranularityConvertOptionUnity)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task ConvertAsync(IReadOnlyList&lt;GameObject&gt; srcGameObjs, GranularityConvertOption option)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;GranularityConvertResult&gt; ConvertAsync(GranularityConvertOptionUnity conf)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -143,13 +144,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">GameObject</span>&gt;</td>
-        <td><span class="parametername">srcGameObjs</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="PLATEAU.GranularityConvert.GranularityConvertOption.html">GranularityConvertOption</a></td>
-        <td><span class="parametername">option</span></td>
+        <td><a class="xref" href="PLATEAU.GranularityConvert.GranularityConvertOptionUnity.html">GranularityConvertOptionUnity</a></td>
+        <td><span class="parametername">conf</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -164,7 +160,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">GranularityConvertResult</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

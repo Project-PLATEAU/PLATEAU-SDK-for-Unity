@@ -80,16 +80,17 @@
 <h1 id="属性情報によって色分けする">属性情報によって色分けする</h1>
 
 <p><img src="../resources/manual/changeColorByAttrs/screenShot.png" alt="">
-このサンプルでは、土地計画決定情報および建物の水害時の想定浸水高に関する属性情報を読み取り、それに応じてランタイムで色を変えます。  </p>
+上図は土地計画の区分を色分けするサンプルです。  </p>
+<p><img src="../resources/manual/changeColorByAttrs/screenShot2.png" alt="">
+上図は水害リスクを色分けするサンプルです。    </p>
+<p>このサンプルでは、土地計画決定情報および水害時の想定浸水高に関する属性情報を読み取り、それに応じてランタイムで色を変えます。  </p>
 <h2 id="サンプルを開く">サンプルを開く</h2>
-<p>このサンプルは次の場所にあります：<br><code>(PLATEAU SDKのサンプルディレクトリ)/AttributesColorSample/AttributesSample.unity</code><br>サンプルシーンを開き、Unityの再生ボタンを押すと地域ごとに色が付きます。<br>なお、実行には時間がかかる場合があります。</p>
+<p>このサンプルは次の場所にあります：<br><code>(PLATEAU SDKのサンプルディレクトリ)/AttributesColorSample/AttributesSample.unity</code><br>サンプルシーンを開き、Unityの再生ボタンを押すと地域ごとに色が付きます。<br>また、左上のボタンから色分けする区分を変更できます。<br>なお、実行には時間がかかる場合があります。</p>
 <p>属性情報を読み取り、色を変えるスクリプトは次の場所にあります:<br><code>(PLATEAU SDKのサンプルディレクトリ)/AttributesColorSample/AttributesColorSample.cs</code></p>
 <h2 id="サンプルコード">サンプルコード</h2>
 <h3 id="サンプルコード全文">サンプルコード全文</h3>
 <p>属性情報に応じて色分けするサンプルコード、<code>AttributesColorSample.cs</code>の内容は以下のとおりです。</p>
-<pre><code class="lang-csharp">using System.Collections;
-using System.Collections.Generic;
-using PLATEAU.CityInfo;
+<pre><code class="lang-csharp">using PLATEAU.CityInfo;
 using UnityEngine;
 
 /// &lt;summary&gt;
@@ -99,7 +100,7 @@ public class AttributesColorSample : MonoBehaviour
 {
     /// &lt;summary&gt; 色分けしたいターゲットを指定します。 &lt;/summary&gt;
     [SerializeField] private Transform targetParent;
-    private void Start()
+    private void Awake()
     {
         // PLATEAUCityObjectGroupコンポーネントに属性情報が格納されており、ランタイムで読み込むことができます。
         var cityObjGroups = targetParent.GetComponentsInChildren&lt;PLATEAUCityObjectGroup&gt;();
@@ -120,12 +121,12 @@ public class AttributesColorSample : MonoBehaviour
                 }
 
                 // 属性情報のうち、水害時の想定浸水高さを取得します。
-                if (attributes.TryGetValue(&quot;uro:buildingDisasterRiskAttribute&quot;, out var disasterRiskAttr))
+                if (attributes.TryGetValue(&quot;uro:floodingRiskAttribute&quot;, out var disasterRiskAttr))
                 {
-                    if (disasterRiskAttr.AttributesMapValue.TryGetValue(&quot;uro:depth&quot;, out var depthValue))
+                    if (disasterRiskAttr.AttributesMapValue.TryGetValue(&quot;uro:rank&quot;, out var depthValue))
                     {
-                        var depth = depthValue.DoubleValue;
-                        var color = ColorByDepth(depth);
+                        var rank = depthValue.StringValue;
+                        var color = ColorByFloodingRank(rank);
                         ChangeMaterialByColor(target, color);
                     }
                 }
@@ -170,10 +171,23 @@ public class AttributesColorSample : MonoBehaviour
         return matColor;
     }
 
-    private Color ColorByDepth(double depth)
+    private Color ColorByFloodingRank(string rank)
     {
-        float t = (float)depth / 3f;
-        return Color.Lerp(Color.blue, Color.red, t);
+        Color matColor = Color.white;
+        if (rank == &quot;0.5m未満&quot;)
+        {
+            matColor = new Color(0f, 0f, 1f);
+        }
+        else if (rank == &quot;0.5m以上3m未満&quot;)
+        {
+            matColor = new Color(1.0f, 1.0f, 0f);
+        }
+        else if (rank == &quot;3m以上5m未満&quot;)
+        {
+            matColor = new Color(1.0f, 0f, 0f);
+        }
+
+        return matColor;
     }
 
     private void ChangeMaterialByColor(Transform target, Color color)
@@ -189,6 +203,7 @@ public class AttributesColorSample : MonoBehaviour
 
 
 }
+
 </code></pre><h3 id="サンプルコード解説">サンプルコード解説</h3>
 <p>上のコードを解説します。<br>属性情報を取得するには、まず各地物ゲームオブジェクトに対してインポート時に付与される<code>PLATEAUCityObjectGroup</code>コンポーネントにアクセスします。</p>
 <pre><code class="lang-csharp">// コンポーネントにアクセスするところから始めます。
@@ -213,14 +228,14 @@ if (attributes.TryGetValue(&quot;urf:function&quot;, out var landFuncAttr))
     var color = // ここを&quot;第1種住居地域&quot;など属性情報の値に応じて場合分けで設定
     ChangeMaterialByColor(target, color);
 }
-</code></pre><p>下は、属性情報が入れ子になっているパターン（バリューがキーバリューセットである）ときに値を取得する例です。<br><code>uro:buildingDisasterRiskAttribute</code>をキーとする入れ子で、キー<code>uro:depth</code>の値を取得しています。</p>
+</code></pre><p>下は、属性情報が入れ子になっているパターン（バリューがキーバリューセットである）ときに値を取得する例です。<br><code>uro:floodingRiskAttribute</code>をキーとする入れ子で、キー<code>uro:rank</code>の値を取得しています。</p>
 <pre><code class="lang-csharp">// 属性情報のうち、水害時の想定浸水高さを取得します。
-if (attributes.TryGetValue(&quot;uro:buildingDisasterRiskAttribute&quot;, out var disasterRiskAttr))
+if (attributes.TryGetValue(&quot;uro:floodingRiskAttribute&quot;, out var disasterRiskAttr))
 {
-    if (disasterRiskAttr.AttributesMapValue.TryGetValue(&quot;uro:depth&quot;, out var depthValue))
+    if (disasterRiskAttr.AttributesMapValue.TryGetValue(&quot;uro:rank&quot;, out var depthValue))
     {
-        var depth = depthValue.DoubleValue; // stringをdoubleにパースした値を取得します。
-        var color = ColorByDepth(depth);
+        var rank = depthValue.StringValue;
+        var color = ColorByFloodingRank(rank);
         ChangeMaterialByColor(target, color);
     }
 }

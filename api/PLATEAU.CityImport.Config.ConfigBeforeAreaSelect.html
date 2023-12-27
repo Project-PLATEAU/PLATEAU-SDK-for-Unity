@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class DatasetSourceConfig
+    <title>Class ConfigBeforeAreaSelect
    | PLATEAU SDK for Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class DatasetSourceConfig
+    <meta name="title" content="Class ConfigBeforeAreaSelect
    | PLATEAU SDK for Unity ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,19 +78,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PLATEAU.Dataset.DatasetSourceConfig">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.CityImport.Config.ConfigBeforeAreaSelect">
   
   
-  <h1 id="PLATEAU_Dataset_DatasetSourceConfig" data-uid="PLATEAU.Dataset.DatasetSourceConfig" class="text-break">Class DatasetSourceConfig
+  <h1 id="PLATEAU_CityImport_Config_ConfigBeforeAreaSelect" data-uid="PLATEAU.CityImport.Config.ConfigBeforeAreaSelect" class="text-break">Class ConfigBeforeAreaSelect
   </h1>
-  <div class="markdown level0 summary"><p><a class="xref" href="PLATEAU.Dataset.DatasetSource.html">DatasetSource</a> の初期化方法は、データの場所がローカルかサーバーかで異なりますが、
-その違いを吸収するためのクラスです。</p>
+  <div class="markdown level0 summary"><p>インポート設定のうち、範囲選択より前に行う部分です。</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">DatasetSourceConfig</span></div>
+    <div class="level1"><span class="xref">ConfigBeforeAreaSelect</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -116,24 +115,34 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.Dataset.html">PLATEAU.Dataset</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityImport.Config.html">PLATEAU.CityImport.Config</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="PLATEAU_Dataset_DatasetSourceConfig_syntax">Syntax</h5>
+  <h5 id="PLATEAU_CityImport_Config_ConfigBeforeAreaSelect_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DatasetSourceConfig</code></pre>
+    <pre><code class="lang-csharp hljs">public class ConfigBeforeAreaSelect</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="PLATEAU_Dataset_DatasetSourceConfig__ctor_" data-uid="PLATEAU.Dataset.DatasetSourceConfig.#ctor*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetSourceConfig__ctor_System_Boolean_System_String_System_String_System_String_System_String_" data-uid="PLATEAU.Dataset.DatasetSourceConfig.#ctor(System.Boolean,System.String,System.String,System.String,System.String)">DatasetSourceConfig(Boolean, String, String, String, String)</h4>
-  <div class="markdown level1 summary"><p><a class="xref" href="PLATEAU.Dataset.DatasetSource.html">DatasetSource</a> の初期化のための情報を渡すコンストラクタです。</p>
+  <a id="PLATEAU_CityImport_Config_ConfigBeforeAreaSelect__ctor_" data-uid="PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.#ctor*"></a>
+  <h4 id="PLATEAU_CityImport_Config_ConfigBeforeAreaSelect__ctor" data-uid="PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.#ctor">ConfigBeforeAreaSelect()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigBeforeAreaSelect()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_CityImport_Config_ConfigBeforeAreaSelect__ctor_" data-uid="PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.#ctor*"></a>
+  <h4 id="PLATEAU_CityImport_Config_ConfigBeforeAreaSelect__ctor_IDatasetSourceConfig_System_Int32_" data-uid="PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.#ctor(IDatasetSourceConfig,System.Int32)">ConfigBeforeAreaSelect(IDatasetSourceConfig, Int32)</h4>
+  <div class="markdown level1 summary"><p>ローカルかサーバーかは、<see cref="!:IDatasetSourceConfig"></see>の型によって処理が分かれます。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DatasetSourceConfig(bool isServer, string localSourcePath, string serverDatasetID, string serverUrl, string serverToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public ConfigBeforeAreaSelect(IDatasetSourceConfig datasetSourceConfig, int coordinateZoneID)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -146,35 +155,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">isServer</span></td>
-        <td><p>データの場所は true ならサーバー、falseならローカルです。</p>
-</td>
+        <td><span class="xref">IDatasetSourceConfig</span></td>
+        <td><span class="parametername">datasetSourceConfig</span></td>
+        <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">localSourcePath</span></td>
-        <td><p>ローカルモードでのみ利用します。インポート元のパスを渡します。</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">serverDatasetID</span></td>
-        <td><p>サーバーモードでのみ利用します。データセットのIDを渡します。
-そのIDとは、APIサーバーにデータセットの一覧を問い合わせたときに得られるID文字列です。例: 東京23区のデータセットのIDは &quot;23ku&quot;</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">serverUrl</span></td>
-        <td><p>サーバーモードでのみ利用します。サーバーのURLです。</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">serverToken</span></td>
-        <td><p>サーバーモードでのみ利用します。サーバー認証のトークンです。</p>
-</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">coordinateZoneID</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -182,13 +170,16 @@
   </h3>
   
   
-  <a id="PLATEAU_Dataset_DatasetSourceConfig_IsServer_" data-uid="PLATEAU.Dataset.DatasetSourceConfig.IsServer*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetSourceConfig_IsServer" data-uid="PLATEAU.Dataset.DatasetSourceConfig.IsServer">IsServer</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="PLATEAU_CityImport_Config_ConfigBeforeAreaSelect_CoordinateZoneID_" data-uid="PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.CoordinateZoneID*"></a>
+  <h4 id="PLATEAU_CityImport_Config_ConfigBeforeAreaSelect_CoordinateZoneID" data-uid="PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.CoordinateZoneID">CoordinateZoneID</h4>
+  <div class="markdown level1 summary"><p>平面直角座標系の番号です。
+次のサイトで示される平面直角座標系の番号です。
+<a href="https://www.gsi.go.jp/sokuchikijun/jpc.html">https://www.gsi.go.jp/sokuchikijun/jpc.html</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsServer { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int CoordinateZoneID { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -200,20 +191,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_Dataset_DatasetSourceConfig_LocalSourcePath_" data-uid="PLATEAU.Dataset.DatasetSourceConfig.LocalSourcePath*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetSourceConfig_LocalSourcePath" data-uid="PLATEAU.Dataset.DatasetSourceConfig.LocalSourcePath">LocalSourcePath</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="PLATEAU_CityImport_Config_ConfigBeforeAreaSelect_DatasetSourceConfig_" data-uid="PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.DatasetSourceConfig*"></a>
+  <h4 id="PLATEAU_CityImport_Config_ConfigBeforeAreaSelect_DatasetSourceConfig" data-uid="PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.DatasetSourceConfig">DatasetSourceConfig</h4>
+  <div class="markdown level1 summary"><p>都市モデル読み込み元に関する設定です。</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string LocalSourcePath { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IDatasetSourceConfig DatasetSourceConfig { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -225,82 +217,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_Dataset_DatasetSourceConfig_ServerDatasetID_" data-uid="PLATEAU.Dataset.DatasetSourceConfig.ServerDatasetID*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetSourceConfig_ServerDatasetID" data-uid="PLATEAU.Dataset.DatasetSourceConfig.ServerDatasetID">ServerDatasetID</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ServerDatasetID { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_Dataset_DatasetSourceConfig_ServerToken_" data-uid="PLATEAU.Dataset.DatasetSourceConfig.ServerToken*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetSourceConfig_ServerToken" data-uid="PLATEAU.Dataset.DatasetSourceConfig.ServerToken">ServerToken</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ServerToken { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_Dataset_DatasetSourceConfig_ServerUrl_" data-uid="PLATEAU.Dataset.DatasetSourceConfig.ServerUrl*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetSourceConfig_ServerUrl" data-uid="PLATEAU.Dataset.DatasetSourceConfig.ServerUrl">ServerUrl</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ServerUrl { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">IDatasetSourceConfig</span></td>
         <td></td>
       </tr>
     </tbody>

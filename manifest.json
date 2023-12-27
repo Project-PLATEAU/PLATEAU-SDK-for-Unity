@@ -72,11 +72,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/PLATEAU.CityAdjust.CityDuplicateProcessor.yml",
+      "source_relative_path": "api/PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PLATEAU.CityAdjust.CityDuplicateProcessor.html",
-          "hash": "g6Ept6WsTndBEfk9iVlN0WBOHWQiiwNveBTvBlw8R4s="
+          "relative_path": "api/PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.html",
+          "hash": "qDqtS09hOPHZC9WK62vlsXu4DBCVTgUS/2CK1xTYtKI="
         }
       },
       "is_incremental": false,
@@ -84,11 +84,215 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/PLATEAU.CityAdjust.yml",
+      "source_relative_path": "api/PLATEAU.CityAdjust.ChangeActive.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PLATEAU.CityAdjust.html",
-          "hash": "/bNt/UorMwI6yiFVMmiL0byIilrj9LR+smHBqnjK4i8="
+          "relative_path": "api/PLATEAU.CityAdjust.ChangeActive.html",
+          "hash": "rKl2tYNCqr/eaC8C4eO57R2OVgwt4J+e/H4Rwahf6Pw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityExport.Exporters.CityExporterFbx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityExport.Exporters.CityExporterFbx.html",
+          "hash": "MZMpLCBZnIhK44Sz1JwFdbrPsMeOk4zifq0O/kkEKqk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityExport.Exporters.CityExporterGltf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityExport.Exporters.CityExporterGltf.html",
+          "hash": "PZVRBHA00W9t/JVRVLyXJqCV6hf7Rvd1TJmEvJ5eVas="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityExport.Exporters.CityExporterObj.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityExport.Exporters.CityExporterObj.html",
+          "hash": "VzJ6ViiXzN99EpFJwoSoyGEBmj49SF+OefyWMZRQCG0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityExport.Exporters.ICityExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityExport.Exporters.ICityExporter.html",
+          "hash": "z+9V4bMC63ZELfd4a7YgcP50KwPZGxrVERffPpSLvXk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityExport.Exporters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityExport.Exporters.html",
+          "hash": "C6SGW6CmWwNIzA3DpUK5WB+1m2pzEncYla210qgfovM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityExport.MeshExportOptions.MeshTransformType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityExport.MeshExportOptions.MeshTransformType.html",
+          "hash": "4G7bv0HS1QLPiPDrEo2FBegU7RDUoIfqFYqwnaugV+I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityExport.MeshExportOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityExport.MeshExportOptions.html",
+          "hash": "pwUQqh8IOyX4H/nvfrOa46t6nyYqyayfRJ/WkymRh1A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityExport.MeshFileFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityExport.MeshFileFormat.html",
+          "hash": "NhIojS7tYLaanvcH3cqaNsNCbJFI1OcumaPoxokDFjg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityExport.MeshFileFormatExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityExport.MeshFileFormatExtension.html",
+          "hash": "gCzVnTflEJbXljB593VIXr6OdBfZqWu6SrFfifyj9Xw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.IUnityMeshToDllSubMeshConverter.ForEachUnitySubMeshToDllSubMesh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.IUnityMeshToDllSubMeshConverter.ForEachUnitySubMeshToDllSubMesh.html",
+          "hash": "fp4Ja472YtFWZfcRTfPmAun9MyT5ogj3pmpeFjGt/oc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.IUnityMeshToDllSubMeshConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.IUnityMeshToDllSubMeshConverter.html",
+          "hash": "bLBKZoQHWgB5qAIfulnn0WnH9u9M9KmpJeGIkjGRT74="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithEmptyMaterial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithEmptyMaterial.html",
+          "hash": "jkAxaccRd1R9wktoS8tx1pT66MOunBQVw/rzf94vWdI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithGameMaterial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithGameMaterial.html",
+          "hash": "z18A29uuzcxeNYONgqKrVtiW5kk80siuwJ0aTDHxzEE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.html",
+          "hash": "UlIP0H+Yu52uBM6NZWY+LR/tV/lDcP3cepIkBCcjgws="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.html",
+          "hash": "up2riDxUUFEoMpJh6GhRAkXDth8oZbScxi63Nqj6Q5o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityExport.UnityModelExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityExport.UnityModelExporter.html",
+          "hash": "y5x903AD+9pM5VW180JY2cTpE9ceONblBRGeo69sCt0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityExport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityExport.html",
+          "hash": "TlNtK4cIXs8al19qSjiuu0ZpHcT23YYYUfMNxz/xOnM="
         }
       },
       "is_incremental": false,
@@ -400,7 +604,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.CityImport.AreaSelector.AreaSelectResult.html",
-          "hash": "5e72J2GGiH62hkkBpH7Bf5PQbi1eDusjhRWAMtfStK0="
+          "hash": "2KNv5Bb3zeCJDiSmfDMN9MtQElQn1h5ra0XtKANKdCw="
         }
       },
       "is_incremental": false,
@@ -424,7 +628,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.html",
-          "hash": "hfH/RtvDzHDgKWpElS8wlwBr9q0xB/2lPbFrGQdxZrI="
+          "hash": "ngNtt2pTuaQxNSwHfUFCtSn6iLhdw1O8L8qDfg2xdlQ="
         }
       },
       "is_incremental": false,
@@ -436,7 +640,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.html",
-          "hash": "YbwQZTWDCiDYolKkni/RO3tz9v9gTdXIEKwDFpQI5Hg="
+          "hash": "3gKy8JBv1tBeqoQ55z0JP4fFQ7lckP3kme5J3xLKmks="
         }
       },
       "is_incremental": false,
@@ -520,7 +724,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.CityImport.AreaSelector.html",
-          "hash": "/NMA+hW342hHL/R8JxBXB1n2J7kOz90kGptCyIVzcCI="
+          "hash": "+uvCy6CSA/El58KvF1b++bDBkvgpUv0LsrWGfv9H42I="
         }
       },
       "is_incremental": false,
@@ -528,11 +732,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.yml",
+      "source_relative_path": "api/PLATEAU.CityImport.Config.CityImportConfig.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PLATEAU.CityImport.Config.PackageLoadConfigs.PackageToLodDict.html",
-          "hash": "juRPHQ0A7EY6m/6KKEQ5bZI1sU3hy2kWNifr7B7nMzw="
+          "relative_path": "api/PLATEAU.CityImport.Config.CityImportConfig.html",
+          "hash": "CP2OALEuisRZHsUhjBECxn4eAQPuLpC2GQwxO+x27Yg="
         }
       },
       "is_incremental": false,
@@ -540,11 +744,167 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/PLATEAU.CityImport.Config.PackageLoadConfigs.yml",
+      "source_relative_path": "api/PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PLATEAU.CityImport.Config.PackageLoadConfigs.html",
-          "hash": "ih9xIzW8hKgjWUXV1+UjpDbmMd2Y0TbSwbKGFZt10Wk="
+          "relative_path": "api/PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.html",
+          "hash": "/Zxry1Ssx99O314V0CXHCSy0rEVhyFjFzwdXIDNLdfw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityImport.Config.MeshCodeList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityImport.Config.MeshCodeList.html",
+          "hash": "7Ld/QgSwVLIllSc88FoovlU5Lk0GDeIHR++LMPTBsmM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityImport.Config.PackageImportConfigs.LODRange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityImport.Config.PackageImportConfigs.LODRange.html",
+          "hash": "8fYdlYrpOKo2VxSp9L31KywMjdRfahfh5KhqAgQXFcc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.html",
+          "hash": "g3mEnG6q+CVRB0kKr3VG2UJAMF/JzdQ1sbMY2Xr9aWQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigDict.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigDict.html",
+          "hash": "xbcZ3Y6CSXaFb3WX5QNxFKOwHqs0Txl9VtWvL9S15Ys="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.html",
+          "hash": "RoVi40jDT9RbgcZbpbvjaU9X3mm91VlFtlZutEBlI6k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageToLodDict.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageToLodDict.html",
+          "hash": "Rmphnwdf/+/hTSRotJGPGP3Wa/mMLJ/+hUJ0XZm5Huc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityImport.Config.PackageImportConfigs.TexturePackingResolution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityImport.Config.PackageImportConfigs.TexturePackingResolution.html",
+          "hash": "UFjuz1scb21v6COHBqc0PEf/aSQ0Ppmvjd35JWylG2I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityImport.Config.PackageImportConfigs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityImport.Config.PackageImportConfigs.html",
+          "hash": "5x/FexHpV1VArXbZATCRA8BteIpv63C8eY1brN7e518="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityImport.Config.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityImport.Config.html",
+          "hash": "nn3IMJJo5IH+MUwTvS6+S4BOTqyf2ZBYcd1BgTCuS84="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityImport.Import.CityImporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityImport.Import.CityImporter.html",
+          "hash": "z8ABGtg9wn8T59JkWO0fdQ4ZwssPESNI+vPm40LKXLs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityImport.Import.Convert.GranularityConvertResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityImport.Import.Convert.GranularityConvertResult.html",
+          "hash": "Wn9Cqqj68nshZ+9BnlyM07Rnv2+/mIq1oWgIdr/IQQ8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityImport.Import.Convert.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityImport.Import.Convert.html",
+          "hash": "8jRy4QZALLke1tJAhTzozd8SHvHwZ5fe5ezXVCdnub4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityImport.Import.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityImport.Import.html",
+          "hash": "n4T1L3CBLKKpJmjRnijYR0H6ij1Gh1luJbv71qQWBg8="
         }
       },
       "is_incremental": false,
@@ -628,7 +988,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.CityInfo.CityObjectTypeHierarchy.Node.html",
-          "hash": "tHVj/cLYl2cQcMwuvbW2UDsjq81RmVbtaKzBKwOSR14="
+          "hash": "pdTKtu+W471bjF0X0a82ky105gi1HeqVqn2nX3tf154="
         }
       },
       "is_incremental": false,
@@ -640,7 +1000,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.CityInfo.CityObjectTypeHierarchy.html",
-          "hash": "UH3Vb6LgCXFKkh5nlgdc/yV2ofQkCL0MAckLD24uK24="
+          "hash": "m99dZ4caqrhOZDMMrZNbG0zIFo5S8k7kZKU2UelnjLk="
         }
       },
       "is_incremental": false,
@@ -676,7 +1036,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html",
-          "hash": "AD4+19GF3iBBJCFE4rVdWA1Zn08JcKHyRtJMyP6+7cI="
+          "hash": "lWIl0gWnjXx6FGIGTCmFbdObAHBJzt8KJbFKoqzkeXs="
         }
       },
       "is_incremental": false,
@@ -760,7 +1120,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.Dataset.DatasetSource.html",
-          "hash": "+ddNlaeQYgKPozdLJCCScvVfFO/mj2ElQI8cvDfZjE8="
+          "hash": "FoQDVaCVclBywADdrOBm0nytYS9C0+1gfANfXDHCMCY="
         }
       },
       "is_incremental": false,
@@ -768,11 +1128,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/PLATEAU.Dataset.DatasetSourceConfig.yml",
+      "source_relative_path": "api/PLATEAU.Dataset.DatasetSourceConfigLocal.yml",
       "output": {
         ".html": {
-          "relative_path": "api/PLATEAU.Dataset.DatasetSourceConfig.html",
-          "hash": "MtBUlGy3XfqBTaTHYMOVnpRc0GMMF5N3Q9E5Hj6s4vM="
+          "relative_path": "api/PLATEAU.Dataset.DatasetSourceConfigLocal.html",
+          "hash": "4gmxO53aV1BLb+dNOnChqE4kat2rhM1wHkFz5bzRJn0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.Dataset.DatasetSourceConfigRemote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.Dataset.DatasetSourceConfigRemote.html",
+          "hash": "wlTGNLf0ECE1vtc/7I2RHlGZL8+wY/6YUq8VwZvn2uM="
         }
       },
       "is_incremental": false,
@@ -785,6 +1157,18 @@
         ".html": {
           "relative_path": "api/PLATEAU.Dataset.GmlFile.html",
           "hash": "dfuOE4BSegLVZWH4cnjylskkX+Qxo003rqkLR0fArco="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.Dataset.IDatasetSourceConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.Dataset.IDatasetSourceConfig.html",
+          "hash": "LXOXbUQKyJEtUrbPnRnRgWgdThsX9T8j2empLLyZrfk="
         }
       },
       "is_incremental": false,
@@ -832,31 +1216,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.Dataset.html",
-          "hash": "hJm4TYy/41M3cnFv/UskRotrspfRJzfFwEdQAn+z23A="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PLATEAU.Editor.CityExport.MeshFileFormat.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PLATEAU.Editor.CityExport.MeshFileFormat.html",
-          "hash": "irCMlsXTxJZz0/pQqTqjIsW2Ca8DM1i472WHKHzQsrk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/PLATEAU.Editor.CityExport.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/PLATEAU.Editor.CityExport.html",
-          "hash": "azAZX/2Ka7Cryc17k0SNdsK3wkLl3warA/TV9XwDAs8="
+          "hash": "kKhPDD3bP8pRVzRNJxmaiE+yUY4BIoQipHLM0QMzaGE="
         }
       },
       "is_incremental": false,
@@ -900,6 +1260,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.Editor.EditorWindow.PlateauWindow.MainTabGUI.CityImportConfigGUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.Editor.EditorWindow.PlateauWindow.MainTabGUI.CityImportConfigGUI.html",
+          "hash": "ZVfKodKg5KMTR6jCIayjCaNtOVqDbFLRl7NKJbWaV4Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.Editor.EditorWindow.PlateauWindow.MainTabGUI.ImportGUIParts.IConfigGUIBeforeAreaSelect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.Editor.EditorWindow.PlateauWindow.MainTabGUI.ImportGUIParts.IConfigGUIBeforeAreaSelect.html",
+          "hash": "9mE7JM1pNd8YfllzjzLTBIDDYp3Ql8tD7g5GHmyqdNc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/PLATEAU.Editor.EditorWindow.PlateauWindow.MainTabGUI.ImportGUIParts.ServerDatasetFetchGUI.LoadStatusEnum.yml",
       "output": {
         ".html": {
@@ -928,7 +1312,19 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.Editor.EditorWindow.PlateauWindow.MainTabGUI.ImportGUIParts.html",
-          "hash": "gCuTh7sghmO5II0z8zBvITIbrxqGtFQeT3WBJ5Y/ACo="
+          "hash": "O2exI7yrX6VCGAsii1z57WaV64OX6rYRDpevI4KSYxU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.Editor.EditorWindow.PlateauWindow.MainTabGUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.Editor.EditorWindow.PlateauWindow.MainTabGUI.html",
+          "hash": "+55br0FmWO/scPLCGAmPbez8ZTzvDZVumZgpO6iO1TQ="
         }
       },
       "is_incremental": false,
@@ -964,7 +1360,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.Geometries.GeoReference.html",
-          "hash": "efcJS9WV8Gvds2bMt2L+nh7gKdZVIsWjPsAZwnM6KTg="
+          "hash": "WpjdaQBD0emdDudcE2RfgxBQD/kYN8RCMjTfwBE/voA="
         }
       },
       "is_incremental": false,
@@ -988,7 +1384,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.GranularityConvert.CityGranularityConverter.html",
-          "hash": "AGQDwv+Y7SgJN3r09GuBguF+0ZA3CY9xRnYg/chRASE="
+          "hash": "R3SiGi6f5EIEVxM+LGA8OSHP+kUJsxebwGzOHf71dQE="
         }
       },
       "is_incremental": false,
@@ -1013,6 +1409,18 @@
         ".html": {
           "relative_path": "api/PLATEAU.GranularityConvert.GranularityConvertOption.html",
           "hash": "xQ7pd/qFhM6Xg6EN0+gmwQIy3aKpFfQnkenCvAtv73o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.GranularityConvert.GranularityConvertOptionUnity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.GranularityConvert.GranularityConvertOptionUnity.html",
+          "hash": "XOE+sMYbMLU0C31xvBkF1mHSjsZpjPwzzY+RGYBPlC0="
         }
       },
       "is_incremental": false,
@@ -1072,7 +1480,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.GranularityConvert.html",
-          "hash": "jw9/e27BJHmzTBxF8A7u9cR7IXQ9bB1PzR1GGobEyDY="
+          "hash": "LmYlzTn9xoAAn5SdpmP/bY6nKRzZn2cFGDK05+gspMM="
         }
       },
       "is_incremental": false,
@@ -1444,7 +1852,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.PolygonMesh.CityObjectIndex.html",
-          "hash": "3jG6UHUztkznIG2Jxa8PstsDlJg0RDd18KLihrffE8c="
+          "hash": "tz7zhwkzSU1VoZmtdk0yAKSqkAaQkUPoORMY7Pz4WdU="
         }
       },
       "is_incremental": false,
@@ -1512,6 +1920,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.PolygonMesh.MeshGranularityExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.PolygonMesh.MeshGranularityExtension.html",
+          "hash": "zAY1lVWeEhCz/jKJqxpOTFQRZH4unIs3kUU+rydI0S0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/PLATEAU.PolygonMesh.Model.yml",
       "output": {
         ".html": {
@@ -1528,7 +1948,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.PolygonMesh.Node.html",
-          "hash": "0O63nNBSvv1AQzElYIML8haD6dU2NgSX9J6xJFSBDhs="
+          "hash": "E0HCHEdVma6mvuMS1smTKJh4xLmhnm35orT7SYKm65Q="
         }
       },
       "is_incremental": false,
@@ -1540,7 +1960,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.PolygonMesh.SubMesh.html",
-          "hash": "A13M7FZiH06TCnyKKs4nOZiYiAHgU9GljqaGGuRT6I4="
+          "hash": "xMcn8HrYWq75V3rjyBXN2IkDz4xUlZh0aCDRr8dpHyk="
         }
       },
       "is_incremental": false,
@@ -1552,7 +1972,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.PolygonMesh.html",
-          "hash": "j36Wv/MrFByitpjDv4Ql7T01ijp/rUg21jlOn7WapRI="
+          "hash": "EMxJYKZ82VYpQ+wLD9kC7jDoJwCtQIkPnP7CoLOLq2g="
         }
       },
       "is_incremental": false,
@@ -1612,7 +2032,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.Util.Async.TextureLoader.html",
-          "hash": "bVjbaa1IsxbrpLq1UMRxkQRI4ciHUk3ly3euzgSUP/o="
+          "hash": "47WL/mhTLsLypBQXKkFUmQYNyG9OA5Cohd6KLCjsDZ4="
         }
       },
       "is_incremental": false,
@@ -1804,7 +2224,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "bn+Kh9VcHmzxTr+5YYUzPnF5R0jURPqNbw4sVH7HftE="
+          "hash": "MuB5+1/pWTQ9XAQuo9N3H/0n8e8eq2kRqL+Fez2Lc2Q="
         }
       },
       "is_incremental": false,
@@ -1840,7 +2260,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/ChangeColorByAttrs.html",
-          "hash": "jcRb1svgBoARd4NVQ561yDRFZElp3TE0E1kcfLbZj/Y="
+          "hash": "x4x21INrnymLYzoPTNawfw/vNdbT31wX74f0QKa3CeQ="
         }
       },
       "is_incremental": false,
@@ -1864,7 +2284,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/ExportCityModels.html",
-          "hash": "0jtuJsR6NrSiB5/akof6OwYjOIIeWFHicXwPlOsRsSw="
+          "hash": "is1gpPntElqq5kBwqsyeDfV4UiH1bC0UB4Ehdi21iTM="
         }
       },
       "is_incremental": false,
@@ -1876,7 +2296,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/ImportCityModels.html",
-          "hash": "53BMOJFDfeczTuUdiMgf5mbIMV5wsbd3Do7xyZPCW9w="
+          "hash": "y88NUXF/S+EfB51qOq8x6C3D8Pm1Se+qko28MC3iLAk="
         }
       },
       "is_incremental": false,
@@ -1900,7 +2320,31 @@
       "output": {
         ".html": {
           "relative_path": "manual/ModelAdjust.html",
-          "hash": "8jrW4hBJreVlPCm0sqKY4fDEb9e+EdJlw9oLQBlRRIk="
+          "hash": "MWu02rvqKf6DzbspUalU6TcW5bV8dooRtM+aqTKYyJo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/runtimeAPI.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/runtimeAPI.html",
+          "hash": "dU2fxsnAx8hxBlDdjlQTaDoOUwnwQ7IFhliP5f5gwVs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/sdkMaterial.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/sdkMaterial.html",
+          "hash": "wQEDzsNf5nLxFPqfq4biZ1O3nX9CsBflzZn4IX9AyTk="
         }
       },
       "is_incremental": false,
@@ -1912,7 +2356,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "wdd2KkibktjlXsABeWLYneyv7oVJ5ukGoYUClm/49V8="
+          "hash": "aHng9G5ivRnUJHCRCABIlj+kWLVES+PB3WSWLtQd5Zo="
         }
       },
       "is_incremental": false,
@@ -2063,10 +2507,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "resources/manual/changeColorByAttrs/screenShot2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/manual/changeColorByAttrs/screenShot2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "resources/manual/cityAdjust/gameObjOnOff.png",
       "output": {
         "resource": {
           "relative_path": "resources/manual/cityAdjust/gameObjOnOff.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/manual/cityAdjust/materialByType.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/manual/cityAdjust/materialByType.png"
         }
       },
       "is_incremental": false,
@@ -2612,6 +3078,28 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "resources/manual/runtimeAPI.meta",
+      "output": {
+        "resource": {
+          "relative_path": "resources/manual/runtimeAPI.meta"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/manual/runtimeAPI/runtimeSample.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/manual/runtimeAPI/runtimeSample.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
@@ -2638,13 +3126,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 8,
+          "total_file_count": 10,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 148,
+          "total_file_count": 183,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

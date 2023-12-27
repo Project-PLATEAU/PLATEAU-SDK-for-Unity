@@ -90,35 +90,11 @@
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">CityObjectTypeHierarchy.Node</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityInfo.html">PLATEAU.CityInfo</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="PLATEAU_CityInfo_CityObjectTypeHierarchy_Node_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Node</code></pre>
+    <pre><code class="lang-csharp hljs">public class Node : IComparable&lt;CityObjectTypeHierarchy.Node&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -289,6 +265,78 @@
     <tbody>
       <tr>
         <td><span class="xref">Package</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PLATEAU_CityInfo_CityObjectTypeHierarchy_Node_CompareTo_" data-uid="PLATEAU.CityInfo.CityObjectTypeHierarchy.Node.CompareTo*"></a>
+  <h4 id="PLATEAU_CityInfo_CityObjectTypeHierarchy_Node_CompareTo_PLATEAU_CityInfo_CityObjectTypeHierarchy_Node_" data-uid="PLATEAU.CityInfo.CityObjectTypeHierarchy.Node.CompareTo(PLATEAU.CityInfo.CityObjectTypeHierarchy.Node)">CompareTo(CityObjectTypeHierarchy.Node)</h4>
+  <div class="markdown level1 summary"><p>都市オブジェクトの種類をGUIで列挙するなどの場合に、列挙の順序を定義します。
+<a class="xref" href="PLATEAU.CityInfo.CityObjectTypeHierarchy.html">CityObjectTypeHierarchy</a>の深さ優先探索の順番とします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(CityObjectTypeHierarchy.Node other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.CityInfo.CityObjectTypeHierarchy.Node.html">CityObjectTypeHierarchy.Node</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityInfo_CityObjectTypeHierarchy_Node_GetDisplayName_" data-uid="PLATEAU.CityInfo.CityObjectTypeHierarchy.Node.GetDisplayName*"></a>
+  <h4 id="PLATEAU_CityInfo_CityObjectTypeHierarchy_Node_GetDisplayName" data-uid="PLATEAU.CityInfo.CityObjectTypeHierarchy.Node.GetDisplayName">GetDisplayName()</h4>
+  <div class="markdown level1 summary"><p>分類のディスプレイ名を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetDisplayName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
