@@ -917,7 +917,7 @@
   "index.html": {
     "href": "index.html",
     "title": "PLATEAU SDK for Unity | PLATEAU SDK for Unity",
-    "keywords": "PLATEAU SDK for Unity このパッケージには、 PLATEAU の3D都市モデルデータを利用するためのAPI、サンプルが含まれます。PLATEAU SDK for Unityを利用することで、実世界を舞台にしたゲームの開発や、PLATEAUの豊富なデータを活用したシミュレーションを簡単に行うことができます。"
+    "keywords": "PLATEAU SDK for Unity このパッケージには、 PLATEAU の3D都市モデルデータを利用するためのAPI、サンプルが含まれます。PLATEAU SDK for Unityを利用することで、実世界を舞台にしたゲームの開発や、PLATEAUの豊富なデータを活用したシミュレーションを簡単に行うことができます。 Note PLATEAU SDK for Unityは利用者アンケートを実施しています。 今後の開発の参考にするため、ユーザーの皆様の忌憚ないご意見をお聞かせください。 ◆アンケートはこちら"
   },
   "manual/AccessCityObject.html": {
     "href": "manual/AccessCityObject.html",
