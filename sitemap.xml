@@ -2,1159 +2,1159 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Basemap.TileCoordinate.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Basemap.TileProjection.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Basemap.VectorTileDownloader.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Basemap.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityAdjust.ChangeActive.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityExport.Exporters.CityExporterFbx.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityExport.Exporters.CityExporterGltf.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityExport.Exporters.CityExporterObj.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityExport.Exporters.ICityExporter.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityExport.Exporters.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityExport.MeshExportOptions.MeshTransformType.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityExport.MeshExportOptions.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityExport.MeshFileFormat.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityExport.MeshFileFormatExtension.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.IUnityMeshToDllSubMeshConverter.ForEachUnitySubMeshToDllSubMesh.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.IUnityMeshToDllSubMeshConverter.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithEmptyMaterial.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithGameMaterial.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityExport.UnityModelExporter.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityExport.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.Address.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.Appearance.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.AppearanceTarget.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.AppearanceTargetDefinition-1.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.AttributeType.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.CityGml.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.CitygmlParserParams.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.CityModel.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.CityObject.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.CityObjectType.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.FeatureObject.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.Geometry.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.GeometryType.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.LinearRing.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.Material.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.MaterialTargetDefinition.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.NativeAttributesMap.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.NativeAttributeValue.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.Object.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.Polygon.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.Texture.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.TextureCoordinates.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.TextureTargetDefinition.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.TextureWrapMode.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityGML.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.AreaSelector.AreaSelectResult.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.HandlesBase.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodController.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodSearcher.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.AreaLodView.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.LODIcons.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.AreaSelector.Display.Gizmos.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoader.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.AreaSelector.Display.Maps.GSIMapLoaderZoomSwitch.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.AreaSelector.Display.Maps.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.AreaSelector.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.Config.CityImportConfig.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.Config.MeshCodeList.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.Config.PackageImportConfigs.LODRange.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigDict.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageToLodDict.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.Config.PackageImportConfigs.TexturePackingResolution.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.Config.PackageImportConfigs.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.Config.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.Import.CityImporter.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.Import.Convert.GranularityConvertResult.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.Import.Convert.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityImport.Import.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityInfo.CityObjectGizmoDrawer.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityInfo.CityObjectGroupInfoForToolkits.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityInfo.CityObjectList.Attributes.Value.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityInfo.CityObjectList.Attributes.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityInfo.CityObjectList.CityObject.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityInfo.CityObjectList.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityInfo.CityObjectTypeHierarchy.Node.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityInfo.CityObjectTypeHierarchy.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityInfo.GeoReferenceData.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityInfo.PLATEAUCityGmlProxy.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityInfo.PLATEAUInstancedCityModel.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.CityInfo.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Dataset.CityModelPackageInfo.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Dataset.DatasetAccessor.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Dataset.DatasetMetadata.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Dataset.DatasetMetadataGroup.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Dataset.DatasetSource.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Dataset.DatasetSourceConfigLocal.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Dataset.DatasetSourceConfigRemote.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Dataset.GmlFile.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Dataset.IDatasetSourceConfig.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Dataset.MeshCode.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Dataset.PredefinedCityModelPackage.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Dataset.PredefinedCityModelPackageExtension.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Dataset.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Editor.CityInfo.PLATEAUCityObjectGroupEditor.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Editor.CityInfo.PLATEAUInstancedCityModelEditor.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Editor.CityInfo.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Editor.EditorWindow.PlateauWindow.MainTabGUI.CityImportConfigGUI.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Editor.EditorWindow.PlateauWindow.MainTabGUI.ImportGUIParts.IConfigGUIBeforeAreaSelect.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Editor.EditorWindow.PlateauWindow.MainTabGUI.ImportGUIParts.ServerDatasetFetchGUI.LoadStatusEnum.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Editor.EditorWindow.PlateauWindow.MainTabGUI.ImportGUIParts.ServerDatasetFetchGUI.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Editor.EditorWindow.PlateauWindow.MainTabGUI.ImportGUIParts.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Editor.EditorWindow.PlateauWindow.MainTabGUI.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Geometries.CoordinateSystem.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Geometries.CoordinateSystemExtension.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Geometries.GeoReference.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Geometries.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.GranularityConvert.CityGranularityConverter.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.GranularityConvert.GmlIdToSerializedCityObj.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.GranularityConvert.GranularityConverter.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.GranularityConvert.GranularityConvertOption.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.GranularityConvert.GranularityConvertOptionUnity.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.GranularityConvert.InstancedCityModelDict.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.GranularityConvert.SerializedCityObjectGetterFromDict.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.GranularityConvert.TransformBFS.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.GranularityConvert.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.MeshWriter.FbxFileFormat.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.MeshWriter.FbxWriteOptions.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.MeshWriter.FbxWriter.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.MeshWriter.GltfFileFormat.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.MeshWriter.GltfWriteOptions.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.MeshWriter.GltfWriter.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.MeshWriter.ObjWriter.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.MeshWriter.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.DllLogger.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.DllLogLevel.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.Extent.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.GeoCoordinate.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.INativeVector-1.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.LogCallbacks.LogCallbackFuncType.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.LogCallbacks.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.NativeVectorBase-1.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.NativeVectorDatasetMetadata.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.NativeVectorDatasetMetadataGroup.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.NativeVectorDisposableBase-1.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.NativeVectorExtent.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.NativeVectorGmlFile.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.NativeVectorMeshCode.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.PInvokeDisposable.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.PlateauVector2f.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.PlateauVector3d.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.PlateauVector3f.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Native.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Network.Client.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Network.NetworkConfig.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Network.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.PolygonMesh.CityObjectIndex.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.PolygonMesh.CityObjectList.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.PolygonMesh.Mesh.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.PolygonMesh.MeshExtractOptions.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.PolygonMesh.MeshExtractor.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.PolygonMesh.MeshGranularity.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.PolygonMesh.MeshGranularityExtension.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.PolygonMesh.Model.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.PolygonMesh.Node.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.PolygonMesh.SubMesh.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.PolygonMesh.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Texture.MapZoomLevelSearcher.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Texture.MapZoomLevelSearchResult.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Texture.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Util.Async.TaskExtension.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Util.Async.TextureLoader.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Util.Async.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Util.DebugUtil.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Util.Dialogue.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Util.DisplayedProgress.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Util.DummyProgressDisplay.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Util.EnumUtil.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Util.FallbackMaterial.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Util.IProgressDisplay.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Util.MaterialPathUtil.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Util.PathUtil.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Util.PipeLineType.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Util.ProgressBar.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Util.RenderUtil.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Util.StringBuilderWithIndent.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/api/PLATEAU.Util.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/index.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/manual/AccessCityObject.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/manual/ChangeColorByAttrs.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/manual/DisplayAttrs.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/manual/ExportCityModels.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/manual/ImportCityModels.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/manual/Installation.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/manual/ModelAdjust.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/manual/runtimeAPI.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://synesthesias.github.io/PlateauUnitySDK/manual/sdkMaterial.html</loc>
-    <lastmod>2024-02-20T01:17:08+00:00</lastmod>
+    <lastmod>2024-03-25T06:08:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
