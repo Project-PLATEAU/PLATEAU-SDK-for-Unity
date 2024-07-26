@@ -98,6 +98,7 @@
 <h2 id="サンプルコードの解説">サンプルコードの解説</h2>
 <p>サンプルコードは次の場所にあります。<br><code>Assets/Samples/PLATEAU SDK for Unity/(バージョン)/PLATEAU Samples/APISample/RuntimeAPISample.cs</code></p>
 <p>以下にそのコードを解説します。  </p>
+<h3 id="ランタイムapi利用の下準備">ランタイムAPI利用の下準備</h3>
 <h3 id="インポート">インポート</h3>
 <pre><code class="lang-csharp">/// &lt;summary&gt;
 /// ランタイムでインポートするコードです。
@@ -172,6 +173,17 @@ public async void GranularityConvert()
 }
 </code></pre><p>オブジェクトを分割結合し、粒度を変更します。<br><code>await new CityGranularityConverter().ConvertAsync(conf)</code> で実行できます。<br>ここで<code>conf</code>は分割結合の設定であり、次のように設定できます。<br><code>new GranularityConvertOptionUnity(new GranularityConvertOption(ここに粒度を入れる, 1),
 ここに変換対象の配列を入れる, 元のオブジェクトを消すならtrueで残すならfalse);</code><br>なお<code>new GranularityConvertOption</code>の2つ目の引数である<code>1</code>は、未実装の設定項目のためどの数値をいれても動作に影響しません。</p>
+<h2 id="assembly-definition-assetを利用する場合">Assembly Definition Assetを利用する場合</h2>
+<p>Assembly Definition Assetをご利用の場合、<br>PLATEAUのAPIを利用するためには次のように設定する必要があります。</p>
+<ul>
+<li>ご利用のAssembly Definition Assetのうち、PLATEAUのAPIを利用したいものを選択します。</li>
+<li>インスペクタからAssembly Definition Referencesに次を追加します。<ul>
+<li>PLATEAU.Runtime</li>
+<li>libplateau</li>
+</ul>
+</li>
+<li>Applyを押します。</li>
+</ul>
 </article>
           </div>
           

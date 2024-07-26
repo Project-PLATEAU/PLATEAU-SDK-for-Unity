@@ -79,10 +79,10 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="インストール">インストール</h1>
 
-<p>このページでは PLATEAU SDK for Unity のインストール方法を説明します。</p>
+<p>このページではPLATEAU SDK for Unityのインストール方法を説明します。</p>
 <h2 id="対応unityバージョンのインストール">対応Unityバージョンのインストール</h2>
 <ul>
-<li>PLATEAU SDK for Unity で想定するUnityバージョンが<a href="https://github.com/Project-PLATEAU/PLATEAU-SDK-for-Unity/releases">リリースページ</a>に記載されています。<br>そのバージョンがインストールされていない場合は、次の手順でインストールしてください。<ul>
+<li>PLATEAU SDK for Unityで想定するUnityバージョンが<a href="https://github.com/Project-PLATEAU/PLATEAU-SDK-for-Unity/releases">リリースページ</a>に記載されています。<br>そのバージョンがインストールされていない場合は、次の手順でインストールしてください。<ul>
 <li><a href="https://unity3d.com/jp/get-unity/download">Unity Hub をこちらからインストールします</a>。</li>
 <li>Unity Hub とは、Unityのお好きなバージョンをインストールして起動することのできるソフトウェアです。</li>
 <li>Unity Hubを起動し、左のサイドバーから<code>インストール</code> → 右上のボタンから<code>エディターをインストール</code> をクリックします。
@@ -145,6 +145,15 @@
 <li><code>Add</code> ボタンを押します。</li>
 <li>ウィンドウのパッケージ一覧に <code>Plateau Unity SDK</code> が表示されたら完了です。
 <img src="../resources/manual/installation/packageInstalled.png" alt=""></li>
+</ul>
+<h3 id="android向けにビルドする場合">Android向けにビルドする場合</h3>
+<p>Android向けにビルドする場合、次のようにUnityプロジェクトを設定してください。</p>
+<ul>
+<li>メニューバーから Edit → Project Settingsを選びます。</li>
+<li>表示されたウィンドウの左パネルからPlayerを選びます。</li>
+<li>Other Settingsを開きます。</li>
+<li>Scripting BackendをIL2CPPにします。</li>
+<li>Target ArchitecturesはARM64だけがチェックが入っているようにします。</li>
 </ul>
 <h3 id="トラブルシューティング">トラブルシューティング</h3>
 <p>うまく導入できない場合、次のことをご確認ください。</p>

@@ -1,0 +1,698 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RoadNetworkEditingSystem.RoadNetworkEditorOperation
+   | PLATEAU SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RoadNetworkEditingSystem.RoadNetworkEditorOperation
+   | PLATEAU SDK for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation">
+  
+  
+  <h1 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation" class="text-break">Class RoadNetworkEditingSystem.RoadNetworkEditorOperation
+  </h1>
+  <div class="markdown level0 summary"><p>RoadNetwork編集機能のデータ操作部分の機能を提供するクラス
+EditingSystemのサブクラスに移動するかも</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RoadNetworkEditingSystem.RoadNetworkEditorOperation</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="PLATEAU.Editor.RoadNetwork.IRoadNetworkEditOperation.html">IRoadNetworkEditOperation</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.Editor.RoadNetwork.html">PLATEAU.Editor.RoadNetwork</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RoadNetworkEditorOperation : IRoadNetworkEditOperation</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_AddMainLane_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.AddMainLane*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_AddMainLane_RoadNetworkLink_System_Int32_RoadNetworkLane_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.AddMainLane(RoadNetworkLink,System.Int32,RoadNetworkLane)">AddMainLane(RoadNetworkLink, Int32, RoadNetworkLane)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult AddMainLane(RoadNetworkLink link, int idx, RoadNetworkLane newLane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RoadNetworkLink</span></td>
+        <td><span class="parametername">link</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">RoadNetworkLane</span></td>
+        <td><span class="parametername">newLane</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingResult.html">RoadNetworkEditingResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_AddPoint_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.AddPoint*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_AddPoint_RoadNetworkWay_System_Int32_RoadNetworkPoint_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.AddPoint(RoadNetworkWay,System.Int32,RoadNetworkPoint)">AddPoint(RoadNetworkWay, Int32, RoadNetworkPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult AddPoint(RoadNetworkWay way, int idx, RoadNetworkPoint point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RoadNetworkWay</span></td>
+        <td><span class="parametername">way</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">RoadNetworkPoint</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingResult.html">RoadNetworkEditingResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_MovePoint_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.MovePoint*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_MovePoint_RoadNetworkPoint_Vector3__" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.MovePoint(RoadNetworkPoint,Vector3@)">MovePoint(RoadNetworkPoint, in Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult MovePoint(RoadNetworkPoint point, in Vector3 newPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RoadNetworkPoint</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">newPos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingResult.html">RoadNetworkEditingResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_RoadNetworkBlock_PLATEAU_Editor_RoadNetwork_RoadNetworkRegulationElemet_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation(RoadNetworkBlock,PLATEAU.Editor.RoadNetwork.RoadNetworkRegulationElemet)">RegisterRegulation(RoadNetworkBlock, RoadNetworkRegulationElemet)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RegisterRegulation(RoadNetworkBlock block, RoadNetworkRegulationElemet newRegulation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RoadNetworkBlock</span></td>
+        <td><span class="parametername">block</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkRegulationElemet.html">RoadNetworkRegulationElemet</a></td>
+        <td><span class="parametername">newRegulation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingResult.html">RoadNetworkEditingResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_RoadNetworkLane_PLATEAU_Editor_RoadNetwork_RoadNetworkRegulationElemet_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation(RoadNetworkLane,PLATEAU.Editor.RoadNetwork.RoadNetworkRegulationElemet)">RegisterRegulation(RoadNetworkLane, RoadNetworkRegulationElemet)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RegisterRegulation(RoadNetworkLane lane, RoadNetworkRegulationElemet newRegulation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RoadNetworkLane</span></td>
+        <td><span class="parametername">lane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkRegulationElemet.html">RoadNetworkRegulationElemet</a></td>
+        <td><span class="parametername">newRegulation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingResult.html">RoadNetworkEditingResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_RoadNetworkLink_PLATEAU_Editor_RoadNetwork_RoadNetworkRegulationElemet_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation(RoadNetworkLink,PLATEAU.Editor.RoadNetwork.RoadNetworkRegulationElemet)">RegisterRegulation(RoadNetworkLink, RoadNetworkRegulationElemet)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RegisterRegulation(RoadNetworkLink link, RoadNetworkRegulationElemet newRegulation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RoadNetworkLink</span></td>
+        <td><span class="parametername">link</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkRegulationElemet.html">RoadNetworkRegulationElemet</a></td>
+        <td><span class="parametername">newRegulation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingResult.html">RoadNetworkEditingResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_RoadNetworkTrack_PLATEAU_Editor_RoadNetwork_RoadNetworkRegulationElemet_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation(RoadNetworkTrack,PLATEAU.Editor.RoadNetwork.RoadNetworkRegulationElemet)">RegisterRegulation(RoadNetworkTrack, RoadNetworkRegulationElemet)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RegisterRegulation(RoadNetworkTrack track, RoadNetworkRegulationElemet newRegulation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RoadNetworkTrack</span></td>
+        <td><span class="parametername">track</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkRegulationElemet.html">RoadNetworkRegulationElemet</a></td>
+        <td><span class="parametername">newRegulation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingResult.html">RoadNetworkEditingResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RemoveLane_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RemoveLane*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RemoveLane_RoadNetworkLink_RoadNetworkLane_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RemoveLane(RoadNetworkLink,RoadNetworkLane)">RemoveLane(RoadNetworkLink, RoadNetworkLane)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RemoveLane(RoadNetworkLink link, RoadNetworkLane lane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RoadNetworkLink</span></td>
+        <td><span class="parametername">link</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">RoadNetworkLane</span></td>
+        <td><span class="parametername">lane</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingResult.html">RoadNetworkEditingResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RemovePoint_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RemovePoint*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RemovePoint_RoadNetworkWay_RoadNetworkPoint_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RemovePoint(RoadNetworkWay,RoadNetworkPoint)">RemovePoint(RoadNetworkWay, RoadNetworkPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RemovePoint(RoadNetworkWay way, RoadNetworkPoint point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RoadNetworkWay</span></td>
+        <td><span class="parametername">way</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">RoadNetworkPoint</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingResult.html">RoadNetworkEditingResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_ScaleRoadWidth_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.ScaleRoadWidth*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_ScaleRoadWidth_RoadNetworkLane_System_Single_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.ScaleRoadWidth(RoadNetworkLane,System.Single)">ScaleRoadWidth(RoadNetworkLane, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult ScaleRoadWidth(RoadNetworkLane lane, float factor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RoadNetworkLane</span></td>
+        <td><span class="parametername">lane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">factor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingResult.html">RoadNetworkEditingResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_ScaleRoadWidth_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.ScaleRoadWidth*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_ScaleRoadWidth_RoadNetworkLink_System_Single_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.ScaleRoadWidth(RoadNetworkLink,System.Single)">ScaleRoadWidth(RoadNetworkLink, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult ScaleRoadWidth(RoadNetworkLink link, float factor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RoadNetworkLink</span></td>
+        <td><span class="parametername">link</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">factor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingResult.html">RoadNetworkEditingResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="PLATEAU.Editor.RoadNetwork.IRoadNetworkEditOperation.html">IRoadNetworkEditOperation</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            PLATEAU SDK for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -87,21 +87,39 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="PLATEAU.Util.ColorUtil.html">ColorUtil</a></h4>
+      <section></section>
+      <h4><a class="xref" href="PLATEAU.Util.ConditionalLogger.html">ConditionalLogger</a></h4>
+      <section><p>条件を満たしたときだけログを出すクラスです。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.Util.DebugEx.html">DebugEx</a></h4>
+      <section></section>
       <h4><a class="xref" href="PLATEAU.Util.DebugUtil.html">DebugUtil</a></h4>
       <section></section>
       <h4><a class="xref" href="PLATEAU.Util.Dialogue.html">Dialogue</a></h4>
-      <section><p>Editorの場合にUnityのダイアログを表示し、
-Runtimeの場合に何もしないクラスです。</p>
+      <section><p>Editorの場合にUnityのダイアログを表示します。
+Runtimeの場合に代わりにログを出力します。</p>
 </section>
+      <h4><a class="xref" href="PLATEAU.Util.DirectoryUtil.html">DirectoryUtil</a></h4>
+      <section></section>
       <h4><a class="xref" href="PLATEAU.Util.DisplayedProgress.html">DisplayedProgress</a></h4>
       <section></section>
+      <h4><a class="xref" href="PLATEAU.Util.DummyProgressBar.html">DummyProgressBar</a></h4>
+      <section><p>プログレスバーを表示したくない場合に使う、空のプログレスバー実装です。</p>
+</section>
       <h4><a class="xref" href="PLATEAU.Util.DummyProgressDisplay.html">DummyProgressDisplay</a></h4>
+      <section></section>
+      <h4><a class="xref" href="PLATEAU.Util.EnumerableUtil.html">EnumerableUtil</a></h4>
       <section></section>
       <h4><a class="xref" href="PLATEAU.Util.EnumUtil.html">EnumUtil</a></h4>
       <section></section>
       <h4><a class="xref" href="PLATEAU.Util.FallbackMaterial.html">FallbackMaterial</a></h4>
       <section></section>
+      <h4><a class="xref" href="PLATEAU.Util.ListUtil.html">ListUtil</a></h4>
+      <section></section>
       <h4><a class="xref" href="PLATEAU.Util.MaterialPathUtil.html">MaterialPathUtil</a></h4>
+      <section></section>
+      <h4><a class="xref" href="PLATEAU.Util.MathUtil.html">MathUtil</a></h4>
       <section></section>
       <h4><a class="xref" href="PLATEAU.Util.PathUtil.html">PathUtil</a></h4>
       <section><p>PLATEAU のファイルパスに関するユーティリティです。</p>
@@ -112,19 +130,59 @@ Editorでない場合、何もしません。
 <a class="xref" href="PLATEAU.Util.ProgressBar.html#PLATEAU_Util_ProgressBar_Display_System_String_System_Single_">Display(String, Single)</a>にinfo文字列を与えない場合に表示されるデフォルト文字列をコンストラクタで指定できます。
 指定しない場合は空文字列がデフォルトになります。</p>
 </section>
+      <h4><a class="xref" href="PLATEAU.Util.ProgressDisplayDialogue.html">ProgressDisplayDialogue</a></h4>
+      <section><p>Editorの場合、ダイアログで進捗を表示します。Dispose時にダイアログを閉じます。
+Runtimeの場合、何もしません。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.Util.QuaternionUtil.html">QuaternionUtil</a></h4>
+      <section></section>
       <h4><a class="xref" href="PLATEAU.Util.RenderUtil.html">RenderUtil</a></h4>
       <section></section>
+      <h4><a class="xref" href="PLATEAU.Util.SerializableHashSet-1.html">SerializableHashSet&lt;T&gt;</a></h4>
+      <section><p>HashSetがシリアライズ化できないので仮で用意
+使い方
+[Serializable]
+class MyHashSet : SerializableHashSet&lt;int&gt;{}
+のように使いたいタイプに対して継承して定義し、Serializableを付ける</p>
+</section>
       <h4><a class="xref" href="PLATEAU.Util.StringBuilderWithIndent.html">StringBuilderWithIndent</a></h4>
       <section><p>インデント機能付きの StringBuilder です。</p>
 </section>
+      <h4><a class="xref" href="PLATEAU.Util.TypeUtil.html">TypeUtil</a></h4>
+      <section></section>
+      <h4><a class="xref" href="PLATEAU.Util.UniqueParentTransformList.html">UniqueParentTransformList</a></h4>
+      <section><p>ユーザーが親ゲームオブジェクトを複数選択するときに使います。
+ある処理について、処理の対象が、選択されたゲームオブジェクトとその子であるとき、
+objAとその子objBが両方選択されていたら、重複となりobjBとその子の処理が2回行われてしまいます。
+それを防ぐため、親ゲームオブジェクトとしてユニークなもののみを保持し、重複は無視するクラスです。
+加えてnullが渡された場合も無視します。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.Util.Vector2Util.html">Vector2Util</a></h4>
+      <section></section>
+      <h4><a class="xref" href="PLATEAU.Util.Vector3Ex.html">Vector3Ex</a></h4>
+      <section></section>
     <h3 id="interfaces">Interfaces
   </h3>
+      <h4><a class="xref" href="PLATEAU.Util.IProgressBar.html">IProgressBar</a></h4>
+      <section><p>処理の進行状況を表示するためのインターフェイスです。</p>
+</section>
       <h4><a class="xref" href="PLATEAU.Util.IProgressDisplay.html">IProgressDisplay</a></h4>
       <section></section>
     <h3 id="enums">Enums
   </h3>
+      <h4><a class="xref" href="PLATEAU.Util.NextSearchFlow.html">NextSearchFlow</a></h4>
+      <section><p>ノードを探索する際の、次の探索の流れを指定します。</p>
+</section>
       <h4><a class="xref" href="PLATEAU.Util.PipeLineType.html">PipeLineType</a></h4>
       <section></section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="PLATEAU.Util.ForEachTransform.html">ForEachTransform</a></h4>
+      <section><p>Transformの走査について、各Transformで行う処理を行い、次にするべき探索処理を返す式の型です。 </p>
+</section>
+      <h4><a class="xref" href="PLATEAU.Util.ForEachTransformAsync.html">ForEachTransformAsync</a></h4>
+      <section><p><a class="xref" href="PLATEAU.Util.ForEachTransform.html">ForEachTransform</a>の非同期版です。 </p>
+</section>
 </article>
           </div>
           

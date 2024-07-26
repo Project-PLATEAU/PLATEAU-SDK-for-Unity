@@ -87,20 +87,36 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="PLATEAU.CityExport.ModelConvert.SubMeshConvert.AdderAndCoordinateSystemConverter.html">AdderAndCoordinateSystemConverter</a></h4>
+      <section><p><a class="xref" href="PLATEAU.CityExport.ModelConvert.SubMeshConvert.CoordinateAdder.html">CoordinateAdder</a>のあとに<a class="xref" href="PLATEAU.CityExport.ModelConvert.SubMeshConvert.CoordinateSystemConverter.html">CoordinateSystemConverter</a>を適用する座標変換器</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.CityExport.ModelConvert.SubMeshConvert.CoordinateAdder.html">CoordinateAdder</a></h4>
+      <section><p>座標に指定の値を追加する座標変換器です。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.CityExport.ModelConvert.SubMeshConvert.CoordinateSystemConverter.html">CoordinateSystemConverter</a></h4>
+      <section><p>座標軸を変更する座標変換器です。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.CityExport.ModelConvert.SubMeshConvert.GameMaterialIDRegistry.html">GameMaterialIDRegistry</a></h4>
+      <section><p>Unityの<see cref="!:Mesh"></see>から共通ライブラリの<see cref="!:SubMesh"></see>を作るにあたって、
+具体的な見た目をC++に送るのではなく、UnityマテリアルにIDを割り振ってIDのみをC++の<see cref="!:SubMesh"></see>に記録する変換モードです。
+用途はモデル修正で、変換後にUnityマテリアルIDをもとにマテリアルを復元するために使います。
+ここでいうマテリアルIDとは、<a class="xref" href="PLATEAU.CityExport.ModelConvert.SubMeshConvert.GameMaterialIDRegistry.html#PLATEAU_CityExport_ModelConvert_SubMeshConvert_GameMaterialIDRegistry_GameMaterials">GameMaterials</a>のインデックスを指します。</p>
+</section>
       <h4><a class="xref" href="PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithEmptyMaterial.html">UnityMeshToDllSubMeshWithEmptyMaterial</a></h4>
       <section><p>UnityのMeshから、見た目情報が空であるSubMeshを生成します。
 特に、エクスポートでテクスチャを含めない設定にしたときに利用されます。</p>
-</section>
-      <h4><a class="xref" href="PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithGameMaterial.html">UnityMeshToDllSubMeshWithGameMaterial</a></h4>
-      <section><p>Unityの<see cref="!:Mesh"></see>から共通ライブラリの<see cref="!:SubMesh"></see>を作るにあたって、
-具体的な見た目情報ではなく、UnityマテリアルのIDのみを<see cref="!:SubMesh"></see>に記録する変換モードです。
-用途は結合分割機能で、あとでUnityマテリアルの番号からマテリアルを復元するために使う変換モードです。
-ここでいうマテリアルIDとは、<a class="xref" href="PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithGameMaterial.html#PLATEAU_CityExport_ModelConvert_SubMeshConvert_UnityMeshToDllSubMeshWithGameMaterial_GameMaterials">GameMaterials</a>のインデックスを指します。</p>
 </section>
       <h4><a class="xref" href="PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.html">UnityMeshToDllSubMeshWithTexture</a></h4>
       <section><p>UnityのMeshから共通ライブラリのSubMeshを生成します。
 テクスチャ情報を含みます。
 特にエクスポート機能で利用されます。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.CityExport.ModelConvert.SubMeshConvert.VertexConverterBase.html">VertexConverterBase</a></h4>
+      <section><p>エクスポートでの座標変換を担当します。
+Nextで繋げることで複数の変換処理に対応できます。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.CityExport.ModelConvert.SubMeshConvert.VertexConverterFactory.html">VertexConverterFactory</a></h4>
+      <section><p>座標変換器を作って返します。</p>
 </section>
     <h3 id="interfaces">Interfaces
   </h3>

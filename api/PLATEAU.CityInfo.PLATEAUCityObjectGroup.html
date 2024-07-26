@@ -88,7 +88,7 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">PLATEAUCityObjectGroup</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityInfo.html">PLATEAU.CityInfo</a></h6>
@@ -176,6 +176,58 @@
   </table>
   
   
+  <a id="PLATEAU_CityInfo_PLATEAUCityObjectGroup_Lod_" data-uid="PLATEAU.CityInfo.PLATEAUCityObjectGroup.Lod*"></a>
+  <h4 id="PLATEAU_CityInfo_PLATEAUCityObjectGroup_Lod" data-uid="PLATEAU.CityInfo.PLATEAUCityObjectGroup.Lod">Lod</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Lod { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityInfo_PLATEAUCityObjectGroup_Package_" data-uid="PLATEAU.CityInfo.PLATEAUCityObjectGroup.Package*"></a>
+  <h4 id="PLATEAU_CityInfo_PLATEAUCityObjectGroup_Package" data-uid="PLATEAU.CityInfo.PLATEAUCityObjectGroup.Package">Package</h4>
+  <div class="markdown level1 summary"><p>パッケージ種を返します。ただしCOT_Unknownの場合は確定しないので仮の結果が返ります。
+結果がCOT_Unknownの場合は確定しないので、代わりに PLATEAUInstancedCityModel.GetPackage を使ってください。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PredefinedCityModelPackage Package { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PredefinedCityModelPackage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_CityInfo_PLATEAUCityObjectGroup_PrimaryCityObjects_" data-uid="PLATEAU.CityInfo.PLATEAUCityObjectGroup.PrimaryCityObjects*"></a>
   <h4 id="PLATEAU_CityInfo_PLATEAUCityObjectGroup_PrimaryCityObjects" data-uid="PLATEAU.CityInfo.PLATEAUCityObjectGroup.PrimaryCityObjects">PrimaryCityObjects</h4>
   <div class="markdown level1 summary"></div>
@@ -201,6 +253,33 @@
   </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="PLATEAU_CityInfo_PLATEAUCityObjectGroup_CopyFrom_" data-uid="PLATEAU.CityInfo.PLATEAUCityObjectGroup.CopyFrom*"></a>
+  <h4 id="PLATEAU_CityInfo_PLATEAUCityObjectGroup_CopyFrom_PLATEAU_CityInfo_PLATEAUCityObjectGroup_" data-uid="PLATEAU.CityInfo.PLATEAUCityObjectGroup.CopyFrom(PLATEAU.CityInfo.PLATEAUCityObjectGroup)">CopyFrom(PLATEAUCityObjectGroup)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyFrom(PLATEAUCityObjectGroup other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.CityInfo.PLATEAUCityObjectGroup.html">PLATEAUCityObjectGroup</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="PLATEAU_CityInfo_PLATEAUCityObjectGroup_GetAllCityObjects_" data-uid="PLATEAU.CityInfo.PLATEAUCityObjectGroup.GetAllCityObjects*"></a>
@@ -618,12 +697,12 @@
   
   
   <a id="PLATEAU_CityInfo_PLATEAUCityObjectGroup_Init_" data-uid="PLATEAU.CityInfo.PLATEAUCityObjectGroup.Init*"></a>
-  <h4 id="PLATEAU_CityInfo_PLATEAUCityObjectGroup_Init_PLATEAU_CityInfo_CityObjectList_PLATEAU_CityInfo_CityObjectGroupInfoForToolkits_MeshGranularity_" data-uid="PLATEAU.CityInfo.PLATEAUCityObjectGroup.Init(PLATEAU.CityInfo.CityObjectList,PLATEAU.CityInfo.CityObjectGroupInfoForToolkits,MeshGranularity)">Init(CityObjectList, CityObjectGroupInfoForToolkits, MeshGranularity)</h4>
+  <h4 id="PLATEAU_CityInfo_PLATEAUCityObjectGroup_Init_PLATEAU_CityInfo_CityObjectList_PLATEAU_CityInfo_CityObjectGroupInfoForToolkits_MeshGranularity_System_Int32_" data-uid="PLATEAU.CityInfo.PLATEAUCityObjectGroup.Init(PLATEAU.CityInfo.CityObjectList,PLATEAU.CityInfo.CityObjectGroupInfoForToolkits,MeshGranularity,System.Int32)">Init(CityObjectList, CityObjectGroupInfoForToolkits, MeshGranularity, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Init(CityObjectList cityObjectSerializable, CityObjectGroupInfoForToolkits cogInfoForToolkits, MeshGranularity granularityArg)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Init(CityObjectList cityObjectSerializable, CityObjectGroupInfoForToolkits cogInfoForToolkits, MeshGranularity granularityArg, int lodArg)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -648,6 +727,11 @@
       <tr>
         <td><span class="xref">MeshGranularity</span></td>
         <td><span class="parametername">granularityArg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lodArg</span></td>
         <td></td>
       </tr>
     </tbody>

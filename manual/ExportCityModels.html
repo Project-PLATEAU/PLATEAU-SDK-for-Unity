@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>&#37117;&#24066;&#12514;&#12487;&#12523;&#12398;&#12456;&#12463;&#12473;&#12509;&#12540;&#12488; | PLATEAU SDK for Unity </title>
+    <title>3D&#37117;&#24066;&#12514;&#12487;&#12523;&#12398;&#12456;&#12463;&#12473;&#12509;&#12540;&#12488; | PLATEAU SDK for Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="&#37117;&#24066;&#12514;&#12487;&#12523;&#12398;&#12456;&#12463;&#12473;&#12509;&#12540;&#12488; | PLATEAU SDK for Unity ">
+    <meta name="title" content="3D&#37117;&#24066;&#12514;&#12487;&#12523;&#12398;&#12456;&#12463;&#12473;&#12509;&#12540;&#12488; | PLATEAU SDK for Unity ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -77,15 +77,15 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="都市モデルのエクスポート">都市モデルのエクスポート</h1>
+<h1 id="3d都市モデルのエクスポート">3D都市モデルのエクスポート</h1>
 
-<p>Unityのシーンに配置された都市の3Dモデルを、objファイルや gltfファイルとしてエクスポートできます。<br>このページではエクスポートの手順を説明します。</p>
+<p>Unityのシーンに配置された都市の3Dモデルを、FBX、OBJ、glTFとしてエクスポートできます。<br>このページではエクスポートの手順を説明します。</p>
 <h2 id="前提">前提</h2>
 <p>Unityのシーンに都市モデルがインポートされていることが前提です。<br>インポートの方法については <a href="ImportCityModels.html">都市モデルのインポート</a> をご覧ください。<br><img src="../resources/manual/exportCityModels/importedCity.png" alt=""></p>
 <h2 id="エクスポート手順">エクスポート手順</h2>
 <h3 id="エクスポート対象の指定">エクスポート対象の指定</h3>
 <ul>
-<li><p>Unityのメニューバーから <code>PLATEAU → PLATEAU SDK</code> を選択します。<br>表示されるウィンドウの上部に3つのタブ「インポート、モデル調整、エクスポート」があります。<br>このうちエクスポートを選択します。  </p>
+<li><p>Unityのメニューバーから <code>PLATEAU → PLATEAU SDK</code> を選択します。<br>表示されるウィンドウの上部に3つのタブ「インポート、モデル調整、エクスポート、属性情報」があります。<br>このうちエクスポートを選択します。  </p>
 <p><img src="../resources/manual/exportCityModels/exportWindow.png" alt=""></p>
 </li>
 <li><p><code>選択オブジェクト</code> からエクスポート対象を選択します。</p>
@@ -95,8 +95,7 @@
 </ul>
 </li>
 <li>出力形式を選択します。<ul>
-<li>OBJ形式か、GLTF形式かを選択します。</li>
-<li>ただし、OBJ形式はフォーマットの仕様上、後述の技術的な制約があります。</li>
+<li>ファイル形式をFBX,OBJ,GLTFから選択できます。</li>
 </ul>
 </li>
 </ul>
@@ -116,9 +115,16 @@
 </li>
 </ul>
 </li>
-<li><p><strong>テクスチャ</strong></p>
+<li><p><strong>テクスチャを含める</strong></p>
 <ul>
 <li>出力にテクスチャを含めるかどうかを設定します。チェックが付いていれば含みます。</li>
+</ul>
+</li>
+<li><p><strong>SDK付属のデフォルトテクスチャを含める</strong></p>
+<ul>
+<li>「テクスチャを含める」がオンのときのみ表示される設定項目です。</li>
+<li>オフの場合、PLATEAU SDK付属のデフォルトマテリアルがマテリアルなしに置き換わって出力されます。</li>
+<li>SDK付属のデフォルトマテリアルのテクスチャは、SDK付属のTriplanarシェーダーでのみ動作することを想定しています。<br>そのためデフォルトではオフとしています。</li>
 </ul>
 </li>
 <li><p><strong>非アクティブオブジェクトを含める</strong></p>
@@ -149,35 +155,43 @@
 </li>
 </ul>
 </li>
-<li><code>座標軸</code><ul>
-<li>エクスポートした objファイルを Unityにインポートしたい場合は、<br>後述の理由で WUN を指定してください。</li>
-<li><strong>座標軸設定の趣旨:</strong></li>
-<li>x,y,z 軸がどの方向を向いているかはアプリケーションによって異なりますが、<br>この設定項目によって座標軸の違いに合わせて変換できます。</li>
-<li>座標軸の名称はアルファベット3文字で表され、<br>(1文字目,2文字目,3文字目) が (x軸,y軸,z軸) の向きを表します。</li>
-<li>例えば、Unityでは x軸が東(East), y軸が上(Up), z軸が北(North) を向くので、<br>頭文字をとって EUN が Unityの座標系となります。</li>
-<li>ただし、Unity向けに objをエクスポートするときは、<br>後述の理由で EUN ではなく WUN が正しい指定となります。</li>
-<li>W は 西(West) を表します。</li>
+<li><p><code>座標軸</code></p>
+<ul>
+<li>選択したファイル形式がFBXまたはOBJの場合に表示されます。</li>
+<li>X,Y,Z軸の向きを決めます。利用したいアプリケーションに応じて選択してください。</li>
+<li>例えば、エクスポートしたファイルをUnityにインポートしたい場合は、Y軸が上を指す座標軸を選択してください。</li>
+<li>GLTF形式の場合は、仕様で座標軸が決まっているため、この設定項目は表示されません。</li>
+</ul>
+</li>
+<li><p><code>FBXフォーマット</code></p>
+<ul>
+<li>出力形式がFBXのときのみ表示される設定項目です。</li>
+<li>FBXを扱うご利用のソフトウェアに応じて選択してください。</li>
+<li>BlenderやUnityでご利用あればBinaryを推奨します。</li>
 </ul>
 </li>
 </ul>
-<div class="NOTE"><h5>Note</h5><p><strong>OBJファイルの技術的制約について</strong>  </p>
-<p>OBJファイルはそのフォーマットの仕様上、制約があります。  </p>
-<ol>
-<li><p>オブジェクトが分割されず、1つのオブジェクトとして出力されます。<br>その代わり、頂点グループとしてオブジェクト内で領域分けされます。<br>例えば、Blenderの場合、インポート時に <code>頂点グループ</code> にチェックを入れると、図のように頂点グループが設定されます。<br><img src="../resources/manual/exportCityModels/blenderVertexGroup.png" alt=""></p>
-</li>
-<li><p>objファイルを Unity にインポートするとき、左右が反転します。これを防ぎたい場合は、座標系WUNで出力してください。<br>これは Unity の仕様によるものです。<br>Unityの座標系は EUN ですが、EUNで出力した objファイルをインポートすると左右反転したモデルになります。<br>そこで EUN を左右反転させた座標系である WUN で出力すると、Unityにインポートしたときに正しくなります。<br>このようになる理由は、Unityは objファイルを右手座標系であると解釈し、Unityの左手座標系に合わせるために x座標の正負を反転させるためです。  </p>
-</li>
-</ol>
-</div>
 <h3 id="エクスポート">エクスポート</h3>
 <ul>
 <li>出力先のフォルダを指定します。</li>
 <li><code>エクスポート</code> ボタンを押してしばらく待ちます。</li>
-<li>指定のフォルダに3Dモデルファイルが出力されます。</li>
+<li>正常終了の場合、指定のフォルダに3Dモデルファイルが出力され、そのフォルダが開きます。<br>異常終了の場合、ダイアログが表示されます。</li>
 </ul>
-<p><img src="../resources/manual/exportCityModels/tokyoBlender.png" alt=""><br>上図はエクスポートしたobjファイルを Blender で読み込んだものです。</p>
+<p><img src="../resources/manual/exportCityModels/tokyoBlender.png" alt=""><br>上図はエクスポートしたOBJファイルを Blender で読み込んだものです。</p>
+<h2 id="エクスポートの仕様">エクスポートの仕様</h2>
+<ul>
+<li>OBJファイルはそのフォーマットの仕様上、次の制約があります。  <ul>
+<li>オブジェクトが分割されず、1つのオブジェクトとして出力されます。<br>その代わり、頂点グループとしてオブジェクト内で領域分けされます。<br>例えば、Blenderの場合、インポート時に <code>頂点グループ</code> にチェックを入れると、図のように頂点グループが設定されます。<br><img src="../resources/manual/exportCityModels/blenderVertexGroup.png" alt=""></li>
+</ul>
+</li>
+<li>Unity内でのTransform情報（Position, Rotation, Scale）はエクスポートしたファイルに反映されます。<ul>
+<li>FBX,GLTFの場合は、ノードとしてUnityのPosition, Rotation, Scale および親子関係が反映されます。</li>
+<li>OBJの場合は、OBJの仕様上親子関係が反映されないため、頂点座標が直接Position, Rotation, Scaleにより変形されて出力されます。</li>
+</ul>
+</li>
+</ul>
 <div class="NOTE"><h5>Note</h5><p><strong>エクスポートした3Dモデルを再度Unityに取り込む場合</strong>  </p>
-<p>テクスチャ込みでエクスポートしたものを再度Unityにインポートする場合は、<br>3Dモデルファイルとそれに対応するテクスチャフォルダを複数選択して<br>Unityのプロジェクトビューにドラッグ＆ドロップしてインポートしてください。</p>
+<p>テクスチャ込みでエクスポートしたものを再度Unityにインポートする場合は、<br>3Dモデルファイルとそれに対応するテクスチャフォルダをエクスプローラー（Windowsの場合。Macの場合はFinder）から複数選択して<br>Unityのプロジェクトビューにドラッグ＆ドロップしてインポートしてください。<br>複数選択による同時インポートでないと、テクスチャが正しく適用されない場合があります。</p>
 </div>
 </article>
           </div>

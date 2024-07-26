@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace PLATEAU.CityAdjust.NonLibData
+   | PLATEAU SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace PLATEAU.CityAdjust.NonLibData
+   | PLATEAU SDK for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.CityAdjust.NonLibData">
+  
+  <h1 id="PLATEAU_CityAdjust_NonLibData" data-uid="PLATEAU.CityAdjust.NonLibData" class="text-break">Namespace PLATEAU.CityAdjust.NonLibData
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="PLATEAU.CityAdjust.NonLibData.ContourMesh.html">ContourMesh</a></h4>
+      <section></section>
+      <h4><a class="xref" href="PLATEAU.CityAdjust.NonLibData.InstancedCityModelDict.html">InstancedCityModelDict</a></h4>
+      <section><p>用途：モデル修正において、変換前の<see cref="!:PLATEAUInstancedCityModel"></see>覚えておいて変換後にコピーするために利用します。
+<see cref="!:PLATEAUInstancedCityModel"></see>と、ゲームオブジェクト名の辞書を覚えておきます。
+参照： <a class="xref" href="PLATEAU.CityAdjust.NonLibData.NonLibDataHolder.html">NonLibDataHolder</a></p>
+</section>
+      <h4><a class="xref" href="PLATEAU.CityAdjust.NonLibData.NonLibDataHolder.html">NonLibDataHolder</a></h4>
+      <section><p>モデル修正（CityAdjust）の機能の多くは、次のような流れで行われます:
+・UnityのゲームオブジェクトををC++のModelに変換して渡す
+・C++でModelに対して変換処理をする
+・C++のModelをUnityのゲームオブジェクトに変換する</p>
+<p>しかし、中にはC++には渡さないが覚えておきたいデータがあります。
+例えば<see cref="!:AlignLandExecutor"></see>では、属性情報の内容はC++には渡りませんが、
+属性情報を処理前から処理後にコピーするために覚えておく必要があります。
+このように、変換処理のコアロジックとは違うものの、覚えておく必要があるデータを総称して
+NonLibData と呼ぶことにし、<a class="xref" href="PLATEAU.CityAdjust.NonLibData.INonLibData.html">INonLibData</a>を複数覚えておくためのクラスをこのクラスとします。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.CityAdjust.NonLibData.PLATEAUContourMesh.html">PLATEAUContourMesh</a></h4>
+      <section><p>道路の分割前の頂点を記録するMonoBehaviourです。
+これは高さ合わせ後に道路ネットワークを生成するために利用します。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.CityAdjust.NonLibData.PositionRotationDict.html">PositionRotationDict</a></h4>
+      <section></section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="PLATEAU.CityAdjust.NonLibData.PositionRotation.html">PositionRotation</a></h4>
+      <section></section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="PLATEAU.CityAdjust.NonLibData.INonLibData.html">INonLibData</a></h4>
+      <section><p>上述のNonLibDataです。
+主に変換前のゲームオブジェクトから<a class="xref" href="PLATEAU.CityAdjust.NonLibData.INonLibData.html#PLATEAU_CityAdjust_NonLibData_INonLibData_ComposeFrom_UniqueParentTransformList_">ComposeFrom(UniqueParentTransformList)</a>でデータを集め、
+主に変換後のゲームオブジェクトへ<a class="xref" href="PLATEAU.CityAdjust.NonLibData.INonLibData.html#PLATEAU_CityAdjust_NonLibData_INonLibData_RestoreTo_UniqueParentTransformList_">RestoreTo(UniqueParentTransformList)</a>でデータを復元します。</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            PLATEAU SDK for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
