@@ -264,11 +264,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.IMAExecutorV2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.IMAExecutorV2.html",
+          "hash": "fFOQ2/8up6e0sxpZybIE3n1KSbG9VzGlJtq3jK+OH24="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.MAExecutorV2ByAttr.yml",
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.MAExecutorV2ByAttr.html",
-          "hash": "+BVCbMK/om9gxDBUopeKv5EqAAouoAI8RR+ivFqy1g0="
+          "hash": "78m0NqCHZyMnfPXHrH2cmAYUbgGibwm2Djmur2LPmeI="
         }
       },
       "is_incremental": false,
@@ -280,7 +292,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.MAExecutorV2ByType.html",
-          "hash": "hH3ZPcCSXThvuYxxsqX2jXhal9iyCUlUyR6RKokuRFI="
+          "hash": "kPxcfBw/GzRk4PLNWr2Ymn2130Jp7FwIzPymzlUkbwY="
         }
       },
       "is_incremental": false,
@@ -292,7 +304,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.html",
-          "hash": "ZmXjoCoI/shxj33Zu8Ov0gwRDyJTAlJZWIzBAFDyiN0="
+          "hash": "Zfzl98vzegbrcRdKjeqwaVyyDwvprHAsOjjmjrPVQ94="
         }
       },
       "is_incremental": false,
@@ -336,11 +348,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityAdjust.MaterialAdjust.SearchArg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityAdjust.MaterialAdjust.SearchArg.html",
+          "hash": "XiW6yf6q6GTUcDifDw0iE7CouzxZJMVptfrm3BO6p5A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.html",
+          "hash": "Jn/EH/ZnPLQheG1y6Ksd/0HssMS5lUp1anYU3rLm6sw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/PLATEAU.CityAdjust.MaterialAdjust.yml",
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.CityAdjust.MaterialAdjust.html",
-          "hash": "Y7hOZiwWf07DTZEdyF1jfHLwpitUpNGmP70m7jHuBTQ="
+          "hash": "GMzUensg9HcjYtLCNpbB722/ZrMHvzZucDOd26AvbeA="
         }
       },
       "is_incremental": false,
@@ -388,7 +424,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.CityAdjust.NonLibData.NonLibDataHolder.html",
-          "hash": "7uAy1lX7wodYg4qqgvINzKHj7l+BVDv7TtPhTA9+Q/M="
+          "hash": "Cp99a+rAJOcHygucfTrzn7D/6pB3gtsVDCl76d/Xw/Y="
         }
       },
       "is_incremental": false,
@@ -412,7 +448,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.CityAdjust.NonLibData.PositionRotation.html",
-          "hash": "8QJcYEnBcL6JCBQE7J0BzJnlHBhRVGJAqZX9rFxdBJU="
+          "hash": "M+dzBRRa/kVoWPyJjymeGu8yh3J27x9VDQa25liooEs="
         }
       },
       "is_incremental": false,
@@ -436,7 +472,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PLATEAU.CityAdjust.NonLibData.html",
-          "hash": "SMvxzSbm3QCULidn5640Rq8meDBvYIfkQHsJv6bFbZ8="
+          "hash": "+wfTeIdPg6hLVeicNKOQBivkInXacsbuD9anHGBv/QA="
         }
       },
       "is_incremental": false,
@@ -4900,7 +4936,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "8olc6J9+NlUYal7AGxVAmeZa86s91DZimyt9MWYtxBg="
+          "hash": "fA1UXfN2xnYDzgBwjSsJ5trGQu/h6IqxGKMN0UWOwW0="
         }
       },
       "is_incremental": false,
@@ -5907,7 +5943,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 406,
+          "total_file_count": 409,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

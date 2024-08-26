@@ -855,6 +855,25 @@ references:
   commentId: N:PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2
   fullName: PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2
   nameWithType: PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2
+- uid: PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.IMAExecutorV2
+  name: IMAExecutorV2
+  href: api/PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.IMAExecutorV2.html
+  commentId: T:PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.IMAExecutorV2
+  fullName: PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.IMAExecutorV2
+  nameWithType: IMAExecutorV2
+- uid: PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.IMAExecutorV2.ExecAsync(MAExecutorConf)
+  name: ExecAsync(MAExecutorConf)
+  href: api/PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.IMAExecutorV2.html#PLATEAU_CityAdjust_MaterialAdjust_ExecutorV2_IMAExecutorV2_ExecAsync_MAExecutorConf_
+  commentId: M:PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.IMAExecutorV2.ExecAsync(MAExecutorConf)
+  fullName: PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.IMAExecutorV2.ExecAsync(MAExecutorConf)
+  nameWithType: IMAExecutorV2.ExecAsync(MAExecutorConf)
+- uid: PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.IMAExecutorV2.ExecAsync*
+  name: ExecAsync
+  href: api/PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.IMAExecutorV2.html#PLATEAU_CityAdjust_MaterialAdjust_ExecutorV2_IMAExecutorV2_ExecAsync_
+  commentId: Overload:PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.IMAExecutorV2.ExecAsync
+  isSpec: "True"
+  fullName: PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.IMAExecutorV2.ExecAsync
+  nameWithType: IMAExecutorV2.ExecAsync
 - uid: PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.MAExecutorV2ByAttr
   name: MAExecutorV2ByAttr
   href: api/PLATEAU.CityAdjust.MaterialAdjust.ExecutorV2.MAExecutorV2ByAttr.html
@@ -1095,6 +1114,63 @@ references:
   fullName.vb: PLATEAU.CityAdjust.MaterialAdjust.MAMaterialConfig(Of KeyT).Length
   nameWithType: MAMaterialConfig<KeyT>.Length
   nameWithType.vb: MAMaterialConfig(Of KeyT).Length
+- uid: PLATEAU.CityAdjust.MaterialAdjust.SearchArg
+  name: SearchArg
+  href: api/PLATEAU.CityAdjust.MaterialAdjust.SearchArg.html
+  commentId: T:PLATEAU.CityAdjust.MaterialAdjust.SearchArg
+  fullName: PLATEAU.CityAdjust.MaterialAdjust.SearchArg
+  nameWithType: SearchArg
+- uid: PLATEAU.CityAdjust.MaterialAdjust.SearchArg.#ctor(UniqueParentTransformList)
+  name: SearchArg(UniqueParentTransformList)
+  href: api/PLATEAU.CityAdjust.MaterialAdjust.SearchArg.html#PLATEAU_CityAdjust_MaterialAdjust_SearchArg__ctor_UniqueParentTransformList_
+  commentId: M:PLATEAU.CityAdjust.MaterialAdjust.SearchArg.#ctor(UniqueParentTransformList)
+  fullName: PLATEAU.CityAdjust.MaterialAdjust.SearchArg.SearchArg(UniqueParentTransformList)
+  nameWithType: SearchArg.SearchArg(UniqueParentTransformList)
+- uid: PLATEAU.CityAdjust.MaterialAdjust.SearchArg.#ctor*
+  name: SearchArg
+  href: api/PLATEAU.CityAdjust.MaterialAdjust.SearchArg.html#PLATEAU_CityAdjust_MaterialAdjust_SearchArg__ctor_
+  commentId: Overload:PLATEAU.CityAdjust.MaterialAdjust.SearchArg.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.CityAdjust.MaterialAdjust.SearchArg.SearchArg
+  nameWithType: SearchArg.SearchArg
+- uid: PLATEAU.CityAdjust.MaterialAdjust.SearchArg.TargetTransforms
+  name: TargetTransforms
+  href: api/PLATEAU.CityAdjust.MaterialAdjust.SearchArg.html#PLATEAU_CityAdjust_MaterialAdjust_SearchArg_TargetTransforms
+  commentId: F:PLATEAU.CityAdjust.MaterialAdjust.SearchArg.TargetTransforms
+  fullName: PLATEAU.CityAdjust.MaterialAdjust.SearchArg.TargetTransforms
+  nameWithType: SearchArg.TargetTransforms
+- uid: PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher
+  name: TypeSearcher
+  href: api/PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.html
+  commentId: T:PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher
+  fullName: PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher
+  nameWithType: TypeSearcher
+- uid: PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.#ctor(PLATEAU.CityAdjust.MaterialAdjust.SearchArg)
+  name: TypeSearcher(SearchArg)
+  href: api/PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.html#PLATEAU_CityAdjust_MaterialAdjust_TypeSearcher__ctor_PLATEAU_CityAdjust_MaterialAdjust_SearchArg_
+  commentId: M:PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.#ctor(PLATEAU.CityAdjust.MaterialAdjust.SearchArg)
+  fullName: PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.TypeSearcher(PLATEAU.CityAdjust.MaterialAdjust.SearchArg)
+  nameWithType: TypeSearcher.TypeSearcher(SearchArg)
+- uid: PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.#ctor*
+  name: TypeSearcher
+  href: api/PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.html#PLATEAU_CityAdjust_MaterialAdjust_TypeSearcher__ctor_
+  commentId: Overload:PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.TypeSearcher
+  nameWithType: TypeSearcher.TypeSearcher
+- uid: PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.Search
+  name: Search()
+  href: api/PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.html#PLATEAU_CityAdjust_MaterialAdjust_TypeSearcher_Search
+  commentId: M:PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.Search
+  fullName: PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.Search()
+  nameWithType: TypeSearcher.Search()
+- uid: PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.Search*
+  name: Search
+  href: api/PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.html#PLATEAU_CityAdjust_MaterialAdjust_TypeSearcher_Search_
+  commentId: Overload:PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.Search
+  isSpec: "True"
+  fullName: PLATEAU.CityAdjust.MaterialAdjust.TypeSearcher.Search
+  nameWithType: TypeSearcher.Search
 - uid: PLATEAU.CityAdjust.NonLibData
   name: PLATEAU.CityAdjust.NonLibData
   href: api/PLATEAU.CityAdjust.NonLibData.html
@@ -1221,6 +1297,15 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityAdjust.NonLibData.NonLibDataHolder.NonLibDataHolder
   nameWithType: NonLibDataHolder.NonLibDataHolder
+- uid: PLATEAU.CityAdjust.NonLibData.NonLibDataHolder.ComposeFrom(IEnumerable{UniqueParentTransformList})
+  name: ComposeFrom(IEnumerable<UniqueParentTransformList>)
+  href: api/PLATEAU.CityAdjust.NonLibData.NonLibDataHolder.html#PLATEAU_CityAdjust_NonLibData_NonLibDataHolder_ComposeFrom_IEnumerable_UniqueParentTransformList__
+  commentId: M:PLATEAU.CityAdjust.NonLibData.NonLibDataHolder.ComposeFrom(IEnumerable{UniqueParentTransformList})
+  name.vb: ComposeFrom(IEnumerable(Of UniqueParentTransformList))
+  fullName: PLATEAU.CityAdjust.NonLibData.NonLibDataHolder.ComposeFrom(IEnumerable<UniqueParentTransformList>)
+  fullName.vb: PLATEAU.CityAdjust.NonLibData.NonLibDataHolder.ComposeFrom(IEnumerable(Of UniqueParentTransformList))
+  nameWithType: NonLibDataHolder.ComposeFrom(IEnumerable<UniqueParentTransformList>)
+  nameWithType.vb: NonLibDataHolder.ComposeFrom(IEnumerable(Of UniqueParentTransformList))
 - uid: PLATEAU.CityAdjust.NonLibData.NonLibDataHolder.ComposeFrom(UniqueParentTransformList)
   name: ComposeFrom(UniqueParentTransformList)
   href: api/PLATEAU.CityAdjust.NonLibData.NonLibDataHolder.html#PLATEAU_CityAdjust_NonLibData_NonLibDataHolder_ComposeFrom_UniqueParentTransformList_
