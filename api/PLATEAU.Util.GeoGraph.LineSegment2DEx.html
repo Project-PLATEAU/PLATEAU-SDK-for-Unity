@@ -174,12 +174,12 @@
   
   <a id="PLATEAU_Util_GeoGraph_LineSegment2DEx_GetNearestPoint_" data-uid="PLATEAU.Util.GeoGraph.LineSegment2DEx.GetNearestPoint*"></a>
   <h4 id="PLATEAU_Util_GeoGraph_LineSegment2DEx_GetNearestPoint_PLATEAU_Util_GeoGraph_LineSegment2D_Vector2_System_Single__" data-uid="PLATEAU.Util.GeoGraph.LineSegment2DEx.GetNearestPoint(PLATEAU.Util.GeoGraph.LineSegment2D,Vector2,System.Single@)">GetNearestPoint(LineSegment2D, Vector2, out Single)</h4>
-  <div class="markdown level1 summary"><p>tにはStartからの距離が入る</p>
+  <div class="markdown level1 summary"><p>点vから線分に対して最も近い点を返す. distanceFromSegmentStartにはStartからの距離(符号あり)が入る</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Vector2 GetNearestPoint(this LineSegment2D self, Vector2 v, out float t)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vector2 GetNearestPoint(this LineSegment2D self, Vector2 v, out float distanceFromSegmentStart)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -199,6 +199,63 @@
       <tr>
         <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">distanceFromSegmentStart</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_LineSegment2DEx_GetNearestPoint_" data-uid="PLATEAU.Util.GeoGraph.LineSegment2DEx.GetNearestPoint*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_LineSegment2DEx_GetNearestPoint_PLATEAU_Util_GeoGraph_LineSegment2D_Vector2_System_Single__System_Single__" data-uid="PLATEAU.Util.GeoGraph.LineSegment2DEx.GetNearestPoint(PLATEAU.Util.GeoGraph.LineSegment2D,Vector2,System.Single@,System.Single@)">GetNearestPoint(LineSegment2D, Vector2, out Single, out Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetNearestPoint(this LineSegment2D self, Vector2 v, out float distanceFromSegmentStart, out float t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineSegment2D.html">LineSegment2D</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">distanceFromSegmentStart</span></td>
         <td></td>
       </tr>
       <tr>
@@ -310,6 +367,55 @@
     <tbody>
       <tr>
         <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineSegment2D.html">LineSegment2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_LineSegment2DEx_Sign_" data-uid="PLATEAU.Util.GeoGraph.LineSegment2DEx.Sign*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_LineSegment2DEx_Sign_PLATEAU_Util_GeoGraph_LineSegment2D_RnExplicit_Vector2__" data-uid="PLATEAU.Util.GeoGraph.LineSegment2DEx.Sign(PLATEAU.Util.GeoGraph.LineSegment2D,RnExplicit{Vector2})">Sign(LineSegment2D, RnExplicit&lt;Vector2&gt;)</h4>
+  <div class="markdown level1 summary"><p>selfに対して, vが右側にあるか左側にあるかを返す(z軸上から見たとき)
+右側 : 1, 左側 : -1, 線上 : 0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Sign(this LineSegment2D self, RnExplicit&lt;Vector2&gt; v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineSegment2D.html">LineSegment2D</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">RnExplicit</span>&lt;<span class="xref">Vector2</span>&gt;</td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -452,8 +558,111 @@
   
   
   <a id="PLATEAU_Util_GeoGraph_LineSegment2DEx_TrySegmentIntersection_" data-uid="PLATEAU.Util.GeoGraph.LineSegment2DEx.TrySegmentIntersection*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_LineSegment2DEx_TrySegmentIntersection_PLATEAU_Util_GeoGraph_LineSegment2D_PLATEAU_Util_GeoGraph_LineSegment2D_" data-uid="PLATEAU.Util.GeoGraph.LineSegment2DEx.TrySegmentIntersection(PLATEAU.Util.GeoGraph.LineSegment2D,PLATEAU.Util.GeoGraph.LineSegment2D)">TrySegmentIntersection(LineSegment2D, LineSegment2D)</h4>
+  <div class="markdown level1 summary"><p>引数の線分otherとの交点を返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TrySegmentIntersection(this LineSegment2D self, LineSegment2D other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineSegment2D.html">LineSegment2D</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineSegment2D.html">LineSegment2D</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_LineSegment2DEx_TrySegmentIntersection_" data-uid="PLATEAU.Util.GeoGraph.LineSegment2DEx.TrySegmentIntersection*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_LineSegment2DEx_TrySegmentIntersection_PLATEAU_Util_GeoGraph_LineSegment2D_PLATEAU_Util_GeoGraph_LineSegment2D_Vector2__" data-uid="PLATEAU.Util.GeoGraph.LineSegment2DEx.TrySegmentIntersection(PLATEAU.Util.GeoGraph.LineSegment2D,PLATEAU.Util.GeoGraph.LineSegment2D,Vector2@)">TrySegmentIntersection(LineSegment2D, LineSegment2D, out Vector2)</h4>
+  <div class="markdown level1 summary"><p>引数の線分otherとの交点を返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TrySegmentIntersection(this LineSegment2D self, LineSegment2D other, out Vector2 intersection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineSegment2D.html">LineSegment2D</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineSegment2D.html">LineSegment2D</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">intersection</span></td>
+        <td><p>交点</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_LineSegment2DEx_TrySegmentIntersection_" data-uid="PLATEAU.Util.GeoGraph.LineSegment2DEx.TrySegmentIntersection*"></a>
   <h4 id="PLATEAU_Util_GeoGraph_LineSegment2DEx_TrySegmentIntersection_PLATEAU_Util_GeoGraph_LineSegment2D_PLATEAU_Util_GeoGraph_LineSegment2D_Vector2__System_Single__System_Single__" data-uid="PLATEAU.Util.GeoGraph.LineSegment2DEx.TrySegmentIntersection(PLATEAU.Util.GeoGraph.LineSegment2D,PLATEAU.Util.GeoGraph.LineSegment2D,Vector2@,System.Single@,System.Single@)">TrySegmentIntersection(LineSegment2D, LineSegment2D, out Vector2, out Single, out Single)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>引数の線分otherとの交点を返す</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -482,7 +691,8 @@
       <tr>
         <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">intersection</span></td>
-        <td></td>
+        <td><p>交点</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>

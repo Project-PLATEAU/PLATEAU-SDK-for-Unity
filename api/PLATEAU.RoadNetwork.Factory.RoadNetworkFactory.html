@@ -120,60 +120,322 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class RoadNetworkFactory</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h3 id="fields">Fields
   </h3>
   
   
-  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_CreateNetwork_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.CreateNetwork*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_CreateNetwork_IList_PLATEAUCityObjectGroup__" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.CreateNetwork(IList{PLATEAUCityObjectGroup})">CreateNetwork(IList&lt;PLATEAUCityObjectGroup&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RoadNetworkModel CreateNetwork(IList&lt;PLATEAUCityObjectGroup&gt; targets)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IList</span>&lt;<span class="xref">PLATEAUCityObjectGroup</span>&gt;</td>
-        <td><span class="parametername">targets</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PLATEAU.RoadNetwork.RoadNetworkModel.html">RoadNetworkModel</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_CreateNetwork_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.CreateNetwork*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_CreateNetwork_IList_Tuple_PLATEAUCityObjectGroup_IList_Vector3____" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.CreateNetwork(IList{Tuple{PLATEAUCityObjectGroup,IList{Vector3}}})">CreateNetwork(IList&lt;Tuple&lt;PLATEAUCityObjectGroup, IList&lt;Vector3&gt;&gt;&gt;)</h4>
-  <div class="markdown level1 summary"><p>targets -&gt; ポリゴンのリスト</p>
+  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_FactoryVersion" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.FactoryVersion">FactoryVersion</h4>
+  <div class="markdown level1 summary"><p>自動生成バージョン. 作成時に番号埋め込んでおいてどのバージョンで作られたかを見れるようにする.
+メジャー/マイナー分けたいので文字列</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RoadNetworkModel CreateNetwork(IList&lt;Tuple&lt;PLATEAUCityObjectGroup, IList&lt;Vector3&gt;&gt;&gt; targets)</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly string FactoryVersion</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_AddLod3SideWalk_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.AddLod3SideWalk*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_AddLod3SideWalk" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.AddLod3SideWalk">AddLod3SideWalk</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddLod3SideWalk { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_CheckMedian_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.CheckMedian*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_CheckMedian" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.CheckMedian">CheckMedian</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckMedian { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_FactoryWork_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.FactoryWork*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_FactoryWork" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.FactoryWork">FactoryWork</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoadNetworkFactory.Work FactoryWork { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.Work.html">RoadNetworkFactory.Work</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_GraphFactory_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.GraphFactory*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_GraphFactory" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.GraphFactory">GraphFactory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RGraphFactory GraphFactory { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RGraphFactory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_IgnoreHighway_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.IgnoreHighway*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_IgnoreHighway" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.IgnoreHighway">IgnoreHighway</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IgnoreHighway { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_Lod1SideWalkSize_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.Lod1SideWalkSize*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_Lod1SideWalkSize" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.Lod1SideWalkSize">Lod1SideWalkSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Lod1SideWalkSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_RoadSize_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.RoadSize*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_RoadSize" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.RoadSize">RoadSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RoadSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_SaveTmpData_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.SaveTmpData*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_SaveTmpData" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.SaveTmpData">SaveTmpData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SaveTmpData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_TerminateAllowEdgeAngle_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.TerminateAllowEdgeAngle*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_TerminateAllowEdgeAngle" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.TerminateAllowEdgeAngle">TerminateAllowEdgeAngle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TerminateAllowEdgeAngle { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_TerminateSkipAngle_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.TerminateSkipAngle*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_TerminateSkipAngle" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.TerminateSkipAngle">TerminateSkipAngle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TerminateSkipAngle { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_UseContourMesh_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.UseContourMesh*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_UseContourMesh" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.UseContourMesh">UseContourMesh</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseContourMesh { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_CreateRequest_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.CreateRequest*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_CreateRequest_List_PLATEAUCityObjectGroup__GameObject_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.CreateRequest(List{PLATEAUCityObjectGroup},GameObject)">CreateRequest(List&lt;PLATEAUCityObjectGroup&gt;, GameObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoadNetworkFactory.CreateRnModelRequest CreateRequest(List&lt;PLATEAUCityObjectGroup&gt; cityObjectGroups, GameObject target)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -186,8 +448,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IList</span>&lt;<span class="xref">Tuple</span>&lt;<span class="xref">PLATEAUCityObjectGroup</span>, <span class="xref">IList</span>&lt;<span class="xref">Vector3</span>&gt;&gt;&gt;</td>
-        <td><span class="parametername">targets</span></td>
+        <td><span class="xref">List</span>&lt;<span class="xref">PLATEAUCityObjectGroup</span>&gt;</td>
+        <td><span class="parametername">cityObjectGroups</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">target</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -202,7 +469,91 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="PLATEAU.RoadNetwork.RoadNetworkModel.html">RoadNetworkModel</a></td>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.CreateRnModelRequest.html">RoadNetworkFactory.CreateRnModelRequest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_CreateRnModelAsync_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.CreateRnModelAsync*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_CreateRnModelAsync_PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_CreateRnModelRequest_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.CreateRnModelAsync(PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.CreateRnModelRequest)">CreateRnModelAsync(RoadNetworkFactory.CreateRnModelRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;RnModel&gt; CreateRnModelAsync(RoadNetworkFactory.CreateRnModelRequest req)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.CreateRnModelRequest.html">RoadNetworkFactory.CreateRnModelRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">RnModel</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_CreateRnModelAsync_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.CreateRnModelAsync*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_CreateRnModelAsync_RGraph_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.CreateRnModelAsync(RGraph)">CreateRnModelAsync(RGraph)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RnModel&gt; CreateRnModelAsync(RGraph graph)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RGraph</span></td>
+        <td><span class="parametername">graph</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">RnModel</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

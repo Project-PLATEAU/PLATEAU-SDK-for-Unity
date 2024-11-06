@@ -150,6 +150,64 @@
   </h3>
   
   
+  <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_CalcLerpPointInLine_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.CalcLerpPointInLine*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_CalcLerpPointInLine_Ray2D_Ray2D_System_Single_Vector2__" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.CalcLerpPointInLine(Ray2D,Ray2D,System.Single,Vector2@)">CalcLerpPointInLine(Ray2D, Ray2D, Single, out Vector2)</h4>
+  <div class="markdown level1 summary"><p>直線a,bがあり. |a.origin-pos|とdistance(pos, b)の比率がp:1-pとなるようなA上点posを返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CalcLerpPointInLine(Ray2D a, Ray2D b, float p, out Vector2 pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ray2D</span></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ray2D</span></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_ComputeConvexVolume_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeConvexVolume*"></a>
   <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_ComputeConvexVolume_IEnumerable_Vector2__" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeConvexVolume(IEnumerable{Vector2})">ComputeConvexVolume(IEnumerable&lt;Vector2&gt;)</h4>
   <div class="markdown level1 summary"><p>凸多角形を計算して返す</p>
@@ -241,14 +299,13 @@
   </table>
   
   
-  <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_ComputeMeshOutlineVertices_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeMeshOutlineVertices*"></a>
-  <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_ComputeMeshOutlineVertices_Mesh_Func_Vector3_Vector2__System_Single_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeMeshOutlineVertices(Mesh,Func{Vector3,Vector2},System.Single)">ComputeMeshOutlineVertices(Mesh, Func&lt;Vector3, Vector2&gt;, Single)</h4>
-  <div class="markdown level1 summary"><p>meshのアウトラインを計算する</p>
-</div>
+  <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_ComputeConvexVolume_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeConvexVolume*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_ComputeConvexVolume__1_IEnumerable___0__Func___0_Vector3__PLATEAU_Util_GeoGraph_AxisPlane_System_Single_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeConvexVolume``1(IEnumerable{``0},Func{``0,Vector3},PLATEAU.Util.GeoGraph.AxisPlane,System.Single)">ComputeConvexVolume&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Vector3&gt;, AxisPlane, Single)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;Vector3&gt; ComputeMeshOutlineVertices(Mesh mesh, Func&lt;Vector3, Vector2&gt; toVec2, float epsilon = 0.1F)</code></pre>
+    <pre><code class="lang-csharp hljs">public static List&lt;T&gt; ComputeConvexVolume&lt;T&gt;(IEnumerable&lt;T&gt; vertices, Func&lt;T, Vector3&gt; toVec3, AxisPlane plane, float sameLineTolerance = 0F)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -261,7 +318,196 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Mesh</span></td>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">toVec3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.AxisPlane.html">AxisPlane</a></td>
+        <td><span class="parametername">plane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">sameLineTolerance</span></td>
+        <td><p>同一直線の許容誤差. ２つのベクトルの内積が1-これ以上</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_ComputeMeshOutlineVertices_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeMeshOutlineVertices*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_ComputeMeshOutlineVertices_IReadOnlyList_Vector3__IList_System_Int32__Func_Vector3_Vector2__System_Single_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeMeshOutlineVertices(IReadOnlyList{Vector3},IList{System.Int32},Func{Vector3,Vector2},System.Single)">ComputeMeshOutlineVertices(IReadOnlyList&lt;Vector3&gt;, IList&lt;Int32&gt;, Func&lt;Vector3, Vector2&gt;, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Vector3&gt; ComputeMeshOutlineVertices(IReadOnlyList&lt;Vector3&gt; vert, IList&lt;int&gt; triangles, Func&lt;Vector3, Vector2&gt; toVec2, float epsilon = 0.1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">vert</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">triangles</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Vector3</span>, <span class="xref">Vector2</span>&gt;</td>
+        <td><span class="parametername">toVec2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">epsilon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_ComputeMeshOutlineVertices_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeMeshOutlineVertices*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_ComputeMeshOutlineVertices_SubDividedCityObject_Mesh_SubDividedCityObject_SubMesh_Func_Vector3_Vector2__System_Single_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeMeshOutlineVertices(SubDividedCityObject.Mesh,SubDividedCityObject.SubMesh,Func{Vector3,Vector2},System.Single)">ComputeMeshOutlineVertices(SubDividedCityObject.Mesh, SubDividedCityObject.SubMesh, Func&lt;Vector3, Vector2&gt;, Single)</h4>
+  <div class="markdown level1 summary"><p>meshのアウトラインを計算する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Vector3&gt; ComputeMeshOutlineVertices(SubDividedCityObject.Mesh mesh, SubDividedCityObject.SubMesh subMesh, Func&lt;Vector3, Vector2&gt; toVec2, float epsilon = 0.1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SubDividedCityObject.Mesh</span></td>
+        <td><span class="parametername">mesh</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SubDividedCityObject.SubMesh</span></td>
+        <td><span class="parametername">subMesh</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Vector3</span>, <span class="xref">Vector2</span>&gt;</td>
+        <td><span class="parametername">toVec2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">epsilon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_ComputeMeshOutlineVertices_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeMeshOutlineVertices*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_ComputeMeshOutlineVertices_UnityEngine_Mesh_Func_Vector3_Vector2__System_Single_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeMeshOutlineVertices(UnityEngine.Mesh,Func{Vector3,Vector2},System.Single)">ComputeMeshOutlineVertices(UnityEngine.Mesh, Func&lt;Vector3, Vector2&gt;, Single)</h4>
+  <div class="markdown level1 summary"><p>meshのアウトラインを計算する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Vector3&gt; ComputeMeshOutlineVertices(UnityEngine.Mesh mesh, Func&lt;Vector3, Vector2&gt; toVec2, float epsilon = 0.1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Mesh</span></td>
         <td><span class="parametername">mesh</span></td>
         <td></td>
       </tr>
@@ -288,6 +534,152 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_ComputeOutline_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeOutline*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_ComputeOutline__1_IEnumerable___0__Func___0_Vector3__PLATEAU_Util_GeoGraph_AxisPlane_Func___0_IEnumerable___0___" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeOutline``1(IEnumerable{``0},Func{``0,Vector3},PLATEAU.Util.GeoGraph.AxisPlane,Func{``0,IEnumerable{``0}})">ComputeOutline&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Vector3&gt;, AxisPlane, Func&lt;T, IEnumerable&lt;T&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>アウトライン頂点を返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GeoGraph2D.ComputeOutlineResult&lt;T&gt; ComputeOutline&lt;T&gt;(IEnumerable&lt;T&gt; vertices, Func&lt;T, Vector3&gt; toVec3, AxisPlane plane, Func&lt;T, IEnumerable&lt;T&gt;&gt; getNeighbor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">toVec3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.AxisPlane.html">AxisPlane</a></td>
+        <td><span class="parametername">plane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <span class="xref">IEnumerable</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">getNeighbor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeOutlineResult-1.html">GeoGraph2D.ComputeOutlineResult</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_ComputeOutline2_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeOutline2*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_ComputeOutline2__1_IEnumerable___0__Func___0_Vector3__PLATEAU_Util_GeoGraph_AxisPlane_Func___0_IEnumerable___0___" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeOutline2``1(IEnumerable{``0},Func{``0,Vector3},PLATEAU.Util.GeoGraph.AxisPlane,Func{``0,IEnumerable{``0}})">ComputeOutline2&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Vector3&gt;, AxisPlane, Func&lt;T, IEnumerable&lt;T&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>アウトライン頂点を返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GeoGraph2D.ComputeOutlineResult&lt;T&gt; ComputeOutline2&lt;T&gt;(IEnumerable&lt;T&gt; vertices, Func&lt;T, Vector3&gt; toVec3, AxisPlane plane, Func&lt;T, IEnumerable&lt;T&gt;&gt; getNeighbor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">toVec3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.AxisPlane.html">AxisPlane</a></td>
+        <td><span class="parametername">plane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <span class="xref">IEnumerable</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">getNeighbor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeOutlineResult-1.html">GeoGraph2D.ComputeOutlineResult</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -514,6 +906,61 @@
   </table>
   
   
+  <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_GetNearVertexTable_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.GetNearVertexTable*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_GetNearVertexTable_IList_Vector3__Func_Vector3_Vector3_System_Single__System_Single_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.GetNearVertexTable(IList{Vector3},Func{Vector3,Vector3,System.Single},System.Single)">GetNearVertexTable(IList&lt;Vector3&gt;, Func&lt;Vector3, Vector3, Single&gt;, Single)</h4>
+  <div class="markdown level1 summary"><p>点群vertices, 互いの距離がepsilon以下の頂点をリンクさせた辞書が返る
+辞書にない頂点は近い頂点が無いもの
+key : 元の頂点, value : 近い頂点のうち最初に見つかったもの</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int[] GetNearVertexTable(IList&lt;Vector3&gt; vertices, Func&lt;Vector3, Vector3, float&gt; calcDistance, float epsilon = 0.1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Vector3</span>, <span class="xref">Vector3</span>, <span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">calcDistance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">epsilon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_IsClockwise_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.IsClockwise*"></a>
   <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_IsClockwise_IEnumerable_Vector2__" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.IsClockwise(IEnumerable{Vector2})">IsClockwise(IEnumerable&lt;Vector2&gt;)</h4>
   <div class="markdown level1 summary"><p>ポリゴンを構成する頂点配列を渡すと, そのポリゴンが時計回りなのか反時計回りなのかを返す</p>
@@ -610,58 +1057,6 @@ a \ | / b
     <tbody>
       <tr>
         <td><span class="xref">Ray2D</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_MergeVertices_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.MergeVertices*"></a>
-  <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_MergeVertices_IEnumerable_Vector3__Func_Vector3_Vector2__System_Single_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.MergeVertices(IEnumerable{Vector3},Func{Vector3,Vector2},System.Single)">MergeVertices(IEnumerable&lt;Vector3&gt;, Func&lt;Vector3, Vector2&gt;, Single)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Dictionary&lt;Vector3, Vector3&gt; MergeVertices(IEnumerable&lt;Vector3&gt; vertices, Func&lt;Vector3, Vector2&gt; toVec2, float epsilon = 0.1F)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Vector3</span>&gt;</td>
-        <td><span class="parametername">vertices</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Func</span>&lt;<span class="xref">Vector3</span>, <span class="xref">Vector2</span>&gt;</td>
-        <td><span class="parametername">toVec2</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">epsilon</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">Vector3</span>, <span class="xref">Vector3</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -938,7 +1333,7 @@ a \ | / b
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RemoveSelfCrossing&lt;T&gt;(List&lt;T&gt; self, Func&lt;T, Vector2&gt; selector, Func&lt;T, T, T, T, Vector2, float, float, T&gt; creater)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void RemoveSelfCrossing&lt;T&gt;(List&lt;T&gt; self, Func&lt;T, Vector2&gt; selector, Func&lt;T, T, T, T, Vector2, float, float, T&gt; creator)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -962,7 +1357,7 @@ a \ | / b
       </tr>
       <tr>
         <td><span class="xref">Func</span>&lt;T, T, T, T, <span class="xref">Vector2</span>, <span class="xref">System.Single</span>, <span class="xref">System.Single</span>, T&gt;</td>
-        <td><span class="parametername">creater</span></td>
+        <td><span class="parametername">creator</span></td>
         <td></td>
       </tr>
     </tbody>

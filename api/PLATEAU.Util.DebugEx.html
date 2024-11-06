@@ -372,6 +372,301 @@
   </table>
   
   
+  <a id="PLATEAU_Util_DebugEx_DrawDashedArrow_" data-uid="PLATEAU.Util.DebugEx.DrawDashedArrow*"></a>
+  <h4 id="PLATEAU_Util_DebugEx_DrawDashedArrow_Vector3_Vector3_System_Nullable_Color__System_Single_System_Single_System_Single_System_Boolean_System_Single_System_Nullable_Vector3__System_Nullable_Color__" data-uid="PLATEAU.Util.DebugEx.DrawDashedArrow(Vector3,Vector3,System.Nullable{Color},System.Single,System.Single,System.Single,System.Boolean,System.Single,System.Nullable{Vector3},System.Nullable{Color})">DrawDashedArrow(Vector3, Vector3, Nullable&lt;Color&gt;, Single, Single, Single, Boolean, Single, Nullable&lt;Vector3&gt;, Nullable&lt;Color&gt;)</h4>
+  <div class="markdown level1 summary"><p>デバッグで破線を描画する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawDashedArrow(Vector3 st, Vector3 en, Color? color = null, float lineLength = 1F, float spaceLength = 0.2F, float duration = 0F, bool depthTest = true, float arrowSize = 0.5F, Vector3? arrowUp = null, Color? arrowColor = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">st</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">en</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Color</span>&gt;</td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">lineLength</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">spaceLength</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">depthTest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">arrowSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">arrowUp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Color</span>&gt;</td>
+        <td><span class="parametername">arrowColor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_DebugEx_DrawDashedArrows_" data-uid="PLATEAU.Util.DebugEx.DrawDashedArrows*"></a>
+  <h4 id="PLATEAU_Util_DebugEx_DrawDashedArrows_IEnumerable_Vector3__System_Boolean_System_Nullable_Color__System_Single_System_Single_System_Single_System_Boolean_" data-uid="PLATEAU.Util.DebugEx.DrawDashedArrows(IEnumerable{Vector3},System.Boolean,System.Nullable{Color},System.Single,System.Single,System.Single,System.Boolean)">DrawDashedArrows(IEnumerable&lt;Vector3&gt;, Boolean, Nullable&lt;Color&gt;, Single, Single, Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>デバッグで破線(矢印)を描画する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawDashedArrows(IEnumerable&lt;Vector3&gt; vertices, bool isLoop = false, Color? color = null, float lineLength = 3F, float spaceLength = 1F, float duration = 0F, bool depthTest = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isLoop</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Color</span>&gt;</td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">lineLength</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">spaceLength</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">depthTest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_DebugEx_DrawDashedLine_" data-uid="PLATEAU.Util.DebugEx.DrawDashedLine*"></a>
+  <h4 id="PLATEAU_Util_DebugEx_DrawDashedLine_Vector3_Vector3_System_Nullable_Color__System_Single_System_Single_System_Single_System_Boolean_" data-uid="PLATEAU.Util.DebugEx.DrawDashedLine(Vector3,Vector3,System.Nullable{Color},System.Single,System.Single,System.Single,System.Boolean)">DrawDashedLine(Vector3, Vector3, Nullable&lt;Color&gt;, Single, Single, Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>デバッグで破線を描画する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawDashedLine(Vector3 st, Vector3 en, Color? color = null, float lineLength = 1F, float spaceLength = 0.2F, float duration = 0F, bool depthTest = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">st</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">en</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Color</span>&gt;</td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">lineLength</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">spaceLength</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">depthTest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_DebugEx_DrawDashedLines_" data-uid="PLATEAU.Util.DebugEx.DrawDashedLines*"></a>
+  <h4 id="PLATEAU_Util_DebugEx_DrawDashedLines_IEnumerable_Vector3__System_Boolean_System_Nullable_Color__System_Single_System_Single_System_Single_System_Boolean_" data-uid="PLATEAU.Util.DebugEx.DrawDashedLines(IEnumerable{Vector3},System.Boolean,System.Nullable{Color},System.Single,System.Single,System.Single,System.Boolean)">DrawDashedLines(IEnumerable&lt;Vector3&gt;, Boolean, Nullable&lt;Color&gt;, Single, Single, Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>デバッグで破線を描画する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawDashedLines(IEnumerable&lt;Vector3&gt; vertices, bool isLoop = false, Color? color = null, float lineLength = 3F, float spaceLength = 1F, float duration = 0F, bool depthTest = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isLoop</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Color</span>&gt;</td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">lineLength</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">spaceLength</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">depthTest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_DebugEx_DrawLine_" data-uid="PLATEAU.Util.DebugEx.DrawLine*"></a>
+  <h4 id="PLATEAU_Util_DebugEx_DrawLine_Vector3_Vector3_System_Nullable_Color__System_Single_System_Boolean_" data-uid="PLATEAU.Util.DebugEx.DrawLine(Vector3,Vector3,System.Nullable{Color},System.Single,System.Boolean)">DrawLine(Vector3, Vector3, Nullable&lt;Color&gt;, Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Debug.DrawLineのラッパー. デバッグ描画系をここに集約するため</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawLine(Vector3 start, Vector3 end, Color? color = null, float duration = 0F, bool depthTest = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Color</span>&gt;</td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">depthTest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_Util_DebugEx_DrawLines_" data-uid="PLATEAU.Util.DebugEx.DrawLines*"></a>
   <h4 id="PLATEAU_Util_DebugEx_DrawLines_IEnumerable_Vector3__System_Boolean_System_Nullable_Color__System_Single_System_Boolean_" data-uid="PLATEAU.Util.DebugEx.DrawLines(IEnumerable{Vector3},System.Boolean,System.Nullable{Color},System.Single,System.Boolean)">DrawLines(IEnumerable&lt;Vector3&gt;, Boolean, Nullable&lt;Color&gt;, Single, Boolean)</h4>
   <div class="markdown level1 summary"></div>
@@ -446,6 +741,53 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">showXz</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Color</span>&gt;</td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">depthTest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_DebugEx_DrawMesh_" data-uid="PLATEAU.Util.DebugEx.DrawMesh*"></a>
+  <h4 id="PLATEAU_Util_DebugEx_DrawMesh_Mesh_Matrix4x4_System_Nullable_Color__System_Single_System_Boolean_" data-uid="PLATEAU.Util.DebugEx.DrawMesh(Mesh,Matrix4x4,System.Nullable{Color},System.Single,System.Boolean)">DrawMesh(Mesh, Matrix4x4, Nullable&lt;Color&gt;, Single, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawMesh(Mesh mesh, Matrix4x4 mat, Color? color = null, float duration = 0F, bool depthTest = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mesh</span></td>
+        <td><span class="parametername">mesh</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Matrix4x4</span></td>
+        <td><span class="parametername">mat</span></td>
         <td></td>
       </tr>
       <tr>
@@ -624,6 +966,249 @@
   </table>
   
   
+  <a id="PLATEAU_Util_DebugEx_DrawPlateauMesh_" data-uid="PLATEAU.Util.DebugEx.DrawPlateauMesh*"></a>
+  <h4 id="PLATEAU_Util_DebugEx_DrawPlateauMesh_PLATEAU_PolygonMesh_Mesh_Matrix4x4_System_Nullable_Color__System_Single_System_Boolean_" data-uid="PLATEAU.Util.DebugEx.DrawPlateauMesh(PLATEAU.PolygonMesh.Mesh,Matrix4x4,System.Nullable{Color},System.Single,System.Boolean)">DrawPlateauMesh(Mesh, Matrix4x4, Nullable&lt;Color&gt;, Single, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawPlateauMesh(Mesh mesh, Matrix4x4 mat, Color? color = null, float duration = 0F, bool depthTest = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.PolygonMesh.Mesh.html">Mesh</a></td>
+        <td><span class="parametername">mesh</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Matrix4x4</span></td>
+        <td><span class="parametername">mat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Color</span>&gt;</td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">depthTest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_DebugEx_DrawPlateauPolygonMeshModel_" data-uid="PLATEAU.Util.DebugEx.DrawPlateauPolygonMeshModel*"></a>
+  <h4 id="PLATEAU_Util_DebugEx_DrawPlateauPolygonMeshModel_PLATEAU_PolygonMesh_Model_System_Nullable_Color__System_Single_System_Boolean_" data-uid="PLATEAU.Util.DebugEx.DrawPlateauPolygonMeshModel(PLATEAU.PolygonMesh.Model,System.Nullable{Color},System.Single,System.Boolean)">DrawPlateauPolygonMeshModel(Model, Nullable&lt;Color&gt;, Single, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawPlateauPolygonMeshModel(Model model, Color? color = null, float duration = 0F, bool depthTest = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.PolygonMesh.Model.html">Model</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Color</span>&gt;</td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">depthTest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_DebugEx_DrawPlateauPolygonMeshNode_" data-uid="PLATEAU.Util.DebugEx.DrawPlateauPolygonMeshNode*"></a>
+  <h4 id="PLATEAU_Util_DebugEx_DrawPlateauPolygonMeshNode_Matrix4x4_PLATEAU_PolygonMesh_Node_System_Nullable_Color__System_Single_System_Boolean_" data-uid="PLATEAU.Util.DebugEx.DrawPlateauPolygonMeshNode(Matrix4x4,PLATEAU.PolygonMesh.Node,System.Nullable{Color},System.Single,System.Boolean)">DrawPlateauPolygonMeshNode(Matrix4x4, Node, Nullable&lt;Color&gt;, Single, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawPlateauPolygonMeshNode(Matrix4x4 parentMatrix, Node node, Color? color = null, float duration = 0F, bool depthTest = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Matrix4x4</span></td>
+        <td><span class="parametername">parentMatrix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.PolygonMesh.Node.html">Node</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Color</span>&gt;</td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">depthTest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_DebugEx_DrawRegularPolygon_" data-uid="PLATEAU.Util.DebugEx.DrawRegularPolygon*"></a>
+  <h4 id="PLATEAU_Util_DebugEx_DrawRegularPolygon_Vector3_System_Single_System_Int32_System_Nullable_Vector3__System_Nullable_Color__System_Single_System_Boolean_" data-uid="PLATEAU.Util.DebugEx.DrawRegularPolygon(Vector3,System.Single,System.Int32,System.Nullable{Vector3},System.Nullable{Color},System.Single,System.Boolean)">DrawRegularPolygon(Vector3, Single, Int32, Nullable&lt;Vector3&gt;, Nullable&lt;Color&gt;, Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>円を描画</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawRegularPolygon(Vector3 pos, float radius, int polygon = 5, Vector3? up = null, Color? color = null, float duration = 0F, bool depthTest = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">radius</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">polygon</span></td>
+        <td><p>多角形のサイズ</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">up</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Color</span>&gt;</td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">depthTest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_DebugEx_DrawSphere_" data-uid="PLATEAU.Util.DebugEx.DrawSphere*"></a>
+  <h4 id="PLATEAU_Util_DebugEx_DrawSphere_Vector3_System_Single_System_Nullable_Color__System_Single_System_Boolean_" data-uid="PLATEAU.Util.DebugEx.DrawSphere(Vector3,System.Single,System.Nullable{Color},System.Single,System.Boolean)">DrawSphere(Vector3, Single, Nullable&lt;Color&gt;, Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>球を描画する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawSphere(Vector3 pos, float radius, Color? color = null, float duration = 0F, bool depthTest = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">radius</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Color</span>&gt;</td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">depthTest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_Util_DebugEx_DrawString_" data-uid="PLATEAU.Util.DebugEx.DrawString*"></a>
   <h4 id="PLATEAU_Util_DebugEx_DrawString_System_String_Vector3_System_Nullable_Vector2__System_Nullable_Color__System_Nullable_System_Int32__" data-uid="PLATEAU.Util.DebugEx.DrawString(System.String,Vector3,System.Nullable{Vector2},System.Nullable{Color},System.Nullable{System.Int32})">DrawString(String, Vector3, Nullable&lt;Vector2&gt;, Nullable&lt;Color&gt;, Nullable&lt;Int32&gt;)</h4>
   <div class="markdown level1 summary"><p>デバッグ文字列を3D空間上に表示する(Editor限定)</p>
@@ -719,6 +1304,118 @@
     <tbody>
       <tr>
         <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_DebugEx_Log_" data-uid="PLATEAU.Util.DebugEx.Log*"></a>
+  <h4 id="PLATEAU_Util_DebugEx_Log_System_Object_" data-uid="PLATEAU.Util.DebugEx.Log(System.Object)">Log(Object)</h4>
+  <div class="markdown level1 summary"><p>Debug.Logのラッパー. 後で切れるように</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log(object message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_DebugEx_LogError_" data-uid="PLATEAU.Util.DebugEx.LogError*"></a>
+  <h4 id="PLATEAU_Util_DebugEx_LogError_System_Object_" data-uid="PLATEAU.Util.DebugEx.LogError(System.Object)">LogError(Object)</h4>
+  <div class="markdown level1 summary"><p>Debug.LogErrorのラッパー. 後で切れるように</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogError(object message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_DebugEx_LogException_" data-uid="PLATEAU.Util.DebugEx.LogException*"></a>
+  <h4 id="PLATEAU_Util_DebugEx_LogException_Exception_" data-uid="PLATEAU.Util.DebugEx.LogException(Exception)">LogException(Exception)</h4>
+  <div class="markdown level1 summary"><p>Debug.LogExceptionのラッパー. 後で切れるように</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogException(Exception e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_DebugEx_LogWarning_" data-uid="PLATEAU.Util.DebugEx.LogWarning*"></a>
+  <h4 id="PLATEAU_Util_DebugEx_LogWarning_System_Object_" data-uid="PLATEAU.Util.DebugEx.LogWarning(System.Object)">LogWarning(Object)</h4>
+  <div class="markdown level1 summary"><p>Debug.LogWarningのラッパー. 後で切れるように</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogWarning(object message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>

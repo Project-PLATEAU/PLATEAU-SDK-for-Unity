@@ -1,0 +1,913 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class REdge
+   | PLATEAU SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class REdge
+   | PLATEAU SDK for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.RoadNetwork.Graph.REdge">
+  
+  
+  <h1 id="PLATEAU_RoadNetwork_Graph_REdge" data-uid="PLATEAU.RoadNetwork.Graph.REdge" class="text-break">Class REdge
+  </h1>
+  <div class="markdown level0 summary"><p>辺</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="PLATEAU.RoadNetwork.ARnPartsBase.html">ARnPartsBase</a></div>
+    <div class="level2"><a class="xref" href="PLATEAU.RoadNetwork.ARnParts-1.html">ARnParts</a>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Graph.REdge.html">REdge</a>&gt;</div>
+    <div class="level3"><span class="xref">REdge</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.ARnPartsBase.html#PLATEAU_RoadNetwork_ARnPartsBase_DebugMyId">ARnPartsBase.DebugMyId</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.RoadNetwork.Graph.html">PLATEAU.RoadNetwork.Graph</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="PLATEAU_RoadNetwork_Graph_REdge_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class REdge : ARnParts&lt;REdge&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge__ctor_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.#ctor*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge__ctor_PLATEAU_RoadNetwork_Graph_RVertex_PLATEAU_RoadNetwork_Graph_RVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.#ctor(PLATEAU.RoadNetwork.Graph.RVertex,PLATEAU.RoadNetwork.Graph.RVertex)">REdge(RVertex, RVertex)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public REdge(RVertex v0, RVertex v1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
+        <td><span class="parametername">v0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
+        <td><span class="parametername">v1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_Faces_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.Faces*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_Faces" data-uid="PLATEAU.RoadNetwork.Graph.REdge.Faces">Faces</h4>
+  <div class="markdown level1 summary"><p>接続面</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;RFace&gt; Faces { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Graph.RFace.html">RFace</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_IsValid_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.IsValid*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_IsValid" data-uid="PLATEAU.RoadNetwork.Graph.REdge.IsValid">IsValid</h4>
+  <div class="markdown level1 summary"><p>有効な辺かどうか. 2つの頂点が存在して、かつ異なるかどうか</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_V0_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.V0*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_V0" data-uid="PLATEAU.RoadNetwork.Graph.REdge.V0">V0</h4>
+  <div class="markdown level1 summary"><p>開始点</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RVertex V0 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_V1_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.V1*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_V1" data-uid="PLATEAU.RoadNetwork.Graph.REdge.V1">V1</h4>
+  <div class="markdown level1 summary"><p>終了点</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RVertex V1 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_Vertices_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.Vertices*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_Vertices" data-uid="PLATEAU.RoadNetwork.Graph.REdge.Vertices">Vertices</h4>
+  <div class="markdown level1 summary"><p>構成頂点(2個)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;RVertex&gt; Vertices { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_AddFace_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.AddFace*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_AddFace_PLATEAU_RoadNetwork_Graph_RFace_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.AddFace(PLATEAU.RoadNetwork.Graph.RFace)">AddFace(RFace)</h4>
+  <div class="markdown level1 summary"><p>基本呼び出し禁止. 隣接面追加</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddFace(RFace face)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RFace.html">RFace</a></td>
+        <td><span class="parametername">face</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_ChangeVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.ChangeVertex*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_ChangeVertex_PLATEAU_RoadNetwork_Graph_RVertex_PLATEAU_RoadNetwork_Graph_RVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.ChangeVertex(PLATEAU.RoadNetwork.Graph.RVertex,PLATEAU.RoadNetwork.Graph.RVertex)">ChangeVertex(RVertex, RVertex)</h4>
+  <div class="markdown level1 summary"><p>頂点from -&gt; toに変更する
+fromを持っていない場合は無視
+変更した結果両方ともtoになる場合は接続が解除される</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeVertex(RVertex from, RVertex to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_DisConnect_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.DisConnect*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_DisConnect" data-uid="PLATEAU.RoadNetwork.Graph.REdge.DisConnect">DisConnect()</h4>
+  <div class="markdown level1 summary"><p>自分の接続を解除する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisConnect()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_GetNeighborEdges_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.GetNeighborEdges*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_GetNeighborEdges" data-uid="PLATEAU.RoadNetwork.Graph.REdge.GetNeighborEdges">GetNeighborEdges()</h4>
+  <div class="markdown level1 summary"><p>隣接しているEdgeを取得</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;REdge&gt; GetNeighborEdges()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Graph.REdge.html">REdge</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_GetOppositeVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.GetOppositeVertex*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_GetOppositeVertex_PLATEAU_RoadNetwork_Graph_RVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.GetOppositeVertex(PLATEAU.RoadNetwork.Graph.RVertex)">GetOppositeVertex(RVertex)</h4>
+  <div class="markdown level1 summary"><p>vertexと反対側の頂点を取得する. vertexが含まれていない場合はnullを返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RVertex GetOppositeVertex(RVertex vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
+        <td><span class="parametername">vertex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_GetVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.GetVertex*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_GetVertex_PLATEAU_RoadNetwork_Graph_REdge_VertexType_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.GetVertex(PLATEAU.RoadNetwork.Graph.REdge.VertexType)">GetVertex(REdge.VertexType)</h4>
+  <div class="markdown level1 summary"><p>頂点ノード取得</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RVertex GetVertex(REdge.VertexType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.REdge.VertexType.html">REdge.VertexType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_IsSameVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.IsSameVertex*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_IsSameVertex_PLATEAU_RoadNetwork_Graph_REdge_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.IsSameVertex(PLATEAU.RoadNetwork.Graph.REdge)">IsSameVertex(REdge)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSameVertex(REdge other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.REdge.html">REdge</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_IsSameVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.IsSameVertex*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_IsSameVertex_PLATEAU_RoadNetwork_Graph_RVertex_PLATEAU_RoadNetwork_Graph_RVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.IsSameVertex(PLATEAU.RoadNetwork.Graph.RVertex,PLATEAU.RoadNetwork.Graph.RVertex)">IsSameVertex(RVertex, RVertex)</h4>
+  <div class="markdown level1 summary"><p>同じ頂点を参照しているかどうか. (順序は問わない)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSameVertex(RVertex v0, RVertex v1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
+        <td><span class="parametername">v0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
+        <td><span class="parametername">v1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_IsShareAnyVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.IsShareAnyVertex*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_IsShareAnyVertex_PLATEAU_RoadNetwork_Graph_REdge_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.IsShareAnyVertex(PLATEAU.RoadNetwork.Graph.REdge)">IsShareAnyVertex(REdge)</h4>
+  <div class="markdown level1 summary"><p>otherと共有している頂点があるかどうか</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsShareAnyVertex(REdge other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.REdge.html">REdge</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_IsShareAnyVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.IsShareAnyVertex*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_IsShareAnyVertex_PLATEAU_RoadNetwork_Graph_REdge_PLATEAU_RoadNetwork_Graph_RVertex__" data-uid="PLATEAU.RoadNetwork.Graph.REdge.IsShareAnyVertex(PLATEAU.RoadNetwork.Graph.REdge,PLATEAU.RoadNetwork.Graph.RVertex@)">IsShareAnyVertex(REdge, out RVertex)</h4>
+  <div class="markdown level1 summary"><p>otherと共有している頂点があるかどうか</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsShareAnyVertex(REdge other, out RVertex sharedVertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.REdge.html">REdge</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
+        <td><span class="parametername">sharedVertex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_MergeTo_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.MergeTo*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_MergeTo_PLATEAU_RoadNetwork_Graph_REdge_System_Boolean_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.MergeTo(PLATEAU.RoadNetwork.Graph.REdge,System.Boolean)">MergeTo(REdge, Boolean)</h4>
+  <div class="markdown level1 summary"><p>自身をdstにマージする</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MergeTo(REdge dst, bool checkFaceMerge = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.REdge.html">REdge</a></td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">checkFaceMerge</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_RemoveFace_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.RemoveFace*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_RemoveFace_PLATEAU_RoadNetwork_Graph_RFace_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.RemoveFace(PLATEAU.RoadNetwork.Graph.RFace)">RemoveFace(RFace)</h4>
+  <div class="markdown level1 summary"><p>基本呼び出し禁止. 面のつながりを消す(親のFaceからのみ呼び出す)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveFace(RFace face)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RFace.html">RFace</a></td>
+        <td><span class="parametername">face</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_RemoveVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.RemoveVertex*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_RemoveVertex_PLATEAU_RoadNetwork_Graph_RVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.RemoveVertex(PLATEAU.RoadNetwork.Graph.RVertex)">RemoveVertex(RVertex)</h4>
+  <div class="markdown level1 summary"><p>頂点を削除する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveVertex(RVertex vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
+        <td><span class="parametername">vertex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_SetVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.SetVertex*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_SetVertex_PLATEAU_RoadNetwork_Graph_REdge_VertexType_PLATEAU_RoadNetwork_Graph_RVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.SetVertex(PLATEAU.RoadNetwork.Graph.REdge.VertexType,PLATEAU.RoadNetwork.Graph.RVertex)">SetVertex(REdge.VertexType, RVertex)</h4>
+  <div class="markdown level1 summary"><p>頂点ノードを差し替え</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVertex(REdge.VertexType type, RVertex vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.REdge.VertexType.html">REdge.VertexType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
+        <td><span class="parametername">vertex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_SplitEdge_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.SplitEdge*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_SplitEdge_PLATEAU_RoadNetwork_Graph_RVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.SplitEdge(PLATEAU.RoadNetwork.Graph.RVertex)">SplitEdge(RVertex)</h4>
+  <div class="markdown level1 summary"><p>vで2つに分割する, 元のedgeはV0-&gt;v, 新しいEdgeはv-&gt;V1になる. 新しいEdgeを返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public REdge SplitEdge(RVertex v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.REdge.html">REdge</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_TryGetOppositeVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.TryGetOppositeVertex*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_TryGetOppositeVertex_PLATEAU_RoadNetwork_Graph_RVertex_PLATEAU_RoadNetwork_Graph_RVertex__" data-uid="PLATEAU.RoadNetwork.Graph.REdge.TryGetOppositeVertex(PLATEAU.RoadNetwork.Graph.RVertex,PLATEAU.RoadNetwork.Graph.RVertex@)">TryGetOppositeVertex(RVertex, out RVertex)</h4>
+  <div class="markdown level1 summary"><p>vertexと反対側の頂点を取得する. vertexが含まれていない場合はnullを返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetOppositeVertex(RVertex vertex, out RVertex opposite)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
+        <td><span class="parametername">vertex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
+        <td><span class="parametername">opposite</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            PLATEAU SDK for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

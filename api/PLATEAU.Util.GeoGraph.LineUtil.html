@@ -125,6 +125,331 @@
   </h3>
   
   
+  <a id="PLATEAU_Util_GeoGraph_LineUtil_CheckDistance_" data-uid="PLATEAU.Util.GeoGraph.LineUtil.CheckDistance*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_LineUtil_CheckDistance_PLATEAU_Util_GeoGraph_LineUtil_Line_System_Single_Ray__" data-uid="PLATEAU.Util.GeoGraph.LineUtil.CheckDistance(PLATEAU.Util.GeoGraph.LineUtil.Line,System.Single,Ray@)">CheckDistance(LineUtil.Line, Single, in Ray)</h4>
+  <div class="markdown level1 summary"><p>線分lineとrayの距離を測る
+ただし、radius以上離れていたら無効値を返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float CheckDistance(LineUtil.Line line, float radius, in Ray ray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineUtil.Line.html">LineUtil.Line</a></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">radius</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ray</span></td>
+        <td><span class="parametername">ray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_LineUtil_CheckHit_" data-uid="PLATEAU.Util.GeoGraph.LineUtil.CheckHit*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_LineUtil_CheckHit_PLATEAU_Util_GeoGraph_LineUtil_Line_System_Single_Ray__Vector3__Vector3__" data-uid="PLATEAU.Util.GeoGraph.LineUtil.CheckHit(PLATEAU.Util.GeoGraph.LineUtil.Line,System.Single,Ray@,Vector3@,Vector3@)">CheckHit(LineUtil.Line, Single, in Ray, out Vector3, out Vector3)</h4>
+  <div class="markdown level1 summary"><p>線分lineとrayの衝突判定を行う
+radiusで判定に余裕を持たせる
+また、closestPointは衝突地点ではなく線分上の最も近い点なので注意</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float CheckHit(LineUtil.Line line, float radius, in Ray ray, out Vector3 closestPoint, out Vector3 closestPoint2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineUtil.Line.html">LineUtil.Line</a></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">radius</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ray</span></td>
+        <td><span class="parametername">ray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">closestPoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">closestPoint2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_LineUtil_ClosestPoints_" data-uid="PLATEAU.Util.GeoGraph.LineUtil.ClosestPoints*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_LineUtil_ClosestPoints_PLATEAU_Util_GeoGraph_LineUtil_Line_PLATEAU_Util_GeoGraph_LineUtil_Line_Vector3__Vector3__" data-uid="PLATEAU.Util.GeoGraph.LineUtil.ClosestPoints(PLATEAU.Util.GeoGraph.LineUtil.Line,PLATEAU.Util.GeoGraph.LineUtil.Line,Vector3@,Vector3@)">ClosestPoints(LineUtil.Line, LineUtil.Line, out Vector3, out Vector3)</h4>
+  <div class="markdown level1 summary"><p>交差しないline0とline1の最短距離を求める
+ただし、line0,line1は線分ではなく永遠に延びる直線として扱う
+交差する場合は動作未定義</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClosestPoints(LineUtil.Line line0, LineUtil.Line line1, out Vector3 closestPoint1, out Vector3 closestPoint2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineUtil.Line.html">LineUtil.Line</a></td>
+        <td><span class="parametername">line0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineUtil.Line.html">LineUtil.Line</a></td>
+        <td><span class="parametername">line1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">closestPoint1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">closestPoint2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_LineUtil_ContainsPoint_" data-uid="PLATEAU.Util.GeoGraph.LineUtil.ContainsPoint*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_LineUtil_ContainsPoint_PLATEAU_Util_GeoGraph_LineUtil_Line__Vector3__" data-uid="PLATEAU.Util.GeoGraph.LineUtil.ContainsPoint(PLATEAU.Util.GeoGraph.LineUtil.Line@,Vector3@)">ContainsPoint(in LineUtil.Line, in Vector3)</h4>
+  <div class="markdown level1 summary"><p>line上にpointが存在するかどうかを判定する
+ただし pointはlineの延長線上にあることを前提とする</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ContainsPoint(in LineUtil.Line line, in Vector3 point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineUtil.Line.html">LineUtil.Line</a></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_LineUtil_DistanceBetweenLines_" data-uid="PLATEAU.Util.GeoGraph.LineUtil.DistanceBetweenLines*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_LineUtil_DistanceBetweenLines_PLATEAU_Util_GeoGraph_LineUtil_Line__PLATEAU_Util_GeoGraph_LineUtil_Line__System_Boolean__" data-uid="PLATEAU.Util.GeoGraph.LineUtil.DistanceBetweenLines(PLATEAU.Util.GeoGraph.LineUtil.Line@,PLATEAU.Util.GeoGraph.LineUtil.Line@,System.Boolean@)">DistanceBetweenLines(in LineUtil.Line, in LineUtil.Line, out Boolean)</h4>
+  <div class="markdown level1 summary"><p>2直線の距離を求める</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float DistanceBetweenLines(in LineUtil.Line line1, in LineUtil.Line line2, out bool isParallel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineUtil.Line.html">LineUtil.Line</a></td>
+        <td><span class="parametername">line1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineUtil.Line.html">LineUtil.Line</a></td>
+        <td><span class="parametername">line2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isParallel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_LineUtil_FindClosestPoint_" data-uid="PLATEAU.Util.GeoGraph.LineUtil.FindClosestPoint*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_LineUtil_FindClosestPoint_PLATEAU_Util_GeoGraph_LineUtil_Line_Ray__Vector3__Vector3__" data-uid="PLATEAU.Util.GeoGraph.LineUtil.FindClosestPoint(PLATEAU.Util.GeoGraph.LineUtil.Line,Ray@,Vector3@,Vector3@)">FindClosestPoint(LineUtil.Line, in Ray, out Vector3, out Vector3)</h4>
+  <div class="markdown level1 summary"><p>最近棒を求める
+直線で計算するので注意</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float FindClosestPoint(LineUtil.Line line, in Ray ray, out Vector3 closestPoint, out Vector3 closestPoint2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineUtil.Line.html">LineUtil.Line</a></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ray</span></td>
+        <td><span class="parametername">ray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">closestPoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">closestPoint2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_Util_GeoGraph_LineUtil_GetLineSegmentLength_" data-uid="PLATEAU.Util.GeoGraph.LineUtil.GetLineSegmentLength*"></a>
   <h4 id="PLATEAU_Util_GeoGraph_LineUtil_GetLineSegmentLength_IEnumerable_Vector3__" data-uid="PLATEAU.Util.GeoGraph.LineUtil.GetLineSegmentLength(IEnumerable{Vector3})">GetLineSegmentLength(IEnumerable&lt;Vector3&gt;)</h4>
   <div class="markdown level1 summary"><p>verticesで構成された線分の長さを求める</p>
@@ -170,7 +495,8 @@
   
   <a id="PLATEAU_Util_GeoGraph_LineUtil_GetLineSegmentLerpPoint_" data-uid="PLATEAU.Util.GeoGraph.LineUtil.GetLineSegmentLerpPoint*"></a>
   <h4 id="PLATEAU_Util_GeoGraph_LineUtil_GetLineSegmentLerpPoint_IReadOnlyList_Vector3__System_Single_Vector3__" data-uid="PLATEAU.Util.GeoGraph.LineUtil.GetLineSegmentLerpPoint(IReadOnlyList{Vector3},System.Single,Vector3@)">GetLineSegmentLerpPoint(IReadOnlyList&lt;Vector3&gt;, Single, out Vector3)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>線分の距離をp : (1-p)で分割した点をmidPointに入れて返す. 戻り値は midPointを含む線分のインデックス(i ~ i+1の線分上にmidPointがある) </p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -478,6 +804,110 @@ verticesが空の時は-1が返る</p>
         <td><span class="parametername">t2</span></td>
         <td><p>intersection = Vector2.Lerp(p1, p2, t2)となるt2が入る</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_LineUtil_Intersect_" data-uid="PLATEAU.Util.GeoGraph.LineUtil.Intersect*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_LineUtil_Intersect_PLATEAU_Util_GeoGraph_LineUtil_Line__PLATEAU_Util_GeoGraph_LineUtil_Line__Vector3__" data-uid="PLATEAU.Util.GeoGraph.LineUtil.Intersect(PLATEAU.Util.GeoGraph.LineUtil.Line@,PLATEAU.Util.GeoGraph.LineUtil.Line@,Vector3@)">Intersect(in LineUtil.Line, in LineUtil.Line, out Vector3)</h4>
+  <div class="markdown level1 summary"><p>交差するline0とline1の交点を求める
+注意点としてline0,line1は線分ではなく永遠に延びる直線として扱う
+交差しない場合は動作未定義</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Intersect(in LineUtil.Line line0, in LineUtil.Line line1, out Vector3 intersectionPoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineUtil.Line.html">LineUtil.Line</a></td>
+        <td><span class="parametername">line0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineUtil.Line.html">LineUtil.Line</a></td>
+        <td><span class="parametername">line1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">intersectionPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_LineUtil_IsPointOnLineSegment_" data-uid="PLATEAU.Util.GeoGraph.LineUtil.IsPointOnLineSegment*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_LineUtil_IsPointOnLineSegment_PLATEAU_Util_GeoGraph_LineUtil_Line_Vector3_" data-uid="PLATEAU.Util.GeoGraph.LineUtil.IsPointOnLineSegment(PLATEAU.Util.GeoGraph.LineUtil.Line,Vector3)">IsPointOnLineSegment(LineUtil.Line, Vector3)</h4>
+  <div class="markdown level1 summary"><p>ライン上にポイントが存在するかどうかを判定する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;&#21205;&#20316;&#26410;&#26908;&#35388;&#12398;&#38306;&#25968;&quot;)]
+public static bool IsPointOnLineSegment(LineUtil.Line line, Vector3 p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineUtil.Line.html">LineUtil.Line</a></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

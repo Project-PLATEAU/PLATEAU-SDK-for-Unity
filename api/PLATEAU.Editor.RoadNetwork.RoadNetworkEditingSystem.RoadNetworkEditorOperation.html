@@ -130,13 +130,13 @@ EditingSystemのサブクラスに移動するかも</p>
   </h3>
   
   
-  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_AddMainLane_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.AddMainLane*"></a>
-  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_AddMainLane_RoadNetworkLink_System_Int32_RoadNetworkLane_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.AddMainLane(RoadNetworkLink,System.Int32,RoadNetworkLane)">AddMainLane(RoadNetworkLink, Int32, RoadNetworkLane)</h4>
+  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_AddLink_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.AddLink*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_AddLink_RnModel_RnRoad_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.AddLink(RnModel,RnRoad)">AddLink(RnModel, RnRoad)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult AddMainLane(RoadNetworkLink link, int idx, RoadNetworkLane newLane)</code></pre>
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult AddLink(RnModel parent, RnRoad newLink)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -149,17 +149,59 @@ EditingSystemのサブクラスに移動するかも</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RoadNetworkLink</span></td>
+        <td><span class="xref">RnModel</span></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">RnRoad</span></td>
+        <td><span class="parametername">newLink</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingResult.html">RoadNetworkEditingResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_AddMainLane_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.AddMainLane*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_AddMainLane_RnRoad_RnLane_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.AddMainLane(RnRoad,RnLane)">AddMainLane(RnRoad, RnLane)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult AddMainLane(RnRoad link, RnLane newLane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RnRoad</span></td>
         <td><span class="parametername">link</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">idx</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">RoadNetworkLane</span></td>
+        <td><span class="xref">RnLane</span></td>
         <td><span class="parametername">newLane</span></td>
         <td></td>
       </tr>
@@ -182,13 +224,13 @@ EditingSystemのサブクラスに移動するかも</p>
   </table>
   
   
-  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_AddPoint_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.AddPoint*"></a>
-  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_AddPoint_RoadNetworkWay_System_Int32_RoadNetworkPoint_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.AddPoint(RoadNetworkWay,System.Int32,RoadNetworkPoint)">AddPoint(RoadNetworkWay, Int32, RoadNetworkPoint)</h4>
+  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_AddNode_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.AddNode*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_AddNode_RnModel_System_Int32_RnIntersection_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.AddNode(RnModel,System.Int32,RnIntersection)">AddNode(RnModel, Int32, RnIntersection)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult AddPoint(RoadNetworkWay way, int idx, RoadNetworkPoint point)</code></pre>
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult AddNode(RnModel parent, int idx, RnIntersection newNode)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -201,7 +243,59 @@ EditingSystemのサブクラスに移動するかも</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RoadNetworkWay</span></td>
+        <td><span class="xref">RnModel</span></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">RnIntersection</span></td>
+        <td><span class="parametername">newNode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingResult.html">RoadNetworkEditingResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_AddPoint_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.AddPoint*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_AddPoint_RnWay_System_Int32_RnPoint_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.AddPoint(RnWay,System.Int32,RnPoint)">AddPoint(RnWay, Int32, RnPoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult AddPoint(RnWay way, int idx, RnPoint point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RnWay</span></td>
         <td><span class="parametername">way</span></td>
         <td></td>
       </tr>
@@ -211,7 +305,7 @@ EditingSystemのサブクラスに移動するかも</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">RoadNetworkPoint</span></td>
+        <td><span class="xref">RnPoint</span></td>
         <td><span class="parametername">point</span></td>
         <td></td>
       </tr>
@@ -235,12 +329,12 @@ EditingSystemのサブクラスに移動するかも</p>
   
   
   <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_MovePoint_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.MovePoint*"></a>
-  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_MovePoint_RoadNetworkPoint_Vector3__" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.MovePoint(RoadNetworkPoint,Vector3@)">MovePoint(RoadNetworkPoint, in Vector3)</h4>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_MovePoint_RnPoint_Vector3__" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.MovePoint(RnPoint,Vector3@)">MovePoint(RnPoint, in Vector3)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult MovePoint(RoadNetworkPoint point, in Vector3 newPos)</code></pre>
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult MovePoint(RnPoint point, in Vector3 newPos)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -253,7 +347,7 @@ EditingSystemのサブクラスに移動するかも</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RoadNetworkPoint</span></td>
+        <td><span class="xref">RnPoint</span></td>
         <td><span class="parametername">point</span></td>
         <td></td>
       </tr>
@@ -282,12 +376,12 @@ EditingSystemのサブクラスに移動するかも</p>
   
   
   <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation*"></a>
-  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_RoadNetworkBlock_PLATEAU_Editor_RoadNetwork_RoadNetworkRegulationElemet_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation(RoadNetworkBlock,PLATEAU.Editor.RoadNetwork.RoadNetworkRegulationElemet)">RegisterRegulation(RoadNetworkBlock, RoadNetworkRegulationElemet)</h4>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_RnBlock_PLATEAU_Editor_RoadNetwork_RoadNetworkRegulationElemet_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation(RnBlock,PLATEAU.Editor.RoadNetwork.RoadNetworkRegulationElemet)">RegisterRegulation(RnBlock, RoadNetworkRegulationElemet)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RegisterRegulation(RoadNetworkBlock block, RoadNetworkRegulationElemet newRegulation)</code></pre>
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RegisterRegulation(RnBlock block, RoadNetworkRegulationElemet newRegulation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -300,7 +394,7 @@ EditingSystemのサブクラスに移動するかも</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RoadNetworkBlock</span></td>
+        <td><span class="xref">RnBlock</span></td>
         <td><span class="parametername">block</span></td>
         <td></td>
       </tr>
@@ -329,12 +423,12 @@ EditingSystemのサブクラスに移動するかも</p>
   
   
   <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation*"></a>
-  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_RoadNetworkLane_PLATEAU_Editor_RoadNetwork_RoadNetworkRegulationElemet_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation(RoadNetworkLane,PLATEAU.Editor.RoadNetwork.RoadNetworkRegulationElemet)">RegisterRegulation(RoadNetworkLane, RoadNetworkRegulationElemet)</h4>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_RnLane_PLATEAU_Editor_RoadNetwork_RoadNetworkRegulationElemet_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation(RnLane,PLATEAU.Editor.RoadNetwork.RoadNetworkRegulationElemet)">RegisterRegulation(RnLane, RoadNetworkRegulationElemet)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RegisterRegulation(RoadNetworkLane lane, RoadNetworkRegulationElemet newRegulation)</code></pre>
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RegisterRegulation(RnLane lane, RoadNetworkRegulationElemet newRegulation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -347,7 +441,7 @@ EditingSystemのサブクラスに移動するかも</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RoadNetworkLane</span></td>
+        <td><span class="xref">RnLane</span></td>
         <td><span class="parametername">lane</span></td>
         <td></td>
       </tr>
@@ -376,12 +470,12 @@ EditingSystemのサブクラスに移動するかも</p>
   
   
   <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation*"></a>
-  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_RoadNetworkLink_PLATEAU_Editor_RoadNetwork_RoadNetworkRegulationElemet_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation(RoadNetworkLink,PLATEAU.Editor.RoadNetwork.RoadNetworkRegulationElemet)">RegisterRegulation(RoadNetworkLink, RoadNetworkRegulationElemet)</h4>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_RnRoad_PLATEAU_Editor_RoadNetwork_RoadNetworkRegulationElemet_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation(RnRoad,PLATEAU.Editor.RoadNetwork.RoadNetworkRegulationElemet)">RegisterRegulation(RnRoad, RoadNetworkRegulationElemet)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RegisterRegulation(RoadNetworkLink link, RoadNetworkRegulationElemet newRegulation)</code></pre>
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RegisterRegulation(RnRoad link, RoadNetworkRegulationElemet newRegulation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -394,7 +488,7 @@ EditingSystemのサブクラスに移動するかも</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RoadNetworkLink</span></td>
+        <td><span class="xref">RnRoad</span></td>
         <td><span class="parametername">link</span></td>
         <td></td>
       </tr>
@@ -422,13 +516,13 @@ EditingSystemのサブクラスに移動するかも</p>
   </table>
   
   
-  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation*"></a>
-  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RegisterRegulation_RoadNetworkTrack_PLATEAU_Editor_RoadNetwork_RoadNetworkRegulationElemet_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RegisterRegulation(RoadNetworkTrack,PLATEAU.Editor.RoadNetwork.RoadNetworkRegulationElemet)">RegisterRegulation(RoadNetworkTrack, RoadNetworkRegulationElemet)</h4>
+  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RemoveLink_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RemoveLink*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RemoveLink_RnModel_RnRoad_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RemoveLink(RnModel,RnRoad)">RemoveLink(RnModel, RnRoad)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RegisterRegulation(RoadNetworkTrack track, RoadNetworkRegulationElemet newRegulation)</code></pre>
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RemoveLink(RnModel parent, RnRoad link)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -441,13 +535,13 @@ EditingSystemのサブクラスに移動するかも</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RoadNetworkTrack</span></td>
-        <td><span class="parametername">track</span></td>
+        <td><span class="xref">RnModel</span></td>
+        <td><span class="parametername">parent</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkRegulationElemet.html">RoadNetworkRegulationElemet</a></td>
-        <td><span class="parametername">newRegulation</span></td>
+        <td><span class="xref">RnRoad</span></td>
+        <td><span class="parametername">link</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -469,13 +563,13 @@ EditingSystemのサブクラスに移動するかも</p>
   </table>
   
   
-  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RemoveLane_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RemoveLane*"></a>
-  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RemoveLane_RoadNetworkLink_RoadNetworkLane_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RemoveLane(RoadNetworkLink,RoadNetworkLane)">RemoveLane(RoadNetworkLink, RoadNetworkLane)</h4>
+  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RemoveMainLane_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RemoveMainLane*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RemoveMainLane_RnRoad_RnLane_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RemoveMainLane(RnRoad,RnLane)">RemoveMainLane(RnRoad, RnLane)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RemoveLane(RoadNetworkLink link, RoadNetworkLane lane)</code></pre>
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RemoveMainLane(RnRoad link, RnLane lane)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -488,13 +582,60 @@ EditingSystemのサブクラスに移動するかも</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RoadNetworkLink</span></td>
+        <td><span class="xref">RnRoad</span></td>
         <td><span class="parametername">link</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">RoadNetworkLane</span></td>
+        <td><span class="xref">RnLane</span></td>
         <td><span class="parametername">lane</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingResult.html">RoadNetworkEditingResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RemoveNode_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RemoveNode*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RemoveNode_RnModel_RnIntersection_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RemoveNode(RnModel,RnIntersection)">RemoveNode(RnModel, RnIntersection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RemoveNode(RnModel parent, RnIntersection node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RnModel</span></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">RnIntersection</span></td>
+        <td><span class="parametername">node</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -517,12 +658,12 @@ EditingSystemのサブクラスに移動するかも</p>
   
   
   <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RemovePoint_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RemovePoint*"></a>
-  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RemovePoint_RoadNetworkWay_RoadNetworkPoint_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RemovePoint(RoadNetworkWay,RoadNetworkPoint)">RemovePoint(RoadNetworkWay, RoadNetworkPoint)</h4>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_RemovePoint_RnWay_RnPoint_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.RemovePoint(RnWay,RnPoint)">RemovePoint(RnWay, RnPoint)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RemovePoint(RoadNetworkWay way, RoadNetworkPoint point)</code></pre>
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult RemovePoint(RnWay way, RnPoint point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -535,12 +676,12 @@ EditingSystemのサブクラスに移動するかも</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RoadNetworkWay</span></td>
+        <td><span class="xref">RnWay</span></td>
         <td><span class="parametername">way</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">RoadNetworkPoint</span></td>
+        <td><span class="xref">RnPoint</span></td>
         <td><span class="parametername">point</span></td>
         <td></td>
       </tr>
@@ -564,12 +705,12 @@ EditingSystemのサブクラスに移動するかも</p>
   
   
   <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_ScaleRoadWidth_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.ScaleRoadWidth*"></a>
-  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_ScaleRoadWidth_RoadNetworkLane_System_Single_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.ScaleRoadWidth(RoadNetworkLane,System.Single)">ScaleRoadWidth(RoadNetworkLane, Single)</h4>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_ScaleRoadWidth_RnLane_System_Single_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.ScaleRoadWidth(RnLane,System.Single)">ScaleRoadWidth(RnLane, Single)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult ScaleRoadWidth(RoadNetworkLane lane, float factor)</code></pre>
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult ScaleRoadWidth(RnLane lane, float factor)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -582,7 +723,7 @@ EditingSystemのサブクラスに移動するかも</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RoadNetworkLane</span></td>
+        <td><span class="xref">RnLane</span></td>
         <td><span class="parametername">lane</span></td>
         <td></td>
       </tr>
@@ -611,12 +752,12 @@ EditingSystemのサブクラスに移動するかも</p>
   
   
   <a id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_ScaleRoadWidth_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.ScaleRoadWidth*"></a>
-  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_ScaleRoadWidth_RoadNetworkLink_System_Single_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.ScaleRoadWidth(RoadNetworkLink,System.Single)">ScaleRoadWidth(RoadNetworkLink, Single)</h4>
+  <h4 id="PLATEAU_Editor_RoadNetwork_RoadNetworkEditingSystem_RoadNetworkEditorOperation_ScaleRoadWidth_RnRoad_System_Single_" data-uid="PLATEAU.Editor.RoadNetwork.RoadNetworkEditingSystem.RoadNetworkEditorOperation.ScaleRoadWidth(RnRoad,System.Single)">ScaleRoadWidth(RnRoad, Single)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult ScaleRoadWidth(RoadNetworkLink link, float factor)</code></pre>
+    <pre><code class="lang-csharp hljs">public RoadNetworkEditingResult ScaleRoadWidth(RnRoad link, float factor)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -629,7 +770,7 @@ EditingSystemのサブクラスに移動するかも</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RoadNetworkLink</span></td>
+        <td><span class="xref">RnRoad</span></td>
         <td><span class="parametername">link</span></td>
         <td></td>
       </tr>

@@ -124,6 +124,69 @@
   </h3>
   
   
+  <a id="PLATEAU_Util_ListUtil_FindMinIndex_" data-uid="PLATEAU.Util.ListUtil.FindMinIndex*"></a>
+  <h4 id="PLATEAU_Util_ListUtil_FindMinIndex__1_IReadOnlyList___0__Comparer___0__" data-uid="PLATEAU.Util.ListUtil.FindMinIndex``1(IReadOnlyList{``0},Comparer{``0})">FindMinIndex&lt;T&gt;(IReadOnlyList&lt;T&gt;, Comparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>compareで比較して最小のindexを返す.同値のものがある場合は最初のものを返す.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FindMinIndex&lt;T&gt;(this IReadOnlyList&lt;T&gt; self, Comparer&lt;T&gt; compare)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;T&gt;</td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Comparer</span>&lt;T&gt;</td>
+        <td><span class="parametername">compare</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_Util_ListUtil_IndexIn_" data-uid="PLATEAU.Util.ListUtil.IndexIn*"></a>
   <h4 id="PLATEAU_Util_ListUtil_IndexIn__1_IList___0__System_Int32_" data-uid="PLATEAU.Util.ListUtil.IndexIn``1(IList{``0},System.Int32)">IndexIn&lt;T&gt;(IList&lt;T&gt;, Int32)</h4>
   <div class="markdown level1 summary"><p>return index &gt;= 0 and index &lt; self.Count;</p>
@@ -166,6 +229,64 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_ListUtil_Reversed_" data-uid="PLATEAU.Util.ListUtil.Reversed*"></a>
+  <h4 id="PLATEAU_Util_ListUtil_Reversed__1_IList___0__" data-uid="PLATEAU.Util.ListUtil.Reversed``1(IList{``0})">Reversed&lt;T&gt;(IList&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>LinqのReverseは遅いので自前で実装</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; Reversed&lt;T&gt;(this IList&lt;T&gt; self)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IList</span>&lt;T&gt;</td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
         <td></td>
       </tr>
     </tbody>
