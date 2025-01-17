@@ -495,12 +495,14 @@ radiusで判定に余裕を持たせる
   
   <a id="PLATEAU_Util_GeoGraph_LineUtil_GetLineSegmentLerpPoint_" data-uid="PLATEAU.Util.GeoGraph.LineUtil.GetLineSegmentLerpPoint*"></a>
   <h4 id="PLATEAU_Util_GeoGraph_LineUtil_GetLineSegmentLerpPoint_IReadOnlyList_Vector3__System_Single_Vector3__" data-uid="PLATEAU.Util.GeoGraph.LineUtil.GetLineSegmentLerpPoint(IReadOnlyList{Vector3},System.Single,Vector3@)">GetLineSegmentLerpPoint(IReadOnlyList&lt;Vector3&gt;, Single, out Vector3)</h4>
-  <div class="markdown level1 summary"><p>線分の距離をp : (1-p)で分割した点をmidPointに入れて返す. 戻り値は midPointを含む線分のインデックス(i ~ i+1の線分上にmidPointがある) </p>
+  <div class="markdown level1 summary"><p>verticesを頂点とした連続した線分に対して, 
+前半と後半の長さがp : (1-p)でとなるをmidPointに入れて返す.
+戻り値は midPointを含む線分のインデックスがfloatで返る. 空頂点だと-1が返る</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GetLineSegmentLerpPoint(IReadOnlyList&lt;Vector3&gt; vertices, float p, out Vector3 midPoint)</code></pre>
+    <pre><code class="lang-csharp hljs">public static float GetLineSegmentLerpPoint(IReadOnlyList&lt;Vector3&gt; vertices, float p, out Vector3 midPoint)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -539,7 +541,7 @@ radiusで判定に余裕を持たせる
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Single</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -555,7 +557,7 @@ verticesが空の時は-1が返る</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GetLineSegmentMidPoint(IReadOnlyList&lt;Vector3&gt; vertices, out Vector3 midPoint)</code></pre>
+    <pre><code class="lang-csharp hljs">public static float GetLineSegmentMidPoint(IReadOnlyList&lt;Vector3&gt; vertices, out Vector3 midPoint)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -589,7 +591,7 @@ verticesが空の時は-1が返る</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Single</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -862,6 +864,31 @@ verticesが空の時は-1が返る</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_LineUtil_IsMouseDown_" data-uid="PLATEAU.Util.GeoGraph.LineUtil.IsMouseDown*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_LineUtil_IsMouseDown" data-uid="PLATEAU.Util.GeoGraph.LineUtil.IsMouseDown">IsMouseDown()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsMouseDown()</code></pre>
+  </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>

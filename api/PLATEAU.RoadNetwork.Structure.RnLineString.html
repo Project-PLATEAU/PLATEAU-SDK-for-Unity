@@ -169,76 +169,29 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="fields">Fields
-  </h3>
   
   
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineString_DefaultDegEpsilon" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.DefaultDegEpsilon">DefaultDegEpsilon</h4>
+  <a id="PLATEAU_RoadNetwork_Structure_RnLineString__ctor_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.#ctor*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineString__ctor_System_Int32_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.#ctor(System.Int32)">RnLineString(Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const float DefaultDegEpsilon = 0.5F</code></pre>
+    <pre><code class="lang-csharp hljs">public RnLineString(int initialSize)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineString_DefaultDistanceEpsilon" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.DefaultDistanceEpsilon">DefaultDistanceEpsilon</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const float DefaultDistanceEpsilon = 0F</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineString_DefaultMidPointTolerance" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.DefaultMidPointTolerance">DefaultMidPointTolerance</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const float DefaultMidPointTolerance = 0.3F</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">initialSize</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -303,7 +256,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 this[int index] { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector3 this[int index] { get; set; }</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -548,6 +501,54 @@
   </table>
   
   
+  <a id="PLATEAU_RoadNetwork_Structure_RnLineString_CalcLength_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.CalcLength*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineString_CalcLength_System_Single_System_Single_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.CalcLength(System.Single,System.Single)">CalcLength(Single, Single)</h4>
+  <div class="markdown level1 summary"><p>startPointIndex -&gt; endPointIndexまでの長さを計算する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CalcLength(float startPointIndex, float endPointIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">startPointIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">endPointIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_RoadNetwork_Structure_RnLineString_Clone_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.Clone*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnLineString_Clone_System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.Clone(System.Boolean)">Clone(Boolean)</h4>
   <div class="markdown level1 summary"><p>自身のコピーを作成する.
@@ -556,7 +557,7 @@ clonePoint : 頂点もコピーするかどうか</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RnLineString Clone(bool cloneVertex = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public RnLineString Clone(bool cloneVertex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -700,12 +701,12 @@ degEpsilon : 3点が同一直線上にあるときの角度誤差. 180±degEpsil
   
   
   <a id="PLATEAU_RoadNetwork_Structure_RnLineString_Create_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.Create*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineString_Create_IEnumerable_Vector3__" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.Create(IEnumerable{Vector3})">Create(IEnumerable&lt;Vector3&gt;)</h4>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineString_Create_IEnumerable_Vector3__System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.Create(IEnumerable{Vector3},System.Boolean)">Create(IEnumerable&lt;Vector3&gt;, Boolean)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static RnLineString Create(IEnumerable&lt;Vector3&gt; vertices)</code></pre>
+    <pre><code class="lang-csharp hljs">public static RnLineString Create(IEnumerable&lt;Vector3&gt; vertices, bool removeDuplicate = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -720,6 +721,11 @@ degEpsilon : 3点が同一直線上にあるときの角度誤差. 180±degEpsil
       <tr>
         <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Vector3</span>&gt;</td>
         <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">removeDuplicate</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -793,7 +799,7 @@ degEpsilon : 3点が同一直線上にあるときの角度誤差. 180±degEpsil
   <a id="PLATEAU_RoadNetwork_Structure_RnLineString_GetEdgeNormal_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.GetEdgeNormal*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnLineString_GetEdgeNormal_System_Int32_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.GetEdgeNormal(System.Int32)">GetEdgeNormal(Int32)</h4>
   <div class="markdown level1 summary"><p>頂点 startVertexIndex, startVertexIndex + 1で構成される辺の法線ベクトルを返す
-上(Vector3.up)から見て半時計回りを向いている. . 正規化はされていない</p>
+上(Vector3.up)から見て半時計回りを向いている. 正規化済み</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -861,7 +867,8 @@ degEpsilon : 3点が同一直線上にあるときの角度誤差. 180±degEpsil
   
   <a id="PLATEAU_RoadNetwork_Structure_RnLineString_GetVertexNormal_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.GetVertexNormal*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnLineString_GetVertexNormal_System_Int32_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.GetVertexNormal(System.Int32)">GetVertexNormal(Int32)</h4>
-  <div class="markdown level1 summary"><p>頂点の法線ベクトルを返す. キャッシュ化されており, DirtyFlagをtrueにすると再計算される</p>
+  <div class="markdown level1 summary"><p>頂点 vertexIndex -&gt; vertexIndex, vertexIndex -&gt; vertexIndex + 1の方向に対して
+道の外側を向いている法線ベクトルの平均を返す.正規化済み.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1005,13 +1012,13 @@ rateSelector : 分割線分の長さを取得する関数.numでちょうど1に
   
   
   <a id="PLATEAU_RoadNetwork_Structure_RnLineString_SplitByIndex_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.SplitByIndex*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineString_SplitByIndex_System_Single_PLATEAU_RoadNetwork_Structure_RnLineString__PLATEAU_RoadNetwork_Structure_RnLineString__" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.SplitByIndex(System.Single,PLATEAU.RoadNetwork.Structure.RnLineString@,PLATEAU.RoadNetwork.Structure.RnLineString@)">SplitByIndex(Single, out RnLineString, out RnLineString)</h4>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineString_SplitByIndex_System_Single_PLATEAU_RoadNetwork_Structure_RnLineString__PLATEAU_RoadNetwork_Structure_RnLineString__Func_Vector3_PLATEAU_RoadNetwork_Structure_RnPoint__" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.SplitByIndex(System.Single,PLATEAU.RoadNetwork.Structure.RnLineString@,PLATEAU.RoadNetwork.Structure.RnLineString@,Func{Vector3,PLATEAU.RoadNetwork.Structure.RnPoint})">SplitByIndex(Single, out RnLineString, out RnLineString, Func&lt;Vector3, RnPoint&gt;)</h4>
   <div class="markdown level1 summary"><p>index指定で前半/後半に分割したLineStringを返す(非破壊)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool SplitByIndex(float index, out RnLineString front, out RnLineString back)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool SplitByIndex(float index, out RnLineString front, out RnLineString back, Func&lt;Vector3, RnPoint&gt; createPoint = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1036,6 +1043,11 @@ rateSelector : 分割線分の長さを取得する関数.numでちょうど1に
       <tr>
         <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
         <td><span class="parametername">back</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Vector3</span>, <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnPoint.html">RnPoint</a>&gt;</td>
+        <td><span class="parametername">createPoint</span></td>
         <td></td>
       </tr>
     </tbody>

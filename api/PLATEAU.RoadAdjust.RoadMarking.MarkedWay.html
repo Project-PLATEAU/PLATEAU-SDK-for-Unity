@@ -83,7 +83,7 @@
   
   <h1 id="PLATEAU_RoadAdjust_RoadMarking_MarkedWay" data-uid="PLATEAU.RoadAdjust.RoadMarking.MarkedWay" class="text-break">Class MarkedWay
   </h1>
-  <div class="markdown level0 summary"><p><see cref="!:RnWay"></see>を拡張し、道路に車線の線を描くための情報を追加したクラスです。</p>
+  <div class="markdown level0 summary"><p>路面標示の線1つを表現するクラスです。</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -126,12 +126,12 @@
   
   
   <a id="PLATEAU_RoadAdjust_RoadMarking_MarkedWay__ctor_" data-uid="PLATEAU.RoadAdjust.RoadMarking.MarkedWay.#ctor*"></a>
-  <h4 id="PLATEAU_RoadAdjust_RoadMarking_MarkedWay__ctor_RnWay_PLATEAU_RoadAdjust_RoadMarking_MarkedWayType_System_Boolean_" data-uid="PLATEAU.RoadAdjust.RoadMarking.MarkedWay.#ctor(RnWay,PLATEAU.RoadAdjust.RoadMarking.MarkedWayType,System.Boolean)">MarkedWay(RnWay, MarkedWayType, Boolean)</h4>
+  <h4 id="PLATEAU_RoadAdjust_RoadMarking_MarkedWay__ctor_PLATEAU_RoadAdjust_RoadMarking_MWLine_PLATEAU_RoadAdjust_RoadMarking_MarkedWayType_System_Boolean_" data-uid="PLATEAU.RoadAdjust.RoadMarking.MarkedWay.#ctor(PLATEAU.RoadAdjust.RoadMarking.MWLine,PLATEAU.RoadAdjust.RoadMarking.MarkedWayType,System.Boolean)">MarkedWay(MWLine, MarkedWayType, Boolean)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MarkedWay(RnWay way, MarkedWayType type, bool isReversed)</code></pre>
+    <pre><code class="lang-csharp hljs">public MarkedWay(MWLine line, MarkedWayType type, bool isReversed)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -144,8 +144,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RnWay</span></td>
-        <td><span class="parametername">way</span></td>
+        <td><a class="xref" href="PLATEAU.RoadAdjust.RoadMarking.MWLine.html">MWLine</a></td>
+        <td><span class="parametername">line</span></td>
         <td></td>
       </tr>
       <tr>
@@ -189,6 +189,31 @@
   </table>
   
   
+  <a id="PLATEAU_RoadAdjust_RoadMarking_MarkedWay_Line_" data-uid="PLATEAU.RoadAdjust.RoadMarking.MarkedWay.Line*"></a>
+  <h4 id="PLATEAU_RoadAdjust_RoadMarking_MarkedWay_Line" data-uid="PLATEAU.RoadAdjust.RoadMarking.MarkedWay.Line">Line</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MWLine Line { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadAdjust.RoadMarking.MWLine.html">MWLine</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_RoadAdjust_RoadMarking_MarkedWay_Type_" data-uid="PLATEAU.RoadAdjust.RoadMarking.MarkedWay.Type*"></a>
   <h4 id="PLATEAU_RoadAdjust_RoadMarking_MarkedWay_Type" data-uid="PLATEAU.RoadAdjust.RoadMarking.MarkedWay.Type">Type</h4>
   <div class="markdown level1 summary"></div>
@@ -212,27 +237,31 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
   
   
-  <a id="PLATEAU_RoadAdjust_RoadMarking_MarkedWay_Way_" data-uid="PLATEAU.RoadAdjust.RoadMarking.MarkedWay.Way*"></a>
-  <h4 id="PLATEAU_RoadAdjust_RoadMarking_MarkedWay_Way" data-uid="PLATEAU.RoadAdjust.RoadMarking.MarkedWay.Way">Way</h4>
+  <a id="PLATEAU_RoadAdjust_RoadMarking_MarkedWay_Translate_" data-uid="PLATEAU.RoadAdjust.RoadMarking.MarkedWay.Translate*"></a>
+  <h4 id="PLATEAU_RoadAdjust_RoadMarking_MarkedWay_Translate_Vector3_" data-uid="PLATEAU.RoadAdjust.RoadMarking.MarkedWay.Translate(Vector3)">Translate(Vector3)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RnWay Way { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public void Translate(Vector3 diff)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RnWay</span></td>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">diff</span></td>
         <td></td>
       </tr>
     </tbody>

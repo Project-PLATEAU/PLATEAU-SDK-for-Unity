@@ -301,7 +301,8 @@
   
   <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_ComputeConvexVolume_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeConvexVolume*"></a>
   <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_ComputeConvexVolume__1_IEnumerable___0__Func___0_Vector3__PLATEAU_Util_GeoGraph_AxisPlane_System_Single_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.ComputeConvexVolume``1(IEnumerable{``0},Func{``0,Vector3},PLATEAU.Util.GeoGraph.AxisPlane,System.Single)">ComputeConvexVolume&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Vector3&gt;, AxisPlane, Single)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>凸包を計算する. 戻り値の0番,^1番は同じものが入る</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1004,6 +1005,54 @@ key : 元の頂点, value : 近い頂点のうち最初に見つかったもの<
   </table>
   
   
+  <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_IsInsidePolygon_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.IsInsidePolygon*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_IsInsidePolygon_Vector2_IList_Vector2__" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.IsInsidePolygon(Vector2,IList{Vector2})">IsInsidePolygon(Vector2, IList&lt;Vector2&gt;)</h4>
+  <div class="markdown level1 summary"><p>pointがverticesで構成される多角形の内部にあるかどうかを返す. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInsidePolygon(Vector2 point, IList&lt;Vector2&gt; vertices)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<span class="xref">Vector2</span>&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_LerpRay_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.LerpRay*"></a>
   <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_LerpRay_Ray2D_Ray2D_System_Single_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.LerpRay(Ray2D,Ray2D,System.Single)">LerpRay(Ray2D, Ray2D, Single)</h4>
   <div class="markdown level1 summary"><p>直線l上の点から直線a,bへの距離がp : 1-pとなるような直線lを返す
@@ -1329,11 +1378,21 @@ a \ | / b
   
   <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_RemoveSelfCrossing_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.RemoveSelfCrossing*"></a>
   <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_RemoveSelfCrossing__1_List___0__Func___0_Vector2__Func___0___0___0___0_Vector2_System_Single_System_Single___0__" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.RemoveSelfCrossing``1(List{``0},Func{``0,Vector2},Func{``0,``0,``0,``0,Vector2,System.Single,System.Single,``0})">RemoveSelfCrossing&lt;T&gt;(List&lt;T&gt;, Func&lt;T, Vector2&gt;, Func&lt;T, T, T, T, Vector2, Single, Single, T&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>pointsで表現された線分リストが自己交差している場合,その部分を削除する
+4--5
+|  |
+3------2
+ |   |
+ 6   1
+↑の様な線分だと以下のようになる
+ 3---2
+ |   |
+ 4   1</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RemoveSelfCrossing&lt;T&gt;(List&lt;T&gt; self, Func&lt;T, Vector2&gt; selector, Func&lt;T, T, T, T, Vector2, float, float, T&gt; creator)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void RemoveSelfCrossing&lt;T&gt;(List&lt;T&gt; points, Func&lt;T, Vector2&gt; selector, Func&lt;T, T, T, T, Vector2, float, float, T&gt; creator)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1347,7 +1406,7 @@ a \ | / b
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;T&gt;</td>
-        <td><span class="parametername">self</span></td>
+        <td><span class="parametername">points</span></td>
         <td></td>
       </tr>
       <tr>
@@ -1358,7 +1417,8 @@ a \ | / b
       <tr>
         <td><span class="xref">Func</span>&lt;T, T, T, T, <span class="xref">Vector2</span>, <span class="xref">System.Single</span>, <span class="xref">System.Single</span>, T&gt;</td>
         <td><span class="parametername">creator</span></td>
-        <td></td>
+        <td><p>交点に新しい点を作成する関数.　p1-p2の線分, p3-p4の線分と交点intersection,  (p1, p2, p3, p4, intersection, t1, t2) -&gt; T</p>
+</td>
       </tr>
     </tbody>
   </table>

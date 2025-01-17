@@ -94,6 +94,9 @@
 </section>
       <h4><a class="xref" href="PLATEAU.Util.DebugEx.html">DebugEx</a></h4>
       <section></section>
+      <h4><a class="xref" href="PLATEAU.Util.DebugTimer.html">DebugTimer</a></h4>
+      <section><p>Editor専用. usingでくくられた間の処理速度を計測する</p>
+</section>
       <h4><a class="xref" href="PLATEAU.Util.DebugUtil.html">DebugUtil</a></h4>
       <section></section>
       <h4><a class="xref" href="PLATEAU.Util.Dialogue.html">Dialogue</a></h4>
@@ -110,6 +113,8 @@ Runtimeの場合に代わりにログを出力します。</p>
       <h4><a class="xref" href="PLATEAU.Util.DummyProgressDisplay.html">DummyProgressDisplay</a></h4>
       <section></section>
       <h4><a class="xref" href="PLATEAU.Util.EnumerableUtil.html">EnumerableUtil</a></h4>
+      <section></section>
+      <h4><a class="xref" href="PLATEAU.Util.EnumEx.html">EnumEx</a></h4>
       <section></section>
       <h4><a class="xref" href="PLATEAU.Util.EnumUtil.html">EnumUtil</a></h4>
       <section></section>
@@ -131,8 +136,10 @@ Editorでない場合、何もしません。
 指定しない場合は空文字列がデフォルトになります。</p>
 </section>
       <h4><a class="xref" href="PLATEAU.Util.ProgressDisplayDialogue.html">ProgressDisplayDialogue</a></h4>
-      <section><p>Editorの場合、ダイアログで進捗を表示します。Dispose時にダイアログを閉じます。
-Runtimeの場合、何もしません。</p>
+      <section><p>Editorの場合、ダイアログで進捗を表示します。
+Runtimeの場合、何もしません。
+Dispose時にダイアログを閉じるので、閉じるために利用時に using var progressDisplay = new ProgressDisplayDialogue(); のように
+usingを付けてください。付け忘れるとダイアログが閉じません。</p>
 </section>
       <h4><a class="xref" href="PLATEAU.Util.QuaternionUtil.html">QuaternionUtil</a></h4>
       <section></section>

@@ -124,6 +124,54 @@
   </h3>
   
   
+  <a id="PLATEAU_Util_GeoGraph_LineSegment3DEx_GetDistance_" data-uid="PLATEAU.Util.GeoGraph.LineSegment3DEx.GetDistance*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_LineSegment3DEx_GetDistance_PLATEAU_Util_GeoGraph_LineSegment3D_Vector3_" data-uid="PLATEAU.Util.GeoGraph.LineSegment3DEx.GetDistance(PLATEAU.Util.GeoGraph.LineSegment3D,Vector3)">GetDistance(LineSegment3D, Vector3)</h4>
+  <div class="markdown level1 summary"><p>selfとvの距離を返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetDistance(this LineSegment3D self, Vector3 v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineSegment3D.html">LineSegment3D</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_Util_GeoGraph_LineSegment3DEx_GetNearestPoint_" data-uid="PLATEAU.Util.GeoGraph.LineSegment3DEx.GetNearestPoint*"></a>
   <h4 id="PLATEAU_Util_GeoGraph_LineSegment3DEx_GetNearestPoint_PLATEAU_Util_GeoGraph_LineSegment3D_Vector3_" data-uid="PLATEAU.Util.GeoGraph.LineSegment3DEx.GetNearestPoint(PLATEAU.Util.GeoGraph.LineSegment3D,Vector3)">GetNearestPoint(LineSegment3D, Vector3)</h4>
   <div class="markdown level1 summary"><p>点vから線分に対して最も近い点を返す</p>
@@ -174,7 +222,7 @@
   
   <a id="PLATEAU_Util_GeoGraph_LineSegment3DEx_GetNearestPoint_" data-uid="PLATEAU.Util.GeoGraph.LineSegment3DEx.GetNearestPoint*"></a>
   <h4 id="PLATEAU_Util_GeoGraph_LineSegment3DEx_GetNearestPoint_PLATEAU_Util_GeoGraph_LineSegment3D_Vector3_System_Single__" data-uid="PLATEAU.Util.GeoGraph.LineSegment3DEx.GetNearestPoint(PLATEAU.Util.GeoGraph.LineSegment3D,Vector3,System.Single@)">GetNearestPoint(LineSegment3D, Vector3, out Single)</h4>
-  <div class="markdown level1 summary"><p>tにはStartからの距離が入る</p>
+  <div class="markdown level1 summary"><p>点vから線分に対して最も近い点を返す.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -204,7 +252,8 @@
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">distanceFromStart</span></td>
-        <td></td>
+        <td><p>self.Startからの距離が入る</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -452,6 +501,166 @@
     <tbody>
       <tr>
         <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineSegment2D.html">LineSegment2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_LineSegment3DEx_TryHalfLineIntersectionBy2D_" data-uid="PLATEAU.Util.GeoGraph.LineSegment3DEx.TryHalfLineIntersectionBy2D*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_LineSegment3DEx_TryHalfLineIntersectionBy2D_PLATEAU_Util_GeoGraph_LineSegment3D_Vector3_Vector3_PLATEAU_Util_GeoGraph_AxisPlane_System_Single_Vector3__System_Single__System_Single__" data-uid="PLATEAU.Util.GeoGraph.LineSegment3DEx.TryHalfLineIntersectionBy2D(PLATEAU.Util.GeoGraph.LineSegment3D,Vector3,Vector3,PLATEAU.Util.GeoGraph.AxisPlane,System.Single,Vector3@,System.Single@,System.Single@)">TryHalfLineIntersectionBy2D(LineSegment3D, Vector3, Vector3, AxisPlane, Single, out Vector3, out Single, out Single)</h4>
+  <div class="markdown level1 summary"><p>selfと半直線(origin, dir)が交差するかチェック.
+ただし、planeで指定された平面に射影した状態での交差判定かつ、そのうえで平面の法線方向の差分がnormalTolerance以下の場合のみ交差と判定.
+normalToleranceが負数の時は無限大扱い</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryHalfLineIntersectionBy2D(this LineSegment3D self, Vector3 origin, Vector3 dir, AxisPlane plane, float normalTolerance, out Vector3 intersection, out float t1, out float t2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineSegment3D.html">LineSegment3D</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">origin</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">dir</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.AxisPlane.html">AxisPlane</a></td>
+        <td><span class="parametername">plane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">normalTolerance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">intersection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">t1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">t2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_LineSegment3DEx_TryLineIntersectionBy2D_" data-uid="PLATEAU.Util.GeoGraph.LineSegment3DEx.TryLineIntersectionBy2D*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_LineSegment3DEx_TryLineIntersectionBy2D_PLATEAU_Util_GeoGraph_LineSegment3D_Vector3_Vector3_PLATEAU_Util_GeoGraph_AxisPlane_System_Single_Vector3__System_Single__System_Single__" data-uid="PLATEAU.Util.GeoGraph.LineSegment3DEx.TryLineIntersectionBy2D(PLATEAU.Util.GeoGraph.LineSegment3D,Vector3,Vector3,PLATEAU.Util.GeoGraph.AxisPlane,System.Single,Vector3@,System.Single@,System.Single@)">TryLineIntersectionBy2D(LineSegment3D, Vector3, Vector3, AxisPlane, Single, out Vector3, out Single, out Single)</h4>
+  <div class="markdown level1 summary"><p>selfと直線(origin, dir)が交差するかチェック.
+ただし、planeで指定された平面に射影した状態での交差判定かつ、そのうえで平面の法線方向の差分がnormalTolerance以下の場合のみ交差と判定.
+normalToleranceが負数の時は無限大扱い</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryLineIntersectionBy2D(this LineSegment3D self, Vector3 origin, Vector3 dir, AxisPlane plane, float normalTolerance, out Vector3 intersection, out float t1, out float t2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.LineSegment3D.html">LineSegment3D</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">origin</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">dir</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.AxisPlane.html">AxisPlane</a></td>
+        <td><span class="parametername">plane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">normalTolerance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">intersection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">t1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">t2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>

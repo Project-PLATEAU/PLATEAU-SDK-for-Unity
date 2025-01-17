@@ -133,7 +133,8 @@
   
   
   <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_sideWalks" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.sideWalks">sideWalks</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>歩道情報</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -158,13 +159,13 @@
   </h3>
   
   
-  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_CityObjectGroup_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.CityObjectGroup*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_CityObjectGroup" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.CityObjectGroup">CityObjectGroup</h4>
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_ParentModel_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.ParentModel*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_ParentModel" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.ParentModel">ParentModel</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual PLATEAUCityObjectGroup CityObjectGroup { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public RnModel ParentModel { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -176,7 +177,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">PLATEAUCityObjectGroup</span></td>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnModel.html">RnModel</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -206,13 +207,41 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_TargetTrans_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.TargetTrans*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_TargetTrans" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.TargetTrans">TargetTrans</h4>
+  <div class="markdown level1 summary"><p>これに紐づくtranオブジェクトリスト(統合なので複数存在する場合がある)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PLATEAUCityObjectGroup&gt; TargetTrans { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">PLATEAUCityObjectGroup</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_AddSideWalk_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.AddSideWalk*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_AddSideWalk_PLATEAU_RoadNetwork_Structure_RnSideWalk_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.AddSideWalk(PLATEAU.RoadNetwork.Structure.RnSideWalk)">AddSideWalk(RnSideWalk)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>歩道sideWalkを追加する.
+sideWalkの親情報も書き換える</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -231,6 +260,87 @@
       <tr>
         <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnSideWalk.html">RnSideWalk</a></td>
         <td><span class="parametername">sideWalk</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_AddTargetTran_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.AddTargetTran*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_AddTargetTran_PLATEAUCityObjectGroup_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.AddTargetTran(PLATEAUCityObjectGroup)">AddTargetTran(PLATEAUCityObjectGroup)</h4>
+  <div class="markdown level1 summary"><p>対象のTargetTranを追加</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTargetTran(PLATEAUCityObjectGroup targetTran)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PLATEAUCityObjectGroup</span></td>
+        <td><span class="parametername">targetTran</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_AddTargetTrans_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.AddTargetTrans*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_AddTargetTrans_IEnumerable_PLATEAUCityObjectGroup__" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.AddTargetTrans(IEnumerable{PLATEAUCityObjectGroup})">AddTargetTrans(IEnumerable&lt;PLATEAUCityObjectGroup&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTargetTrans(IEnumerable&lt;PLATEAUCityObjectGroup&gt; targetTrans)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">PLATEAUCityObjectGroup</span>&gt;</td>
+        <td><span class="parametername">targetTrans</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_AllWays_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.AllWays*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_AllWays" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.AllWays">AllWays()</h4>
+  <div class="markdown level1 summary"><p>所属するすべてのWayを取得(重複の可能性あり)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;RnWay&gt; AllWays()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -272,7 +382,7 @@ removeFromModel=trueの場合、RnModelからも削除する</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;RnBorder&gt; GetBorders()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;RnWay&gt; GetBorders()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -284,21 +394,21 @@ removeFromModel=trueの場合、RnModelからも削除する</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnBorder.html">RnBorder</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_GetCenter_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.GetCenter*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_GetCenter" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.GetCenter">GetCenter()</h4>
-  <div class="markdown level1 summary"><p>selfの全頂点の重心を返す</p>
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_GetCentralVertex_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.GetCentralVertex*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_GetCentralVertex" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.GetCentralVertex">GetCentralVertex()</h4>
+  <div class="markdown level1 summary"><p>デバッグ用) その道路の中心を表す代表頂点を返す</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Vector3 GetCenter()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Vector3 GetCentralVertex()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -344,7 +454,9 @@ removeFromModel=trueの場合、RnModelからも削除する</p>
   
   <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_RemoveSideWalk_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.RemoveSideWalk*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_RemoveSideWalk_PLATEAU_RoadNetwork_Structure_RnSideWalk_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.RemoveSideWalk(PLATEAU.RoadNetwork.Structure.RnSideWalk)">RemoveSideWalk(RnSideWalk)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>歩道sideWalkを削除する.
+sideWalkの親情報は変更しない</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

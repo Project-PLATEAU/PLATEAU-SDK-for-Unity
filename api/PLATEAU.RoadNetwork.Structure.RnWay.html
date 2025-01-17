@@ -145,7 +145,8 @@
   
   <a id="PLATEAU_RoadNetwork_Structure_RnWay__ctor_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.#ctor*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnWay__ctor_PLATEAU_RoadNetwork_Structure_RnLineString_System_Boolean_System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.#ctor(PLATEAU.RoadNetwork.Structure.RnLineString,System.Boolean,System.Boolean)">RnWay(RnLineString, Boolean, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>RnWay生成</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -169,11 +170,72 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">isReversed</span></td>
-        <td></td>
+        <td><p>LineStringの向きが逆かどうか</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">isReverseNormal</span></td>
+        <td><p>法線が進行方向に対して左側か右側か. trueなら右側</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnWay__ctor_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.#ctor*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnWay__ctor_PLATEAU_RoadNetwork_Structure_RnWay_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.#ctor(PLATEAU.RoadNetwork.Structure.RnWay)">RnWay(RnWay)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RnWay(RnWay other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnWay__ctor_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.#ctor*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnWay__ctor_PLATEAU_RoadNetwork_Structure_RnWay_System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.#ctor(PLATEAU.RoadNetwork.Structure.RnWay,System.Boolean)">RnWay(RnWay, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RnWay(RnWay src, bool cloneVertex = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">cloneVertex</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -289,7 +351,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 this[int index] { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector3 this[int index] { get; set; }</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -357,7 +419,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;RnPoint&gt; Points { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;RnPoint&gt; Points { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -412,7 +474,7 @@ cloneVertexがtrueの時は頂点もクローンする</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RnWay Clone(bool cloneVertex = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public RnWay Clone(bool cloneVertex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -451,7 +513,7 @@ cloneVertexがtrueの時は頂点もクローンする</p>
   <a id="PLATEAU_RoadNetwork_Structure_RnWay_GetEdgeNormal_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.GetEdgeNormal*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnWay_GetEdgeNormal_System_Int32_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.GetEdgeNormal(System.Int32)">GetEdgeNormal(Int32)</h4>
   <div class="markdown level1 summary"><p>頂点 startVertexIndex, startVertexIndex + 1で構成される辺の法線ベクトルを返す
-道の外側を向いている. 正規化はされていない</p>
+道の外側を向いている. 正規化済み</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -587,13 +649,12 @@ cloneVertexがtrueの時は頂点もクローンする</p>
   
   <a id="PLATEAU_RoadNetwork_Structure_RnWay_GetLerpPoint_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.GetLerpPoint*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnWay_GetLerpPoint_System_Single_Vector3__" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.GetLerpPoint(System.Single,Vector3@)">GetLerpPoint(Single, out Vector3)</h4>
-  <div class="markdown level1 summary"><p>境界線の中央の点を返す
-線分の距離をp : (1-p)で分割した点をmidPointに入れて返す. 戻り値は midPointを含む線分のインデックス(i ~ i+1の線分上にmidPointがある) </p>
+  <div class="markdown level1 summary"><p>線分の距離をp : (1-p)で分割した点をmidPointに入れて返す. 戻り値は midPointを含む線分のインデックス(i ~ i+1の線分上にmidPointがある) </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int GetLerpPoint(float p, out Vector3 midPoint)</code></pre>
+    <pre><code class="lang-csharp hljs">public float GetLerpPoint(float p, out Vector3 midPoint)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -627,7 +688,7 @@ cloneVertexがtrueの時は頂点もクローンする</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Single</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -680,7 +741,7 @@ cloneVertexがtrueの時は頂点もクローンする</p>
   <a id="PLATEAU_RoadNetwork_Structure_RnWay_GetVertexNormal_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.GetVertexNormal*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnWay_GetVertexNormal_System_Int32_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.GetVertexNormal(System.Int32)">GetVertexNormal(Int32)</h4>
   <div class="markdown level1 summary"><p>頂点 vertexIndex -&gt; vertexIndex, vertexIndex -&gt; vertexIndex + 1の方向に対して
-道の外側を向いている法線ベクトルの平均を返す.正規化はされていない</p>
+道の外側を向いている法線ベクトルの平均を返す.正規化済み.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -795,14 +856,14 @@ cloneVertexがtrueの時は頂点もクローンする</p>
   </table>
   
   
-  <a id="PLATEAU_RoadNetwork_Structure_RnWay_IsSameLine_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.IsSameLine*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnWay_IsSameLine_PLATEAU_RoadNetwork_Structure_RnWay_System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.IsSameLine(PLATEAU.RoadNetwork.Structure.RnWay,System.Boolean)">IsSameLine(RnWay, Boolean)</h4>
-  <div class="markdown level1 summary"><p>同じ線分かどうか</p>
+  <a id="PLATEAU_RoadNetwork_Structure_RnWay_IsSameLineReference_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.IsSameLineReference*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnWay_IsSameLineReference_PLATEAU_RoadNetwork_Structure_RnWay_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.IsSameLineReference(PLATEAU.RoadNetwork.Structure.RnWay)">IsSameLineReference(RnWay)</h4>
+  <div class="markdown level1 summary"><p>同じ線分かどうか（参照を比較）</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsSameLine(RnWay other, bool onlyReferenceEqual = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsSameLineReference(RnWay other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -819,9 +880,89 @@ cloneVertexがtrueの時は頂点もクローンする</p>
         <td><span class="parametername">other</span></td>
         <td></td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">onlyReferenceEqual</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnWay_IsSameLineSequence_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.IsSameLineSequence*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnWay_IsSameLineSequence_PLATEAU_RoadNetwork_Structure_RnWay_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.IsSameLineSequence(PLATEAU.RoadNetwork.Structure.RnWay)">IsSameLineSequence(RnWay)</h4>
+  <div class="markdown level1 summary"><p>同じ線分かどうか（点配列の内容を比較）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSameLineSequence(RnWay other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnWay_IsSameLineSequenceReverse_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.IsSameLineSequenceReverse*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnWay_IsSameLineSequenceReverse_PLATEAU_RoadNetwork_Structure_RnWay_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.IsSameLineSequenceReverse(PLATEAU.RoadNetwork.Structure.RnWay)">IsSameLineSequenceReverse(RnWay)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSameLineSequenceReverse(RnWay other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a></td>
+        <td><span class="parametername">other</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1103,6 +1244,94 @@ insertNewPoint=trueの時はselfにも新しい点を追加する</p>
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnWay_SwitchIndex_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.SwitchIndex*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnWay_SwitchIndex_System_Int32_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.SwitchIndex(System.Int32)">SwitchIndex(Int32)</h4>
+  <div class="markdown level1 summary"><p>IsReversed ? Count - 1 - index : index
+LineStringとWayのインデックスの相互変換</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SwitchIndex(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnWay_SwitchIndex_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.SwitchIndex*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnWay_SwitchIndex_System_Single_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.SwitchIndex(System.Single)">SwitchIndex(Single)</h4>
+  <div class="markdown level1 summary"><p>IsReversed ? Count - 1 - index : index
+LineStringとWayのインデックスの相互変換(float版)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SwitchIndex(float index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -125,14 +125,34 @@
   </h3>
   
   
-  <a id="PLATEAU_RoadNetwork_Data_RoadNetworkDataGetter_GetBlocks_" data-uid="PLATEAU.RoadNetwork.Data.RoadNetworkDataGetter.GetBlocks*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Data_RoadNetworkDataGetter_GetBlocks" data-uid="PLATEAU.RoadNetwork.Data.RoadNetworkDataGetter.GetBlocks">GetBlocks()</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="PLATEAU_RoadNetwork_Data_RoadNetworkDataGetter_GenerateIdTable_" data-uid="PLATEAU.RoadNetwork.Data.RoadNetworkDataGetter.GenerateIdTable*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Data_RoadNetworkDataGetter_GenerateIdTable__1_IReadOnlyList___0__" data-uid="PLATEAU.RoadNetwork.Data.RoadNetworkDataGetter.GenerateIdTable``1(IReadOnlyList{``0})">GenerateIdTable&lt;_Type&gt;(IReadOnlyList&lt;_Type&gt;)</h4>
+  <div class="markdown level1 summary"><p>取得したデータ群からIDテーブルを生成する
+注意　要素数の増減があった時には再度テーブルを作成する必要がある</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;RnDataBlock&gt; GetBlocks()</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;_Type, RnID&lt;_Type&gt;&gt; GenerateIdTable&lt;_Type&gt;(IReadOnlyList&lt;_Type&gt; dataList)
+    where _Type : IPrimitiveData</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;_Type&gt;</td>
+        <td><span class="parametername">dataList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -143,7 +163,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Data.RnDataBlock.html">RnDataBlock</a>&gt;</td>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;_Type, <a class="xref" href="PLATEAU.RoadNetwork.Data.RnID-1.html">RnID</a>&lt;_Type&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">_Type</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -245,6 +280,106 @@
     <tbody>
       <tr>
         <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Data.RnDataRoadBase.html">RnDataRoadBase</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Data_RoadNetworkDataGetter_GetTrafficLightController_" data-uid="PLATEAU.RoadNetwork.Data.RoadNetworkDataGetter.GetTrafficLightController*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Data_RoadNetworkDataGetter_GetTrafficLightController" data-uid="PLATEAU.RoadNetwork.Data.RoadNetworkDataGetter.GetTrafficLightController">GetTrafficLightController()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;RnDataTrafficLightController&gt; GetTrafficLightController()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Data.RnDataTrafficLightController.html">RnDataTrafficLightController</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Data_RoadNetworkDataGetter_GetTrafficLights_" data-uid="PLATEAU.RoadNetwork.Data.RoadNetworkDataGetter.GetTrafficLights*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Data_RoadNetworkDataGetter_GetTrafficLights" data-uid="PLATEAU.RoadNetwork.Data.RoadNetworkDataGetter.GetTrafficLights">GetTrafficLights()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;RnDataTrafficLight&gt; GetTrafficLights()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Data.RnDataTrafficLight.html">RnDataTrafficLight</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Data_RoadNetworkDataGetter_GetTrafficSignalPattern_" data-uid="PLATEAU.RoadNetwork.Data.RoadNetworkDataGetter.GetTrafficSignalPattern*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Data_RoadNetworkDataGetter_GetTrafficSignalPattern" data-uid="PLATEAU.RoadNetwork.Data.RoadNetworkDataGetter.GetTrafficSignalPattern">GetTrafficSignalPattern()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;RnDataTrafficSignalPattern&gt; GetTrafficSignalPattern()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Data.RnDataTrafficSignalPattern.html">RnDataTrafficSignalPattern</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Data_RoadNetworkDataGetter_GetTrafficSignalPhase_" data-uid="PLATEAU.RoadNetwork.Data.RoadNetworkDataGetter.GetTrafficSignalPhase*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Data_RoadNetworkDataGetter_GetTrafficSignalPhase" data-uid="PLATEAU.RoadNetwork.Data.RoadNetworkDataGetter.GetTrafficSignalPhase">GetTrafficSignalPhase()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;RnDataTrafficSignalPhase&gt; GetTrafficSignalPhase()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Data.RnDataTrafficSignalPhase.html">RnDataTrafficSignalPhase</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

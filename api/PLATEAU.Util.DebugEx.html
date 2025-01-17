@@ -1102,6 +1102,59 @@
   </table>
   
   
+  <a id="PLATEAU_Util_DebugEx_DrawRay_" data-uid="PLATEAU.Util.DebugEx.DrawRay*"></a>
+  <h4 id="PLATEAU_Util_DebugEx_DrawRay_Vector3_Vector3_System_Nullable_Color__System_Single_System_Boolean_" data-uid="PLATEAU.Util.DebugEx.DrawRay(Vector3,Vector3,System.Nullable{Color},System.Single,System.Boolean)">DrawRay(Vector3, Vector3, Nullable&lt;Color&gt;, Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Draws a line from start to start + dir in world coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawRay(Vector3 start, Vector3 dir, Color? color = null, float duration = 0F, bool depthTest = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>Point in world space where the ray should start.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">dir</span></td>
+        <td><p>Direction and length of the ray.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Color</span>&gt;</td>
+        <td><span class="parametername">color</span></td>
+        <td><p>Color of the drawn line.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>How long the line will be visible for (in seconds).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">depthTest</span></td>
+        <td><p>Determines whether objects closer to the camera obscure the line.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_Util_DebugEx_DrawRegularPolygon_" data-uid="PLATEAU.Util.DebugEx.DrawRegularPolygon*"></a>
   <h4 id="PLATEAU_Util_DebugEx_DrawRegularPolygon_Vector3_System_Single_System_Int32_System_Nullable_Vector3__System_Nullable_Color__System_Single_System_Boolean_" data-uid="PLATEAU.Util.DebugEx.DrawRegularPolygon(Vector3,System.Single,System.Int32,System.Nullable{Vector3},System.Nullable{Color},System.Single,System.Boolean)">DrawRegularPolygon(Vector3, Single, Int32, Nullable&lt;Vector3&gt;, Nullable&lt;Color&gt;, Single, Boolean)</h4>
   <div class="markdown level1 summary"><p>円を描画</p>

@@ -124,6 +124,223 @@
   </h3>
   
   
+  <a id="PLATEAU_Util_EnumerableUtil_FindFirstIndex_" data-uid="PLATEAU.Util.EnumerableUtil.FindFirstIndex*"></a>
+  <h4 id="PLATEAU_Util_EnumerableUtil_FindFirstIndex__1_IEnumerable___0__Func___0_System_Boolean__" data-uid="PLATEAU.Util.EnumerableUtil.FindFirstIndex``1(IEnumerable{``0},Func{``0,System.Boolean})">FindFirstIndex&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>selfに対して、最初にpredicateがtrueになる要素のindexを返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FindFirstIndex&lt;TSource&gt;(this IEnumerable&lt;TSource&gt; self, Func&lt;TSource, bool&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;TSource&gt;</td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;TSource, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_EnumerableUtil_FindMaxOr_" data-uid="PLATEAU.Util.EnumerableUtil.FindMaxOr*"></a>
+  <h4 id="PLATEAU_Util_EnumerableUtil_FindMaxOr__2_IEnumerable___0__Func___0___1____1_IComparer___1__" data-uid="PLATEAU.Util.EnumerableUtil.FindMaxOr``2(IEnumerable{``0},Func{``0,``1},``1,IComparer{``1})">FindMaxOr&lt;TSource, TResult&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TResult&gt;, TResult, IComparer&lt;TResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>selectorで指定した値が最大となる要素を返す(存在しない場合はdefaultValueを返す)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TResult FindMaxOr&lt;TSource, TResult&gt;(this IEnumerable&lt;TSource&gt; self, Func&lt;TSource, TResult&gt; selector, TResult defaultValue, IComparer&lt;TResult&gt; compare = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;TSource&gt;</td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;TSource, TResult&gt;</td>
+        <td><span class="parametername">selector</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TResult</span></td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IComparer</span>&lt;TResult&gt;</td>
+        <td><span class="parametername">compare</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_EnumerableUtil_FindMinOr_" data-uid="PLATEAU.Util.EnumerableUtil.FindMinOr*"></a>
+  <h4 id="PLATEAU_Util_EnumerableUtil_FindMinOr__2_IEnumerable___0__Func___0___1____1_IComparer___1__" data-uid="PLATEAU.Util.EnumerableUtil.FindMinOr``2(IEnumerable{``0},Func{``0,``1},``1,IComparer{``1})">FindMinOr&lt;TSource, TResult&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TResult&gt;, TResult, IComparer&lt;TResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>selectorで指定した値が最小となる要素を返す(存在しない場合はdefaultValueを返す)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TResult FindMinOr&lt;TSource, TResult&gt;(this IEnumerable&lt;TSource&gt; self, Func&lt;TSource, TResult&gt; selector, TResult defaultValue, IComparer&lt;TResult&gt; compare = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;TSource&gt;</td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;TSource, TResult&gt;</td>
+        <td><span class="parametername">selector</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TResult</span></td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IComparer</span>&lt;TResult&gt;</td>
+        <td><span class="parametername">compare</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_Util_EnumerableUtil_TryFindMax_" data-uid="PLATEAU.Util.EnumerableUtil.TryFindMax*"></a>
   <h4 id="PLATEAU_Util_EnumerableUtil_TryFindMax__2_IEnumerable___0__Func___0___1____0__IComparer___1__" data-uid="PLATEAU.Util.EnumerableUtil.TryFindMax``2(IEnumerable{``0},Func{``0,``1},``0@,IComparer{``1})">TryFindMax&lt;TSource, TResult&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TResult&gt;, out TSource, IComparer&lt;TResult&gt;)</h4>
   <div class="markdown level1 summary"></div>

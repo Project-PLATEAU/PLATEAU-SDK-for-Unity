@@ -88,10 +88,27 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">PLATEAURnModelDrawerDebug.IntersectionOption</span></div>
+    <div class="level1"><a class="xref" href="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.Drawer-1.html">PLATEAURnModelDrawerDebug.Drawer</a>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersection.html">RnIntersection</a>&gt;</div>
+    <div class="level2"><a class="xref" href="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.IntersectionDrawer.html">PLATEAURnModelDrawerDebug.IntersectionDrawer</a></div>
+    <div class="level3"><span class="xref">PLATEAURnModelDrawerDebug.IntersectionOption</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.IntersectionDrawer.html#PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_IntersectionDrawer_GetTargetGameObjects_PLATEAU_RoadNetwork_Structure_RnIntersection_">PLATEAURnModelDrawerDebug.IntersectionDrawer.GetTargetGameObjects(RnIntersection)</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.Drawer-1.html#PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_Drawer_1_visible">PLATEAURnModelDrawerDebug.Drawer&lt;RnIntersection&gt;.visible</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.Drawer-1.html#PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_Drawer_1_showVisibleType">PLATEAURnModelDrawerDebug.Drawer&lt;RnIntersection&gt;.showVisibleType</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.Drawer-1.html#PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_Drawer_1_Draw_PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_DrawWork__0_PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_VisibleType_">PLATEAURnModelDrawerDebug.Drawer&lt;RnIntersection&gt;.Draw(PLATEAURnModelDrawerDebug.DrawWork, RnIntersection, PLATEAURnModelDrawerDebug.VisibleType)</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.Drawer-1.html#PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_Drawer_1_IsValid__0_">PLATEAURnModelDrawerDebug.Drawer&lt;RnIntersection&gt;.IsValid(RnIntersection)</a>
+    </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
@@ -118,7 +135,7 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_IntersectionOption_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class IntersectionOption</code></pre>
+    <pre><code class="lang-csharp hljs">public class IntersectionOption : PLATEAURnModelDrawerDebug.IntersectionDrawer</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -129,7 +146,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DrawOption showBorderEdge</code></pre>
+    <pre><code class="lang-csharp hljs">public PLATEAURnModelDrawerDebug.WayOption showBorderEdge</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -141,7 +158,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DrawOption</span></td>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.WayOption.html">PLATEAURnModelDrawerDebug.WayOption</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -196,12 +213,12 @@
   </table>
   
   
-  <h4 id="PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_IntersectionOption_showNonBorderEdge" data-uid="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.IntersectionOption.showNonBorderEdge">showNonBorderEdge</h4>
+  <h4 id="PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_IntersectionOption_showEdgeNormal" data-uid="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.IntersectionOption.showEdgeNormal">showEdgeNormal</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DrawOption showNonBorderEdge</code></pre>
+    <pre><code class="lang-csharp hljs">public bool showEdgeNormal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -213,7 +230,79 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DrawOption</span></td>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_IntersectionOption_showMedianBorderEdge" data-uid="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.IntersectionOption.showMedianBorderEdge">showMedianBorderEdge</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PLATEAURnModelDrawerDebug.WayOption showMedianBorderEdge</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.WayOption.html">PLATEAURnModelDrawerDebug.WayOption</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_IntersectionOption_showNonBorderEdge" data-uid="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.IntersectionOption.showNonBorderEdge">showNonBorderEdge</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PLATEAURnModelDrawerDebug.WayOption showNonBorderEdge</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.WayOption.html">PLATEAURnModelDrawerDebug.WayOption</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_IntersectionOption_showNoTrackBorder" data-uid="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.IntersectionOption.showNoTrackBorder">showNoTrackBorder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool showNoTrackBorder</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -242,16 +331,41 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
   
   
-  <h4 id="PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_IntersectionOption_visible" data-uid="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.IntersectionOption.visible">visible</h4>
+  <a id="PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_IntersectionOption_DrawImpl_" data-uid="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.IntersectionOption.DrawImpl*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_IntersectionOption_DrawImpl_PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_DrawWork_PLATEAU_RoadNetwork_Structure_RnIntersection_" data-uid="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.IntersectionOption.DrawImpl(PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.DrawWork,PLATEAU.RoadNetwork.Structure.RnIntersection)">DrawImpl(PLATEAURnModelDrawerDebug.DrawWork, RnIntersection)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool visible</code></pre>
+    <pre><code class="lang-csharp hljs">protected override bool DrawImpl(PLATEAURnModelDrawerDebug.DrawWork work, RnIntersection intersection)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.DrawWork.html">PLATEAURnModelDrawerDebug.DrawWork</a></td>
+        <td><span class="parametername">work</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersection.html">RnIntersection</a></td>
+        <td><span class="parametername">intersection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -266,16 +380,19 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.Drawer&lt;PLATEAU.RoadNetwork.Structure.RnIntersection&gt;.DrawImpl(PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.DrawWork, PLATEAU.RoadNetwork.Structure.RnIntersection)</span></div>
   
   
-  <h4 id="PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_IntersectionOption_visibleType" data-uid="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.IntersectionOption.visibleType">visibleType</h4>
+  <a id="PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_IntersectionOption_GetChildDrawers_" data-uid="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.IntersectionOption.GetChildDrawers*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_Drawer_PLATEAURnModelDrawerDebug_IntersectionOption_GetChildDrawers" data-uid="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.IntersectionOption.GetChildDrawers">GetChildDrawers()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PLATEAURnModelDrawerDebug.VisibleType visibleType</code></pre>
+    <pre><code class="lang-csharp hljs">protected override IEnumerable&lt;PLATEAURnModelDrawerDebug.Drawer&lt;RnIntersection&gt;&gt; GetChildDrawers()</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -285,11 +402,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.VisibleType.html">PLATEAURnModelDrawerDebug.VisibleType</a></td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.Drawer-1.html">PLATEAURnModelDrawerDebug.Drawer</a>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersection.html">RnIntersection</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">PLATEAU.RoadNetwork.Structure.Drawer.PLATEAURnModelDrawerDebug.Drawer&lt;PLATEAU.RoadNetwork.Structure.RnIntersection&gt;.GetChildDrawers()</span></div>
 </article>
           </div>
           

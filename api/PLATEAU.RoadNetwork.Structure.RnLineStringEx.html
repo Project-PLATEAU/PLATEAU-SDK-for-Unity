@@ -1,0 +1,924 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RnLineStringEx
+   | PLATEAU SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RnLineStringEx
+   | PLATEAU SDK for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx">
+  
+  
+  <h1 id="PLATEAU_RoadNetwork_Structure_RnLineStringEx" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx" class="text-break">Class RnLineStringEx
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RnLineStringEx</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.RoadNetwork.Structure.html">PLATEAU.RoadNetwork.Structure</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class RnLineStringEx</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_CalcProximityScore_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.CalcProximityScore*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_CalcProximityScore_PLATEAU_RoadNetwork_Structure_RnLineString_PLATEAU_RoadNetwork_Structure_RnLineString_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.CalcProximityScore(PLATEAU.RoadNetwork.Structure.RnLineString,PLATEAU.RoadNetwork.Structure.RnLineString)">CalcProximityScore(RnLineString, RnLineString)</h4>
+  <div class="markdown level1 summary"><p>selfのotherに対する距離スコアを返す(線分同士の距離ではない).低いほど近い
+selfの各点に対して, otherとの距離を出して, その平均をスコアとする</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float? CalcProximityScore(this RnLineString self, RnLineString other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_CalcTotalAngle2D_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.CalcTotalAngle2D*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_CalcTotalAngle2D_PLATEAU_RoadNetwork_Structure_RnLineString_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.CalcTotalAngle2D(PLATEAU.RoadNetwork.Structure.RnLineString)">CalcTotalAngle2D(RnLineString)</h4>
+  <div class="markdown level1 summary"><p>LineStringの線分群が成す角度の合計を返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float CalcTotalAngle2D(this RnLineString self)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetAdvancedPoint_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetAdvancedPoint*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetAdvancedPoint_PLATEAU_RoadNetwork_Structure_RnLineString_System_Single_System_Boolean_System_Int32__System_Int32__" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetAdvancedPoint(PLATEAU.RoadNetwork.Structure.RnLineString,System.Single,System.Boolean,System.Int32@,System.Int32@)">GetAdvancedPoint(RnLineString, Single, Boolean, out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>selfの最初(reverse=trueの時は最後)から線分に沿ってoffsetだけ進んだ点を返す.
+線分の長さがoffsetより短い場合は終端点を返す
+startIndex/endIndexはoffsetの点が所属する線分のインデックス</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 GetAdvancedPoint(this RnLineString self, float offset, bool reverse, out int startIndex, out int endIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">reverse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">endIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetAdvancedPointFromBack_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetAdvancedPointFromBack*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetAdvancedPointFromBack_PLATEAU_RoadNetwork_Structure_RnLineString_System_Single_System_Int32__System_Int32__" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetAdvancedPointFromBack(PLATEAU.RoadNetwork.Structure.RnLineString,System.Single,System.Int32@,System.Int32@)">GetAdvancedPointFromBack(RnLineString, Single, out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>selfの最後から線分に沿ってoffsetだけ進んだ点を返す.
+線分の長さがoffsetより短い場合は先頭の点を返す
+startIndex/endIndexはoffsetの点が所属する線分のインデックス</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 GetAdvancedPointFromBack(this RnLineString self, float offset, out int startIndex, out int endIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">endIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetAdvancedPointFromFront_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetAdvancedPointFromFront*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetAdvancedPointFromFront_PLATEAU_RoadNetwork_Structure_RnLineString_System_Single_System_Int32__System_Int32__" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetAdvancedPointFromFront(PLATEAU.RoadNetwork.Structure.RnLineString,System.Single,System.Int32@,System.Int32@)">GetAdvancedPointFromFront(RnLineString, Single, out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>selfの先頭から線分に沿ってoffsetだけ進んだ点を返す.
+線分の長さがoffsetより短い場合は最後の点を返す
+startIndex/endIndexはoffsetの点が所属する線分のインデックス</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 GetAdvancedPointFromFront(this RnLineString self, float offset, out int startIndex, out int endIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">endIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetDistance2D_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetDistance2D*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetDistance2D_PLATEAU_RoadNetwork_Structure_RnLineString_PLATEAU_RoadNetwork_Structure_RnLineString_AxisPlane_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetDistance2D(PLATEAU.RoadNetwork.Structure.RnLineString,PLATEAU.RoadNetwork.Structure.RnLineString,AxisPlane)">GetDistance2D(RnLineString, RnLineString, AxisPlane)</h4>
+  <div class="markdown level1 summary"><p>2D平面におけるLineString同士の距離を返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetDistance2D(this RnLineString self, RnLineString other, AxisPlane plane = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">AxisPlane</span></td>
+        <td><span class="parametername">plane</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetEdges_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetEdges*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetEdges_PLATEAU_RoadNetwork_Structure_RnLineString_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetEdges(PLATEAU.RoadNetwork.Structure.RnLineString)">GetEdges(RnLineString)</h4>
+  <div class="markdown level1 summary"><p>線分をLineSegment3Dにして返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;LineSegment3D&gt; GetEdges(this RnLineString self)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">LineSegment3D</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetEdges2D_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetEdges2D*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetEdges2D_PLATEAU_RoadNetwork_Structure_RnLineString_AxisPlane_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetEdges2D(PLATEAU.RoadNetwork.Structure.RnLineString,AxisPlane)">GetEdges2D(RnLineString, AxisPlane)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;LineSegment2D&gt; GetEdges2D(this RnLineString self, AxisPlane axis = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">AxisPlane</span></td>
+        <td><span class="parametername">axis</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">LineSegment2D</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetIntersectionBy2D_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetIntersectionBy2D*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetIntersectionBy2D_PLATEAU_RoadNetwork_Structure_RnLineString_LineSegment3D_AxisPlane_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetIntersectionBy2D(PLATEAU.RoadNetwork.Structure.RnLineString,LineSegment3D,AxisPlane)">GetIntersectionBy2D(RnLineString, LineSegment3D, AxisPlane)</h4>
+  <div class="markdown level1 summary"><p>selfとlineの交点をすべて返す. ただしaxis辺面に射影↓状態で交差判定を行う.
+実際に返る交点はself上の点とその時のインデックス(float)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(Vector3 v, float index)&gt; GetIntersectionBy2D(this RnLineString self, LineSegment3D line, AxisPlane axis = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">LineSegment3D</span></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">AxisPlane</span></td>
+        <td><span class="parametername">axis</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">Vector3</span>, <span class="xref">System.Single</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetIntersectionBy2D_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetIntersectionBy2D*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetIntersectionBy2D_PLATEAU_RoadNetwork_Structure_RnLineString_Ray_AxisPlane_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetIntersectionBy2D(PLATEAU.RoadNetwork.Structure.RnLineString,Ray,AxisPlane)">GetIntersectionBy2D(RnLineString, Ray, AxisPlane)</h4>
+  <div class="markdown level1 summary"><p>selfと直線の交点をすべて返す. ただしaxis辺面に射影↓状態で交差判定を行う.
+実際に返る交点はself上の点とその時のインデックス(float)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;(Vector3 v, float index)&gt; GetIntersectionBy2D(this RnLineString self, Ray ray, AxisPlane axis = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ray</span></td>
+        <td><span class="parametername">ray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">AxisPlane</span></td>
+        <td><span class="parametername">axis</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">Vector3</span>, <span class="xref">System.Single</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetNearestPoint_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetNearestPoint*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetNearestPoint_PLATEAU_RoadNetwork_Structure_RnLineString_Vector3_Vector3__System_Single__System_Single__" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetNearestPoint(PLATEAU.RoadNetwork.Structure.RnLineString,Vector3,Vector3@,System.Single@,System.Single@)">GetNearestPoint(RnLineString, Vector3, out Vector3, out Single, out Single)</h4>
+  <div class="markdown level1 summary"><p>点vに最も近いself上の点を返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetNearestPoint(this RnLineString self, Vector3 v, out Vector3 nearest, out float pointIndex, out float distance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">nearest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">pointIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">distance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetPoint_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetPoint*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_GetPoint_PLATEAU_RoadNetwork_Structure_RnLineString_System_Single_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetPoint(PLATEAU.RoadNetwork.Structure.RnLineString,System.Single)">GetPoint(RnLineString, Single)</h4>
+  <div class="markdown level1 summary"><p>floatのindexを指定して線分上の点を取得する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 GetPoint(this RnLineString self, float index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_Refine_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.Refine*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_Refine_PLATEAU_RoadNetwork_Structure_RnLineString_System_Single_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.Refine(PLATEAU.RoadNetwork.Structure.RnLineString,System.Single)">Refine(RnLineString, Single)</h4>
+  <div class="markdown level1 summary"><p>selfの各線分がintervalより長い場合に間に点を置いていく</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Refine(this RnLineString self, float interval)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">interval</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_Refined_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.Refined*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_Refined_PLATEAU_RoadNetwork_Structure_RnLineString_System_Single_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.Refined(PLATEAU.RoadNetwork.Structure.RnLineString,System.Single)">Refined(RnLineString, Single)</h4>
+  <div class="markdown level1 summary"><p>selfの各線分がintervalより長い場合に間に点を置いて細分化したものを返す.非破壊</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RnLineString Refined(this RnLineString self, float interval)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">interval</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_TryGetNearestIntersectionBy2D_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.TryGetNearestIntersectionBy2D*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnLineStringEx_TryGetNearestIntersectionBy2D_PLATEAU_RoadNetwork_Structure_RnLineString_Ray_System_ValueTuple_Vector3_System_Single___AxisPlane_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineStringEx.TryGetNearestIntersectionBy2D(PLATEAU.RoadNetwork.Structure.RnLineString,Ray,System.ValueTuple{Vector3,System.Single}@,AxisPlane)">TryGetNearestIntersectionBy2D(RnLineString, Ray, out (Vector3 v, Single index), AxisPlane)</h4>
+  <div class="markdown level1 summary"><p>selfと直線rayの最も近い交点を返す. axisで指定した平面に射影した結果で交点を考える</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetNearestIntersectionBy2D(this RnLineString self, Ray ray, out (Vector3 v, float index) res, AxisPlane axis = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ray</span></td>
+        <td><span class="parametername">ray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">Vector3</span>, <span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">res</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">AxisPlane</span></td>
+        <td><span class="parametername">axis</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            PLATEAU SDK for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

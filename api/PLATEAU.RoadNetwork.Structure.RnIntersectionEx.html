@@ -124,10 +124,106 @@
   </h3>
   
   
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersectionEx_CreateCenterLineGraph_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersectionEx.CreateCenterLineGraph*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersectionEx_CreateCenterLineGraph_PLATEAU_RoadNetwork_Structure_RnIntersection_System_Single_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersectionEx.CreateCenterLineGraph(PLATEAU.RoadNetwork.Structure.RnIntersection,System.Single)">CreateCenterLineGraph(RnIntersection, Single)</h4>
+  <div class="markdown level1 summary"><p>交差点内で各道路への中央ラインを通る経路グラフを作成する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RnIntersectionEx.CenterLineGraph CreateCenterLineGraph(this RnIntersection self, float refineInterval = 3F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersection.html">RnIntersection</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">refineInterval</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEx.CenterLineGraph.html">RnIntersectionEx.CenterLineGraph</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersectionEx_CreateCenterLineGraphOrDefault_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersectionEx.CreateCenterLineGraphOrDefault*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersectionEx_CreateCenterLineGraphOrDefault_PLATEAU_RoadNetwork_Structure_RnIntersection_System_Single_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersectionEx.CreateCenterLineGraphOrDefault(PLATEAU.RoadNetwork.Structure.RnIntersection,System.Single)">CreateCenterLineGraphOrDefault(RnIntersection, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RnIntersectionEx.CenterLineGraph CreateCenterLineGraphOrDefault(this RnIntersection self, float refineInterval = 3F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersection.html">RnIntersection</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">refineInterval</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEx.CenterLineGraph.html">RnIntersectionEx.CenterLineGraph</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_RoadNetwork_Structure_RnIntersectionEx_CreateEdgeGroup_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersectionEx.CreateEdgeGroup*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersectionEx_CreateEdgeGroup_PLATEAU_RoadNetwork_Structure_RnIntersection_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersectionEx.CreateEdgeGroup(PLATEAU.RoadNetwork.Structure.RnIntersection)">CreateEdgeGroup(RnIntersection)</h4>
   <div class="markdown level1 summary"><p>交差点のEdgesをRoadごとにグループ化する.
-RoadA -&gt; null(境界線じゃない部分) -&gt; RoadB -&gt; null -&gt; RoadC -&gt; null -&gt; RoadAのようになる</p>
+RoadA -&gt; null(境界線じゃない部分) -&gt; RoadB -&gt; null -&gt; RoadC -&gt; null -&gt; RoadAのようになる.
+順番はEdgesの順番を保持する</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -266,7 +362,7 @@ RoadA -&gt; null(境界線じゃない部分) -&gt; RoadB -&gt; null -&gt; RoadC
   
   <a id="PLATEAU_RoadNetwork_Structure_RnIntersectionEx_GetEdgeCrossPoints_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersectionEx.GetEdgeCrossPoints*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersectionEx_GetEdgeCrossPoints_PLATEAU_RoadNetwork_Structure_RnIntersection_LineSegment3D_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersectionEx.GetEdgeCrossPoints(PLATEAU.RoadNetwork.Structure.RnIntersection,LineSegment3D)">GetEdgeCrossPoints(RnIntersection, LineSegment3D)</h4>
-  <div class="markdown level1 summary"><p>selfの全LinestringとlineSegmentの交点を取得する</p>
+  <div class="markdown level1 summary"><p>selfの全LinestringとlineSegmentの交点を取得する. ただし2D平面に射影したうえでの交点を返す</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -306,6 +402,54 @@ RoadA -&gt; null(境界線じゃない部分) -&gt; RoadB -&gt; null -&gt; RoadC
     <tbody>
       <tr>
         <td><span class="xref">LineCrossPointResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnIntersectionEx_IsInside2D_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersectionEx.IsInside2D*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnIntersectionEx_IsInside2D_PLATEAU_RoadNetwork_Structure_RnIntersection_Vector3_" data-uid="PLATEAU.RoadNetwork.Structure.RnIntersectionEx.IsInside2D(PLATEAU.RoadNetwork.Structure.RnIntersection,Vector3)">IsInside2D(RnIntersection, Vector3)</h4>
+  <div class="markdown level1 summary"><p>2D平面に射影したうえでの内部判定</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInside2D(this RnIntersection self, Vector3 pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersection.html">RnIntersection</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>

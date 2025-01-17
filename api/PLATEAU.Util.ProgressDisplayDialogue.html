@@ -83,8 +83,10 @@
   
   <h1 id="PLATEAU_Util_ProgressDisplayDialogue" data-uid="PLATEAU.Util.ProgressDisplayDialogue" class="text-break">Class ProgressDisplayDialogue
   </h1>
-  <div class="markdown level0 summary"><p>Editorの場合、ダイアログで進捗を表示します。Dispose時にダイアログを閉じます。
-Runtimeの場合、何もしません。</p>
+  <div class="markdown level0 summary"><p>Editorの場合、ダイアログで進捗を表示します。
+Runtimeの場合、何もしません。
+Dispose時にダイアログを閉じるので、閉じるために利用時に using var progressDisplay = new ProgressDisplayDialogue(); のように
+usingを付けてください。付け忘れるとダイアログが閉じません。</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">

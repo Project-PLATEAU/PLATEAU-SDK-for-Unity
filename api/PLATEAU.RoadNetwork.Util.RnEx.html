@@ -255,7 +255,10 @@
   
   <a id="PLATEAU_RoadNetwork_Util_RnEx_CreateInnerLerpLineString_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.CreateInnerLerpLineString*"></a>
   <h4 id="PLATEAU_RoadNetwork_Util_RnEx_CreateInnerLerpLineString_IReadOnlyList_Vector3__IReadOnlyList_Vector3__RnPoint_RnPoint_RnWay_RnWay_System_Single_System_Single_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.CreateInnerLerpLineString(IReadOnlyList{Vector3},IReadOnlyList{Vector3},RnPoint,RnPoint,RnWay,RnWay,System.Single,System.Single)">CreateInnerLerpLineString(IReadOnlyList&lt;Vector3&gt;, IReadOnlyList&lt;Vector3&gt;, RnPoint, RnPoint, RnWay, RnWay, Single, Single)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>leftVerticesとrightVerticesの間をtで補間した点列を生成する.
+start/endはそれぞれの端点.
+startBorder/endBorderはそれぞれの端点のボーダーでstartBorder/LeftVertices/endBorder/RightVerticesで囲まれた範囲の外に出ないようにチェックするためのもの</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -332,7 +335,8 @@
   
   <a id="PLATEAU_RoadNetwork_Util_RnEx_GetLineIntersections_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.GetLineIntersections*"></a>
   <h4 id="PLATEAU_RoadNetwork_Util_RnEx_GetLineIntersections_LineSegment3D_IEnumerable_RnWay__" data-uid="PLATEAU.RoadNetwork.Util.RnEx.GetLineIntersections(LineSegment3D,IEnumerable{RnWay})">GetLineIntersections(LineSegment3D, IEnumerable&lt;RnWay&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>lineSegmentとwaysの交点を取得する. ただし、2Dでの交点</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

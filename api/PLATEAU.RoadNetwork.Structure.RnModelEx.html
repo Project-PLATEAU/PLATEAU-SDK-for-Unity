@@ -124,9 +124,80 @@
   </h3>
   
   
+  <a id="PLATEAU_RoadNetwork_Structure_RnModelEx_CalibrateIntersectionBorder_" data-uid="PLATEAU.RoadNetwork.Structure.RnModelEx.CalibrateIntersectionBorder*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnModelEx_CalibrateIntersectionBorder_PLATEAU_RoadNetwork_Structure_RnModel_PLATEAU_RoadNetwork_Structure_RnRoad_PLATEAU_RoadNetwork_Structure_RnModelEx_CalibrateIntersectionBorderOption_" data-uid="PLATEAU.RoadNetwork.Structure.RnModelEx.CalibrateIntersectionBorder(PLATEAU.RoadNetwork.Structure.RnModel,PLATEAU.RoadNetwork.Structure.RnRoad,PLATEAU.RoadNetwork.Structure.RnModelEx.CalibrateIntersectionBorderOption)">CalibrateIntersectionBorder(RnModel, RnRoad, RnModelEx.CalibrateIntersectionBorderOption)</h4>
+  <div class="markdown level1 summary"><p>roadが交差点と隣接するとき, 交差点からmeterだけ離れた位置で道路を分割する.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CalibrateIntersectionBorder(this RnModel self, RnRoad road, RnModelEx.CalibrateIntersectionBorderOption option)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnModel.html">RnModel</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoad.html">RnRoad</a></td>
+        <td><span class="parametername">road</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnModelEx.CalibrateIntersectionBorderOption.html">RnModelEx.CalibrateIntersectionBorderOption</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnModelEx_CalibrateIntersectionBorderForAllRoad_" data-uid="PLATEAU.RoadNetwork.Structure.RnModelEx.CalibrateIntersectionBorderForAllRoad*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnModelEx_CalibrateIntersectionBorderForAllRoad_PLATEAU_RoadNetwork_Structure_RnModel_PLATEAU_RoadNetwork_Structure_RnModelEx_CalibrateIntersectionBorderOption_" data-uid="PLATEAU.RoadNetwork.Structure.RnModelEx.CalibrateIntersectionBorderForAllRoad(PLATEAU.RoadNetwork.Structure.RnModel,PLATEAU.RoadNetwork.Structure.RnModelEx.CalibrateIntersectionBorderOption)">CalibrateIntersectionBorderForAllRoad(RnModel, RnModelEx.CalibrateIntersectionBorderOption)</h4>
+  <div class="markdown level1 summary"><p>道路グループの交差点との境界線の角度を調整する(垂直になるようにする)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CalibrateIntersectionBorderForAllRoad(this RnModel self, RnModelEx.CalibrateIntersectionBorderOption option)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnModel.html">RnModel</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnModelEx.CalibrateIntersectionBorderOption.html">RnModelEx.CalibrateIntersectionBorderOption</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_RoadNetwork_Structure_RnModelEx_CanSliceIntersectionHorizontal_" data-uid="PLATEAU.RoadNetwork.Structure.RnModelEx.CanSliceIntersectionHorizontal*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnModelEx_CanSliceIntersectionHorizontal_PLATEAU_RoadNetwork_Structure_RnModel_PLATEAU_RoadNetwork_Structure_RnIntersection_LineSegment3D_PLATEAU_RoadNetwork_Structure_RnModelEx_SliceIntersectionCheckResult__" data-uid="PLATEAU.RoadNetwork.Structure.RnModelEx.CanSliceIntersectionHorizontal(PLATEAU.RoadNetwork.Structure.RnModel,PLATEAU.RoadNetwork.Structure.RnIntersection,LineSegment3D,PLATEAU.RoadNetwork.Structure.RnModelEx.SliceIntersectionCheckResult@)">CanSliceIntersectionHorizontal(RnModel, RnIntersection, LineSegment3D, out RnModelEx.SliceIntersectionCheckResult)</h4>
-  <div class="markdown level1 summary"><p>roadの水平切断可能かチェックする</p>
+  <div class="markdown level1 summary"><p>intersectionの水平切断可能かチェックする</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -441,6 +512,76 @@
       <tr>
         <td><span class="xref">LineSegment3D</span></td>
         <td><span class="parametername">lineSegment2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnModelEx_TrySliceRoadHorizontalNearByBorder_" data-uid="PLATEAU.RoadNetwork.Structure.RnModelEx.TrySliceRoadHorizontalNearByBorder*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnModelEx_TrySliceRoadHorizontalNearByBorder_PLATEAU_RoadNetwork_Structure_RnModel_PLATEAU_RoadNetwork_Structure_RnRoad_PLATEAU_RoadNetwork_Structure_RnModelEx_CalibrateIntersectionBorderOption_PLATEAU_RoadNetwork_Structure_RnRoad__PLATEAU_RoadNetwork_Structure_RnRoad__PLATEAU_RoadNetwork_Structure_RnRoad__" data-uid="PLATEAU.RoadNetwork.Structure.RnModelEx.TrySliceRoadHorizontalNearByBorder(PLATEAU.RoadNetwork.Structure.RnModel,PLATEAU.RoadNetwork.Structure.RnRoad,PLATEAU.RoadNetwork.Structure.RnModelEx.CalibrateIntersectionBorderOption,PLATEAU.RoadNetwork.Structure.RnRoad@,PLATEAU.RoadNetwork.Structure.RnRoad@,PLATEAU.RoadNetwork.Structure.RnRoad@)">TrySliceRoadHorizontalNearByBorder(RnModel, RnRoad, RnModelEx.CalibrateIntersectionBorderOption, out RnRoad, out RnRoad, out RnRoad)</h4>
+  <div class="markdown level1 summary"><p>roadが交差点と隣接するとき, 交差点からmeterだけ離れた位置で道路を分割する.
+prevSideRoad, centerSideRoad, nextSideRoadの3つの道路が返る
+ただし、片方としか分割されなかった場合などはその場所にはnullが入る</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TrySliceRoadHorizontalNearByBorder(this RnModel self, RnRoad road, RnModelEx.CalibrateIntersectionBorderOption option, out RnRoad prevSideRoad, out RnRoad centerSideRoad, out RnRoad nextSideRoad)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnModel.html">RnModel</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoad.html">RnRoad</a></td>
+        <td><span class="parametername">road</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnModelEx.CalibrateIntersectionBorderOption.html">RnModelEx.CalibrateIntersectionBorderOption</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoad.html">RnRoad</a></td>
+        <td><span class="parametername">prevSideRoad</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoad.html">RnRoad</a></td>
+        <td><span class="parametername">centerSideRoad</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoad.html">RnRoad</a></td>
+        <td><span class="parametername">nextSideRoad</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -143,7 +143,7 @@
   
   <a id="PLATEAU_RoadNetwork_Structure_RnSideWalk_AllWays_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.AllWays*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnSideWalk_AllWays" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.AllWays">AllWays</h4>
-  <div class="markdown level1 summary"><p>全てのWay</p>
+  <div class="markdown level1 summary"><p>全てのWay(nullは含まない)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -397,34 +397,6 @@
   </h3>
   
   
-  <a id="PLATEAU_RoadNetwork_Structure_RnSideWalk_ChangeParent_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.ChangeParent*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnSideWalk_ChangeParent_PLATEAU_RoadNetwork_Structure_RnRoadBase_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.ChangeParent(PLATEAU.RoadNetwork.Structure.RnRoadBase)">ChangeParent(RnRoadBase)</h4>
-  <div class="markdown level1 summary"><p>親情報の再設定</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ChangeParent(RnRoadBase parent)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html">RnRoadBase</a></td>
-        <td><span class="parametername">parent</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="PLATEAU_RoadNetwork_Structure_RnSideWalk_Create_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.Create*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnSideWalk_Create_PLATEAU_RoadNetwork_Structure_RnRoadBase_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnSideWalkLaneType_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.Create(PLATEAU.RoadNetwork.Structure.RnRoadBase,PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnSideWalkLaneType)">Create(RnRoadBase, RnWay, RnWay, RnWay, RnWay, RnSideWalkLaneType)</h4>
   <div class="markdown level1 summary"><p>歩道作成</p>
@@ -518,6 +490,17 @@
   </table>
   
   
+  <a id="PLATEAU_RoadNetwork_Structure_RnSideWalk_ReverseLaneType_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.ReverseLaneType*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnSideWalk_ReverseLaneType" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.ReverseLaneType">ReverseLaneType()</h4>
+  <div class="markdown level1 summary"><p>レーンタイプを入れ替え</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReverseLaneType()</code></pre>
+  </div>
+  
+  
   <a id="PLATEAU_RoadNetwork_Structure_RnSideWalk_SetEdgeWays_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.SetEdgeWays*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnSideWalk_SetEdgeWays_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnWay_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.SetEdgeWays(PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnWay)">SetEdgeWays(RnWay, RnWay)</h4>
   <div class="markdown level1 summary"><p>境界のWayを再設定(使い方によっては構造壊れるので注意)</p>
@@ -525,7 +508,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetEdgeWays(RnWay startEdgeWay, RnWay endEdgeWay)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetEdgeWays(RnWay startWay, RnWay endWay)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -539,12 +522,69 @@
     <tbody>
       <tr>
         <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a></td>
-        <td><span class="parametername">startEdgeWay</span></td>
+        <td><span class="parametername">startWay</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a></td>
-        <td><span class="parametername">endEdgeWay</span></td>
+        <td><span class="parametername">endWay</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnSideWalk_SetEndEdgeWay_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.SetEndEdgeWay*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnSideWalk_SetEndEdgeWay_PLATEAU_RoadNetwork_Structure_RnWay_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.SetEndEdgeWay(PLATEAU.RoadNetwork.Structure.RnWay)">SetEndEdgeWay(RnWay)</h4>
+  <div class="markdown level1 summary"><p>境界のWayを再設定(使い方によっては構造壊れるので注意)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEndEdgeWay(RnWay endWay)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a></td>
+        <td><span class="parametername">endWay</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnSideWalk_SetParent_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.SetParent*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnSideWalk_SetParent_PLATEAU_RoadNetwork_Structure_RnRoadBase_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.SetParent(PLATEAU.RoadNetwork.Structure.RnRoadBase)">SetParent(RnRoadBase)</h4>
+  <div class="markdown level1 summary"><p>強制的に親を変更する. 構造壊れるので扱い注意.
+基本的にはChangeParentを使うこと</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetParent(RnRoadBase parent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html">RnRoadBase</a></td>
+        <td><span class="parametername">parent</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -582,6 +622,57 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnSideWalk_SetStartEdgeWay_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.SetStartEdgeWay*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnSideWalk_SetStartEdgeWay_PLATEAU_RoadNetwork_Structure_RnWay_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.SetStartEdgeWay(PLATEAU.RoadNetwork.Structure.RnWay)">SetStartEdgeWay(RnWay)</h4>
+  <div class="markdown level1 summary"><p>境界のWayを再設定(使い方によっては構造壊れるので注意)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStartEdgeWay(RnWay startWay)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a></td>
+        <td><span class="parametername">startWay</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnSideWalk_TryAlign_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.TryAlign*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnSideWalk_TryAlign" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.TryAlign">TryAlign()</h4>
+  <div class="markdown level1 summary"><p>InSideWay/OutSideWayの方向を, StartEdgeWay/EndEdgeWayを見て合わせる.
+これらのWayがない場合は何もしない</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TryAlign()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnSideWalk_UnLinkFromParent_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.UnLinkFromParent*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnSideWalk_UnLinkFromParent" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.UnLinkFromParent">UnLinkFromParent()</h4>
+  <div class="markdown level1 summary"><p>親からのリンク解除</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnLinkFromParent()</code></pre>
+  </div>
 </article>
           </div>
           

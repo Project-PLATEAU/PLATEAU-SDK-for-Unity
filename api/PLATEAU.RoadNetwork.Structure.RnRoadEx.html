@@ -307,6 +307,104 @@
   </table>
   
   
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadEx_GetMergedSideWays_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.GetMergedSideWays*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadEx_GetMergedSideWays_PLATEAU_RoadNetwork_Structure_RnRoad_System_Nullable_PLATEAU_RoadNetwork_RnDir__" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.GetMergedSideWays(PLATEAU.RoadNetwork.Structure.RnRoad,System.Nullable{PLATEAU.RoadNetwork.RnDir})">GetMergedSideWays(RnRoad, Nullable&lt;RnDir&gt;)</h4>
+  <div class="markdown level1 summary"><p>道路の両端のWayを取得する. dirが指定されている場合はその方向の車線だけで絞って返す.
+dir = null道路全体の両端のWayを返す
+dir = Left(Right). 左(右)車線だけみた両端のwayを返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;RnWay&gt; GetMergedSideWays(this RnRoad self, RnDir? dir = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoad.html">RnRoad</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.RnDir.html">RnDir</a>&gt;</td>
+        <td><span class="parametername">dir</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadEx_GetNeighborRoad_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.GetNeighborRoad*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadEx_GetNeighborRoad_PLATEAU_RoadNetwork_Structure_RnRoad_PLATEAU_RoadNetwork_Structure_RnLaneBorderType_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.GetNeighborRoad(PLATEAU.RoadNetwork.Structure.RnRoad,PLATEAU.RoadNetwork.Structure.RnLaneBorderType)">GetNeighborRoad(RnRoad, RnLaneBorderType)</h4>
+  <div class="markdown level1 summary"><p>borderTypeで指定した隣の道路(交差点)を取得する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RnRoadBase GetNeighborRoad(this RnRoad self, RnLaneBorderType borderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoad.html">RnRoad</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLaneBorderType.html">RnLaneBorderType</a></td>
+        <td><span class="parametername">borderType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html">RnRoadBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_RoadNetwork_Structure_RnRoadEx_GetOppositeRoad_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.GetOppositeRoad*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadEx_GetOppositeRoad_PLATEAU_RoadNetwork_Structure_RnRoad_PLATEAU_RoadNetwork_Structure_RnRoadBase_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.GetOppositeRoad(PLATEAU.RoadNetwork.Structure.RnRoad,PLATEAU.RoadNetwork.Structure.RnRoadBase)">GetOppositeRoad(RnRoad, RnRoadBase)</h4>
   <div class="markdown level1 summary"><p>selfのPrev/Nextのうち, otherじゃない方を返す.
@@ -350,6 +448,220 @@
     <tbody>
       <tr>
         <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html">RnRoadBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadEx_TryGetAdjustBorderSegment_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.TryGetAdjustBorderSegment*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadEx_TryGetAdjustBorderSegment_PLATEAU_RoadNetwork_Structure_RnRoad_PLATEAU_RoadNetwork_Structure_RnLaneBorderType_LineSegment3D__" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.TryGetAdjustBorderSegment(PLATEAU.RoadNetwork.Structure.RnRoad,PLATEAU.RoadNetwork.Structure.RnLaneBorderType,LineSegment3D@)">TryGetAdjustBorderSegment(RnRoad, RnLaneBorderType, out LineSegment3D)</h4>
+  <div class="markdown level1 summary"><p>roadのMergedSideWayから計算された進行方向に垂直な境界線を取得する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetAdjustBorderSegment(this RnRoad self, RnLaneBorderType borderType, out LineSegment3D adjustedBorderLeft2Right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoad.html">RnRoad</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLaneBorderType.html">RnLaneBorderType</a></td>
+        <td><span class="parametername">borderType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">LineSegment3D</span></td>
+        <td><span class="parametername">adjustedBorderLeft2Right</span></td>
+        <td><p>垂直な境界線(左車線-&gt;右車線の方向)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadEx_TryGetNearestDistanceToSideWays_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.TryGetNearestDistanceToSideWays*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadEx_TryGetNearestDistanceToSideWays_PLATEAU_RoadNetwork_Structure_RnRoad_PLATEAU_RoadNetwork_Structure_RnLineString_System_Single__" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.TryGetNearestDistanceToSideWays(PLATEAU.RoadNetwork.Structure.RnRoad,PLATEAU.RoadNetwork.Structure.RnLineString,System.Single@)">TryGetNearestDistanceToSideWays(RnRoad, RnLineString, out Single)</h4>
+  <div class="markdown level1 summary"><p>selfの両端のWayとlineの最も近い点との距離をdistanceに格納する
+その結果, lineがselfの内部を通っているときは, lineに幅を持たせてもselfのLane内をはみ出さないような最大の幅となる</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetNearestDistanceToSideWays(this RnRoad self, RnLineString line, out float distance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoad.html">RnRoad</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLineString.html">RnLineString</a></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">distance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadEx_TryGetVerticalSliceSegment_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.TryGetVerticalSliceSegment*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadEx_TryGetVerticalSliceSegment_PLATEAU_RoadNetwork_Structure_RnRoad_PLATEAU_RoadNetwork_Structure_RnLaneBorderType_System_Single_LineSegment3D__" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.TryGetVerticalSliceSegment(PLATEAU.RoadNetwork.Structure.RnRoad,PLATEAU.RoadNetwork.Structure.RnLaneBorderType,System.Single,LineSegment3D@)">TryGetVerticalSliceSegment(RnRoad, RnLaneBorderType, Single, out LineSegment3D)</h4>
+  <div class="markdown level1 summary"><p>selfのborderSide側からborderOffsetMeterだけ離れた位置に道路を垂直に分割する線分を計算する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetVerticalSliceSegment(this RnRoad self, RnLaneBorderType borderSide, float borderOffsetMeter, out LineSegment3D segment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoad.html">RnRoad</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLaneBorderType.html">RnLaneBorderType</a></td>
+        <td><span class="parametername">borderSide</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">borderOffsetMeter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">LineSegment3D</span></td>
+        <td><span class="parametername">segment</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadEx_TryMerge2NeighborIntersection_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.TryMerge2NeighborIntersection*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadEx_TryMerge2NeighborIntersection_PLATEAU_RoadNetwork_Structure_RnRoad_PLATEAU_RoadNetwork_Structure_RnLaneBorderType_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.TryMerge2NeighborIntersection(PLATEAU.RoadNetwork.Structure.RnRoad,PLATEAU.RoadNetwork.Structure.RnLaneBorderType)">TryMerge2NeighborIntersection(RnRoad, RnLaneBorderType)</h4>
+  <div class="markdown level1 summary"><p>道路を隣の交差点にマージする</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryMerge2NeighborIntersection(this RnRoad self, RnLaneBorderType borderType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoad.html">RnRoad</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLaneBorderType.html">RnLaneBorderType</a></td>
+        <td><span class="parametername">borderType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>

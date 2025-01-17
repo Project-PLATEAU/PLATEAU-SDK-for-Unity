@@ -87,20 +87,25 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="PLATEAU.Editor.RoadNetwork.EditingSystemSubMod.EditingSystemGizmos.html">EditingSystemGizmos</a></h4>
-      <section><p>ギズモの描画システム
-ギズモ描画を行う処理を生成する。
-実際の描画はMonoBehaviourを継承したギズモ描画クラスを用意したのでそこで行う。</p>
+      <h4><a class="xref" href="PLATEAU.Editor.RoadNetwork.EditingSystemSubMod.RoadNetworkEditLandSnapper.html">RoadNetworkEditLandSnapper</a></h4>
+      <section><p>道路ネットワークを地形にスナップさせます。
+現在は使われていません。</p>
 </section>
-      <h4><a class="xref" href="PLATEAU.Editor.RoadNetwork.EditingSystemSubMod.SceneViewEventBuffer.html">SceneViewEventBuffer</a></h4>
-      <section><p>OnSceneGUIのイベントをバッファリングするクラス
-実際の処理を行っているのが別の更新フローでこのイベントを取得できないため、このクラスを作成。
-ベストは実際の処理をこのイベントに合わせた方がいいが対応コストがかかるため現状はこのまま対応。</p>
+      <h4><a class="xref" href="PLATEAU.Editor.RoadNetwork.EditingSystemSubMod.SplineEditorCore.html">SplineEditorCore</a></h4>
+      <section><p>スプライン編集のコア実装。エディタ非依存の部分のみ分離</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.Editor.RoadNetwork.EditingSystemSubMod.SplineEditorHandles.html">SplineEditorHandles</a></h4>
+      <section><p>スプライン編集のハンドル描画部分</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.Editor.RoadNetwork.EditingSystemSubMod.TrafficSignalEditor.html">TrafficSignalEditor</a></h4>
+      <section><p>信号情報を編集します。
+現在は使われていません。</p>
 </section>
     <h3 id="interfaces">Interfaces
   </h3>
-      <h4><a class="xref" href="PLATEAU.Editor.RoadNetwork.EditingSystemSubMod.IEventBuffer.html">IEventBuffer</a></h4>
-      <section><p>バッファの値を返すインターフェース</p>
+      <h4><a class="xref" href="PLATEAU.Editor.RoadNetwork.EditingSystemSubMod.ILaneLineDrawer.html">ILaneLineDrawer</a></h4>
+      <section><p>道路のレーン編集（交差点編集時の線も含む）のために、線1つをシーン上に描画します。
+線の種類をサブクラスで書き分けます。</p>
 </section>
 </article>
           </div>

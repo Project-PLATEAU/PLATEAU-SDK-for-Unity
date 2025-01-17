@@ -132,8 +132,7 @@ Item1 : 始点, Item2 : 終点</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Tuple&lt;T, T&gt;&gt; GetEdges&lt;T&gt;(IEnumerable&lt;T&gt; vertices, bool isLoop)
-    where T : struct</code></pre>
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Tuple&lt;T, T&gt;&gt; GetEdges&lt;T&gt;(IEnumerable&lt;T&gt; vertices, bool isLoop)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -190,14 +189,14 @@ Item1 : 始点, Item2 : 終点</p>
   
   
   <a id="PLATEAU_Util_GeoGraph_GeoGraphEx_GetInnerLerpSegments_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.GetInnerLerpSegments*"></a>
-  <h4 id="PLATEAU_Util_GeoGraph_GeoGraphEx_GetInnerLerpSegments_IReadOnlyList_Vector3__IReadOnlyList_Vector3__PLATEAU_Util_GeoGraph_AxisPlane_System_Single_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.GetInnerLerpSegments(IReadOnlyList{Vector3},IReadOnlyList{Vector3},PLATEAU.Util.GeoGraph.AxisPlane,System.Single)">GetInnerLerpSegments(IReadOnlyList&lt;Vector3&gt;, IReadOnlyList&lt;Vector3&gt;, AxisPlane, Single)</h4>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraphEx_GetInnerLerpSegments_IReadOnlyList_Vector3__IReadOnlyList_Vector3__PLATEAU_Util_GeoGraph_AxisPlane_System_Single_System_Single_" data-uid="PLATEAU.Util.GeoGraph.GeoGraphEx.GetInnerLerpSegments(IReadOnlyList{Vector3},IReadOnlyList{Vector3},PLATEAU.Util.GeoGraph.AxisPlane,System.Single,System.Single)">GetInnerLerpSegments(IReadOnlyList&lt;Vector3&gt;, IReadOnlyList&lt;Vector3&gt;, AxisPlane, Single, Single)</h4>
   <div class="markdown level1 summary"><p>selfの左右の道を横幅p : (1-p)で分割した線分を返す. p=[0,1]
 例) 0.5だと中央線が返る, 0だとLeftが返る, 1だとRightが返る. </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;Vector3&gt; GetInnerLerpSegments(IReadOnlyList&lt;Vector3&gt; leftVertices, IReadOnlyList&lt;Vector3&gt; rightVertices, AxisPlane plane, float p)</code></pre>
+    <pre><code class="lang-csharp hljs">public static List&lt;Vector3&gt; GetInnerLerpSegments(IReadOnlyList&lt;Vector3&gt; leftVertices, IReadOnlyList&lt;Vector3&gt; rightVertices, AxisPlane plane, float p, float checkMeter = 3F)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -227,6 +226,11 @@ Item1 : 始点, Item2 : 終点</p>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">checkMeter</span></td>
         <td></td>
       </tr>
     </tbody>

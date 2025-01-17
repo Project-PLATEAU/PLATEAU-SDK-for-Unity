@@ -87,14 +87,58 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.PLATEAUReproducedRoad.html">PLATEAUReproducedRoad</a></h4>
+      <section><p>道路ネットワークから生成された道路メッシュであることをシーン上に記録するためのMonoBehaviourです。</p>
+</section>
       <h4><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.PLATEAURoadNetworkToMeshDebug.html">PLATEAURoadNetworkToMeshDebug</a></h4>
       <section></section>
-      <h4><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.RnmContour.html">RnmContour</a></h4>
-      <section><p>道路ネットワークから導かれる輪郭線であり、多角形を構成します。
-RnmはRoadNetworkToMeshの略です。</p>
+      <h4><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.ReproducedRoadTypeExtension.html">ReproducedRoadTypeExtension</a></h4>
+      <section></section>
+      <h4><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.RnmLaneUV1Calc.html">RnmLaneUV1Calc</a></h4>
+      <section><p>道路の端のUV1が(0,0)、反対側の端が(1,1)になるようにUV1を計算します。
+RnmはRoad Network to Meshの略です。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.RnmMaterialTypeExtension.html">RnmMaterialTypeExtension</a></h4>
+      <section></section>
+      <h4><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.RnmUV4Copier.html">RnmUV4Copier</a></h4>
+      <section><p>道路のUV4をコピーします。</p>
 </section>
       <h4><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.RoadNetworkToMesh.html">RoadNetworkToMesh</a></h4>
       <section><p>道路ネットワークをメッシュに変換します。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.RoadReproduceSource.html">RoadReproduceSource</a></h4>
+      <section><p>生成された道路について、生成元となった道路オブジェクトを記録するためのクラスです。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.RrTargetModel.html">RrTargetModel</a></h4>
+      <section><p><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.IRrTarget.html">IRrTarget</a>で、1つの道路モデル全体を対象に取ります。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.RrTargetRoadBases.html">RrTargetRoadBases</a></h4>
+      <section><p><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.IRrTarget.html">IRrTarget</a>で、特定の道路または交差点を対象に取ります。</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.RnmVertex.html">RnmVertex</a></h4>
+      <section></section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.IRrTarget.html">IRrTarget</a></h4>
+      <section><p>道路ネットワークから道路モデルを生成する処理において、どの部分を対象にするのかを記述します。
+対象が道路ネットワーク全体か、指定の道路かを切り替えます。
+Rrは<span class="xref">PLATEAU.RoadAdjust.RoadReproducer</span>の略です。</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.ReproducedRoadDirection.html">ReproducedRoadDirection</a></h4>
+      <section><p>道路の両端に配置される道路標示（横断歩道）において、道路のどちら側に配置されたかを示します。どちらでもない道路標示はNoneとなります。 </p>
+</section>
+      <h4><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.ReproducedRoadType.html">ReproducedRoadType</a></h4>
+      <section><p>道路ネットワークから何を生成したかです </p>
+</section>
+      <h4><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.RnmLineSeparateType.html">RnmLineSeparateType</a></h4>
+      <section><p>道路変更で車線ごとにゲームオブジェクトを分けるかどうかです。RnmはRoad Network to Meshの略です。 </p>
+</section>
+      <h4><a class="xref" href="PLATEAU.RoadAdjust.RoadNetworkToMesh.RnmMaterialType.html">RnmMaterialType</a></h4>
+      <section><p>道路ネットワークをメッシュ化したときに、どのマテリアルを割り当てるかです。</p>
 </section>
 </article>
           </div>

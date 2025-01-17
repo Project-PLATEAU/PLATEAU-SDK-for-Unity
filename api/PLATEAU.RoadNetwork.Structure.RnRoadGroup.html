@@ -297,6 +297,44 @@ Intersection -&gt; Intersectionを繋ぐ複数のRoadをまとめるクラス</p
   </h3>
   
   
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_AddSideWalks_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.AddSideWalks*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_AddSideWalks_IReadOnlyCollection_PLATEAU_RoadNetwork_Structure_RnRoadGroup_RnSideWalkGroup__" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.AddSideWalks(IReadOnlyCollection{PLATEAU.RoadNetwork.Structure.RnRoadGroup.RnSideWalkGroup})">AddSideWalks(IReadOnlyCollection&lt;RnRoadGroup.RnSideWalkGroup&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSideWalks(IReadOnlyCollection&lt;RnRoadGroup.RnSideWalkGroup&gt; sideWalkGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadGroup.RnSideWalkGroup.html">RnRoadGroup.RnSideWalkGroup</a>&gt;</td>
+        <td><span class="parametername">sideWalkGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_AdjustBorder_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.AdjustBorder*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_AdjustBorder" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.AdjustBorder">AdjustBorder()</h4>
+  <div class="markdown level1 summary"><p>交差点との境界線の角度を調整する(進行方向に垂直になるようにする)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AdjustBorder()</code></pre>
+  </div>
+  
+  
   <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_Align_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.Align*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_Align" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.Align">Align()</h4>
   <div class="markdown level1 summary"><p>LaneのPrev/Nextの向きをそろえる</p>
@@ -304,8 +342,23 @@ Intersection -&gt; Intersectionを繋ぐ複数のRoadをまとめるクラス</p
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Align()</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Align()</code></pre>
   </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_CreateMedianOrSkip_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.CreateMedianOrSkip*"></a>
@@ -455,6 +508,91 @@ medianWidthは作成時の中央分離帯の幅. 最低1m. ただし目安であ
   </table>
   
   
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_GetEdgeWays_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.GetEdgeWays*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_GetEdgeWays_PLATEAU_RoadNetwork_RnDir_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.GetEdgeWays(PLATEAU.RoadNetwork.RnDir)">GetEdgeWays(RnDir)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RnRoadGroup.RnWayGroup GetEdgeWays(RnDir dir)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.RnDir.html">RnDir</a></td>
+        <td><span class="parametername">dir</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadGroup.RnWayGroup.html">RnRoadGroup.RnWayGroup</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_GetLanes_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.GetLanes*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_GetLanes_PLATEAU_RoadNetwork_RnDir_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.GetLanes(PLATEAU.RoadNetwork.RnDir)">GetLanes(RnDir)</h4>
+  <div class="markdown level1 summary"><p>RnDirで指定した側のレーンを取得する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;RnLane&gt; GetLanes(RnDir dir)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.RnDir.html">RnDir</a></td>
+        <td><span class="parametername">dir</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLane.html">RnLane</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_GetLeftLaneCount_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.GetLeftLaneCount*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_GetLeftLaneCount" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.GetLeftLaneCount">GetLeftLaneCount()</h4>
   <div class="markdown level1 summary"><p>左側のレーン数</p>
@@ -500,6 +638,39 @@ medianWidthは作成時の中央分離帯の幅. 最低1m. ただし目安であ
     <tbody>
       <tr>
         <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLane.html">RnLane</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_GetMedians_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.GetMedians*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_GetMedians_IReadOnlyCollection_PLATEAU_RoadNetwork_Structure_RnWay___IReadOnlyCollection_PLATEAU_RoadNetwork_Structure_RnWay___" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.GetMedians(IReadOnlyCollection{PLATEAU.RoadNetwork.Structure.RnWay}@,IReadOnlyCollection{PLATEAU.RoadNetwork.Structure.RnWay}@)">GetMedians(out IReadOnlyCollection&lt;RnWay&gt;, out IReadOnlyCollection&lt;RnWay&gt;)</h4>
+  <div class="markdown level1 summary"><p>中央分離帯を取得する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetMedians(out IReadOnlyCollection&lt;RnWay&gt; left, out IReadOnlyCollection&lt;RnWay&gt; right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a>&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a>&gt;</td>
+        <td><span class="parametername">right</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -557,6 +728,63 @@ medianWidthは作成時の中央分離帯の幅. 最低1m. ただし目安であ
   </table>
   
   
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_GetSideWalkGroups_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.GetSideWalkGroups*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_GetSideWalkGroups" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.GetSideWalkGroups">GetSideWalkGroups()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;RnRoadGroup.RnSideWalkGroup&gt; GetSideWalkGroups()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadGroup.RnSideWalkGroup.html">RnRoadGroup.RnSideWalkGroup</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_GetSideWalkGroups_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.GetSideWalkGroups*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_GetSideWalkGroups_IReadOnlyCollection_PLATEAU_RoadNetwork_Structure_RnRoadGroup_RnSideWalkGroup___IReadOnlyCollection_PLATEAU_RoadNetwork_Structure_RnRoadGroup_RnSideWalkGroup___" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.GetSideWalkGroups(IReadOnlyCollection{PLATEAU.RoadNetwork.Structure.RnRoadGroup.RnSideWalkGroup}@,IReadOnlyCollection{PLATEAU.RoadNetwork.Structure.RnRoadGroup.RnSideWalkGroup}@)">GetSideWalkGroups(out IReadOnlyCollection&lt;RnRoadGroup.RnSideWalkGroup&gt;, out IReadOnlyCollection&lt;RnRoadGroup.RnSideWalkGroup&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetSideWalkGroups(out IReadOnlyCollection&lt;RnRoadGroup.RnSideWalkGroup&gt; left, out IReadOnlyCollection&lt;RnRoadGroup.RnSideWalkGroup&gt; right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadGroup.RnSideWalkGroup.html">RnRoadGroup.RnSideWalkGroup</a>&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadGroup.RnSideWalkGroup.html">RnRoadGroup.RnSideWalkGroup</a>&gt;</td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_HasMedian_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.HasMedian*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_HasMedian" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.HasMedian">HasMedian()</h4>
   <div class="markdown level1 summary"><p>中央分離帯があるかどうか.
@@ -566,6 +794,135 @@ medianWidthは作成時の中央分離帯の幅. 最低1m. ただし目安であ
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool HasMedian()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_HasMedians_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.HasMedians*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_HasMedians" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.HasMedians">HasMedians()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasMedians()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_IsDeepAligned_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.IsDeepAligned*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_IsDeepAligned" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.IsDeepAligned">IsDeepAligned()</h4>
+  <div class="markdown level1 summary"><p>複数道路がきれいに整列されているかどうか
+道路の方向が一致, かつレーンの方向も含めて向きが一致している</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDeepAligned()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_IsSameRoadGroup_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.IsSameRoadGroup*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_IsSameRoadGroup_PLATEAU_RoadNetwork_Structure_RnRoadGroup_PLATEAU_RoadNetwork_Structure_RnRoadGroup_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.IsSameRoadGroup(PLATEAU.RoadNetwork.Structure.RnRoadGroup,PLATEAU.RoadNetwork.Structure.RnRoadGroup)">IsSameRoadGroup(RnRoadGroup, RnRoadGroup)</h4>
+  <div class="markdown level1 summary"><p>2つのRoadGroupが同じかどうかを識別する
+両方nullである場合はfalseを返す</p>
+<p>判定は同じ交差点、同じ道路を含むかで行う。
+この時、各要素の順序は問わない</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSameRoadGroup(RnRoadGroup a, RnRoadGroup b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadGroup.html">RnRoadGroup</a></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadGroup.html">RnRoadGroup</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_MergeRoads_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.MergeRoads*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_MergeRoads" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.MergeRoads">MergeRoads()</h4>
+  <div class="markdown level1 summary"><p>複数のRoadsを1つのRoadにまとめる</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MergeRoads()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -612,13 +969,80 @@ medianWidthは作成時の中央分離帯の幅. 最低1m. ただし目安であ
   </table>
   
   
-  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_SetLaneCount_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.SetLaneCount*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_SetLaneCount_System_Int32_System_Int32_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.SetLaneCount(System.Int32,System.Int32)">SetLaneCount(Int32, Int32)</h4>
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_RemoveSideWalks_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.RemoveSideWalks*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_RemoveSideWalks_IReadOnlyCollection_PLATEAU_RoadNetwork_Structure_RnRoadGroup_RnSideWalkGroup__" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.RemoveSideWalks(IReadOnlyCollection{PLATEAU.RoadNetwork.Structure.RnRoadGroup.RnSideWalkGroup})">RemoveSideWalks(IReadOnlyCollection&lt;RnRoadGroup.RnSideWalkGroup&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetLaneCount(int leftCount, int rightCount)</code></pre>
+    <pre><code class="lang-csharp hljs">public void RemoveSideWalks(IReadOnlyCollection&lt;RnRoadGroup.RnSideWalkGroup&gt; sideWalks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadGroup.RnSideWalkGroup.html">RnRoadGroup.RnSideWalkGroup</a>&gt;</td>
+        <td><span class="parametername">sideWalks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_SetLaneCount_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.SetLaneCount*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_SetLaneCount_PLATEAU_RoadNetwork_RnDir_System_Int32_System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.SetLaneCount(PLATEAU.RoadNetwork.RnDir,System.Int32,System.Boolean)">SetLaneCount(RnDir, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>RnDirで指定した側のレーン数を設定する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLaneCount(RnDir dir, int count, bool rebuildTrack = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.RnDir.html">RnDir</a></td>
+        <td><span class="parametername">dir</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">rebuildTrack</span></td>
+        <td><p>レーン分割後に関係する交差点のトラックを再生成する</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_SetLaneCount_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.SetLaneCount*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_SetLaneCount_System_Int32_System_Int32_System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.SetLaneCount(System.Int32,System.Int32,System.Boolean)">SetLaneCount(Int32, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>レーン数を変更する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLaneCount(int leftCount, int rightCount, bool rebuildTrack = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -638,6 +1062,11 @@ medianWidthは作成時の中央分離帯の幅. 最低1m. ただし目安であ
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">rightCount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">rebuildTrack</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -683,13 +1112,13 @@ medianWidthは作成時の中央分離帯の幅. 最低1m. ただし目安であ
   
   
   <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_SetLeftLaneCount_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.SetLeftLaneCount*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_SetLeftLaneCount_System_Int32_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.SetLeftLaneCount(System.Int32)">SetLeftLaneCount(Int32)</h4>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_SetLeftLaneCount_System_Int32_System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.SetLeftLaneCount(System.Int32,System.Boolean)">SetLeftLaneCount(Int32, Boolean)</h4>
   <div class="markdown level1 summary"><p>左側レーン数を変更する</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetLeftLaneCount(int count)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetLeftLaneCount(int count, bool rebuildTrack = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -706,18 +1135,23 @@ medianWidthは作成時の中央分離帯の幅. 最低1m. ただし目安であ
         <td><span class="parametername">count</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">rebuildTrack</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_SetMedianWidth_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.SetMedianWidth*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_SetMedianWidth_System_Single_PLATEAU_RoadNetwork_Structure_LaneWayMoveOption_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.SetMedianWidth(System.Single,PLATEAU.RoadNetwork.Structure.LaneWayMoveOption)">SetMedianWidth(Single, LaneWayMoveOption)</h4>
-  <div class="markdown level1 summary"><p>中央分離帯の幅を設定する. 非推奨. 個別にWayを動かすことを推奨</p>
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_SetRightLaneCount_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.SetRightLaneCount*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_SetRightLaneCount_System_Int32_System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.SetRightLaneCount(System.Int32,System.Boolean)">SetRightLaneCount(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>右側レーン数を変更する</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool SetMedianWidth(float width, LaneWayMoveOption moveOption)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetRightLaneCount(int count, bool rebuildTrack = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -730,13 +1164,57 @@ medianWidthは作成時の中央分離帯の幅. 最低1m. ただし目安であ
     </thead>
     <tbody>
       <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">rebuildTrack</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_TryCreateSimpleSpline_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.TryCreateSimpleSpline*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_TryCreateSimpleSpline_Spline__System_Single__System_Single_System_Single_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.TryCreateSimpleSpline(Spline@,System.Single@,System.Single,System.Single)">TryCreateSimpleSpline(out Spline, out Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>中央を通るスプラインとその幅を取得する
+幅は中間点から取得するので完璧な値ではない</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryCreateSimpleSpline(out Spline spline, out float width, float tangentLength = 1F, float pointSkipDistance = 0.001F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Spline</span></td>
+        <td><span class="parametername">spline</span></td>
+        <td></td>
+      </tr>
+      <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">width</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.LaneWayMoveOption.html">LaneWayMoveOption</a></td>
-        <td><span class="parametername">moveOption</span></td>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">tangentLength</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">pointSkipDistance</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -752,34 +1230,6 @@ medianWidthは作成時の中央分離帯の幅. 最低1m. ただし目安であ
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_SetRightLaneCount_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.SetRightLaneCount*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadGroup_SetRightLaneCount_System_Int32_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadGroup.SetRightLaneCount(System.Int32)">SetRightLaneCount(Int32)</h4>
-  <div class="markdown level1 summary"><p>右側レーン数を変更する</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetRightLaneCount(int count)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">count</span></td>
         <td></td>
       </tr>
     </tbody>

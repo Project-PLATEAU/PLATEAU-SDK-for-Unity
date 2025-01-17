@@ -126,12 +126,12 @@
   
   
   <a id="PLATEAU_Editor_RoadNetwork_WayEditorData__ctor_" data-uid="PLATEAU.Editor.RoadNetwork.WayEditorData.#ctor*"></a>
-  <h4 id="PLATEAU_Editor_RoadNetwork_WayEditorData__ctor_RnWay_" data-uid="PLATEAU.Editor.RoadNetwork.WayEditorData.#ctor(RnWay)">WayEditorData(RnWay)</h4>
+  <h4 id="PLATEAU_Editor_RoadNetwork_WayEditorData__ctor_RnWay_RnLane_" data-uid="PLATEAU.Editor.RoadNetwork.WayEditorData.#ctor(RnWay,RnLane)">WayEditorData(RnWay, RnLane)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WayEditorData(RnWay target)</code></pre>
+    <pre><code class="lang-csharp hljs">public WayEditorData(RnWay target, RnLane parent)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -146,6 +146,11 @@
       <tr>
         <td><span class="xref">RnWay</span></td>
         <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">RnLane</span></td>
+        <td><span class="parametername">parent</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -230,13 +235,13 @@
   </table>
   
   
-  <a id="PLATEAU_Editor_RoadNetwork_WayEditorData_IsSideWalk_" data-uid="PLATEAU.Editor.RoadNetwork.WayEditorData.IsSideWalk*"></a>
-  <h4 id="PLATEAU_Editor_RoadNetwork_WayEditorData_IsSideWalk" data-uid="PLATEAU.Editor.RoadNetwork.WayEditorData.IsSideWalk">IsSideWalk</h4>
+  <a id="PLATEAU_Editor_RoadNetwork_WayEditorData_ParentLane_" data-uid="PLATEAU.Editor.RoadNetwork.WayEditorData.ParentLane*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_WayEditorData_ParentLane" data-uid="PLATEAU.Editor.RoadNetwork.WayEditorData.ParentLane">ParentLane</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsSideWalk { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public RnLane ParentLane { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -248,7 +253,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">RnLane</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -299,6 +304,31 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Editor_RoadNetwork_WayEditorData_Type_" data-uid="PLATEAU.Editor.RoadNetwork.WayEditorData.Type*"></a>
+  <h4 id="PLATEAU_Editor_RoadNetwork_WayEditorData_Type" data-uid="PLATEAU.Editor.RoadNetwork.WayEditorData.Type">Type</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WayEditorData.WayType Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Editor.RoadNetwork.WayEditorData.WayType.html">WayEditorData.WayType</a></td>
         <td></td>
       </tr>
     </tbody>
