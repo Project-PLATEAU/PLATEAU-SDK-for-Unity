@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class VTreeNodeEx
+    <title>Class RnVoronoiEx
    | PLATEAU SDK for Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class VTreeNodeEx
+    <meta name="title" content="Class RnVoronoiEx
    | PLATEAU SDK for Unity ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,17 +78,17 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PLATEAU.RoadNetwork.Voronoi.VTreeNodeEx">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.RoadNetwork.Util.Voronoi.RnVoronoiEx">
   
   
-  <h1 id="PLATEAU_RoadNetwork_Voronoi_VTreeNodeEx" data-uid="PLATEAU.RoadNetwork.Voronoi.VTreeNodeEx" class="text-break">Class VTreeNodeEx
+  <h1 id="PLATEAU_RoadNetwork_Util_Voronoi_RnVoronoiEx" data-uid="PLATEAU.RoadNetwork.Util.Voronoi.RnVoronoiEx" class="text-break">Class RnVoronoiEx
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">VTreeNodeEx</span></div>
+    <div class="level1"><span class="xref">RnVoronoiEx</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -114,25 +114,24 @@
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.RoadNetwork.Voronoi.html">PLATEAU.RoadNetwork.Voronoi</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.RoadNetwork.Util.Voronoi.html">PLATEAU.RoadNetwork.Util.Voronoi</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="PLATEAU_RoadNetwork_Voronoi_VTreeNodeEx_syntax">Syntax</h5>
+  <h5 id="PLATEAU_RoadNetwork_Util_Voronoi_RnVoronoiEx_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class VTreeNodeEx</code></pre>
+    <pre><code class="lang-csharp hljs">public static class RnVoronoiEx</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="PLATEAU_RoadNetwork_Voronoi_VTreeNodeEx_BuildString_" data-uid="PLATEAU.RoadNetwork.Voronoi.VTreeNodeEx.BuildString*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Voronoi_VTreeNodeEx_BuildString__1___0_Func___0_System_String__" data-uid="PLATEAU.RoadNetwork.Voronoi.VTreeNodeEx.BuildString``1(``0,Func{``0,System.String})">BuildString&lt;T&gt;(T, Func&lt;T, String&gt;)</h4>
-  <div class="markdown level1 summary"><p>rootを根として木構造を文字列で表示する. strDigitは各ノードを表す文字列の幅</p>
+  <a id="PLATEAU_RoadNetwork_Util_Voronoi_RnVoronoiEx_CalcBeachLine_" data-uid="PLATEAU.RoadNetwork.Util.Voronoi.RnVoronoiEx.CalcBeachLine*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Util_Voronoi_RnVoronoiEx_CalcBeachLine_PLATEAU_RoadNetwork_Util_Vector2d_System_Double_PLATEAU_RoadNetwork_Util_Voronoi_RnVoronoiEx_VParabola__" data-uid="PLATEAU.RoadNetwork.Util.Voronoi.RnVoronoiEx.CalcBeachLine(PLATEAU.RoadNetwork.Util.Vector2d,System.Double,PLATEAU.RoadNetwork.Util.Voronoi.RnVoronoiEx.VParabola@)">CalcBeachLine(Vector2d, Double, out RnVoronoiEx.VParabola)</h4>
+  <div class="markdown level1 summary"><p>ビーチライン計算. p.y &lt; lineYの時は存在しない</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string BuildString&lt;T&gt;(this T root, Func&lt;T, string&gt; toString)
-    where T : VTreeNode&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool CalcBeachLine(Vector2d p, double lineY, out RnVoronoiEx.VParabola ret)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -145,13 +144,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">root</span></td>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Util.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">p</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;T, <span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">toString</span></td>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">lineY</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Util.Voronoi.RnVoronoiEx.VParabola.html">RnVoronoiEx.VParabola</a></td>
+        <td><span class="parametername">ret</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -166,7 +170,54 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Util_Voronoi_RnVoronoiEx_CalcVoronoiData_" data-uid="PLATEAU.RoadNetwork.Util.Voronoi.RnVoronoiEx.CalcVoronoiData*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Util_Voronoi_RnVoronoiEx_CalcVoronoiData__1_List___0__Func___0_PLATEAU_RoadNetwork_Util_Vector2d__" data-uid="PLATEAU.RoadNetwork.Util.Voronoi.RnVoronoiEx.CalcVoronoiData``1(List{``0},Func{``0,PLATEAU.RoadNetwork.Util.Vector2d})">CalcVoronoiData&lt;T&gt;(List&lt;T&gt;, Func&lt;T, Vector2d&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VoronoiData&lt;T&gt; CalcVoronoiData&lt;T&gt;(List&lt;T&gt; points, Func&lt;T, Vector2d&gt; toVec2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <a class="xref" href="PLATEAU.RoadNetwork.Util.Vector2d.html">Vector2d</a>&gt;</td>
+        <td><span class="parametername">toVec2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Util.Voronoi.VoronoiData-1.html">VoronoiData</a>&lt;T&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -188,15 +239,13 @@
   </table>
   
   
-  <a id="PLATEAU_RoadNetwork_Voronoi_VTreeNodeEx_GetAllLeafs_" data-uid="PLATEAU.RoadNetwork.Voronoi.VTreeNodeEx.GetAllLeafs*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Voronoi_VTreeNodeEx_GetAllLeafs__1___0_" data-uid="PLATEAU.RoadNetwork.Voronoi.VTreeNodeEx.GetAllLeafs``1(``0)">GetAllLeafs&lt;T&gt;(T)</h4>
-  <div class="markdown level1 summary"><p>ノードの葉をすべて取得する(左から右に取得する)</p>
-</div>
+  <a id="PLATEAU_RoadNetwork_Util_Voronoi_RnVoronoiEx_SolveQuadratic_" data-uid="PLATEAU.RoadNetwork.Util.Voronoi.RnVoronoiEx.SolveQuadratic*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Util_Voronoi_RnVoronoiEx_SolveQuadratic_System_Double_System_Double_System_Double_System_Double__System_Double__" data-uid="PLATEAU.RoadNetwork.Util.Voronoi.RnVoronoiEx.SolveQuadratic(System.Double,System.Double,System.Double,System.Double@,System.Double@)">SolveQuadratic(Double, Double, Double, out Double, out Double)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; GetAllLeafs&lt;T&gt;(this T self)
-    where T : VTreeNode&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public static int SolveQuadratic(double a, double b, double c, out double x1, out double x2)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -209,8 +258,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">self</span></td>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x2</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -225,22 +294,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>

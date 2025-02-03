@@ -102,6 +102,9 @@
       <a class="xref" href="PLATEAU.RoadNetwork.ARnPartsBase.html#PLATEAU_RoadNetwork_ARnPartsBase_DebugMyId">ARnPartsBase.DebugMyId</a>
     </div>
     <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.ARnPartsBase.html#PLATEAU_RoadNetwork_ARnPartsBase_DebugMemo">ARnPartsBase.DebugMemo</a>
+    </div>
+    <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
     <div>
@@ -1040,6 +1043,17 @@ cloneVertexがtrueの時は頂点もクローンする</p>
   </table>
   
   
+  <a id="PLATEAU_RoadNetwork_Structure_RnWay_RemoveIntersection_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.RemoveIntersection*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnWay_RemoveIntersection" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.RemoveIntersection">RemoveIntersection()</h4>
+  <div class="markdown level1 summary"><p>線が自分自身の線と交差する場合、交差して輪になった部分をなかったことにして交差しないようにします</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveIntersection()</code></pre>
+  </div>
+  
+  
   <a id="PLATEAU_RoadNetwork_Structure_RnWay_Reverse_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.Reverse*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnWay_Reverse_System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.Reverse(System.Boolean)">Reverse(Boolean)</h4>
   <div class="markdown level1 summary"><p>線の向きを反転させる</p>
@@ -1190,6 +1204,64 @@ cloneVertexがtrueの時は頂点もクローンする</p>
     <tbody>
       <tr>
         <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnPoint.html">RnPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnWay_SetPointsKeepReference_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.SetPointsKeepReference*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnWay_SetPointsKeepReference_IEnumerable_Vector3__" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.SetPointsKeepReference(IEnumerable{Vector3})">SetPointsKeepReference(IEnumerable&lt;Vector3&gt;)</h4>
+  <div class="markdown level1 summary"><p>点の座標をまとめて設定する。RnPointへの参照はなるべく保持する。Wayの向きを考慮する。
+引数<code data-dev-comment-type="paramref" class="paramref">nextPoints</code>の点の数が現在の点と同じであれば、すべてのRnPointへの参照を保つ。
+しかし、引数の点の数が現在の点の数と違う場合は、最初と最後のみ参照を保つ。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPointsKeepReference(IEnumerable&lt;Vector3&gt; nextPointsArg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">nextPointsArg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnWay_SetPointsUnkeepReference_" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.SetPointsUnkeepReference*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnWay_SetPointsUnkeepReference_IEnumerable_Vector3__" data-uid="PLATEAU.RoadNetwork.Structure.RnWay.SetPointsUnkeepReference(IEnumerable{Vector3})">SetPointsUnkeepReference(IEnumerable&lt;Vector3&gt;)</h4>
+  <div class="markdown level1 summary"><p>点の座標をまとめて設定する。RnPointを新たに生成するため、既存のRnPointへの参照は途切れる。Wayの向きを考慮する。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPointsUnkeepReference(IEnumerable&lt;Vector3&gt; nextPointsArg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">nextPointsArg</span></td>
         <td></td>
       </tr>
     </tbody>

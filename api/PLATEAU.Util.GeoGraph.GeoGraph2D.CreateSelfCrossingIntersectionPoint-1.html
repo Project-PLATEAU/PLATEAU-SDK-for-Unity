@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Enum RnVoronoiEx.EventType
+    <title>Delegate GeoGraph2D.CreateSelfCrossingIntersectionPoint&lt;T&gt;
    | PLATEAU SDK for Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enum RnVoronoiEx.EventType
+    <meta name="title" content="Delegate GeoGraph2D.CreateSelfCrossingIntersectionPoint&lt;T&gt;
    | PLATEAU SDK for Unity ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,39 +78,97 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PLATEAU.RoadNetwork.Voronoi.RnVoronoiEx.EventType">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.CreateSelfCrossingIntersectionPoint`1">
   
   
-  <h1 id="PLATEAU_RoadNetwork_Voronoi_RnVoronoiEx_EventType" data-uid="PLATEAU.RoadNetwork.Voronoi.RnVoronoiEx.EventType" class="text-break">Enum RnVoronoiEx.EventType
+  <h1 id="PLATEAU_Util_GeoGraph_GeoGraph2D_CreateSelfCrossingIntersectionPoint_1" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.CreateSelfCrossingIntersectionPoint`1" class="text-break">Delegate GeoGraph2D.CreateSelfCrossingIntersectionPoint&lt;T&gt;
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>自己交差している交点のポイントを作成する関数</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.RoadNetwork.Voronoi.html">PLATEAU.RoadNetwork.Voronoi</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.Util.GeoGraph.html">PLATEAU.Util.GeoGraph</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="PLATEAU_RoadNetwork_Voronoi_RnVoronoiEx_EventType_syntax">Syntax</h5>
+  <h5 id="PLATEAU_Util_GeoGraph_GeoGraph2D_CreateSelfCrossingIntersectionPoint_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum EventType</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate T CreateSelfCrossingIntersectionPoint&lt;T&gt;(T seg1Start, T seg1End, T seg2Start, T seg2End, Vector2 intersection, float seg1T, float seg2T);</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">seg1Start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">seg1End</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">seg2Start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">seg2End</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">intersection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">seg1T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">seg2T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Name</th>
         <th>Description</th>
       </tr>
-    <thead>
+    </thead>
     <tbody>
       <tr>
-        <td id="PLATEAU_RoadNetwork_Voronoi_RnVoronoiEx_EventType_CircleEvent">CircleEvent</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="PLATEAU_RoadNetwork_Voronoi_RnVoronoiEx_EventType_SiteEvent">SiteEvent</td>
+        <td><span class="parametername">T</span></td>
         <td></td>
       </tr>
     </tbody>
-  </thead></thead></table>
+  </table>
 </article>
           </div>
           

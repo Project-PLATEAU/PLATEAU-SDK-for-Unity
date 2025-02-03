@@ -103,6 +103,9 @@
       <a class="xref" href="PLATEAU.RoadNetwork.ARnPartsBase.html#PLATEAU_RoadNetwork_ARnPartsBase_DebugMyId">ARnPartsBase.DebugMyId</a>
     </div>
     <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.ARnPartsBase.html#PLATEAU_RoadNetwork_ARnPartsBase_DebugMemo">ARnPartsBase.DebugMemo</a>
+    </div>
+    <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
     <div>
@@ -386,7 +389,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddPointFrontOrSkip(RnPoint p, float distanceEpsilon = 0F, float degEpsilon = 0.5F, float midPointTolerance = 0.3F)</code></pre>
+    <pre><code class="lang-csharp hljs">public void AddPointFrontOrSkip(RnPoint p, float distanceEpsilon = 0F, float degEpsilon = 0.5F, float midPointTolerance = 0.1F)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -436,7 +439,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddPointOrSkip(RnPoint p, float distanceEpsilon = 0F, float degEpsilon = 0.5F, float midPointTolerance = 0.3F)</code></pre>
+    <pre><code class="lang-csharp hljs">public void AddPointOrSkip(RnPoint p, float distanceEpsilon = 0F, float degEpsilon = 0.5F, float midPointTolerance = 0.1F)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -799,7 +802,7 @@ degEpsilon : 3点が同一直線上にあるときの角度誤差. 180±degEpsil
   <a id="PLATEAU_RoadNetwork_Structure_RnLineString_GetEdgeNormal_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.GetEdgeNormal*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnLineString_GetEdgeNormal_System_Int32_" data-uid="PLATEAU.RoadNetwork.Structure.RnLineString.GetEdgeNormal(System.Int32)">GetEdgeNormal(Int32)</h4>
   <div class="markdown level1 summary"><p>頂点 startVertexIndex, startVertexIndex + 1で構成される辺の法線ベクトルを返す
-上(Vector3.up)から見て半時計回りを向いている. 正規化済み</p>
+上(Vector3.up)から見て反時計回りを向いている. 正規化済み</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

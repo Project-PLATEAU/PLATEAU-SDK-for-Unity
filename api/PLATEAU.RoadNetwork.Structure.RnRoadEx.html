@@ -454,6 +454,58 @@ dir = Left(Right). 左(右)車線だけみた両端のwayを返す</p>
   </table>
   
   
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadEx_IsValidBorderAdjacentNeighbor_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.IsValidBorderAdjacentNeighbor*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadEx_IsValidBorderAdjacentNeighbor_PLATEAU_RoadNetwork_Structure_RnRoad_PLATEAU_RoadNetwork_Structure_RnLaneBorderType_System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.IsValidBorderAdjacentNeighbor(PLATEAU.RoadNetwork.Structure.RnRoad,PLATEAU.RoadNetwork.Structure.RnLaneBorderType,System.Boolean)">IsValidBorderAdjacentNeighbor(RnRoad, RnLaneBorderType, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidBorderAdjacentNeighbor(this RnRoad self, RnLaneBorderType borderType, bool noBorderIsTrue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoad.html">RnRoad</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnLaneBorderType.html">RnLaneBorderType</a></td>
+        <td><span class="parametername">borderType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">noBorderIsTrue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_RoadNetwork_Structure_RnRoadEx_TryGetAdjustBorderSegment_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.TryGetAdjustBorderSegment*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadEx_TryGetAdjustBorderSegment_PLATEAU_RoadNetwork_Structure_RnRoad_PLATEAU_RoadNetwork_Structure_RnLaneBorderType_LineSegment3D__" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.TryGetAdjustBorderSegment(PLATEAU.RoadNetwork.Structure.RnRoad,PLATEAU.RoadNetwork.Structure.RnLaneBorderType,LineSegment3D@)">TryGetAdjustBorderSegment(RnRoad, RnLaneBorderType, out LineSegment3D)</h4>
   <div class="markdown level1 summary"><p>roadのMergedSideWayから計算された進行方向に垂直な境界線を取得する</p>

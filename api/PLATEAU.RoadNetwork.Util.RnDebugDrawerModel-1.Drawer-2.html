@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class VoronoiData&lt;T&gt;.Edge
+    <title>Class RnDebugDrawerModel&lt;TModel&gt;.Drawer&lt;TWork, T&gt;
    | PLATEAU SDK for Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class VoronoiData&lt;T&gt;.Edge
+    <meta name="title" content="Class RnDebugDrawerModel&lt;TModel&gt;.Drawer&lt;TWork, T&gt;
    | PLATEAU SDK for Unity ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,17 +78,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.RoadNetwork.Util.RnDebugDrawerModel`1.Drawer`2">
   
   
-  <h1 id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge" class="text-break">Class VoronoiData&lt;T&gt;.Edge
+  <h1 id="PLATEAU_RoadNetwork_Util_RnDebugDrawerModel_1_Drawer_2" data-uid="PLATEAU.RoadNetwork.Util.RnDebugDrawerModel`1.Drawer`2" class="text-break">Class RnDebugDrawerModel&lt;TModel&gt;.Drawer&lt;TWork, T&gt;
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">VoronoiData&lt;T&gt;.Edge</span></div>
+    <div class="level1"><a class="xref" href="PLATEAU.RoadNetwork.Util.RnDebugDrawerBase.html">RnDebugDrawerBase</a></div>
+    <div class="level2"><span class="xref">RnDebugDrawerModel&lt;TModel&gt;.Drawer&lt;TWork, T&gt;</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -114,23 +115,92 @@
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.RoadNetwork.Voronoi.html">PLATEAU.RoadNetwork.Voronoi</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.RoadNetwork.Util.html">PLATEAU.RoadNetwork.Util</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_syntax">Syntax</h5>
+  <h5 id="PLATEAU_RoadNetwork_Util_RnDebugDrawerModel_1_Drawer_2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Edge</code></pre>
+    <pre><code class="lang-csharp hljs">public class Drawer&lt;TWork, T&gt; : RnDebugDrawerBase where TWork : RnDebugDrawerModel&lt;TModel&gt;.DrawFrameWork</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TWork</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
   </h3>
   
   
-  <a id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge__ctor_" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.#ctor*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge__ctor_PLATEAU_RoadNetwork_Voronoi_VoronoiData__0__PLATEAU_RoadNetwork_Voronoi_VEdge_" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.#ctor(PLATEAU.RoadNetwork.Voronoi.VoronoiData{`0},PLATEAU.RoadNetwork.Voronoi.VEdge)">Edge(VoronoiData&lt;T&gt;, VEdge)</h4>
+  <h4 id="PLATEAU_RoadNetwork_Util_RnDebugDrawerModel_1_Drawer_2_showVisibleType" data-uid="PLATEAU.RoadNetwork.Util.RnDebugDrawerModel`1.Drawer`2.showVisibleType">showVisibleType</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Edge(VoronoiData&lt;T&gt; parent, VEdge edge)</code></pre>
+    <pre><code class="lang-csharp hljs">public RnDebugDrawerBase.VisibleType showVisibleType</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Util.RnDebugDrawerBase.VisibleType.html">RnDebugDrawerBase.VisibleType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="PLATEAU_RoadNetwork_Util_RnDebugDrawerModel_1_Drawer_2_visible" data-uid="PLATEAU.RoadNetwork.Util.RnDebugDrawerModel`1.Drawer`2.visible">visible</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool visible</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Util_RnDebugDrawerModel_1_Drawer_2_Draw_" data-uid="PLATEAU.RoadNetwork.Util.RnDebugDrawerModel`1.Drawer`2.Draw*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Util_RnDebugDrawerModel_1_Drawer_2_Draw__1__2_PLATEAU_RoadNetwork_Util_RnDebugDrawerBase_VisibleType_" data-uid="PLATEAU.RoadNetwork.Util.RnDebugDrawerModel`1.Drawer`2.Draw(`1,`2,PLATEAU.RoadNetwork.Util.RnDebugDrawerBase.VisibleType)">Draw(TWork, T, RnDebugDrawerBase.VisibleType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Draw(TWork work, T self, RnDebugDrawerBase.VisibleType visibleType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -143,31 +213,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="PLATEAU.RoadNetwork.Voronoi.VoronoiData-1.html">VoronoiData</a>&lt;T&gt;</td>
-        <td><span class="parametername">parent</span></td>
+        <td><span class="xref">TWork</span></td>
+        <td><span class="parametername">work</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="PLATEAU.RoadNetwork.Voronoi.VEdge.html">VEdge</a></td>
-        <td><span class="parametername">edge</span></td>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Util.RnDebugDrawerBase.VisibleType.html">RnDebugDrawerBase.VisibleType</a></td>
+        <td><span class="parametername">visibleType</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_Direction_" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.Direction*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_Direction" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.Direction">Direction</h4>
-  <div class="markdown level1 summary"><p>辺の方向</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2d Direction { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -177,23 +239,44 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="PLATEAU.RoadNetwork.Voronoi.Vector2d.html">Vector2d</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_End_" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.End*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_End" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.End">End</h4>
-  <div class="markdown level1 summary"><p>終了点(半直線の場合はnull)</p>
-</div>
+  <a id="PLATEAU_RoadNetwork_Util_RnDebugDrawerModel_1_Drawer_2_DrawImpl_" data-uid="PLATEAU.RoadNetwork.Util.RnDebugDrawerModel`1.Drawer`2.DrawImpl*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Util_RnDebugDrawerModel_1_Drawer_2_DrawImpl__1__2_" data-uid="PLATEAU.RoadNetwork.Util.RnDebugDrawerModel`1.Drawer`2.DrawImpl(`1,`2)">DrawImpl(TWork, T)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2d? End { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual bool DrawImpl(TWork work, T self)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TWork</span></td>
+        <td><span class="parametername">work</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -203,23 +286,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Voronoi.Vector2d.html">Vector2d</a>&gt;</td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_LeftSiteIndex_" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.LeftSiteIndex*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_LeftSiteIndex" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.LeftSiteIndex">LeftSiteIndex</h4>
-  <div class="markdown level1 summary"><p>左側のサイトポイントインデックス</p>
-</div>
+  <a id="PLATEAU_RoadNetwork_Util_RnDebugDrawerModel_1_Drawer_2_GetChildDrawers_" data-uid="PLATEAU.RoadNetwork.Util.RnDebugDrawerModel`1.Drawer`2.GetChildDrawers*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Util_RnDebugDrawerModel_1_Drawer_2_GetChildDrawers" data-uid="PLATEAU.RoadNetwork.Util.RnDebugDrawerModel`1.Drawer`2.GetChildDrawers">GetChildDrawers()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int LeftSiteIndex { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;RnDebugDrawerModel&lt;TModel&gt;.Drawer&lt;TWork, T&gt;&gt; GetChildDrawers()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -229,49 +311,39 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Util.RnDebugDrawerModel-1.Drawer-2.html">RnDebugDrawerModel.Drawer</a>&lt;TWork, T&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_LeftSitePoint_" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.LeftSitePoint*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_LeftSitePoint" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.LeftSitePoint">LeftSitePoint</h4>
-  <div class="markdown level1 summary"><p>左側のサイトポイント</p>
-</div>
+  <a id="PLATEAU_RoadNetwork_Util_RnDebugDrawerModel_1_Drawer_2_GetTargetGameObjects_" data-uid="PLATEAU.RoadNetwork.Util.RnDebugDrawerModel`1.Drawer`2.GetTargetGameObjects*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Util_RnDebugDrawerModel_1_Drawer_2_GetTargetGameObjects__2_" data-uid="PLATEAU.RoadNetwork.Util.RnDebugDrawerModel`1.Drawer`2.GetTargetGameObjects(`2)">GetTargetGameObjects(T)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T LeftSitePoint { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;PLATEAUCityObjectGroup&gt; GetTargetGameObjects(T self)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
+        <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_LeftSitePoints_" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.LeftSitePoints*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_LeftSitePoints" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.LeftSitePoints">LeftSitePoints</h4>
-  <div class="markdown level1 summary"><p>辺の左側にあるサイトポイント情報</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;T&gt; LeftSitePoints { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -281,23 +353,44 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;T&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">PLATEAUCityObjectGroup</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_RightSiteIndex_" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.RightSiteIndex*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_RightSiteIndex" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.RightSiteIndex">RightSiteIndex</h4>
-  <div class="markdown level1 summary"><p>右側のサイトポイントインデックス</p>
-</div>
+  <a id="PLATEAU_RoadNetwork_Util_RnDebugDrawerModel_1_Drawer_2_IsShowTarget_" data-uid="PLATEAU.RoadNetwork.Util.RnDebugDrawerModel`1.Drawer`2.IsShowTarget*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Util_RnDebugDrawerModel_1_Drawer_2_IsShowTarget__1__2_" data-uid="PLATEAU.RoadNetwork.Util.RnDebugDrawerModel`1.Drawer`2.IsShowTarget(`1,`2)">IsShowTarget(TWork, T)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int RightSiteIndex { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool IsShowTarget(TWork work, T self)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TWork</span></td>
+        <td><span class="parametername">work</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -307,49 +400,39 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_RightSitePoint_" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.RightSitePoint*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_RightSitePoint" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.RightSitePoint">RightSitePoint</h4>
-  <div class="markdown level1 summary"><p>右側のサイトポイント</p>
-</div>
+  <a id="PLATEAU_RoadNetwork_Util_RnDebugDrawerModel_1_Drawer_2_IsValid_" data-uid="PLATEAU.RoadNetwork.Util.RnDebugDrawerModel`1.Drawer`2.IsValid*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Util_RnDebugDrawerModel_1_Drawer_2_IsValid__2_" data-uid="PLATEAU.RoadNetwork.Util.RnDebugDrawerModel`1.Drawer`2.IsValid(`2)">IsValid(T)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T RightSitePoint { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool IsValid(T self)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
+        <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_RightSitePoints_" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.RightSitePoints*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_RightSitePoints" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.RightSitePoints">RightSitePoints</h4>
-  <div class="markdown level1 summary"><p>辺の右側にあるサイトポイント情報</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;T&gt; RightSitePoints { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -359,33 +442,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;T&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_Start_" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.Start*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Voronoi_VoronoiData_1_Edge_Start" data-uid="PLATEAU.RoadNetwork.Voronoi.VoronoiData`1.Edge.Start">Start</h4>
-  <div class="markdown level1 summary"><p>開始点</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2d? Start { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Voronoi.Vector2d.html">Vector2d</a>&gt;</td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>

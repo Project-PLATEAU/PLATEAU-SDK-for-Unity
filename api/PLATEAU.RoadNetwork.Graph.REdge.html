@@ -99,6 +99,9 @@
       <a class="xref" href="PLATEAU.RoadNetwork.ARnPartsBase.html#PLATEAU_RoadNetwork_ARnPartsBase_DebugMyId">ARnPartsBase.DebugMyId</a>
     </div>
     <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.ARnPartsBase.html#PLATEAU_RoadNetwork_ARnPartsBase_DebugMemo">ARnPartsBase.DebugMemo</a>
+    </div>
+    <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
     <div>
@@ -359,6 +362,49 @@ fromを持っていない場合は無視
   </table>
   
   
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_Contains_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.Contains*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_Contains_PLATEAU_RoadNetwork_Graph_RVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.Contains(PLATEAU.RoadNetwork.Graph.RVertex)">Contains(RVertex)</h4>
+  <div class="markdown level1 summary"><p>vertexを含むかどうか</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(RVertex vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
+        <td><span class="parametername">vertex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_RoadNetwork_Graph_REdge_DisConnect_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.DisConnect*"></a>
   <h4 id="PLATEAU_RoadNetwork_Graph_REdge_DisConnect" data-uid="PLATEAU.RoadNetwork.Graph.REdge.DisConnect">DisConnect()</h4>
   <div class="markdown level1 summary"><p>自分の接続を解除する</p>
@@ -390,6 +436,51 @@ fromを持っていない場合は無視
     <tbody>
       <tr>
         <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Graph.REdge.html">REdge</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_REdge_GetOppositeVertex_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.GetOppositeVertex*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_REdge_GetOppositeVertex_PLATEAU_RoadNetwork_Graph_REdge_" data-uid="PLATEAU.RoadNetwork.Graph.REdge.GetOppositeVertex(PLATEAU.RoadNetwork.Graph.REdge)">GetOppositeVertex(REdge)</h4>
+  <div class="markdown level1 summary"><p>edgeと共通する頂点がある場合, 反対側の頂点を返す.
+共有しない場合はnullを返す
+edgeが同じ辺の場合はnullを返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RVertex GetOppositeVertex(REdge edge)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.REdge.html">REdge</a></td>
+        <td><span class="parametername">edge</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a></td>
         <td></td>
       </tr>
     </tbody>

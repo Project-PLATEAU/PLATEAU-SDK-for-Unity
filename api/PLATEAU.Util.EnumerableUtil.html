@@ -341,13 +341,14 @@
   </table>
   
   
-  <a id="PLATEAU_Util_EnumerableUtil_TryFindMax_" data-uid="PLATEAU.Util.EnumerableUtil.TryFindMax*"></a>
-  <h4 id="PLATEAU_Util_EnumerableUtil_TryFindMax__2_IEnumerable___0__Func___0___1____0__IComparer___1__" data-uid="PLATEAU.Util.EnumerableUtil.TryFindMax``2(IEnumerable{``0},Func{``0,``1},``0@,IComparer{``1})">TryFindMax&lt;TSource, TResult&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TResult&gt;, out TSource, IComparer&lt;TResult&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="PLATEAU_Util_EnumerableUtil_TryFindMaxElement_" data-uid="PLATEAU.Util.EnumerableUtil.TryFindMaxElement*"></a>
+  <h4 id="PLATEAU_Util_EnumerableUtil_TryFindMaxElement__2_IEnumerable___0__Func___0___1____0__IComparer___1__" data-uid="PLATEAU.Util.EnumerableUtil.TryFindMaxElement``2(IEnumerable{``0},Func{``0,``1},``0@,IComparer{``1})">TryFindMaxElement&lt;TSource, TResult&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TResult&gt;, out TSource, IComparer&lt;TResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>selectorで指定した値が最大となる元の要素を返す</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryFindMax&lt;TSource, TResult&gt;(this IEnumerable&lt;TSource&gt; self, Func&lt;TSource, TResult&gt; selector, out TSource minElement, IComparer&lt;TResult&gt; compare = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryFindMaxElement&lt;TSource, TResult&gt;(this IEnumerable&lt;TSource&gt; self, Func&lt;TSource, TResult&gt; selector, out TSource maxElement, IComparer&lt;TResult&gt; compare = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -371,7 +372,7 @@
       </tr>
       <tr>
         <td><span class="xref">TSource</span></td>
-        <td><span class="parametername">minElement</span></td>
+        <td><span class="parametername">maxElement</span></td>
         <td></td>
       </tr>
       <tr>
@@ -417,13 +418,14 @@
   </table>
   
   
-  <a id="PLATEAU_Util_EnumerableUtil_TryFindMin_" data-uid="PLATEAU.Util.EnumerableUtil.TryFindMin*"></a>
-  <h4 id="PLATEAU_Util_EnumerableUtil_TryFindMin__2_IEnumerable___0__Func___0___1____0__IComparer___1__" data-uid="PLATEAU.Util.EnumerableUtil.TryFindMin``2(IEnumerable{``0},Func{``0,``1},``0@,IComparer{``1})">TryFindMin&lt;TSource, TResult&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TResult&gt;, out TSource, IComparer&lt;TResult&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="PLATEAU_Util_EnumerableUtil_TryFindMinElement_" data-uid="PLATEAU.Util.EnumerableUtil.TryFindMinElement*"></a>
+  <h4 id="PLATEAU_Util_EnumerableUtil_TryFindMinElement__2_IEnumerable___0__Func___0___1____0__IComparer___1__" data-uid="PLATEAU.Util.EnumerableUtil.TryFindMinElement``2(IEnumerable{``0},Func{``0,``1},``0@,IComparer{``1})">TryFindMinElement&lt;TSource, TResult&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TResult&gt;, out TSource, IComparer&lt;TResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>selectorで指定した値が最小となる元の要素を返す</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryFindMin&lt;TSource, TResult&gt;(this IEnumerable&lt;TSource&gt; self, Func&lt;TSource, TResult&gt; selector, out TSource minElement, IComparer&lt;TResult&gt; compare = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryFindMinElement&lt;TSource, TResult&gt;(this IEnumerable&lt;TSource&gt; self, Func&lt;TSource, TResult&gt; selector, out TSource minElement, IComparer&lt;TResult&gt; compare = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

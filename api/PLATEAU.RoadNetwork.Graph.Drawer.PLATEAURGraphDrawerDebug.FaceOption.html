@@ -88,13 +88,21 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">PLATEAURGraphDrawerDebug.FaceOption</span></div>
+    <div class="level1"><a class="xref" href="PLATEAU.RoadNetwork.Graph.Drawer.PLATEAURGraphDrawerDebug.Drawer-1.html">PLATEAURGraphDrawerDebug.Drawer</a>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Graph.RFace.html">RFace</a>&gt;</div>
+    <div class="level2"><a class="xref" href="PLATEAU.RoadNetwork.Graph.Drawer.PLATEAURGraphDrawerDebug.FaceDrawer.html">PLATEAURGraphDrawerDebug.FaceDrawer</a></div>
+    <div class="level3"><span class="xref">PLATEAURGraphDrawerDebug.FaceOption</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Graph.Drawer.PLATEAURGraphDrawerDebug.FaceDrawer.html#PLATEAU_RoadNetwork_Graph_Drawer_PLATEAURGraphDrawerDebug_FaceDrawer_GetTargetGameObjects_PLATEAU_RoadNetwork_Graph_RFace_">PLATEAURGraphDrawerDebug.FaceDrawer.GetTargetGameObjects(RFace)</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.RoadNetwork.Graph.Drawer.html">PLATEAU.RoadNetwork.Graph.Drawer</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="PLATEAU_RoadNetwork_Graph_Drawer_PLATEAURGraphDrawerDebug_FaceOption_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FaceOption : DrawOption</code></pre>
+    <pre><code class="lang-csharp hljs">public class FaceOption : PLATEAURGraphDrawerDebug.FaceDrawer</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -172,30 +180,6 @@
   </table>
   
   
-  <h4 id="PLATEAU_RoadNetwork_Graph_Drawer_PLATEAURGraphDrawerDebug_FaceOption_showOutlineLoop" data-uid="PLATEAU.RoadNetwork.Graph.Drawer.PLATEAURGraphDrawerDebug.FaceOption.showOutlineLoop">showOutlineLoop</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool showOutlineLoop</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <h4 id="PLATEAU_RoadNetwork_Graph_Drawer_PLATEAURGraphDrawerDebug_FaceOption_showOutlineMask" data-uid="PLATEAU.RoadNetwork.Graph.Drawer.PLATEAURGraphDrawerDebug.FaceOption.showOutlineMask">showOutlineMask</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -238,6 +222,107 @@
     <tbody>
       <tr>
         <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RRoadTypeMask.html">RRoadTypeMask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_Drawer_PLATEAURGraphDrawerDebug_FaceOption_FrameOutlineVertices_" data-uid="PLATEAU.RoadNetwork.Graph.Drawer.PLATEAURGraphDrawerDebug.FaceOption.FrameOutlineVertices*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_Drawer_PLATEAURGraphDrawerDebug_FaceOption_FrameOutlineVertices" data-uid="PLATEAU.RoadNetwork.Graph.Drawer.PLATEAURGraphDrawerDebug.FaceOption.FrameOutlineVertices">FrameOutlineVertices</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;RVertex&gt; FrameOutlineVertices { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Graph.RVertex.html">RVertex</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_Drawer_PLATEAURGraphDrawerDebug_FaceOption_DrawImpl_" data-uid="PLATEAU.RoadNetwork.Graph.Drawer.PLATEAURGraphDrawerDebug.FaceOption.DrawImpl*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_Drawer_PLATEAURGraphDrawerDebug_FaceOption_DrawImpl_PLATEAU_RoadNetwork_Graph_Drawer_PLATEAURGraphDrawerDebug_DrawWork_PLATEAU_RoadNetwork_Graph_RFace_" data-uid="PLATEAU.RoadNetwork.Graph.Drawer.PLATEAURGraphDrawerDebug.FaceOption.DrawImpl(PLATEAU.RoadNetwork.Graph.Drawer.PLATEAURGraphDrawerDebug.DrawWork,PLATEAU.RoadNetwork.Graph.RFace)">DrawImpl(PLATEAURGraphDrawerDebug.DrawWork, RFace)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool DrawImpl(PLATEAURGraphDrawerDebug.DrawWork work, RFace face)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.Drawer.PLATEAURGraphDrawerDebug.DrawWork.html">PLATEAURGraphDrawerDebug.DrawWork</a></td>
+        <td><span class="parametername">work</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RFace.html">RFace</a></td>
+        <td><span class="parametername">face</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_Drawer_PLATEAURGraphDrawerDebug_FaceOption_GetChildDrawers_" data-uid="PLATEAU.RoadNetwork.Graph.Drawer.PLATEAURGraphDrawerDebug.FaceOption.GetChildDrawers*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_Drawer_PLATEAURGraphDrawerDebug_FaceOption_GetChildDrawers" data-uid="PLATEAU.RoadNetwork.Graph.Drawer.PLATEAURGraphDrawerDebug.FaceOption.GetChildDrawers">GetChildDrawers()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IEnumerable&lt;PLATEAURGraphDrawerDebug.DrawerModel.Drawer&lt;PLATEAURGraphDrawerDebug.DrawWork, RFace&gt;&gt; GetChildDrawers()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">PLATEAU.RoadNetwork.Graph.Drawer.PLATEAURGraphDrawerDebug.DrawerModel.Drawer</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Graph.Drawer.PLATEAURGraphDrawerDebug.DrawWork.html">PLATEAURGraphDrawerDebug.DrawWork</a>, <a class="xref" href="PLATEAU.RoadNetwork.Graph.RFace.html">RFace</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>

@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#36947;&#36335;&#12493;&#12483;&#12488;&#12527;&#12540;&#12463;&#12398;&#12456;&#12463;&#12473;&#12509;&#12540;&#12488;&#12398;&#20181;&#27096; | PLATEAU SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#36947;&#36335;&#12493;&#12483;&#12488;&#12527;&#12540;&#12463;&#12398;&#12456;&#12463;&#12473;&#12509;&#12540;&#12488;&#12398;&#20181;&#27096; | PLATEAU SDK for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="道路ネットワークのエクスポートの仕様">道路ネットワークのエクスポートの仕様</h1>
+
+<p>道路ネットワークのエクスポート機能で生成されるファイルの仕様をこのページに記します。<br>下記のgeojsonファイルが生成されます。</p>
+<h2 id="交差点">交差点</h2>
+<p><strong>ファイル名: roadnetwork_node.geojson</strong><br><img src="../resources/manual/roadnetwork/exported_nodes.png" alt=""><br>上図は交差点の位置がエクスポートされたものです。<br>道路ネットワーク内の交差点をノード情報として格納します。</p>
+<h4 id="属性情報">属性情報</h4>
+<ul>
+<li>ID:交差点の識別子です。値は<code>Node(番号)</code>であり、(番号)は連番で割り振られた数値が入ります。</li>
+</ul>
+<h2 id="道路">道路</h2>
+<p><strong>ファイル名: roadnetwork_link.geojson</strong><br><img src="../resources/manual/roadnetwork/exported_link.png" alt=""><br>上図の紫色の線に相当します。交差点（黄色い点）を接続します。<br>道路を、ノード（交差点）間を接続するリンク情報として格納します。</p>
+<h4 id="属性情報-1">属性情報</h4>
+<ul>
+<li>ID:道路の識別子です。値は<code>Link(一意の番号)_(上流ノードの番号)_(下流ノードの番号)</code>となります。</li>
+<li>UPNODE:上流ノードのIDです。例: <code>Node142</code></li>
+<li>DOWNNODE: 下流ノードの識別子です。</li>
+<li>LENGTH:リンクの長さ（m）です。</li>
+<li>LANENUM: 車線数です。</li>
+<li>RLANENUM: 右折（付加）レーンの数です。</li>
+<li>RLANELENGTH: 右折（付加）レーンの長さ（m）です。</li>
+<li>LLANENUM: 左折（付加）レーンの数です。</li>
+<li>LLANELENGTH: 左折（付加）レーンの長さ（m）です。</li>
+<li>PROHIBIT: 街路網交通流シミュレーション AVENUEと互換性を持たせるために存在しますが、PLATEAU SDKでは常に同じ値が入ります。通行禁止情報であり、値はUターン禁止を意味する<code>u_turn</code>が常に入ります。</li>
+<li>TURNCONFIG: 街路網交通流シミュレーション AVENUEと互換性を持たせるために存在しますが、PLATEAU SDKでは常に同じ値が入ります。進行可能な方向の設定であり、値は直進、左折、右折可能を意味する7が常に入ります。</li>
+<li>TYPECONFIG: 街路網交通流シミュレーション AVENUEと互換性を持たせるために存在しますが、PLATEAU SDKでは常に同じ値が入ります。進行可能な車両の種類であり、値は小型車、大型車、バスの通行可能を意味する7が常に入ります。</li>
+</ul>
+<h2 id="レーン">レーン</h2>
+<p><strong>ファイル名: roadnetwork_lane.geojson</strong><br><img src="../resources/manual/roadnetwork/exported_lanes.png" alt=""><br>上図のオレンジ色の線に相当します。<br>各リンクに属する車線情報をレーン情報として格納します。</p>
+<h4 id="属性情報-2">属性情報</h4>
+<ul>
+<li>ID:車線の識別子です。値は<code>Lane(対応するリンクの一意の番号)_(対応するリンクの上流ノードの番号)_(対応するリンクの下流ノードの番号)</code>となります。</li>
+<li>LINKID: 車線が属するリンクの識別子です。</li>
+<li>LANEPOS: 車線の位置を示す番号です。例えば道路に3つのレーンがある場合、番号は左から順に0, 1, 2となります。</li>
+<li>LENGTH:車線の長さ（m）です。</li>
+<li>WIDTH:車線の幅（m）です。</li>
+</ul>
+<h2 id="トラック">トラック</h2>
+<p><strong>ファイル名: roadnetwork_track.geojson</strong>
+<img src="../resources/manual/roadnetwork/exported_tracks.png" alt=""><br>上図の交差点（黄色い点）の周りにある茶色の線に相当します。<br>各交差点の通行可能な経路をトラック情報として格納します。</p>
+<h4 id="属性情報-3">属性情報</h4>
+<ul>
+<li>ID:トラックの識別子です。値は<code>Track(対応するノードの番号)_(対応する上流リンクの番号)_(対応する下流リンクの番号)_(後述のORDERの番号)</code>となります。</li>
+<li>ORDER: 同じ交差点、同じ道路を接続するトラックが複数あるとき、それらを区別するための連番です。</li>
+<li>UPLINKID: 上流道路の識別子です。</li>
+<li>UPLANEPOS: 接続する上流道路のレーンのLANEPOSです。</li>
+<li>UPDISTANCE: 上流道路からの距離（m）です。</li>
+<li>DOWNLINKID: 下流道路の識別子です。</li>
+<li>DOWNLANEPOS: 接続する下流道路のレーンのLANEPOSです。</li>
+<li>DOWNDISTANCE: 下流道路からの距離（m）です。</li>
+<li>LENGTH: 軌跡の長さ（m）です。</li>
+<li>TURNCONFIG: 街路網交通流シミュレーション AVENUEと互換性を持たせるために存在しますが、PLATEAU SDKでは常に同じ値が入ります。進行可能な方向の設定であり、値は直進、左折、右折可能を意味する7が常に入ります。</li>
+<li>TYPECONFIG: 街路網交通流シミュレーション AVENUEと互換性を持たせるために存在しますが、PLATEAU SDKでは常に同じ値が入ります。進行可能な車両の種類であり、値は小型車、大型車、バスの通行可能を意味する7が常に入ります。</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Project-PLATEAU/PLATEAU-SDK-for-Unity/blob/main/Documentation~/manual/RoadNetworkExported.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            PLATEAU SDK for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

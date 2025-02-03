@@ -333,6 +333,212 @@ startBorder/endBorderはそれぞれの端点のボーダーでstartBorder/LeftV
   </table>
   
   
+  <a id="PLATEAU_RoadNetwork_Util_RnEx_FindBorderEdges_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.FindBorderEdges*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Util_RnEx_FindBorderEdges_IReadOnlyList_Vector2__System_Single_System_Single_AxisPlane_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.FindBorderEdges(IReadOnlyList{Vector2},System.Single,System.Single,AxisPlane)">FindBorderEdges(IReadOnlyList&lt;Vector2&gt;, Single, Single, AxisPlane)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RnEx.FindBorderEdgesResult FindBorderEdges(IReadOnlyList&lt;Vector2&gt; vertices, float toleranceAngleDegForMidEdge = 20F, float skipAngleDeg = 20F, AxisPlane plane = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">Vector2</span>&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">toleranceAngleDegForMidEdge</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">skipAngleDeg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">AxisPlane</span></td>
+        <td><span class="parametername">plane</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Util.RnEx.FindBorderEdgesResult.html">RnEx.FindBorderEdgesResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Util_RnEx_FindCollinearRange_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.FindCollinearRange*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Util_RnEx_FindCollinearRange_System_Int32_IReadOnlyList_LineSegment2D__System_Single_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.FindCollinearRange(System.Int32,IReadOnlyList{LineSegment2D},System.Single)">FindCollinearRange(Int32, IReadOnlyList&lt;LineSegment2D&gt;, Single)</h4>
+  <div class="markdown level1 summary"><p>edgesで定義された線分リストのedgeBaseIndex番の辺を基準に, 同一直線となる辺を探す.(許容誤差はtoleranceAngleDegForMidEdge)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;int&gt; FindCollinearRange(int edgeBaseIndex, IReadOnlyList&lt;LineSegment2D&gt; edges, float toleranceAngleDegForMidEdge = 20F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">edgeBaseIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">LineSegment2D</span>&gt;</td>
+        <td><span class="parametername">edges</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">toleranceAngleDegForMidEdge</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Util_RnEx_GetEdgeNormal_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.GetEdgeNormal*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Util_RnEx_GetEdgeNormal_Vector2_Vector2_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.GetEdgeNormal(Vector2,Vector2)">GetEdgeNormal(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>start -&gt; endの線分の法線ベクトルを取得する(反時計回りを向いている)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetEdgeNormal(Vector2 start, Vector2 end)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Util_RnEx_GetEdgeNormal_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.GetEdgeNormal*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Util_RnEx_GetEdgeNormal_Vector3_Vector3_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.GetEdgeNormal(Vector3,Vector3)">GetEdgeNormal(Vector3, Vector3)</h4>
+  <div class="markdown level1 summary"><p>start -&gt; endの線分の法線ベクトルを取得する(上(Vector3.up)から反時計回りを向いている)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 GetEdgeNormal(Vector3 start, Vector3 end)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_RoadNetwork_Util_RnEx_GetLineIntersections_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.GetLineIntersections*"></a>
   <h4 id="PLATEAU_RoadNetwork_Util_RnEx_GetLineIntersections_LineSegment3D_IEnumerable_RnWay__" data-uid="PLATEAU.RoadNetwork.Util.RnEx.GetLineIntersections(LineSegment3D,IEnumerable{RnWay})">GetLineIntersections(LineSegment3D, IEnumerable&lt;RnWay&gt;)</h4>
   <div class="markdown level1 summary"><p>lineSegmentとwaysの交点を取得する. ただし、2Dでの交点</p>
@@ -407,6 +613,77 @@ startBorder/endBorderはそれぞれの端点のボーダーでstartBorder/LeftV
   </table>
   
   
+  <a id="PLATEAU_RoadNetwork_Util_RnEx_GroupByOutlineEdges_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.GroupByOutlineEdges*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Util_RnEx_GroupByOutlineEdges__2_IEnumerable___1__Func___1___0__IEqualityComparer___0__" data-uid="PLATEAU.RoadNetwork.Util.RnEx.GroupByOutlineEdges``2(IEnumerable{``1},Func{``1,``0},IEqualityComparer{``0})">GroupByOutlineEdges&lt;TKey, TEdge&gt;(IEnumerable&lt;TEdge&gt;, Func&lt;TEdge, TKey&gt;, IEqualityComparer&lt;TKey&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;RnEx.KeyEdgeGroup&lt;TKey, TEdge&gt;&gt; GroupByOutlineEdges&lt;TKey, TEdge&gt;(IEnumerable&lt;TEdge&gt; edges, Func&lt;TEdge, TKey&gt; keySelector, IEqualityComparer&lt;TKey&gt; comparer = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;TEdge&gt;</td>
+        <td><span class="parametername">edges</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;TEdge, TKey&gt;</td>
+        <td><span class="parametername">keySelector</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEqualityComparer</span>&lt;TKey&gt;</td>
+        <td><span class="parametername">comparer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Util.RnEx.KeyEdgeGroup-2.html">RnEx.KeyEdgeGroup</a>&lt;TKey, TEdge&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TEdge</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_RoadNetwork_Util_RnEx_IsEditorSceneSelected_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.IsEditorSceneSelected*"></a>
   <h4 id="PLATEAU_RoadNetwork_Util_RnEx_IsEditorSceneSelected_PLATEAUCityObjectGroup_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.IsEditorSceneSelected(PLATEAUCityObjectGroup)">IsEditorSceneSelected(PLATEAUCityObjectGroup)</h4>
   <div class="markdown level1 summary"><p>Sceneエディタ上で選択されているかどうか</p>
@@ -444,6 +721,53 @@ startBorder/endBorderはそれぞれの端点のボーダーでstartBorder/LeftV
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Util_RnEx_Reduction_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.Reduction*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Util_RnEx_Reduction_IReadOnlyList_Vector2__Func_List_Vector2__System_Int32_System_Boolean__" data-uid="PLATEAU.RoadNetwork.Util.RnEx.Reduction(IReadOnlyList{Vector2},Func{List{Vector2},System.Int32,System.Boolean})">Reduction(IReadOnlyList&lt;Vector2&gt;, Func&lt;List&lt;Vector2&gt;, Int32, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Vector2&gt; Reduction(IReadOnlyList&lt;Vector2&gt; src, Func&lt;List&lt;Vector2&gt;, int, bool&gt; checkStop)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">Vector2</span>&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">List</span>&lt;<span class="xref">Vector2</span>&gt;, <span class="xref">System.Int32</span>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">checkStop</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Vector2</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
