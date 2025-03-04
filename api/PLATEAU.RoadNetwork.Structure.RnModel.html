@@ -410,7 +410,7 @@ RoadNetworkFactory.FactoryVersion参照</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;RnNeighbor&gt; CollectAllEdges()</code></pre>
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;RnIntersectionEdge&gt; CollectAllEdges()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -422,7 +422,7 @@ RoadNetworkFactory.FactoryVersion参照</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnNeighbor.html">RnNeighbor</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -936,13 +936,13 @@ RoadNetworkFactory.FactoryVersion参照</p>
   
   
   <a id="PLATEAU_RoadNetwork_Structure_RnModel_SplitLaneByWidth_" data-uid="PLATEAU.RoadNetwork.Structure.RnModel.SplitLaneByWidth*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnModel_SplitLaneByWidth_System_Single_System_Boolean_List_System_UInt64___" data-uid="PLATEAU.RoadNetwork.Structure.RnModel.SplitLaneByWidth(System.Single,System.Boolean,List{System.UInt64}@)">SplitLaneByWidth(Single, Boolean, out List&lt;UInt64&gt;)</h4>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnModel_SplitLaneByWidth_System_Single_System_Boolean_List_System_UInt64___Func_PLATEAU_RoadNetwork_Structure_RnRoadGroup_System_Boolean__" data-uid="PLATEAU.RoadNetwork.Structure.RnModel.SplitLaneByWidth(System.Single,System.Boolean,List{System.UInt64}@,Func{PLATEAU.RoadNetwork.Structure.RnRoadGroup,System.Boolean})">SplitLaneByWidth(Single, Boolean, out List&lt;UInt64&gt;, Func&lt;RnRoadGroup, Boolean&gt;)</h4>
   <div class="markdown level1 summary"><p>roadWidthの道路幅を基準にレーンを分割する</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SplitLaneByWidth(float roadWidth, bool rebuildTrack, out List&lt;ulong&gt; failedRoads)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SplitLaneByWidth(float roadWidth, bool rebuildTrack, out List&lt;ulong&gt; failedRoads, Func&lt;RnRoadGroup, bool&gt; isTargetLaneSplit)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -968,6 +968,11 @@ RoadNetworkFactory.FactoryVersion参照</p>
       <tr>
         <td><span class="xref">List</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
         <td><span class="parametername">failedRoads</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadGroup.html">RnRoadGroup</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">isTargetLaneSplit</span></td>
         <td></td>
       </tr>
     </tbody>

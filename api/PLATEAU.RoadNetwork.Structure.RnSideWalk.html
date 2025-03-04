@@ -400,6 +400,18 @@
   </h3>
   
   
+  <a id="PLATEAU_RoadNetwork_Structure_RnSideWalk_Align_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.Align*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnSideWalk_Align" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.Align">Align()</h4>
+  <div class="markdown level1 summary"><p>InSideWay/OutSideWayの方向を, StartEdgeWay/EndEdgeWayを見て合わせる.
+これらのWayがない場合は何もしない</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Align()</code></pre>
+  </div>
+  
+  
   <a id="PLATEAU_RoadNetwork_Structure_RnSideWalk_Check_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.Check*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnSideWalk_Check" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.Check">Check()</h4>
   <div class="markdown level1 summary"><p>不正地チェック</p>
@@ -428,7 +440,7 @@
   
   <a id="PLATEAU_RoadNetwork_Structure_RnSideWalk_Create_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.Create*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnSideWalk_Create_PLATEAU_RoadNetwork_Structure_RnRoadBase_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnSideWalkLaneType_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.Create(PLATEAU.RoadNetwork.Structure.RnRoadBase,PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnSideWalkLaneType)">Create(RnRoadBase, RnWay, RnWay, RnWay, RnWay, RnSideWalkLaneType)</h4>
-  <div class="markdown level1 summary"><p>歩道作成</p>
+  <div class="markdown level1 summary"><p>歩道作成 ParentRoadへの追加も行う</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -513,6 +525,42 @@
     <tbody>
       <tr>
         <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnSideWalkWayTypeMask.html">RnSideWalkWayTypeMask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnSideWalk_Reverse_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.Reverse*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnSideWalk_Reverse" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.Reverse">Reverse()</h4>
+  <div class="markdown level1 summary"><p>Start-Endを反転させる</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reverse()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnSideWalk_ReversedSideWalk_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.ReversedSideWalk*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnSideWalk_ReversedSideWalk" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.ReversedSideWalk">ReversedSideWalk()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RnSideWalk ReversedSideWalk()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnSideWalk.html">RnSideWalk</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -681,27 +729,47 @@
   </table>
   
   
-  <a id="PLATEAU_RoadNetwork_Structure_RnSideWalk_TryAlign_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.TryAlign*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnSideWalk_TryAlign" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.TryAlign">TryAlign()</h4>
-  <div class="markdown level1 summary"><p>InSideWay/OutSideWayの方向を, StartEdgeWay/EndEdgeWayを見て合わせる.
-これらのWayがない場合は何もしない</p>
+  <a id="PLATEAU_RoadNetwork_Structure_RnSideWalk_TryMergeNeighborSideWalk_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.TryMergeNeighborSideWalk*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnSideWalk_TryMergeNeighborSideWalk_PLATEAU_RoadNetwork_Structure_RnSideWalk_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.TryMergeNeighborSideWalk(PLATEAU.RoadNetwork.Structure.RnSideWalk)">TryMergeNeighborSideWalk(RnSideWalk)</h4>
+  <div class="markdown level1 summary"><p>自身とsrcSideWalkが連結している場合に結合する</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void TryAlign()</code></pre>
+    <pre><code class="lang-csharp hljs">public bool TryMergeNeighborSideWalk(RnSideWalk srcSideWalk)</code></pre>
   </div>
-  
-  
-  <a id="PLATEAU_RoadNetwork_Structure_RnSideWalk_UnLinkFromParent_" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.UnLinkFromParent*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnSideWalk_UnLinkFromParent" data-uid="PLATEAU.RoadNetwork.Structure.RnSideWalk.UnLinkFromParent">UnLinkFromParent()</h4>
-  <div class="markdown level1 summary"><p>親からのリンク解除</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UnLinkFromParent()</code></pre>
-  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnSideWalk.html">RnSideWalk</a></td>
+        <td><span class="parametername">srcSideWalk</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

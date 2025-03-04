@@ -248,7 +248,7 @@ sideWalkの親情報も書き換える</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddSideWalk(RnSideWalk sideWalk)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool AddSideWalk(RnSideWalk sideWalk)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -263,6 +263,21 @@ sideWalkの親情報も書き換える</p>
       <tr>
         <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnSideWalk.html">RnSideWalk</a></td>
         <td><span class="parametername">sideWalk</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -352,7 +367,8 @@ sideWalkの親情報も書き換える</p>
   
   <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_Check_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.Check*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_Check" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.Check">Check()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>不正チェック処理を行う</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -406,11 +422,13 @@ removeFromModel=trueの場合、RnModelからも削除する</p>
   
   <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_GetBorders_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.GetBorders*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_GetBorders" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.GetBorders">GetBorders()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>隣接するRoadとその境界線情報を取得. 同じRoadに対して複数の境界線がある場合がある.
+また、隣接するRoadはnullの場合もある</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;RnWay&gt; GetBorders()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;RnRoadBase.NeighborBorder&gt; GetBorders()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -422,7 +440,7 @@ removeFromModel=trueの場合、RnModelからも削除する</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.NeighborBorder.html">RnRoadBase.NeighborBorder</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -480,15 +498,27 @@ removeFromModel=trueの場合、RnModelからも削除する</p>
   </table>
   
   
-  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_RemoveSideWalk_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.RemoveSideWalk*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_RemoveSideWalk_PLATEAU_RoadNetwork_Structure_RnSideWalk_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.RemoveSideWalk(PLATEAU.RoadNetwork.Structure.RnSideWalk)">RemoveSideWalk(RnSideWalk)</h4>
-  <div class="markdown level1 summary"><p>歩道sideWalkを削除する.
-sideWalkの親情報は変更しない</p>
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_MergeConnectedSideWalks_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.MergeConnectedSideWalks*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_MergeConnectedSideWalks" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.MergeConnectedSideWalks">MergeConnectedSideWalks()</h4>
+  <div class="markdown level1 summary"><p>連結されたSideWalkを統合する</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RemoveSideWalk(RnSideWalk sideWalk)</code></pre>
+    <pre><code class="lang-csharp hljs">public void MergeConnectedSideWalks()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_RemoveSideWalk_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.RemoveSideWalk*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_RemoveSideWalk_PLATEAU_RoadNetwork_Structure_RnSideWalk_System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.RemoveSideWalk(PLATEAU.RoadNetwork.Structure.RnSideWalk,System.Boolean)">RemoveSideWalk(RnSideWalk, Boolean)</h4>
+  <div class="markdown level1 summary"><p>歩道sideWalkを削除する.(元から存在しない時は何もせずfalseが返る)
+sideWalkの親情報も変更する.
+removeFromModel = trueの時はRnModelからも削除する(後方互換のためにdefaultはfalse)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveSideWalk(RnSideWalk sideWalk, bool removeFromModel = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -505,13 +535,36 @@ sideWalkの親情報は変更しない</p>
         <td><span class="parametername">sideWalk</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">removeFromModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   
   
   <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_ReplaceNeighbor_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.ReplaceNeighbor*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_ReplaceNeighbor_PLATEAU_RoadNetwork_Structure_RnRoadBase_PLATEAU_RoadNetwork_Structure_RnRoadBase_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.ReplaceNeighbor(PLATEAU.RoadNetwork.Structure.RnRoadBase,PLATEAU.RoadNetwork.Structure.RnRoadBase)">ReplaceNeighbor(RnRoadBase, RnRoadBase)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>情報を直接書き換えるので呼び出し注意(相互に隣接情報を維持するように書き換える必要がある)
+隣接情報をfrom -&gt; toに変更する.
+(from/to側の隣接情報は変更しない)</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -541,14 +594,48 @@ sideWalkの親情報は変更しない</p>
   </table>
   
   
-  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_UnLink_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.UnLink*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_UnLink_PLATEAU_RoadNetwork_Structure_RnRoadBase_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.UnLink(PLATEAU.RoadNetwork.Structure.RnRoadBase)">UnLink(RnRoadBase)</h4>
-  <div class="markdown level1 summary"><p>otherをつながりから削除する. other側の接続は消えない</p>
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_ReplaceNeighbor_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.ReplaceNeighbor*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_ReplaceNeighbor_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnRoadBase_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.ReplaceNeighbor(PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnRoadBase)">ReplaceNeighbor(RnWay, RnRoadBase)</h4>
+  <div class="markdown level1 summary"><p>情報を直接書き換えるので呼び出し注意(相互に隣接情報を維持するように書き換える必要がある)
+borderWayで指定される境界線の隣接道路情報をtoに置き換える</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void UnLink(RnRoadBase other)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void ReplaceNeighbor(RnWay borderWay, RnRoadBase to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a></td>
+        <td><span class="parametername">borderWay</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html">RnRoadBase</a></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_UnLink_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.UnLink*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_UnLink_PLATEAU_RoadNetwork_Structure_RnRoadBase_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.UnLink(PLATEAU.RoadNetwork.Structure.RnRoadBase)">UnLink(RnRoadBase)</h4>
+  <div class="markdown level1 summary"><p>隣接情報otherをつながりから削除する. other側の接続は消えない</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnLink(RnRoadBase other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

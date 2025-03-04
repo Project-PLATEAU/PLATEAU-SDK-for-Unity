@@ -335,7 +335,8 @@ startBorder/endBorderはそれぞれの端点のボーダーでstartBorder/LeftV
   
   <a id="PLATEAU_RoadNetwork_Util_RnEx_FindBorderEdges_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.FindBorderEdges*"></a>
   <h4 id="PLATEAU_RoadNetwork_Util_RnEx_FindBorderEdges_IReadOnlyList_Vector2__System_Single_System_Single_AxisPlane_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.FindBorderEdges(IReadOnlyList{Vector2},System.Single,System.Single,AxisPlane)">FindBorderEdges(IReadOnlyList&lt;Vector2&gt;, Single, Single, AxisPlane)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>verticesで表される線分を両端から見ていき, 終端点となる線分を求める</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -384,59 +385,6 @@ startBorder/endBorderはそれぞれの端点のボーダーでstartBorder/LeftV
     <tbody>
       <tr>
         <td><a class="xref" href="PLATEAU.RoadNetwork.Util.RnEx.FindBorderEdgesResult.html">RnEx.FindBorderEdgesResult</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_RoadNetwork_Util_RnEx_FindCollinearRange_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.FindCollinearRange*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Util_RnEx_FindCollinearRange_System_Int32_IReadOnlyList_LineSegment2D__System_Single_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.FindCollinearRange(System.Int32,IReadOnlyList{LineSegment2D},System.Single)">FindCollinearRange(Int32, IReadOnlyList&lt;LineSegment2D&gt;, Single)</h4>
-  <div class="markdown level1 summary"><p>edgesで定義された線分リストのedgeBaseIndex番の辺を基準に, 同一直線となる辺を探す.(許容誤差はtoleranceAngleDegForMidEdge)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;int&gt; FindCollinearRange(int edgeBaseIndex, IReadOnlyList&lt;LineSegment2D&gt; edges, float toleranceAngleDegForMidEdge = 20F)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">edgeBaseIndex</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">LineSegment2D</span>&gt;</td>
-        <td><span class="parametername">edges</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">toleranceAngleDegForMidEdge</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -614,12 +562,12 @@ startBorder/endBorderはそれぞれの端点のボーダーでstartBorder/LeftV
   
   
   <a id="PLATEAU_RoadNetwork_Util_RnEx_GroupByOutlineEdges_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.GroupByOutlineEdges*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Util_RnEx_GroupByOutlineEdges__2_IEnumerable___1__Func___1___0__IEqualityComparer___0__" data-uid="PLATEAU.RoadNetwork.Util.RnEx.GroupByOutlineEdges``2(IEnumerable{``1},Func{``1,``0},IEqualityComparer{``0})">GroupByOutlineEdges&lt;TKey, TEdge&gt;(IEnumerable&lt;TEdge&gt;, Func&lt;TEdge, TKey&gt;, IEqualityComparer&lt;TKey&gt;)</h4>
+  <h4 id="PLATEAU_RoadNetwork_Util_RnEx_GroupByOutlineEdges__2_IEnumerable___1__Func___1___0__IEqualityComparer___0__System_Boolean_" data-uid="PLATEAU.RoadNetwork.Util.RnEx.GroupByOutlineEdges``2(IEnumerable{``1},Func{``1,``0},IEqualityComparer{``0},System.Boolean)">GroupByOutlineEdges&lt;TKey, TEdge&gt;(IEnumerable&lt;TEdge&gt;, Func&lt;TEdge, TKey&gt;, IEqualityComparer&lt;TKey&gt;, Boolean)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;RnEx.KeyEdgeGroup&lt;TKey, TEdge&gt;&gt; GroupByOutlineEdges&lt;TKey, TEdge&gt;(IEnumerable&lt;TEdge&gt; edges, Func&lt;TEdge, TKey&gt; keySelector, IEqualityComparer&lt;TKey&gt; comparer = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static List&lt;RnEx.KeyEdgeGroup&lt;TKey, TEdge&gt;&gt; GroupByOutlineEdges&lt;TKey, TEdge&gt;(IEnumerable&lt;TEdge&gt; edges, Func&lt;TEdge, TKey&gt; keySelector, IEqualityComparer&lt;TKey&gt; comparer = null, bool isLoop = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -644,6 +592,11 @@ startBorder/endBorderはそれぞれの端点のボーダーでstartBorder/LeftV
       <tr>
         <td><span class="xref">IEqualityComparer</span>&lt;TKey&gt;</td>
         <td><span class="parametername">comparer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isLoop</span></td>
         <td></td>
       </tr>
     </tbody>

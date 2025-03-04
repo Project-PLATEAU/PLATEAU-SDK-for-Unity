@@ -288,13 +288,13 @@ back.Points... self.Pointsの順になるようにIsReverseを考慮して追加
   
   
   <a id="PLATEAU_RoadNetwork_Structure_RnWayEx_CreateMergedWay_" data-uid="PLATEAU.RoadNetwork.Structure.RnWayEx.CreateMergedWay*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnWayEx_CreateMergedWay_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnWay_" data-uid="PLATEAU.RoadNetwork.Structure.RnWayEx.CreateMergedWay(PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnWay)">CreateMergedWay(RnWay, RnWay)</h4>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnWayEx_CreateMergedWay_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnWay_System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnWayEx.CreateMergedWay(PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnWay,System.Boolean)">CreateMergedWay(RnWay, RnWay, Boolean)</h4>
   <div class="markdown level1 summary"><p>a,bのPointsを結合した新しいWayを作成する(a, bは非破壊)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static RnWay CreateMergedWay(RnWay a, RnWay b)</code></pre>
+    <pre><code class="lang-csharp hljs">public static RnWay CreateMergedWay(RnWay a, RnWay b, bool removeDuplicate = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -314,6 +314,11 @@ back.Points... self.Pointsの順になるようにIsReverseを考慮して追加
       <tr>
         <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a></td>
         <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">removeDuplicate</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -669,7 +674,7 @@ startIndex/endIndexはoffsetの点が所属する線分のインデックス</p>
   
   <a id="PLATEAU_RoadNetwork_Structure_RnWayEx_GetDistance2D_" data-uid="PLATEAU.RoadNetwork.Structure.RnWayEx.GetDistance2D*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnWayEx_GetDistance2D_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnWay_AxisPlane_" data-uid="PLATEAU.RoadNetwork.Structure.RnWayEx.GetDistance2D(PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnWay,AxisPlane)">GetDistance2D(RnWay, RnWay, AxisPlane)</h4>
-  <div class="markdown level1 summary"><p>2D平面におけるRnway同士の距離を返す</p>
+  <div class="markdown level1 summary"><p>2D平面におけるRnWay同士の距離を返す</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -868,6 +873,60 @@ startIndex/endIndexはoffsetの点が所属する線分のインデックス</p>
   </table>
   
   
+  <a id="PLATEAU_RoadNetwork_Structure_RnWayEx_IsSequentialEqual_" data-uid="PLATEAU.RoadNetwork.Structure.RnWayEx.IsSequentialEqual*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnWayEx_IsSequentialEqual_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnWay_System_Boolean__" data-uid="PLATEAU.RoadNetwork.Structure.RnWayEx.IsSequentialEqual(PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnWay,System.Boolean@)">IsSequentialEqual(RnWay, RnWay, out Boolean)</h4>
+  <div class="markdown level1 summary"><p>内部のポイントが同じかどうか.
+ただし、リストが逆順でもtrueとなる(その時はisReverseSequenceはtrue)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSequentialEqual(RnWay a, RnWay b, out bool isReverseSequence)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isReverseSequence</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_RoadNetwork_Structure_RnWayEx_IsValidOrDefault_" data-uid="PLATEAU.RoadNetwork.Structure.RnWayEx.IsValidOrDefault*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnWayEx_IsValidOrDefault_PLATEAU_RoadNetwork_Structure_RnWay_" data-uid="PLATEAU.RoadNetwork.Structure.RnWayEx.IsValidOrDefault(PLATEAU.RoadNetwork.Structure.RnWay)">IsValidOrDefault(RnWay)</h4>
   <div class="markdown level1 summary"><p>nullチェック込みのIsValid</p>
@@ -999,6 +1058,65 @@ startIndex/endIndexはoffsetの点が所属する線分のインデックス</p>
     <tbody>
       <tr>
         <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnWayEx_TryMergePointsToLineString_" data-uid="PLATEAU.RoadNetwork.Structure.RnWayEx.TryMergePointsToLineString*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnWayEx_TryMergePointsToLineString_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnWay_System_Single_" data-uid="PLATEAU.RoadNetwork.Structure.RnWayEx.TryMergePointsToLineString(PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnWay,System.Single)">TryMergePointsToLineString(RnWay, RnWay, Single)</h4>
+  <div class="markdown level1 summary"><p>selfにsrcを結合しようとする(内部のLineStringに結合しようとする).結合できない場合はfalseを返す
+self (v0, v1, v2, v3...vn) src(v0&apos;, v1&apos;, v2&apos;, v3&apos;...vm&apos;)の場合
+v0 == v0&apos;だと, srcを逆順にselfの先頭に追加 (vm&apos;... v3&apos;, v2&apos;, v1&apos;, v0&apos;(v0), v1, v2, v3...vn)となる
+vn == vm&apos;だと, srcを逆順にselfの末尾に追加 (v0, v1, v2, v3...vn(vm&apos;)... v3&apos;, v2&apos;, v1&apos;, v0&apos;)となる
+v0 == vm&apos;だと, srcをそのままselfの先頭に追加 (v0&apos;, v1&apos;, v2&apos;, v3&apos;...vm&apos;(v0), v1, v2, v3...vn)となる
+vn == v0&apos;だと, srcをそのままselfの末尾に追加 (v0, v1, v2, v3...vn(v0&apos;), v1&apos;, v2&apos;, v3&apos;...vm&apos;)となる
+selfとsrcの最初と最後のポイントを見て, どっちの方向に結合するかを決める</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryMergePointsToLineString(this RnWay self, RnWay src, float pointDistanceTolerance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnWay.html">RnWay</a></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">pointDistanceTolerance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>

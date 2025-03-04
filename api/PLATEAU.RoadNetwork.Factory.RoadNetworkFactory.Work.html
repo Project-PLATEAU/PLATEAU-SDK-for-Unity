@@ -174,31 +174,6 @@
   </h3>
   
   
-  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_Work_LineMap_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.Work.LineMap*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_Work_LineMap" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.Work.LineMap">LineMap</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;List&lt;RVertex&gt;, RnLineString&gt; LineMap { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">List</span>&lt;<span class="xref">RVertex</span>&gt;, <span class="xref">RnLineString</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_Work_PointMap_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.Work.PointMap*"></a>
   <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_Work_PointMap" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.Work.PointMap">PointMap</h4>
   <div class="markdown level1 summary"></div>
@@ -224,13 +199,13 @@
   </table>
   
   
-  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_Work_RnPointList2LineStringMap_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.Work.RnPointList2LineStringMap*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_Work_RnPointList2LineStringMap" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.Work.RnPointList2LineStringMap">RnPointList2LineStringMap</h4>
+  <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_Work_RnLIneStringCache_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.Work.RnLIneStringCache*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_Work_RnLIneStringCache" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.Work.RnLIneStringCache">RnLIneStringCache</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;ulong, List&lt;RnLineString&gt;&gt; RnPointList2LineStringMap { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public LineStringFactoryWork RnLIneStringCache { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -242,7 +217,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.UInt64</span>, <span class="xref">List</span>&lt;<span class="xref">RnLineString</span>&gt;&gt;</td>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Factory.LineStringFactoryWork.html">LineStringFactoryWork</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -408,12 +383,12 @@
   
   
   <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_Work_CreateWay_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.Work.CreateWay*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_Work_CreateWay_List_RnPoint__System_Boolean__" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.Work.CreateWay(List{RnPoint},System.Boolean@)">CreateWay(List&lt;RnPoint&gt;, out Boolean)</h4>
+  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_Work_CreateWay_List_RnPoint__System_Boolean__System_Boolean_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.Work.CreateWay(List{RnPoint},System.Boolean@,System.Boolean)">CreateWay(List&lt;RnPoint&gt;, out Boolean, Boolean)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RnWay CreateWay(List&lt;RnPoint&gt; points, out bool isCached)</code></pre>
+    <pre><code class="lang-csharp hljs">public RnWay CreateWay(List&lt;RnPoint&gt; points, out bool isCached, bool useCache = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -433,6 +408,11 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">isCached</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useCache</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -497,12 +477,12 @@
   
   
   <a id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_Work_CreateWay_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.Work.CreateWay*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_Work_CreateWay_List_RVertex__System_Boolean__" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.Work.CreateWay(List{RVertex},System.Boolean@)">CreateWay(List&lt;RVertex&gt;, out Boolean)</h4>
+  <h4 id="PLATEAU_RoadNetwork_Factory_RoadNetworkFactory_Work_CreateWay_List_RVertex__System_Boolean__System_Boolean_" data-uid="PLATEAU.RoadNetwork.Factory.RoadNetworkFactory.Work.CreateWay(List{RVertex},System.Boolean@,System.Boolean)">CreateWay(List&lt;RVertex&gt;, out Boolean, Boolean)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RnWay CreateWay(List&lt;RVertex&gt; vertices, out bool isCached)</code></pre>
+    <pre><code class="lang-csharp hljs">public RnWay CreateWay(List&lt;RVertex&gt; vertices, out bool isCached, bool useCache = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -522,6 +502,11 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">isCached</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useCache</span></td>
         <td></td>
       </tr>
     </tbody>

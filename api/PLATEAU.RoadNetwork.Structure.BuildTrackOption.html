@@ -176,6 +176,32 @@
   </table>
   
   
+  <a id="PLATEAU_RoadNetwork_Structure_BuildTrackOption_DevAllowCenterLine_" data-uid="PLATEAU.RoadNetwork.Structure.BuildTrackOption.DevAllowCenterLine*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_BuildTrackOption_DevAllowCenterLine" data-uid="PLATEAU.RoadNetwork.Structure.BuildTrackOption.DevAllowCenterLine">DevAllowCenterLine</h4>
+  <div class="markdown level1 summary"><p>デバッグ用) 中央パスを用いるかどうか</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DevAllowCenterLine { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_RoadNetwork_Structure_BuildTrackOption_TangentLength_" data-uid="PLATEAU.RoadNetwork.Structure.BuildTrackOption.TangentLength*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_BuildTrackOption_TangentLength" data-uid="PLATEAU.RoadNetwork.Structure.BuildTrackOption.TangentLength">TangentLength</h4>
   <div class="markdown level1 summary"><p>スプラインのTangentの長さ</p>
@@ -284,13 +310,13 @@
   
   
   <a id="PLATEAU_RoadNetwork_Structure_BuildTrackOption_IsBuildTarget_" data-uid="PLATEAU.RoadNetwork.Structure.BuildTrackOption.IsBuildTarget*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_BuildTrackOption_IsBuildTarget_PLATEAU_RoadNetwork_Structure_RnIntersection_PLATEAU_RoadNetwork_Structure_RnNeighbor_PLATEAU_RoadNetwork_Structure_RnNeighbor_" data-uid="PLATEAU.RoadNetwork.Structure.BuildTrackOption.IsBuildTarget(PLATEAU.RoadNetwork.Structure.RnIntersection,PLATEAU.RoadNetwork.Structure.RnNeighbor,PLATEAU.RoadNetwork.Structure.RnNeighbor)">IsBuildTarget(RnIntersection, RnNeighbor, RnNeighbor)</h4>
+  <h4 id="PLATEAU_RoadNetwork_Structure_BuildTrackOption_IsBuildTarget_PLATEAU_RoadNetwork_Structure_RnIntersection_PLATEAU_RoadNetwork_Structure_RnIntersectionEdge_PLATEAU_RoadNetwork_Structure_RnIntersectionEdge_" data-uid="PLATEAU.RoadNetwork.Structure.BuildTrackOption.IsBuildTarget(PLATEAU.RoadNetwork.Structure.RnIntersection,PLATEAU.RoadNetwork.Structure.RnIntersectionEdge,PLATEAU.RoadNetwork.Structure.RnIntersectionEdge)">IsBuildTarget(RnIntersection, RnIntersectionEdge, RnIntersectionEdge)</h4>
   <div class="markdown level1 summary"><p>ビルド対象のトラックかどうか</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsBuildTarget(RnIntersection intersection, RnNeighbor from, RnNeighbor to)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsBuildTarget(RnIntersection intersection, RnIntersectionEdge from, RnIntersectionEdge to)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -308,12 +334,12 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnNeighbor.html">RnNeighbor</a></td>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a></td>
         <td><span class="parametername">from</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnNeighbor.html">RnNeighbor</a></td>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnIntersectionEdge.html">RnIntersectionEdge</a></td>
         <td><span class="parametername">to</span></td>
         <td></td>
       </tr>

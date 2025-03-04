@@ -376,13 +376,13 @@
   </table>
   
   
-  <a id="PLATEAU_RoadNetwork_Graph_RGraphEx_Create_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.Create*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Graph_RGraphEx_Create_List_SubDividedCityObject__System_Boolean_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.Create(List{SubDividedCityObject},System.Boolean)">Create(List&lt;SubDividedCityObject&gt;, Boolean)</h4>
+  <a id="PLATEAU_RoadNetwork_Graph_RGraphEx_ConvertRnModelGraph_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.ConvertRnModelGraph*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_RGraphEx_ConvertRnModelGraph_PLATEAU_RoadNetwork_Graph_RGraph_PLATEAU_RoadNetwork_Graph_RRoadTypeMask_System_Boolean_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.ConvertRnModelGraph(PLATEAU.RoadNetwork.Graph.RGraph,PLATEAU.RoadNetwork.Graph.RRoadTypeMask,System.Boolean)">ConvertRnModelGraph(RGraph, RRoadTypeMask, Boolean)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static RGraph Create(List&lt;SubDividedCityObject&gt; cityObjects, bool useOutline)</code></pre>
+    <pre><code class="lang-csharp hljs">public static RGraph ConvertRnModelGraph(this RGraph self, RRoadTypeMask roadPackTypes, bool ignoreHighWay)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -395,7 +395,59 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">SubDividedCityObject</span>&gt;</td>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RGraph.html">RGraph</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RRoadTypeMask.html">RRoadTypeMask</a></td>
+        <td><span class="parametername">roadPackTypes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ignoreHighWay</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RGraph.html">RGraph</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_RGraphEx_Create_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.Create*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_RGraphEx_Create_List_System_ValueTuple_SubDividedCityObject_Matrix4x4___System_Boolean_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.Create(List{System.ValueTuple{SubDividedCityObject,Matrix4x4}},System.Boolean)">Create(List&lt;(SubDividedCityObject cityObjects, Matrix4x4 mat)&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RGraph Create(List&lt;(SubDividedCityObject cityObjects, Matrix4x4 mat)&gt; cityObjects, bool useOutline)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">SubDividedCityObject</span>, <span class="xref">Matrix4x4</span>&gt;&gt;</td>
         <td><span class="parametername">cityObjects</span></td>
         <td></td>
       </tr>
@@ -558,6 +610,74 @@
   </table>
   
   
+  <a id="PLATEAU_RoadNetwork_Graph_RGraphEx_CreateSideWalk_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.CreateSideWalk*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_RGraphEx_CreateSideWalk_PLATEAU_RoadNetwork_Graph_RFaceGroup_List_PLATEAU_RoadNetwork_Graph_REdge___List_PLATEAU_RoadNetwork_Graph_REdge___List_PLATEAU_RoadNetwork_Graph_REdge___List_PLATEAU_RoadNetwork_Graph_REdge___HashSet_PLATEAUCityObjectGroup__" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.CreateSideWalk(PLATEAU.RoadNetwork.Graph.RFaceGroup,List{PLATEAU.RoadNetwork.Graph.REdge}@,List{PLATEAU.RoadNetwork.Graph.REdge}@,List{PLATEAU.RoadNetwork.Graph.REdge}@,List{PLATEAU.RoadNetwork.Graph.REdge}@,HashSet{PLATEAUCityObjectGroup})">CreateSideWalk(RFaceGroup, out List&lt;REdge&gt;, out List&lt;REdge&gt;, out List&lt;REdge&gt;, out List&lt;REdge&gt;, HashSet&lt;PLATEAUCityObjectGroup&gt;)</h4>
+  <div class="markdown level1 summary"><p>歩道を構築するREdgeを取得する.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CreateSideWalk(this RFaceGroup self, out List&lt;REdge&gt; outsideEdges, out List&lt;REdge&gt; insideEdges, out List&lt;REdge&gt; startEdges, out List&lt;REdge&gt; endEdges, HashSet&lt;PLATEAUCityObjectGroup&gt; neighborCityObjectGroupsFilter = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RFaceGroup.html">RFaceGroup</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Graph.REdge.html">REdge</a>&gt;</td>
+        <td><span class="parametername">outsideEdges</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Graph.REdge.html">REdge</a>&gt;</td>
+        <td><span class="parametername">insideEdges</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Graph.REdge.html">REdge</a>&gt;</td>
+        <td><span class="parametername">startEdges</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Graph.REdge.html">REdge</a>&gt;</td>
+        <td><span class="parametername">endEdges</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">HashSet</span>&lt;<span class="xref">PLATEAUCityObjectGroup</span>&gt;</td>
+        <td><span class="parametername">neighborCityObjectGroupsFilter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_RoadNetwork_Graph_RGraphEx_CreateVertexSet_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.CreateVertexSet*"></a>
   <h4 id="PLATEAU_RoadNetwork_Graph_RGraphEx_CreateVertexSet_PLATEAU_RoadNetwork_Graph_RFace_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.CreateVertexSet(PLATEAU.RoadNetwork.Graph.RFace)">CreateVertexSet(RFace)</h4>
   <div class="markdown level1 summary"><p>selfに所属する全頂点のHashSetを取得する</p>
@@ -601,6 +721,49 @@
   </table>
   
   
+  <a id="PLATEAU_RoadNetwork_Graph_RGraphEx_DeepCopy_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.DeepCopy*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_RGraphEx_DeepCopy_PLATEAU_RoadNetwork_Graph_RGraph_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.DeepCopy(PLATEAU.RoadNetwork.Graph.RGraph)">DeepCopy(RGraph)</h4>
+  <div class="markdown level1 summary"><p>selfのコピーを作成</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RGraph DeepCopy(this RGraph self)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RGraph.html">RGraph</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RGraph.html">RGraph</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_RoadNetwork_Graph_RGraphEx_EdgeReduction_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.EdgeReduction*"></a>
   <h4 id="PLATEAU_RoadNetwork_Graph_RGraphEx_EdgeReduction_PLATEAU_RoadNetwork_Graph_RGraph_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.EdgeReduction(PLATEAU.RoadNetwork.Graph.RGraph)">EdgeReduction(RGraph)</h4>
   <div class="markdown level1 summary"><p>辺のリダクション処理（同じ頂点を持つ辺をマージする)</p>
@@ -623,6 +786,49 @@
       <tr>
         <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RGraph.html">RGraph</a></td>
         <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_RGraphEx_FaceReduction_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.FaceReduction*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_RGraphEx_FaceReduction_PLATEAU_RoadNetwork_Graph_RGraph_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.FaceReduction(PLATEAU.RoadNetwork.Graph.RGraph)">FaceReduction(RGraph)</h4>
+  <div class="markdown level1 summary"><p>同じFaceは統合する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FaceReduction(this RGraph self)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RGraph.html">RGraph</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1055,6 +1261,54 @@
         <td><span class="parametername">heightTolerance</span></td>
         <td><p>交点が高さ方向にずれていた時の許容量</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_RGraphEx_IsEqual_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.IsEqual*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_RGraphEx_IsEqual_PLATEAU_RoadNetwork_Graph_RGraph_PLATEAU_RoadNetwork_Graph_RGraph_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.IsEqual(PLATEAU.RoadNetwork.Graph.RGraph,PLATEAU.RoadNetwork.Graph.RGraph)">IsEqual(RGraph, RGraph)</h4>
+  <div class="markdown level1 summary"><p>a/bが同じ頂点/辺/面を持つグラフか判定する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEqual(RGraph a, RGraph b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RGraph.html">RGraph</a></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RGraph.html">RGraph</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1510,9 +1764,7 @@ o-o---o ←の様な飛び出た頂点を削除する </p>
   
   <a id="PLATEAU_RoadNetwork_Graph_RGraphEx_TryGroupBySideWalkEdge_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.TryGroupBySideWalkEdge*"></a>
   <h4 id="PLATEAU_RoadNetwork_Graph_RGraphEx_TryGroupBySideWalkEdge_PLATEAU_RoadNetwork_Graph_RFace_List_RnEx_KeyEdgeGroup_PLATEAU_RoadNetwork_Graph_RGraphEx_SideWalkEdgeKey_PLATEAU_RoadNetwork_Graph_REdge____HashSet_PLATEAUCityObjectGroup__" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.TryGroupBySideWalkEdge(PLATEAU.RoadNetwork.Graph.RFace,List{RnEx.KeyEdgeGroup{PLATEAU.RoadNetwork.Graph.RGraphEx.SideWalkEdgeKey,PLATEAU.RoadNetwork.Graph.REdge}}@,HashSet{PLATEAUCityObjectGroup})">TryGroupBySideWalkEdge(RFace, out List&lt;RnEx.KeyEdgeGroup&lt;RGraphEx.SideWalkEdgeKey, REdge&gt;&gt;, HashSet&lt;PLATEAUCityObjectGroup&gt;)</h4>
-  <div class="markdown level1 summary"><p>selfの輪郭線を歩道の内側, 外側, 境界線に分類する.
-NeighborCityObjectGroupsFilterが設定されている場合, 歩道の境界判定対象はこのリストに含まれるPLATEAUCityObjectGroupと繋がっているものに限定される.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1531,6 +1783,60 @@ NeighborCityObjectGroupsFilterが設定されている場合, 歩道の境界判
       <tr>
         <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RFace.html">RFace</a></td>
         <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">RnEx.KeyEdgeGroup</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Graph.RGraphEx.SideWalkEdgeKey.html">RGraphEx.SideWalkEdgeKey</a>, <a class="xref" href="PLATEAU.RoadNetwork.Graph.REdge.html">REdge</a>&gt;&gt;</td>
+        <td><span class="parametername">edgeGroups</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">HashSet</span>&lt;<span class="xref">PLATEAUCityObjectGroup</span>&gt;</td>
+        <td><span class="parametername">neighborCityObjectGroupsFilter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_RGraphEx_TryGroupBySideWalkEdge_" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.TryGroupBySideWalkEdge*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_RGraphEx_TryGroupBySideWalkEdge_PLATEAU_RoadNetwork_Graph_RFaceGroup_List_RnEx_KeyEdgeGroup_PLATEAU_RoadNetwork_Graph_RGraphEx_SideWalkEdgeKey_PLATEAU_RoadNetwork_Graph_REdge____HashSet_PLATEAUCityObjectGroup__" data-uid="PLATEAU.RoadNetwork.Graph.RGraphEx.TryGroupBySideWalkEdge(PLATEAU.RoadNetwork.Graph.RFaceGroup,List{RnEx.KeyEdgeGroup{PLATEAU.RoadNetwork.Graph.RGraphEx.SideWalkEdgeKey,PLATEAU.RoadNetwork.Graph.REdge}}@,HashSet{PLATEAUCityObjectGroup})">TryGroupBySideWalkEdge(RFaceGroup, out List&lt;RnEx.KeyEdgeGroup&lt;RGraphEx.SideWalkEdgeKey, REdge&gt;&gt;, HashSet&lt;PLATEAUCityObjectGroup&gt;)</h4>
+  <div class="markdown level1 summary"><p>selfの輪郭線を歩道の内側, 外側, 境界線に分類する.
+NeighborCityObjectGroupsFilterが設定されている場合, 歩道の境界判定対象はこのリストに含まれるPLATEAUCityObjectGroupと繋がっているものに限定される.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGroupBySideWalkEdge(RFaceGroup faceGroup, out List&lt;RnEx.KeyEdgeGroup&lt;RGraphEx.SideWalkEdgeKey, REdge&gt;&gt; edgeGroups, HashSet&lt;PLATEAUCityObjectGroup&gt; neighborCityObjectGroupsFilter = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RFaceGroup.html">RFaceGroup</a></td>
+        <td><span class="parametername">faceGroup</span></td>
         <td></td>
       </tr>
       <tr>

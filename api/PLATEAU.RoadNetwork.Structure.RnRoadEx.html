@@ -456,7 +456,8 @@ dir = Left(Right). 左(右)車線だけみた両端のwayを返す</p>
   
   <a id="PLATEAU_RoadNetwork_Structure_RnRoadEx_IsValidBorderAdjacentNeighbor_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.IsValidBorderAdjacentNeighbor*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadEx_IsValidBorderAdjacentNeighbor_PLATEAU_RoadNetwork_Structure_RnRoad_PLATEAU_RoadNetwork_Structure_RnLaneBorderType_System_Boolean_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.IsValidBorderAdjacentNeighbor(PLATEAU.RoadNetwork.Structure.RnRoad,PLATEAU.RoadNetwork.Structure.RnLaneBorderType,System.Boolean)">IsValidBorderAdjacentNeighbor(RnRoad, RnLaneBorderType, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>境界線情報が</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -616,12 +617,12 @@ dir = Left(Right). 左(右)車線だけみた両端のwayを返す</p>
   
   <a id="PLATEAU_RoadNetwork_Structure_RnRoadEx_TryGetVerticalSliceSegment_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.TryGetVerticalSliceSegment*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadEx_TryGetVerticalSliceSegment_PLATEAU_RoadNetwork_Structure_RnRoad_PLATEAU_RoadNetwork_Structure_RnLaneBorderType_System_Single_LineSegment3D__" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadEx.TryGetVerticalSliceSegment(PLATEAU.RoadNetwork.Structure.RnRoad,PLATEAU.RoadNetwork.Structure.RnLaneBorderType,System.Single,LineSegment3D@)">TryGetVerticalSliceSegment(RnRoad, RnLaneBorderType, Single, out LineSegment3D)</h4>
-  <div class="markdown level1 summary"><p>selfのborderSide側からborderOffsetMeterだけ離れた位置に道路を垂直に分割する線分を計算する</p>
+  <div class="markdown level1 summary"><p>selfのborderSide側からborderOffsetだけ離れた位置に道路を垂直に分割する線分を計算する</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryGetVerticalSliceSegment(this RnRoad self, RnLaneBorderType borderSide, float borderOffsetMeter, out LineSegment3D segment)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryGetVerticalSliceSegment(this RnRoad self, RnLaneBorderType borderSide, float borderOffset, out LineSegment3D segment)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -645,7 +646,7 @@ dir = Left(Right). 左(右)車線だけみた両端のwayを返す</p>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">borderOffsetMeter</span></td>
+        <td><span class="parametername">borderOffset</span></td>
         <td></td>
       </tr>
       <tr>

@@ -924,6 +924,69 @@
   </table>
   
   
+  <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_FindCollinearRange_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.FindCollinearRange*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_FindCollinearRange_System_Int32_IReadOnlyList_PLATEAU_Util_GeoGraph_LineSegment2D__System_Single_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.FindCollinearRange(System.Int32,IReadOnlyList{PLATEAU.Util.GeoGraph.LineSegment2D},System.Single,System.Nullable{System.Int32},System.Nullable{System.Int32})">FindCollinearRange(Int32, IReadOnlyList&lt;LineSegment2D&gt;, Single, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>edgesで定義された線分リストのedgeBaseIndex番の辺を基準に, 同一直線となる辺を探す.(許容誤差はtoleranceAngleDegForMidEdge)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;int&gt; FindCollinearRange(int edgeBaseIndex, IReadOnlyList&lt;LineSegment2D&gt; edges, float toleranceAngleDegForMidEdge = 20F, int? startIndex = null, int? endIndex = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">edgeBaseIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="PLATEAU.Util.GeoGraph.LineSegment2D.html">LineSegment2D</a>&gt;</td>
+        <td><span class="parametername">edges</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">toleranceAngleDegForMidEdge</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">startIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">endIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_FindMidEdge_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.FindMidEdge*"></a>
   <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_FindMidEdge_IReadOnlyList_Vector2__System_Single_System_Single_PLATEAU_Util_GeoGraph_GeoGraph2D_DebugFindOppositeOption_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.FindMidEdge(IReadOnlyList{Vector2},System.Single,System.Single,PLATEAU.Util.GeoGraph.GeoGraph2D.DebugFindOppositeOption)">FindMidEdge(IReadOnlyList&lt;Vector2&gt;, Single, Single, GeoGraph2D.DebugFindOppositeOption)</h4>
   <div class="markdown level1 summary"><p>verticesを始点終点から見ていき,お互い中心線を使って比較しながら中心の辺を表すインデックス配列を返す</p>
@@ -978,6 +1041,50 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_FindTerminateEdgeIndex_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.FindTerminateEdgeIndex*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_FindTerminateEdgeIndex_IReadOnlyList_Vector2__" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.FindTerminateEdgeIndex(IReadOnlyList{Vector2})">FindTerminateEdgeIndex(IReadOnlyList&lt;Vector2&gt;)</h4>
+  <div class="markdown level1 summary"><p>verticesを始点終点から見ていき, 中間地点となる辺を表すインデックスを返す
+vertices[index], vertices[index + 1]が中間地点となる</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FindTerminateEdgeIndex(IReadOnlyList&lt;Vector2&gt; vertices)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">Vector2</span>&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1256,6 +1363,65 @@ a \ | / b
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Ray2D LerpRay(Ray2D rayA, Ray2D rayB, float p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ray2D</span></td>
+        <td><span class="parametername">rayA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Ray2D</span></td>
+        <td><span class="parametername">rayB</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ray2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_LerpRay2_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.LerpRay2*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_LerpRay2_Ray2D_Ray2D_System_Single_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.LerpRay2(Ray2D,Ray2D,System.Single)">LerpRay2(Ray2D, Ray2D, Single)</h4>
+  <div class="markdown level1 summary"><p>直線l上の点から直線a,bへの距離がp : 1-pとなるような直線lを返す
+0.5だと中間の角度が返る
+\ p  |1-p /
+\   |   /
+\  |  / 
+a \ | / b
+\ /</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Ray2D LerpRay2(Ray2D rayA, Ray2D rayB, float p)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1622,6 +1788,140 @@ a \ | / b
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_SplitByCollinearSegment_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.SplitByCollinearSegment*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_SplitByCollinearSegment_IReadOnlyList_Vector2__System_Single_System_Single_System_Boolean_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.SplitByCollinearSegment(IReadOnlyList{Vector2},System.Single,System.Single,System.Boolean)">SplitByCollinearSegment(IReadOnlyList&lt;Vector2&gt;, Single, Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>verticesで表される線分を, toleranceAngleDeg/midPointToleranceを使った同一直線判定でグルーピングする
+戻り値はグループの始点インデックス
+例) (v0, v1, v2, v3, v4, v5)
+v0~v1, v1~v5が同一直線なら[0, 2, 5]が返る
+v0~v5が同一直線なら[0, 5]が返る</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;int&gt; SplitByCollinearSegment(IReadOnlyList&lt;Vector2&gt; vertices, float toleranceAngleDeg = 0F, float midPointTolerance = 0F, bool checkAdjustSegmentAngleOnly = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">Vector2</span>&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">toleranceAngleDeg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">midPointTolerance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">checkAdjustSegmentAngleOnly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_GeoGraph_GeoGraph2D_TryFindMidEdge2_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.TryFindMidEdge2*"></a>
+  <h4 id="PLATEAU_Util_GeoGraph_GeoGraph2D_TryFindMidEdge2_IReadOnlyList_Vector2__System_Int32__System_Int32__System_Single_System_Single_PLATEAU_Util_GeoGraph_GeoGraph2D_DebugFindOppositeOption_" data-uid="PLATEAU.Util.GeoGraph.GeoGraph2D.TryFindMidEdge2(IReadOnlyList{Vector2},System.Int32@,System.Int32@,System.Single,System.Single,PLATEAU.Util.GeoGraph.GeoGraph2D.DebugFindOppositeOption)">TryFindMidEdge2(IReadOnlyList&lt;Vector2&gt;, out Int32, out Int32, Single, Single, GeoGraph2D.DebugFindOppositeOption)</h4>
+  <div class="markdown level1 summary"><p>verticesを始点終点から見ていき,中央を表す頂点のインデックスを返す</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryFindMidEdge2(IReadOnlyList&lt;Vector2&gt; vertices, out int edgeStartIndex, out int edgeEndIndex, float toleranceAngleDegForMidEdge = 20F, float skipAngleDeg = 20F, GeoGraph2D.DebugFindOppositeOption op = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">Vector2</span>&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">edgeStartIndex</span></td>
+        <td><p>中央線分の開始インデックス</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">edgeEndIndex</span></td>
+        <td><p>中央線分の終了インデックス</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">toleranceAngleDegForMidEdge</span></td>
+        <td><p>中心線と同一直線と判断する線分の角度[deg]</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">skipAngleDeg</span></td>
+        <td><p>開始線分との角度がこれ以下の間は絶対に中心線にならない</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Util.GeoGraph.GeoGraph2D.DebugFindOppositeOption.html">GeoGraph2D.DebugFindOppositeOption</a></td>
+        <td><span class="parametername">op</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>

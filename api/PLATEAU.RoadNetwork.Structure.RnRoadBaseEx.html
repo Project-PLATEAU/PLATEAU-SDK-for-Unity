@@ -210,6 +210,67 @@
   </table>
   
   
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBaseEx_MergeSamePointLineStrings_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBaseEx.MergeSamePointLineStrings*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBaseEx_MergeSamePointLineStrings_PLATEAU_RoadNetwork_Structure_RnRoadBase_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBaseEx.MergeSamePointLineStrings(PLATEAU.RoadNetwork.Structure.RnRoadBase)">MergeSamePointLineStrings(RnRoadBase)</h4>
+  <div class="markdown level1 summary"><p>self内で全く同じPointsを持つLineStringがあった場合統合する.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MergeSamePointLineStrings(this RnRoadBase self)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html">RnRoadBase</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBaseEx_MergeSideWalks_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBaseEx.MergeSideWalks*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBaseEx_MergeSideWalks_PLATEAU_RoadNetwork_Structure_RnRoadBase_List_PLATEAU_RoadNetwork_Structure_RnSideWalk__" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBaseEx.MergeSideWalks(PLATEAU.RoadNetwork.Structure.RnRoadBase,List{PLATEAU.RoadNetwork.Structure.RnSideWalk})">MergeSideWalks(RnRoadBase, List&lt;RnSideWalk&gt;)</h4>
+  <div class="markdown level1 summary"><p>selfにaddSideWalksを追加しようとする.境界線で繋がっている場合はLineStringが統合される</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MergeSideWalks(this RnRoadBase self, List&lt;RnSideWalk&gt; addSideWalks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html">RnRoadBase</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Structure.RnSideWalk.html">RnSideWalk</a>&gt;</td>
+        <td><span class="parametername">addSideWalks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_RoadNetwork_Structure_RnRoadBaseEx_UnLinkEachOther_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBaseEx.UnLinkEachOther*"></a>
   <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBaseEx_UnLinkEachOther_PLATEAU_RoadNetwork_Structure_RnRoadBase_PLATEAU_RoadNetwork_Structure_RnRoadBase_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBaseEx.UnLinkEachOther(PLATEAU.RoadNetwork.Structure.RnRoadBase,PLATEAU.RoadNetwork.Structure.RnRoadBase)">UnLinkEachOther(RnRoadBase, RnRoadBase)</h4>
   <div class="markdown level1 summary"><p>相互に接続を解除する</p>

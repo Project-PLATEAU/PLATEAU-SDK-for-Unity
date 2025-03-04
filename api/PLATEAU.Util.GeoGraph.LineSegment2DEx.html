@@ -477,7 +477,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryHalfLineIntersection(this LineSegment2D self, Vector2 origin, Vector2 dir, out Vector2 intersection, out float t1, out float t2)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryHalfLineIntersection(this LineSegment2D self, Vector2 origin, Vector2 dir, out Vector2 intersection, out float halfLineOffset, out float selfT)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -511,14 +511,14 @@
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">t1</span></td>
-        <td><p>intersection = self.Lerp(t1)となるt1が入る</p>
+        <td><span class="parametername">halfLineOffset</span></td>
+        <td><p>intersection = origin + dir * t2となるt2が入る</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">t2</span></td>
-        <td><p>intersection = origin + dir * t2となるt2が入る</p>
+        <td><span class="parametername">selfT</span></td>
+        <td><p>intersection = self.Lerp(t1)となるt1が入る</p>
 </td>
       </tr>
     </tbody>
@@ -547,7 +547,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryLineIntersection(this LineSegment2D self, Vector2 origin, Vector2 dir, out Vector2 intersection, out float t1, out float t2)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryLineIntersection(this LineSegment2D self, Vector2 origin, Vector2 dir, out Vector2 intersection, out float lineLength, out float segmentT)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -581,13 +581,15 @@
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">t1</span></td>
-        <td></td>
+        <td><span class="parametername">lineLength</span></td>
+        <td><p>intersection = line.origin + line.direction * lineLengthとなる値</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">t2</span></td>
-        <td></td>
+        <td><span class="parametername">segmentT</span></td>
+        <td><p>intersection = Vector2.LerpUnClamped(p1, p2, segmentT)となる値</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -717,7 +719,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TrySegmentIntersection(this LineSegment2D self, LineSegment2D other, out Vector2 intersection, out float t1, out float t2)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TrySegmentIntersection(this LineSegment2D self, LineSegment2D other, out Vector2 intersection, out float selfT, out float otherT)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -747,12 +749,12 @@
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">t1</span></td>
+        <td><span class="parametername">selfT</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">t2</span></td>
+        <td><span class="parametername">otherT</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -781,7 +783,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TrySegmentIntersection(this LineSegment2D self, Vector2 v0, Vector2 v1, out Vector2 intersection, out float t1, out float t2)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TrySegmentIntersection(this LineSegment2D self, Vector2 v0, Vector2 v1, out Vector2 intersection, out float selfT, out float otherT)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -815,13 +817,15 @@
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">t1</span></td>
-        <td></td>
+        <td><span class="parametername">selfT</span></td>
+        <td><p>intersection = Mathf.Lerp(self.Start, self.End, selfT)となる値  </p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">t2</span></td>
-        <td></td>
+        <td><span class="parametername">otherT</span></td>
+        <td><p>intersection = Mathf.Lerp(v0, v1, otherT)となる値 </p>
+</td>
       </tr>
     </tbody>
   </table>
