@@ -25919,12 +25919,12 @@ references:
   isSpec: "True"
   fullName: PLATEAU.RoadNetwork.Structure.RnIntersection.BuildTracks
   nameWithType: RnIntersection.BuildTracks
-- uid: PLATEAU.RoadNetwork.Structure.RnIntersection.Check
-  name: Check()
-  href: api/PLATEAU.RoadNetwork.Structure.RnIntersection.html#PLATEAU_RoadNetwork_Structure_RnIntersection_Check
-  commentId: M:PLATEAU.RoadNetwork.Structure.RnIntersection.Check
-  fullName: PLATEAU.RoadNetwork.Structure.RnIntersection.Check()
-  nameWithType: RnIntersection.Check()
+- uid: PLATEAU.RoadNetwork.Structure.RnIntersection.Check(System.Boolean)
+  name: Check(Boolean)
+  href: api/PLATEAU.RoadNetwork.Structure.RnIntersection.html#PLATEAU_RoadNetwork_Structure_RnIntersection_Check_System_Boolean_
+  commentId: M:PLATEAU.RoadNetwork.Structure.RnIntersection.Check(System.Boolean)
+  fullName: PLATEAU.RoadNetwork.Structure.RnIntersection.Check(System.Boolean)
+  nameWithType: RnIntersection.Check(Boolean)
 - uid: PLATEAU.RoadNetwork.Structure.RnIntersection.Check*
   name: Check
   href: api/PLATEAU.RoadNetwork.Structure.RnIntersection.html#PLATEAU_RoadNetwork_Structure_RnIntersection_Check_
@@ -27353,6 +27353,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.RoadNetwork.Structure.RnLane.SetSideWay
   nameWithType: RnLane.SetSideWay
+- uid: PLATEAU.RoadNetwork.Structure.RnLane.SetSideWays(PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnWay)
+  name: SetSideWays(RnWay, RnWay)
+  href: api/PLATEAU.RoadNetwork.Structure.RnLane.html#PLATEAU_RoadNetwork_Structure_RnLane_SetSideWays_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnWay_
+  commentId: M:PLATEAU.RoadNetwork.Structure.RnLane.SetSideWays(PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnWay)
+  fullName: PLATEAU.RoadNetwork.Structure.RnLane.SetSideWays(PLATEAU.RoadNetwork.Structure.RnWay, PLATEAU.RoadNetwork.Structure.RnWay)
+  nameWithType: RnLane.SetSideWays(RnWay, RnWay)
+- uid: PLATEAU.RoadNetwork.Structure.RnLane.SetSideWays*
+  name: SetSideWays
+  href: api/PLATEAU.RoadNetwork.Structure.RnLane.html#PLATEAU_RoadNetwork_Structure_RnLane_SetSideWays_
+  commentId: Overload:PLATEAU.RoadNetwork.Structure.RnLane.SetSideWays
+  isSpec: "True"
+  fullName: PLATEAU.RoadNetwork.Structure.RnLane.SetSideWays
+  nameWithType: RnLane.SetSideWays
 - uid: PLATEAU.RoadNetwork.Structure.RnLaneAttribute
   name: RnLaneAttribute
   href: api/PLATEAU.RoadNetwork.Structure.RnLaneAttribute.html
@@ -28096,6 +28109,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.RoadNetwork.Structure.RnLineStringEx.GetVertexByFloatIndex
   nameWithType: RnLineStringEx.GetVertexByFloatIndex
+- uid: PLATEAU.RoadNetwork.Structure.RnLineStringEx.IsPointShared(PLATEAU.RoadNetwork.Structure.RnLineString,PLATEAU.RoadNetwork.Structure.RnLineString)
+  name: IsPointShared(RnLineString, RnLineString)
+  href: api/PLATEAU.RoadNetwork.Structure.RnLineStringEx.html#PLATEAU_RoadNetwork_Structure_RnLineStringEx_IsPointShared_PLATEAU_RoadNetwork_Structure_RnLineString_PLATEAU_RoadNetwork_Structure_RnLineString_
+  commentId: M:PLATEAU.RoadNetwork.Structure.RnLineStringEx.IsPointShared(PLATEAU.RoadNetwork.Structure.RnLineString,PLATEAU.RoadNetwork.Structure.RnLineString)
+  fullName: PLATEAU.RoadNetwork.Structure.RnLineStringEx.IsPointShared(PLATEAU.RoadNetwork.Structure.RnLineString, PLATEAU.RoadNetwork.Structure.RnLineString)
+  nameWithType: RnLineStringEx.IsPointShared(RnLineString, RnLineString)
+- uid: PLATEAU.RoadNetwork.Structure.RnLineStringEx.IsPointShared*
+  name: IsPointShared
+  href: api/PLATEAU.RoadNetwork.Structure.RnLineStringEx.html#PLATEAU_RoadNetwork_Structure_RnLineStringEx_IsPointShared_
+  commentId: Overload:PLATEAU.RoadNetwork.Structure.RnLineStringEx.IsPointShared
+  isSpec: "True"
+  fullName: PLATEAU.RoadNetwork.Structure.RnLineStringEx.IsPointShared
+  nameWithType: RnLineStringEx.IsPointShared
 - uid: PLATEAU.RoadNetwork.Structure.RnLineStringEx.IsSequenceEqual(PLATEAU.RoadNetwork.Structure.RnLineString,PLATEAU.RoadNetwork.Structure.RnLineString,System.Boolean@)
   name: IsSequenceEqual(RnLineString, RnLineString, out Boolean)
   href: api/PLATEAU.RoadNetwork.Structure.RnLineStringEx.html#PLATEAU_RoadNetwork_Structure_RnLineStringEx_IsSequenceEqual_PLATEAU_RoadNetwork_Structure_RnLineString_PLATEAU_RoadNetwork_Structure_RnLineString_System_Boolean__
@@ -28504,19 +28530,6 @@ references:
   isSpec: "True"
   fullName: PLATEAU.RoadNetwork.Structure.RnModel.RemoveIntersection
   nameWithType: RnModel.RemoveIntersection
-- uid: PLATEAU.RoadNetwork.Structure.RnModel.RemoveLane(PLATEAU.RoadNetwork.Structure.RnLane)
-  name: RemoveLane(RnLane)
-  href: api/PLATEAU.RoadNetwork.Structure.RnModel.html#PLATEAU_RoadNetwork_Structure_RnModel_RemoveLane_PLATEAU_RoadNetwork_Structure_RnLane_
-  commentId: M:PLATEAU.RoadNetwork.Structure.RnModel.RemoveLane(PLATEAU.RoadNetwork.Structure.RnLane)
-  fullName: PLATEAU.RoadNetwork.Structure.RnModel.RemoveLane(PLATEAU.RoadNetwork.Structure.RnLane)
-  nameWithType: RnModel.RemoveLane(RnLane)
-- uid: PLATEAU.RoadNetwork.Structure.RnModel.RemoveLane*
-  name: RemoveLane
-  href: api/PLATEAU.RoadNetwork.Structure.RnModel.html#PLATEAU_RoadNetwork_Structure_RnModel_RemoveLane_
-  commentId: Overload:PLATEAU.RoadNetwork.Structure.RnModel.RemoveLane
-  isSpec: "True"
-  fullName: PLATEAU.RoadNetwork.Structure.RnModel.RemoveLane
-  nameWithType: RnModel.RemoveLane
 - uid: PLATEAU.RoadNetwork.Structure.RnModel.RemoveRoad(PLATEAU.RoadNetwork.Structure.RnRoad)
   name: RemoveRoad(RnRoad)
   href: api/PLATEAU.RoadNetwork.Structure.RnModel.html#PLATEAU_RoadNetwork_Structure_RnModel_RemoveRoad_PLATEAU_RoadNetwork_Structure_RnRoad_
@@ -29227,12 +29240,12 @@ references:
   isSpec: "True"
   fullName: PLATEAU.RoadNetwork.Structure.RnRoad.AllWays
   nameWithType: RnRoad.AllWays
-- uid: PLATEAU.RoadNetwork.Structure.RnRoad.Check
-  name: Check()
-  href: api/PLATEAU.RoadNetwork.Structure.RnRoad.html#PLATEAU_RoadNetwork_Structure_RnRoad_Check
-  commentId: M:PLATEAU.RoadNetwork.Structure.RnRoad.Check
-  fullName: PLATEAU.RoadNetwork.Structure.RnRoad.Check()
-  nameWithType: RnRoad.Check()
+- uid: PLATEAU.RoadNetwork.Structure.RnRoad.Check(System.Boolean)
+  name: Check(Boolean)
+  href: api/PLATEAU.RoadNetwork.Structure.RnRoad.html#PLATEAU_RoadNetwork_Structure_RnRoad_Check_System_Boolean_
+  commentId: M:PLATEAU.RoadNetwork.Structure.RnRoad.Check(System.Boolean)
+  fullName: PLATEAU.RoadNetwork.Structure.RnRoad.Check(System.Boolean)
+  nameWithType: RnRoad.Check(Boolean)
 - uid: PLATEAU.RoadNetwork.Structure.RnRoad.Check*
   name: Check
   href: api/PLATEAU.RoadNetwork.Structure.RnRoad.html#PLATEAU_RoadNetwork_Structure_RnRoad_Check_
@@ -29620,19 +29633,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.RoadNetwork.Structure.RnRoad.Prev
   nameWithType: RnRoad.Prev
-- uid: PLATEAU.RoadNetwork.Structure.RnRoad.RemoveLane(PLATEAU.RoadNetwork.Structure.RnLane)
-  name: RemoveLane(RnLane)
-  href: api/PLATEAU.RoadNetwork.Structure.RnRoad.html#PLATEAU_RoadNetwork_Structure_RnRoad_RemoveLane_PLATEAU_RoadNetwork_Structure_RnLane_
-  commentId: M:PLATEAU.RoadNetwork.Structure.RnRoad.RemoveLane(PLATEAU.RoadNetwork.Structure.RnLane)
-  fullName: PLATEAU.RoadNetwork.Structure.RnRoad.RemoveLane(PLATEAU.RoadNetwork.Structure.RnLane)
-  nameWithType: RnRoad.RemoveLane(RnLane)
-- uid: PLATEAU.RoadNetwork.Structure.RnRoad.RemoveLane*
-  name: RemoveLane
-  href: api/PLATEAU.RoadNetwork.Structure.RnRoad.html#PLATEAU_RoadNetwork_Structure_RnRoad_RemoveLane_
-  commentId: Overload:PLATEAU.RoadNetwork.Structure.RnRoad.RemoveLane
+- uid: PLATEAU.RoadNetwork.Structure.RnRoad.RemoveMainLane(PLATEAU.RoadNetwork.Structure.RnLane)
+  name: RemoveMainLane(RnLane)
+  href: api/PLATEAU.RoadNetwork.Structure.RnRoad.html#PLATEAU_RoadNetwork_Structure_RnRoad_RemoveMainLane_PLATEAU_RoadNetwork_Structure_RnLane_
+  commentId: M:PLATEAU.RoadNetwork.Structure.RnRoad.RemoveMainLane(PLATEAU.RoadNetwork.Structure.RnLane)
+  fullName: PLATEAU.RoadNetwork.Structure.RnRoad.RemoveMainLane(PLATEAU.RoadNetwork.Structure.RnLane)
+  nameWithType: RnRoad.RemoveMainLane(RnLane)
+- uid: PLATEAU.RoadNetwork.Structure.RnRoad.RemoveMainLane*
+  name: RemoveMainLane
+  href: api/PLATEAU.RoadNetwork.Structure.RnRoad.html#PLATEAU_RoadNetwork_Structure_RnRoad_RemoveMainLane_
+  commentId: Overload:PLATEAU.RoadNetwork.Structure.RnRoad.RemoveMainLane
   isSpec: "True"
-  fullName: PLATEAU.RoadNetwork.Structure.RnRoad.RemoveLane
-  nameWithType: RnRoad.RemoveLane
+  fullName: PLATEAU.RoadNetwork.Structure.RnRoad.RemoveMainLane
+  nameWithType: RnRoad.RemoveMainLane
 - uid: PLATEAU.RoadNetwork.Structure.RnRoad.ReplaceLane(PLATEAU.RoadNetwork.Structure.RnLane,IEnumerable{PLATEAU.RoadNetwork.Structure.RnLane})
   name: ReplaceLane(RnLane, IEnumerable<RnLane>)
   href: api/PLATEAU.RoadNetwork.Structure.RnRoad.html#PLATEAU_RoadNetwork_Structure_RnRoad_ReplaceLane_PLATEAU_RoadNetwork_Structure_RnLane_IEnumerable_PLATEAU_RoadNetwork_Structure_RnLane__
@@ -29680,19 +29693,6 @@ references:
   isSpec: "True"
   fullName: PLATEAU.RoadNetwork.Structure.RnRoad.ReplaceLanes
   nameWithType: RnRoad.ReplaceLanes
-- uid: PLATEAU.RoadNetwork.Structure.RnRoad.ReplaceMedianLane(PLATEAU.RoadNetwork.Structure.RnLane)
-  name: ReplaceMedianLane(RnLane)
-  href: api/PLATEAU.RoadNetwork.Structure.RnRoad.html#PLATEAU_RoadNetwork_Structure_RnRoad_ReplaceMedianLane_PLATEAU_RoadNetwork_Structure_RnLane_
-  commentId: M:PLATEAU.RoadNetwork.Structure.RnRoad.ReplaceMedianLane(PLATEAU.RoadNetwork.Structure.RnLane)
-  fullName: PLATEAU.RoadNetwork.Structure.RnRoad.ReplaceMedianLane(PLATEAU.RoadNetwork.Structure.RnLane)
-  nameWithType: RnRoad.ReplaceMedianLane(RnLane)
-- uid: PLATEAU.RoadNetwork.Structure.RnRoad.ReplaceMedianLane*
-  name: ReplaceMedianLane
-  href: api/PLATEAU.RoadNetwork.Structure.RnRoad.html#PLATEAU_RoadNetwork_Structure_RnRoad_ReplaceMedianLane_
-  commentId: Overload:PLATEAU.RoadNetwork.Structure.RnRoad.ReplaceMedianLane
-  isSpec: "True"
-  fullName: PLATEAU.RoadNetwork.Structure.RnRoad.ReplaceMedianLane
-  nameWithType: RnRoad.ReplaceMedianLane
 - uid: PLATEAU.RoadNetwork.Structure.RnRoad.ReplaceNeighbor(PLATEAU.RoadNetwork.Structure.RnRoadBase,PLATEAU.RoadNetwork.Structure.RnRoadBase)
   name: ReplaceNeighbor(RnRoadBase, RnRoadBase)
   href: api/PLATEAU.RoadNetwork.Structure.RnRoad.html#PLATEAU_RoadNetwork_Structure_RnRoad_ReplaceNeighbor_PLATEAU_RoadNetwork_Structure_RnRoadBase_PLATEAU_RoadNetwork_Structure_RnRoadBase_
@@ -29857,12 +29857,12 @@ references:
   isSpec: "True"
   fullName: PLATEAU.RoadNetwork.Structure.RnRoadBase.AllWays
   nameWithType: RnRoadBase.AllWays
-- uid: PLATEAU.RoadNetwork.Structure.RnRoadBase.Check
-  name: Check()
-  href: api/PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_Check
-  commentId: M:PLATEAU.RoadNetwork.Structure.RnRoadBase.Check
-  fullName: PLATEAU.RoadNetwork.Structure.RnRoadBase.Check()
-  nameWithType: RnRoadBase.Check()
+- uid: PLATEAU.RoadNetwork.Structure.RnRoadBase.Check(System.Boolean)
+  name: Check(Boolean)
+  href: api/PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_Check_System_Boolean_
+  commentId: M:PLATEAU.RoadNetwork.Structure.RnRoadBase.Check(System.Boolean)
+  fullName: PLATEAU.RoadNetwork.Structure.RnRoadBase.Check(System.Boolean)
+  nameWithType: RnRoadBase.Check(Boolean)
 - uid: PLATEAU.RoadNetwork.Structure.RnRoadBase.Check*
   name: Check
   href: api/PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_Check_
@@ -30888,12 +30888,12 @@ references:
   isSpec: "True"
   fullName: PLATEAU.RoadNetwork.Structure.RnSideWalk.AllWays
   nameWithType: RnSideWalk.AllWays
-- uid: PLATEAU.RoadNetwork.Structure.RnSideWalk.Check
-  name: Check()
-  href: api/PLATEAU.RoadNetwork.Structure.RnSideWalk.html#PLATEAU_RoadNetwork_Structure_RnSideWalk_Check
-  commentId: M:PLATEAU.RoadNetwork.Structure.RnSideWalk.Check
-  fullName: PLATEAU.RoadNetwork.Structure.RnSideWalk.Check()
-  nameWithType: RnSideWalk.Check()
+- uid: PLATEAU.RoadNetwork.Structure.RnSideWalk.Check(System.Boolean)
+  name: Check(Boolean)
+  href: api/PLATEAU.RoadNetwork.Structure.RnSideWalk.html#PLATEAU_RoadNetwork_Structure_RnSideWalk_Check_System_Boolean_
+  commentId: M:PLATEAU.RoadNetwork.Structure.RnSideWalk.Check(System.Boolean)
+  fullName: PLATEAU.RoadNetwork.Structure.RnSideWalk.Check(System.Boolean)
+  nameWithType: RnSideWalk.Check(Boolean)
 - uid: PLATEAU.RoadNetwork.Structure.RnSideWalk.Check*
   name: Check
   href: api/PLATEAU.RoadNetwork.Structure.RnSideWalk.html#PLATEAU_RoadNetwork_Structure_RnSideWalk_Check_
@@ -30901,6 +30901,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.RoadNetwork.Structure.RnSideWalk.Check
   nameWithType: RnSideWalk.Check
+- uid: PLATEAU.RoadNetwork.Structure.RnSideWalk.CheckAligned(System.Boolean)
+  name: CheckAligned(Boolean)
+  href: api/PLATEAU.RoadNetwork.Structure.RnSideWalk.html#PLATEAU_RoadNetwork_Structure_RnSideWalk_CheckAligned_System_Boolean_
+  commentId: M:PLATEAU.RoadNetwork.Structure.RnSideWalk.CheckAligned(System.Boolean)
+  fullName: PLATEAU.RoadNetwork.Structure.RnSideWalk.CheckAligned(System.Boolean)
+  nameWithType: RnSideWalk.CheckAligned(Boolean)
+- uid: PLATEAU.RoadNetwork.Structure.RnSideWalk.CheckAligned*
+  name: CheckAligned
+  href: api/PLATEAU.RoadNetwork.Structure.RnSideWalk.html#PLATEAU_RoadNetwork_Structure_RnSideWalk_CheckAligned_
+  commentId: Overload:PLATEAU.RoadNetwork.Structure.RnSideWalk.CheckAligned
+  isSpec: "True"
+  fullName: PLATEAU.RoadNetwork.Structure.RnSideWalk.CheckAligned
+  nameWithType: RnSideWalk.CheckAligned
 - uid: PLATEAU.RoadNetwork.Structure.RnSideWalk.Create(PLATEAU.RoadNetwork.Structure.RnRoadBase,PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnWay,PLATEAU.RoadNetwork.Structure.RnSideWalkLaneType)
   name: Create(RnRoadBase, RnWay, RnWay, RnWay, RnWay, RnSideWalkLaneType)
   href: api/PLATEAU.RoadNetwork.Structure.RnSideWalk.html#PLATEAU_RoadNetwork_Structure_RnSideWalk_Create_PLATEAU_RoadNetwork_Structure_RnRoadBase_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnWay_PLATEAU_RoadNetwork_Structure_RnSideWalkLaneType_
@@ -30966,6 +30979,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.RoadNetwork.Structure.RnSideWalk.InsideWay
   nameWithType: RnSideWalk.InsideWay
+- uid: PLATEAU.RoadNetwork.Structure.RnSideWalk.IsAllWayValid
+  name: IsAllWayValid
+  href: api/PLATEAU.RoadNetwork.Structure.RnSideWalk.html#PLATEAU_RoadNetwork_Structure_RnSideWalk_IsAllWayValid
+  commentId: P:PLATEAU.RoadNetwork.Structure.RnSideWalk.IsAllWayValid
+  fullName: PLATEAU.RoadNetwork.Structure.RnSideWalk.IsAllWayValid
+  nameWithType: RnSideWalk.IsAllWayValid
+- uid: PLATEAU.RoadNetwork.Structure.RnSideWalk.IsAllWayValid*
+  name: IsAllWayValid
+  href: api/PLATEAU.RoadNetwork.Structure.RnSideWalk.html#PLATEAU_RoadNetwork_Structure_RnSideWalk_IsAllWayValid_
+  commentId: Overload:PLATEAU.RoadNetwork.Structure.RnSideWalk.IsAllWayValid
+  isSpec: "True"
+  fullName: PLATEAU.RoadNetwork.Structure.RnSideWalk.IsAllWayValid
+  nameWithType: RnSideWalk.IsAllWayValid
 - uid: PLATEAU.RoadNetwork.Structure.RnSideWalk.IsValid
   name: IsValid
   href: api/PLATEAU.RoadNetwork.Structure.RnSideWalk.html#PLATEAU_RoadNetwork_Structure_RnSideWalk_IsValid
@@ -31911,6 +31937,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.RoadNetwork.Structure.RnWay.SetPointsUnkeepReference
   nameWithType: RnWay.SetPointsUnkeepReference
+- uid: PLATEAU.RoadNetwork.Structure.RnWay.ShallowClone
+  name: ShallowClone()
+  href: api/PLATEAU.RoadNetwork.Structure.RnWay.html#PLATEAU_RoadNetwork_Structure_RnWay_ShallowClone
+  commentId: M:PLATEAU.RoadNetwork.Structure.RnWay.ShallowClone
+  fullName: PLATEAU.RoadNetwork.Structure.RnWay.ShallowClone()
+  nameWithType: RnWay.ShallowClone()
+- uid: PLATEAU.RoadNetwork.Structure.RnWay.ShallowClone*
+  name: ShallowClone
+  href: api/PLATEAU.RoadNetwork.Structure.RnWay.html#PLATEAU_RoadNetwork_Structure_RnWay_ShallowClone_
+  commentId: Overload:PLATEAU.RoadNetwork.Structure.RnWay.ShallowClone
+  isSpec: "True"
+  fullName: PLATEAU.RoadNetwork.Structure.RnWay.ShallowClone
+  nameWithType: RnWay.ShallowClone
 - uid: PLATEAU.RoadNetwork.Structure.RnWay.Split(System.Int32,System.Boolean,Func{System.Int32,System.Single})
   name: Split(Int32, Boolean, Func<Int32, Single>)
   href: api/PLATEAU.RoadNetwork.Structure.RnWay.html#PLATEAU_RoadNetwork_Structure_RnWay_Split_System_Int32_System_Boolean_Func_System_Int32_System_Single__

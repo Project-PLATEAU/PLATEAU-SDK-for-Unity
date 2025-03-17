@@ -99,6 +99,8 @@
 </ul>
 </li>
 </ul>
+<div class="NOTE"><h5>Note</h5><p><strong>CityGMLのバージョン</strong><br>G空間情報センターのWebサイトからダウンロードできるCityGMLについて、複数のバージョンが掲載されている場合があります(v3とv2があるなど)。<br>2025年3月現在は、最新のv3に対応しています。今後に新しいバージョンが出た際には対応していく予定です。</p>
+</div>
 <h4 id="サーバーからインポートする場合">サーバーからインポートする場合</h4>
 <ul>
 <li><p><code>サーバー</code>では、PLATEAUのデータサーバーから直接 都市データをインポートできます。</p>
@@ -139,7 +141,7 @@
 </ul>
 </li>
 <li>アイコンが多すぎると感じる場合は、画面左下の凡例のチェックを切り替えることでアイコンの表示/非表示をLODごとに切り替えることができます。</li>
-<li>地図は国土地理院のサイトから自動でダウンロードされて表示されます。インターネットへの接続が必要です。</li>
+<li>地図は国土地理院のサイトから自動でダウンロードされて表示されます。</li>
 <li>区域に表示される番号は、後述の<code>indexmap.pdf</code> に記載の番号と同じです。</li>
 </ul>
 </li>
@@ -150,6 +152,9 @@
 </li>
 </ul>
 <p><img src="../resources/manual/importCityModels/searchByMeshCode.png" alt=""></p>
+<div class="NOTE"><h5>Note</h5><p><strong>インポートにはインターネット接続が必要です</strong><br>範囲選択画面の地図を表示するために、次のドメインにアクセスできる必要があります。
+<code>https://cyberjapandata.gsi.go.jp</code><br>また、サーバーインポートでデータを取得するためには、次のドメインにアクセスできる必要があります。<br><code>https://api.plateau.reearth.io</code><br>プロキシでの接続には対応しておりません。</p>
+</div>
 <div class="NOTE"><h5>Note</h5><p>範囲選択画面では、通常はガイド線が格子状に並び、地図は隙間無く表示されます。<br>しかし、座標系の選択を誤ると、下図のようにガイド線の配置が歪み、地図に隙間ができます。
 <img src="../resources/manual/importCityModels/invalidCoordinateSystem.png" alt="">
 これは誤った座標系を選択したことによる座標計算の誤差が可視化されたものです。<br>球体の地球を平面の地図で表現する都合上、基準座標点から離れるほど座標計算の誤差は大きくなります。</p>
