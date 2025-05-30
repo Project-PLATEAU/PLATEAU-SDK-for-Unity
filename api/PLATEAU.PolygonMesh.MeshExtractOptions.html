@@ -118,12 +118,12 @@
   
   
   <a id="PLATEAU_PolygonMesh_MeshExtractOptions__ctor_" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.#ctor*"></a>
-  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions__ctor_PlateauVector3d_CoordinateSystem_PLATEAU_PolygonMesh_MeshGranularity_System_UInt32_System_UInt32_System_Boolean_System_Int32_System_Single_System_Int32_System_Boolean_System_Boolean_System_Boolean_System_UInt32_System_Boolean_System_Int32_System_String_" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.#ctor(PlateauVector3d,CoordinateSystem,PLATEAU.PolygonMesh.MeshGranularity,System.UInt32,System.UInt32,System.Boolean,System.Int32,System.Single,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.UInt32,System.Boolean,System.Int32,System.String)">MeshExtractOptions(PlateauVector3d, CoordinateSystem, MeshGranularity, UInt32, UInt32, Boolean, Int32, Single, Int32, Boolean, Boolean, Boolean, UInt32, Boolean, Int32, String)</h4>
+  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions__ctor_PlateauVector3d_CoordinateSystem_PLATEAU_PolygonMesh_MeshGranularity_System_UInt32_System_UInt32_System_Boolean_System_Int32_System_Single_System_Int32_System_Boolean_System_Boolean_System_Boolean_System_UInt32_System_Boolean_System_Int32_System_String_System_Int32_" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.#ctor(PlateauVector3d,CoordinateSystem,PLATEAU.PolygonMesh.MeshGranularity,System.UInt32,System.UInt32,System.Boolean,System.Int32,System.Single,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.UInt32,System.Boolean,System.Int32,System.String,System.Int32)">MeshExtractOptions(PlateauVector3d, CoordinateSystem, MeshGranularity, UInt32, UInt32, Boolean, Int32, Single, Int32, Boolean, Boolean, Boolean, UInt32, Boolean, Int32, String, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MeshExtractOptions(PlateauVector3d referencePoint, CoordinateSystem meshAxes, MeshGranularity meshGranularity, uint minLOD, uint maxLOD, bool exportAppearance, int gridCountOfSide, float unitScale, int coordinateZoneID, bool excludeCityObjectOutsideExtent, bool excludePolygonsOutsideExtent, bool enableTexturePacking, uint texturePackingResolution, bool attachMapTile, int mapTileZoomLevel, string mapTileURL)</code></pre>
+    <pre><code class="lang-csharp hljs">public MeshExtractOptions(PlateauVector3d referencePoint, CoordinateSystem meshAxes, MeshGranularity meshGranularity, uint minLOD, uint maxLOD, bool exportAppearance, int gridCountOfSide, float unitScale, int coordinateZoneID, bool excludeCityObjectOutsideExtent, bool excludePolygonsOutsideExtent, bool enableTexturePacking, uint texturePackingResolution, bool attachMapTile, int mapTileZoomLevel, string mapTileURL, int epsgCode)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -215,6 +215,11 @@
         <td><span class="parametername">mapTileURL</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">epsgCode</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="fields">Fields
@@ -293,6 +298,30 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="PLATEAU_PolygonMesh_MeshExtractOptions_epsgCode" data-uid="PLATEAU.PolygonMesh.MeshExtractOptions.epsgCode">epsgCode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int epsgCode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace PLATEAU.CityImport.Config.PackageImportConfigs
+    <title>Enum AreaSelectResult.ResultReason
    | PLATEAU SDK for Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace PLATEAU.CityImport.Config.PackageImportConfigs
+    <meta name="title" content="Enum AreaSelectResult.ResultReason
    | PLATEAU SDK for Unity ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,45 +78,42 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.CityImport.AreaSelector.AreaSelectResult.ResultReason">
   
-  <h1 id="PLATEAU_CityImport_Config_PackageImportConfigs" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs" class="text-break">Namespace PLATEAU.CityImport.Config.PackageImportConfigs
+  
+  <h1 id="PLATEAU_CityImport_AreaSelector_AreaSelectResult_ResultReason" data-uid="PLATEAU.CityImport.AreaSelector.AreaSelectResult.ResultReason" class="text-break">Enum AreaSelectResult.ResultReason
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>範囲選択画面が終了した理由を表す列挙型です。</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityImport.AreaSelector.html">PLATEAU.CityImport.AreaSelector</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="PLATEAU_CityImport_AreaSelector_AreaSelectResult_ResultReason_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum ResultReason</code></pre>
+  </div>
+  <h3 id="fields">Fields
   </h3>
-      <h4><a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.html">PackageImportConfig</a></h4>
-      <section><p>PLATEAUCityModelLoader の設定のうち、パッケージごとの設定です。
-<a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigDict.html">PackageImportConfigDict</a> によって保持されます。
-このクラスに対応するGUIクラスは PackageLoadConfigGUI です。
-設定のうち、一括設定可能な部分は<a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.html">PackageImportConfigExtendable</a>が担います。</p>
-<p>実装上の注意：
-・特定のパッケージ種で追加の設定項目がある場合はサブクラスで実装します。
-・この設定項目を追加・削除する場合、<a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.html#PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_ConvertToNativeOption_PlateauVector3d_System_Int32_GmlFile_">ConvertToNativeOption(PlateauVector3d, Int32, GmlFile)</a>も合わせて実装しないと反映されないことに注意してください。 </p>
-</section>
-      <h4><a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigDict.html">PackageImportConfigDict</a></h4>
-      <section><p>都市インポートの設定のうち、パッケージごとのインポート設定をまとめたクラスです。
-参照:
-具体的な設定については <a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.html">PackageImportConfig</a>を参照してください。
-GUIについては PackageLoadConfigGUIList を参照してください。</p>
-</section>
-      <h4><a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.html">PackageImportConfigExtendable</a></h4>
-      <section><p><a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.html">PackageImportConfig</a>のうち、一括設定から設定を引き継ぐことが可能な部分の設定値クラスです。</p>
-</section>
-      <h4><a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageToLodDict.html">PackageToLodDict</a></h4>
-      <section><p>パッケージとそこに含まれる最大LODの組です。</p>
-</section>
-    <h3 id="structs">Structs
-  </h3>
-      <h4><a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.LODRange.html">LODRange</a></h4>
-      <section></section>
-    <h3 id="enums">Enums
-  </h3>
-      <h4><a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.TexturePackingResolution.html">TexturePackingResolution</a></h4>
-      <section><p>テクスチャ結合後の解像度です。</p>
-</section>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="PLATEAU_CityImport_AreaSelector_AreaSelectResult_ResultReason_Cancel">Cancel</td>
+        <td><p>ユーザーが範囲選択をキャンセルした</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLATEAU_CityImport_AreaSelector_AreaSelectResult_ResultReason_Confirm">Confirm</td>
+        <td><p>ユーザーが範囲選択を決定した</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
 </article>
           </div>
           

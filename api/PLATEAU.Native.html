@@ -111,8 +111,11 @@ C#側でログを表示するためのコールバックメソッドとログ詳
       <section></section>
       <h4><a class="xref" href="PLATEAU.Native.NativeVectorGmlFile.html">NativeVectorGmlFile</a></h4>
       <section></section>
-      <h4><a class="xref" href="PLATEAU.Native.NativeVectorMeshCode.html">NativeVectorMeshCode</a></h4>
-      <section></section>
+      <h4><a class="xref" href="PLATEAU.Native.NativeVectorGridCode.html">NativeVectorGridCode</a></h4>
+      <section><p>GridCodeのC++ Vectorです。
+中身はVectorの廃棄時に削除されます。
+ダングリングを防ぐため、vectorへの追加・参照時はコピーを渡します。</p>
+</section>
       <h4><a class="xref" href="PLATEAU.Native.PInvokeDisposable.html">PInvokeDisposable</a></h4>
       <section><p>廃棄時に Native側で delete する必要があるものの基底クラスです。
 Native側で delete する処理として、 DisposeNative() がサブクラスで実装されていることを前提とします。

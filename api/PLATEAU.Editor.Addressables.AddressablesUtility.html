@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class PathUtil
+    <title>Class AddressablesUtility
    | PLATEAU SDK for Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class PathUtil
+    <meta name="title" content="Class AddressablesUtility
    | PLATEAU SDK for Unity ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,18 +78,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PLATEAU.Util.PathUtil">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility">
   
   
-  <h1 id="PLATEAU_Util_PathUtil" data-uid="PLATEAU.Util.PathUtil" class="text-break">Class PathUtil
+  <h1 id="PLATEAU_Editor_Addressables_AddressablesUtility" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility" class="text-break">Class AddressablesUtility
   </h1>
-  <div class="markdown level0 summary"><p>PLATEAU のファイルパスに関するユーティリティです。</p>
+  <div class="markdown level0 summary"><p>Addressablesのグループ作成やアセットのAddressable登録を行うEditor専用ユーティリティクラス</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">PathUtil</span></div>
+    <div class="level1"><span class="xref">AddressablesUtility</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -115,105 +115,24 @@
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.Util.html">PLATEAU.Util</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.Editor.Addressables.html">PLATEAU.Editor.Addressables</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="PLATEAU_Util_PathUtil_syntax">Syntax</h5>
+  <h5 id="PLATEAU_Editor_Addressables_AddressablesUtility_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class PathUtil</code></pre>
+    <pre><code class="lang-csharp hljs">public static class AddressablesUtility</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="PLATEAU_Util_PathUtil_PLATEAUSrcFetchDir" data-uid="PLATEAU.Util.PathUtil.PLATEAUSrcFetchDir">PLATEAUSrcFetchDir</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly string PLATEAUSrcFetchDir</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="PLATEAU_Util_PathUtil_UdxFolderName" data-uid="PLATEAU.Util.PathUtil.UdxFolderName">UdxFolderName</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string UdxFolderName = &quot;udx&quot;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="PLATEAU_Util_PathUtil_SdkBasePath_" data-uid="PLATEAU.Util.PathUtil.SdkBasePath*"></a>
-  <h4 id="PLATEAU_Util_PathUtil_SdkBasePath" data-uid="PLATEAU.Util.PathUtil.SdkBasePath">SdkBasePath</h4>
-  <div class="markdown level1 summary"><p>PLATEAU SDK のパスは、 GitHub からインポートした場合は Packages 以下になり、
-Unity Asset Store からインポートした場合は Assets 以下になります。
-SDKの基本パスを返します。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string SdkBasePath { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="PLATEAU_Util_PathUtil_FullPathToAssetsPath_" data-uid="PLATEAU.Util.PathUtil.FullPathToAssetsPath*"></a>
-  <h4 id="PLATEAU_Util_PathUtil_FullPathToAssetsPath_System_String_" data-uid="PLATEAU.Util.PathUtil.FullPathToAssetsPath(System.String)">FullPathToAssetsPath(String)</h4>
-  <div class="markdown level1 summary"><p>フルパスをAssetsフォルダからのパスに変換します。
-パスがAssetsフォルダ内を指すことが前提であり、そうでない場合は <see cref="!:IOException"></see> を投げます。</p>
+  <a id="PLATEAU_Editor_Addressables_AddressablesUtility_BuildAddressables_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.BuildAddressables*"></a>
+  <h4 id="PLATEAU_Editor_Addressables_AddressablesUtility_BuildAddressables_System_Boolean_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.BuildAddressables(System.Boolean)">BuildAddressables(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Addressablesのビルドを実行します。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string FullPathToAssetsPath(string filePath)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void BuildAddressables(bool cleanCache = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -221,131 +140,28 @@ SDKの基本パスを返します。</p>
       <tr>
         <th>Type</th>
         <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">filePath</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_Util_PathUtil_IsSubDirectory_" data-uid="PLATEAU.Util.PathUtil.IsSubDirectory*"></a>
-  <h4 id="PLATEAU_Util_PathUtil_IsSubDirectory_System_String_System_String_" data-uid="PLATEAU.Util.PathUtil.IsSubDirectory(System.String,System.String)">IsSubDirectory(String, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsSubDirectory(string subPath, string dir)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">subPath</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">dir</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><span class="parametername">cleanCache</span></td>
+        <td><p>ビルド前にキャッシュを消す場合はtrue</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_Util_PathUtil_IsSubDirectoryOfAssets_" data-uid="PLATEAU.Util.PathUtil.IsSubDirectoryOfAssets*"></a>
-  <h4 id="PLATEAU_Util_PathUtil_IsSubDirectoryOfAssets_System_String_" data-uid="PLATEAU.Util.PathUtil.IsSubDirectoryOfAssets(System.String)">IsSubDirectoryOfAssets(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsSubDirectoryOfAssets(string filePath)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">filePath</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_Util_PathUtil_IsValidInputFilePath_" data-uid="PLATEAU.Util.PathUtil.IsValidInputFilePath*"></a>
-  <h4 id="PLATEAU_Util_PathUtil_IsValidInputFilePath_System_String_System_String_System_Boolean_" data-uid="PLATEAU.Util.PathUtil.IsValidInputFilePath(System.String,System.String,System.Boolean)">IsValidInputFilePath(String, String, Boolean)</h4>
-  <div class="markdown level1 summary"><p>入力ファイル用のパスとして正しければtrue,不適切であればfalseを返します。</p>
+  <a id="PLATEAU_Editor_Addressables_AddressablesUtility_GetOrCreateGroup_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.GetOrCreateGroup*"></a>
+  <h4 id="PLATEAU_Editor_Addressables_AddressablesUtility_GetOrCreateGroup_System_String_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.GetOrCreateGroup(System.String)">GetOrCreateGroup(String)</h4>
+  <div class="markdown level1 summary"><p>指定した名前のグループを取得。なければ新規作成。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsValidInputFilePath(string filePath, string expectedExtension, bool shouldFileInAssetsFolder)</code></pre>
+    <pre><code class="lang-csharp hljs">public static AddressableAssetGroup GetOrCreateGroup(string groupName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -359,20 +175,8 @@ SDKの基本パスを返します。</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">filePath</span></td>
-        <td><p>入力ファイルのパスです。</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">expectedExtension</span></td>
-        <td><p>入力ファイルとして想定される拡張子です。</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">shouldFileInAssetsFolder</span></td>
-        <td><p>ファイルがUnityプロジェクトのAssetsフォルダ内にあるべきならtrue、他の場所でも良いならfalseを指定します。</p>
+        <td><span class="parametername">groupName</span></td>
+        <td><p>グループ名</p>
 </td>
       </tr>
     </tbody>
@@ -387,21 +191,25 @@ SDKの基本パスを返します。</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">AddressableAssetGroup</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_Util_PathUtil_IsValidOutputFilePath_" data-uid="PLATEAU.Util.PathUtil.IsValidOutputFilePath*"></a>
-  <h4 id="PLATEAU_Util_PathUtil_IsValidOutputFilePath_System_String_System_String_" data-uid="PLATEAU.Util.PathUtil.IsValidOutputFilePath(System.String,System.String)">IsValidOutputFilePath(String, String)</h4>
-  <div class="markdown level1 summary"><p>出力用のファイルパスとして正しければtrue,不適切であればfalseを返します。</p>
+  <a id="PLATEAU_Editor_Addressables_AddressablesUtility_RegisterAssetAsAddressable_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.RegisterAssetAsAddressable*"></a>
+  <h4 id="PLATEAU_Editor_Addressables_AddressablesUtility_RegisterAssetAsAddressable_System_String_System_String_System_String_List_System_String__" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.RegisterAssetAsAddressable(System.String,System.String,System.String,List{System.String})">RegisterAssetAsAddressable(String, String, String, List&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>指定したアセットを指定グループにAddressableとして登録
+<param name="assetPath">登録するアセットのパス
+<param name="address">設定するアドレス
+<param name="groupName">所属させるグループ名
+<param name="labels">アセットに設定するラベルのリスト</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsValidOutputFilePath(string filePath, string expectedExtension)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void RegisterAssetAsAddressable(string assetPath, string address, string groupName, List&lt;string&gt; labels)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -415,41 +223,36 @@ SDKの基本パスを返します。</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">filePath</span></td>
+        <td><span class="parametername">assetPath</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">expectedExtension</span></td>
+        <td><span class="parametername">address</span></td>
         <td></td>
       </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">groupName</span></td>
+        <td></td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">labels</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_Util_PathUtil_SdkPathToAssetPath_" data-uid="PLATEAU.Util.PathUtil.SdkPathToAssetPath*"></a>
-  <h4 id="PLATEAU_Util_PathUtil_SdkPathToAssetPath_System_String_" data-uid="PLATEAU.Util.PathUtil.SdkPathToAssetPath(System.String)">SdkPathToAssetPath(String)</h4>
-  <div class="markdown level1 summary"><p>SdkBasePath からの相対パスを受け取り、アセットパスに変換して返します。</p>
+  <a id="PLATEAU_Editor_Addressables_AddressablesUtility_RemoveNonDefaultGroups_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.RemoveNonDefaultGroups*"></a>
+  <h4 id="PLATEAU_Editor_Addressables_AddressablesUtility_RemoveNonDefaultGroups_System_String_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.RemoveNonDefaultGroups(System.String)">RemoveNonDefaultGroups(String)</h4>
+  <div class="markdown level1 summary"><p>デフォルトグループ以外のグループを削除します。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string SdkPathToAssetPath(string sdkPath)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void RemoveNonDefaultGroups(string targetLabel = &quot;&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -463,8 +266,77 @@ SDKの基本パスを返します。</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">sdkPath</span></td>
+        <td><span class="parametername">targetLabel</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Editor_Addressables_AddressablesUtility_SetDefaultProfileSettings_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.SetDefaultProfileSettings*"></a>
+  <h4 id="PLATEAU_Editor_Addressables_AddressablesUtility_SetDefaultProfileSettings" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.SetDefaultProfileSettings">SetDefaultProfileSettings()</h4>
+  <div class="markdown level1 summary"><p>デフォルトのプロファイル設定を行います。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDefaultProfileSettings()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_Editor_Addressables_AddressablesUtility_SetGroupLoadAndBuildPath_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.SetGroupLoadAndBuildPath*"></a>
+  <h4 id="PLATEAU_Editor_Addressables_AddressablesUtility_SetGroupLoadAndBuildPath_System_String_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.SetGroupLoadAndBuildPath(System.String)">SetGroupLoadAndBuildPath(String)</h4>
+  <div class="markdown level1 summary"><p>指定したグループのロードパス(LoadPath)とビルドパス(buildPath)を変更します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetGroupLoadAndBuildPath(string groupName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">groupName</span></td>
+        <td><p>グループ名</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Editor_Addressables_AddressablesUtility_SetOrCreateProfile_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.SetOrCreateProfile*"></a>
+  <h4 id="PLATEAU_Editor_Addressables_AddressablesUtility_SetOrCreateProfile_System_String_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.SetOrCreateProfile(System.String)">SetOrCreateProfile(String)</h4>
+  <div class="markdown level1 summary"><p>Addressablesのプロファイルを作成し、アクティブにします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SetOrCreateProfile(string profileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">profileName</span></td>
+        <td><p>作成するプロファイル名</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -479,6 +351,40 @@ SDKの基本パスを返します。</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td><p>作成したプロファイルのID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Editor_Addressables_AddressablesUtility_SetRemoteProfileSettings_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.SetRemoteProfileSettings*"></a>
+  <h4 id="PLATEAU_Editor_Addressables_AddressablesUtility_SetRemoteProfileSettings_System_String_System_String_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.SetRemoteProfileSettings(System.String,System.String)">SetRemoteProfileSettings(String, String)</h4>
+  <div class="markdown level1 summary"><p>プロファイルを設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRemoteProfileSettings(string path, string pathVar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pathVar</span></td>
         <td></td>
       </tr>
     </tbody>

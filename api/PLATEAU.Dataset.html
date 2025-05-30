@@ -91,7 +91,7 @@
       <section><p>都市モデルインポート時のパッケージごとの設定です。</p>
 </section>
       <h4><a class="xref" href="PLATEAU.Dataset.DatasetAccessor.html">DatasetAccessor</a></h4>
-      <section><p>GMLファイル群から利用可能なファイル、メッシュコード、LODを検索します。
+      <section><p>GMLファイル群から利用可能なファイル、グリッドコード、LODを検索します。
 C++の内部ではこれは基底クラスとなっており、継承によりローカル向けとサーバー向けの両方に対応しています。
 このクラスのポインタ (Handle) の具体的な型がローカル向けとサーバー向けのどちらであるかは、
 <a class="xref" href="PLATEAU.Dataset.DatasetSource.html">DatasetSource</a> の初期化時に指定し、
@@ -114,6 +114,9 @@ C++の内部ではこれは基底クラスとなっており、継承により�
 <p>寿命管理について:
 <see cref="!:NativeVectorGmlFile"></see> の Dispose時、中身の <a class="xref" href="PLATEAU.Dataset.GmlFile.html">GmlFile</a> も自動的に廃棄されます。
 その自動廃棄が呼ばれないケースでのみ、手動で <a class="xref" href="PLATEAU.Dataset.GmlFile.html#PLATEAU_Dataset_GmlFile_Dispose">Dispose()</a> を呼んでください。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.Dataset.GridCode.html">GridCode</a></h4>
+      <section><p>メッシュコードと国土基本図の図郭のC++上の親クラスです。</p>
 </section>
       <h4><a class="xref" href="PLATEAU.Dataset.PredefinedCityModelPackageExtension.html">PredefinedCityModelPackageExtension</a></h4>
       <section></section>

@@ -81,13 +81,13 @@
 
 <p>道路ネットワークのエクスポート機能で生成されるファイルの仕様をこのページに記します。<br>下記のgeojsonファイルが生成されます。</p>
 <h2 id="交差点">交差点</h2>
-<p><strong>ファイル名: roadnetwork_node.geojson</strong><br><img src="../resources/manual/roadnetwork/exported_nodes.png" alt=""><br>上図は交差点の位置がエクスポートされたものです。<br>道路ネットワーク内の交差点をノード情報として格納します。</p>
+<p><strong>ファイル名: roadnetwork_node.geojson</strong><br><img src="../resources/manual/roadnetwork/exported_nodes.png" alt="交差点を示す図"><br>上図は交差点の位置がエクスポートされたものです。<br>道路ネットワーク内の交差点をノード情報として格納します。</p>
 <h4 id="属性情報">属性情報</h4>
 <ul>
 <li>ID:交差点の識別子です。値は<code>Node(番号)</code>であり、(番号)は連番で割り振られた数値が入ります。</li>
 </ul>
 <h2 id="道路">道路</h2>
-<p><strong>ファイル名: roadnetwork_link.geojson</strong><br><img src="../resources/manual/roadnetwork/exported_link.png" alt=""><br>上図の紫色の線に相当します。交差点（黄色い点）を接続します。<br>道路を、ノード（交差点）間を接続するリンク情報として格納します。</p>
+<p><strong>ファイル名: roadnetwork_link.geojson</strong><br><img src="../resources/manual/roadnetwork/exported_link.png" alt="道路を示す図"><br>上図の紫色の線に相当します。交差点（黄色い点）を接続します。<br>道路を、ノード（交差点）間を接続するリンク情報として格納します。</p>
 <h4 id="属性情報-1">属性情報</h4>
 <ul>
 <li>ID:道路の識別子です。値は<code>Link(一意の番号)_(上流ノードの番号)_(下流ノードの番号)</code>となります。</li>
@@ -104,7 +104,7 @@
 <li>TYPECONFIG: 街路網交通流シミュレーション AVENUEと互換性を持たせるために存在しますが、PLATEAU SDKでは常に同じ値が入ります。進行可能な車両の種類であり、値は小型車、大型車、バスの通行可能を意味する7が常に入ります。</li>
 </ul>
 <h2 id="レーン">レーン</h2>
-<p><strong>ファイル名: roadnetwork_lane.geojson</strong><br><img src="../resources/manual/roadnetwork/exported_lanes.png" alt=""><br>上図のオレンジ色の線に相当します。<br>各リンクに属する車線情報をレーン情報として格納します。</p>
+<p><strong>ファイル名: roadnetwork_lane.geojson</strong><br><img src="../resources/manual/roadnetwork/exported_lanes.png" alt="レーンを示す図"><br>上図のオレンジ色の線に相当します。<br>各リンクに属する車線情報をレーン情報として格納します。</p>
 <h4 id="属性情報-2">属性情報</h4>
 <ul>
 <li>ID:車線の識別子です。値は<code>Lane(対応するリンクの一意の番号)_(対応するリンクの上流ノードの番号)_(対応するリンクの下流ノードの番号)</code>となります。</li>
@@ -115,7 +115,7 @@
 </ul>
 <h2 id="トラック">トラック</h2>
 <p><strong>ファイル名: roadnetwork_track.geojson</strong>
-<img src="../resources/manual/roadnetwork/exported_tracks.png" alt=""><br>上図の交差点（黄色い点）の周りにある茶色の線に相当します。<br>各交差点の通行可能な経路をトラック情報として格納します。</p>
+<img src="../resources/manual/roadnetwork/exported_tracks.png" alt="トラックを示す図"><br>上図の交差点（黄色い点）の周りにある茶色の線に相当します。<br>各交差点の通行可能な経路をトラック情報として格納します。</p>
 <h4 id="属性情報-3">属性情報</h4>
 <ul>
 <li>ID:トラックの識別子です。値は<code>Track(対応するノードの番号)_(対応する上流リンクの番号)_(対応する下流リンクの番号)_(後述のORDERの番号)</code>となります。</li>
@@ -129,6 +129,57 @@
 <li>LENGTH: 軌跡の長さ（m）です。</li>
 <li>TURNCONFIG: 街路網交通流シミュレーション AVENUEと互換性を持たせるために存在しますが、PLATEAU SDKでは常に同じ値が入ります。進行可能な方向の設定であり、値は直進、左折、右折可能を意味する7が常に入ります。</li>
 <li>TYPECONFIG: 街路網交通流シミュレーション AVENUEと互換性を持たせるために存在しますが、PLATEAU SDKでは常に同じ値が入ります。進行可能な車両の種類であり、値は小型車、大型車、バスの通行可能を意味する7が常に入ります。</li>
+</ul>
+<h2 id="信号制御器">信号制御器</h2>
+<p><strong>ファイル名: roadnetwork_signalcontroler.geojson</strong>  </p>
+<p><a href="https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity">PLATEAU SDK-Toolkits for Unity</a> の交通シミュレーション機能が有効な場合に生成されます。利用方法は<a href="https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity/tree/main/PlateauToolkit.Sandbox#10-%E4%BA%A4%E9%80%9A%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A9%9F%E8%83%BD">こちら</a>を参照してください。</p>
+<p><img src="../resources/manual/roadnetwork/exported_signalcontroler.png" alt="信号制御器を示す図"><br>上図は交通シミュレーション機能により車両用交通信号機が設置された交差点の位置がエクスポートされたものです。 
+所属する信号灯火器を制御する情報を格納します。</p>
+<h4 id="属性情報-4">属性情報</h4>
+<ul>
+<li>ID: 信号制御器の識別子です。値は <code>SignalController(対応するノードの番号)</code> となります。</li>
+<li>ALLOCNODE: 割り当てられたノードの識別子です。</li>
+<li>SIGLIGHT: 制御対象の信号灯火器識別子です。複数ある場合は「:」で連結します。</li>
+<li>OFFSETBASESIGID: オフセット基準となる信号制御器の識別子です。PLATEAU SDKでは常に空です。</li>
+<li>NUMOFPATTERN: 時間帯別の信号制御パターン数です。PLATEAU SDKでは常に <code>1</code> 固定です。</li>
+<li>PATTERNID: 使用する制御パターンの識別子です。複数ある場合は「:」で連結します。</li>
+<li>INITCYCLE: 制御サイクルの長さ（秒）です。</li>
+<li>PHASENUM: 信号現示数です。</li>
+<li>OFFSETTYPE: オフセットタイプです。相対オフセットの場合は <code>1</code>、絶対オフセットの場合は <code>0</code> となります。PLATEAU SDKでは常に <code>0</code> 固定です。</li>
+<li>OFFSET: オフセット値（秒）です。PLATEAU SDKでは常に <code>0</code> 固定です。</li>
+<li>STARTTIME: 制御パターンの開始時刻です。<code>hh:mm:ss</code> 形式で <code>:</code> で連結します。</li>
+</ul>
+<h2 id="信号灯火器">信号灯火器</h2>
+<p><strong>ファイル名: roadnetwork_signallight.geojson</strong>  </p>
+<p><a href="https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity">PLATEAU SDK-Toolkits for Unity</a> の交通シミュレーション機能が有効な場合に生成されます。利用方法は<a href="https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity/tree/main/PlateauToolkit.Sandbox#10-%E4%BA%A4%E9%80%9A%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A9%9F%E8%83%BD">こちら</a>を参照してください。</p>
+<p><img src="../resources/manual/roadnetwork/exported_signallight.png" alt="信号灯火器を示す図"><br>上図は交通シミュレーション機能により設置された車両用交通信号機の位置がエクスポートされたものです。 
+車両用交通信号機についての情報を格納します。</p>
+<h4 id="属性情報-5">属性情報</h4>
+<ul>
+<li>ID: 信号灯火器の識別子です。値は <code>SignalLight(属する信号制御器の番号)_(灯火グループ)_(灯火グループ内の順番)</code> となります。</li>
+<li>SIGNALID: 属する信号制御器の識別子です。</li>
+<li>LINKID: 設置対象のレーンの識別子です。</li>
+<li>LANETYPE: 規制対象レーン種別です。PLATEAU SDKでは常に <code>lane</code> 固定です。</li>
+<li>LANEPOS: 規制対象レーン番号です。PLATEAU SDKでは常に全レーンを示す <code>-1</code> 固定です。</li>
+<li>DISTANCE: 信号灯火器の設置位置で停止線からの距離（m）です。</li>
+</ul>
+<h2 id="信号現示階梯">信号現示階梯</h2>
+<p><strong>ファイル名: roadnetwork_signalstep.geojson</strong>  </p>
+<p><a href="https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity">PLATEAU SDK-Toolkits for Unity</a> の交通シミュレーション機能が有効な場合に生成されます。利用方法は<a href="https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity/tree/main/PlateauToolkit.Sandbox#10-%E4%BA%A4%E9%80%9A%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A9%9F%E8%83%BD">こちら</a>を参照してください。</p>
+<p><img src="../resources/manual/roadnetwork/exported_signalstep.png" alt="信号現示階梯を示す図"><br>上図は信号現示階梯がエクスポートされたものです。位置は対象となる信号制御器と同じになります。
+信号制御器が制御する信号の切り替え順序やパターン（現示階梯）に関する情報が格納されます。</p>
+<h4 id="属性情報-6">属性情報</h4>
+<ul>
+<li>ID: 信号現示階梯の識別子です。値は <code>SignalStep(対象の信号制御器の番号)_(階梯順番)</code> となります。</li>
+<li>SIGNALID: 信号制御器の識別子です。</li>
+<li>PATTERNID: 制御パターン番号です。</li>
+<li>ORDER: 階梯順番です。</li>
+<li>DURATION: 階梯の持続時間（秒）です。</li>
+<li>SIGLIGHT: 制御信号灯火器の識別子です。</li>
+<li>TYPEMASK: 進入許可車種規制マスクです。PLATEAU SDKでは常に同じ値が入り、小型車・大型車・バスの通行を許可する <code>7</code> が設定されます。</li>
+<li>GREEN: 青現示方向リンクペアです。ペアは <code>-&gt;</code> で表し、複数ある場合は <code>:</code> で連結します。</li>
+<li>YELLOW: 黄現示方向リンクペアです。ペアは <code>-&gt;</code> で表し、複数ある場合は <code>:</code> で連結します。</li>
+<li>RED: 赤現示方向リンクペアです。ペアは <code>-&gt;</code> で表し、複数ある場合は <code>:</code> で連結します。</li>
 </ul>
 </article>
           </div>

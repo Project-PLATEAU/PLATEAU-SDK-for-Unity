@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class MeshCodeList
+    <title>Class GridCode
    | PLATEAU SDK for Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class MeshCodeList
+    <meta name="title" content="Class GridCode
    | PLATEAU SDK for Unity ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,61 +78,36 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PLATEAU.CityImport.Config.MeshCodeList">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.Dataset.GridCode">
   
   
-  <h1 id="PLATEAU_CityImport_Config_MeshCodeList" data-uid="PLATEAU.CityImport.Config.MeshCodeList" class="text-break">Class MeshCodeList
+  <h1 id="PLATEAU_Dataset_GridCode" data-uid="PLATEAU.Dataset.GridCode" class="text-break">Class GridCode
   </h1>
-  <div class="markdown level0 summary"><p>メッシュコードのリストによって範囲を表現したクラスです。</p>
+  <div class="markdown level0 summary"><p>メッシュコードと国土基本図の図郭のC++上の親クラスです。</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">MeshCodeList</span></div>
+    <div class="level1"><span class="xref">GridCode</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityImport.Config.html">PLATEAU.CityImport.Config</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.Dataset.html">PLATEAU.Dataset</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="PLATEAU_CityImport_Config_MeshCodeList_syntax">Syntax</h5>
+  <h5 id="PLATEAU_Dataset_GridCode_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MeshCodeList</code></pre>
+    <pre><code class="lang-csharp hljs">public class GridCode : PInvokeDisposable</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   
   
-  <a id="PLATEAU_CityImport_Config_MeshCodeList_Count_" data-uid="PLATEAU.CityImport.Config.MeshCodeList.Count*"></a>
-  <h4 id="PLATEAU_CityImport_Config_MeshCodeList_Count" data-uid="PLATEAU.CityImport.Config.MeshCodeList.Count">Count</h4>
-  <div class="markdown level1 summary"><p>メッシュコードの数を返します。</p>
-</div>
+  <a id="PLATEAU_Dataset_GridCode_Extent_" data-uid="PLATEAU.Dataset.GridCode.Extent*"></a>
+  <h4 id="PLATEAU_Dataset_GridCode_Extent" data-uid="PLATEAU.Dataset.GridCode.Extent">Extent</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Extent Extent { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -144,20 +119,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">Extent</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_CityImport_Config_MeshCodeList_Data_" data-uid="PLATEAU.CityImport.Config.MeshCodeList.Data*"></a>
-  <h4 id="PLATEAU_CityImport_Config_MeshCodeList_Data" data-uid="PLATEAU.CityImport.Config.MeshCodeList.Data">Data</h4>
+  <a id="PLATEAU_Dataset_GridCode_IsLargestLevel_" data-uid="PLATEAU.Dataset.GridCode.IsLargestLevel*"></a>
+  <h4 id="PLATEAU_Dataset_GridCode_IsLargestLevel" data-uid="PLATEAU.Dataset.GridCode.IsLargestLevel">IsLargestLevel</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;MeshCode&gt; Data { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsLargestLevel { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -169,7 +144,107 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">MeshCode</span>&gt;</td>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Dataset_GridCode_IsNormalGmlLevel_" data-uid="PLATEAU.Dataset.GridCode.IsNormalGmlLevel*"></a>
+  <h4 id="PLATEAU_Dataset_GridCode_IsNormalGmlLevel" data-uid="PLATEAU.Dataset.GridCode.IsNormalGmlLevel">IsNormalGmlLevel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNormalGmlLevel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Dataset_GridCode_IsSmallerThanNormalGml_" data-uid="PLATEAU.Dataset.GridCode.IsSmallerThanNormalGml*"></a>
+  <h4 id="PLATEAU_Dataset_GridCode_IsSmallerThanNormalGml" data-uid="PLATEAU.Dataset.GridCode.IsSmallerThanNormalGml">IsSmallerThanNormalGml</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSmallerThanNormalGml { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Dataset_GridCode_IsValid_" data-uid="PLATEAU.Dataset.GridCode.IsValid*"></a>
+  <h4 id="PLATEAU_Dataset_GridCode_IsValid" data-uid="PLATEAU.Dataset.GridCode.IsValid">IsValid</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Dataset_GridCode_StringCode_" data-uid="PLATEAU.Dataset.GridCode.StringCode*"></a>
+  <h4 id="PLATEAU_Dataset_GridCode_StringCode" data-uid="PLATEAU.Dataset.GridCode.StringCode">StringCode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StringCode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -178,14 +253,13 @@
   </h3>
   
   
-  <a id="PLATEAU_CityImport_Config_MeshCodeList_At_" data-uid="PLATEAU.CityImport.Config.MeshCodeList.At*"></a>
-  <h4 id="PLATEAU_CityImport_Config_MeshCodeList_At_System_Int32_" data-uid="PLATEAU.CityImport.Config.MeshCodeList.At(System.Int32)">At(Int32)</h4>
-  <div class="markdown level1 summary"><p>インデックス指定でメッシュコードを取得します。</p>
-</div>
+  <a id="PLATEAU_Dataset_GridCode_CopyFrom_" data-uid="PLATEAU.Dataset.GridCode.CopyFrom*"></a>
+  <h4 id="PLATEAU_Dataset_GridCode_CopyFrom_IntPtr_" data-uid="PLATEAU.Dataset.GridCode.CopyFrom(IntPtr)">CopyFrom(IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MeshCode At(int index)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GridCode CopyFrom(IntPtr otherGridCodePtr)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -198,8 +272,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">index</span></td>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">otherGridCodePtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -214,21 +288,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MeshCode</span></td>
+        <td><a class="xref" href="PLATEAU.Dataset.GridCode.html">GridCode</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_CityImport_Config_MeshCodeList_CalcAvailablePackageLodInMeshCodes_" data-uid="PLATEAU.CityImport.Config.MeshCodeList.CalcAvailablePackageLodInMeshCodes*"></a>
-  <h4 id="PLATEAU_CityImport_Config_MeshCodeList_CalcAvailablePackageLodInMeshCodes_IDatasetSourceConfig_" data-uid="PLATEAU.CityImport.Config.MeshCodeList.CalcAvailablePackageLodInMeshCodes(IDatasetSourceConfig)">CalcAvailablePackageLodInMeshCodes(IDatasetSourceConfig)</h4>
-  <div class="markdown level1 summary"><p>データセットのうち範囲を取り出したとき、利用可能なパッケージとそのLODを求めます。</p>
+  <a id="PLATEAU_Dataset_GridCode_Create_" data-uid="PLATEAU.Dataset.GridCode.Create*"></a>
+  <h4 id="PLATEAU_Dataset_GridCode_Create_System_String_System_Boolean_" data-uid="PLATEAU.Dataset.GridCode.Create(System.String,System.Boolean)">Create(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>コード文字列からグリッドコードを生成します。
+コードが不正である場合は例外がスローされます。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PackageToLodDict CalcAvailablePackageLodInMeshCodes(IDatasetSourceConfig datasetSourceConfig)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GridCode Create(string code, bool autoDispose = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -241,8 +316,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IDatasetSourceConfig</span></td>
-        <td><span class="parametername">datasetSourceConfig</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">autoDispose</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -257,39 +337,31 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">PackageToLodDict</span></td>
+        <td><a class="xref" href="PLATEAU.Dataset.GridCode.html">GridCode</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_CityImport_Config_MeshCodeList_CreateFromMeshCodesStr_" data-uid="PLATEAU.CityImport.Config.MeshCodeList.CreateFromMeshCodesStr*"></a>
-  <h4 id="PLATEAU_CityImport_Config_MeshCodeList_CreateFromMeshCodesStr_IEnumerable_System_String__" data-uid="PLATEAU.CityImport.Config.MeshCodeList.CreateFromMeshCodesStr(IEnumerable{System.String})">CreateFromMeshCodesStr(IEnumerable&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"><p>メッシュコード番号の文字列としての配列から範囲を生成します。</p>
-</div>
+  <a id="PLATEAU_Dataset_GridCode_DisposeNative_" data-uid="PLATEAU.Dataset.GridCode.DisposeNative*"></a>
+  <h4 id="PLATEAU_Dataset_GridCode_DisposeNative" data-uid="PLATEAU.Dataset.GridCode.DisposeNative">DisposeNative()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static MeshCodeList CreateFromMeshCodesStr(IEnumerable&lt;string&gt; meshCodesStr)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void DisposeNative()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">meshCodesStr</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  
+  <a id="PLATEAU_Dataset_GridCode_ToString_" data-uid="PLATEAU.Dataset.GridCode.ToString*"></a>
+  <h4 id="PLATEAU_Dataset_GridCode_ToString" data-uid="PLATEAU.Dataset.GridCode.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -300,40 +372,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="PLATEAU.CityImport.Config.MeshCodeList.html">MeshCodeList</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_CityImport_Config_MeshCodeList_ExtentCenter_" data-uid="PLATEAU.CityImport.Config.MeshCodeList.ExtentCenter*"></a>
-  <h4 id="PLATEAU_CityImport_Config_MeshCodeList_ExtentCenter_System_Int32_" data-uid="PLATEAU.CityImport.Config.MeshCodeList.ExtentCenter(System.Int32)">ExtentCenter(Int32)</h4>
-  <div class="markdown level1 summary"><p>範囲の中心を返します。
-これは基準点設定GUIに表示される初期値であり、ユーザーが「範囲の中心を入力」ボタンを押したときに設定される値でもあります。</p>
+  <a id="PLATEAU_Dataset_GridCode_Upper_" data-uid="PLATEAU.Dataset.GridCode.Upper*"></a>
+  <h4 id="PLATEAU_Dataset_GridCode_Upper" data-uid="PLATEAU.Dataset.GridCode.Upper">Upper()</h4>
+  <div class="markdown level1 summary"><p>1段階上のレベルのグリッドコードに変換します。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PlateauVector3d ExtentCenter(int coordinateZoneID)</code></pre>
+    <pre><code class="lang-csharp hljs">public GridCode Upper()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">coordinateZoneID</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -344,8 +398,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">PlateauVector3d</span></td>
-        <td></td>
+        <td><a class="xref" href="PLATEAU.Dataset.GridCode.html">GridCode</a></td>
+        <td><p>1段階上のレベルのグリッドコードオブジェクト</p>
+</td>
       </tr>
     </tbody>
   </table>

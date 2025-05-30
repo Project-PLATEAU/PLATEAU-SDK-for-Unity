@@ -126,12 +126,13 @@
   
   
   <a id="PLATEAU_CityImport_AreaSelector_AreaSelectResult__ctor_" data-uid="PLATEAU.CityImport.AreaSelector.AreaSelectResult.#ctor*"></a>
-  <h4 id="PLATEAU_CityImport_AreaSelector_AreaSelectResult__ctor_ConfigBeforeAreaSelect_MeshCodeList_" data-uid="PLATEAU.CityImport.AreaSelector.AreaSelectResult.#ctor(ConfigBeforeAreaSelect,MeshCodeList)">AreaSelectResult(ConfigBeforeAreaSelect, MeshCodeList)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="PLATEAU_CityImport_AreaSelector_AreaSelectResult__ctor_ConfigBeforeAreaSelect_GridCodeList_PLATEAU_CityImport_AreaSelector_AreaSelectResult_ResultReason_" data-uid="PLATEAU.CityImport.AreaSelector.AreaSelectResult.#ctor(ConfigBeforeAreaSelect,GridCodeList,PLATEAU.CityImport.AreaSelector.AreaSelectResult.ResultReason)">AreaSelectResult(ConfigBeforeAreaSelect, GridCodeList, AreaSelectResult.ResultReason)</h4>
+  <div class="markdown level1 summary"><p>範囲選択結果を作成します。</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AreaSelectResult(ConfigBeforeAreaSelect confBeforeAreaSelect, MeshCodeList areaMeshCodes)</code></pre>
+    <pre><code class="lang-csharp hljs">public AreaSelectResult(ConfigBeforeAreaSelect confBeforeAreaSelect, GridCodeList areaGridCodes, AreaSelectResult.ResultReason reason)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -146,12 +147,20 @@
       <tr>
         <td><span class="xref">ConfigBeforeAreaSelect</span></td>
         <td><span class="parametername">confBeforeAreaSelect</span></td>
-        <td></td>
+        <td><p>範囲選択前の設定</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">MeshCodeList</span></td>
-        <td><span class="parametername">areaMeshCodes</span></td>
-        <td></td>
+        <td><span class="xref">GridCodeList</span></td>
+        <td><span class="parametername">areaGridCodes</span></td>
+        <td><p>選択されたグリッドコードのリスト</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.CityImport.AreaSelector.AreaSelectResult.ResultReason.html">AreaSelectResult.ResultReason</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>範囲選択画面が終了した理由</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -159,13 +168,13 @@
   </h3>
   
   
-  <a id="PLATEAU_CityImport_AreaSelector_AreaSelectResult_AreaMeshCodes_" data-uid="PLATEAU.CityImport.AreaSelector.AreaSelectResult.AreaMeshCodes*"></a>
-  <h4 id="PLATEAU_CityImport_AreaSelector_AreaSelectResult_AreaMeshCodes" data-uid="PLATEAU.CityImport.AreaSelector.AreaSelectResult.AreaMeshCodes">AreaMeshCodes</h4>
+  <a id="PLATEAU_CityImport_AreaSelector_AreaSelectResult_AreaGridCodes_" data-uid="PLATEAU.CityImport.AreaSelector.AreaSelectResult.AreaGridCodes*"></a>
+  <h4 id="PLATEAU_CityImport_AreaSelector_AreaSelectResult_AreaGridCodes" data-uid="PLATEAU.CityImport.AreaSelector.AreaSelectResult.AreaGridCodes">AreaGridCodes</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MeshCodeList AreaMeshCodes { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public GridCodeList AreaGridCodes { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -177,7 +186,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MeshCodeList</span></td>
+        <td><span class="xref">GridCodeList</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -228,6 +237,32 @@
     <tbody>
       <tr>
         <td><span class="xref">PackageToLodDict</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityImport_AreaSelector_AreaSelectResult_Reason_" data-uid="PLATEAU.CityImport.AreaSelector.AreaSelectResult.Reason*"></a>
+  <h4 id="PLATEAU_CityImport_AreaSelector_AreaSelectResult_Reason" data-uid="PLATEAU.CityImport.AreaSelector.AreaSelectResult.Reason">Reason</h4>
+  <div class="markdown level1 summary"><p>範囲選択画面が終了した理由</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AreaSelectResult.ResultReason Reason { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.CityImport.AreaSelector.AreaSelectResult.ResultReason.html">AreaSelectResult.ResultReason</a></td>
         <td></td>
       </tr>
     </tbody>

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class DatasetAccessor
+    <title>Class GridCodeList
    | PLATEAU SDK for Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class DatasetAccessor
+    <meta name="title" content="Class GridCodeList
    | PLATEAU SDK for Unity ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,68 +78,58 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PLATEAU.Dataset.DatasetAccessor">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.CityImport.Config.GridCodeList">
   
   
-  <h1 id="PLATEAU_Dataset_DatasetAccessor" data-uid="PLATEAU.Dataset.DatasetAccessor" class="text-break">Class DatasetAccessor
+  <h1 id="PLATEAU_CityImport_Config_GridCodeList" data-uid="PLATEAU.CityImport.Config.GridCodeList" class="text-break">Class GridCodeList
   </h1>
-  <div class="markdown level0 summary"><p>GMLファイル群から利用可能なファイル、グリッドコード、LODを検索します。
-C++の内部ではこれは基底クラスとなっており、継承によりローカル向けとサーバー向けの両方に対応しています。
-このクラスのポインタ (Handle) の具体的な型がローカル向けとサーバー向けのどちらであるかは、
-<a class="xref" href="PLATEAU.Dataset.DatasetSource.html">DatasetSource</a> の初期化時に指定し、
-<a class="xref" href="PLATEAU.Dataset.DatasetSource.html#PLATEAU_Dataset_DatasetSource_Accessor">Accessor</a> でその型である DatasetAccessor を取得します。 </p>
+  <div class="markdown level0 summary"><p>グリッドコードのリストによって範囲を表現したクラスです。</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">DatasetAccessor</span></div>
+    <div class="level1"><span class="xref">GridCodeList</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.Dataset.html">PLATEAU.Dataset</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityImport.Config.html">PLATEAU.CityImport.Config</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="PLATEAU_Dataset_DatasetAccessor_syntax">Syntax</h5>
+  <h5 id="PLATEAU_CityImport_Config_GridCodeList_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DatasetAccessor : PInvokeDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class GridCodeList : IDisposable</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h3 id="properties">Properties
   </h3>
   
   
-  <a id="PLATEAU_Dataset_DatasetAccessor__ctor_" data-uid="PLATEAU.Dataset.DatasetAccessor.#ctor*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetAccessor__ctor_IntPtr_" data-uid="PLATEAU.Dataset.DatasetAccessor.#ctor(IntPtr)">DatasetAccessor(IntPtr)</h4>
-  <div class="markdown level1 summary"><p>handle は C++側の基底クラス (IDatasetAccessor) のポインタです。 </p>
+  <a id="PLATEAU_CityImport_Config_GridCodeList_Count_" data-uid="PLATEAU.CityImport.Config.GridCodeList.Count*"></a>
+  <h4 id="PLATEAU_CityImport_Config_GridCodeList_Count" data-uid="PLATEAU.CityImport.Config.GridCodeList.Count">Count</h4>
+  <div class="markdown level1 summary"><p>メッシュコードの数を返します。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DatasetAccessor(IntPtr handle)</code></pre>
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
-        <td><span class="parametername">handle</span></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
-  </h3>
   
   
-  <a id="PLATEAU_Dataset_DatasetAccessor_GridCodes_" data-uid="PLATEAU.Dataset.DatasetAccessor.GridCodes*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetAccessor_GridCodes" data-uid="PLATEAU.Dataset.DatasetAccessor.GridCodes">GridCodes</h4>
-  <div class="markdown level1 summary"><p>C++側のvectorとしてのGridCodeを返します。
-注意：受け取る側でusingを付けるなど、廃棄されるようにしてください。</p>
-</div>
+  <a id="PLATEAU_CityImport_Config_GridCodeList_GridCodes_" data-uid="PLATEAU.CityImport.Config.GridCodeList.GridCodes*"></a>
+  <h4 id="PLATEAU_CityImport_Config_GridCodeList_GridCodes" data-uid="PLATEAU.CityImport.Config.GridCodeList.GridCodes">GridCodes</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -160,48 +150,18 @@ C++の内部ではこれは基底クラスとなっており、継承により�
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="PLATEAU_Dataset_DatasetAccessor_Packages_" data-uid="PLATEAU.Dataset.DatasetAccessor.Packages*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetAccessor_Packages" data-uid="PLATEAU.Dataset.DatasetAccessor.Packages">Packages</h4>
-  <div class="markdown level1 summary"><p>ローカルの場合:
-存在するパッケージ種をフラグ形式で返します。</p>
-<p>サーバーの場合:
-<see cref="!:GetGmlFilesForPackage"></see> したことのある <see cref="!:Extent"></see> に関して、
-存在するパッケージ種をフラグ形式で返します。
-<see cref="!:GetGmlFilesForPackage"></see> を実行した後でないと None が返ります。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PredefinedCityModelPackage Packages { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PLATEAU.Dataset.PredefinedCityModelPackage.html">PredefinedCityModelPackage</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="PLATEAU_Dataset_DatasetAccessor_CalculateCenterPoint_" data-uid="PLATEAU.Dataset.DatasetAccessor.CalculateCenterPoint*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetAccessor_CalculateCenterPoint_GeoReference_" data-uid="PLATEAU.Dataset.DatasetAccessor.CalculateCenterPoint(GeoReference)">CalculateCenterPoint(GeoReference)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="PLATEAU_CityImport_Config_GridCodeList_At_" data-uid="PLATEAU.CityImport.Config.GridCodeList.At*"></a>
+  <h4 id="PLATEAU_CityImport_Config_GridCodeList_At_System_Int32_" data-uid="PLATEAU.CityImport.Config.GridCodeList.At(System.Int32)">At(Int32)</h4>
+  <div class="markdown level1 summary"><p>インデックス指定でグリッドコードを取得します。</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PlateauVector3d CalculateCenterPoint(GeoReference geoReference)</code></pre>
+    <pre><code class="lang-csharp hljs">public GridCode At(int index)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -214,8 +174,175 @@ C++の内部ではこれは基底クラスとなっており、継承により�
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">GeoReference</span></td>
-        <td><span class="parametername">geoReference</span></td>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GridCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityImport_Config_GridCodeList_CalcAvailablePackageLodInGridCodes_" data-uid="PLATEAU.CityImport.Config.GridCodeList.CalcAvailablePackageLodInGridCodes*"></a>
+  <h4 id="PLATEAU_CityImport_Config_GridCodeList_CalcAvailablePackageLodInGridCodes_IDatasetSourceConfig_" data-uid="PLATEAU.CityImport.Config.GridCodeList.CalcAvailablePackageLodInGridCodes(IDatasetSourceConfig)">CalcAvailablePackageLodInGridCodes(IDatasetSourceConfig)</h4>
+  <div class="markdown level1 summary"><p>データセットのうち範囲を取り出したとき、利用可能なパッケージとそのLODを求めます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PackageToLodDict CalcAvailablePackageLodInGridCodes(IDatasetSourceConfig datasetSourceConfig)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDatasetSourceConfig</span></td>
+        <td><span class="parametername">datasetSourceConfig</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PackageToLodDict</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityImport_Config_GridCodeList_CreateFromGridCodesStr_" data-uid="PLATEAU.CityImport.Config.GridCodeList.CreateFromGridCodesStr*"></a>
+  <h4 id="PLATEAU_CityImport_Config_GridCodeList_CreateFromGridCodesStr_IEnumerable_System_String__" data-uid="PLATEAU.CityImport.Config.GridCodeList.CreateFromGridCodesStr(IEnumerable{System.String})">CreateFromGridCodesStr(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>グリッド番号の文字列としての配列から範囲を生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GridCodeList CreateFromGridCodesStr(IEnumerable&lt;string&gt; gridCodesStr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">gridCodesStr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.CityImport.Config.GridCodeList.html">GridCodeList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityImport_Config_GridCodeList_Dispose_" data-uid="PLATEAU.CityImport.Config.GridCodeList.Dispose*"></a>
+  <h4 id="PLATEAU_CityImport_Config_GridCodeList_Dispose" data-uid="PLATEAU.CityImport.Config.GridCodeList.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_CityImport_Config_GridCodeList_Dispose_" data-uid="PLATEAU.CityImport.Config.GridCodeList.Dispose*"></a>
+  <h4 id="PLATEAU_CityImport_Config_GridCodeList_Dispose_System_Boolean_" data-uid="PLATEAU.CityImport.Config.GridCodeList.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityImport_Config_GridCodeList_ExtentCenter_" data-uid="PLATEAU.CityImport.Config.GridCodeList.ExtentCenter*"></a>
+  <h4 id="PLATEAU_CityImport_Config_GridCodeList_ExtentCenter_System_Int32_" data-uid="PLATEAU.CityImport.Config.GridCodeList.ExtentCenter(System.Int32)">ExtentCenter(Int32)</h4>
+  <div class="markdown level1 summary"><p>範囲の中心を返します。
+これは基準点設定GUIに表示される初期値であり、ユーザーが「範囲の中心を入力」ボタンを押したときに設定される値でもあります。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlateauVector3d ExtentCenter(int coordinateZoneID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">coordinateZoneID</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -237,169 +364,14 @@ C++の内部ではこれは基底クラスとなっており、継承により�
   </table>
   
   
-  <a id="PLATEAU_Dataset_DatasetAccessor_DisposeNative_" data-uid="PLATEAU.Dataset.DatasetAccessor.DisposeNative*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetAccessor_DisposeNative" data-uid="PLATEAU.Dataset.DatasetAccessor.DisposeNative">DisposeNative()</h4>
+  <a id="PLATEAU_CityImport_Config_GridCodeList_Finalize_" data-uid="PLATEAU.CityImport.Config.GridCodeList.Finalize*"></a>
+  <h4 id="PLATEAU_CityImport_Config_GridCodeList_Finalize" data-uid="PLATEAU.CityImport.Config.GridCodeList.Finalize">Finalize()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void DisposeNative()</code></pre>
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
   </div>
-  
-  
-  <a id="PLATEAU_Dataset_DatasetAccessor_FeatureTypeToPackage_" data-uid="PLATEAU.Dataset.DatasetAccessor.FeatureTypeToPackage*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetAccessor_FeatureTypeToPackage_System_String_" data-uid="PLATEAU.Dataset.DatasetAccessor.FeatureTypeToPackage(System.String)">FeatureTypeToPackage(String)</h4>
-  <div class="markdown level1 summary"><p>gmlのパスが &quot;udx/(featureType)/aaa.gml&quot; として、
-(featureType) の部分を <a class="xref" href="PLATEAU.Dataset.PredefinedCityModelPackage.html">PredefinedCityModelPackage</a> に変換します。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static PredefinedCityModelPackage FeatureTypeToPackage(string featureType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">featureType</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PLATEAU.Dataset.PredefinedCityModelPackage.html">PredefinedCityModelPackage</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_Dataset_DatasetAccessor_FilterByGridCodes_" data-uid="PLATEAU.Dataset.DatasetAccessor.FilterByGridCodes*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetAccessor_FilterByGridCodes_IEnumerable_PLATEAU_Dataset_GridCode__" data-uid="PLATEAU.Dataset.DatasetAccessor.FilterByGridCodes(IEnumerable{PLATEAU.Dataset.GridCode})">FilterByGridCodes(IEnumerable&lt;GridCode&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DatasetAccessor FilterByGridCodes(IEnumerable&lt;GridCode&gt; gridCodes)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.Dataset.GridCode.html">GridCode</a>&gt;</td>
-        <td><span class="parametername">gridCodes</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PLATEAU.Dataset.DatasetAccessor.html">DatasetAccessor</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_Dataset_DatasetAccessor_GetAllGmlFiles_" data-uid="PLATEAU.Dataset.DatasetAccessor.GetAllGmlFiles*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetAccessor_GetAllGmlFiles" data-uid="PLATEAU.Dataset.DatasetAccessor.GetAllGmlFiles">GetAllGmlFiles()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NativeVectorGmlFile GetAllGmlFiles()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">NativeVectorGmlFile</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_Dataset_DatasetAccessor_GetGmlFiles_" data-uid="PLATEAU.Dataset.DatasetAccessor.GetGmlFiles*"></a>
-  <h4 id="PLATEAU_Dataset_DatasetAccessor_GetGmlFiles_PLATEAU_Dataset_PredefinedCityModelPackage_" data-uid="PLATEAU.Dataset.DatasetAccessor.GetGmlFiles(PLATEAU.Dataset.PredefinedCityModelPackage)">GetGmlFiles(PredefinedCityModelPackage)</h4>
-  <div class="markdown level1 summary"><p>引数のパッケージに対応する <a class="xref" href="PLATEAU.Dataset.GmlFile.html">GmlFile</a> を取得して vector で返します。
-引数のパッケージは、複数のビットを立てることで複数指定可能です。 </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NativeVectorGmlFile GetGmlFiles(PredefinedCityModelPackage package)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PLATEAU.Dataset.PredefinedCityModelPackage.html">PredefinedCityModelPackage</a></td>
-        <td><span class="parametername">package</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">NativeVectorGmlFile</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           

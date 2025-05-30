@@ -229,6 +229,63 @@
   </h3>
   
   
+  <a id="PLATEAU_Geometries_GeoReference_Convert_" data-uid="PLATEAU.Geometries.GeoReference.Convert*"></a>
+  <h4 id="PLATEAU_Geometries_GeoReference_Convert_PlateauVector3d_System_Boolean_System_Int32_" data-uid="PLATEAU.Geometries.GeoReference.Convert(PlateauVector3d,System.Boolean,System.Int32)">Convert(PlateauVector3d, Boolean, Int32)</h4>
+  <div class="markdown level1 summary"><p>指定されたEPSGコードを使用して座標変換を行います。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlateauVector3d Convert(PlateauVector3d point, bool convertAxis, int epsg = 6697)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>変換する座標点</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">convertAxis</span></td>
+        <td><p>軸変換を行うかどうか</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">epsg</span></td>
+        <td><p>使用するEPSGコード。デフォルトは6697（日本測地系2011）</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td><p>変換された座標点</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_Geometries_GeoReference_ConvertAxisFromENUTo_" data-uid="PLATEAU.Geometries.GeoReference.ConvertAxisFromENUTo*"></a>
   <h4 id="PLATEAU_Geometries_GeoReference_ConvertAxisFromENUTo_PLATEAU_Geometries_CoordinateSystem_PlateauVector3d_" data-uid="PLATEAU.Geometries.GeoReference.ConvertAxisFromENUTo(PLATEAU.Geometries.CoordinateSystem,PlateauVector3d)">ConvertAxisFromENUTo(CoordinateSystem, PlateauVector3d)</h4>
   <div class="markdown level1 summary"></div>
@@ -429,6 +486,90 @@
       <tr>
         <td><span class="xref">GeoCoordinate</span></td>
         <td><span class="parametername">geoCoordinate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Geometries_GeoReference_Project_" data-uid="PLATEAU.Geometries.GeoReference.Project*"></a>
+  <h4 id="PLATEAU_Geometries_GeoReference_Project_PlateauVector3d_" data-uid="PLATEAU.Geometries.GeoReference.Project(PlateauVector3d)">Project(PlateauVector3d)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlateauVector3d Project(PlateauVector3d point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Geometries_GeoReference_ProjectWithoutAxisConvert_" data-uid="PLATEAU.Geometries.GeoReference.ProjectWithoutAxisConvert*"></a>
+  <h4 id="PLATEAU_Geometries_GeoReference_ProjectWithoutAxisConvert_PlateauVector3d_" data-uid="PLATEAU.Geometries.GeoReference.ProjectWithoutAxisConvert(PlateauVector3d)">ProjectWithoutAxisConvert(PlateauVector3d)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlateauVector3d ProjectWithoutAxisConvert(PlateauVector3d point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlateauVector3d</span></td>
+        <td><span class="parametername">point</span></td>
         <td></td>
       </tr>
     </tbody>

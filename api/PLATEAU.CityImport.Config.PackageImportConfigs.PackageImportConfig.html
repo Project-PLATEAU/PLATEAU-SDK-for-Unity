@@ -89,7 +89,7 @@
 設定のうち、一括設定可能な部分は<a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.html">PackageImportConfigExtendable</a>が担います。</p>
 <p>実装上の注意：
 ・特定のパッケージ種で追加の設定項目がある場合はサブクラスで実装します。
-・この設定項目を追加・削除する場合、<a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.html#PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_ConvertToNativeOption_PlateauVector3d_System_Int32_">ConvertToNativeOption(PlateauVector3d, Int32)</a>も合わせて実装しないと反映されないことに注意してください。 </p>
+・この設定項目を追加・削除する場合、<a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.html#PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_ConvertToNativeOption_PlateauVector3d_System_Int32_GmlFile_">ConvertToNativeOption(PlateauVector3d, Int32, GmlFile)</a>も合わせて実装しないと反映されないことに注意してください。 </p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -489,13 +489,13 @@
   
   
   <a id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_ConvertToNativeOption_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.ConvertToNativeOption*"></a>
-  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_ConvertToNativeOption_PlateauVector3d_System_Int32_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.ConvertToNativeOption(PlateauVector3d,System.Int32)">ConvertToNativeOption(PlateauVector3d, Int32)</h4>
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_ConvertToNativeOption_PlateauVector3d_System_Int32_GmlFile_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.ConvertToNativeOption(PlateauVector3d,System.Int32,GmlFile)">ConvertToNativeOption(PlateauVector3d, Int32, GmlFile)</h4>
   <div class="markdown level1 summary"><p>インポート設定について、C++のstructに変換します。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual MeshExtractOptions ConvertToNativeOption(PlateauVector3d referencePoint, int coordinateZoneID)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual MeshExtractOptions ConvertToNativeOption(PlateauVector3d referencePoint, int coordinateZoneID, GmlFile gml = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -515,6 +515,11 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">coordinateZoneID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">GmlFile</span></td>
+        <td><span class="parametername">gml</span></td>
         <td></td>
       </tr>
     </tbody>

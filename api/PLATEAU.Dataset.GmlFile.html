@@ -157,6 +157,33 @@
   </h3>
   
   
+  <a id="PLATEAU_Dataset_GmlFile_Epsg_" data-uid="PLATEAU.Dataset.GmlFile.Epsg*"></a>
+  <h4 id="PLATEAU_Dataset_GmlFile_Epsg" data-uid="PLATEAU.Dataset.GmlFile.Epsg">Epsg</h4>
+  <div class="markdown level1 summary"><p>GMLファイルのEPSGコードを返します。
+取得失敗時のデフォルト値はEPSG:6697です。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Epsg { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_Dataset_GmlFile_FeatureType_" data-uid="PLATEAU.Dataset.GmlFile.FeatureType*"></a>
   <h4 id="PLATEAU_Dataset_GmlFile_FeatureType" data-uid="PLATEAU.Dataset.GmlFile.FeatureType">FeatureType</h4>
   <div class="markdown level1 summary"></div>
@@ -182,6 +209,35 @@
   </table>
   
   
+  <a id="PLATEAU_Dataset_GmlFile_GridCode_" data-uid="PLATEAU.Dataset.GmlFile.GridCode*"></a>
+  <h4 id="PLATEAU_Dataset_GmlFile_GridCode" data-uid="PLATEAU.Dataset.GmlFile.GridCode">GridCode</h4>
+  <div class="markdown level1 summary"><p>GMLファイルのGridCodeを返します。
+ただし、誤った形式のGMLファイル名である等の理由でGridCodeを読み取れなかった場合は
+戻り値の isValid が false になります。
+戻り値が解放されるようにするためにusingを付けてください。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GridCode GridCode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.Dataset.GridCode.html">GridCode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_Dataset_GmlFile_Handle_" data-uid="PLATEAU.Dataset.GmlFile.Handle*"></a>
   <h4 id="PLATEAU_Dataset_GmlFile_Handle" data-uid="PLATEAU.Dataset.GmlFile.Handle">Handle</h4>
   <div class="markdown level1 summary"></div>
@@ -201,34 +257,6 @@
     <tbody>
       <tr>
         <td><span class="xref">IntPtr</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_Dataset_GmlFile_MeshCode_" data-uid="PLATEAU.Dataset.GmlFile.MeshCode*"></a>
-  <h4 id="PLATEAU_Dataset_GmlFile_MeshCode" data-uid="PLATEAU.Dataset.GmlFile.MeshCode">MeshCode</h4>
-  <div class="markdown level1 summary"><p>GMLファイルのメッシュコードを返します。
-ただし、誤った形式のGMLファイル名である等の理由でメッシュコードを読み取れなかった場合は
-戻り値の meshCode.IsValid が false になります。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MeshCode MeshCode { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="PLATEAU.Dataset.MeshCode.html">MeshCode</a></td>
         <td></td>
       </tr>
     </tbody>
