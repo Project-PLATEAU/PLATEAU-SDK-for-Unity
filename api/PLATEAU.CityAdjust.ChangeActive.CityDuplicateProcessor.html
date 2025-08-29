@@ -91,35 +91,11 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">CityDuplicateProcessor</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.CityAdjust.ChangeActive.html">PLATEAU.CityAdjust.ChangeActive</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="PLATEAU_CityAdjust_ChangeActive_CityDuplicateProcessor_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class CityDuplicateProcessor</code></pre>
+    <pre><code class="lang-csharp hljs">public class CityDuplicateProcessor : IPostGmlImportProcessor</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -127,9 +103,7 @@
   
   <a id="PLATEAU_CityAdjust_ChangeActive_CityDuplicateProcessor_EnableOnlyLargestLODInDuplicate_" data-uid="PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.EnableOnlyLargestLODInDuplicate*"></a>
   <h4 id="PLATEAU_CityAdjust_ChangeActive_CityDuplicateProcessor_EnableOnlyLargestLODInDuplicate_PLATEAUInstancedCityModel_" data-uid="PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.EnableOnlyLargestLODInDuplicate(PLATEAUInstancedCityModel)">EnableOnlyLargestLODInDuplicate(PLATEAUInstancedCityModel)</h4>
-  <div class="markdown level1 summary"><p>重複した地物があるか検索します。
-重複のうちLODが最大のものを有効化し、そうでないものを無効化します。
-ただしすでに無効化されているものは無視します。</p>
+  <div class="markdown level1 summary"><p>重複非表示化で<see cref="!:PLATEAUInstancedCityModel"></see>を対象とする版です。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -149,6 +123,64 @@
       <tr>
         <td><span class="xref">PLATEAUInstancedCityModel</span></td>
         <td><span class="parametername">city</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityAdjust_ChangeActive_CityDuplicateProcessor_EnableOnlyLargestLODInDuplicate_" data-uid="PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.EnableOnlyLargestLODInDuplicate*"></a>
+  <h4 id="PLATEAU_CityAdjust_ChangeActive_CityDuplicateProcessor_EnableOnlyLargestLODInDuplicate_Transform_" data-uid="PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.EnableOnlyLargestLODInDuplicate(Transform)">EnableOnlyLargestLODInDuplicate(Transform)</h4>
+  <div class="markdown level1 summary"><p>重複した地物があるか検索します。GMLファイルに対応するゲームオブジェクトを対象とします。(例:53394558_bldg_6697_op.gml)
+重複のうちLODが最大のものを有効化し、そうでないものを無効化します。
+ただしすでに無効化されているものは無視します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void EnableOnlyLargestLODInDuplicate(Transform gmlTrans)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">gmlTrans</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityAdjust_ChangeActive_CityDuplicateProcessor_OnGmlImported_" data-uid="PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.OnGmlImported*"></a>
+  <h4 id="PLATEAU_CityAdjust_ChangeActive_CityDuplicateProcessor_OnGmlImported_GmlImportResult_" data-uid="PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.OnGmlImported(GmlImportResult)">OnGmlImported(GmlImportResult)</h4>
+  <div class="markdown level1 summary"><p>GML1つをインポートしたあとに呼ばれます。重複する子LODを非表示にします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnGmlImported(GmlImportResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GmlImportResult</span></td>
+        <td><span class="parametername">result</span></td>
         <td></td>
       </tr>
     </tbody>

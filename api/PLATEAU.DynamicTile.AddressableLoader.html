@@ -83,7 +83,8 @@
   
   <h1 id="PLATEAU_DynamicTile_AddressableLoader" data-uid="PLATEAU.DynamicTile.AddressableLoader" class="text-break">Class AddressableLoader
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Addressableを使用してカタログとMeta情報をロードするクラス。</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -124,13 +125,14 @@
   </h3>
   
   
-  <a id="PLATEAU_DynamicTile_AddressableLoader_Initialize_" data-uid="PLATEAU.DynamicTile.AddressableLoader.Initialize*"></a>
-  <h4 id="PLATEAU_DynamicTile_AddressableLoader_Initialize_System_String_" data-uid="PLATEAU.DynamicTile.AddressableLoader.Initialize(System.String)">Initialize(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="PLATEAU_DynamicTile_AddressableLoader_InitializeAsync_" data-uid="PLATEAU.DynamicTile.AddressableLoader.InitializeAsync*"></a>
+  <h4 id="PLATEAU_DynamicTile_AddressableLoader_InitializeAsync_System_String_" data-uid="PLATEAU.DynamicTile.AddressableLoader.InitializeAsync(System.String)">InitializeAsync(String)</h4>
+  <div class="markdown level1 summary"><p>初期化処理</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;List&lt;string&gt;&gt; Initialize(string catalogPath)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;PLATEAUDynamicTileMetaStore&gt; InitializeAsync(string catalogPath)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -159,149 +161,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_DynamicTile_AddressableLoader_InstantiateAssetAsync_" data-uid="PLATEAU.DynamicTile.AddressableLoader.InstantiateAssetAsync*"></a>
-  <h4 id="PLATEAU_DynamicTile_AddressableLoader_InstantiateAssetAsync_System_String_Transform_" data-uid="PLATEAU.DynamicTile.AddressableLoader.InstantiateAssetAsync(System.String,Transform)">InstantiateAssetAsync(String, Transform)</h4>
-  <div class="markdown level1 summary"><p>Addressからアセットをインスタンス化します
-注意: 返されたGameObjectは呼び出し側でAddressables.ReleaseInstanceを使用して解放する必要があります</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;GameObject&gt; InstantiateAssetAsync(string address, Transform parent = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">address</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Transform</span></td>
-        <td><span class="parametername">parent</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">GameObject</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_DynamicTile_AddressableLoader_LoadCatalogAsync_" data-uid="PLATEAU.DynamicTile.AddressableLoader.LoadCatalogAsync*"></a>
-  <h4 id="PLATEAU_DynamicTile_AddressableLoader_LoadCatalogAsync_System_String_System_String_" data-uid="PLATEAU.DynamicTile.AddressableLoader.LoadCatalogAsync(System.String,System.String)">LoadCatalogAsync(String, String)</h4>
-  <div class="markdown level1 summary"><p>カタログファイルをロードし、Addressを読み込みます</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;List&lt;string&gt;&gt; LoadCatalogAsync(string catalogPath, string label)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">catalogPath</span></td>
-        <td><p>カタログファイルのパス</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">label</span></td>
-        <td><p>ラベル</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
-        <td><p>ロードされたGameObjectのリスト</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_DynamicTile_AddressableLoader_LoadLocalAddresses_" data-uid="PLATEAU.DynamicTile.AddressableLoader.LoadLocalAddresses*"></a>
-  <h4 id="PLATEAU_DynamicTile_AddressableLoader_LoadLocalAddresses_System_String_" data-uid="PLATEAU.DynamicTile.AddressableLoader.LoadLocalAddresses(System.String)">LoadLocalAddresses(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;List&lt;string&gt;&gt; LoadLocalAddresses(string label)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">label</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.html">PLATEAUDynamicTileMetaStore</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

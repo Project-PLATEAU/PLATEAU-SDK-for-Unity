@@ -414,14 +414,17 @@ GMLのゲームオブジェクト階層を見て、そのLODで存在する City
   
   
   <a id="PLATEAU_CityInfo_PLATEAUInstancedCityModel_LoadGmlAsync_" data-uid="PLATEAU.CityInfo.PLATEAUInstancedCityModel.LoadGmlAsync*"></a>
-  <h4 id="PLATEAU_CityInfo_PLATEAUInstancedCityModel_LoadGmlAsync_Transform_" data-uid="PLATEAU.CityInfo.PLATEAUInstancedCityModel.LoadGmlAsync(Transform)">LoadGmlAsync(Transform)</h4>
+  <h4 id="PLATEAU_CityInfo_PLATEAUInstancedCityModel_LoadGmlAsync_Transform_System_String_" data-uid="PLATEAU.CityInfo.PLATEAUInstancedCityModel.LoadGmlAsync(Transform,System.String)">LoadGmlAsync(Transform, String)</h4>
   <div class="markdown level1 summary"><p>GMLに対応する Transform からGMLを非同期ロードして <see cref="!:CityModel"></see> を返します。
-合致するGMLがなければ null を返します。</p>
+合致するGMLがなければ null を返します。
+<param name="parentPathOfRootDir">
+3D都市モデルが入っているディレクトリの親ディレクトリのパスを指定します。
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;CityModel&gt; LoadGmlAsync(Transform gmlTransform)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;CityModel&gt; LoadGmlAsync(Transform gmlTransform, string parentPathOfRootDir)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -436,6 +439,11 @@ GMLのゲームオブジェクト階層を見て、そのLODで存在する City
       <tr>
         <td><span class="xref">Transform</span></td>
         <td><span class="parametername">gmlTransform</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">parentPathOfRootDir</span></td>
         <td></td>
       </tr>
     </tbody>

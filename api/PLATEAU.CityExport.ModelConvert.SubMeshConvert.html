@@ -110,6 +110,8 @@
       <section><p>UnityのMeshから共通ライブラリのSubMeshを生成します。
 テクスチャ情報を含みます。
 特にエクスポート機能で利用されます。</p>
+<p>注意：シーン内蔵のテクスチャについては、テクスチャのファイルパスをC++に渡す目的で、実行時に一時ファイルに書き出します。
+そのためDisposeパターンでクリーンアップメソッドを呼んで一時ファイルを消す必要があります。</p>
 </section>
       <h4><a class="xref" href="PLATEAU.CityExport.ModelConvert.SubMeshConvert.VertexConverterBase.html">VertexConverterBase</a></h4>
       <section><p>エクスポートでの座標変換を担当します。

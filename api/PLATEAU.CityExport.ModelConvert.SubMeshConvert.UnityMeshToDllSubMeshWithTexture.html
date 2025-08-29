@@ -86,6 +86,8 @@
   <div class="markdown level0 summary"><p>UnityのMeshから共通ライブラリのSubMeshを生成します。
 テクスチャ情報を含みます。
 特にエクスポート機能で利用されます。</p>
+<p>注意：シーン内蔵のテクスチャについては、テクスチャのファイルパスをC++に渡す目的で、実行時に一時ファイルに書き出します。
+そのためDisposeパターンでクリーンアップメソッドを呼んで一時ファイルを消す必要があります。</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -96,6 +98,7 @@
   <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="PLATEAU.CityExport.ModelConvert.SubMeshConvert.IUnityMeshToDllSubMeshConverter.html">IUnityMeshToDllSubMeshConverter</a></div>
+    <div><span class="xref">IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -232,9 +235,50 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="PLATEAU_CityExport_ModelConvert_SubMeshConvert_UnityMeshToDllSubMeshWithTexture_Dispose_" data-uid="PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.Dispose*"></a>
+  <h4 id="PLATEAU_CityExport_ModelConvert_SubMeshConvert_UnityMeshToDllSubMeshWithTexture_Dispose" data-uid="PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>IDisposable実装: 一時ファイルを自動的にクリーンアップします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_CityExport_ModelConvert_SubMeshConvert_UnityMeshToDllSubMeshWithTexture_Dispose_" data-uid="PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.Dispose*"></a>
+  <h4 id="PLATEAU_CityExport_ModelConvert_SubMeshConvert_UnityMeshToDllSubMeshWithTexture_Dispose_System_Boolean_" data-uid="PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="PLATEAU.CityExport.ModelConvert.SubMeshConvert.IUnityMeshToDllSubMeshConverter.html">IUnityMeshToDllSubMeshConverter</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
   </div>
 </article>
           </div>

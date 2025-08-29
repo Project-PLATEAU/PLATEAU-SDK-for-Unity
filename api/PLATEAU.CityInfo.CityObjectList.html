@@ -83,7 +83,8 @@
   
   <h1 id="PLATEAU_CityInfo_CityObjectList" data-uid="PLATEAU.CityInfo.CityObjectList" class="text-break">Class CityObjectList
   </h1>
-  <div class="markdown level0 summary"><p>シリアライズ可能なCityObjectデータです。</p>
+  <div class="markdown level0 summary"><p>シリアライズ可能なCityObjectデータです。
+シリアライズ時はMessagePack形式にしますが、人間が読む用にjson形式でも出力可能です。</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -178,7 +179,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly List&lt;CityObjectList.CityObject&gt; rootCityObjects</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;CityObjectList.CityObject&gt; rootCityObjects</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -191,6 +192,33 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.CityInfo.CityObjectList.CityObject.html">CityObjectList.CityObject</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PLATEAU_CityInfo_CityObjectList_IsEmpty_" data-uid="PLATEAU.CityInfo.CityObjectList.IsEmpty*"></a>
+  <h4 id="PLATEAU_CityInfo_CityObjectList_IsEmpty" data-uid="PLATEAU.CityInfo.CityObjectList.IsEmpty">IsEmpty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>

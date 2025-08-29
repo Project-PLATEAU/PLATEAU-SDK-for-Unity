@@ -119,19 +119,19 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="PLATEAU_CityExport_UnityModelExporter_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class UnityModelExporter</code></pre>
+    <pre><code class="lang-csharp hljs">public class UnityModelExporter</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="PLATEAU_CityExport_UnityModelExporter_Export_" data-uid="PLATEAU.CityExport.UnityModelExporter.Export*"></a>
-  <h4 id="PLATEAU_CityExport_UnityModelExporter_Export_System_String_PLATEAUInstancedCityModel_PLATEAU_CityExport_MeshExportOptions_" data-uid="PLATEAU.CityExport.UnityModelExporter.Export(System.String,PLATEAUInstancedCityModel,PLATEAU.CityExport.MeshExportOptions)">Export(String, PLATEAUInstancedCityModel, MeshExportOptions)</h4>
+  <h4 id="PLATEAU_CityExport_UnityModelExporter_Export_System_String_PLATEAUInstancedCityModel_PLATEAU_CityExport_MeshExportOptions_IProgressBar_" data-uid="PLATEAU.CityExport.UnityModelExporter.Export(System.String,PLATEAUInstancedCityModel,PLATEAU.CityExport.MeshExportOptions,IProgressBar)">Export(String, PLATEAUInstancedCityModel, MeshExportOptions, IProgressBar)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Export(string destDir, PLATEAUInstancedCityModel instancedCityModel, MeshExportOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Export(string destDir, PLATEAUInstancedCityModel instancedCityModel, MeshExportOptions options, IProgressBar progress)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -156,6 +156,11 @@
       <tr>
         <td><a class="xref" href="PLATEAU.CityExport.MeshExportOptions.html">MeshExportOptions</a></td>
         <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IProgressBar</span></td>
+        <td><span class="parametername">progress</span></td>
         <td></td>
       </tr>
     </tbody>

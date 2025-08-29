@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#12304;&#35430;&#39443;&#30340;&#27231;&#33021;&#12305;&#21205;&#30340;&#12479;&#12452;&#12523;&#27231;&#33021;&#12395;&#12388;&#12356;&#12390; | PLATEAU SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#12304;&#35430;&#39443;&#30340;&#27231;&#33021;&#12305;&#21205;&#30340;&#12479;&#12452;&#12523;&#27231;&#33021;&#12395;&#12388;&#12356;&#12390; | PLATEAU SDK for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="試験的機能動的タイル機能について">【試験的機能】動的タイル機能について</h1>
+
+<h2 id="概要">概要</h2>
+<p>広大な範囲を表示したいとき、描画負荷を抑えつつ表示できる機能です。<br>例えば、下図のように範囲選択画面で新宿区のすべての建物をインポートしたいとします。  </p>
+<p><img src="../resources/manual/dynamicTile/areaSelectShinjukuAll.png" alt="新宿区全域を範囲選択した例">  </p>
+<p>通常のシーンへのインポートであれば、描画負荷が問題となり実用の難しさが課題でした。<br>そこで動的タイル機能を使えば、下図のとおりすべて表示できます。<br>ただしPCのスペックによります。  </p>
+<p><img src="../resources/manual/dynamicTile/dynamicTileShinjuku.png" alt="動的タイルで新宿区の全建物を表示した例"></p>
+<h2 id="描画負荷が軽減される仕組み">描画負荷が軽減される仕組み</h2>
+<p>本機能は次の処理からなります。</p>
+<ul>
+<li>3D都市モデルをタイル状に分けます。</li>
+<li>Addressableの機能を使って3D都市モデルを出力します。  </li>
+<li>出力時、各タイルが最適化されます（後述）。</li>
+<li>読込時、カメラの距離に応じてタイルを読み込みます。</li>
+</ul>
+<h3 id="都市のタイルの最適化手法">都市のタイルの最適化手法</h3>
+<p>本機能は試験的機能であり、今後も新たな最適化を追加していく予定です。</p>
+<ul>
+<li>【実装済】テクスチャサイズの変更<ul>
+<li>各タイルで利用されるテクスチャの大きさについて、縦と横でそれぞれ等倍のタイル、2分の1のタイル、そして4分の1にしたタイルを出力します。</li>
+<li>カメラに近いタイルは解像度の高いテクスチャ版を読み込み、遠いタイルは解像度の低いテクスチャ版を読み込みます。</li>
+<li>PLATEAUデータはテクスチャが大きい傾向にあるため、これにより描画負荷が減ります。</li>
+</ul>
+</li>
+<li>【実装済】遠いタイルを消す<ul>
+<li>カメラからかなり遠いタイルは読み込まず、シーンから消去します。</li>
+</ul>
+</li>
+<li>【今後実装予定】タイルのサイズを変更する<ul>
+<li>各タイルの大きさについて、3次メッシュコードを基準とし、それを2×2に結合したサイズと2×2に分割したサイズを作ります。</li>
+<li>カメラから遠いタイルは結合した版を読み込むことで、オブジェクト数とディスク読込回数を減らします。</li>
+</ul>
+</li>
+<li>【今後実装予定】ポリゴン数の低いLOD1の建物に、LOD2のテクスチャを投影することでポリゴン数を下げます。</li>
+</ul>
+<h2 id="動的タイル形式でのインポート方法">動的タイル形式でのインポート方法</h2>
+<p><img src="../resources/manual/dynamicTile/tileImportConfig.png" alt="動的タイルのインポート画面設定">  </p>
+<ul>
+<li>インポートの設定画面で、インポート形式を<code>動的タイル（Addressable出力）</code>にします。</li>
+<li>出力先を指定します。プロジェクト外でも動作しますが、ビルドに含めたい場合はAssetsフォルダ内のお好みのフォルダを選びます。</li>
+<li>範囲選択など、他のインポート設定をしてインポートボタンを押します。<ul>
+<li>インポート設定については<a href="ImportCityModels.html">こちら(3D都市モデルのインポート)</a>とおおむね同じです。</li>
+<li>ただし、モデル結合の粒度については地域単位に固定されます。</li>
+</ul>
+</li>
+<li>インポートおよびAddressableのビルドが行われ、完了すると3D都市モデルがタイル形式で読み込まれ表示されます。</li>
+</ul>
+<h2 id="動的タイルの動作">動的タイルの動作</h2>
+<ul>
+<li>シーンビューでは、タイルと視点の距離に応じたタイルが読み込まれます。</li>
+<li>プレイ中は、タイルとメインカメラの距離に応じたタイルが読み込まれます。</li>
+<li>タイルの管理は、シーンに配置された<code>DynamicTileManager</code>が行います。</li>
+</ul>
+<h3 id="生成されるアセット">生成されるアセット</h3>
+<ul>
+<li>出力先フォルダをAssetsフォルダ内に設定した場合<ul>
+<li>出力先にタイルのプレハブが生成されます。</li>
+<li>Assets/StreamingAssets/PLATEAUBundles/(出力先フォルダ名)にアセットバンドルがビルドされます。</li>
+</ul>
+</li>
+<li>出力先フォルダをプロジェクト外に設定した場合<ul>
+<li>出力先にアセットバンドルがビルドされます。</li>
+<li>Assets/PLATEAUBundles/(出力フォルダ名)にプレハブが生成されます。<ul>
+<li>プロジェクト外への出力のケースでプレハブ非依存にする機能は今後実装予定です。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="dynamictilemanagerの操作">DynamicTileManagerの操作</h2>
+<p><img src="../resources/manual/dynamicTile/showZoomLevel.png" alt="ズームレベルを表示した例">  </p>
+<p>シーンに配置された<code>DynamicTileManager</code>を選択すると、インスペクターから次の操作ができます。</p>
+<ul>
+<li><code>Addressableカタログパス(json)</code>の指定<ul>
+<li>参照ボタンからAddressableのカタログ(json)を指定することで、読み込む動的タイルのセットを変更できます。</li>
+<li>カタログファイルとはAddressableの仕様上、アセットバンドルのビルド時に生成されるものです。<br>カタログの場所は上記「生成されるアセット」に記載のアセットバンドルのビルド先に生成されます。</li>
+</ul>
+</li>
+<li><code>シーンビューで都市にフォーカス</code>ボタンを押すと、シーンビューの視点が都市を映す位置に移動します。</li>
+<li><code>SDKデバッグ用情報を表示</code>のチェックを入れると、インスペクタにデバッグ用の詳細情報が表示されます。詳しくは後述します。</li>
+</ul>
+<h2 id="デバッグ情報">デバッグ情報</h2>
+<p>DynamicTileManagerのインスペクタから「SDKデバッグ用情報」にチェックを入れると次のボタンと情報がインスペクタに表示されます。</p>
+<ul>
+<li><code>Clear Tile Assets</code>: 読み込んだタイルをシーンから消去します。</li>
+<li><code>Clear Tile List</code>: 保持しているタイル情報を消去します。元に戻すには「参照」からカタログを指定します。</li>
+<li><code>Load Tile Scriptable Objects</code>: タイルの情報を読み直します。</li>
+<li><code>Show Tile Bounds</code>: 各タイルのBounds(範囲)を線で表示します。</li>
+<li><code>Show Zoom Level</code>: タイルのズームレベル（詳細度）を数字で表示します。<ul>
+<li>ズームレベル11番: もっとも詳細で、テクスチャ解像度は等倍です。</li>
+<li>ズームレベル10番: 2番目に詳細で、テクスチャ解像度は縦と横が2分の1倍です。</li>
+<li>ズームレベル9番:  もっとも粗く、テクスチャ解像度は縦と横が4分の1倍です。</li>
+</ul>
+</li>
+<li><code>Cancel Load Task</code>: ロードに異様に時間がかかっているタイルがある場合、進行中の読み込みを取り消します。</li>
+<li><code>Disable Realtime Load On Editor</code>: エディタでの視点位置に応じたタイルの読み込みを停止します。</li>
+<li><code>Update Assets On Camera Position</code>: カメラ位置に応じたタイルの読み込みをやり直します。</li>
+<li><code>Zoom Level &amp; Load Distance</code>: 各ズームレベルがカメラからのどの距離で読み込まれるかを設定します。Load DistanceのXが最小距離、Yが最大距離です。</li>
+<li><code>各タイルの情報</code>: 各タイルのAddressableのアドレス、位置、ズームレベル、ゲームオブジェクト、カメラからの距離、読み込み状態が表示されます。</li>
+<li><code>Use Job System</code>: タイルとカメラの距離判定にJob Systemを利用します。</li>
+<li><code>Show Debug Log</code>: チェックを入れると詳細なログを表示します。</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Project-PLATEAU/PLATEAU-SDK-for-Unity/blob/main/Documentation~/manual/dynamicTile.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            PLATEAU SDK for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

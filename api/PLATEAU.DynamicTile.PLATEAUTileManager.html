@@ -96,6 +96,34 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class PLATEAUTileManager : MonoBehaviour</code></pre>
   </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="PLATEAU_DynamicTile_PLATEAUTileManager_loadDistances" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.loadDistances">loadDistances</h4>
+  <div class="markdown level1 summary"><p>各Zoomレベルごとのカメラからのロード距離を定義します。
+{zoomLevel, (最小距離, 最大距離)}</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;int, (float, float)&gt; loadDistances</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Single</span>, <span class="xref">System.Single</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -119,6 +147,108 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_PLATEAUTileManager_DynamicTiles_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.DynamicTiles*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUTileManager_DynamicTiles" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.DynamicTiles">DynamicTiles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PLATEAUDynamicTile&gt; DynamicTiles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.DynamicTile.PLATEAUDynamicTile.html">PLATEAUDynamicTile</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_PLATEAUTileManager_HasCurrentTask_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.HasCurrentTask*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUTileManager_HasCurrentTask" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.HasCurrentTask">HasCurrentTask</h4>
+  <div class="markdown level1 summary"><p>現在タスクが実行中かどうかを示すプロパティ。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasCurrentTask { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_PLATEAUTileManager_IsCoroutineRunning_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.IsCoroutineRunning*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUTileManager_IsCoroutineRunning" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.IsCoroutineRunning">IsCoroutineRunning</h4>
+  <div class="markdown level1 summary"><p>Instance化のコルーチンが実行中かどうかを示すプロパティ。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCoroutineRunning { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_PLATEAUTileManager_State_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.State*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUTileManager_State" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.State">State</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PLATEAUTileManager.ManagerState State { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState.html">PLATEAUTileManager.ManagerState</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -155,6 +285,90 @@
   </table>
   
   
+  <a id="PLATEAU_DynamicTile_PLATEAUTileManager_CancelLoadTask_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.CancelLoadTask*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUTileManager_CancelLoadTask" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.CancelLoadTask">CancelLoadTask()</h4>
+  <div class="markdown level1 summary"><p>実行中のロードタスクをキャンセルし、CancellationTokenSourceをリセットします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task CancelLoadTask()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_PLATEAUTileManager_CheckIfCameraPositionHasChanged_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.CheckIfCameraPositionHasChanged*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUTileManager_CheckIfCameraPositionHasChanged_Vector3_System_Single_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.CheckIfCameraPositionHasChanged(Vector3,System.Single)">CheckIfCameraPositionHasChanged(Vector3, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckIfCameraPositionHasChanged(Vector3 position, float threshold = 0.01F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">threshold</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_PLATEAUTileManager_ClearTileAssets_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.ClearTileAssets*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUTileManager_ClearTileAssets" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.ClearTileAssets">ClearTileAssets()</h4>
+  <div class="markdown level1 summary"><p>すべてのロード済みオブジェクトをアンロードする</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearTileAssets()</code></pre>
+  </div>
+  
+  
   <a id="PLATEAU_DynamicTile_PLATEAUTileManager_ClearTiles_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.ClearTiles*"></a>
   <h4 id="PLATEAU_DynamicTile_PLATEAUTileManager_ClearTiles" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.ClearTiles">ClearTiles()</h4>
   <div class="markdown level1 summary"><p>登録したタイルをクリア</p>
@@ -166,14 +380,117 @@
   </div>
   
   
+  <a id="PLATEAU_DynamicTile_PLATEAUTileManager_GetTileBounds_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.GetTileBounds*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUTileManager_GetTileBounds" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.GetTileBounds">GetTileBounds()</h4>
+  <div class="markdown level1 summary"><p>タイルが存在する範囲を取得します。
+Extentが無効 (sizeが0) なタイルや除外タイルは無視します。
+有効なタイルが存在しない場合、sizeが(0,0,0)のBoundsを返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bounds GetTileBounds()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Bounds</span></td>
+        <td><p>タイルが存在する範囲のBounds</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_PLATEAUTileManager_InitializeTiles_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.InitializeTiles*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUTileManager_InitializeTiles" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.InitializeTiles">InitializeTiles()</h4>
+  <div class="markdown level1 summary"><p>カタログに変わるScriptableObjectを使用して、タイルの初期化を行います。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task InitializeTiles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_DynamicTile_PLATEAUTileManager_Load_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.Load*"></a>
-  <h4 id="PLATEAU_DynamicTile_PLATEAUTileManager_Load_System_String_Transform_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.Load(System.String,Transform)">Load(String, Transform)</h4>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUTileManager_Load_PLATEAU_DynamicTile_PLATEAUDynamicTile_System_Single_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.Load(PLATEAU.DynamicTile.PLATEAUDynamicTile,System.Single)">Load(PLATEAUDynamicTile, Single)</h4>
+  <div class="markdown level1 summary"><p>Tileを指定してAddressablesからロードする</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;PLATEAUTileManager.LoadResult&gt; Load(PLATEAUDynamicTile tile, float timeoutSeconds = 2F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.DynamicTile.PLATEAUDynamicTile.html">PLATEAUDynamicTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">timeoutSeconds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.html">PLATEAUTileManager.LoadResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_PLATEAUTileManager_Load_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.Load*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUTileManager_Load_System_String_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.Load(System.String)">Load(String)</h4>
   <div class="markdown level1 summary"><p>Addressを指定してAddressablesからロードする</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async void Load(string address, Transform parent = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;PLATEAUTileManager.LoadResult&gt; Load(string address)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -190,9 +507,19 @@
         <td><span class="parametername">address</span></td>
         <td></td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><span class="xref">Transform</span></td>
-        <td><span class="parametername">parent</span></td>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.html">PLATEAUTileManager.LoadResult</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -228,13 +555,56 @@
   
   
   <a id="PLATEAU_DynamicTile_PLATEAUTileManager_Unload_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.Unload*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUTileManager_Unload_PLATEAU_DynamicTile_PLATEAUDynamicTile_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.Unload(PLATEAU.DynamicTile.PLATEAUDynamicTile)">Unload(PLATEAUDynamicTile)</h4>
+  <div class="markdown level1 summary"><p>Tileを指定してAddressablesからアンロードする</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Unload(PLATEAUDynamicTile tile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.DynamicTile.PLATEAUDynamicTile.html">PLATEAUDynamicTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_PLATEAUTileManager_Unload_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.Unload*"></a>
   <h4 id="PLATEAU_DynamicTile_PLATEAUTileManager_Unload_System_String_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.Unload(System.String)">Unload(String)</h4>
   <div class="markdown level1 summary"><p>Addressを指定してAddressablesからアンロードする</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Unload(string address)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Unload(string address)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -249,6 +619,98 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">address</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_PLATEAUTileManager_UpdateAssetsByCameraPosition_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.UpdateAssetsByCameraPosition*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUTileManager_UpdateAssetsByCameraPosition_Vector3_System_Single_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.UpdateAssetsByCameraPosition(Vector3,System.Single)">UpdateAssetsByCameraPosition(Vector3, Single)</h4>
+  <div class="markdown level1 summary"><p>カメラの位置に応じてタイルのロード状態を更新する。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task UpdateAssetsByCameraPosition(Vector3 position, float timeoutSeconds = 10F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">timeoutSeconds</span></td>
+        <td><p>完了まで待機する際のタイムアウト秒数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_PLATEAUTileManager_UpdateCameraPosition_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.UpdateCameraPosition*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUTileManager_UpdateCameraPosition_Vector3_" data-uid="PLATEAU.DynamicTile.PLATEAUTileManager.UpdateCameraPosition(Vector3)">UpdateCameraPosition(Vector3)</h4>
+  <div class="markdown level1 summary"><p>保持しているカメラの位置を更新します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateCameraPosition(Vector3 position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">position</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -458,6 +458,12 @@ references:
   commentId: M:PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.EnableOnlyLargestLODInDuplicate(PLATEAUInstancedCityModel)
   fullName: PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.EnableOnlyLargestLODInDuplicate(PLATEAUInstancedCityModel)
   nameWithType: CityDuplicateProcessor.EnableOnlyLargestLODInDuplicate(PLATEAUInstancedCityModel)
+- uid: PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.EnableOnlyLargestLODInDuplicate(Transform)
+  name: EnableOnlyLargestLODInDuplicate(Transform)
+  href: api/PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.html#PLATEAU_CityAdjust_ChangeActive_CityDuplicateProcessor_EnableOnlyLargestLODInDuplicate_Transform_
+  commentId: M:PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.EnableOnlyLargestLODInDuplicate(Transform)
+  fullName: PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.EnableOnlyLargestLODInDuplicate(Transform)
+  nameWithType: CityDuplicateProcessor.EnableOnlyLargestLODInDuplicate(Transform)
 - uid: PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.EnableOnlyLargestLODInDuplicate*
   name: EnableOnlyLargestLODInDuplicate
   href: api/PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.html#PLATEAU_CityAdjust_ChangeActive_CityDuplicateProcessor_EnableOnlyLargestLODInDuplicate_
@@ -465,6 +471,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.EnableOnlyLargestLODInDuplicate
   nameWithType: CityDuplicateProcessor.EnableOnlyLargestLODInDuplicate
+- uid: PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.OnGmlImported(GmlImportResult)
+  name: OnGmlImported(GmlImportResult)
+  href: api/PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.html#PLATEAU_CityAdjust_ChangeActive_CityDuplicateProcessor_OnGmlImported_GmlImportResult_
+  commentId: M:PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.OnGmlImported(GmlImportResult)
+  fullName: PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.OnGmlImported(GmlImportResult)
+  nameWithType: CityDuplicateProcessor.OnGmlImported(GmlImportResult)
+- uid: PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.OnGmlImported*
+  name: OnGmlImported
+  href: api/PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.html#PLATEAU_CityAdjust_ChangeActive_CityDuplicateProcessor_OnGmlImported_
+  commentId: Overload:PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.OnGmlImported
+  isSpec: "True"
+  fullName: PLATEAU.CityAdjust.ChangeActive.CityDuplicateProcessor.OnGmlImported
+  nameWithType: CityDuplicateProcessor.OnGmlImported
 - uid: PLATEAU.CityAdjust.ConvertToAsset
   name: PLATEAU.CityAdjust.ConvertToAsset
   href: api/PLATEAU.CityAdjust.ConvertToAsset.html
@@ -2120,6 +2139,25 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.Convert
   nameWithType: UnityMeshToDllSubMeshWithTexture.Convert
+- uid: PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.Dispose
+  name: Dispose()
+  href: api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.html#PLATEAU_CityExport_ModelConvert_SubMeshConvert_UnityMeshToDllSubMeshWithTexture_Dispose
+  commentId: M:PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.Dispose
+  fullName: PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.Dispose()
+  nameWithType: UnityMeshToDllSubMeshWithTexture.Dispose()
+- uid: PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.html#PLATEAU_CityExport_ModelConvert_SubMeshConvert_UnityMeshToDllSubMeshWithTexture_Dispose_System_Boolean_
+  commentId: M:PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.Dispose(System.Boolean)
+  fullName: PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.Dispose(System.Boolean)
+  nameWithType: UnityMeshToDllSubMeshWithTexture.Dispose(Boolean)
+- uid: PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.Dispose*
+  name: Dispose
+  href: api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.html#PLATEAU_CityExport_ModelConvert_SubMeshConvert_UnityMeshToDllSubMeshWithTexture_Dispose_
+  commentId: Overload:PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.Dispose
+  isSpec: "True"
+  fullName: PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.Dispose
+  nameWithType: UnityMeshToDllSubMeshWithTexture.Dispose
 - uid: PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.GameMaterials
   name: GameMaterials
   href: api/PLATEAU.CityExport.ModelConvert.SubMeshConvert.UnityMeshToDllSubMeshWithTexture.html#PLATEAU_CityExport_ModelConvert_SubMeshConvert_UnityMeshToDllSubMeshWithTexture_GameMaterials
@@ -2242,12 +2280,12 @@ references:
   commentId: T:PLATEAU.CityExport.UnityModelExporter
   fullName: PLATEAU.CityExport.UnityModelExporter
   nameWithType: UnityModelExporter
-- uid: PLATEAU.CityExport.UnityModelExporter.Export(System.String,PLATEAUInstancedCityModel,PLATEAU.CityExport.MeshExportOptions)
-  name: Export(String, PLATEAUInstancedCityModel, MeshExportOptions)
-  href: api/PLATEAU.CityExport.UnityModelExporter.html#PLATEAU_CityExport_UnityModelExporter_Export_System_String_PLATEAUInstancedCityModel_PLATEAU_CityExport_MeshExportOptions_
-  commentId: M:PLATEAU.CityExport.UnityModelExporter.Export(System.String,PLATEAUInstancedCityModel,PLATEAU.CityExport.MeshExportOptions)
-  fullName: PLATEAU.CityExport.UnityModelExporter.Export(System.String, PLATEAUInstancedCityModel, PLATEAU.CityExport.MeshExportOptions)
-  nameWithType: UnityModelExporter.Export(String, PLATEAUInstancedCityModel, MeshExportOptions)
+- uid: PLATEAU.CityExport.UnityModelExporter.Export(System.String,PLATEAUInstancedCityModel,PLATEAU.CityExport.MeshExportOptions,IProgressBar)
+  name: Export(String, PLATEAUInstancedCityModel, MeshExportOptions, IProgressBar)
+  href: api/PLATEAU.CityExport.UnityModelExporter.html#PLATEAU_CityExport_UnityModelExporter_Export_System_String_PLATEAUInstancedCityModel_PLATEAU_CityExport_MeshExportOptions_IProgressBar_
+  commentId: M:PLATEAU.CityExport.UnityModelExporter.Export(System.String,PLATEAUInstancedCityModel,PLATEAU.CityExport.MeshExportOptions,IProgressBar)
+  fullName: PLATEAU.CityExport.UnityModelExporter.Export(System.String, PLATEAUInstancedCityModel, PLATEAU.CityExport.MeshExportOptions, IProgressBar)
+  nameWithType: UnityModelExporter.Export(String, PLATEAUInstancedCityModel, MeshExportOptions, IProgressBar)
 - uid: PLATEAU.CityExport.UnityModelExporter.Export*
   name: Export
   href: api/PLATEAU.CityExport.UnityModelExporter.html#PLATEAU_CityExport_UnityModelExporter_Export_
@@ -4622,6 +4660,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityImport.Config.CityImportConfig.CreateWithAreaSelectResult
   nameWithType: CityImportConfig.CreateWithAreaSelectResult
+- uid: PLATEAU.CityImport.Config.CityImportConfig.DynamicTileImportConfig
+  name: DynamicTileImportConfig
+  href: api/PLATEAU.CityImport.Config.CityImportConfig.html#PLATEAU_CityImport_Config_CityImportConfig_DynamicTileImportConfig
+  commentId: P:PLATEAU.CityImport.Config.CityImportConfig.DynamicTileImportConfig
+  fullName: PLATEAU.CityImport.Config.CityImportConfig.DynamicTileImportConfig
+  nameWithType: CityImportConfig.DynamicTileImportConfig
+- uid: PLATEAU.CityImport.Config.CityImportConfig.DynamicTileImportConfig*
+  name: DynamicTileImportConfig
+  href: api/PLATEAU.CityImport.Config.CityImportConfig.html#PLATEAU_CityImport_Config_CityImportConfig_DynamicTileImportConfig_
+  commentId: Overload:PLATEAU.CityImport.Config.CityImportConfig.DynamicTileImportConfig
+  isSpec: "True"
+  fullName: PLATEAU.CityImport.Config.CityImportConfig.DynamicTileImportConfig
+  nameWithType: CityImportConfig.DynamicTileImportConfig
 - uid: PLATEAU.CityImport.Config.CityImportConfig.GetConfigForPackage(PredefinedCityModelPackage)
   name: GetConfigForPackage(PredefinedCityModelPackage)
   href: api/PLATEAU.CityImport.Config.CityImportConfig.html#PLATEAU_CityImport_Config_CityImportConfig_GetConfigForPackage_PredefinedCityModelPackage_
@@ -4677,6 +4728,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityImport.Config.CityImportConfig.SearchMatchingGMLList
   nameWithType: CityImportConfig.SearchMatchingGMLList
+- uid: PLATEAU.CityImport.Config.CityImportConfig.ValidateForTile
+  name: ValidateForTile()
+  href: api/PLATEAU.CityImport.Config.CityImportConfig.html#PLATEAU_CityImport_Config_CityImportConfig_ValidateForTile
+  commentId: M:PLATEAU.CityImport.Config.CityImportConfig.ValidateForTile
+  fullName: PLATEAU.CityImport.Config.CityImportConfig.ValidateForTile()
+  nameWithType: CityImportConfig.ValidateForTile()
+- uid: PLATEAU.CityImport.Config.CityImportConfig.ValidateForTile*
+  name: ValidateForTile
+  href: api/PLATEAU.CityImport.Config.CityImportConfig.html#PLATEAU_CityImport_Config_CityImportConfig_ValidateForTile_
+  commentId: Overload:PLATEAU.CityImport.Config.CityImportConfig.ValidateForTile
+  isSpec: "True"
+  fullName: PLATEAU.CityImport.Config.CityImportConfig.ValidateForTile
+  nameWithType: CityImportConfig.ValidateForTile
 - uid: PLATEAU.CityImport.Config.ConfigBeforeAreaSelect
   name: ConfigBeforeAreaSelect
   href: api/PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.html
@@ -4728,6 +4792,77 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.DatasetSourceConfig
   nameWithType: ConfigBeforeAreaSelect.DatasetSourceConfig
+- uid: PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.DynamicTileImportConfig
+  name: DynamicTileImportConfig
+  href: api/PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.html#PLATEAU_CityImport_Config_ConfigBeforeAreaSelect_DynamicTileImportConfig
+  commentId: P:PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.DynamicTileImportConfig
+  fullName: PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.DynamicTileImportConfig
+  nameWithType: ConfigBeforeAreaSelect.DynamicTileImportConfig
+- uid: PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.DynamicTileImportConfig*
+  name: DynamicTileImportConfig
+  href: api/PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.html#PLATEAU_CityImport_Config_ConfigBeforeAreaSelect_DynamicTileImportConfig_
+  commentId: Overload:PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.DynamicTileImportConfig
+  isSpec: "True"
+  fullName: PLATEAU.CityImport.Config.ConfigBeforeAreaSelect.DynamicTileImportConfig
+  nameWithType: ConfigBeforeAreaSelect.DynamicTileImportConfig
+- uid: PLATEAU.CityImport.Config.DynamicTileImportConfig
+  name: DynamicTileImportConfig
+  href: api/PLATEAU.CityImport.Config.DynamicTileImportConfig.html
+  commentId: T:PLATEAU.CityImport.Config.DynamicTileImportConfig
+  fullName: PLATEAU.CityImport.Config.DynamicTileImportConfig
+  nameWithType: DynamicTileImportConfig
+- uid: PLATEAU.CityImport.Config.DynamicTileImportConfig.ImportType
+  name: ImportType
+  href: api/PLATEAU.CityImport.Config.DynamicTileImportConfig.html#PLATEAU_CityImport_Config_DynamicTileImportConfig_ImportType
+  commentId: P:PLATEAU.CityImport.Config.DynamicTileImportConfig.ImportType
+  fullName: PLATEAU.CityImport.Config.DynamicTileImportConfig.ImportType
+  nameWithType: DynamicTileImportConfig.ImportType
+- uid: PLATEAU.CityImport.Config.DynamicTileImportConfig.ImportType*
+  name: ImportType
+  href: api/PLATEAU.CityImport.Config.DynamicTileImportConfig.html#PLATEAU_CityImport_Config_DynamicTileImportConfig_ImportType_
+  commentId: Overload:PLATEAU.CityImport.Config.DynamicTileImportConfig.ImportType
+  isSpec: "True"
+  fullName: PLATEAU.CityImport.Config.DynamicTileImportConfig.ImportType
+  nameWithType: DynamicTileImportConfig.ImportType
+- uid: PLATEAU.CityImport.Config.DynamicTileImportConfig.ImportTypeIndex
+  name: ImportTypeIndex
+  href: api/PLATEAU.CityImport.Config.DynamicTileImportConfig.html#PLATEAU_CityImport_Config_DynamicTileImportConfig_ImportTypeIndex
+  commentId: P:PLATEAU.CityImport.Config.DynamicTileImportConfig.ImportTypeIndex
+  fullName: PLATEAU.CityImport.Config.DynamicTileImportConfig.ImportTypeIndex
+  nameWithType: DynamicTileImportConfig.ImportTypeIndex
+- uid: PLATEAU.CityImport.Config.DynamicTileImportConfig.ImportTypeIndex*
+  name: ImportTypeIndex
+  href: api/PLATEAU.CityImport.Config.DynamicTileImportConfig.html#PLATEAU_CityImport_Config_DynamicTileImportConfig_ImportTypeIndex_
+  commentId: Overload:PLATEAU.CityImport.Config.DynamicTileImportConfig.ImportTypeIndex
+  isSpec: "True"
+  fullName: PLATEAU.CityImport.Config.DynamicTileImportConfig.ImportTypeIndex
+  nameWithType: DynamicTileImportConfig.ImportTypeIndex
+- uid: PLATEAU.CityImport.Config.DynamicTileImportConfig.Lod1Texture
+  name: Lod1Texture
+  href: api/PLATEAU.CityImport.Config.DynamicTileImportConfig.html#PLATEAU_CityImport_Config_DynamicTileImportConfig_Lod1Texture
+  commentId: P:PLATEAU.CityImport.Config.DynamicTileImportConfig.Lod1Texture
+  fullName: PLATEAU.CityImport.Config.DynamicTileImportConfig.Lod1Texture
+  nameWithType: DynamicTileImportConfig.Lod1Texture
+- uid: PLATEAU.CityImport.Config.DynamicTileImportConfig.Lod1Texture*
+  name: Lod1Texture
+  href: api/PLATEAU.CityImport.Config.DynamicTileImportConfig.html#PLATEAU_CityImport_Config_DynamicTileImportConfig_Lod1Texture_
+  commentId: Overload:PLATEAU.CityImport.Config.DynamicTileImportConfig.Lod1Texture
+  isSpec: "True"
+  fullName: PLATEAU.CityImport.Config.DynamicTileImportConfig.Lod1Texture
+  nameWithType: DynamicTileImportConfig.Lod1Texture
+- uid: PLATEAU.CityImport.Config.DynamicTileImportConfig.OutputPath
+  name: OutputPath
+  href: api/PLATEAU.CityImport.Config.DynamicTileImportConfig.html#PLATEAU_CityImport_Config_DynamicTileImportConfig_OutputPath
+  commentId: P:PLATEAU.CityImport.Config.DynamicTileImportConfig.OutputPath
+  fullName: PLATEAU.CityImport.Config.DynamicTileImportConfig.OutputPath
+  nameWithType: DynamicTileImportConfig.OutputPath
+- uid: PLATEAU.CityImport.Config.DynamicTileImportConfig.OutputPath*
+  name: OutputPath
+  href: api/PLATEAU.CityImport.Config.DynamicTileImportConfig.html#PLATEAU_CityImport_Config_DynamicTileImportConfig_OutputPath_
+  commentId: Overload:PLATEAU.CityImport.Config.DynamicTileImportConfig.OutputPath
+  isSpec: "True"
+  fullName: PLATEAU.CityImport.Config.DynamicTileImportConfig.OutputPath
+  nameWithType: DynamicTileImportConfig.OutputPath
 - uid: PLATEAU.CityImport.Config.GridCodeList
   name: GridCodeList
   href: api/PLATEAU.CityImport.Config.GridCodeList.html
@@ -4847,6 +4982,24 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityImport.Config.GridCodeList.GridCodes
   nameWithType: GridCodeList.GridCodes
+- uid: PLATEAU.CityImport.Config.ImportType
+  name: ImportType
+  href: api/PLATEAU.CityImport.Config.ImportType.html
+  commentId: T:PLATEAU.CityImport.Config.ImportType
+  fullName: PLATEAU.CityImport.Config.ImportType
+  nameWithType: ImportType
+- uid: PLATEAU.CityImport.Config.ImportType.DynamicTile
+  name: DynamicTile
+  href: api/PLATEAU.CityImport.Config.ImportType.html#PLATEAU_CityImport_Config_ImportType_DynamicTile
+  commentId: F:PLATEAU.CityImport.Config.ImportType.DynamicTile
+  fullName: PLATEAU.CityImport.Config.ImportType.DynamicTile
+  nameWithType: ImportType.DynamicTile
+- uid: PLATEAU.CityImport.Config.ImportType.Scene
+  name: Scene
+  href: api/PLATEAU.CityImport.Config.ImportType.html#PLATEAU_CityImport_Config_ImportType_Scene
+  commentId: F:PLATEAU.CityImport.Config.ImportType.Scene
+  fullName: PLATEAU.CityImport.Config.ImportType.Scene
+  nameWithType: ImportType.Scene
 - uid: PLATEAU.CityImport.Config.PackageImportConfigs
   name: PLATEAU.CityImport.Config.PackageImportConfigs
   href: api/PLATEAU.CityImport.Config.PackageImportConfigs.html
@@ -5021,6 +5174,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.FallbackMaterial
   nameWithType: PackageImportConfig.FallbackMaterial
+- uid: PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.ForcePerCityModelArea
+  name: ForcePerCityModelArea
+  href: api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.html#PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_ForcePerCityModelArea
+  commentId: P:PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.ForcePerCityModelArea
+  fullName: PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.ForcePerCityModelArea
+  nameWithType: PackageImportConfig.ForcePerCityModelArea
+- uid: PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.ForcePerCityModelArea*
+  name: ForcePerCityModelArea
+  href: api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.html#PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_ForcePerCityModelArea_
+  commentId: Overload:PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.ForcePerCityModelArea
+  isSpec: "True"
+  fullName: PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.ForcePerCityModelArea
+  nameWithType: PackageImportConfig.ForcePerCityModelArea
 - uid: PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.ImportPackage
   name: ImportPackage
   href: api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfig.html#PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfig_ImportPackage
@@ -5181,12 +5347,12 @@ references:
   commentId: M:PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.#ctor
   fullName: PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.PackageImportConfigExtendable()
   nameWithType: PackageImportConfigExtendable.PackageImportConfigExtendable()
-- uid: PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.#ctor(System.Boolean,MeshGranularity,System.Boolean,System.Boolean,System.Boolean,PLATEAU.CityImport.Config.PackageImportConfigs.TexturePackingResolution)
-  name: PackageImportConfigExtendable(Boolean, MeshGranularity, Boolean, Boolean, Boolean, TexturePackingResolution)
-  href: api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.html#PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfigExtendable__ctor_System_Boolean_MeshGranularity_System_Boolean_System_Boolean_System_Boolean_PLATEAU_CityImport_Config_PackageImportConfigs_TexturePackingResolution_
-  commentId: M:PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.#ctor(System.Boolean,MeshGranularity,System.Boolean,System.Boolean,System.Boolean,PLATEAU.CityImport.Config.PackageImportConfigs.TexturePackingResolution)
-  fullName: PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.PackageImportConfigExtendable(System.Boolean, MeshGranularity, System.Boolean, System.Boolean, System.Boolean, PLATEAU.CityImport.Config.PackageImportConfigs.TexturePackingResolution)
-  nameWithType: PackageImportConfigExtendable.PackageImportConfigExtendable(Boolean, MeshGranularity, Boolean, Boolean, Boolean, TexturePackingResolution)
+- uid: PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.#ctor(System.Boolean,MeshGranularity,System.Boolean,System.Boolean,System.Boolean,PLATEAU.CityImport.Config.PackageImportConfigs.TexturePackingResolution,System.Boolean)
+  name: PackageImportConfigExtendable(Boolean, MeshGranularity, Boolean, Boolean, Boolean, TexturePackingResolution, Boolean)
+  href: api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.html#PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfigExtendable__ctor_System_Boolean_MeshGranularity_System_Boolean_System_Boolean_System_Boolean_PLATEAU_CityImport_Config_PackageImportConfigs_TexturePackingResolution_System_Boolean_
+  commentId: M:PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.#ctor(System.Boolean,MeshGranularity,System.Boolean,System.Boolean,System.Boolean,PLATEAU.CityImport.Config.PackageImportConfigs.TexturePackingResolution,System.Boolean)
+  fullName: PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.PackageImportConfigExtendable(System.Boolean, MeshGranularity, System.Boolean, System.Boolean, System.Boolean, PLATEAU.CityImport.Config.PackageImportConfigs.TexturePackingResolution, System.Boolean)
+  nameWithType: PackageImportConfigExtendable.PackageImportConfigExtendable(Boolean, MeshGranularity, Boolean, Boolean, Boolean, TexturePackingResolution, Boolean)
 - uid: PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.#ctor*
   name: PackageImportConfigExtendable
   href: api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.html#PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfigExtendable__ctor_
@@ -5246,6 +5412,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.EnableTexturePacking
   nameWithType: PackageImportConfigExtendable.EnableTexturePacking
+- uid: PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.ForcePerCityModelArea
+  name: ForcePerCityModelArea
+  href: api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.html#PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfigExtendable_ForcePerCityModelArea
+  commentId: P:PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.ForcePerCityModelArea
+  fullName: PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.ForcePerCityModelArea
+  nameWithType: PackageImportConfigExtendable.ForcePerCityModelArea
+- uid: PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.ForcePerCityModelArea*
+  name: ForcePerCityModelArea
+  href: api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.html#PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfigExtendable_ForcePerCityModelArea_
+  commentId: Overload:PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.ForcePerCityModelArea
+  isSpec: "True"
+  fullName: PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.ForcePerCityModelArea
+  nameWithType: PackageImportConfigExtendable.ForcePerCityModelArea
 - uid: PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.GetTexturePackingResolution
   name: GetTexturePackingResolution()
   href: api/PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.html#PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfigExtendable_GetTexturePackingResolution
@@ -5418,15 +5597,15 @@ references:
   commentId: T:PLATEAU.CityImport.Import.CityImporter
   fullName: PLATEAU.CityImport.Import.CityImporter
   nameWithType: CityImporter
-- uid: PLATEAU.CityImport.Import.CityImporter.ImportAsync(CityImportConfig,IProgressDisplay,System.Nullable{CancellationToken})
-  name: ImportAsync(CityImportConfig, IProgressDisplay, Nullable<CancellationToken>)
-  href: api/PLATEAU.CityImport.Import.CityImporter.html#PLATEAU_CityImport_Import_CityImporter_ImportAsync_CityImportConfig_IProgressDisplay_System_Nullable_CancellationToken__
-  commentId: M:PLATEAU.CityImport.Import.CityImporter.ImportAsync(CityImportConfig,IProgressDisplay,System.Nullable{CancellationToken})
-  name.vb: ImportAsync(CityImportConfig, IProgressDisplay, Nullable(Of CancellationToken))
-  fullName: PLATEAU.CityImport.Import.CityImporter.ImportAsync(CityImportConfig, IProgressDisplay, System.Nullable<CancellationToken>)
-  fullName.vb: PLATEAU.CityImport.Import.CityImporter.ImportAsync(CityImportConfig, IProgressDisplay, System.Nullable(Of CancellationToken))
-  nameWithType: CityImporter.ImportAsync(CityImportConfig, IProgressDisplay, Nullable<CancellationToken>)
-  nameWithType.vb: CityImporter.ImportAsync(CityImportConfig, IProgressDisplay, Nullable(Of CancellationToken))
+- uid: PLATEAU.CityImport.Import.CityImporter.ImportAsync(CityImportConfig,IProgressDisplay,System.Nullable{CancellationToken},IEnumerable{PLATEAU.CityImport.Import.IPostGmlImportProcessor})
+  name: ImportAsync(CityImportConfig, IProgressDisplay, Nullable<CancellationToken>, IEnumerable<IPostGmlImportProcessor>)
+  href: api/PLATEAU.CityImport.Import.CityImporter.html#PLATEAU_CityImport_Import_CityImporter_ImportAsync_CityImportConfig_IProgressDisplay_System_Nullable_CancellationToken__IEnumerable_PLATEAU_CityImport_Import_IPostGmlImportProcessor__
+  commentId: M:PLATEAU.CityImport.Import.CityImporter.ImportAsync(CityImportConfig,IProgressDisplay,System.Nullable{CancellationToken},IEnumerable{PLATEAU.CityImport.Import.IPostGmlImportProcessor})
+  name.vb: ImportAsync(CityImportConfig, IProgressDisplay, Nullable(Of CancellationToken), IEnumerable(Of IPostGmlImportProcessor))
+  fullName: PLATEAU.CityImport.Import.CityImporter.ImportAsync(CityImportConfig, IProgressDisplay, System.Nullable<CancellationToken>, IEnumerable<PLATEAU.CityImport.Import.IPostGmlImportProcessor>)
+  fullName.vb: PLATEAU.CityImport.Import.CityImporter.ImportAsync(CityImportConfig, IProgressDisplay, System.Nullable(Of CancellationToken), IEnumerable(Of PLATEAU.CityImport.Import.IPostGmlImportProcessor))
+  nameWithType: CityImporter.ImportAsync(CityImportConfig, IProgressDisplay, Nullable<CancellationToken>, IEnumerable<IPostGmlImportProcessor>)
+  nameWithType.vb: CityImporter.ImportAsync(CityImportConfig, IProgressDisplay, Nullable(Of CancellationToken), IEnumerable(Of IPostGmlImportProcessor))
 - uid: PLATEAU.CityImport.Import.CityImporter.ImportAsync*
   name: ImportAsync
   href: api/PLATEAU.CityImport.Import.CityImporter.html#PLATEAU_CityImport_Import_CityImporter_ImportAsync_
@@ -5524,6 +5703,99 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityImport.Import.Convert.GranularityConvertResult.Merge
   nameWithType: GranularityConvertResult.Merge
+- uid: PLATEAU.CityImport.Import.GmlImportResult
+  name: GmlImportResult
+  href: api/PLATEAU.CityImport.Import.GmlImportResult.html
+  commentId: T:PLATEAU.CityImport.Import.GmlImportResult
+  fullName: PLATEAU.CityImport.Import.GmlImportResult
+  nameWithType: GmlImportResult
+- uid: PLATEAU.CityImport.Import.GmlImportResult.#ctor(List{GameObject},System.Int32,System.String,GmlFile)
+  name: GmlImportResult(List<GameObject>, Int32, String, GmlFile)
+  href: api/PLATEAU.CityImport.Import.GmlImportResult.html#PLATEAU_CityImport_Import_GmlImportResult__ctor_List_GameObject__System_Int32_System_String_GmlFile_
+  commentId: M:PLATEAU.CityImport.Import.GmlImportResult.#ctor(List{GameObject},System.Int32,System.String,GmlFile)
+  name.vb: GmlImportResult(List(Of GameObject), Int32, String, GmlFile)
+  fullName: PLATEAU.CityImport.Import.GmlImportResult.GmlImportResult(List<GameObject>, System.Int32, System.String, GmlFile)
+  fullName.vb: PLATEAU.CityImport.Import.GmlImportResult.GmlImportResult(List(Of GameObject), System.Int32, System.String, GmlFile)
+  nameWithType: GmlImportResult.GmlImportResult(List<GameObject>, Int32, String, GmlFile)
+  nameWithType.vb: GmlImportResult.GmlImportResult(List(Of GameObject), Int32, String, GmlFile)
+- uid: PLATEAU.CityImport.Import.GmlImportResult.#ctor*
+  name: GmlImportResult
+  href: api/PLATEAU.CityImport.Import.GmlImportResult.html#PLATEAU_CityImport_Import_GmlImportResult__ctor_
+  commentId: Overload:PLATEAU.CityImport.Import.GmlImportResult.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.CityImport.Import.GmlImportResult.GmlImportResult
+  nameWithType: GmlImportResult.GmlImportResult
+- uid: PLATEAU.CityImport.Import.GmlImportResult.GeneratedObjects
+  name: GeneratedObjects
+  href: api/PLATEAU.CityImport.Import.GmlImportResult.html#PLATEAU_CityImport_Import_GmlImportResult_GeneratedObjects
+  commentId: P:PLATEAU.CityImport.Import.GmlImportResult.GeneratedObjects
+  fullName: PLATEAU.CityImport.Import.GmlImportResult.GeneratedObjects
+  nameWithType: GmlImportResult.GeneratedObjects
+- uid: PLATEAU.CityImport.Import.GmlImportResult.GeneratedObjects*
+  name: GeneratedObjects
+  href: api/PLATEAU.CityImport.Import.GmlImportResult.html#PLATEAU_CityImport_Import_GmlImportResult_GeneratedObjects_
+  commentId: Overload:PLATEAU.CityImport.Import.GmlImportResult.GeneratedObjects
+  isSpec: "True"
+  fullName: PLATEAU.CityImport.Import.GmlImportResult.GeneratedObjects
+  nameWithType: GmlImportResult.GeneratedObjects
+- uid: PLATEAU.CityImport.Import.GmlImportResult.GmlFile
+  name: GmlFile
+  href: api/PLATEAU.CityImport.Import.GmlImportResult.html#PLATEAU_CityImport_Import_GmlImportResult_GmlFile
+  commentId: P:PLATEAU.CityImport.Import.GmlImportResult.GmlFile
+  fullName: PLATEAU.CityImport.Import.GmlImportResult.GmlFile
+  nameWithType: GmlImportResult.GmlFile
+- uid: PLATEAU.CityImport.Import.GmlImportResult.GmlFile*
+  name: GmlFile
+  href: api/PLATEAU.CityImport.Import.GmlImportResult.html#PLATEAU_CityImport_Import_GmlImportResult_GmlFile_
+  commentId: Overload:PLATEAU.CityImport.Import.GmlImportResult.GmlFile
+  isSpec: "True"
+  fullName: PLATEAU.CityImport.Import.GmlImportResult.GmlFile
+  nameWithType: GmlImportResult.GmlFile
+- uid: PLATEAU.CityImport.Import.GmlImportResult.GridCode
+  name: GridCode
+  href: api/PLATEAU.CityImport.Import.GmlImportResult.html#PLATEAU_CityImport_Import_GmlImportResult_GridCode
+  commentId: P:PLATEAU.CityImport.Import.GmlImportResult.GridCode
+  fullName: PLATEAU.CityImport.Import.GmlImportResult.GridCode
+  nameWithType: GmlImportResult.GridCode
+- uid: PLATEAU.CityImport.Import.GmlImportResult.GridCode*
+  name: GridCode
+  href: api/PLATEAU.CityImport.Import.GmlImportResult.html#PLATEAU_CityImport_Import_GmlImportResult_GridCode_
+  commentId: Overload:PLATEAU.CityImport.Import.GmlImportResult.GridCode
+  isSpec: "True"
+  fullName: PLATEAU.CityImport.Import.GmlImportResult.GridCode
+  nameWithType: GmlImportResult.GridCode
+- uid: PLATEAU.CityImport.Import.GmlImportResult.TotalGmlCount
+  name: TotalGmlCount
+  href: api/PLATEAU.CityImport.Import.GmlImportResult.html#PLATEAU_CityImport_Import_GmlImportResult_TotalGmlCount
+  commentId: P:PLATEAU.CityImport.Import.GmlImportResult.TotalGmlCount
+  fullName: PLATEAU.CityImport.Import.GmlImportResult.TotalGmlCount
+  nameWithType: GmlImportResult.TotalGmlCount
+- uid: PLATEAU.CityImport.Import.GmlImportResult.TotalGmlCount*
+  name: TotalGmlCount
+  href: api/PLATEAU.CityImport.Import.GmlImportResult.html#PLATEAU_CityImport_Import_GmlImportResult_TotalGmlCount_
+  commentId: Overload:PLATEAU.CityImport.Import.GmlImportResult.TotalGmlCount
+  isSpec: "True"
+  fullName: PLATEAU.CityImport.Import.GmlImportResult.TotalGmlCount
+  nameWithType: GmlImportResult.TotalGmlCount
+- uid: PLATEAU.CityImport.Import.IPostGmlImportProcessor
+  name: IPostGmlImportProcessor
+  href: api/PLATEAU.CityImport.Import.IPostGmlImportProcessor.html
+  commentId: T:PLATEAU.CityImport.Import.IPostGmlImportProcessor
+  fullName: PLATEAU.CityImport.Import.IPostGmlImportProcessor
+  nameWithType: IPostGmlImportProcessor
+- uid: PLATEAU.CityImport.Import.IPostGmlImportProcessor.OnGmlImported(PLATEAU.CityImport.Import.GmlImportResult)
+  name: OnGmlImported(GmlImportResult)
+  href: api/PLATEAU.CityImport.Import.IPostGmlImportProcessor.html#PLATEAU_CityImport_Import_IPostGmlImportProcessor_OnGmlImported_PLATEAU_CityImport_Import_GmlImportResult_
+  commentId: M:PLATEAU.CityImport.Import.IPostGmlImportProcessor.OnGmlImported(PLATEAU.CityImport.Import.GmlImportResult)
+  fullName: PLATEAU.CityImport.Import.IPostGmlImportProcessor.OnGmlImported(PLATEAU.CityImport.Import.GmlImportResult)
+  nameWithType: IPostGmlImportProcessor.OnGmlImported(GmlImportResult)
+- uid: PLATEAU.CityImport.Import.IPostGmlImportProcessor.OnGmlImported*
+  name: OnGmlImported
+  href: api/PLATEAU.CityImport.Import.IPostGmlImportProcessor.html#PLATEAU_CityImport_Import_IPostGmlImportProcessor_OnGmlImported_
+  commentId: Overload:PLATEAU.CityImport.Import.IPostGmlImportProcessor.OnGmlImported
+  isSpec: "True"
+  fullName: PLATEAU.CityImport.Import.IPostGmlImportProcessor.OnGmlImported
+  nameWithType: IPostGmlImportProcessor.OnGmlImported
 - uid: PLATEAU.CityInfo
   name: PLATEAU.CityInfo
   href: api/PLATEAU.CityInfo.html
@@ -5645,6 +5917,28 @@ references:
   commentId: T:PLATEAU.CityInfo.CityObjectList.Attributes
   fullName: PLATEAU.CityInfo.CityObjectList.Attributes
   nameWithType: CityObjectList.Attributes
+- uid: PLATEAU.CityInfo.CityObjectList.Attributes.#ctor
+  name: Attributes()
+  href: api/PLATEAU.CityInfo.CityObjectList.Attributes.html#PLATEAU_CityInfo_CityObjectList_Attributes__ctor
+  commentId: M:PLATEAU.CityInfo.CityObjectList.Attributes.#ctor
+  fullName: PLATEAU.CityInfo.CityObjectList.Attributes.Attributes()
+  nameWithType: CityObjectList.Attributes.Attributes()
+- uid: PLATEAU.CityInfo.CityObjectList.Attributes.#ctor(Dictionary{System.String,PLATEAU.CityInfo.CityObjectList.Attributes.Value})
+  name: Attributes(Dictionary<String, CityObjectList.Attributes.Value>)
+  href: api/PLATEAU.CityInfo.CityObjectList.Attributes.html#PLATEAU_CityInfo_CityObjectList_Attributes__ctor_Dictionary_System_String_PLATEAU_CityInfo_CityObjectList_Attributes_Value__
+  commentId: M:PLATEAU.CityInfo.CityObjectList.Attributes.#ctor(Dictionary{System.String,PLATEAU.CityInfo.CityObjectList.Attributes.Value})
+  name.vb: Attributes(Dictionary(Of String, CityObjectList.Attributes.Value))
+  fullName: PLATEAU.CityInfo.CityObjectList.Attributes.Attributes(Dictionary<System.String, PLATEAU.CityInfo.CityObjectList.Attributes.Value>)
+  fullName.vb: PLATEAU.CityInfo.CityObjectList.Attributes.Attributes(Dictionary(Of System.String, PLATEAU.CityInfo.CityObjectList.Attributes.Value))
+  nameWithType: CityObjectList.Attributes.Attributes(Dictionary<String, CityObjectList.Attributes.Value>)
+  nameWithType.vb: CityObjectList.Attributes.Attributes(Dictionary(Of String, CityObjectList.Attributes.Value))
+- uid: PLATEAU.CityInfo.CityObjectList.Attributes.#ctor*
+  name: Attributes
+  href: api/PLATEAU.CityInfo.CityObjectList.Attributes.html#PLATEAU_CityInfo_CityObjectList_Attributes__ctor_
+  commentId: Overload:PLATEAU.CityInfo.CityObjectList.Attributes.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.CityObjectList.Attributes.Attributes
+  nameWithType: CityObjectList.Attributes.Attributes
 - uid: PLATEAU.CityInfo.CityObjectList.Attributes.AddAttribute(System.String,AttributeType,System.Object)
   name: AddAttribute(String, AttributeType, Object)
   href: api/PLATEAU.CityInfo.CityObjectList.Attributes.html#PLATEAU_CityInfo_CityObjectList_Attributes_AddAttribute_System_String_AttributeType_System_Object_
@@ -5677,6 +5971,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityInfo.CityObjectList.Attributes.AddAttributes
   nameWithType: CityObjectList.Attributes.AddAttributes
+- uid: PLATEAU.CityInfo.CityObjectList.Attributes.AttributeMap
+  name: AttributeMap
+  href: api/PLATEAU.CityInfo.CityObjectList.Attributes.html#PLATEAU_CityInfo_CityObjectList_Attributes_AttributeMap
+  commentId: P:PLATEAU.CityInfo.CityObjectList.Attributes.AttributeMap
+  fullName: PLATEAU.CityInfo.CityObjectList.Attributes.AttributeMap
+  nameWithType: CityObjectList.Attributes.AttributeMap
+- uid: PLATEAU.CityInfo.CityObjectList.Attributes.AttributeMap*
+  name: AttributeMap
+  href: api/PLATEAU.CityInfo.CityObjectList.Attributes.html#PLATEAU_CityInfo_CityObjectList_Attributes_AttributeMap_
+  commentId: Overload:PLATEAU.CityInfo.CityObjectList.Attributes.AttributeMap
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.CityObjectList.Attributes.AttributeMap
+  nameWithType: CityObjectList.Attributes.AttributeMap
 - uid: PLATEAU.CityInfo.CityObjectList.Attributes.Count
   name: Count
   href: api/PLATEAU.CityInfo.CityObjectList.Attributes.html#PLATEAU_CityInfo_CityObjectList_Attributes_Count
@@ -5783,6 +6090,12 @@ references:
   commentId: T:PLATEAU.CityInfo.CityObjectList.Attributes.Value
   fullName: PLATEAU.CityInfo.CityObjectList.Attributes.Value
   nameWithType: CityObjectList.Attributes.Value
+- uid: PLATEAU.CityInfo.CityObjectList.Attributes.Value.#ctor
+  name: Value()
+  href: api/PLATEAU.CityInfo.CityObjectList.Attributes.Value.html#PLATEAU_CityInfo_CityObjectList_Attributes_Value__ctor
+  commentId: M:PLATEAU.CityInfo.CityObjectList.Attributes.Value.#ctor
+  fullName: PLATEAU.CityInfo.CityObjectList.Attributes.Value.Value()
+  nameWithType: CityObjectList.Attributes.Value.Value()
 - uid: PLATEAU.CityInfo.CityObjectList.Attributes.Value.#ctor(AttributeType,System.Object)
   name: Value(AttributeType, Object)
   href: api/PLATEAU.CityInfo.CityObjectList.Attributes.Value.html#PLATEAU_CityInfo_CityObjectList_Attributes_Value__ctor_AttributeType_System_Object_
@@ -5944,6 +6257,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityInfo.CityObjectList.CityObject.CityObjectType
   nameWithType: CityObjectList.CityObject.CityObjectType
+- uid: PLATEAU.CityInfo.CityObjectList.CityObject.CityObjectTypeULong
+  name: CityObjectTypeULong
+  href: api/PLATEAU.CityInfo.CityObjectList.CityObject.html#PLATEAU_CityInfo_CityObjectList_CityObject_CityObjectTypeULong
+  commentId: P:PLATEAU.CityInfo.CityObjectList.CityObject.CityObjectTypeULong
+  fullName: PLATEAU.CityInfo.CityObjectList.CityObject.CityObjectTypeULong
+  nameWithType: CityObjectList.CityObject.CityObjectTypeULong
+- uid: PLATEAU.CityInfo.CityObjectList.CityObject.CityObjectTypeULong*
+  name: CityObjectTypeULong
+  href: api/PLATEAU.CityInfo.CityObjectList.CityObject.html#PLATEAU_CityInfo_CityObjectList_CityObject_CityObjectTypeULong_
+  commentId: Overload:PLATEAU.CityInfo.CityObjectList.CityObject.CityObjectTypeULong
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.CityObjectList.CityObject.CityObjectTypeULong
+  nameWithType: CityObjectList.CityObject.CityObjectTypeULong
 - uid: PLATEAU.CityInfo.CityObjectList.CityObject.CopyWithoutChildren
   name: CopyWithoutChildren()
   href: api/PLATEAU.CityInfo.CityObjectList.CityObject.html#PLATEAU_CityInfo_CityObjectList_CityObject_CopyWithoutChildren
@@ -6025,6 +6351,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityInfo.CityObjectList.CityObject.type
   nameWithType: CityObjectList.CityObject.type
+- uid: PLATEAU.CityInfo.CityObjectList.IsEmpty
+  name: IsEmpty()
+  href: api/PLATEAU.CityInfo.CityObjectList.html#PLATEAU_CityInfo_CityObjectList_IsEmpty
+  commentId: M:PLATEAU.CityInfo.CityObjectList.IsEmpty
+  fullName: PLATEAU.CityInfo.CityObjectList.IsEmpty()
+  nameWithType: CityObjectList.IsEmpty()
+- uid: PLATEAU.CityInfo.CityObjectList.IsEmpty*
+  name: IsEmpty
+  href: api/PLATEAU.CityInfo.CityObjectList.html#PLATEAU_CityInfo_CityObjectList_IsEmpty_
+  commentId: Overload:PLATEAU.CityInfo.CityObjectList.IsEmpty
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.CityObjectList.IsEmpty
+  nameWithType: CityObjectList.IsEmpty
 - uid: PLATEAU.CityInfo.CityObjectList.outsideChildren
   name: outsideChildren
   href: api/PLATEAU.CityInfo.CityObjectList.html#PLATEAU_CityInfo_CityObjectList_outsideChildren
@@ -6043,6 +6382,47 @@ references:
   commentId: F:PLATEAU.CityInfo.CityObjectList.rootCityObjects
   fullName: PLATEAU.CityInfo.CityObjectList.rootCityObjects
   nameWithType: CityObjectList.rootCityObjects
+- uid: PLATEAU.CityInfo.CityObjectListSerializer
+  name: CityObjectListSerializer
+  href: api/PLATEAU.CityInfo.CityObjectListSerializer.html
+  commentId: T:PLATEAU.CityInfo.CityObjectListSerializer
+  fullName: PLATEAU.CityInfo.CityObjectListSerializer
+  nameWithType: CityObjectListSerializer
+- uid: PLATEAU.CityInfo.CityObjectListSerializer.CurrentSerializeVersion
+  name: CurrentSerializeVersion
+  href: api/PLATEAU.CityInfo.CityObjectListSerializer.html#PLATEAU_CityInfo_CityObjectListSerializer_CurrentSerializeVersion
+  commentId: F:PLATEAU.CityInfo.CityObjectListSerializer.CurrentSerializeVersion
+  fullName: PLATEAU.CityInfo.CityObjectListSerializer.CurrentSerializeVersion
+  nameWithType: CityObjectListSerializer.CurrentSerializeVersion
+- uid: PLATEAU.CityInfo.CityObjectListSerializer.Deserialize(System.Int32,System.Byte[],System.String)
+  name: Deserialize(Int32, Byte[], String)
+  href: api/PLATEAU.CityInfo.CityObjectListSerializer.html#PLATEAU_CityInfo_CityObjectListSerializer_Deserialize_System_Int32_System_Byte___System_String_
+  commentId: M:PLATEAU.CityInfo.CityObjectListSerializer.Deserialize(System.Int32,System.Byte[],System.String)
+  name.vb: Deserialize(Int32, Byte(), String)
+  fullName: PLATEAU.CityInfo.CityObjectListSerializer.Deserialize(System.Int32, System.Byte[], System.String)
+  fullName.vb: PLATEAU.CityInfo.CityObjectListSerializer.Deserialize(System.Int32, System.Byte(), System.String)
+  nameWithType: CityObjectListSerializer.Deserialize(Int32, Byte[], String)
+  nameWithType.vb: CityObjectListSerializer.Deserialize(Int32, Byte(), String)
+- uid: PLATEAU.CityInfo.CityObjectListSerializer.Deserialize*
+  name: Deserialize
+  href: api/PLATEAU.CityInfo.CityObjectListSerializer.html#PLATEAU_CityInfo_CityObjectListSerializer_Deserialize_
+  commentId: Overload:PLATEAU.CityInfo.CityObjectListSerializer.Deserialize
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.CityObjectListSerializer.Deserialize
+  nameWithType: CityObjectListSerializer.Deserialize
+- uid: PLATEAU.CityInfo.CityObjectListSerializer.Serialize(PLATEAU.CityInfo.CityObjectList)
+  name: Serialize(CityObjectList)
+  href: api/PLATEAU.CityInfo.CityObjectListSerializer.html#PLATEAU_CityInfo_CityObjectListSerializer_Serialize_PLATEAU_CityInfo_CityObjectList_
+  commentId: M:PLATEAU.CityInfo.CityObjectListSerializer.Serialize(PLATEAU.CityInfo.CityObjectList)
+  fullName: PLATEAU.CityInfo.CityObjectListSerializer.Serialize(PLATEAU.CityInfo.CityObjectList)
+  nameWithType: CityObjectListSerializer.Serialize(CityObjectList)
+- uid: PLATEAU.CityInfo.CityObjectListSerializer.Serialize*
+  name: Serialize
+  href: api/PLATEAU.CityInfo.CityObjectListSerializer.html#PLATEAU_CityInfo_CityObjectListSerializer_Serialize_
+  commentId: Overload:PLATEAU.CityInfo.CityObjectListSerializer.Serialize
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.CityObjectListSerializer.Serialize
+  nameWithType: CityObjectListSerializer.Serialize
 - uid: PLATEAU.CityInfo.CityObjectTypeHierarchy
   name: CityObjectTypeHierarchy
   href: api/PLATEAU.CityInfo.CityObjectTypeHierarchy.html
@@ -6501,6 +6881,32 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.Lod
   nameWithType: PLATEAUCityObjectGroup.Lod
+- uid: PLATEAU.CityInfo.PLATEAUCityObjectGroup.NameOfCityObjectsMessagePack
+  name: NameOfCityObjectsMessagePack
+  href: api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html#PLATEAU_CityInfo_PLATEAUCityObjectGroup_NameOfCityObjectsMessagePack
+  commentId: P:PLATEAU.CityInfo.PLATEAUCityObjectGroup.NameOfCityObjectsMessagePack
+  fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.NameOfCityObjectsMessagePack
+  nameWithType: PLATEAUCityObjectGroup.NameOfCityObjectsMessagePack
+- uid: PLATEAU.CityInfo.PLATEAUCityObjectGroup.NameOfCityObjectsMessagePack*
+  name: NameOfCityObjectsMessagePack
+  href: api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html#PLATEAU_CityInfo_PLATEAUCityObjectGroup_NameOfCityObjectsMessagePack_
+  commentId: Overload:PLATEAU.CityInfo.PLATEAUCityObjectGroup.NameOfCityObjectsMessagePack
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.NameOfCityObjectsMessagePack
+  nameWithType: PLATEAUCityObjectGroup.NameOfCityObjectsMessagePack
+- uid: PLATEAU.CityInfo.PLATEAUCityObjectGroup.OldSerializedCityObjectsLength
+  name: OldSerializedCityObjectsLength
+  href: api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html#PLATEAU_CityInfo_PLATEAUCityObjectGroup_OldSerializedCityObjectsLength
+  commentId: P:PLATEAU.CityInfo.PLATEAUCityObjectGroup.OldSerializedCityObjectsLength
+  fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.OldSerializedCityObjectsLength
+  nameWithType: PLATEAUCityObjectGroup.OldSerializedCityObjectsLength
+- uid: PLATEAU.CityInfo.PLATEAUCityObjectGroup.OldSerializedCityObjectsLength*
+  name: OldSerializedCityObjectsLength
+  href: api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html#PLATEAU_CityInfo_PLATEAUCityObjectGroup_OldSerializedCityObjectsLength_
+  commentId: Overload:PLATEAU.CityInfo.PLATEAUCityObjectGroup.OldSerializedCityObjectsLength
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.OldSerializedCityObjectsLength
+  nameWithType: PLATEAUCityObjectGroup.OldSerializedCityObjectsLength
 - uid: PLATEAU.CityInfo.PLATEAUCityObjectGroup.Package
   name: Package
   href: api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html#PLATEAU_CityInfo_PLATEAUCityObjectGroup_Package
@@ -6527,6 +6933,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.PrimaryCityObjects
   nameWithType: PLATEAUCityObjectGroup.PrimaryCityObjects
+- uid: PLATEAU.CityInfo.PLATEAUCityObjectGroup.SerializeVersion
+  name: SerializeVersion
+  href: api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html#PLATEAU_CityInfo_PLATEAUCityObjectGroup_SerializeVersion
+  commentId: P:PLATEAU.CityInfo.PLATEAUCityObjectGroup.SerializeVersion
+  fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.SerializeVersion
+  nameWithType: PLATEAUCityObjectGroup.SerializeVersion
+- uid: PLATEAU.CityInfo.PLATEAUCityObjectGroup.SerializeVersion*
+  name: SerializeVersion
+  href: api/PLATEAU.CityInfo.PLATEAUCityObjectGroup.html#PLATEAU_CityInfo_PLATEAUCityObjectGroup_SerializeVersion_
+  commentId: Overload:PLATEAU.CityInfo.PLATEAUCityObjectGroup.SerializeVersion
+  isSpec: "True"
+  fullName: PLATEAU.CityInfo.PLATEAUCityObjectGroup.SerializeVersion
+  nameWithType: PLATEAUCityObjectGroup.SerializeVersion
 - uid: PLATEAU.CityInfo.PLATEAUInstancedCityModel
   name: PLATEAUInstancedCityModel
   href: api/PLATEAU.CityInfo.PLATEAUInstancedCityModel.html
@@ -6637,12 +7056,12 @@ references:
   isSpec: "True"
   fullName: PLATEAU.CityInfo.PLATEAUInstancedCityModel.Latitude
   nameWithType: PLATEAUInstancedCityModel.Latitude
-- uid: PLATEAU.CityInfo.PLATEAUInstancedCityModel.LoadGmlAsync(Transform)
-  name: LoadGmlAsync(Transform)
-  href: api/PLATEAU.CityInfo.PLATEAUInstancedCityModel.html#PLATEAU_CityInfo_PLATEAUInstancedCityModel_LoadGmlAsync_Transform_
-  commentId: M:PLATEAU.CityInfo.PLATEAUInstancedCityModel.LoadGmlAsync(Transform)
-  fullName: PLATEAU.CityInfo.PLATEAUInstancedCityModel.LoadGmlAsync(Transform)
-  nameWithType: PLATEAUInstancedCityModel.LoadGmlAsync(Transform)
+- uid: PLATEAU.CityInfo.PLATEAUInstancedCityModel.LoadGmlAsync(Transform,System.String)
+  name: LoadGmlAsync(Transform, String)
+  href: api/PLATEAU.CityInfo.PLATEAUInstancedCityModel.html#PLATEAU_CityInfo_PLATEAUInstancedCityModel_LoadGmlAsync_Transform_System_String_
+  commentId: M:PLATEAU.CityInfo.PLATEAUInstancedCityModel.LoadGmlAsync(Transform,System.String)
+  fullName: PLATEAU.CityInfo.PLATEAUInstancedCityModel.LoadGmlAsync(Transform, System.String)
+  nameWithType: PLATEAUInstancedCityModel.LoadGmlAsync(Transform, String)
 - uid: PLATEAU.CityInfo.PLATEAUInstancedCityModel.LoadGmlAsync*
   name: LoadGmlAsync
   href: api/PLATEAU.CityInfo.PLATEAUInstancedCityModel.html#PLATEAU_CityInfo_PLATEAUInstancedCityModel_LoadGmlAsync_
@@ -7774,70 +8193,530 @@ references:
   commentId: T:PLATEAU.DynamicTile.AddressableLoader
   fullName: PLATEAU.DynamicTile.AddressableLoader
   nameWithType: AddressableLoader
-- uid: PLATEAU.DynamicTile.AddressableLoader.Initialize(System.String)
-  name: Initialize(String)
-  href: api/PLATEAU.DynamicTile.AddressableLoader.html#PLATEAU_DynamicTile_AddressableLoader_Initialize_System_String_
-  commentId: M:PLATEAU.DynamicTile.AddressableLoader.Initialize(System.String)
-  fullName: PLATEAU.DynamicTile.AddressableLoader.Initialize(System.String)
-  nameWithType: AddressableLoader.Initialize(String)
-- uid: PLATEAU.DynamicTile.AddressableLoader.Initialize*
-  name: Initialize
-  href: api/PLATEAU.DynamicTile.AddressableLoader.html#PLATEAU_DynamicTile_AddressableLoader_Initialize_
-  commentId: Overload:PLATEAU.DynamicTile.AddressableLoader.Initialize
+- uid: PLATEAU.DynamicTile.AddressableLoader.InitializeAsync(System.String)
+  name: InitializeAsync(String)
+  href: api/PLATEAU.DynamicTile.AddressableLoader.html#PLATEAU_DynamicTile_AddressableLoader_InitializeAsync_System_String_
+  commentId: M:PLATEAU.DynamicTile.AddressableLoader.InitializeAsync(System.String)
+  fullName: PLATEAU.DynamicTile.AddressableLoader.InitializeAsync(System.String)
+  nameWithType: AddressableLoader.InitializeAsync(String)
+- uid: PLATEAU.DynamicTile.AddressableLoader.InitializeAsync*
+  name: InitializeAsync
+  href: api/PLATEAU.DynamicTile.AddressableLoader.html#PLATEAU_DynamicTile_AddressableLoader_InitializeAsync_
+  commentId: Overload:PLATEAU.DynamicTile.AddressableLoader.InitializeAsync
   isSpec: "True"
-  fullName: PLATEAU.DynamicTile.AddressableLoader.Initialize
-  nameWithType: AddressableLoader.Initialize
-- uid: PLATEAU.DynamicTile.AddressableLoader.InstantiateAssetAsync(System.String,Transform)
-  name: InstantiateAssetAsync(String, Transform)
-  href: api/PLATEAU.DynamicTile.AddressableLoader.html#PLATEAU_DynamicTile_AddressableLoader_InstantiateAssetAsync_System_String_Transform_
-  commentId: M:PLATEAU.DynamicTile.AddressableLoader.InstantiateAssetAsync(System.String,Transform)
-  fullName: PLATEAU.DynamicTile.AddressableLoader.InstantiateAssetAsync(System.String, Transform)
-  nameWithType: AddressableLoader.InstantiateAssetAsync(String, Transform)
-- uid: PLATEAU.DynamicTile.AddressableLoader.InstantiateAssetAsync*
-  name: InstantiateAssetAsync
-  href: api/PLATEAU.DynamicTile.AddressableLoader.html#PLATEAU_DynamicTile_AddressableLoader_InstantiateAssetAsync_
-  commentId: Overload:PLATEAU.DynamicTile.AddressableLoader.InstantiateAssetAsync
+  fullName: PLATEAU.DynamicTile.AddressableLoader.InitializeAsync
+  nameWithType: AddressableLoader.InitializeAsync
+- uid: PLATEAU.DynamicTile.DistanceWithIndex
+  name: DistanceWithIndex
+  href: api/PLATEAU.DynamicTile.DistanceWithIndex.html
+  commentId: T:PLATEAU.DynamicTile.DistanceWithIndex
+  fullName: PLATEAU.DynamicTile.DistanceWithIndex
+  nameWithType: DistanceWithIndex
+- uid: PLATEAU.DynamicTile.DistanceWithIndex.#ctor(System.Single,System.Int32)
+  name: DistanceWithIndex(Single, Int32)
+  href: api/PLATEAU.DynamicTile.DistanceWithIndex.html#PLATEAU_DynamicTile_DistanceWithIndex__ctor_System_Single_System_Int32_
+  commentId: M:PLATEAU.DynamicTile.DistanceWithIndex.#ctor(System.Single,System.Int32)
+  fullName: PLATEAU.DynamicTile.DistanceWithIndex.DistanceWithIndex(System.Single, System.Int32)
+  nameWithType: DistanceWithIndex.DistanceWithIndex(Single, Int32)
+- uid: PLATEAU.DynamicTile.DistanceWithIndex.#ctor*
+  name: DistanceWithIndex
+  href: api/PLATEAU.DynamicTile.DistanceWithIndex.html#PLATEAU_DynamicTile_DistanceWithIndex__ctor_
+  commentId: Overload:PLATEAU.DynamicTile.DistanceWithIndex.#ctor
   isSpec: "True"
-  fullName: PLATEAU.DynamicTile.AddressableLoader.InstantiateAssetAsync
-  nameWithType: AddressableLoader.InstantiateAssetAsync
-- uid: PLATEAU.DynamicTile.AddressableLoader.LoadCatalogAsync(System.String,System.String)
-  name: LoadCatalogAsync(String, String)
-  href: api/PLATEAU.DynamicTile.AddressableLoader.html#PLATEAU_DynamicTile_AddressableLoader_LoadCatalogAsync_System_String_System_String_
-  commentId: M:PLATEAU.DynamicTile.AddressableLoader.LoadCatalogAsync(System.String,System.String)
-  fullName: PLATEAU.DynamicTile.AddressableLoader.LoadCatalogAsync(System.String, System.String)
-  nameWithType: AddressableLoader.LoadCatalogAsync(String, String)
-- uid: PLATEAU.DynamicTile.AddressableLoader.LoadCatalogAsync*
-  name: LoadCatalogAsync
-  href: api/PLATEAU.DynamicTile.AddressableLoader.html#PLATEAU_DynamicTile_AddressableLoader_LoadCatalogAsync_
-  commentId: Overload:PLATEAU.DynamicTile.AddressableLoader.LoadCatalogAsync
+  fullName: PLATEAU.DynamicTile.DistanceWithIndex.DistanceWithIndex
+  nameWithType: DistanceWithIndex.DistanceWithIndex
+- uid: PLATEAU.DynamicTile.DistanceWithIndex.CompareTo(PLATEAU.DynamicTile.DistanceWithIndex)
+  name: CompareTo(DistanceWithIndex)
+  href: api/PLATEAU.DynamicTile.DistanceWithIndex.html#PLATEAU_DynamicTile_DistanceWithIndex_CompareTo_PLATEAU_DynamicTile_DistanceWithIndex_
+  commentId: M:PLATEAU.DynamicTile.DistanceWithIndex.CompareTo(PLATEAU.DynamicTile.DistanceWithIndex)
+  fullName: PLATEAU.DynamicTile.DistanceWithIndex.CompareTo(PLATEAU.DynamicTile.DistanceWithIndex)
+  nameWithType: DistanceWithIndex.CompareTo(DistanceWithIndex)
+- uid: PLATEAU.DynamicTile.DistanceWithIndex.CompareTo*
+  name: CompareTo
+  href: api/PLATEAU.DynamicTile.DistanceWithIndex.html#PLATEAU_DynamicTile_DistanceWithIndex_CompareTo_
+  commentId: Overload:PLATEAU.DynamicTile.DistanceWithIndex.CompareTo
   isSpec: "True"
-  fullName: PLATEAU.DynamicTile.AddressableLoader.LoadCatalogAsync
-  nameWithType: AddressableLoader.LoadCatalogAsync
-- uid: PLATEAU.DynamicTile.AddressableLoader.LoadLocalAddresses(System.String)
-  name: LoadLocalAddresses(String)
-  href: api/PLATEAU.DynamicTile.AddressableLoader.html#PLATEAU_DynamicTile_AddressableLoader_LoadLocalAddresses_System_String_
-  commentId: M:PLATEAU.DynamicTile.AddressableLoader.LoadLocalAddresses(System.String)
-  fullName: PLATEAU.DynamicTile.AddressableLoader.LoadLocalAddresses(System.String)
-  nameWithType: AddressableLoader.LoadLocalAddresses(String)
-- uid: PLATEAU.DynamicTile.AddressableLoader.LoadLocalAddresses*
-  name: LoadLocalAddresses
-  href: api/PLATEAU.DynamicTile.AddressableLoader.html#PLATEAU_DynamicTile_AddressableLoader_LoadLocalAddresses_
-  commentId: Overload:PLATEAU.DynamicTile.AddressableLoader.LoadLocalAddresses
+  fullName: PLATEAU.DynamicTile.DistanceWithIndex.CompareTo
+  nameWithType: DistanceWithIndex.CompareTo
+- uid: PLATEAU.DynamicTile.DistanceWithIndex.Distance
+  name: Distance
+  href: api/PLATEAU.DynamicTile.DistanceWithIndex.html#PLATEAU_DynamicTile_DistanceWithIndex_Distance
+  commentId: F:PLATEAU.DynamicTile.DistanceWithIndex.Distance
+  fullName: PLATEAU.DynamicTile.DistanceWithIndex.Distance
+  nameWithType: DistanceWithIndex.Distance
+- uid: PLATEAU.DynamicTile.DistanceWithIndex.Index
+  name: Index
+  href: api/PLATEAU.DynamicTile.DistanceWithIndex.html#PLATEAU_DynamicTile_DistanceWithIndex_Index
+  commentId: F:PLATEAU.DynamicTile.DistanceWithIndex.Index
+  fullName: PLATEAU.DynamicTile.DistanceWithIndex.Index
+  nameWithType: DistanceWithIndex.Index
+- uid: PLATEAU.DynamicTile.DynamicTileExporter
+  name: DynamicTileExporter
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html
+  commentId: T:PLATEAU.DynamicTile.DynamicTileExporter
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter
+  nameWithType: DynamicTileExporter
+- uid: PLATEAU.DynamicTile.DynamicTileExporter.#ctor(IProgressDisplay)
+  name: DynamicTileExporter(IProgressDisplay)
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html#PLATEAU_DynamicTile_DynamicTileExporter__ctor_IProgressDisplay_
+  commentId: M:PLATEAU.DynamicTile.DynamicTileExporter.#ctor(IProgressDisplay)
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter.DynamicTileExporter(IProgressDisplay)
+  nameWithType: DynamicTileExporter.DynamicTileExporter(IProgressDisplay)
+- uid: PLATEAU.DynamicTile.DynamicTileExporter.#ctor*
+  name: DynamicTileExporter
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html#PLATEAU_DynamicTile_DynamicTileExporter__ctor_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileExporter.#ctor
   isSpec: "True"
-  fullName: PLATEAU.DynamicTile.AddressableLoader.LoadLocalAddresses
-  nameWithType: AddressableLoader.LoadLocalAddresses
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter.DynamicTileExporter
+  nameWithType: DynamicTileExporter.DynamicTileExporter
+- uid: PLATEAU.DynamicTile.DynamicTileExporter.Cancel
+  name: Cancel()
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html#PLATEAU_DynamicTile_DynamicTileExporter_Cancel
+  commentId: M:PLATEAU.DynamicTile.DynamicTileExporter.Cancel
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter.Cancel()
+  nameWithType: DynamicTileExporter.Cancel()
+- uid: PLATEAU.DynamicTile.DynamicTileExporter.Cancel*
+  name: Cancel
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html#PLATEAU_DynamicTile_DynamicTileExporter_Cancel_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileExporter.Cancel
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter.Cancel
+  nameWithType: DynamicTileExporter.Cancel
+- uid: PLATEAU.DynamicTile.DynamicTileExporter.CleanupTempFolder
+  name: CleanupTempFolder()
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html#PLATEAU_DynamicTile_DynamicTileExporter_CleanupTempFolder
+  commentId: M:PLATEAU.DynamicTile.DynamicTileExporter.CleanupTempFolder
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter.CleanupTempFolder()
+  nameWithType: DynamicTileExporter.CleanupTempFolder()
+- uid: PLATEAU.DynamicTile.DynamicTileExporter.CleanupTempFolder*
+  name: CleanupTempFolder
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html#PLATEAU_DynamicTile_DynamicTileExporter_CleanupTempFolder_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileExporter.CleanupTempFolder
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter.CleanupTempFolder
+  nameWithType: DynamicTileExporter.CleanupTempFolder
+- uid: PLATEAU.DynamicTile.DynamicTileExporter.CompleteProcessing
+  name: CompleteProcessing()
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html#PLATEAU_DynamicTile_DynamicTileExporter_CompleteProcessing
+  commentId: M:PLATEAU.DynamicTile.DynamicTileExporter.CompleteProcessing
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter.CompleteProcessing()
+  nameWithType: DynamicTileExporter.CompleteProcessing()
+- uid: PLATEAU.DynamicTile.DynamicTileExporter.CompleteProcessing*
+  name: CompleteProcessing
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html#PLATEAU_DynamicTile_DynamicTileExporter_CompleteProcessing_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileExporter.CompleteProcessing
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter.CompleteProcessing
+  nameWithType: DynamicTileExporter.CompleteProcessing
+- uid: PLATEAU.DynamicTile.DynamicTileExporter.Context
+  name: Context
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html#PLATEAU_DynamicTile_DynamicTileExporter_Context
+  commentId: P:PLATEAU.DynamicTile.DynamicTileExporter.Context
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter.Context
+  nameWithType: DynamicTileExporter.Context
+- uid: PLATEAU.DynamicTile.DynamicTileExporter.Context*
+  name: Context
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html#PLATEAU_DynamicTile_DynamicTileExporter_Context_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileExporter.Context
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter.Context
+  nameWithType: DynamicTileExporter.Context
+- uid: PLATEAU.DynamicTile.DynamicTileExporter.FocusSceneViewCameraToTiles(PLATEAU.DynamicTile.PLATEAUTileManager)
+  name: FocusSceneViewCameraToTiles(PLATEAUTileManager)
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html#PLATEAU_DynamicTile_DynamicTileExporter_FocusSceneViewCameraToTiles_PLATEAU_DynamicTile_PLATEAUTileManager_
+  commentId: M:PLATEAU.DynamicTile.DynamicTileExporter.FocusSceneViewCameraToTiles(PLATEAU.DynamicTile.PLATEAUTileManager)
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter.FocusSceneViewCameraToTiles(PLATEAU.DynamicTile.PLATEAUTileManager)
+  nameWithType: DynamicTileExporter.FocusSceneViewCameraToTiles(PLATEAUTileManager)
+- uid: PLATEAU.DynamicTile.DynamicTileExporter.FocusSceneViewCameraToTiles*
+  name: FocusSceneViewCameraToTiles
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html#PLATEAU_DynamicTile_DynamicTileExporter_FocusSceneViewCameraToTiles_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileExporter.FocusSceneViewCameraToTiles
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter.FocusSceneViewCameraToTiles
+  nameWithType: DynamicTileExporter.FocusSceneViewCameraToTiles
+- uid: PLATEAU.DynamicTile.DynamicTileExporter.OnGmlImported(GmlImportResult)
+  name: OnGmlImported(GmlImportResult)
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html#PLATEAU_DynamicTile_DynamicTileExporter_OnGmlImported_GmlImportResult_
+  commentId: M:PLATEAU.DynamicTile.DynamicTileExporter.OnGmlImported(GmlImportResult)
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter.OnGmlImported(GmlImportResult)
+  nameWithType: DynamicTileExporter.OnGmlImported(GmlImportResult)
+- uid: PLATEAU.DynamicTile.DynamicTileExporter.OnGmlImported*
+  name: OnGmlImported
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html#PLATEAU_DynamicTile_DynamicTileExporter_OnGmlImported_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileExporter.OnGmlImported
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter.OnGmlImported
+  nameWithType: DynamicTileExporter.OnGmlImported
+- uid: PLATEAU.DynamicTile.DynamicTileExporter.ProcessCityObject(PLATEAUCityObjectGroup,ConvertToAssetConfig,System.String,PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore,Action{System.String})
+  name: ProcessCityObject(PLATEAUCityObjectGroup, ConvertToAssetConfig, String, PLATEAUDynamicTileMetaStore, Action<String>)
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html#PLATEAU_DynamicTile_DynamicTileExporter_ProcessCityObject_PLATEAUCityObjectGroup_ConvertToAssetConfig_System_String_PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_Action_System_String__
+  commentId: M:PLATEAU.DynamicTile.DynamicTileExporter.ProcessCityObject(PLATEAUCityObjectGroup,ConvertToAssetConfig,System.String,PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore,Action{System.String})
+  name.vb: ProcessCityObject(PLATEAUCityObjectGroup, ConvertToAssetConfig, String, PLATEAUDynamicTileMetaStore, Action(Of String))
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter.ProcessCityObject(PLATEAUCityObjectGroup, ConvertToAssetConfig, System.String, PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore, Action<System.String>)
+  fullName.vb: PLATEAU.DynamicTile.DynamicTileExporter.ProcessCityObject(PLATEAUCityObjectGroup, ConvertToAssetConfig, System.String, PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore, Action(Of System.String))
+  nameWithType: DynamicTileExporter.ProcessCityObject(PLATEAUCityObjectGroup, ConvertToAssetConfig, String, PLATEAUDynamicTileMetaStore, Action<String>)
+  nameWithType.vb: DynamicTileExporter.ProcessCityObject(PLATEAUCityObjectGroup, ConvertToAssetConfig, String, PLATEAUDynamicTileMetaStore, Action(Of String))
+- uid: PLATEAU.DynamicTile.DynamicTileExporter.ProcessCityObject*
+  name: ProcessCityObject
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html#PLATEAU_DynamicTile_DynamicTileExporter_ProcessCityObject_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileExporter.ProcessCityObject
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter.ProcessCityObject
+  nameWithType: DynamicTileExporter.ProcessCityObject
+- uid: PLATEAU.DynamicTile.DynamicTileExporter.SetupPreProcessing(CityImportConfig)
+  name: SetupPreProcessing(CityImportConfig)
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html#PLATEAU_DynamicTile_DynamicTileExporter_SetupPreProcessing_CityImportConfig_
+  commentId: M:PLATEAU.DynamicTile.DynamicTileExporter.SetupPreProcessing(CityImportConfig)
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter.SetupPreProcessing(CityImportConfig)
+  nameWithType: DynamicTileExporter.SetupPreProcessing(CityImportConfig)
+- uid: PLATEAU.DynamicTile.DynamicTileExporter.SetupPreProcessing*
+  name: SetupPreProcessing
+  href: api/PLATEAU.DynamicTile.DynamicTileExporter.html#PLATEAU_DynamicTile_DynamicTileExporter_SetupPreProcessing_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileExporter.SetupPreProcessing
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.DynamicTileExporter.SetupPreProcessing
+  nameWithType: DynamicTileExporter.SetupPreProcessing
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext
+  name: DynamicTileProcessingContext
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html
+  commentId: T:PLATEAU.DynamicTile.DynamicTileProcessingContext
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext
+  nameWithType: DynamicTileProcessingContext
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.#ctor(DynamicTileImportConfig)
+  name: DynamicTileProcessingContext(DynamicTileImportConfig)
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext__ctor_DynamicTileImportConfig_
+  commentId: M:PLATEAU.DynamicTile.DynamicTileProcessingContext.#ctor(DynamicTileImportConfig)
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.DynamicTileProcessingContext(DynamicTileImportConfig)
+  nameWithType: DynamicTileProcessingContext.DynamicTileProcessingContext(DynamicTileImportConfig)
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.#ctor*
+  name: DynamicTileProcessingContext
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext__ctor_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileProcessingContext.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.DynamicTileProcessingContext
+  nameWithType: DynamicTileProcessingContext.DynamicTileProcessingContext
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.AddressableGroupBaseName
+  name: AddressableGroupBaseName
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_AddressableGroupBaseName
+  commentId: F:PLATEAU.DynamicTile.DynamicTileProcessingContext.AddressableGroupBaseName
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.AddressableGroupBaseName
+  nameWithType: DynamicTileProcessingContext.AddressableGroupBaseName
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.AddressableGroupName
+  name: AddressableGroupName
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_AddressableGroupName
+  commentId: P:PLATEAU.DynamicTile.DynamicTileProcessingContext.AddressableGroupName
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.AddressableGroupName
+  nameWithType: DynamicTileProcessingContext.AddressableGroupName
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.AddressableGroupName*
+  name: AddressableGroupName
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_AddressableGroupName_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileProcessingContext.AddressableGroupName
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.AddressableGroupName
+  nameWithType: DynamicTileProcessingContext.AddressableGroupName
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.AssetConfig
+  name: AssetConfig
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_AssetConfig
+  commentId: P:PLATEAU.DynamicTile.DynamicTileProcessingContext.AssetConfig
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.AssetConfig
+  nameWithType: DynamicTileProcessingContext.AssetConfig
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.AssetConfig*
+  name: AssetConfig
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_AssetConfig_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileProcessingContext.AssetConfig
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.AssetConfig
+  nameWithType: DynamicTileProcessingContext.AssetConfig
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.BuildFolderPath
+  name: BuildFolderPath
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_BuildFolderPath
+  commentId: P:PLATEAU.DynamicTile.DynamicTileProcessingContext.BuildFolderPath
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.BuildFolderPath
+  nameWithType: DynamicTileProcessingContext.BuildFolderPath
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.BuildFolderPath*
+  name: BuildFolderPath
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_BuildFolderPath_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileProcessingContext.BuildFolderPath
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.BuildFolderPath
+  nameWithType: DynamicTileProcessingContext.BuildFolderPath
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.Config
+  name: Config
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_Config
+  commentId: P:PLATEAU.DynamicTile.DynamicTileProcessingContext.Config
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.Config
+  nameWithType: DynamicTileProcessingContext.Config
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.Config*
+  name: Config
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_Config_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileProcessingContext.Config
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.Config
+  nameWithType: DynamicTileProcessingContext.Config
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.GmlCount
+  name: GmlCount
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_GmlCount
+  commentId: P:PLATEAU.DynamicTile.DynamicTileProcessingContext.GmlCount
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.GmlCount
+  nameWithType: DynamicTileProcessingContext.GmlCount
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.GmlCount*
+  name: GmlCount
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_GmlCount_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileProcessingContext.GmlCount
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.GmlCount
+  nameWithType: DynamicTileProcessingContext.GmlCount
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.IncrementAndGetLoadedGmlCount
+  name: IncrementAndGetLoadedGmlCount()
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_IncrementAndGetLoadedGmlCount
+  commentId: M:PLATEAU.DynamicTile.DynamicTileProcessingContext.IncrementAndGetLoadedGmlCount
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.IncrementAndGetLoadedGmlCount()
+  nameWithType: DynamicTileProcessingContext.IncrementAndGetLoadedGmlCount()
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.IncrementAndGetLoadedGmlCount*
+  name: IncrementAndGetLoadedGmlCount
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_IncrementAndGetLoadedGmlCount_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileProcessingContext.IncrementAndGetLoadedGmlCount
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.IncrementAndGetLoadedGmlCount
+  nameWithType: DynamicTileProcessingContext.IncrementAndGetLoadedGmlCount
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.IsExcludeAssetFolder
+  name: IsExcludeAssetFolder
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_IsExcludeAssetFolder
+  commentId: P:PLATEAU.DynamicTile.DynamicTileProcessingContext.IsExcludeAssetFolder
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.IsExcludeAssetFolder
+  nameWithType: DynamicTileProcessingContext.IsExcludeAssetFolder
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.IsExcludeAssetFolder*
+  name: IsExcludeAssetFolder
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_IsExcludeAssetFolder_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileProcessingContext.IsExcludeAssetFolder
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.IsExcludeAssetFolder
+  nameWithType: DynamicTileProcessingContext.IsExcludeAssetFolder
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.IsValid
+  name: IsValid()
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_IsValid
+  commentId: M:PLATEAU.DynamicTile.DynamicTileProcessingContext.IsValid
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.IsValid()
+  nameWithType: DynamicTileProcessingContext.IsValid()
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.IsValid*
+  name: IsValid
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_IsValid_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileProcessingContext.IsValid
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.IsValid
+  nameWithType: DynamicTileProcessingContext.IsValid
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.MetaStore
+  name: MetaStore
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_MetaStore
+  commentId: P:PLATEAU.DynamicTile.DynamicTileProcessingContext.MetaStore
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.MetaStore
+  nameWithType: DynamicTileProcessingContext.MetaStore
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.MetaStore*
+  name: MetaStore
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_MetaStore_
+  commentId: Overload:PLATEAU.DynamicTile.DynamicTileProcessingContext.MetaStore
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.MetaStore
+  nameWithType: DynamicTileProcessingContext.MetaStore
+- uid: PLATEAU.DynamicTile.DynamicTileProcessingContext.PrefabsTempSavePath
+  name: PrefabsTempSavePath
+  href: api/PLATEAU.DynamicTile.DynamicTileProcessingContext.html#PLATEAU_DynamicTile_DynamicTileProcessingContext_PrefabsTempSavePath
+  commentId: F:PLATEAU.DynamicTile.DynamicTileProcessingContext.PrefabsTempSavePath
+  fullName: PLATEAU.DynamicTile.DynamicTileProcessingContext.PrefabsTempSavePath
+  nameWithType: DynamicTileProcessingContext.PrefabsTempSavePath
+- uid: PLATEAU.DynamicTile.LoadState
+  name: LoadState
+  href: api/PLATEAU.DynamicTile.LoadState.html
+  commentId: T:PLATEAU.DynamicTile.LoadState
+  fullName: PLATEAU.DynamicTile.LoadState
+  nameWithType: LoadState
+- uid: PLATEAU.DynamicTile.LoadState.Load
+  name: Load
+  href: api/PLATEAU.DynamicTile.LoadState.html#PLATEAU_DynamicTile_LoadState_Load
+  commentId: F:PLATEAU.DynamicTile.LoadState.Load
+  fullName: PLATEAU.DynamicTile.LoadState.Load
+  nameWithType: LoadState.Load
+- uid: PLATEAU.DynamicTile.LoadState.None
+  name: None
+  href: api/PLATEAU.DynamicTile.LoadState.html#PLATEAU_DynamicTile_LoadState_None
+  commentId: F:PLATEAU.DynamicTile.LoadState.None
+  fullName: PLATEAU.DynamicTile.LoadState.None
+  nameWithType: LoadState.None
+- uid: PLATEAU.DynamicTile.LoadState.Unload
+  name: Unload
+  href: api/PLATEAU.DynamicTile.LoadState.html#PLATEAU_DynamicTile_LoadState_Unload
+  commentId: F:PLATEAU.DynamicTile.LoadState.Unload
+  fullName: PLATEAU.DynamicTile.LoadState.Unload
+  nameWithType: LoadState.Unload
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator
+  name: MultiResolutionPrefabCreator
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html
+  commentId: T:PLATEAU.DynamicTile.MultiResolutionPrefabCreator
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator
+  nameWithType: MultiResolutionPrefabCreator
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.#ctor(System.String)
+  name: MultiResolutionPrefabCreator(String)
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator__ctor_System_String_
+  commentId: M:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.#ctor(System.String)
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.MultiResolutionPrefabCreator(System.String)
+  nameWithType: MultiResolutionPrefabCreator.MultiResolutionPrefabCreator(String)
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.#ctor*
+  name: MultiResolutionPrefabCreator
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator__ctor_
+  commentId: Overload:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.MultiResolutionPrefabCreator
+  nameWithType: MultiResolutionPrefabCreator.MultiResolutionPrefabCreator
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.ClearResults
+  name: ClearResults()
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_ClearResults
+  commentId: M:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.ClearResults
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.ClearResults()
+  nameWithType: MultiResolutionPrefabCreator.ClearResults()
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.ClearResults*
+  name: ClearResults
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_ClearResults_
+  commentId: Overload:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.ClearResults
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.ClearResults
+  nameWithType: MultiResolutionPrefabCreator.ClearResults
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreatedResults
+  name: CreatedResults
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreatedResults
+  commentId: P:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreatedResults
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreatedResults
+  nameWithType: MultiResolutionPrefabCreator.CreatedResults
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreatedResults*
+  name: CreatedResults
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreatedResults_
+  commentId: Overload:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreatedResults
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreatedResults
+  nameWithType: MultiResolutionPrefabCreator.CreatedResults
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromGameObject(GameObject,System.Int32,System.Int32)
+  name: CreateFromGameObject(GameObject, Int32, Int32)
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateFromGameObject_GameObject_System_Int32_System_Int32_
+  commentId: M:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromGameObject(GameObject,System.Int32,System.Int32)
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromGameObject(GameObject, System.Int32, System.Int32)
+  nameWithType: MultiResolutionPrefabCreator.CreateFromGameObject(GameObject, Int32, Int32)
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromGameObject(GameObject,System.String,System.Int32,System.Int32)
+  name: CreateFromGameObject(GameObject, String, Int32, Int32)
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateFromGameObject_GameObject_System_String_System_Int32_System_Int32_
+  commentId: M:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromGameObject(GameObject,System.String,System.Int32,System.Int32)
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromGameObject(GameObject, System.String, System.Int32, System.Int32)
+  nameWithType: MultiResolutionPrefabCreator.CreateFromGameObject(GameObject, String, Int32, Int32)
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromGameObject*
+  name: CreateFromGameObject
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateFromGameObject_
+  commentId: Overload:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromGameObject
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromGameObject
+  nameWithType: MultiResolutionPrefabCreator.CreateFromGameObject
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefab(GameObject,System.Int32,System.Int32)
+  name: CreateFromPrefab(GameObject, Int32, Int32)
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateFromPrefab_GameObject_System_Int32_System_Int32_
+  commentId: M:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefab(GameObject,System.Int32,System.Int32)
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefab(GameObject, System.Int32, System.Int32)
+  nameWithType: MultiResolutionPrefabCreator.CreateFromPrefab(GameObject, Int32, Int32)
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefab(GameObject,System.String,System.Int32,System.Int32)
+  name: CreateFromPrefab(GameObject, String, Int32, Int32)
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateFromPrefab_GameObject_System_String_System_Int32_System_Int32_
+  commentId: M:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefab(GameObject,System.String,System.Int32,System.Int32)
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefab(GameObject, System.String, System.Int32, System.Int32)
+  nameWithType: MultiResolutionPrefabCreator.CreateFromPrefab(GameObject, String, Int32, Int32)
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefab*
+  name: CreateFromPrefab
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateFromPrefab_
+  commentId: Overload:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefab
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefab
+  nameWithType: MultiResolutionPrefabCreator.CreateFromPrefab
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefabs(List{GameObject},System.Int32,System.Int32)
+  name: CreateFromPrefabs(List<GameObject>, Int32, Int32)
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateFromPrefabs_List_GameObject__System_Int32_System_Int32_
+  commentId: M:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefabs(List{GameObject},System.Int32,System.Int32)
+  name.vb: CreateFromPrefabs(List(Of GameObject), Int32, Int32)
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefabs(List<GameObject>, System.Int32, System.Int32)
+  fullName.vb: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefabs(List(Of GameObject), System.Int32, System.Int32)
+  nameWithType: MultiResolutionPrefabCreator.CreateFromPrefabs(List<GameObject>, Int32, Int32)
+  nameWithType.vb: MultiResolutionPrefabCreator.CreateFromPrefabs(List(Of GameObject), Int32, Int32)
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefabs(List{GameObject},System.String,System.Int32,System.Int32)
+  name: CreateFromPrefabs(List<GameObject>, String, Int32, Int32)
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateFromPrefabs_List_GameObject__System_String_System_Int32_System_Int32_
+  commentId: M:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefabs(List{GameObject},System.String,System.Int32,System.Int32)
+  name.vb: CreateFromPrefabs(List(Of GameObject), String, Int32, Int32)
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefabs(List<GameObject>, System.String, System.Int32, System.Int32)
+  fullName.vb: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefabs(List(Of GameObject), System.String, System.Int32, System.Int32)
+  nameWithType: MultiResolutionPrefabCreator.CreateFromPrefabs(List<GameObject>, String, Int32, Int32)
+  nameWithType.vb: MultiResolutionPrefabCreator.CreateFromPrefabs(List(Of GameObject), String, Int32, Int32)
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefabs*
+  name: CreateFromPrefabs
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateFromPrefabs_
+  commentId: Overload:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefabs
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefabs
+  nameWithType: MultiResolutionPrefabCreator.CreateFromPrefabs
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateUniqueResourcePath(System.String,System.Int32)
+  name: CreateUniqueResourcePath(String, Int32)
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateUniqueResourcePath_System_String_System_Int32_
+  commentId: M:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateUniqueResourcePath(System.String,System.Int32)
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateUniqueResourcePath(System.String, System.Int32)
+  nameWithType: MultiResolutionPrefabCreator.CreateUniqueResourcePath(String, Int32)
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateUniqueResourcePath*
+  name: CreateUniqueResourcePath
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateUniqueResourcePath_
+  commentId: Overload:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateUniqueResourcePath
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateUniqueResourcePath
+  nameWithType: MultiResolutionPrefabCreator.CreateUniqueResourcePath
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result
+  name: MultiResolutionPrefabCreator.Result
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.html
+  commentId: T:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result
+  nameWithType: MultiResolutionPrefabCreator.Result
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.Bounds
+  name: Bounds
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_Result_Bounds
+  commentId: F:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.Bounds
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.Bounds
+  nameWithType: MultiResolutionPrefabCreator.Result.Bounds
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.Prefab
+  name: Prefab
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_Result_Prefab
+  commentId: F:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.Prefab
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.Prefab
+  nameWithType: MultiResolutionPrefabCreator.Result.Prefab
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.SavePath
+  name: SavePath
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_Result_SavePath
+  commentId: F:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.SavePath
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.SavePath
+  nameWithType: MultiResolutionPrefabCreator.Result.SavePath
+- uid: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.ZoomLevel
+  name: ZoomLevel
+  href: api/PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.html#PLATEAU_DynamicTile_MultiResolutionPrefabCreator_Result_ZoomLevel
+  commentId: F:PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.ZoomLevel
+  fullName: PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.ZoomLevel
+  nameWithType: MultiResolutionPrefabCreator.Result.ZoomLevel
 - uid: PLATEAU.DynamicTile.PLATEAUDynamicTile
   name: PLATEAUDynamicTile
   href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html
   commentId: T:PLATEAU.DynamicTile.PLATEAUDynamicTile
   fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile
   nameWithType: PLATEAUDynamicTile
-- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.#ctor(System.String)
-  name: PLATEAUDynamicTile(String)
-  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile__ctor_System_String_
-  commentId: M:PLATEAU.DynamicTile.PLATEAUDynamicTile.#ctor(System.String)
-  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.PLATEAUDynamicTile(System.String)
-  nameWithType: PLATEAUDynamicTile.PLATEAUDynamicTile(String)
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.#ctor(PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo)
+  name: PLATEAUDynamicTile(PLATEAUDynamicTileMetaInfo)
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile__ctor_PLATEAU_DynamicTile_PLATEAUDynamicTileMetaInfo_
+  commentId: M:PLATEAU.DynamicTile.PLATEAUDynamicTile.#ctor(PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo)
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.PLATEAUDynamicTile(PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo)
+  nameWithType: PLATEAUDynamicTile.PLATEAUDynamicTile(PLATEAUDynamicTileMetaInfo)
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.#ctor(System.String,System.Int32,Bounds,System.Int32)
+  name: PLATEAUDynamicTile(String, Int32, Bounds, Int32)
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile__ctor_System_String_System_Int32_Bounds_System_Int32_
+  commentId: M:PLATEAU.DynamicTile.PLATEAUDynamicTile.#ctor(System.String,System.Int32,Bounds,System.Int32)
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.PLATEAUDynamicTile(System.String, System.Int32, Bounds, System.Int32)
+  nameWithType: PLATEAUDynamicTile.PLATEAUDynamicTile(String, Int32, Bounds, Int32)
 - uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.#ctor*
   name: PLATEAUDynamicTile
   href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile__ctor_
@@ -7858,6 +8737,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.Address
   nameWithType: PLATEAUDynamicTile.Address
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.DistanceFromCamera
+  name: DistanceFromCamera
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_DistanceFromCamera
+  commentId: P:PLATEAU.DynamicTile.PLATEAUDynamicTile.DistanceFromCamera
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.DistanceFromCamera
+  nameWithType: PLATEAUDynamicTile.DistanceFromCamera
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.DistanceFromCamera*
+  name: DistanceFromCamera
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_DistanceFromCamera_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTile.DistanceFromCamera
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.DistanceFromCamera
+  nameWithType: PLATEAUDynamicTile.DistanceFromCamera
 - uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.Extent
   name: Extent
   href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_Extent
@@ -7871,32 +8763,463 @@ references:
   isSpec: "True"
   fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.Extent
   nameWithType: PLATEAUDynamicTile.Extent
-- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.IsExcluded
-  name: IsExcluded
-  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_IsExcluded
-  commentId: P:PLATEAU.DynamicTile.PLATEAUDynamicTile.IsExcluded
-  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.IsExcluded
-  nameWithType: PLATEAUDynamicTile.IsExcluded
-- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.IsExcluded*
-  name: IsExcluded
-  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_IsExcluded_
-  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTile.IsExcluded
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.GetDistance(Vector3,System.Boolean)
+  name: GetDistance(Vector3, Boolean)
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_GetDistance_Vector3_System_Boolean_
+  commentId: M:PLATEAU.DynamicTile.PLATEAUDynamicTile.GetDistance(Vector3,System.Boolean)
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.GetDistance(Vector3, System.Boolean)
+  nameWithType: PLATEAUDynamicTile.GetDistance(Vector3, Boolean)
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.GetDistance*
+  name: GetDistance
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_GetDistance_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTile.GetDistance
   isSpec: "True"
-  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.IsExcluded
-  nameWithType: PLATEAUDynamicTile.IsExcluded
-- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.Parent
-  name: Parent
-  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_Parent
-  commentId: P:PLATEAU.DynamicTile.PLATEAUDynamicTile.Parent
-  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.Parent
-  nameWithType: PLATEAUDynamicTile.Parent
-- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.Parent*
-  name: Parent
-  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_Parent_
-  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTile.Parent
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.GetDistance
+  nameWithType: PLATEAUDynamicTile.GetDistance
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.GetTileBoundsStruct
+  name: GetTileBoundsStruct()
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_GetTileBoundsStruct
+  commentId: M:PLATEAU.DynamicTile.PLATEAUDynamicTile.GetTileBoundsStruct
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.GetTileBoundsStruct()
+  nameWithType: PLATEAUDynamicTile.GetTileBoundsStruct()
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.GetTileBoundsStruct*
+  name: GetTileBoundsStruct
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_GetTileBoundsStruct_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTile.GetTileBoundsStruct
   isSpec: "True"
-  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.Parent
-  nameWithType: PLATEAUDynamicTile.Parent
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.GetTileBoundsStruct
+  nameWithType: PLATEAUDynamicTile.GetTileBoundsStruct
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.IsExcludeTile
+  name: IsExcludeTile
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_IsExcludeTile
+  commentId: P:PLATEAU.DynamicTile.PLATEAUDynamicTile.IsExcludeTile
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.IsExcludeTile
+  nameWithType: PLATEAUDynamicTile.IsExcludeTile
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.IsExcludeTile*
+  name: IsExcludeTile
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_IsExcludeTile_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTile.IsExcludeTile
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.IsExcludeTile
+  nameWithType: PLATEAUDynamicTile.IsExcludeTile
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.LastLoadResult
+  name: LastLoadResult
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_LastLoadResult
+  commentId: P:PLATEAU.DynamicTile.PLATEAUDynamicTile.LastLoadResult
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.LastLoadResult
+  nameWithType: PLATEAUDynamicTile.LastLoadResult
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.LastLoadResult*
+  name: LastLoadResult
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_LastLoadResult_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTile.LastLoadResult
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.LastLoadResult
+  nameWithType: PLATEAUDynamicTile.LastLoadResult
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.LoadedObject
+  name: LoadedObject
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_LoadedObject
+  commentId: P:PLATEAU.DynamicTile.PLATEAUDynamicTile.LoadedObject
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.LoadedObject
+  nameWithType: PLATEAUDynamicTile.LoadedObject
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.LoadedObject*
+  name: LoadedObject
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_LoadedObject_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTile.LoadedObject
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.LoadedObject
+  nameWithType: PLATEAUDynamicTile.LoadedObject
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.LoadHandle
+  name: LoadHandle
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_LoadHandle
+  commentId: P:PLATEAU.DynamicTile.PLATEAUDynamicTile.LoadHandle
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.LoadHandle
+  nameWithType: PLATEAUDynamicTile.LoadHandle
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.LoadHandle*
+  name: LoadHandle
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_LoadHandle_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTile.LoadHandle
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.LoadHandle
+  nameWithType: PLATEAUDynamicTile.LoadHandle
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.LoadHandleCancellationTokenSource
+  name: LoadHandleCancellationTokenSource
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_LoadHandleCancellationTokenSource
+  commentId: P:PLATEAU.DynamicTile.PLATEAUDynamicTile.LoadHandleCancellationTokenSource
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.LoadHandleCancellationTokenSource
+  nameWithType: PLATEAUDynamicTile.LoadHandleCancellationTokenSource
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.LoadHandleCancellationTokenSource*
+  name: LoadHandleCancellationTokenSource
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_LoadHandleCancellationTokenSource_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTile.LoadHandleCancellationTokenSource
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.LoadHandleCancellationTokenSource
+  nameWithType: PLATEAUDynamicTile.LoadHandleCancellationTokenSource
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.Lod
+  name: Lod
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_Lod
+  commentId: P:PLATEAU.DynamicTile.PLATEAUDynamicTile.Lod
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.Lod
+  nameWithType: PLATEAUDynamicTile.Lod
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.Lod*
+  name: Lod
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_Lod_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTile.Lod
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.Lod
+  nameWithType: PLATEAUDynamicTile.Lod
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.NextLoadState
+  name: NextLoadState
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_NextLoadState
+  commentId: P:PLATEAU.DynamicTile.PLATEAUDynamicTile.NextLoadState
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.NextLoadState
+  nameWithType: PLATEAUDynamicTile.NextLoadState
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.NextLoadState*
+  name: NextLoadState
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_NextLoadState_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTile.NextLoadState
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.NextLoadState
+  nameWithType: PLATEAUDynamicTile.NextLoadState
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.Reset
+  name: Reset()
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_Reset
+  commentId: M:PLATEAU.DynamicTile.PLATEAUDynamicTile.Reset
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.Reset()
+  nameWithType: PLATEAUDynamicTile.Reset()
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.Reset*
+  name: Reset
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_Reset_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTile.Reset
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.Reset
+  nameWithType: PLATEAUDynamicTile.Reset
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.ZoomLevel
+  name: ZoomLevel
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_ZoomLevel
+  commentId: P:PLATEAU.DynamicTile.PLATEAUDynamicTile.ZoomLevel
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.ZoomLevel
+  nameWithType: PLATEAUDynamicTile.ZoomLevel
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTile.ZoomLevel*
+  name: ZoomLevel
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_ZoomLevel_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTile.ZoomLevel
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTile.ZoomLevel
+  nameWithType: PLATEAUDynamicTile.ZoomLevel
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem
+  name: PLATEAUDynamicTileJobSystem
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.html
+  commentId: T:PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem
+  nameWithType: PLATEAUDynamicTileJobSystem
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.Dispose
+  name: Dispose()
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.html#PLATEAU_DynamicTile_PLATEAUDynamicTileJobSystem_Dispose
+  commentId: M:PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.Dispose
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.Dispose()
+  nameWithType: PLATEAUDynamicTileJobSystem.Dispose()
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.Dispose*
+  name: Dispose
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.html#PLATEAU_DynamicTile_PLATEAUDynamicTileJobSystem_Dispose_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.Dispose
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.Dispose
+  nameWithType: PLATEAUDynamicTileJobSystem.Dispose
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.TileCount
+  name: TileCount
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.html#PLATEAU_DynamicTile_PLATEAUDynamicTileJobSystem_TileCount
+  commentId: P:PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.TileCount
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.TileCount
+  nameWithType: PLATEAUDynamicTileJobSystem.TileCount
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.TileCount*
+  name: TileCount
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.html#PLATEAU_DynamicTile_PLATEAUDynamicTileJobSystem_TileCount_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.TileCount
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.TileCount
+  nameWithType: PLATEAUDynamicTileJobSystem.TileCount
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.UpdateAssetsByCameraPosition(Vector3)
+  name: UpdateAssetsByCameraPosition(Vector3)
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.html#PLATEAU_DynamicTile_PLATEAUDynamicTileJobSystem_UpdateAssetsByCameraPosition_Vector3_
+  commentId: M:PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.UpdateAssetsByCameraPosition(Vector3)
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.UpdateAssetsByCameraPosition(Vector3)
+  nameWithType: PLATEAUDynamicTileJobSystem.UpdateAssetsByCameraPosition(Vector3)
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.UpdateAssetsByCameraPosition*
+  name: UpdateAssetsByCameraPosition
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.html#PLATEAU_DynamicTile_PLATEAUDynamicTileJobSystem_UpdateAssetsByCameraPosition_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.UpdateAssetsByCameraPosition
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.UpdateAssetsByCameraPosition
+  nameWithType: PLATEAUDynamicTileJobSystem.UpdateAssetsByCameraPosition
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo
+  name: PLATEAUDynamicTileMetaInfo
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.html
+  commentId: T:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo
+  nameWithType: PLATEAUDynamicTileMetaInfo
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.#ctor(System.String,Bounds,System.Int32,System.Int32)
+  name: PLATEAUDynamicTileMetaInfo(String, Bounds, Int32, Int32)
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaInfo__ctor_System_String_Bounds_System_Int32_System_Int32_
+  commentId: M:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.#ctor(System.String,Bounds,System.Int32,System.Int32)
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.PLATEAUDynamicTileMetaInfo(System.String, Bounds, System.Int32, System.Int32)
+  nameWithType: PLATEAUDynamicTileMetaInfo.PLATEAUDynamicTileMetaInfo(String, Bounds, Int32, Int32)
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.#ctor*
+  name: PLATEAUDynamicTileMetaInfo
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaInfo__ctor_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.PLATEAUDynamicTileMetaInfo
+  nameWithType: PLATEAUDynamicTileMetaInfo.PLATEAUDynamicTileMetaInfo
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.AddressName
+  name: AddressName
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaInfo_AddressName
+  commentId: P:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.AddressName
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.AddressName
+  nameWithType: PLATEAUDynamicTileMetaInfo.AddressName
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.AddressName*
+  name: AddressName
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaInfo_AddressName_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.AddressName
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.AddressName
+  nameWithType: PLATEAUDynamicTileMetaInfo.AddressName
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.Extent
+  name: Extent
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaInfo_Extent
+  commentId: P:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.Extent
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.Extent
+  nameWithType: PLATEAUDynamicTileMetaInfo.Extent
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.Extent*
+  name: Extent
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaInfo_Extent_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.Extent
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.Extent
+  nameWithType: PLATEAUDynamicTileMetaInfo.Extent
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.LOD
+  name: LOD
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaInfo_LOD
+  commentId: P:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.LOD
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.LOD
+  nameWithType: PLATEAUDynamicTileMetaInfo.LOD
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.LOD*
+  name: LOD
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaInfo_LOD_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.LOD
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.LOD
+  nameWithType: PLATEAUDynamicTileMetaInfo.LOD
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.ZoomLevel
+  name: ZoomLevel
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaInfo_ZoomLevel
+  commentId: P:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.ZoomLevel
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.ZoomLevel
+  nameWithType: PLATEAUDynamicTileMetaInfo.ZoomLevel
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.ZoomLevel*
+  name: ZoomLevel
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaInfo_ZoomLevel_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.ZoomLevel
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.ZoomLevel
+  nameWithType: PLATEAUDynamicTileMetaInfo.ZoomLevel
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore
+  name: PLATEAUDynamicTileMetaStore
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.html
+  commentId: T:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore
+  nameWithType: PLATEAUDynamicTileMetaStore
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.AddMetaInfo(System.String,Bounds,System.Int32,System.Int32)
+  name: AddMetaInfo(String, Bounds, Int32, Int32)
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_AddMetaInfo_System_String_Bounds_System_Int32_System_Int32_
+  commentId: M:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.AddMetaInfo(System.String,Bounds,System.Int32,System.Int32)
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.AddMetaInfo(System.String, Bounds, System.Int32, System.Int32)
+  nameWithType: PLATEAUDynamicTileMetaStore.AddMetaInfo(String, Bounds, Int32, Int32)
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.AddMetaInfo*
+  name: AddMetaInfo
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_AddMetaInfo_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.AddMetaInfo
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.AddMetaInfo
+  nameWithType: PLATEAUDynamicTileMetaStore.AddMetaInfo
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.Clear
+  name: Clear()
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_Clear
+  commentId: M:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.Clear
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.Clear()
+  nameWithType: PLATEAUDynamicTileMetaStore.Clear()
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.Clear*
+  name: Clear
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_Clear_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.Clear
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.Clear
+  nameWithType: PLATEAUDynamicTileMetaStore.Clear
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.GetMetaInfo(System.String)
+  name: GetMetaInfo(String)
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_GetMetaInfo_System_String_
+  commentId: M:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.GetMetaInfo(System.String)
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.GetMetaInfo(System.String)
+  nameWithType: PLATEAUDynamicTileMetaStore.GetMetaInfo(String)
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.GetMetaInfo*
+  name: GetMetaInfo
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_GetMetaInfo_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.GetMetaInfo
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.GetMetaInfo
+  nameWithType: PLATEAUDynamicTileMetaStore.GetMetaInfo
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.ReferencePoint
+  name: ReferencePoint
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_ReferencePoint
+  commentId: P:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.ReferencePoint
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.ReferencePoint
+  nameWithType: PLATEAUDynamicTileMetaStore.ReferencePoint
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.ReferencePoint*
+  name: ReferencePoint
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_ReferencePoint_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.ReferencePoint
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.ReferencePoint
+  nameWithType: PLATEAUDynamicTileMetaStore.ReferencePoint
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.TileMetaInfos
+  name: TileMetaInfos
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_TileMetaInfos
+  commentId: P:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.TileMetaInfos
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.TileMetaInfos
+  nameWithType: PLATEAUDynamicTileMetaStore.TileMetaInfos
+- uid: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.TileMetaInfos*
+  name: TileMetaInfos
+  href: api/PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.html#PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_TileMetaInfos_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.TileMetaInfos
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.TileMetaInfos
+  nameWithType: PLATEAUDynamicTileMetaStore.TileMetaInfos
+- uid: PLATEAU.DynamicTile.PLATEAUEditorEventListener
+  name: PLATEAUEditorEventListener
+  href: api/PLATEAU.DynamicTile.PLATEAUEditorEventListener.html
+  commentId: T:PLATEAU.DynamicTile.PLATEAUEditorEventListener
+  fullName: PLATEAU.DynamicTile.PLATEAUEditorEventListener
+  nameWithType: PLATEAUEditorEventListener
+- uid: PLATEAU.DynamicTile.PLATEAUEditorEventListener.disableProjectChangeEvent
+  name: disableProjectChangeEvent
+  href: api/PLATEAU.DynamicTile.PLATEAUEditorEventListener.html#PLATEAU_DynamicTile_PLATEAUEditorEventListener_disableProjectChangeEvent
+  commentId: F:PLATEAU.DynamicTile.PLATEAUEditorEventListener.disableProjectChangeEvent
+  fullName: PLATEAU.DynamicTile.PLATEAUEditorEventListener.disableProjectChangeEvent
+  nameWithType: PLATEAUEditorEventListener.disableProjectChangeEvent
+- uid: PLATEAU.DynamicTile.PLATEAUEditorEventListener.Initialize
+  name: Initialize()
+  href: api/PLATEAU.DynamicTile.PLATEAUEditorEventListener.html#PLATEAU_DynamicTile_PLATEAUEditorEventListener_Initialize
+  commentId: M:PLATEAU.DynamicTile.PLATEAUEditorEventListener.Initialize
+  fullName: PLATEAU.DynamicTile.PLATEAUEditorEventListener.Initialize()
+  nameWithType: PLATEAUEditorEventListener.Initialize()
+- uid: PLATEAU.DynamicTile.PLATEAUEditorEventListener.Initialize*
+  name: Initialize
+  href: api/PLATEAU.DynamicTile.PLATEAUEditorEventListener.html#PLATEAU_DynamicTile_PLATEAUEditorEventListener_Initialize_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUEditorEventListener.Initialize
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUEditorEventListener.Initialize
+  nameWithType: PLATEAUEditorEventListener.Initialize
+- uid: PLATEAU.DynamicTile.PLATEAUEditorEventListener.IsRunning
+  name: IsRunning
+  href: api/PLATEAU.DynamicTile.PLATEAUEditorEventListener.html#PLATEAU_DynamicTile_PLATEAUEditorEventListener_IsRunning
+  commentId: P:PLATEAU.DynamicTile.PLATEAUEditorEventListener.IsRunning
+  fullName: PLATEAU.DynamicTile.PLATEAUEditorEventListener.IsRunning
+  nameWithType: PLATEAUEditorEventListener.IsRunning
+- uid: PLATEAU.DynamicTile.PLATEAUEditorEventListener.IsRunning*
+  name: IsRunning
+  href: api/PLATEAU.DynamicTile.PLATEAUEditorEventListener.html#PLATEAU_DynamicTile_PLATEAUEditorEventListener_IsRunning_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUEditorEventListener.IsRunning
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUEditorEventListener.IsRunning
+  nameWithType: PLATEAUEditorEventListener.IsRunning
+- uid: PLATEAU.DynamicTile.PLATEAUEditorEventListener.Release
+  name: Release()
+  href: api/PLATEAU.DynamicTile.PLATEAUEditorEventListener.html#PLATEAU_DynamicTile_PLATEAUEditorEventListener_Release
+  commentId: M:PLATEAU.DynamicTile.PLATEAUEditorEventListener.Release
+  fullName: PLATEAU.DynamicTile.PLATEAUEditorEventListener.Release()
+  nameWithType: PLATEAUEditorEventListener.Release()
+- uid: PLATEAU.DynamicTile.PLATEAUEditorEventListener.Release*
+  name: Release
+  href: api/PLATEAU.DynamicTile.PLATEAUEditorEventListener.html#PLATEAU_DynamicTile_PLATEAUEditorEventListener_Release_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUEditorEventListener.Release
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUEditorEventListener.Release
+  nameWithType: PLATEAUEditorEventListener.Release
+- uid: PLATEAU.DynamicTile.PLATEAUEditorEventListener.ShowDebugLog
+  name: ShowDebugLog
+  href: api/PLATEAU.DynamicTile.PLATEAUEditorEventListener.html#PLATEAU_DynamicTile_PLATEAUEditorEventListener_ShowDebugLog
+  commentId: F:PLATEAU.DynamicTile.PLATEAUEditorEventListener.ShowDebugLog
+  fullName: PLATEAU.DynamicTile.PLATEAUEditorEventListener.ShowDebugLog
+  nameWithType: PLATEAUEditorEventListener.ShowDebugLog
+- uid: PLATEAU.DynamicTile.PLATEAURuntimeCameraTracker
+  name: PLATEAURuntimeCameraTracker
+  href: api/PLATEAU.DynamicTile.PLATEAURuntimeCameraTracker.html
+  commentId: T:PLATEAU.DynamicTile.PLATEAURuntimeCameraTracker
+  fullName: PLATEAU.DynamicTile.PLATEAURuntimeCameraTracker
+  nameWithType: PLATEAURuntimeCameraTracker
+- uid: PLATEAU.DynamicTile.PLATEAURuntimeCameraTracker.CustomUpdateDelegete
+  name: PLATEAURuntimeCameraTracker.CustomUpdateDelegete
+  href: api/PLATEAU.DynamicTile.PLATEAURuntimeCameraTracker.CustomUpdateDelegete.html
+  commentId: T:PLATEAU.DynamicTile.PLATEAURuntimeCameraTracker.CustomUpdateDelegete
+  fullName: PLATEAU.DynamicTile.PLATEAURuntimeCameraTracker.CustomUpdateDelegete
+  nameWithType: PLATEAURuntimeCameraTracker.CustomUpdateDelegete
+- uid: PLATEAU.DynamicTile.PLATEAURuntimeCameraTracker.StopCameraTracking
+  name: StopCameraTracking()
+  href: api/PLATEAU.DynamicTile.PLATEAURuntimeCameraTracker.html#PLATEAU_DynamicTile_PLATEAURuntimeCameraTracker_StopCameraTracking
+  commentId: M:PLATEAU.DynamicTile.PLATEAURuntimeCameraTracker.StopCameraTracking
+  fullName: PLATEAU.DynamicTile.PLATEAURuntimeCameraTracker.StopCameraTracking()
+  nameWithType: PLATEAURuntimeCameraTracker.StopCameraTracking()
+- uid: PLATEAU.DynamicTile.PLATEAURuntimeCameraTracker.StopCameraTracking*
+  name: StopCameraTracking
+  href: api/PLATEAU.DynamicTile.PLATEAURuntimeCameraTracker.html#PLATEAU_DynamicTile_PLATEAURuntimeCameraTracker_StopCameraTracking_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAURuntimeCameraTracker.StopCameraTracking
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAURuntimeCameraTracker.StopCameraTracking
+  nameWithType: PLATEAURuntimeCameraTracker.StopCameraTracking
+- uid: PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker
+  name: PLATEAUSceneViewCameraTracker
+  href: api/PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.html
+  commentId: T:PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker
+  fullName: PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker
+  nameWithType: PLATEAUSceneViewCameraTracker
+- uid: PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.Initialize
+  name: Initialize()
+  href: api/PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.html#PLATEAU_DynamicTile_PLATEAUSceneViewCameraTracker_Initialize
+  commentId: M:PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.Initialize
+  fullName: PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.Initialize()
+  nameWithType: PLATEAUSceneViewCameraTracker.Initialize()
+- uid: PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.Initialize*
+  name: Initialize
+  href: api/PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.html#PLATEAU_DynamicTile_PLATEAUSceneViewCameraTracker_Initialize_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.Initialize
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.Initialize
+  nameWithType: PLATEAUSceneViewCameraTracker.Initialize
+- uid: PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.IsRunning
+  name: IsRunning
+  href: api/PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.html#PLATEAU_DynamicTile_PLATEAUSceneViewCameraTracker_IsRunning
+  commentId: P:PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.IsRunning
+  fullName: PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.IsRunning
+  nameWithType: PLATEAUSceneViewCameraTracker.IsRunning
+- uid: PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.IsRunning*
+  name: IsRunning
+  href: api/PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.html#PLATEAU_DynamicTile_PLATEAUSceneViewCameraTracker_IsRunning_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.IsRunning
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.IsRunning
+  nameWithType: PLATEAUSceneViewCameraTracker.IsRunning
+- uid: PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.Release
+  name: Release()
+  href: api/PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.html#PLATEAU_DynamicTile_PLATEAUSceneViewCameraTracker_Release
+  commentId: M:PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.Release
+  fullName: PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.Release()
+  nameWithType: PLATEAUSceneViewCameraTracker.Release()
+- uid: PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.Release*
+  name: Release
+  href: api/PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.html#PLATEAU_DynamicTile_PLATEAUSceneViewCameraTracker_Release_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.Release
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUSceneViewCameraTracker.Release
+  nameWithType: PLATEAUSceneViewCameraTracker.Release
 - uid: PLATEAU.DynamicTile.PLATEAUTileManager
   name: PLATEAUTileManager
   href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html
@@ -7916,6 +9239,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.DynamicTile.PLATEAUTileManager.AddTile
   nameWithType: PLATEAUTileManager.AddTile
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.CancelLoadTask
+  name: CancelLoadTask()
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_CancelLoadTask
+  commentId: M:PLATEAU.DynamicTile.PLATEAUTileManager.CancelLoadTask
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.CancelLoadTask()
+  nameWithType: PLATEAUTileManager.CancelLoadTask()
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.CancelLoadTask*
+  name: CancelLoadTask
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_CancelLoadTask_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUTileManager.CancelLoadTask
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.CancelLoadTask
+  nameWithType: PLATEAUTileManager.CancelLoadTask
 - uid: PLATEAU.DynamicTile.PLATEAUTileManager.CatalogPath
   name: CatalogPath
   href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_CatalogPath
@@ -7929,6 +9265,32 @@ references:
   isSpec: "True"
   fullName: PLATEAU.DynamicTile.PLATEAUTileManager.CatalogPath
   nameWithType: PLATEAUTileManager.CatalogPath
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.CheckIfCameraPositionHasChanged(Vector3,System.Single)
+  name: CheckIfCameraPositionHasChanged(Vector3, Single)
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_CheckIfCameraPositionHasChanged_Vector3_System_Single_
+  commentId: M:PLATEAU.DynamicTile.PLATEAUTileManager.CheckIfCameraPositionHasChanged(Vector3,System.Single)
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.CheckIfCameraPositionHasChanged(Vector3, System.Single)
+  nameWithType: PLATEAUTileManager.CheckIfCameraPositionHasChanged(Vector3, Single)
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.CheckIfCameraPositionHasChanged*
+  name: CheckIfCameraPositionHasChanged
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_CheckIfCameraPositionHasChanged_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUTileManager.CheckIfCameraPositionHasChanged
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.CheckIfCameraPositionHasChanged
+  nameWithType: PLATEAUTileManager.CheckIfCameraPositionHasChanged
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.ClearTileAssets
+  name: ClearTileAssets()
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_ClearTileAssets
+  commentId: M:PLATEAU.DynamicTile.PLATEAUTileManager.ClearTileAssets
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.ClearTileAssets()
+  nameWithType: PLATEAUTileManager.ClearTileAssets()
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.ClearTileAssets*
+  name: ClearTileAssets
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_ClearTileAssets_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUTileManager.ClearTileAssets
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.ClearTileAssets
+  nameWithType: PLATEAUTileManager.ClearTileAssets
 - uid: PLATEAU.DynamicTile.PLATEAUTileManager.ClearTiles
   name: ClearTiles()
   href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_ClearTiles
@@ -7942,12 +9304,83 @@ references:
   isSpec: "True"
   fullName: PLATEAU.DynamicTile.PLATEAUTileManager.ClearTiles
   nameWithType: PLATEAUTileManager.ClearTiles
-- uid: PLATEAU.DynamicTile.PLATEAUTileManager.Load(System.String,Transform)
-  name: Load(String, Transform)
-  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_Load_System_String_Transform_
-  commentId: M:PLATEAU.DynamicTile.PLATEAUTileManager.Load(System.String,Transform)
-  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.Load(System.String, Transform)
-  nameWithType: PLATEAUTileManager.Load(String, Transform)
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.DynamicTiles
+  name: DynamicTiles
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_DynamicTiles
+  commentId: P:PLATEAU.DynamicTile.PLATEAUTileManager.DynamicTiles
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.DynamicTiles
+  nameWithType: PLATEAUTileManager.DynamicTiles
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.DynamicTiles*
+  name: DynamicTiles
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_DynamicTiles_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUTileManager.DynamicTiles
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.DynamicTiles
+  nameWithType: PLATEAUTileManager.DynamicTiles
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.GetTileBounds
+  name: GetTileBounds()
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_GetTileBounds
+  commentId: M:PLATEAU.DynamicTile.PLATEAUTileManager.GetTileBounds
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.GetTileBounds()
+  nameWithType: PLATEAUTileManager.GetTileBounds()
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.GetTileBounds*
+  name: GetTileBounds
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_GetTileBounds_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUTileManager.GetTileBounds
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.GetTileBounds
+  nameWithType: PLATEAUTileManager.GetTileBounds
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.HasCurrentTask
+  name: HasCurrentTask
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_HasCurrentTask
+  commentId: P:PLATEAU.DynamicTile.PLATEAUTileManager.HasCurrentTask
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.HasCurrentTask
+  nameWithType: PLATEAUTileManager.HasCurrentTask
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.HasCurrentTask*
+  name: HasCurrentTask
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_HasCurrentTask_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUTileManager.HasCurrentTask
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.HasCurrentTask
+  nameWithType: PLATEAUTileManager.HasCurrentTask
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.InitializeTiles
+  name: InitializeTiles()
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_InitializeTiles
+  commentId: M:PLATEAU.DynamicTile.PLATEAUTileManager.InitializeTiles
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.InitializeTiles()
+  nameWithType: PLATEAUTileManager.InitializeTiles()
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.InitializeTiles*
+  name: InitializeTiles
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_InitializeTiles_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUTileManager.InitializeTiles
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.InitializeTiles
+  nameWithType: PLATEAUTileManager.InitializeTiles
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.IsCoroutineRunning
+  name: IsCoroutineRunning
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_IsCoroutineRunning
+  commentId: P:PLATEAU.DynamicTile.PLATEAUTileManager.IsCoroutineRunning
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.IsCoroutineRunning
+  nameWithType: PLATEAUTileManager.IsCoroutineRunning
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.IsCoroutineRunning*
+  name: IsCoroutineRunning
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_IsCoroutineRunning_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUTileManager.IsCoroutineRunning
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.IsCoroutineRunning
+  nameWithType: PLATEAUTileManager.IsCoroutineRunning
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.Load(PLATEAU.DynamicTile.PLATEAUDynamicTile,System.Single)
+  name: Load(PLATEAUDynamicTile, Single)
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_Load_PLATEAU_DynamicTile_PLATEAUDynamicTile_System_Single_
+  commentId: M:PLATEAU.DynamicTile.PLATEAUTileManager.Load(PLATEAU.DynamicTile.PLATEAUDynamicTile,System.Single)
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.Load(PLATEAU.DynamicTile.PLATEAUDynamicTile, System.Single)
+  nameWithType: PLATEAUTileManager.Load(PLATEAUDynamicTile, Single)
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.Load(System.String)
+  name: Load(String)
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_Load_System_String_
+  commentId: M:PLATEAU.DynamicTile.PLATEAUTileManager.Load(System.String)
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.Load(System.String)
+  nameWithType: PLATEAUTileManager.Load(String)
 - uid: PLATEAU.DynamicTile.PLATEAUTileManager.Load*
   name: Load
   href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_Load_
@@ -7955,6 +9388,84 @@ references:
   isSpec: "True"
   fullName: PLATEAU.DynamicTile.PLATEAUTileManager.Load
   nameWithType: PLATEAUTileManager.Load
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.loadDistances
+  name: loadDistances
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_loadDistances
+  commentId: F:PLATEAU.DynamicTile.PLATEAUTileManager.loadDistances
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.loadDistances
+  nameWithType: PLATEAUTileManager.loadDistances
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult
+  name: PLATEAUTileManager.LoadResult
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.html
+  commentId: T:PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult
+  nameWithType: PLATEAUTileManager.LoadResult
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.AlreadyLoaded
+  name: AlreadyLoaded
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.html#PLATEAU_DynamicTile_PLATEAUTileManager_LoadResult_AlreadyLoaded
+  commentId: F:PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.AlreadyLoaded
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.AlreadyLoaded
+  nameWithType: PLATEAUTileManager.LoadResult.AlreadyLoaded
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.Cancelled
+  name: Cancelled
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.html#PLATEAU_DynamicTile_PLATEAUTileManager_LoadResult_Cancelled
+  commentId: F:PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.Cancelled
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.Cancelled
+  nameWithType: PLATEAUTileManager.LoadResult.Cancelled
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.Failure
+  name: Failure
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.html#PLATEAU_DynamicTile_PLATEAUTileManager_LoadResult_Failure
+  commentId: F:PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.Failure
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.Failure
+  nameWithType: PLATEAUTileManager.LoadResult.Failure
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.None
+  name: None
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.html#PLATEAU_DynamicTile_PLATEAUTileManager_LoadResult_None
+  commentId: F:PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.None
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.None
+  nameWithType: PLATEAUTileManager.LoadResult.None
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.Success
+  name: Success
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.html#PLATEAU_DynamicTile_PLATEAUTileManager_LoadResult_Success
+  commentId: F:PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.Success
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.Success
+  nameWithType: PLATEAUTileManager.LoadResult.Success
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.Timeout
+  name: Timeout
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.html#PLATEAU_DynamicTile_PLATEAUTileManager_LoadResult_Timeout
+  commentId: F:PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.Timeout
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.LoadResult.Timeout
+  nameWithType: PLATEAUTileManager.LoadResult.Timeout
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState
+  name: PLATEAUTileManager.ManagerState
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState.html
+  commentId: T:PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState
+  nameWithType: PLATEAUTileManager.ManagerState
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState.CleaningUp
+  name: CleaningUp
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState.html#PLATEAU_DynamicTile_PLATEAUTileManager_ManagerState_CleaningUp
+  commentId: F:PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState.CleaningUp
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState.CleaningUp
+  nameWithType: PLATEAUTileManager.ManagerState.CleaningUp
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState.Initializing
+  name: Initializing
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState.html#PLATEAU_DynamicTile_PLATEAUTileManager_ManagerState_Initializing
+  commentId: F:PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState.Initializing
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState.Initializing
+  nameWithType: PLATEAUTileManager.ManagerState.Initializing
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState.None
+  name: None
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState.html#PLATEAU_DynamicTile_PLATEAUTileManager_ManagerState_None
+  commentId: F:PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState.None
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState.None
+  nameWithType: PLATEAUTileManager.ManagerState.None
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState.Operating
+  name: Operating
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState.html#PLATEAU_DynamicTile_PLATEAUTileManager_ManagerState_Operating
+  commentId: F:PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState.Operating
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.ManagerState.Operating
+  nameWithType: PLATEAUTileManager.ManagerState.Operating
 - uid: PLATEAU.DynamicTile.PLATEAUTileManager.SaveCatalogPath(System.String)
   name: SaveCatalogPath(String)
   href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_SaveCatalogPath_System_String_
@@ -7968,6 +9479,25 @@ references:
   isSpec: "True"
   fullName: PLATEAU.DynamicTile.PLATEAUTileManager.SaveCatalogPath
   nameWithType: PLATEAUTileManager.SaveCatalogPath
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.State
+  name: State
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_State
+  commentId: P:PLATEAU.DynamicTile.PLATEAUTileManager.State
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.State
+  nameWithType: PLATEAUTileManager.State
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.State*
+  name: State
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_State_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUTileManager.State
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.State
+  nameWithType: PLATEAUTileManager.State
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.Unload(PLATEAU.DynamicTile.PLATEAUDynamicTile)
+  name: Unload(PLATEAUDynamicTile)
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_Unload_PLATEAU_DynamicTile_PLATEAUDynamicTile_
+  commentId: M:PLATEAU.DynamicTile.PLATEAUTileManager.Unload(PLATEAU.DynamicTile.PLATEAUDynamicTile)
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.Unload(PLATEAU.DynamicTile.PLATEAUDynamicTile)
+  nameWithType: PLATEAUTileManager.Unload(PLATEAUDynamicTile)
 - uid: PLATEAU.DynamicTile.PLATEAUTileManager.Unload(System.String)
   name: Unload(String)
   href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_Unload_System_String_
@@ -7981,6 +9511,233 @@ references:
   isSpec: "True"
   fullName: PLATEAU.DynamicTile.PLATEAUTileManager.Unload
   nameWithType: PLATEAUTileManager.Unload
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.UpdateAssetsByCameraPosition(Vector3,System.Single)
+  name: UpdateAssetsByCameraPosition(Vector3, Single)
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_UpdateAssetsByCameraPosition_Vector3_System_Single_
+  commentId: M:PLATEAU.DynamicTile.PLATEAUTileManager.UpdateAssetsByCameraPosition(Vector3,System.Single)
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.UpdateAssetsByCameraPosition(Vector3, System.Single)
+  nameWithType: PLATEAUTileManager.UpdateAssetsByCameraPosition(Vector3, Single)
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.UpdateAssetsByCameraPosition*
+  name: UpdateAssetsByCameraPosition
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_UpdateAssetsByCameraPosition_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUTileManager.UpdateAssetsByCameraPosition
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.UpdateAssetsByCameraPosition
+  nameWithType: PLATEAUTileManager.UpdateAssetsByCameraPosition
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.UpdateCameraPosition(Vector3)
+  name: UpdateCameraPosition(Vector3)
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_UpdateCameraPosition_Vector3_
+  commentId: M:PLATEAU.DynamicTile.PLATEAUTileManager.UpdateCameraPosition(Vector3)
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.UpdateCameraPosition(Vector3)
+  nameWithType: PLATEAUTileManager.UpdateCameraPosition(Vector3)
+- uid: PLATEAU.DynamicTile.PLATEAUTileManager.UpdateCameraPosition*
+  name: UpdateCameraPosition
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManager.html#PLATEAU_DynamicTile_PLATEAUTileManager_UpdateCameraPosition_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUTileManager.UpdateCameraPosition
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManager.UpdateCameraPosition
+  nameWithType: PLATEAUTileManager.UpdateCameraPosition
+- uid: PLATEAU.DynamicTile.PLATEAUTileManagerEditor
+  name: PLATEAUTileManagerEditor
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManagerEditor.html
+  commentId: T:PLATEAU.DynamicTile.PLATEAUTileManagerEditor
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManagerEditor
+  nameWithType: PLATEAUTileManagerEditor
+- uid: PLATEAU.DynamicTile.PLATEAUTileManagerEditor.OnDisable
+  name: OnDisable()
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManagerEditor.html#PLATEAU_DynamicTile_PLATEAUTileManagerEditor_OnDisable
+  commentId: M:PLATEAU.DynamicTile.PLATEAUTileManagerEditor.OnDisable
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManagerEditor.OnDisable()
+  nameWithType: PLATEAUTileManagerEditor.OnDisable()
+- uid: PLATEAU.DynamicTile.PLATEAUTileManagerEditor.OnDisable*
+  name: OnDisable
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManagerEditor.html#PLATEAU_DynamicTile_PLATEAUTileManagerEditor_OnDisable_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUTileManagerEditor.OnDisable
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManagerEditor.OnDisable
+  nameWithType: PLATEAUTileManagerEditor.OnDisable
+- uid: PLATEAU.DynamicTile.PLATEAUTileManagerEditor.OnEnable
+  name: OnEnable()
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManagerEditor.html#PLATEAU_DynamicTile_PLATEAUTileManagerEditor_OnEnable
+  commentId: M:PLATEAU.DynamicTile.PLATEAUTileManagerEditor.OnEnable
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManagerEditor.OnEnable()
+  nameWithType: PLATEAUTileManagerEditor.OnEnable()
+- uid: PLATEAU.DynamicTile.PLATEAUTileManagerEditor.OnEnable*
+  name: OnEnable
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManagerEditor.html#PLATEAU_DynamicTile_PLATEAUTileManagerEditor_OnEnable_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUTileManagerEditor.OnEnable
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManagerEditor.OnEnable
+  nameWithType: PLATEAUTileManagerEditor.OnEnable
+- uid: PLATEAU.DynamicTile.PLATEAUTileManagerEditor.OnInspectorGUI
+  name: OnInspectorGUI()
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManagerEditor.html#PLATEAU_DynamicTile_PLATEAUTileManagerEditor_OnInspectorGUI
+  commentId: M:PLATEAU.DynamicTile.PLATEAUTileManagerEditor.OnInspectorGUI
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManagerEditor.OnInspectorGUI()
+  nameWithType: PLATEAUTileManagerEditor.OnInspectorGUI()
+- uid: PLATEAU.DynamicTile.PLATEAUTileManagerEditor.OnInspectorGUI*
+  name: OnInspectorGUI
+  href: api/PLATEAU.DynamicTile.PLATEAUTileManagerEditor.html#PLATEAU_DynamicTile_PLATEAUTileManagerEditor_OnInspectorGUI_
+  commentId: Overload:PLATEAU.DynamicTile.PLATEAUTileManagerEditor.OnInspectorGUI
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PLATEAUTileManagerEditor.OnInspectorGUI
+  nameWithType: PLATEAUTileManagerEditor.OnInspectorGUI
+- uid: PLATEAU.DynamicTile.PrefabTextureResizer
+  name: PrefabTextureResizer
+  href: api/PLATEAU.DynamicTile.PrefabTextureResizer.html
+  commentId: T:PLATEAU.DynamicTile.PrefabTextureResizer
+  fullName: PLATEAU.DynamicTile.PrefabTextureResizer
+  nameWithType: PrefabTextureResizer
+- uid: PLATEAU.DynamicTile.PrefabTextureResizer.#ctor(System.String)
+  name: PrefabTextureResizer(String)
+  href: api/PLATEAU.DynamicTile.PrefabTextureResizer.html#PLATEAU_DynamicTile_PrefabTextureResizer__ctor_System_String_
+  commentId: M:PLATEAU.DynamicTile.PrefabTextureResizer.#ctor(System.String)
+  fullName: PLATEAU.DynamicTile.PrefabTextureResizer.PrefabTextureResizer(System.String)
+  nameWithType: PrefabTextureResizer.PrefabTextureResizer(String)
+- uid: PLATEAU.DynamicTile.PrefabTextureResizer.#ctor*
+  name: PrefabTextureResizer
+  href: api/PLATEAU.DynamicTile.PrefabTextureResizer.html#PLATEAU_DynamicTile_PrefabTextureResizer__ctor_
+  commentId: Overload:PLATEAU.DynamicTile.PrefabTextureResizer.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PrefabTextureResizer.PrefabTextureResizer
+  nameWithType: PrefabTextureResizer.PrefabTextureResizer
+- uid: PLATEAU.DynamicTile.PrefabTextureResizer.CreateResizedTextures(Texture2D,System.Int32,System.Int32)
+  name: CreateResizedTextures(Texture2D, Int32, Int32)
+  href: api/PLATEAU.DynamicTile.PrefabTextureResizer.html#PLATEAU_DynamicTile_PrefabTextureResizer_CreateResizedTextures_Texture2D_System_Int32_System_Int32_
+  commentId: M:PLATEAU.DynamicTile.PrefabTextureResizer.CreateResizedTextures(Texture2D,System.Int32,System.Int32)
+  fullName: PLATEAU.DynamicTile.PrefabTextureResizer.CreateResizedTextures(Texture2D, System.Int32, System.Int32)
+  nameWithType: PrefabTextureResizer.CreateResizedTextures(Texture2D, Int32, Int32)
+- uid: PLATEAU.DynamicTile.PrefabTextureResizer.CreateResizedTextures*
+  name: CreateResizedTextures
+  href: api/PLATEAU.DynamicTile.PrefabTextureResizer.html#PLATEAU_DynamicTile_PrefabTextureResizer_CreateResizedTextures_
+  commentId: Overload:PLATEAU.DynamicTile.PrefabTextureResizer.CreateResizedTextures
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PrefabTextureResizer.CreateResizedTextures
+  nameWithType: PrefabTextureResizer.CreateResizedTextures
+- uid: PLATEAU.DynamicTile.PrefabTextureResizer.CreateSingleResizedTexture(Texture2D,System.Int32,System.Int32)
+  name: CreateSingleResizedTexture(Texture2D, Int32, Int32)
+  href: api/PLATEAU.DynamicTile.PrefabTextureResizer.html#PLATEAU_DynamicTile_PrefabTextureResizer_CreateSingleResizedTexture_Texture2D_System_Int32_System_Int32_
+  commentId: M:PLATEAU.DynamicTile.PrefabTextureResizer.CreateSingleResizedTexture(Texture2D,System.Int32,System.Int32)
+  fullName: PLATEAU.DynamicTile.PrefabTextureResizer.CreateSingleResizedTexture(Texture2D, System.Int32, System.Int32)
+  nameWithType: PrefabTextureResizer.CreateSingleResizedTexture(Texture2D, Int32, Int32)
+- uid: PLATEAU.DynamicTile.PrefabTextureResizer.CreateSingleResizedTexture*
+  name: CreateSingleResizedTexture
+  href: api/PLATEAU.DynamicTile.PrefabTextureResizer.html#PLATEAU_DynamicTile_PrefabTextureResizer_CreateSingleResizedTexture_
+  commentId: Overload:PLATEAU.DynamicTile.PrefabTextureResizer.CreateSingleResizedTexture
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.PrefabTextureResizer.CreateSingleResizedTexture
+  nameWithType: PrefabTextureResizer.CreateSingleResizedTexture
+- uid: PLATEAU.DynamicTile.PrefabTextureResizer.DENOMINATORS
+  name: DENOMINATORS
+  href: api/PLATEAU.DynamicTile.PrefabTextureResizer.html#PLATEAU_DynamicTile_PrefabTextureResizer_DENOMINATORS
+  commentId: F:PLATEAU.DynamicTile.PrefabTextureResizer.DENOMINATORS
+  fullName: PLATEAU.DynamicTile.PrefabTextureResizer.DENOMINATORS
+  nameWithType: PrefabTextureResizer.DENOMINATORS
+- uid: PLATEAU.DynamicTile.SortDistancesJob
+  name: SortDistancesJob
+  href: api/PLATEAU.DynamicTile.SortDistancesJob.html
+  commentId: T:PLATEAU.DynamicTile.SortDistancesJob
+  fullName: PLATEAU.DynamicTile.SortDistancesJob
+  nameWithType: SortDistancesJob
+- uid: PLATEAU.DynamicTile.SortDistancesJob.Distances
+  name: Distances
+  href: api/PLATEAU.DynamicTile.SortDistancesJob.html#PLATEAU_DynamicTile_SortDistancesJob_Distances
+  commentId: F:PLATEAU.DynamicTile.SortDistancesJob.Distances
+  fullName: PLATEAU.DynamicTile.SortDistancesJob.Distances
+  nameWithType: SortDistancesJob.Distances
+- uid: PLATEAU.DynamicTile.SortDistancesJob.Execute
+  name: Execute()
+  href: api/PLATEAU.DynamicTile.SortDistancesJob.html#PLATEAU_DynamicTile_SortDistancesJob_Execute
+  commentId: M:PLATEAU.DynamicTile.SortDistancesJob.Execute
+  fullName: PLATEAU.DynamicTile.SortDistancesJob.Execute()
+  nameWithType: SortDistancesJob.Execute()
+- uid: PLATEAU.DynamicTile.SortDistancesJob.Execute*
+  name: Execute
+  href: api/PLATEAU.DynamicTile.SortDistancesJob.html#PLATEAU_DynamicTile_SortDistancesJob_Execute_
+  commentId: Overload:PLATEAU.DynamicTile.SortDistancesJob.Execute
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.SortDistancesJob.Execute
+  nameWithType: SortDistancesJob.Execute
+- uid: PLATEAU.DynamicTile.TileBounds
+  name: TileBounds
+  href: api/PLATEAU.DynamicTile.TileBounds.html
+  commentId: T:PLATEAU.DynamicTile.TileBounds
+  fullName: PLATEAU.DynamicTile.TileBounds
+  nameWithType: TileBounds
+- uid: PLATEAU.DynamicTile.TileBounds.#ctor(Vector3,Vector3,System.Int32)
+  name: TileBounds(Vector3, Vector3, Int32)
+  href: api/PLATEAU.DynamicTile.TileBounds.html#PLATEAU_DynamicTile_TileBounds__ctor_Vector3_Vector3_System_Int32_
+  commentId: M:PLATEAU.DynamicTile.TileBounds.#ctor(Vector3,Vector3,System.Int32)
+  fullName: PLATEAU.DynamicTile.TileBounds.TileBounds(Vector3, Vector3, System.Int32)
+  nameWithType: TileBounds.TileBounds(Vector3, Vector3, Int32)
+- uid: PLATEAU.DynamicTile.TileBounds.#ctor*
+  name: TileBounds
+  href: api/PLATEAU.DynamicTile.TileBounds.html#PLATEAU_DynamicTile_TileBounds__ctor_
+  commentId: Overload:PLATEAU.DynamicTile.TileBounds.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.TileBounds.TileBounds
+  nameWithType: TileBounds.TileBounds
+- uid: PLATEAU.DynamicTile.TileBounds.BoundsMax
+  name: BoundsMax
+  href: api/PLATEAU.DynamicTile.TileBounds.html#PLATEAU_DynamicTile_TileBounds_BoundsMax
+  commentId: F:PLATEAU.DynamicTile.TileBounds.BoundsMax
+  fullName: PLATEAU.DynamicTile.TileBounds.BoundsMax
+  nameWithType: TileBounds.BoundsMax
+- uid: PLATEAU.DynamicTile.TileBounds.BoundsMin
+  name: BoundsMin
+  href: api/PLATEAU.DynamicTile.TileBounds.html#PLATEAU_DynamicTile_TileBounds_BoundsMin
+  commentId: F:PLATEAU.DynamicTile.TileBounds.BoundsMin
+  fullName: PLATEAU.DynamicTile.TileBounds.BoundsMin
+  nameWithType: TileBounds.BoundsMin
+- uid: PLATEAU.DynamicTile.TileBounds.CalcDistance(Vector3,System.Boolean,System.Boolean)
+  name: CalcDistance(Vector3, Boolean, Boolean)
+  href: api/PLATEAU.DynamicTile.TileBounds.html#PLATEAU_DynamicTile_TileBounds_CalcDistance_Vector3_System_Boolean_System_Boolean_
+  commentId: M:PLATEAU.DynamicTile.TileBounds.CalcDistance(Vector3,System.Boolean,System.Boolean)
+  fullName: PLATEAU.DynamicTile.TileBounds.CalcDistance(Vector3, System.Boolean, System.Boolean)
+  nameWithType: TileBounds.CalcDistance(Vector3, Boolean, Boolean)
+- uid: PLATEAU.DynamicTile.TileBounds.CalcDistance*
+  name: CalcDistance
+  href: api/PLATEAU.DynamicTile.TileBounds.html#PLATEAU_DynamicTile_TileBounds_CalcDistance_
+  commentId: Overload:PLATEAU.DynamicTile.TileBounds.CalcDistance
+  isSpec: "True"
+  fullName: PLATEAU.DynamicTile.TileBounds.CalcDistance
+  nameWithType: TileBounds.CalcDistance
+- uid: PLATEAU.DynamicTile.TileBounds.ZoomLevel
+  name: ZoomLevel
+  href: api/PLATEAU.DynamicTile.TileBounds.html#PLATEAU_DynamicTile_TileBounds_ZoomLevel
+  commentId: F:PLATEAU.DynamicTile.TileBounds.ZoomLevel
+  fullName: PLATEAU.DynamicTile.TileBounds.ZoomLevel
+  nameWithType: TileBounds.ZoomLevel
+- uid: PLATEAU.DynamicTile.TileDistanceCheckJob
+  name: TileDistanceCheckJob
+  href: api/PLATEAU.DynamicTile.TileDistanceCheckJob.html
+  commentId: T:PLATEAU.DynamicTile.TileDistanceCheckJob
+  fullName: PLATEAU.DynamicTile.TileDistanceCheckJob
+  nameWithType: TileDistanceCheckJob
+- uid: PLATEAU.DynamicTile.TileDistanceCheckJob.CameraPosition
+  name: CameraPosition
+  href: api/PLATEAU.DynamicTile.TileDistanceCheckJob.html#PLATEAU_DynamicTile_TileDistanceCheckJob_CameraPosition
+  commentId: F:PLATEAU.DynamicTile.TileDistanceCheckJob.CameraPosition
+  fullName: PLATEAU.DynamicTile.TileDistanceCheckJob.CameraPosition
+  nameWithType: TileDistanceCheckJob.CameraPosition
+- uid: PLATEAU.DynamicTile.TileDistanceCheckJob.Distances
+  name: Distances
+  href: api/PLATEAU.DynamicTile.TileDistanceCheckJob.html#PLATEAU_DynamicTile_TileDistanceCheckJob_Distances
+  commentId: F:PLATEAU.DynamicTile.TileDistanceCheckJob.Distances
+  fullName: PLATEAU.DynamicTile.TileDistanceCheckJob.Distances
+  nameWithType: TileDistanceCheckJob.Distances
+- uid: PLATEAU.DynamicTile.TileDistanceCheckJob.IgnoreY
+  name: IgnoreY
+  href: api/PLATEAU.DynamicTile.TileDistanceCheckJob.html#PLATEAU_DynamicTile_TileDistanceCheckJob_IgnoreY
+  commentId: F:PLATEAU.DynamicTile.TileDistanceCheckJob.IgnoreY
+  fullName: PLATEAU.DynamicTile.TileDistanceCheckJob.IgnoreY
+  nameWithType: TileDistanceCheckJob.IgnoreY
+- uid: PLATEAU.DynamicTile.TileDistanceCheckJob.TileStates
+  name: TileStates
+  href: api/PLATEAU.DynamicTile.TileDistanceCheckJob.html#PLATEAU_DynamicTile_TileDistanceCheckJob_TileStates
+  commentId: F:PLATEAU.DynamicTile.TileDistanceCheckJob.TileStates
+  fullName: PLATEAU.DynamicTile.TileDistanceCheckJob.TileStates
+  nameWithType: TileDistanceCheckJob.TileStates
 - uid: PLATEAU.Editor.Addressables
   name: PLATEAU.Editor.Addressables
   href: api/PLATEAU.Editor.Addressables.html
@@ -7999,6 +9756,19 @@ references:
   commentId: T:PLATEAU.Editor.Addressables.AddressablesUtility
   fullName: PLATEAU.Editor.Addressables.AddressablesUtility
   nameWithType: AddressablesUtility
+- uid: PLATEAU.Editor.Addressables.AddressablesUtility.BackToDefaultProfile
+  name: BackToDefaultProfile()
+  href: api/PLATEAU.Editor.Addressables.AddressablesUtility.html#PLATEAU_Editor_Addressables_AddressablesUtility_BackToDefaultProfile
+  commentId: M:PLATEAU.Editor.Addressables.AddressablesUtility.BackToDefaultProfile
+  fullName: PLATEAU.Editor.Addressables.AddressablesUtility.BackToDefaultProfile()
+  nameWithType: AddressablesUtility.BackToDefaultProfile()
+- uid: PLATEAU.Editor.Addressables.AddressablesUtility.BackToDefaultProfile*
+  name: BackToDefaultProfile
+  href: api/PLATEAU.Editor.Addressables.AddressablesUtility.html#PLATEAU_Editor_Addressables_AddressablesUtility_BackToDefaultProfile_
+  commentId: Overload:PLATEAU.Editor.Addressables.AddressablesUtility.BackToDefaultProfile
+  isSpec: "True"
+  fullName: PLATEAU.Editor.Addressables.AddressablesUtility.BackToDefaultProfile
+  nameWithType: AddressablesUtility.BackToDefaultProfile
 - uid: PLATEAU.Editor.Addressables.AddressablesUtility.BuildAddressables(System.Boolean)
   name: BuildAddressables(Boolean)
   href: api/PLATEAU.Editor.Addressables.AddressablesUtility.html#PLATEAU_Editor_Addressables_AddressablesUtility_BuildAddressables_System_Boolean_
@@ -8041,12 +9811,25 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Editor.Addressables.AddressablesUtility.RegisterAssetAsAddressable
   nameWithType: AddressablesUtility.RegisterAssetAsAddressable
-- uid: PLATEAU.Editor.Addressables.AddressablesUtility.RemoveNonDefaultGroups(System.String)
-  name: RemoveNonDefaultGroups(String)
-  href: api/PLATEAU.Editor.Addressables.AddressablesUtility.html#PLATEAU_Editor_Addressables_AddressablesUtility_RemoveNonDefaultGroups_System_String_
-  commentId: M:PLATEAU.Editor.Addressables.AddressablesUtility.RemoveNonDefaultGroups(System.String)
-  fullName: PLATEAU.Editor.Addressables.AddressablesUtility.RemoveNonDefaultGroups(System.String)
-  nameWithType: AddressablesUtility.RemoveNonDefaultGroups(String)
+- uid: PLATEAU.Editor.Addressables.AddressablesUtility.RemoveGroup(System.String)
+  name: RemoveGroup(String)
+  href: api/PLATEAU.Editor.Addressables.AddressablesUtility.html#PLATEAU_Editor_Addressables_AddressablesUtility_RemoveGroup_System_String_
+  commentId: M:PLATEAU.Editor.Addressables.AddressablesUtility.RemoveGroup(System.String)
+  fullName: PLATEAU.Editor.Addressables.AddressablesUtility.RemoveGroup(System.String)
+  nameWithType: AddressablesUtility.RemoveGroup(String)
+- uid: PLATEAU.Editor.Addressables.AddressablesUtility.RemoveGroup*
+  name: RemoveGroup
+  href: api/PLATEAU.Editor.Addressables.AddressablesUtility.html#PLATEAU_Editor_Addressables_AddressablesUtility_RemoveGroup_
+  commentId: Overload:PLATEAU.Editor.Addressables.AddressablesUtility.RemoveGroup
+  isSpec: "True"
+  fullName: PLATEAU.Editor.Addressables.AddressablesUtility.RemoveGroup
+  nameWithType: AddressablesUtility.RemoveGroup
+- uid: PLATEAU.Editor.Addressables.AddressablesUtility.RemoveNonDefaultGroups(System.String,System.Boolean)
+  name: RemoveNonDefaultGroups(String, Boolean)
+  href: api/PLATEAU.Editor.Addressables.AddressablesUtility.html#PLATEAU_Editor_Addressables_AddressablesUtility_RemoveNonDefaultGroups_System_String_System_Boolean_
+  commentId: M:PLATEAU.Editor.Addressables.AddressablesUtility.RemoveNonDefaultGroups(System.String,System.Boolean)
+  fullName: PLATEAU.Editor.Addressables.AddressablesUtility.RemoveNonDefaultGroups(System.String, System.Boolean)
+  nameWithType: AddressablesUtility.RemoveNonDefaultGroups(String, Boolean)
 - uid: PLATEAU.Editor.Addressables.AddressablesUtility.RemoveNonDefaultGroups*
   name: RemoveNonDefaultGroups
   href: api/PLATEAU.Editor.Addressables.AddressablesUtility.html#PLATEAU_Editor_Addressables_AddressablesUtility_RemoveNonDefaultGroups_
@@ -8054,19 +9837,6 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Editor.Addressables.AddressablesUtility.RemoveNonDefaultGroups
   nameWithType: AddressablesUtility.RemoveNonDefaultGroups
-- uid: PLATEAU.Editor.Addressables.AddressablesUtility.SetDefaultProfileSettings
-  name: SetDefaultProfileSettings()
-  href: api/PLATEAU.Editor.Addressables.AddressablesUtility.html#PLATEAU_Editor_Addressables_AddressablesUtility_SetDefaultProfileSettings
-  commentId: M:PLATEAU.Editor.Addressables.AddressablesUtility.SetDefaultProfileSettings
-  fullName: PLATEAU.Editor.Addressables.AddressablesUtility.SetDefaultProfileSettings()
-  nameWithType: AddressablesUtility.SetDefaultProfileSettings()
-- uid: PLATEAU.Editor.Addressables.AddressablesUtility.SetDefaultProfileSettings*
-  name: SetDefaultProfileSettings
-  href: api/PLATEAU.Editor.Addressables.AddressablesUtility.html#PLATEAU_Editor_Addressables_AddressablesUtility_SetDefaultProfileSettings_
-  commentId: Overload:PLATEAU.Editor.Addressables.AddressablesUtility.SetDefaultProfileSettings
-  isSpec: "True"
-  fullName: PLATEAU.Editor.Addressables.AddressablesUtility.SetDefaultProfileSettings
-  nameWithType: AddressablesUtility.SetDefaultProfileSettings
 - uid: PLATEAU.Editor.Addressables.AddressablesUtility.SetGroupLoadAndBuildPath(System.String)
   name: SetGroupLoadAndBuildPath(String)
   href: api/PLATEAU.Editor.Addressables.AddressablesUtility.html#PLATEAU_Editor_Addressables_AddressablesUtility_SetGroupLoadAndBuildPath_System_String_
@@ -8080,12 +9850,12 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Editor.Addressables.AddressablesUtility.SetGroupLoadAndBuildPath
   nameWithType: AddressablesUtility.SetGroupLoadAndBuildPath
-- uid: PLATEAU.Editor.Addressables.AddressablesUtility.SetOrCreateProfile(System.String)
-  name: SetOrCreateProfile(String)
-  href: api/PLATEAU.Editor.Addressables.AddressablesUtility.html#PLATEAU_Editor_Addressables_AddressablesUtility_SetOrCreateProfile_System_String_
-  commentId: M:PLATEAU.Editor.Addressables.AddressablesUtility.SetOrCreateProfile(System.String)
-  fullName: PLATEAU.Editor.Addressables.AddressablesUtility.SetOrCreateProfile(System.String)
-  nameWithType: AddressablesUtility.SetOrCreateProfile(String)
+- uid: PLATEAU.Editor.Addressables.AddressablesUtility.SetOrCreateProfile
+  name: SetOrCreateProfile()
+  href: api/PLATEAU.Editor.Addressables.AddressablesUtility.html#PLATEAU_Editor_Addressables_AddressablesUtility_SetOrCreateProfile
+  commentId: M:PLATEAU.Editor.Addressables.AddressablesUtility.SetOrCreateProfile
+  fullName: PLATEAU.Editor.Addressables.AddressablesUtility.SetOrCreateProfile()
+  nameWithType: AddressablesUtility.SetOrCreateProfile()
 - uid: PLATEAU.Editor.Addressables.AddressablesUtility.SetOrCreateProfile*
   name: SetOrCreateProfile
   href: api/PLATEAU.Editor.Addressables.AddressablesUtility.html#PLATEAU_Editor_Addressables_AddressablesUtility_SetOrCreateProfile_
@@ -8163,6 +9933,63 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Editor.CityInfo.PLATEAUInstancedCityModelEditor.OnInspectorGUI
   nameWithType: PLATEAUInstancedCityModelEditor.OnInspectorGUI
+- uid: PLATEAU.Editor.DynamicTile
+  name: PLATEAU.Editor.DynamicTile
+  href: api/PLATEAU.Editor.DynamicTile.html
+  commentId: N:PLATEAU.Editor.DynamicTile
+  fullName: PLATEAU.Editor.DynamicTile
+  nameWithType: PLATEAU.Editor.DynamicTile
+- uid: PLATEAU.Editor.DynamicTile.ImportToDynamicTile
+  name: ImportToDynamicTile
+  href: api/PLATEAU.Editor.DynamicTile.ImportToDynamicTile.html
+  commentId: T:PLATEAU.Editor.DynamicTile.ImportToDynamicTile
+  fullName: PLATEAU.Editor.DynamicTile.ImportToDynamicTile
+  nameWithType: ImportToDynamicTile
+- uid: PLATEAU.Editor.DynamicTile.ImportToDynamicTile.#ctor(IProgressDisplay)
+  name: ImportToDynamicTile(IProgressDisplay)
+  href: api/PLATEAU.Editor.DynamicTile.ImportToDynamicTile.html#PLATEAU_Editor_DynamicTile_ImportToDynamicTile__ctor_IProgressDisplay_
+  commentId: M:PLATEAU.Editor.DynamicTile.ImportToDynamicTile.#ctor(IProgressDisplay)
+  fullName: PLATEAU.Editor.DynamicTile.ImportToDynamicTile.ImportToDynamicTile(IProgressDisplay)
+  nameWithType: ImportToDynamicTile.ImportToDynamicTile(IProgressDisplay)
+- uid: PLATEAU.Editor.DynamicTile.ImportToDynamicTile.#ctor*
+  name: ImportToDynamicTile
+  href: api/PLATEAU.Editor.DynamicTile.ImportToDynamicTile.html#PLATEAU_Editor_DynamicTile_ImportToDynamicTile__ctor_
+  commentId: Overload:PLATEAU.Editor.DynamicTile.ImportToDynamicTile.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.Editor.DynamicTile.ImportToDynamicTile.ImportToDynamicTile
+  nameWithType: ImportToDynamicTile.ImportToDynamicTile
+- uid: PLATEAU.Editor.DynamicTile.ImportToDynamicTile.CancelImport
+  name: CancelImport()
+  href: api/PLATEAU.Editor.DynamicTile.ImportToDynamicTile.html#PLATEAU_Editor_DynamicTile_ImportToDynamicTile_CancelImport
+  commentId: M:PLATEAU.Editor.DynamicTile.ImportToDynamicTile.CancelImport
+  fullName: PLATEAU.Editor.DynamicTile.ImportToDynamicTile.CancelImport()
+  nameWithType: ImportToDynamicTile.CancelImport()
+- uid: PLATEAU.Editor.DynamicTile.ImportToDynamicTile.CancelImport*
+  name: CancelImport
+  href: api/PLATEAU.Editor.DynamicTile.ImportToDynamicTile.html#PLATEAU_Editor_DynamicTile_ImportToDynamicTile_CancelImport_
+  commentId: Overload:PLATEAU.Editor.DynamicTile.ImportToDynamicTile.CancelImport
+  isSpec: "True"
+  fullName: PLATEAU.Editor.DynamicTile.ImportToDynamicTile.CancelImport
+  nameWithType: ImportToDynamicTile.CancelImport
+- uid: PLATEAU.Editor.DynamicTile.ImportToDynamicTile.ExecAsync(CityImportConfig,CancellationToken)
+  name: ExecAsync(CityImportConfig, CancellationToken)
+  href: api/PLATEAU.Editor.DynamicTile.ImportToDynamicTile.html#PLATEAU_Editor_DynamicTile_ImportToDynamicTile_ExecAsync_CityImportConfig_CancellationToken_
+  commentId: M:PLATEAU.Editor.DynamicTile.ImportToDynamicTile.ExecAsync(CityImportConfig,CancellationToken)
+  fullName: PLATEAU.Editor.DynamicTile.ImportToDynamicTile.ExecAsync(CityImportConfig, CancellationToken)
+  nameWithType: ImportToDynamicTile.ExecAsync(CityImportConfig, CancellationToken)
+- uid: PLATEAU.Editor.DynamicTile.ImportToDynamicTile.ExecAsync*
+  name: ExecAsync
+  href: api/PLATEAU.Editor.DynamicTile.ImportToDynamicTile.html#PLATEAU_Editor_DynamicTile_ImportToDynamicTile_ExecAsync_
+  commentId: Overload:PLATEAU.Editor.DynamicTile.ImportToDynamicTile.ExecAsync
+  isSpec: "True"
+  fullName: PLATEAU.Editor.DynamicTile.ImportToDynamicTile.ExecAsync
+  nameWithType: ImportToDynamicTile.ExecAsync
+- uid: PLATEAU.Editor.DynamicTile.ImportToDynamicTile.TileProgressTitle
+  name: TileProgressTitle
+  href: api/PLATEAU.Editor.DynamicTile.ImportToDynamicTile.html#PLATEAU_Editor_DynamicTile_ImportToDynamicTile_TileProgressTitle
+  commentId: F:PLATEAU.Editor.DynamicTile.ImportToDynamicTile.TileProgressTitle
+  fullName: PLATEAU.Editor.DynamicTile.ImportToDynamicTile.TileProgressTitle
+  nameWithType: ImportToDynamicTile.TileProgressTitle
 - uid: PLATEAU.Editor.RoadNetwork
   name: PLATEAU.Editor.RoadNetwork
   href: api/PLATEAU.Editor.RoadNetwork.html
@@ -12589,57 +14416,6 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Editor.Window.Common.ScrollView.Draw
   nameWithType: ScrollView.Draw
-- uid: PLATEAU.Editor.Window.Main
-  name: PLATEAU.Editor.Window.Main
-  href: api/PLATEAU.Editor.Window.Main.html
-  commentId: N:PLATEAU.Editor.Window.Main
-  fullName: PLATEAU.Editor.Window.Main
-  nameWithType: PLATEAU.Editor.Window.Main
-- uid: PLATEAU.Editor.Window.Main.DynamicTileGui
-  name: DynamicTileGui
-  href: api/PLATEAU.Editor.Window.Main.DynamicTileGui.html
-  commentId: T:PLATEAU.Editor.Window.Main.DynamicTileGui
-  fullName: PLATEAU.Editor.Window.Main.DynamicTileGui
-  nameWithType: DynamicTileGui
-- uid: PLATEAU.Editor.Window.Main.DynamicTileGui.CreateGui
-  name: CreateGui()
-  href: api/PLATEAU.Editor.Window.Main.DynamicTileGui.html#PLATEAU_Editor_Window_Main_DynamicTileGui_CreateGui
-  commentId: M:PLATEAU.Editor.Window.Main.DynamicTileGui.CreateGui
-  fullName: PLATEAU.Editor.Window.Main.DynamicTileGui.CreateGui()
-  nameWithType: DynamicTileGui.CreateGui()
-- uid: PLATEAU.Editor.Window.Main.DynamicTileGui.CreateGui*
-  name: CreateGui
-  href: api/PLATEAU.Editor.Window.Main.DynamicTileGui.html#PLATEAU_Editor_Window_Main_DynamicTileGui_CreateGui_
-  commentId: Overload:PLATEAU.Editor.Window.Main.DynamicTileGui.CreateGui
-  isSpec: "True"
-  fullName: PLATEAU.Editor.Window.Main.DynamicTileGui.CreateGui
-  nameWithType: DynamicTileGui.CreateGui
-- uid: PLATEAU.Editor.Window.Main.DynamicTileGui.Dispose
-  name: Dispose()
-  href: api/PLATEAU.Editor.Window.Main.DynamicTileGui.html#PLATEAU_Editor_Window_Main_DynamicTileGui_Dispose
-  commentId: M:PLATEAU.Editor.Window.Main.DynamicTileGui.Dispose
-  fullName: PLATEAU.Editor.Window.Main.DynamicTileGui.Dispose()
-  nameWithType: DynamicTileGui.Dispose()
-- uid: PLATEAU.Editor.Window.Main.DynamicTileGui.Dispose*
-  name: Dispose
-  href: api/PLATEAU.Editor.Window.Main.DynamicTileGui.html#PLATEAU_Editor_Window_Main_DynamicTileGui_Dispose_
-  commentId: Overload:PLATEAU.Editor.Window.Main.DynamicTileGui.Dispose
-  isSpec: "True"
-  fullName: PLATEAU.Editor.Window.Main.DynamicTileGui.Dispose
-  nameWithType: DynamicTileGui.Dispose
-- uid: PLATEAU.Editor.Window.Main.DynamicTileGui.OnTabUnselect
-  name: OnTabUnselect()
-  href: api/PLATEAU.Editor.Window.Main.DynamicTileGui.html#PLATEAU_Editor_Window_Main_DynamicTileGui_OnTabUnselect
-  commentId: M:PLATEAU.Editor.Window.Main.DynamicTileGui.OnTabUnselect
-  fullName: PLATEAU.Editor.Window.Main.DynamicTileGui.OnTabUnselect()
-  nameWithType: DynamicTileGui.OnTabUnselect()
-- uid: PLATEAU.Editor.Window.Main.DynamicTileGui.OnTabUnselect*
-  name: OnTabUnselect
-  href: api/PLATEAU.Editor.Window.Main.DynamicTileGui.html#PLATEAU_Editor_Window_Main_DynamicTileGui_OnTabUnselect_
-  commentId: Overload:PLATEAU.Editor.Window.Main.DynamicTileGui.OnTabUnselect
-  isSpec: "True"
-  fullName: PLATEAU.Editor.Window.Main.DynamicTileGui.OnTabUnselect
-  nameWithType: DynamicTileGui.OnTabUnselect
 - uid: PLATEAU.Editor.Window.Main.Tab
   name: PLATEAU.Editor.Window.Main.Tab
   href: api/PLATEAU.Editor.Window.Main.Tab.html
@@ -12741,34 +14517,6 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Editor.Window.Main.Tab.CityImportConfigGui.ReceiveResult
   nameWithType: CityImportConfigGui.ReceiveResult
-- uid: PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI
-  name: PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI
-  href: api/PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI.html
-  commentId: N:PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI
-  fullName: PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI
-  nameWithType: PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI
-- uid: PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI.DynamicTileExporter
-  name: DynamicTileExporter
-  href: api/PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI.DynamicTileExporter.html
-  commentId: T:PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI.DynamicTileExporter
-  fullName: PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI.DynamicTileExporter
-  nameWithType: DynamicTileExporter
-- uid: PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI.DynamicTileExporter.Export(ConvertToAssetConfig,System.String,Action{System.String})
-  name: Export(ConvertToAssetConfig, String, Action<String>)
-  href: api/PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI.DynamicTileExporter.html#PLATEAU_Editor_Window_Main_Tab_DynamicTileGUI_DynamicTileExporter_Export_ConvertToAssetConfig_System_String_Action_System_String__
-  commentId: M:PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI.DynamicTileExporter.Export(ConvertToAssetConfig,System.String,Action{System.String})
-  name.vb: Export(ConvertToAssetConfig, String, Action(Of String))
-  fullName: PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI.DynamicTileExporter.Export(ConvertToAssetConfig, System.String, Action<System.String>)
-  fullName.vb: PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI.DynamicTileExporter.Export(ConvertToAssetConfig, System.String, Action(Of System.String))
-  nameWithType: DynamicTileExporter.Export(ConvertToAssetConfig, String, Action<String>)
-  nameWithType.vb: DynamicTileExporter.Export(ConvertToAssetConfig, String, Action(Of String))
-- uid: PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI.DynamicTileExporter.Export*
-  name: Export
-  href: api/PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI.DynamicTileExporter.html#PLATEAU_Editor_Window_Main_Tab_DynamicTileGUI_DynamicTileExporter_Export_
-  commentId: Overload:PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI.DynamicTileExporter.Export
-  isSpec: "True"
-  fullName: PLATEAU.Editor.Window.Main.Tab.DynamicTileGUI.DynamicTileExporter.Export
-  nameWithType: DynamicTileExporter.Export
 - uid: PLATEAU.Editor.Window.Main.Tab.ExportGuiParts
   name: PLATEAU.Editor.Window.Main.Tab.ExportGuiParts
   href: api/PLATEAU.Editor.Window.Main.Tab.ExportGuiParts.html
@@ -38199,6 +39947,109 @@ references:
   commentId: N:PLATEAU.Util
   fullName: PLATEAU.Util
   nameWithType: PLATEAU.Util
+- uid: PLATEAU.Util.AssetPathUtil
+  name: AssetPathUtil
+  href: api/PLATEAU.Util.AssetPathUtil.html
+  commentId: T:PLATEAU.Util.AssetPathUtil
+  fullName: PLATEAU.Util.AssetPathUtil
+  nameWithType: AssetPathUtil
+- uid: PLATEAU.Util.AssetPathUtil.ASSET_PATH
+  name: ASSET_PATH
+  href: api/PLATEAU.Util.AssetPathUtil.html#PLATEAU_Util_AssetPathUtil_ASSET_PATH
+  commentId: F:PLATEAU.Util.AssetPathUtil.ASSET_PATH
+  fullName: PLATEAU.Util.AssetPathUtil.ASSET_PATH
+  nameWithType: AssetPathUtil.ASSET_PATH
+- uid: PLATEAU.Util.AssetPathUtil.CreateDirectoryIfNotExist(System.String)
+  name: CreateDirectoryIfNotExist(String)
+  href: api/PLATEAU.Util.AssetPathUtil.html#PLATEAU_Util_AssetPathUtil_CreateDirectoryIfNotExist_System_String_
+  commentId: M:PLATEAU.Util.AssetPathUtil.CreateDirectoryIfNotExist(System.String)
+  fullName: PLATEAU.Util.AssetPathUtil.CreateDirectoryIfNotExist(System.String)
+  nameWithType: AssetPathUtil.CreateDirectoryIfNotExist(String)
+- uid: PLATEAU.Util.AssetPathUtil.CreateDirectoryIfNotExist*
+  name: CreateDirectoryIfNotExist
+  href: api/PLATEAU.Util.AssetPathUtil.html#PLATEAU_Util_AssetPathUtil_CreateDirectoryIfNotExist_
+  commentId: Overload:PLATEAU.Util.AssetPathUtil.CreateDirectoryIfNotExist
+  isSpec: "True"
+  fullName: PLATEAU.Util.AssetPathUtil.CreateDirectoryIfNotExist
+  nameWithType: AssetPathUtil.CreateDirectoryIfNotExist
+- uid: PLATEAU.Util.AssetPathUtil.CreateDirectoryWithIncrementalNameIfExist(System.String)
+  name: CreateDirectoryWithIncrementalNameIfExist(String)
+  href: api/PLATEAU.Util.AssetPathUtil.html#PLATEAU_Util_AssetPathUtil_CreateDirectoryWithIncrementalNameIfExist_System_String_
+  commentId: M:PLATEAU.Util.AssetPathUtil.CreateDirectoryWithIncrementalNameIfExist(System.String)
+  fullName: PLATEAU.Util.AssetPathUtil.CreateDirectoryWithIncrementalNameIfExist(System.String)
+  nameWithType: AssetPathUtil.CreateDirectoryWithIncrementalNameIfExist(String)
+- uid: PLATEAU.Util.AssetPathUtil.CreateDirectoryWithIncrementalNameIfExist*
+  name: CreateDirectoryWithIncrementalNameIfExist
+  href: api/PLATEAU.Util.AssetPathUtil.html#PLATEAU_Util_AssetPathUtil_CreateDirectoryWithIncrementalNameIfExist_
+  commentId: Overload:PLATEAU.Util.AssetPathUtil.CreateDirectoryWithIncrementalNameIfExist
+  isSpec: "True"
+  fullName: PLATEAU.Util.AssetPathUtil.CreateDirectoryWithIncrementalNameIfExist
+  nameWithType: AssetPathUtil.CreateDirectoryWithIncrementalNameIfExist
+- uid: PLATEAU.Util.AssetPathUtil.CreateIncrementalPathName(System.String)
+  name: CreateIncrementalPathName(String)
+  href: api/PLATEAU.Util.AssetPathUtil.html#PLATEAU_Util_AssetPathUtil_CreateIncrementalPathName_System_String_
+  commentId: M:PLATEAU.Util.AssetPathUtil.CreateIncrementalPathName(System.String)
+  fullName: PLATEAU.Util.AssetPathUtil.CreateIncrementalPathName(System.String)
+  nameWithType: AssetPathUtil.CreateIncrementalPathName(String)
+- uid: PLATEAU.Util.AssetPathUtil.CreateIncrementalPathName*
+  name: CreateIncrementalPathName
+  href: api/PLATEAU.Util.AssetPathUtil.html#PLATEAU_Util_AssetPathUtil_CreateIncrementalPathName_
+  commentId: Overload:PLATEAU.Util.AssetPathUtil.CreateIncrementalPathName
+  isSpec: "True"
+  fullName: PLATEAU.Util.AssetPathUtil.CreateIncrementalPathName
+  nameWithType: AssetPathUtil.CreateIncrementalPathName
+- uid: PLATEAU.Util.AssetPathUtil.GetAssetPath(System.String)
+  name: GetAssetPath(String)
+  href: api/PLATEAU.Util.AssetPathUtil.html#PLATEAU_Util_AssetPathUtil_GetAssetPath_System_String_
+  commentId: M:PLATEAU.Util.AssetPathUtil.GetAssetPath(System.String)
+  fullName: PLATEAU.Util.AssetPathUtil.GetAssetPath(System.String)
+  nameWithType: AssetPathUtil.GetAssetPath(String)
+- uid: PLATEAU.Util.AssetPathUtil.GetAssetPath*
+  name: GetAssetPath
+  href: api/PLATEAU.Util.AssetPathUtil.html#PLATEAU_Util_AssetPathUtil_GetAssetPath_
+  commentId: Overload:PLATEAU.Util.AssetPathUtil.GetAssetPath
+  isSpec: "True"
+  fullName: PLATEAU.Util.AssetPathUtil.GetAssetPath
+  nameWithType: AssetPathUtil.GetAssetPath
+- uid: PLATEAU.Util.AssetPathUtil.GetAssetPathFromRelativePath(System.String)
+  name: GetAssetPathFromRelativePath(String)
+  href: api/PLATEAU.Util.AssetPathUtil.html#PLATEAU_Util_AssetPathUtil_GetAssetPathFromRelativePath_System_String_
+  commentId: M:PLATEAU.Util.AssetPathUtil.GetAssetPathFromRelativePath(System.String)
+  fullName: PLATEAU.Util.AssetPathUtil.GetAssetPathFromRelativePath(System.String)
+  nameWithType: AssetPathUtil.GetAssetPathFromRelativePath(String)
+- uid: PLATEAU.Util.AssetPathUtil.GetAssetPathFromRelativePath*
+  name: GetAssetPathFromRelativePath
+  href: api/PLATEAU.Util.AssetPathUtil.html#PLATEAU_Util_AssetPathUtil_GetAssetPathFromRelativePath_
+  commentId: Overload:PLATEAU.Util.AssetPathUtil.GetAssetPathFromRelativePath
+  isSpec: "True"
+  fullName: PLATEAU.Util.AssetPathUtil.GetAssetPathFromRelativePath
+  nameWithType: AssetPathUtil.GetAssetPathFromRelativePath
+- uid: PLATEAU.Util.AssetPathUtil.GetFullPath(System.String)
+  name: GetFullPath(String)
+  href: api/PLATEAU.Util.AssetPathUtil.html#PLATEAU_Util_AssetPathUtil_GetFullPath_System_String_
+  commentId: M:PLATEAU.Util.AssetPathUtil.GetFullPath(System.String)
+  fullName: PLATEAU.Util.AssetPathUtil.GetFullPath(System.String)
+  nameWithType: AssetPathUtil.GetFullPath(String)
+- uid: PLATEAU.Util.AssetPathUtil.GetFullPath*
+  name: GetFullPath
+  href: api/PLATEAU.Util.AssetPathUtil.html#PLATEAU_Util_AssetPathUtil_GetFullPath_
+  commentId: Overload:PLATEAU.Util.AssetPathUtil.GetFullPath
+  isSpec: "True"
+  fullName: PLATEAU.Util.AssetPathUtil.GetFullPath
+  nameWithType: AssetPathUtil.GetFullPath
+- uid: PLATEAU.Util.AssetPathUtil.NormalizeAssetPath(System.String)
+  name: NormalizeAssetPath(String)
+  href: api/PLATEAU.Util.AssetPathUtil.html#PLATEAU_Util_AssetPathUtil_NormalizeAssetPath_System_String_
+  commentId: M:PLATEAU.Util.AssetPathUtil.NormalizeAssetPath(System.String)
+  fullName: PLATEAU.Util.AssetPathUtil.NormalizeAssetPath(System.String)
+  nameWithType: AssetPathUtil.NormalizeAssetPath(String)
+- uid: PLATEAU.Util.AssetPathUtil.NormalizeAssetPath*
+  name: NormalizeAssetPath
+  href: api/PLATEAU.Util.AssetPathUtil.html#PLATEAU_Util_AssetPathUtil_NormalizeAssetPath_
+  commentId: Overload:PLATEAU.Util.AssetPathUtil.NormalizeAssetPath
+  isSpec: "True"
+  fullName: PLATEAU.Util.AssetPathUtil.NormalizeAssetPath
+  nameWithType: AssetPathUtil.NormalizeAssetPath
 - uid: PLATEAU.Util.Async
   name: PLATEAU.Util.Async
   href: api/PLATEAU.Util.Async.html
@@ -38384,6 +40235,120 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Util.ConditionalLogger.Log
   nameWithType: ConditionalLogger.Log
+- uid: PLATEAU.Util.ConditionalShowAttribute
+  name: ConditionalShowAttribute
+  href: api/PLATEAU.Util.ConditionalShowAttribute.html
+  commentId: T:PLATEAU.Util.ConditionalShowAttribute
+  fullName: PLATEAU.Util.ConditionalShowAttribute
+  nameWithType: ConditionalShowAttribute
+- uid: PLATEAU.Util.ConditionalShowAttribute.#ctor(System.String)
+  name: ConditionalShowAttribute(String)
+  href: api/PLATEAU.Util.ConditionalShowAttribute.html#PLATEAU_Util_ConditionalShowAttribute__ctor_System_String_
+  commentId: M:PLATEAU.Util.ConditionalShowAttribute.#ctor(System.String)
+  fullName: PLATEAU.Util.ConditionalShowAttribute.ConditionalShowAttribute(System.String)
+  nameWithType: ConditionalShowAttribute.ConditionalShowAttribute(String)
+- uid: PLATEAU.Util.ConditionalShowAttribute.#ctor*
+  name: ConditionalShowAttribute
+  href: api/PLATEAU.Util.ConditionalShowAttribute.html#PLATEAU_Util_ConditionalShowAttribute__ctor_
+  commentId: Overload:PLATEAU.Util.ConditionalShowAttribute.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.Util.ConditionalShowAttribute.ConditionalShowAttribute
+  nameWithType: ConditionalShowAttribute.ConditionalShowAttribute
+- uid: PLATEAU.Util.ConditionalShowAttribute.conditionField
+  name: conditionField
+  href: api/PLATEAU.Util.ConditionalShowAttribute.html#PLATEAU_Util_ConditionalShowAttribute_conditionField
+  commentId: F:PLATEAU.Util.ConditionalShowAttribute.conditionField
+  fullName: PLATEAU.Util.ConditionalShowAttribute.conditionField
+  nameWithType: ConditionalShowAttribute.conditionField
+- uid: PLATEAU.Util.ConditionalShowBoolAttribute
+  name: ConditionalShowBoolAttribute
+  href: api/PLATEAU.Util.ConditionalShowBoolAttribute.html
+  commentId: T:PLATEAU.Util.ConditionalShowBoolAttribute
+  fullName: PLATEAU.Util.ConditionalShowBoolAttribute
+  nameWithType: ConditionalShowBoolAttribute
+- uid: PLATEAU.Util.ConditionalShowBoolAttribute.#ctor(System.Boolean)
+  name: ConditionalShowBoolAttribute(Boolean)
+  href: api/PLATEAU.Util.ConditionalShowBoolAttribute.html#PLATEAU_Util_ConditionalShowBoolAttribute__ctor_System_Boolean_
+  commentId: M:PLATEAU.Util.ConditionalShowBoolAttribute.#ctor(System.Boolean)
+  fullName: PLATEAU.Util.ConditionalShowBoolAttribute.ConditionalShowBoolAttribute(System.Boolean)
+  nameWithType: ConditionalShowBoolAttribute.ConditionalShowBoolAttribute(Boolean)
+- uid: PLATEAU.Util.ConditionalShowBoolAttribute.#ctor*
+  name: ConditionalShowBoolAttribute
+  href: api/PLATEAU.Util.ConditionalShowBoolAttribute.html#PLATEAU_Util_ConditionalShowBoolAttribute__ctor_
+  commentId: Overload:PLATEAU.Util.ConditionalShowBoolAttribute.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.Util.ConditionalShowBoolAttribute.ConditionalShowBoolAttribute
+  nameWithType: ConditionalShowBoolAttribute.ConditionalShowBoolAttribute
+- uid: PLATEAU.Util.ConditionalShowBoolAttribute.show
+  name: show
+  href: api/PLATEAU.Util.ConditionalShowBoolAttribute.html#PLATEAU_Util_ConditionalShowBoolAttribute_show
+  commentId: F:PLATEAU.Util.ConditionalShowBoolAttribute.show
+  fullName: PLATEAU.Util.ConditionalShowBoolAttribute.show
+  nameWithType: ConditionalShowBoolAttribute.show
+- uid: PLATEAU.Util.ConditionalShowBoolDrawer
+  name: ConditionalShowBoolDrawer
+  href: api/PLATEAU.Util.ConditionalShowBoolDrawer.html
+  commentId: T:PLATEAU.Util.ConditionalShowBoolDrawer
+  fullName: PLATEAU.Util.ConditionalShowBoolDrawer
+  nameWithType: ConditionalShowBoolDrawer
+- uid: PLATEAU.Util.ConditionalShowBoolDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  href: api/PLATEAU.Util.ConditionalShowBoolDrawer.html#PLATEAU_Util_ConditionalShowBoolDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
+  commentId: M:PLATEAU.Util.ConditionalShowBoolDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  fullName: PLATEAU.Util.ConditionalShowBoolDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  nameWithType: ConditionalShowBoolDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+- uid: PLATEAU.Util.ConditionalShowBoolDrawer.GetPropertyHeight*
+  name: GetPropertyHeight
+  href: api/PLATEAU.Util.ConditionalShowBoolDrawer.html#PLATEAU_Util_ConditionalShowBoolDrawer_GetPropertyHeight_
+  commentId: Overload:PLATEAU.Util.ConditionalShowBoolDrawer.GetPropertyHeight
+  isSpec: "True"
+  fullName: PLATEAU.Util.ConditionalShowBoolDrawer.GetPropertyHeight
+  nameWithType: ConditionalShowBoolDrawer.GetPropertyHeight
+- uid: PLATEAU.Util.ConditionalShowBoolDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/PLATEAU.Util.ConditionalShowBoolDrawer.html#PLATEAU_Util_ConditionalShowBoolDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  commentId: M:PLATEAU.Util.ConditionalShowBoolDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  fullName: PLATEAU.Util.ConditionalShowBoolDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: ConditionalShowBoolDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: PLATEAU.Util.ConditionalShowBoolDrawer.OnGUI*
+  name: OnGUI
+  href: api/PLATEAU.Util.ConditionalShowBoolDrawer.html#PLATEAU_Util_ConditionalShowBoolDrawer_OnGUI_
+  commentId: Overload:PLATEAU.Util.ConditionalShowBoolDrawer.OnGUI
+  isSpec: "True"
+  fullName: PLATEAU.Util.ConditionalShowBoolDrawer.OnGUI
+  nameWithType: ConditionalShowBoolDrawer.OnGUI
+- uid: PLATEAU.Util.ConditionalShowDrawer
+  name: ConditionalShowDrawer
+  href: api/PLATEAU.Util.ConditionalShowDrawer.html
+  commentId: T:PLATEAU.Util.ConditionalShowDrawer
+  fullName: PLATEAU.Util.ConditionalShowDrawer
+  nameWithType: ConditionalShowDrawer
+- uid: PLATEAU.Util.ConditionalShowDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  href: api/PLATEAU.Util.ConditionalShowDrawer.html#PLATEAU_Util_ConditionalShowDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
+  commentId: M:PLATEAU.Util.ConditionalShowDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  fullName: PLATEAU.Util.ConditionalShowDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  nameWithType: ConditionalShowDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+- uid: PLATEAU.Util.ConditionalShowDrawer.GetPropertyHeight*
+  name: GetPropertyHeight
+  href: api/PLATEAU.Util.ConditionalShowDrawer.html#PLATEAU_Util_ConditionalShowDrawer_GetPropertyHeight_
+  commentId: Overload:PLATEAU.Util.ConditionalShowDrawer.GetPropertyHeight
+  isSpec: "True"
+  fullName: PLATEAU.Util.ConditionalShowDrawer.GetPropertyHeight
+  nameWithType: ConditionalShowDrawer.GetPropertyHeight
+- uid: PLATEAU.Util.ConditionalShowDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/PLATEAU.Util.ConditionalShowDrawer.html#PLATEAU_Util_ConditionalShowDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  commentId: M:PLATEAU.Util.ConditionalShowDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  fullName: PLATEAU.Util.ConditionalShowDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: ConditionalShowDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: PLATEAU.Util.ConditionalShowDrawer.OnGUI*
+  name: OnGUI
+  href: api/PLATEAU.Util.ConditionalShowDrawer.html#PLATEAU_Util_ConditionalShowDrawer_OnGUI_
+  commentId: Overload:PLATEAU.Util.ConditionalShowDrawer.OnGUI
+  isSpec: "True"
+  fullName: PLATEAU.Util.ConditionalShowDrawer.OnGUI
+  nameWithType: ConditionalShowDrawer.OnGUI
 - uid: PLATEAU.Util.DebugEx
   name: DebugEx
   href: api/PLATEAU.Util.DebugEx.html
@@ -38438,6 +40403,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Util.DebugEx.DrawBorderParabola2D
   nameWithType: DebugEx.DrawBorderParabola2D
+- uid: PLATEAU.Util.DebugEx.DrawBounds(Bounds,Color,System.Single)
+  name: DrawBounds(Bounds, Color, Single)
+  href: api/PLATEAU.Util.DebugEx.html#PLATEAU_Util_DebugEx_DrawBounds_Bounds_Color_System_Single_
+  commentId: M:PLATEAU.Util.DebugEx.DrawBounds(Bounds,Color,System.Single)
+  fullName: PLATEAU.Util.DebugEx.DrawBounds(Bounds, Color, System.Single)
+  nameWithType: DebugEx.DrawBounds(Bounds, Color, Single)
+- uid: PLATEAU.Util.DebugEx.DrawBounds*
+  name: DrawBounds
+  href: api/PLATEAU.Util.DebugEx.html#PLATEAU_Util_DebugEx_DrawBounds_
+  commentId: Overload:PLATEAU.Util.DebugEx.DrawBounds
+  isSpec: "True"
+  fullName: PLATEAU.Util.DebugEx.DrawBounds
+  nameWithType: DebugEx.DrawBounds
 - uid: PLATEAU.Util.DebugEx.DrawCenters(IEnumerable{Vector3},System.Boolean,System.Single,System.Nullable{Vector3},System.Nullable{Color},System.Single,System.Boolean)
   name: DrawCenters(IEnumerable<Vector3>, Boolean, Single, Nullable<Vector3>, Nullable<Color>, Single, Boolean)
   href: api/PLATEAU.Util.DebugEx.html#PLATEAU_Util_DebugEx_DrawCenters_IEnumerable_Vector3__System_Boolean_System_Single_System_Nullable_Vector3__System_Nullable_Color__System_Single_System_Boolean_
@@ -40185,19 +42163,6 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Util.GeoGraph.GeoGraph2D.LerpRay
   nameWithType: GeoGraph2D.LerpRay
-- uid: PLATEAU.Util.GeoGraph.GeoGraph2D.LerpRay2(Ray2D,Ray2D,System.Single)
-  name: LerpRay2(Ray2D, Ray2D, Single)
-  href: api/PLATEAU.Util.GeoGraph.GeoGraph2D.html#PLATEAU_Util_GeoGraph_GeoGraph2D_LerpRay2_Ray2D_Ray2D_System_Single_
-  commentId: M:PLATEAU.Util.GeoGraph.GeoGraph2D.LerpRay2(Ray2D,Ray2D,System.Single)
-  fullName: PLATEAU.Util.GeoGraph.GeoGraph2D.LerpRay2(Ray2D, Ray2D, System.Single)
-  nameWithType: GeoGraph2D.LerpRay2(Ray2D, Ray2D, Single)
-- uid: PLATEAU.Util.GeoGraph.GeoGraph2D.LerpRay2*
-  name: LerpRay2
-  href: api/PLATEAU.Util.GeoGraph.GeoGraph2D.html#PLATEAU_Util_GeoGraph_GeoGraph2D_LerpRay2_
-  commentId: Overload:PLATEAU.Util.GeoGraph.GeoGraph2D.LerpRay2
-  isSpec: "True"
-  fullName: PLATEAU.Util.GeoGraph.GeoGraph2D.LerpRay2
-  nameWithType: GeoGraph2D.LerpRay2
 - uid: PLATEAU.Util.GeoGraph.GeoGraph2D.NearestPointInfo
   name: GeoGraph2D.NearestPointInfo
   href: api/PLATEAU.Util.GeoGraph.GeoGraph2D.NearestPointInfo.html
@@ -41899,19 +43864,19 @@ references:
   commentId: F:PLATEAU.Util.MaterialPathUtil.BaseMaterialDir
   fullName: PLATEAU.Util.MaterialPathUtil.BaseMaterialDir
   nameWithType: MaterialPathUtil.BaseMaterialDir
-- uid: PLATEAU.Util.MaterialPathUtil.GetMapMatPath
-  name: GetMapMatPath()
-  href: api/PLATEAU.Util.MaterialPathUtil.html#PLATEAU_Util_MaterialPathUtil_GetMapMatPath
-  commentId: M:PLATEAU.Util.MaterialPathUtil.GetMapMatPath
-  fullName: PLATEAU.Util.MaterialPathUtil.GetMapMatPath()
-  nameWithType: MaterialPathUtil.GetMapMatPath()
-- uid: PLATEAU.Util.MaterialPathUtil.GetMapMatPath*
-  name: GetMapMatPath
-  href: api/PLATEAU.Util.MaterialPathUtil.html#PLATEAU_Util_MaterialPathUtil_GetMapMatPath_
-  commentId: Overload:PLATEAU.Util.MaterialPathUtil.GetMapMatPath
+- uid: PLATEAU.Util.MaterialPathUtil.GetMapMatName
+  name: GetMapMatName()
+  href: api/PLATEAU.Util.MaterialPathUtil.html#PLATEAU_Util_MaterialPathUtil_GetMapMatName
+  commentId: M:PLATEAU.Util.MaterialPathUtil.GetMapMatName
+  fullName: PLATEAU.Util.MaterialPathUtil.GetMapMatName()
+  nameWithType: MaterialPathUtil.GetMapMatName()
+- uid: PLATEAU.Util.MaterialPathUtil.GetMapMatName*
+  name: GetMapMatName
+  href: api/PLATEAU.Util.MaterialPathUtil.html#PLATEAU_Util_MaterialPathUtil_GetMapMatName_
+  commentId: Overload:PLATEAU.Util.MaterialPathUtil.GetMapMatName
   isSpec: "True"
-  fullName: PLATEAU.Util.MaterialPathUtil.GetMapMatPath
-  nameWithType: MaterialPathUtil.GetMapMatPath
+  fullName: PLATEAU.Util.MaterialPathUtil.GetMapMatName
+  nameWithType: MaterialPathUtil.GetMapMatName
 - uid: PLATEAU.Util.MaterialPathUtil.GetRenderPipelineType
   name: GetRenderPipelineType()
   href: api/PLATEAU.Util.MaterialPathUtil.html#PLATEAU_Util_MaterialPathUtil_GetRenderPipelineType
@@ -42158,6 +44123,19 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Util.PathUtil.FullPathToAssetsPath
   nameWithType: PathUtil.FullPathToAssetsPath
+- uid: PLATEAU.Util.PathUtil.GetTempImportDir
+  name: GetTempImportDir()
+  href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_GetTempImportDir
+  commentId: M:PLATEAU.Util.PathUtil.GetTempImportDir
+  fullName: PLATEAU.Util.PathUtil.GetTempImportDir()
+  nameWithType: PathUtil.GetTempImportDir()
+- uid: PLATEAU.Util.PathUtil.GetTempImportDir*
+  name: GetTempImportDir
+  href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_GetTempImportDir_
+  commentId: Overload:PLATEAU.Util.PathUtil.GetTempImportDir
+  isSpec: "True"
+  fullName: PLATEAU.Util.PathUtil.GetTempImportDir
+  nameWithType: PathUtil.GetTempImportDir
 - uid: PLATEAU.Util.PathUtil.IsSubDirectory(System.String,System.String)
   name: IsSubDirectory(String, String)
   href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_IsSubDirectory_System_String_System_String_
@@ -42210,12 +44188,6 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Util.PathUtil.IsValidOutputFilePath
   nameWithType: PathUtil.IsValidOutputFilePath
-- uid: PLATEAU.Util.PathUtil.PLATEAUSrcFetchDir
-  name: PLATEAUSrcFetchDir
-  href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_PLATEAUSrcFetchDir
-  commentId: F:PLATEAU.Util.PathUtil.PLATEAUSrcFetchDir
-  fullName: PLATEAU.Util.PathUtil.PLATEAUSrcFetchDir
-  nameWithType: PathUtil.PLATEAUSrcFetchDir
 - uid: PLATEAU.Util.PathUtil.SdkBasePath
   name: SdkBasePath
   href: api/PLATEAU.Util.PathUtil.html#PLATEAU_Util_PathUtil_SdkBasePath
@@ -42472,6 +44444,31 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Util.RayEx.To2D
   nameWithType: RayEx.To2D
+- uid: PLATEAU.Util.ReadOnlyAttribute
+  name: ReadOnlyAttribute
+  href: api/PLATEAU.Util.ReadOnlyAttribute.html
+  commentId: T:PLATEAU.Util.ReadOnlyAttribute
+  fullName: PLATEAU.Util.ReadOnlyAttribute
+  nameWithType: ReadOnlyAttribute
+- uid: PLATEAU.Util.ReadOnlyDrawer
+  name: ReadOnlyDrawer
+  href: api/PLATEAU.Util.ReadOnlyDrawer.html
+  commentId: T:PLATEAU.Util.ReadOnlyDrawer
+  fullName: PLATEAU.Util.ReadOnlyDrawer
+  nameWithType: ReadOnlyDrawer
+- uid: PLATEAU.Util.ReadOnlyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/PLATEAU.Util.ReadOnlyDrawer.html#PLATEAU_Util_ReadOnlyDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  commentId: M:PLATEAU.Util.ReadOnlyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  fullName: PLATEAU.Util.ReadOnlyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: ReadOnlyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: PLATEAU.Util.ReadOnlyDrawer.OnGUI*
+  name: OnGUI
+  href: api/PLATEAU.Util.ReadOnlyDrawer.html#PLATEAU_Util_ReadOnlyDrawer_OnGUI_
+  commentId: Overload:PLATEAU.Util.ReadOnlyDrawer.OnGUI
+  isSpec: "True"
+  fullName: PLATEAU.Util.ReadOnlyDrawer.OnGUI
+  nameWithType: ReadOnlyDrawer.OnGUI
 - uid: PLATEAU.Util.RenderUtil
   name: RenderUtil
   href: api/PLATEAU.Util.RenderUtil.html

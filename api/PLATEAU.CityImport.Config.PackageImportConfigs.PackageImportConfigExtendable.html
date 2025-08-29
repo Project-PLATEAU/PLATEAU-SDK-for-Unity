@@ -136,12 +136,12 @@
   
   
   <a id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfigExtendable__ctor_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.#ctor*"></a>
-  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfigExtendable__ctor_System_Boolean_MeshGranularity_System_Boolean_System_Boolean_System_Boolean_PLATEAU_CityImport_Config_PackageImportConfigs_TexturePackingResolution_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.#ctor(System.Boolean,MeshGranularity,System.Boolean,System.Boolean,System.Boolean,PLATEAU.CityImport.Config.PackageImportConfigs.TexturePackingResolution)">PackageImportConfigExtendable(Boolean, MeshGranularity, Boolean, Boolean, Boolean, TexturePackingResolution)</h4>
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfigExtendable__ctor_System_Boolean_MeshGranularity_System_Boolean_System_Boolean_System_Boolean_PLATEAU_CityImport_Config_PackageImportConfigs_TexturePackingResolution_System_Boolean_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.#ctor(System.Boolean,MeshGranularity,System.Boolean,System.Boolean,System.Boolean,PLATEAU.CityImport.Config.PackageImportConfigs.TexturePackingResolution,System.Boolean)">PackageImportConfigExtendable(Boolean, MeshGranularity, Boolean, Boolean, Boolean, TexturePackingResolution, Boolean)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PackageImportConfigExtendable(bool includeTexture, MeshGranularity meshGranularity, bool doSetMeshCollider, bool doSetAttrInfo, bool enableTexturePacking, TexturePackingResolution texturePackingResolution)</code></pre>
+    <pre><code class="lang-csharp hljs">public PackageImportConfigExtendable(bool includeTexture, MeshGranularity meshGranularity, bool doSetMeshCollider, bool doSetAttrInfo, bool enableTexturePacking, TexturePackingResolution texturePackingResolution, bool forcePerCityModelArea)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -181,6 +181,11 @@
       <tr>
         <td><a class="xref" href="PLATEAU.CityImport.Config.PackageImportConfigs.TexturePackingResolution.html">TexturePackingResolution</a></td>
         <td><span class="parametername">texturePackingResolution</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">forcePerCityModelArea</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -246,6 +251,31 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool EnableTexturePacking { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfigExtendable_ForcePerCityModelArea_" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.ForcePerCityModelArea*"></a>
+  <h4 id="PLATEAU_CityImport_Config_PackageImportConfigs_PackageImportConfigExtendable_ForcePerCityModelArea" data-uid="PLATEAU.CityImport.Config.PackageImportConfigs.PackageImportConfigExtendable.ForcePerCityModelArea">ForcePerCityModelArea</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ForcePerCityModelArea { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

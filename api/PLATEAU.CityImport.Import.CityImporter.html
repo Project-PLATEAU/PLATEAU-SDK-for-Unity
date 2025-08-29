@@ -126,15 +126,16 @@
   
   
   <a id="PLATEAU_CityImport_Import_CityImporter_ImportAsync_" data-uid="PLATEAU.CityImport.Import.CityImporter.ImportAsync*"></a>
-  <h4 id="PLATEAU_CityImport_Import_CityImporter_ImportAsync_CityImportConfig_IProgressDisplay_System_Nullable_CancellationToken__" data-uid="PLATEAU.CityImport.Import.CityImporter.ImportAsync(CityImportConfig,IProgressDisplay,System.Nullable{CancellationToken})">ImportAsync(CityImportConfig, IProgressDisplay, Nullable&lt;CancellationToken&gt;)</h4>
+  <h4 id="PLATEAU_CityImport_Import_CityImporter_ImportAsync_CityImportConfig_IProgressDisplay_System_Nullable_CancellationToken__IEnumerable_PLATEAU_CityImport_Import_IPostGmlImportProcessor__" data-uid="PLATEAU.CityImport.Import.CityImporter.ImportAsync(CityImportConfig,IProgressDisplay,System.Nullable{CancellationToken},IEnumerable{PLATEAU.CityImport.Import.IPostGmlImportProcessor})">ImportAsync(CityImportConfig, IProgressDisplay, Nullable&lt;CancellationToken&gt;, IEnumerable&lt;IPostGmlImportProcessor&gt;)</h4>
   <div class="markdown level1 summary"><p><a class="xref" href="PLATEAU.CityImport.Import.CityImporter.html">CityImporter</a> クラスのメインメソッドです。
 GMLファイルから都市モデルを読み、そのメッシュをUnity向けに変換してシーンに配置します。
-メインスレッドで呼ぶ必要があります。</p>
+メインスレッドで呼ぶ必要があります。
+GMLを1つ読み込んだあとにしたい処理を<code data-dev-comment-type="paramref" class="paramref">postGmlProcessors</code>に渡します。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static async Task ImportAsync(CityImportConfig config, IProgressDisplay progressDisplay, CancellationToken? token)</code></pre>
+    <pre><code class="lang-csharp hljs">public static async Task ImportAsync(CityImportConfig config, IProgressDisplay progressDisplay, CancellationToken? token, IEnumerable&lt;IPostGmlImportProcessor&gt; postGmlProcessors = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -159,6 +160,11 @@ GMLファイルから都市モデルを読み、そのメッシュをUnity向け
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">CancellationToken</span>&gt;</td>
         <td><span class="parametername">token</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.CityImport.Import.IPostGmlImportProcessor.html">IPostGmlImportProcessor</a>&gt;</td>
+        <td><span class="parametername">postGmlProcessors</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DynamicTileExporter
+   | PLATEAU SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DynamicTileExporter
+   | PLATEAU SDK for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.DynamicTile.DynamicTileExporter">
+  
+  
+  <h1 id="PLATEAU_DynamicTile_DynamicTileExporter" data-uid="PLATEAU.DynamicTile.DynamicTileExporter" class="text-break">Class DynamicTileExporter
+  </h1>
+  <div class="markdown level0 summary"><p>都市モデルをDynamicTile用にプレハブ化し、一括でアセットバンドルとして出力する。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DynamicTileExporter</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.DynamicTile.html">PLATEAU.DynamicTile</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="PLATEAU_DynamicTile_DynamicTileExporter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DynamicTileExporter : IPostGmlImportProcessor</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="PLATEAU_DynamicTile_DynamicTileExporter__ctor_" data-uid="PLATEAU.DynamicTile.DynamicTileExporter.#ctor*"></a>
+  <h4 id="PLATEAU_DynamicTile_DynamicTileExporter__ctor_IProgressDisplay_" data-uid="PLATEAU.DynamicTile.DynamicTileExporter.#ctor(IProgressDisplay)">DynamicTileExporter(IProgressDisplay)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicTileExporter(IProgressDisplay progressDisplay)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IProgressDisplay</span></td>
+        <td><span class="parametername">progressDisplay</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="PLATEAU_DynamicTile_DynamicTileExporter_Context_" data-uid="PLATEAU.DynamicTile.DynamicTileExporter.Context*"></a>
+  <h4 id="PLATEAU_DynamicTile_DynamicTileExporter_Context" data-uid="PLATEAU.DynamicTile.DynamicTileExporter.Context">Context</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicTileProcessingContext Context { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.DynamicTile.DynamicTileProcessingContext.html">DynamicTileProcessingContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PLATEAU_DynamicTile_DynamicTileExporter_Cancel_" data-uid="PLATEAU.DynamicTile.DynamicTileExporter.Cancel*"></a>
+  <h4 id="PLATEAU_DynamicTile_DynamicTileExporter_Cancel" data-uid="PLATEAU.DynamicTile.DynamicTileExporter.Cancel">Cancel()</h4>
+  <div class="markdown level1 summary"><p>進行中のAddressable化をキャンセルします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Cancel()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_DynamicTile_DynamicTileExporter_CleanupTempFolder_" data-uid="PLATEAU.DynamicTile.DynamicTileExporter.CleanupTempFolder*"></a>
+  <h4 id="PLATEAU_DynamicTile_DynamicTileExporter_CleanupTempFolder" data-uid="PLATEAU.DynamicTile.DynamicTileExporter.CleanupTempFolder">CleanupTempFolder()</h4>
+  <div class="markdown level1 summary"><p>一時フォルダーを削除します</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CleanupTempFolder()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_DynamicTile_DynamicTileExporter_CompleteProcessing_" data-uid="PLATEAU.DynamicTile.DynamicTileExporter.CompleteProcessing*"></a>
+  <h4 id="PLATEAU_DynamicTile_DynamicTileExporter_CompleteProcessing" data-uid="PLATEAU.DynamicTile.DynamicTileExporter.CompleteProcessing">CompleteProcessing()</h4>
+  <div class="markdown level1 summary"><p>DynamicTileの完了処理を行います（メタストア保存、Addressable処理、マネージャー設定）
+成否を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CompleteProcessing()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_DynamicTileExporter_FocusSceneViewCameraToTiles_" data-uid="PLATEAU.DynamicTile.DynamicTileExporter.FocusSceneViewCameraToTiles*"></a>
+  <h4 id="PLATEAU_DynamicTile_DynamicTileExporter_FocusSceneViewCameraToTiles_PLATEAU_DynamicTile_PLATEAUTileManager_" data-uid="PLATEAU.DynamicTile.DynamicTileExporter.FocusSceneViewCameraToTiles(PLATEAU.DynamicTile.PLATEAUTileManager)">FocusSceneViewCameraToTiles(PLATEAUTileManager)</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="PLATEAU.DynamicTile.PLATEAUTileManager.html">PLATEAUTileManager</a>が保持するタイル範囲がSceneViewカメラにぴったり収まるようなカメラ位置を計算して返します。
+シーンビューのカメラは真下を向きます。
+ただし、離れすぎて見えない場合は見える程度の距離にします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FocusSceneViewCameraToTiles(PLATEAUTileManager manager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.DynamicTile.PLATEAUTileManager.html">PLATEAUTileManager</a></td>
+        <td><span class="parametername">manager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_DynamicTileExporter_OnGmlImported_" data-uid="PLATEAU.DynamicTile.DynamicTileExporter.OnGmlImported*"></a>
+  <h4 id="PLATEAU_DynamicTile_DynamicTileExporter_OnGmlImported_GmlImportResult_" data-uid="PLATEAU.DynamicTile.DynamicTileExporter.OnGmlImported(GmlImportResult)">OnGmlImported(GmlImportResult)</h4>
+  <div class="markdown level1 summary"><p>インポートしつつ動的タイルにするモードにおいて、GML1つがインポートされた後に呼ばれます。
+動的タイルにします。
+<see cref="!:IPostGmlImportProcessor"></see>を実装するものです。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnGmlImported(GmlImportResult importResult)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GmlImportResult</span></td>
+        <td><span class="parametername">importResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_DynamicTileExporter_ProcessCityObject_" data-uid="PLATEAU.DynamicTile.DynamicTileExporter.ProcessCityObject*"></a>
+  <h4 id="PLATEAU_DynamicTile_DynamicTileExporter_ProcessCityObject_PLATEAUCityObjectGroup_ConvertToAssetConfig_System_String_PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_Action_System_String__" data-uid="PLATEAU.DynamicTile.DynamicTileExporter.ProcessCityObject(PLATEAUCityObjectGroup,ConvertToAssetConfig,System.String,PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore,Action{System.String})">ProcessCityObject(PLATEAUCityObjectGroup, ConvertToAssetConfig, String, PLATEAUDynamicTileMetaStore, Action&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>都市オブジェクト１つを処理し、プレハブ化・Addressable登録を行う</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ProcessCityObject(PLATEAUCityObjectGroup cityObject, ConvertToAssetConfig assetConfig, string groupName, PLATEAUDynamicTileMetaStore metaStore, Action&lt;string&gt; onError = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PLATEAUCityObjectGroup</span></td>
+        <td><span class="parametername">cityObject</span></td>
+        <td><p>処理対象の都市オブジェクト</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ConvertToAssetConfig</span></td>
+        <td><span class="parametername">assetConfig</span></td>
+        <td><p>変換設定</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">groupName</span></td>
+        <td><p>Addressableグループ名</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.html">PLATEAUDynamicTileMetaStore</a></td>
+        <td><span class="parametername">metaStore</span></td>
+        <td><p>メタデータストア</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">onError</span></td>
+        <td><p>エラー時のコールバック</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>処理が成功した場合はtrue</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_DynamicTileExporter_SetupPreProcessing_" data-uid="PLATEAU.DynamicTile.DynamicTileExporter.SetupPreProcessing*"></a>
+  <h4 id="PLATEAU_DynamicTile_DynamicTileExporter_SetupPreProcessing_CityImportConfig_" data-uid="PLATEAU.DynamicTile.DynamicTileExporter.SetupPreProcessing(CityImportConfig)">SetupPreProcessing(CityImportConfig)</h4>
+  <div class="markdown level1 summary"><p>動的タイルの事前処理を行います。
+成否を返します。
+既存メタがあれば、共通ReferencePointを事前にCityImportConfigへ反映します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetupPreProcessing(CityImportConfig cityConfig)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CityImportConfig</span></td>
+        <td><span class="parametername">cityConfig</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            PLATEAU SDK for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
