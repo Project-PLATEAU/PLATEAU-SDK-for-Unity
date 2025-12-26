@@ -154,13 +154,14 @@
   
   
   <a id="PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_AddMetaInfo_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.AddMetaInfo*"></a>
-  <h4 id="PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_AddMetaInfo_System_String_Bounds_System_Int32_System_Int32_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.AddMetaInfo(System.String,Bounds,System.Int32,System.Int32)">AddMetaInfo(String, Bounds, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>meta情報を追加します。</p>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_AddMetaInfo_System_String_System_String_Bounds_System_Int32_System_Int32_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.AddMetaInfo(System.String,System.String,Bounds,System.Int32,System.Int32)">AddMetaInfo(String, String, Bounds, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>meta情報を追加します。
+TODO : lodは使用しないので、将来的に削除する可能性があります。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddMetaInfo(string addressName, Bounds extent, int lod, int zoomLevel)</code></pre>
+    <pre><code class="lang-csharp hljs">public void AddMetaInfo(string addressName, string groupName, Bounds extent, int lod, int zoomLevel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -175,6 +176,11 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">addressName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">groupName</span></td>
         <td></td>
       </tr>
       <tr>
@@ -205,6 +211,34 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
   </div>
+  
+  
+  <a id="PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_CopyFrom_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.CopyFrom*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_CopyFrom_PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.CopyFrom(PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore)">CopyFrom(PLATEAUDynamicTileMetaStore)</h4>
+  <div class="markdown level1 summary"><p>ディープコピーします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyFrom(PLATEAUDynamicTileMetaStore source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.html">PLATEAUDynamicTileMetaStore</a></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="PLATEAU_DynamicTile_PLATEAUDynamicTileMetaStore_GetMetaInfo_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.GetMetaInfo*"></a>

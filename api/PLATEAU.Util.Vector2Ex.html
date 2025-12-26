@@ -258,6 +258,55 @@
   </table>
   
   
+  <a id="PLATEAU_Util_Vector2Ex_Axy_" data-uid="PLATEAU.Util.Vector2Ex.Axy*"></a>
+  <h4 id="PLATEAU_Util_Vector2Ex_Axy_Vector2_System_Single_" data-uid="PLATEAU.Util.Vector2Ex.Axy(Vector2,System.Single)">Axy(Vector2, Single)</h4>
+  <div class="markdown level1 summary"><p>xを指定してVector3にする
+return new Vector3(x, self.x, self.y);</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 Axy(this Vector2 self, float x = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_Util_Vector2Ex_CeilToInt_" data-uid="PLATEAU.Util.Vector2Ex.CeilToInt*"></a>
   <h4 id="PLATEAU_Util_Vector2Ex_CeilToInt_Vector2_" data-uid="PLATEAU.Util.Vector2Ex.CeilToInt(Vector2)">CeilToInt(Vector2)</h4>
   <div class="markdown level1 summary"><p>各成分に対してCeilToIntを適用してVector2Int型で返す</p>
@@ -1011,6 +1060,49 @@
       <tr>
         <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_Vector2Ex_RevScaled_" data-uid="PLATEAU.Util.Vector2Ex.RevScaled*"></a>
+  <h4 id="PLATEAU_Util_Vector2Ex_RevScaled_Vector2_" data-uid="PLATEAU.Util.Vector2Ex.RevScaled(Vector2)">RevScaled(Vector2)</h4>
+  <div class="markdown level1 summary"><p>new Vector2(1f / self.x, 1f / self.y)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 RevScaled(this Vector2 self)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>

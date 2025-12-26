@@ -90,6 +90,17 @@
       <h4><a class="xref" href="PLATEAU.Editor.DynamicTile.ImportToDynamicTile.html">ImportToDynamicTile</a></h4>
       <section><p>都市モデルをインポートしながら動的タイルを生成します。</p>
 </section>
+      <h4><a class="xref" href="PLATEAU.Editor.DynamicTile.TileRebuilder.html">TileRebuilder</a></h4>
+      <section><p>タイルを再生成します。
+これは次の手順を踏みます。
+・<see cref="!:TilePrefabsToScene(PLATEAU.DynamicTile.PLATEAUTileManager)"></see>を利用し、セットバンドル化のもととなったプレハブをロードします。
+・シーンに配置されたプレハブインスタンスが外部から変更されるものとします。
+・<a class="xref" href="PLATEAU.Editor.DynamicTile.TileRebuilder.html#PLATEAU_Editor_DynamicTile_TileRebuilder_Rebuild_PLATEAUTileManager_">Rebuild(PLATEAUTileManager)</a>を利用し、その変更をプレハブに再適用して再度アセットバンドル化します。
+この処理を動作確認するためにUnityのメニューバーから実行する機能が<a class="xref" href="PLATEAU.Editor.DynamicTile.TileRebuilderMenuItem.html">TileRebuilderMenuItem</a>にあります。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.Editor.DynamicTile.TileRebuilderMenuItem.html">TileRebuilderMenuItem</a></h4>
+      <section><p><a class="xref" href="PLATEAU.Editor.DynamicTile.TileRebuilder.html">TileRebuilder</a>の機能をメニューバーから実行して動作確認できるようにするためのクラスです。</p>
+</section>
 </article>
           </div>
           

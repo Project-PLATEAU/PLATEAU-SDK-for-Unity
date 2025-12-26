@@ -212,14 +212,14 @@
   </table>
   
   
-  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_TargetTrans_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.TargetTrans*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_TargetTrans" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.TargetTrans">TargetTrans</h4>
-  <div class="markdown level1 summary"><p>これに紐づくtranオブジェクトリスト(統合なので複数存在する場合がある)</p>
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_TargetGroupKeys_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.TargetGroupKeys*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_TargetGroupKeys" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.TargetGroupKeys">TargetGroupKeys</h4>
+  <div class="markdown level1 summary"><p>このオブジェクトに紐づく主要地物の都市モデルIdリスト(統合なので複数存在する場合がある)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;PLATEAUCityObjectGroup&gt; TargetTrans { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;RnCityObjectGroupKey&gt; TargetGroupKeys { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -231,7 +231,36 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">PLATEAUCityObjectGroup</span>&gt;</td>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.RnCityObjectGroupKey.html">RnCityObjectGroupKey</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_TargetTrans_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.TargetTrans*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_TargetTrans" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.TargetTrans">TargetTrans</h4>
+  <div class="markdown level1 summary"><h1 id="note--タイルメッシュ読み込みだと実質意味を持たなくなりますタイル内のすべての道路が同じ物を参照するようになるためです">NOTE : タイルメッシュ読み込みだと実質意味を持たなくなります.タイル内のすべての道路が同じ物を参照するようになるためです</h1>
+<p>  : 代わりにTargetGroupKeysを使ってください</p>
+<h1 id="todo--最終的には消す予定です現在使っている個所があるのでdeprecatedにもしていませんが今後deprecated---削除されます">TODO : 最終的には消す予定です。現在使っている個所があるのでdeprecatedにもしていませんが今後deprecated -&gt; 削除されます</h1>
+<p>このオブジェクトのメッシュが所属していたPLATEAUCityObjectGroupのリスト(統合されているので複数存在する場合がある)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;PLATEAUCityObjectGroup&gt; TargetTrans { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">PLATEAUCityObjectGroup</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -284,14 +313,14 @@ sideWalkの親情報も書き換える</p>
   </table>
   
   
-  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_AddTargetTran_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.AddTargetTran*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_AddTargetTran_PLATEAUCityObjectGroup_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.AddTargetTran(PLATEAUCityObjectGroup)">AddTargetTran(PLATEAUCityObjectGroup)</h4>
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_AddTarget_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.AddTarget*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_AddTarget_PLATEAUCityObjectGroup_PLATEAU_RoadNetwork_RnCityObjectGroupKey_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.AddTarget(PLATEAUCityObjectGroup,PLATEAU.RoadNetwork.RnCityObjectGroupKey)">AddTarget(PLATEAUCityObjectGroup, RnCityObjectGroupKey)</h4>
   <div class="markdown level1 summary"><p>対象のTargetTranを追加</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddTargetTran(PLATEAUCityObjectGroup targetTran)</code></pre>
+    <pre><code class="lang-csharp hljs">public void AddTarget(PLATEAUCityObjectGroup tran, RnCityObjectGroupKey groupKey)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -305,20 +334,26 @@ sideWalkの親情報も書き換える</p>
     <tbody>
       <tr>
         <td><span class="xref">PLATEAUCityObjectGroup</span></td>
-        <td><span class="parametername">targetTran</span></td>
+        <td><span class="parametername">tran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.RnCityObjectGroupKey.html">RnCityObjectGroupKey</a></td>
+        <td><span class="parametername">groupKey</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_AddTargetTrans_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.AddTargetTrans*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_AddTargetTrans_IEnumerable_PLATEAUCityObjectGroup__" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.AddTargetTrans(IEnumerable{PLATEAUCityObjectGroup})">AddTargetTrans(IEnumerable&lt;PLATEAUCityObjectGroup&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_AddTargets_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.AddTargets*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_AddTargets_IEnumerable_PLATEAUCityObjectGroup__IEnumerable_PLATEAU_RoadNetwork_RnCityObjectGroupKey__" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.AddTargets(IEnumerable{PLATEAUCityObjectGroup},IEnumerable{PLATEAU.RoadNetwork.RnCityObjectGroupKey})">AddTargets(IEnumerable&lt;PLATEAUCityObjectGroup&gt;, IEnumerable&lt;RnCityObjectGroupKey&gt;)</h4>
+  <div class="markdown level1 summary"><p>対象のTargetTranを追加(複数</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddTargetTrans(IEnumerable&lt;PLATEAUCityObjectGroup&gt; targetTrans)</code></pre>
+    <pre><code class="lang-csharp hljs">public void AddTargets(IEnumerable&lt;PLATEAUCityObjectGroup&gt; trans, IEnumerable&lt;RnCityObjectGroupKey&gt; groupKeys)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -332,7 +367,12 @@ sideWalkの親情報も書き換える</p>
     <tbody>
       <tr>
         <td><span class="xref">IEnumerable</span>&lt;<span class="xref">PLATEAUCityObjectGroup</span>&gt;</td>
-        <td><span class="parametername">targetTrans</span></td>
+        <td><span class="parametername">trans</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.RnCityObjectGroupKey.html">RnCityObjectGroupKey</a>&gt;</td>
+        <td><span class="parametername">groupKeys</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -406,6 +446,17 @@ sideWalkの親情報も書き換える</p>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_ClearTargets_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.ClearTargets*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoadBase_ClearTargets" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.ClearTargets">ClearTargets()</h4>
+  <div class="markdown level1 summary"><p>targetTrans/targetGroupKeysをクリアする</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearTargets()</code></pre>
+  </div>
   
   
   <a id="PLATEAU_RoadNetwork_Structure_RnRoadBase_DisConnect_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoadBase.DisConnect*"></a>

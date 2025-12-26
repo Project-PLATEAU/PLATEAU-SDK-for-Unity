@@ -83,7 +83,8 @@
   
   <h1 id="PLATEAU_DynamicTile_PLATEAUDynamicTileMetaInfo" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo" class="text-break">Class PLATEAUDynamicTileMetaInfo
   </h1>
-  <div class="markdown level0 summary"><p>Addressに紐づく情報を保持するデータクラス。</p>
+  <div class="markdown level0 summary"><p>Addressに紐づく情報を保持するデータクラス。
+TODO : lodは使用しないので、将来的に削除する可能性があります。</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -126,12 +127,12 @@
   
   
   <a id="PLATEAU_DynamicTile_PLATEAUDynamicTileMetaInfo__ctor_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.#ctor*"></a>
-  <h4 id="PLATEAU_DynamicTile_PLATEAUDynamicTileMetaInfo__ctor_System_String_Bounds_System_Int32_System_Int32_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.#ctor(System.String,Bounds,System.Int32,System.Int32)">PLATEAUDynamicTileMetaInfo(String, Bounds, Int32, Int32)</h4>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUDynamicTileMetaInfo__ctor_System_String_System_String_Bounds_System_Int32_System_Int32_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.#ctor(System.String,System.String,Bounds,System.Int32,System.Int32)">PLATEAUDynamicTileMetaInfo(String, String, Bounds, Int32, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PLATEAUDynamicTileMetaInfo(string addressName, Bounds extent, int lod, int zoomLevel)</code></pre>
+    <pre><code class="lang-csharp hljs">public PLATEAUDynamicTileMetaInfo(string addressName, string groupName, Bounds extent, int lod, int zoomLevel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -146,6 +147,11 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">addressName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">groupName</span></td>
         <td></td>
       </tr>
       <tr>
@@ -213,6 +219,31 @@
     <tbody>
       <tr>
         <td><span class="xref">Bounds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_PLATEAUDynamicTileMetaInfo_GroupName_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.GroupName*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUDynamicTileMetaInfo_GroupName" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.GroupName">GroupName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GroupName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>

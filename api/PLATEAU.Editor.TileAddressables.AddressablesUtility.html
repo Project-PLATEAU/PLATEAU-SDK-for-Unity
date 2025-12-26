@@ -78,10 +78,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility">
   
   
-  <h1 id="PLATEAU_Editor_Addressables_AddressablesUtility" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility" class="text-break">Class AddressablesUtility
+  <h1 id="PLATEAU_Editor_TileAddressables_AddressablesUtility" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility" class="text-break">Class AddressablesUtility
   </h1>
   <div class="markdown level0 summary"><p>Addressablesのグループ作成やアセットのAddressable登録を行うEditor専用ユーティリティクラス</p>
 </div>
@@ -115,9 +115,9 @@
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.Editor.Addressables.html">PLATEAU.Editor.Addressables</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.Editor.TileAddressables.html">PLATEAU.Editor.TileAddressables</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="PLATEAU_Editor_Addressables_AddressablesUtility_syntax">Syntax</h5>
+  <h5 id="PLATEAU_Editor_TileAddressables_AddressablesUtility_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class AddressablesUtility</code></pre>
   </div>
@@ -125,8 +125,8 @@
   </h3>
   
   
-  <a id="PLATEAU_Editor_Addressables_AddressablesUtility_BackToDefaultProfile_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.BackToDefaultProfile*"></a>
-  <h4 id="PLATEAU_Editor_Addressables_AddressablesUtility_BackToDefaultProfile" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.BackToDefaultProfile">BackToDefaultProfile()</h4>
+  <a id="PLATEAU_Editor_TileAddressables_AddressablesUtility_BackToDefaultProfile_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.BackToDefaultProfile*"></a>
+  <h4 id="PLATEAU_Editor_TileAddressables_AddressablesUtility_BackToDefaultProfile" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.BackToDefaultProfile">BackToDefaultProfile()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -135,14 +135,14 @@
   </div>
   
   
-  <a id="PLATEAU_Editor_Addressables_AddressablesUtility_BuildAddressables_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.BuildAddressables*"></a>
-  <h4 id="PLATEAU_Editor_Addressables_AddressablesUtility_BuildAddressables_System_Boolean_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.BuildAddressables(System.Boolean)">BuildAddressables(Boolean)</h4>
+  <a id="PLATEAU_Editor_TileAddressables_AddressablesUtility_BuildAddressables_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.BuildAddressables*"></a>
+  <h4 id="PLATEAU_Editor_TileAddressables_AddressablesUtility_BuildAddressables_PLATEAU_Editor_TileAddressables_AddressablesUtility_TileBuildMode_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.BuildAddressables(PLATEAU.Editor.TileAddressables.AddressablesUtility.TileBuildMode)">BuildAddressables(AddressablesUtility.TileBuildMode)</h4>
   <div class="markdown level1 summary"><p>Addressablesのビルドを実行します。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void BuildAddressables(bool cleanCache = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void BuildAddressables(AddressablesUtility.TileBuildMode buildMode)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -155,17 +155,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">cleanCache</span></td>
-        <td><p>ビルド前にキャッシュを消す場合はtrue</p>
-</td>
+        <td><a class="xref" href="PLATEAU.Editor.TileAddressables.AddressablesUtility.TileBuildMode.html">AddressablesUtility.TileBuildMode</a></td>
+        <td><span class="parametername">buildMode</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="PLATEAU_Editor_Addressables_AddressablesUtility_GetOrCreateGroup_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.GetOrCreateGroup*"></a>
-  <h4 id="PLATEAU_Editor_Addressables_AddressablesUtility_GetOrCreateGroup_System_String_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.GetOrCreateGroup(System.String)">GetOrCreateGroup(String)</h4>
+  <a id="PLATEAU_Editor_TileAddressables_AddressablesUtility_GetOrCreateGroup_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.GetOrCreateGroup*"></a>
+  <h4 id="PLATEAU_Editor_TileAddressables_AddressablesUtility_GetOrCreateGroup_System_String_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.GetOrCreateGroup(System.String)">GetOrCreateGroup(String)</h4>
   <div class="markdown level1 summary"><p>指定した名前のグループを取得。なければ新規作成。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -208,8 +207,8 @@
   </table>
   
   
-  <a id="PLATEAU_Editor_Addressables_AddressablesUtility_RegisterAssetAsAddressable_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.RegisterAssetAsAddressable*"></a>
-  <h4 id="PLATEAU_Editor_Addressables_AddressablesUtility_RegisterAssetAsAddressable_System_String_System_String_System_String_List_System_String__" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.RegisterAssetAsAddressable(System.String,System.String,System.String,List{System.String})">RegisterAssetAsAddressable(String, String, String, List&lt;String&gt;)</h4>
+  <a id="PLATEAU_Editor_TileAddressables_AddressablesUtility_RegisterAssetAsAddressable_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.RegisterAssetAsAddressable*"></a>
+  <h4 id="PLATEAU_Editor_TileAddressables_AddressablesUtility_RegisterAssetAsAddressable_System_String_System_String_System_String_List_System_String__" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.RegisterAssetAsAddressable(System.String,System.String,System.String,List{System.String})">RegisterAssetAsAddressable(String, String, String, List&lt;String&gt;)</h4>
   <div class="markdown level1 summary"><p>指定したアセットを指定グループにAddressableとして登録
 <param name="assetPath">登録するアセットのパス
 <param name="address">設定するアドレス
@@ -255,8 +254,8 @@
   </table>
   
   
-  <a id="PLATEAU_Editor_Addressables_AddressablesUtility_RemoveGroup_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.RemoveGroup*"></a>
-  <h4 id="PLATEAU_Editor_Addressables_AddressablesUtility_RemoveGroup_System_String_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.RemoveGroup(System.String)">RemoveGroup(String)</h4>
+  <a id="PLATEAU_Editor_TileAddressables_AddressablesUtility_RemoveGroup_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.RemoveGroup*"></a>
+  <h4 id="PLATEAU_Editor_TileAddressables_AddressablesUtility_RemoveGroup_System_String_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.RemoveGroup(System.String)">RemoveGroup(String)</h4>
   <div class="markdown level1 summary"><p>指定したグループを削除します。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -300,41 +299,18 @@
   </table>
   
   
-  <a id="PLATEAU_Editor_Addressables_AddressablesUtility_RemoveNonDefaultGroups_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.RemoveNonDefaultGroups*"></a>
-  <h4 id="PLATEAU_Editor_Addressables_AddressablesUtility_RemoveNonDefaultGroups_System_String_System_Boolean_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.RemoveNonDefaultGroups(System.String,System.Boolean)">RemoveNonDefaultGroups(String, Boolean)</h4>
-  <div class="markdown level1 summary"><p>デフォルトグループ以外のグループを削除します。</p>
-</div>
+  <a id="PLATEAU_Editor_TileAddressables_AddressablesUtility_SaveAddressableSettings_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.SaveAddressableSettings*"></a>
+  <h4 id="PLATEAU_Editor_TileAddressables_AddressablesUtility_SaveAddressableSettings" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.SaveAddressableSettings">SaveAddressableSettings()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RemoveNonDefaultGroups(string targetLabel, bool isExcludeAssetFolder)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SaveAddressableSettings()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">targetLabel</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">isExcludeAssetFolder</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
-  <a id="PLATEAU_Editor_Addressables_AddressablesUtility_SetGroupLoadAndBuildPath_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.SetGroupLoadAndBuildPath*"></a>
-  <h4 id="PLATEAU_Editor_Addressables_AddressablesUtility_SetGroupLoadAndBuildPath_System_String_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.SetGroupLoadAndBuildPath(System.String)">SetGroupLoadAndBuildPath(String)</h4>
+  <a id="PLATEAU_Editor_TileAddressables_AddressablesUtility_SetGroupLoadAndBuildPath_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.SetGroupLoadAndBuildPath*"></a>
+  <h4 id="PLATEAU_Editor_TileAddressables_AddressablesUtility_SetGroupLoadAndBuildPath_System_String_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.SetGroupLoadAndBuildPath(System.String)">SetGroupLoadAndBuildPath(String)</h4>
   <div class="markdown level1 summary"><p>指定したグループのロードパス(LoadPath)とビルドパス(buildPath)を変更します。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -362,8 +338,8 @@
   </table>
   
   
-  <a id="PLATEAU_Editor_Addressables_AddressablesUtility_SetOrCreateProfile_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.SetOrCreateProfile*"></a>
-  <h4 id="PLATEAU_Editor_Addressables_AddressablesUtility_SetOrCreateProfile" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.SetOrCreateProfile">SetOrCreateProfile()</h4>
+  <a id="PLATEAU_Editor_TileAddressables_AddressablesUtility_SetOrCreateProfile_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.SetOrCreateProfile*"></a>
+  <h4 id="PLATEAU_Editor_TileAddressables_AddressablesUtility_SetOrCreateProfile" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.SetOrCreateProfile">SetOrCreateProfile()</h4>
   <div class="markdown level1 summary"><p>Addressablesのプロファイルを作成し、アクティブにします。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -389,8 +365,37 @@
   </table>
   
   
-  <a id="PLATEAU_Editor_Addressables_AddressablesUtility_SetRemoteProfileSettings_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.SetRemoteProfileSettings*"></a>
-  <h4 id="PLATEAU_Editor_Addressables_AddressablesUtility_SetRemoteProfileSettings_System_String_System_String_" data-uid="PLATEAU.Editor.Addressables.AddressablesUtility.SetRemoteProfileSettings(System.String,System.String)">SetRemoteProfileSettings(String, String)</h4>
+  <a id="PLATEAU_Editor_TileAddressables_AddressablesUtility_SetProfileForAssetBundleInAssets_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.SetProfileForAssetBundleInAssets*"></a>
+  <h4 id="PLATEAU_Editor_TileAddressables_AddressablesUtility_SetProfileForAssetBundleInAssets_System_String_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.SetProfileForAssetBundleInAssets(System.String)">SetProfileForAssetBundleInAssets(String)</h4>
+  <div class="markdown level1 summary"><p>プロファイルをローカル実行用（Assets内配置）に設定します。
+カタログを生成し、BuildPath/LoadPath共にStreamingAssetsへの直接パスを設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetProfileForAssetBundleInAssets(string groupName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">groupName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Editor_TileAddressables_AddressablesUtility_SetRemoteProfileSettings_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.SetRemoteProfileSettings*"></a>
+  <h4 id="PLATEAU_Editor_TileAddressables_AddressablesUtility_SetRemoteProfileSettings_System_String_System_String_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.SetRemoteProfileSettings(System.String,System.String)">SetRemoteProfileSettings(String, String)</h4>
   <div class="markdown level1 summary"><p>プロファイルを設定します。</p>
 </div>
   <div class="markdown level1 conceptual"></div>

@@ -152,49 +152,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="PLATEAU_DynamicTile_PLATEAUDynamicTile__ctor_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTile.#ctor*"></a>
-  <h4 id="PLATEAU_DynamicTile_PLATEAUDynamicTile__ctor_System_String_System_Int32_Bounds_System_Int32_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTile.#ctor(System.String,System.Int32,Bounds,System.Int32)">PLATEAUDynamicTile(String, Int32, Bounds, Int32)</h4>
-  <div class="markdown level1 summary"><p>PLATEAUDynamicTileのコンストラクタ。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PLATEAUDynamicTile(string address, int lod, Bounds bounds, int zoomLevel)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">address</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">lod</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Bounds</span></td>
-        <td><span class="parametername">bounds</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">zoomLevel</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -219,6 +176,32 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_PLATEAUDynamicTile_ChildrenTiles_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTile.ChildrenTiles*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUDynamicTile_ChildrenTiles" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTile.ChildrenTiles">ChildrenTiles</h4>
+  <div class="markdown level1 summary"><p>下位ZoomLevelのタイルを保持する。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PLATEAUDynamicTile&gt; ChildrenTiles { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.DynamicTile.PLATEAUDynamicTile.html">PLATEAUDynamicTile</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -258,7 +241,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Bounds Extent { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Bounds Extent { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -271,6 +254,31 @@
     <tbody>
       <tr>
         <td><span class="xref">Bounds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_PLATEAUDynamicTile_GroupName_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTile.GroupName*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUDynamicTile_GroupName" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTile.GroupName">GroupName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GroupName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -408,33 +416,6 @@ Tileごとのキャンセルをサポートするためのもの。
   </table>
   
   
-  <a id="PLATEAU_DynamicTile_PLATEAUDynamicTile_Lod_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTile.Lod*"></a>
-  <h4 id="PLATEAU_DynamicTile_PLATEAUDynamicTile_Lod" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTile.Lod">Lod</h4>
-  <div class="markdown level1 summary"><p>LOD（Level of Detail）を保持する。
-Addressablesをロードする際の親Transform取得用。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Lod { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="PLATEAU_DynamicTile_PLATEAUDynamicTile_NextLoadState_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTile.NextLoadState*"></a>
   <h4 id="PLATEAU_DynamicTile_PLATEAUDynamicTile_NextLoadState" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTile.NextLoadState">NextLoadState</h4>
   <div class="markdown level1 summary"><p>次にAddressablesをロードする状態を示す。</p>
@@ -455,6 +436,58 @@ Addressablesをロードする際の親Transform取得用。</p>
     <tbody>
       <tr>
         <td><a class="xref" href="PLATEAU.DynamicTile.LoadState.html">LoadState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_PLATEAUDynamicTile_Package_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTile.Package*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUDynamicTile_Package" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTile.Package">Package</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PredefinedCityModelPackage Package { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PredefinedCityModelPackage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_PLATEAUDynamicTile_ParentTile_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTile.ParentTile*"></a>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUDynamicTile_ParentTile" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTile.ParentTile">ParentTile</h4>
+  <div class="markdown level1 summary"><p>上位ZoomLevelのタイルを保持する。
+(現状未使用）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PLATEAUDynamicTile ParentTile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.DynamicTile.PLATEAUDynamicTile.html">PLATEAUDynamicTile</a></td>
         <td></td>
       </tr>
     </tbody>

@@ -125,13 +125,24 @@
   
   
   <a id="PLATEAU_DynamicTile_MultiResolutionPrefabCreator__ctor_" data-uid="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.#ctor*"></a>
-  <h4 id="PLATEAU_DynamicTile_MultiResolutionPrefabCreator__ctor_System_String_" data-uid="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.#ctor(System.String)">MultiResolutionPrefabCreator(String)</h4>
+  <h4 id="PLATEAU_DynamicTile_MultiResolutionPrefabCreator__ctor" data-uid="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.#ctor">MultiResolutionPrefabCreator()</h4>
+  <div class="markdown level1 summary"><p>constructor (上書きのみ）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MultiResolutionPrefabCreator()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_DynamicTile_MultiResolutionPrefabCreator__ctor_" data-uid="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.#ctor*"></a>
+  <h4 id="PLATEAU_DynamicTile_MultiResolutionPrefabCreator__ctor_System_String_System_Boolean_" data-uid="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.#ctor(System.String,System.Boolean)">MultiResolutionPrefabCreator(String, Boolean)</h4>
   <div class="markdown level1 summary"><p>constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MultiResolutionPrefabCreator(string savePath_)</code></pre>
+    <pre><code class="lang-csharp hljs">public MultiResolutionPrefabCreator(string savePath_, bool overwrite)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -147,6 +158,12 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">savePath_</span></td>
         <td><p>保存先パス</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwrite</span></td>
+        <td><p>上書きするかどうか</p>
 </td>
       </tr>
     </tbody>
@@ -247,7 +264,7 @@
   
   
   <a id="PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateFromGameObject_" data-uid="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromGameObject*"></a>
-  <h4 id="PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateFromGameObject_GameObject_System_String_System_Int32_System_Int32_" data-uid="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromGameObject(GameObject,System.String,System.Int32,System.Int32)">CreateFromGameObject(GameObject, String, Int32, Int32)</h4>
+  <h4 id="PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateFromGameObject_GameObject_System_String_System_Int32_System_Int32_System_Boolean_" data-uid="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromGameObject(GameObject,System.String,System.Int32,System.Int32,System.Boolean)">CreateFromGameObject(GameObject, String, Int32, Int32, Boolean)</h4>
   <div class="markdown level1 summary"><p>異なる解像度のTextureを持つPrefabを生成（ソース：GameObject）
 解像度、ZoomLevelを指定して生成
 名前はGameObject名を利用</p>
@@ -255,7 +272,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static MultiResolutionPrefabCreator.Result CreateFromGameObject(GameObject target, string savePath, int denominator, int zoomLevel)</code></pre>
+    <pre><code class="lang-csharp hljs">public static MultiResolutionPrefabCreator.Result CreateFromGameObject(GameObject target, string savePath, int denominator, int zoomLevel, bool overwrite = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -290,6 +307,11 @@
         <td><span class="parametername">zoomLevel</span></td>
         <td><p>9, 10 , 11 </p>
 </td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwrite</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -364,7 +386,7 @@
   
   
   <a id="PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateFromPrefab_" data-uid="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefab*"></a>
-  <h4 id="PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateFromPrefab_GameObject_System_String_System_Int32_System_Int32_" data-uid="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefab(GameObject,System.String,System.Int32,System.Int32)">CreateFromPrefab(GameObject, String, Int32, Int32)</h4>
+  <h4 id="PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateFromPrefab_GameObject_System_String_System_Int32_System_Int32_System_Boolean_" data-uid="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefab(GameObject,System.String,System.Int32,System.Int32,System.Boolean)">CreateFromPrefab(GameObject, String, Int32, Int32, Boolean)</h4>
   <div class="markdown level1 summary"><p>異なる解像度のTextureを持つPrefabを生成（ソース：Prefab）
 解像度、ZoomLevelを指定して生成
 名前はGameObject名を利用</p>
@@ -372,7 +394,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static MultiResolutionPrefabCreator.Result CreateFromPrefab(GameObject target, string savePath, int denominator, int zoomLevel)</code></pre>
+    <pre><code class="lang-csharp hljs">public static MultiResolutionPrefabCreator.Result CreateFromPrefab(GameObject target, string savePath, int denominator, int zoomLevel, bool overwrite = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -402,6 +424,11 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">zoomLevel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwrite</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -477,13 +504,13 @@
   
   
   <a id="PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateFromPrefabs_" data-uid="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefabs*"></a>
-  <h4 id="PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateFromPrefabs_List_GameObject__System_String_System_Int32_System_Int32_" data-uid="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefabs(List{GameObject},System.String,System.Int32,System.Int32)">CreateFromPrefabs(List&lt;GameObject&gt;, String, Int32, Int32)</h4>
+  <h4 id="PLATEAU_DynamicTile_MultiResolutionPrefabCreator_CreateFromPrefabs_List_GameObject__System_String_System_Int32_System_Int32_System_Boolean_" data-uid="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.CreateFromPrefabs(List{GameObject},System.String,System.Int32,System.Int32,System.Boolean)">CreateFromPrefabs(List&lt;GameObject&gt;, String, Int32, Int32, Boolean)</h4>
   <div class="markdown level1 summary"><p>異なる解像度のTextureを持つPrefabを生成（ソース：Prefab）複数ターゲット対応版</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;MultiResolutionPrefabCreator.Result&gt; CreateFromPrefabs(List&lt;GameObject&gt; prefabs, string savePath, int denominator, int zoomLevel)</code></pre>
+    <pre><code class="lang-csharp hljs">public static List&lt;MultiResolutionPrefabCreator.Result&gt; CreateFromPrefabs(List&lt;GameObject&gt; prefabs, string savePath, int denominator, int zoomLevel, bool overwrite = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -513,6 +540,11 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">zoomLevel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwrite</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -577,6 +609,114 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_MultiResolutionPrefabCreator_OverwriteGameObject_" data-uid="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.OverwriteGameObject*"></a>
+  <h4 id="PLATEAU_DynamicTile_MultiResolutionPrefabCreator_OverwriteGameObject_GameObject_System_Int32_System_Int32_" data-uid="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.OverwriteGameObject(GameObject,System.Int32,System.Int32)">OverwriteGameObject(GameObject, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>既存のGameObjectのTextureを異なる解像度に変更して上書き
+解像度、ZoomLevelを指定して生成</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MultiResolutionPrefabCreator.Result OverwriteGameObject(GameObject target, int denominator, int zoomLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">denominator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">zoomLevel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.html">MultiResolutionPrefabCreator.Result</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_MultiResolutionPrefabCreator_OverwritePrefabs_" data-uid="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.OverwritePrefabs*"></a>
+  <h4 id="PLATEAU_DynamicTile_MultiResolutionPrefabCreator_OverwritePrefabs_List_GameObject__System_Int32_System_Int32_" data-uid="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.OverwritePrefabs(List{GameObject},System.Int32,System.Int32)">OverwritePrefabs(List&lt;GameObject&gt;, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>既存のPrefabのTextureを異なる解像度に変更して上書き
+解像度、ZoomLevelを指定して生成</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;MultiResolutionPrefabCreator.Result&gt; OverwritePrefabs(List&lt;GameObject&gt; prefabs, int denominator, int zoomLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">GameObject</span>&gt;</td>
+        <td><span class="parametername">prefabs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">denominator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">zoomLevel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.Result.html">MultiResolutionPrefabCreator.Result</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

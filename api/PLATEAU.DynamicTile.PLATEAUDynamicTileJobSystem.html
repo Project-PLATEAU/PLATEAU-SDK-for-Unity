@@ -83,8 +83,7 @@
   
   <h1 id="PLATEAU_DynamicTile_PLATEAUDynamicTileJobSystem" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem" class="text-break">Class PLATEAUDynamicTileJobSystem
   </h1>
-  <div class="markdown level0 summary"><p>Jobsystemを使用したタイルロード処理
-今のところカメラ距離計算、SortのみJob Systemを使用する。</p>
+  <div class="markdown level0 summary"><p>Jobsystemを使用したタイルロード処理</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -140,13 +139,13 @@
   
   
   <a id="PLATEAU_DynamicTile_PLATEAUDynamicTileJobSystem_UpdateAssetsByCameraPosition_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.UpdateAssetsByCameraPosition*"></a>
-  <h4 id="PLATEAU_DynamicTile_PLATEAUDynamicTileJobSystem_UpdateAssetsByCameraPosition_Vector3_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.UpdateAssetsByCameraPosition(Vector3)">UpdateAssetsByCameraPosition(Vector3)</h4>
+  <h4 id="PLATEAU_DynamicTile_PLATEAUDynamicTileJobSystem_UpdateAssetsByCameraPosition_Vector3_System_Boolean_" data-uid="PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.UpdateAssetsByCameraPosition(Vector3,System.Boolean)">UpdateAssetsByCameraPosition(Vector3, Boolean)</h4>
   <div class="markdown level1 summary"><p>各タイルごとにカメラの距離に応じてロード状態を更新する。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task UpdateAssetsByCameraPosition(Vector3 position)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task UpdateAssetsByCameraPosition(Vector3 position, bool ignoreY)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -161,6 +160,11 @@
       <tr>
         <td><span class="xref">Vector3</span></td>
         <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ignoreY</span></td>
         <td></td>
       </tr>
     </tbody>

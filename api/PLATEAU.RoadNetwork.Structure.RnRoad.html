@@ -99,6 +99,9 @@
       <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_ParentModel">RnRoadBase.ParentModel</a>
     </div>
     <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_TargetGroupKeys">RnRoadBase.TargetGroupKeys</a>
+    </div>
+    <div>
       <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_TargetTrans">RnRoadBase.TargetTrans</a>
     </div>
     <div>
@@ -114,16 +117,19 @@
       <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_RemoveSideWalk_PLATEAU_RoadNetwork_Structure_RnSideWalk_System_Boolean_">RnRoadBase.RemoveSideWalk(RnSideWalk, Boolean)</a>
     </div>
     <div>
-      <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_AddTargetTran_PLATEAUCityObjectGroup_">RnRoadBase.AddTargetTran(PLATEAUCityObjectGroup)</a>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_AddTarget_PLATEAUCityObjectGroup_PLATEAU_RoadNetwork_RnCityObjectGroupKey_">RnRoadBase.AddTarget(PLATEAUCityObjectGroup, RnCityObjectGroupKey)</a>
     </div>
     <div>
-      <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_AddTargetTrans_IEnumerable_PLATEAUCityObjectGroup__">RnRoadBase.AddTargetTrans(IEnumerable&lt;PLATEAUCityObjectGroup&gt;)</a>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_AddTargets_IEnumerable_PLATEAUCityObjectGroup__IEnumerable_PLATEAU_RoadNetwork_RnCityObjectGroupKey__">RnRoadBase.AddTargets(IEnumerable&lt;PLATEAUCityObjectGroup&gt;, IEnumerable&lt;RnCityObjectGroupKey&gt;)</a>
     </div>
     <div>
       <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_UnLink_PLATEAU_RoadNetwork_Structure_RnRoadBase_">RnRoadBase.UnLink(RnRoadBase)</a>
     </div>
     <div>
       <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_MergeConnectedSideWalks">RnRoadBase.MergeConnectedSideWalks()</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.RoadNetwork.Structure.RnRoadBase.html#PLATEAU_RoadNetwork_Structure_RnRoadBase_ClearTargets">RnRoadBase.ClearTargets()</a>
     </div>
     <div>
       <a class="xref" href="PLATEAU.RoadNetwork.ARnPartsBase.html#PLATEAU_RoadNetwork_ARnPartsBase_DebugMyId">ARnPartsBase.DebugMyId</a>
@@ -174,12 +180,12 @@
   
   
   <a id="PLATEAU_RoadNetwork_Structure_RnRoad__ctor_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoad.#ctor*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoad__ctor_IEnumerable_PLATEAUCityObjectGroup__" data-uid="PLATEAU.RoadNetwork.Structure.RnRoad.#ctor(IEnumerable{PLATEAUCityObjectGroup})">RnRoad(IEnumerable&lt;PLATEAUCityObjectGroup&gt;)</h4>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoad__ctor_IEnumerable_PLATEAUCityObjectGroup__IEnumerable_PLATEAU_RoadNetwork_RnCityObjectGroupKey__" data-uid="PLATEAU.RoadNetwork.Structure.RnRoad.#ctor(IEnumerable{PLATEAUCityObjectGroup},IEnumerable{PLATEAU.RoadNetwork.RnCityObjectGroupKey})">RnRoad(IEnumerable&lt;PLATEAUCityObjectGroup&gt;, IEnumerable&lt;RnCityObjectGroupKey&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RnRoad(IEnumerable&lt;PLATEAUCityObjectGroup&gt; targetTrans)</code></pre>
+    <pre><code class="lang-csharp hljs">public RnRoad(IEnumerable&lt;PLATEAUCityObjectGroup&gt; targetTrans, IEnumerable&lt;RnCityObjectGroupKey&gt; groupKeys)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -196,17 +202,23 @@
         <td><span class="parametername">targetTrans</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.RnCityObjectGroupKey.html">RnCityObjectGroupKey</a>&gt;</td>
+        <td><span class="parametername">groupKeys</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   
   
   <a id="PLATEAU_RoadNetwork_Structure_RnRoad__ctor_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoad.#ctor*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoad__ctor_PLATEAUCityObjectGroup_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoad.#ctor(PLATEAUCityObjectGroup)">RnRoad(PLATEAUCityObjectGroup)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoad__ctor_PLATEAUCityObjectGroup_PLATEAU_RoadNetwork_RnCityObjectGroupKey_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoad.#ctor(PLATEAUCityObjectGroup,PLATEAU.RoadNetwork.RnCityObjectGroupKey)">RnRoad(PLATEAUCityObjectGroup, RnCityObjectGroupKey)</h4>
+  <div class="markdown level1 summary"><p>オリジナルのメッシュを含むPLATEAUCityObjectGroup, 自身が所属する主要地物キーを受け取るコンストラクタ</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RnRoad(PLATEAUCityObjectGroup targetTran)</code></pre>
+    <pre><code class="lang-csharp hljs">public RnRoad(PLATEAUCityObjectGroup targetTran, RnCityObjectGroupKey groupKey)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -221,6 +233,11 @@
       <tr>
         <td><span class="xref">PLATEAUCityObjectGroup</span></td>
         <td><span class="parametername">targetTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.RnCityObjectGroupKey.html">RnCityObjectGroupKey</a></td>
+        <td><span class="parametername">groupKey</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -679,13 +696,13 @@
   
   
   <a id="PLATEAU_RoadNetwork_Structure_RnRoad_CreateIsolatedRoad_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoad.CreateIsolatedRoad*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoad_CreateIsolatedRoad_PLATEAUCityObjectGroup_PLATEAU_RoadNetwork_Structure_RnWay_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoad.CreateIsolatedRoad(PLATEAUCityObjectGroup,PLATEAU.RoadNetwork.Structure.RnWay)">CreateIsolatedRoad(PLATEAUCityObjectGroup, RnWay)</h4>
-  <div class="markdown level1 summary"><p>完全に孤立したリンクを作成</p>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoad_CreateIsolatedRoad_PLATEAUCityObjectGroup_PLATEAU_RoadNetwork_RnCityObjectGroupKey_PLATEAU_RoadNetwork_Structure_RnWay_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoad.CreateIsolatedRoad(PLATEAUCityObjectGroup,PLATEAU.RoadNetwork.RnCityObjectGroupKey,PLATEAU.RoadNetwork.Structure.RnWay)">CreateIsolatedRoad(PLATEAUCityObjectGroup, RnCityObjectGroupKey, RnWay)</h4>
+  <div class="markdown level1 summary"><p>完全に孤立したロードを作成</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static RnRoad CreateIsolatedRoad(PLATEAUCityObjectGroup targetTran, RnWay way)</code></pre>
+    <pre><code class="lang-csharp hljs">public static RnRoad CreateIsolatedRoad(PLATEAUCityObjectGroup targetTran, RnCityObjectGroupKey groupKey, RnWay way)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -700,6 +717,11 @@
       <tr>
         <td><span class="xref">PLATEAUCityObjectGroup</span></td>
         <td><span class="parametername">targetTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.RnCityObjectGroupKey.html">RnCityObjectGroupKey</a></td>
+        <td><span class="parametername">groupKey</span></td>
         <td></td>
       </tr>
       <tr>
@@ -727,12 +749,13 @@
   
   
   <a id="PLATEAU_RoadNetwork_Structure_RnRoad_CreateOneLaneRoad_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoad.CreateOneLaneRoad*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoad_CreateOneLaneRoad_PLATEAUCityObjectGroup_PLATEAU_RoadNetwork_Structure_RnLane_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoad.CreateOneLaneRoad(PLATEAUCityObjectGroup,PLATEAU.RoadNetwork.Structure.RnLane)">CreateOneLaneRoad(PLATEAUCityObjectGroup, RnLane)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="PLATEAU_RoadNetwork_Structure_RnRoad_CreateOneLaneRoad_PLATEAUCityObjectGroup_PLATEAU_RoadNetwork_RnCityObjectGroupKey_PLATEAU_RoadNetwork_Structure_RnLane_" data-uid="PLATEAU.RoadNetwork.Structure.RnRoad.CreateOneLaneRoad(PLATEAUCityObjectGroup,PLATEAU.RoadNetwork.RnCityObjectGroupKey,PLATEAU.RoadNetwork.Structure.RnLane)">CreateOneLaneRoad(PLATEAUCityObjectGroup, RnCityObjectGroupKey, RnLane)</h4>
+  <div class="markdown level1 summary"><p>一方通行のロード作成</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static RnRoad CreateOneLaneRoad(PLATEAUCityObjectGroup targetTran, RnLane lane)</code></pre>
+    <pre><code class="lang-csharp hljs">public static RnRoad CreateOneLaneRoad(PLATEAUCityObjectGroup targetTran, RnCityObjectGroupKey groupKey, RnLane lane)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -747,6 +770,11 @@
       <tr>
         <td><span class="xref">PLATEAUCityObjectGroup</span></td>
         <td><span class="parametername">targetTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.RnCityObjectGroupKey.html">RnCityObjectGroupKey</a></td>
+        <td><span class="parametername">groupKey</span></td>
         <td></td>
       </tr>
       <tr>

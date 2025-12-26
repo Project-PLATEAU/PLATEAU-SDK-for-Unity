@@ -83,16 +83,35 @@
   
   <h1 id="PLATEAU_CityAdjust_AlignLand_ALConfig" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig" class="text-break">Class ALConfig
   </h1>
-  <div class="markdown level0 summary"><p>高さ合わせ機能の設定です。</p>
+  <div class="markdown level0 summary"><p>CityModel用の高さ合わせ機能の設定です。</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">ALConfig</span></div>
+    <div class="level1"><a class="xref" href="PLATEAU.CityAdjust.AlignLand.ALConfigBase.html">ALConfigBase</a></div>
+    <div class="level2"><span class="xref">ALConfig</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="PLATEAU.CityAdjust.AlignLand.ALConfigBase.html#PLATEAU_CityAdjust_AlignLand_ALConfigBase_DoDestroySrcObj">ALConfigBase.DoDestroySrcObj</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.CityAdjust.AlignLand.ALConfigBase.html#PLATEAU_CityAdjust_AlignLand_ALConfigBase_HeightmapWidth">ALConfigBase.HeightmapWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.CityAdjust.AlignLand.ALConfigBase.html#PLATEAU_CityAdjust_AlignLand_ALConfigBase_FillEdges">ALConfigBase.FillEdges</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.CityAdjust.AlignLand.ALConfigBase.html#PLATEAU_CityAdjust_AlignLand_ALConfigBase_ApplyConvolutionFilterToHeightMap">ALConfigBase.ApplyConvolutionFilterToHeightMap</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.CityAdjust.AlignLand.ALConfigBase.html#PLATEAU_CityAdjust_AlignLand_ALConfigBase_AlignLandNormal">ALConfigBase.AlignLandNormal</a>
+    </div>
+    <div>
+      <a class="xref" href="PLATEAU.CityAdjust.AlignLand.ALConfigBase.html#PLATEAU_CityAdjust_AlignLand_ALConfigBase_AlignInvert">ALConfigBase.AlignInvert</a>
+    </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
@@ -119,7 +138,7 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="PLATEAU_CityAdjust_AlignLand_ALConfig_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ALConfig</code></pre>
+    <pre><code class="lang-csharp hljs">public class ALConfig : ALConfigBase</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -194,13 +213,13 @@
   </h3>
   
   
-  <a id="PLATEAU_CityAdjust_AlignLand_ALConfig_AlignInvert_" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.AlignInvert*"></a>
-  <h4 id="PLATEAU_CityAdjust_AlignLand_ALConfig_AlignInvert" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.AlignInvert">AlignInvert</h4>
+  <a id="PLATEAU_CityAdjust_AlignLand_ALConfig_AlignCityObjectGroups_" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.AlignCityObjectGroups*"></a>
+  <h4 id="PLATEAU_CityAdjust_AlignLand_ALConfig_AlignCityObjectGroups" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.AlignCityObjectGroups">AlignCityObjectGroups</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool AlignInvert { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;PLATEAUCityObjectGroup&gt; AlignCityObjectGroups { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -212,20 +231,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">PLATEAUCityObjectGroup</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="PLATEAU.CityAdjust.AlignLand.ALConfigBase.html#PLATEAU_CityAdjust_AlignLand_ALConfigBase_AlignCityObjectGroups">ALConfigBase.AlignCityObjectGroups</a></div>
   
   
-  <a id="PLATEAU_CityAdjust_AlignLand_ALConfig_AlignLandNormal_" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.AlignLandNormal*"></a>
-  <h4 id="PLATEAU_CityAdjust_AlignLand_ALConfig_AlignLandNormal" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.AlignLandNormal">AlignLandNormal</h4>
+  <a id="PLATEAU_CityAdjust_AlignLand_ALConfig_LandTransforms_" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.LandTransforms*"></a>
+  <h4 id="PLATEAU_CityAdjust_AlignLand_ALConfig_LandTransforms" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.LandTransforms">LandTransforms</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool AlignLandNormal { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;Transform&gt; LandTransforms { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -237,137 +258,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Transform</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="PLATEAU_CityAdjust_AlignLand_ALConfig_ApplyConvolutionFilterToHeightMap_" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.ApplyConvolutionFilterToHeightMap*"></a>
-  <h4 id="PLATEAU_CityAdjust_AlignLand_ALConfig_ApplyConvolutionFilterToHeightMap" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.ApplyConvolutionFilterToHeightMap">ApplyConvolutionFilterToHeightMap</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool ApplyConvolutionFilterToHeightMap { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_CityAdjust_AlignLand_ALConfig_DoDestroySrcObj_" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.DoDestroySrcObj*"></a>
-  <h4 id="PLATEAU_CityAdjust_AlignLand_ALConfig_DoDestroySrcObj" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.DoDestroySrcObj">DoDestroySrcObj</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool DoDestroySrcObj { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_CityAdjust_AlignLand_ALConfig_FillEdges_" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.FillEdges*"></a>
-  <h4 id="PLATEAU_CityAdjust_AlignLand_ALConfig_FillEdges" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.FillEdges">FillEdges</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool FillEdges { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_CityAdjust_AlignLand_ALConfig_HeightmapWidth_" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.HeightmapWidth*"></a>
-  <h4 id="PLATEAU_CityAdjust_AlignLand_ALConfig_HeightmapWidth" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.HeightmapWidth">HeightmapWidth</h4>
-  <div class="markdown level1 summary"><p>ハイトマップを生成するときのみ利用します。マップの横幅=縦幅です。 </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int HeightmapWidth { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="PLATEAU_CityAdjust_AlignLand_ALConfig_Lands_" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.Lands*"></a>
-  <h4 id="PLATEAU_CityAdjust_AlignLand_ALConfig_Lands" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.Lands">Lands</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Transform[] Lands { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Transform</span>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="PLATEAU.CityAdjust.AlignLand.ALConfigBase.html#PLATEAU_CityAdjust_AlignLand_ALConfigBase_LandTransforms">ALConfigBase.LandTransforms</a></div>
   
   
   <a id="PLATEAU_CityAdjust_AlignLand_ALConfig_TargetModel_" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.TargetModel*"></a>
@@ -393,17 +290,36 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
   
   
-  <a id="PLATEAU_CityAdjust_AlignLand_ALConfig_TargetPackages_" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.TargetPackages*"></a>
-  <h4 id="PLATEAU_CityAdjust_AlignLand_ALConfig_TargetPackages" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.TargetPackages">TargetPackages</h4>
+  <a id="PLATEAU_CityAdjust_AlignLand_ALConfig_CanAlign_" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.CanAlign*"></a>
+  <h4 id="PLATEAU_CityAdjust_AlignLand_ALConfig_CanAlign_PredefinedCityModelPackage_" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.CanAlign(PredefinedCityModelPackage)">CanAlign(PredefinedCityModelPackage)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HashSet&lt;PredefinedCityModelPackage&gt; TargetPackages { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool CanAlign(PredefinedCityModelPackage package)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PredefinedCityModelPackage</span></td>
+        <td><span class="parametername">package</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -413,11 +329,57 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">HashSet</span>&lt;<span class="xref">PredefinedCityModelPackage</span>&gt;</td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="PLATEAU.CityAdjust.AlignLand.ALConfigBase.html#PLATEAU_CityAdjust_AlignLand_ALConfigBase_CanAlign_PredefinedCityModelPackage_">ALConfigBase.CanAlign(PredefinedCityModelPackage)</a></div>
+  
+  
+  <a id="PLATEAU_CityAdjust_AlignLand_ALConfig_GetPackage_" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.GetPackage*"></a>
+  <h4 id="PLATEAU_CityAdjust_AlignLand_ALConfig_GetPackage_PLATEAUCityObjectGroup_" data-uid="PLATEAU.CityAdjust.AlignLand.ALConfig.GetPackage(PLATEAUCityObjectGroup)">GetPackage(PLATEAUCityObjectGroup)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override PredefinedCityModelPackage GetPackage(PLATEAUCityObjectGroup cityObjectGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PLATEAUCityObjectGroup</span></td>
+        <td><span class="parametername">cityObjectGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PredefinedCityModelPackage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="PLATEAU.CityAdjust.AlignLand.ALConfigBase.html#PLATEAU_CityAdjust_AlignLand_ALConfigBase_GetPackage_PLATEAUCityObjectGroup_">ALConfigBase.GetPackage(PLATEAUCityObjectGroup)</a></div>
 </article>
           </div>
           

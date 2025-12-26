@@ -79,19 +79,26 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="3d都市モデルのエクスポート">3D都市モデルのエクスポート</h1>
 
-<p>Unityのシーンに配置された都市の3Dモデルを、FBX、OBJ、glTFとしてエクスポートできます。<br>このページではエクスポートの手順を説明します。</p>
+<p>配置された3D都市モデルを、FBX、OBJ、glTFとしてエクスポートできます。<br>このページではエクスポートの手順を説明します。</p>
 <h2 id="前提">前提</h2>
-<p>Unityのシーンに都市モデルがインポートされていることが前提です。<br>インポートの方法については <a href="ImportCityModels.html">都市モデルのインポート</a> をご覧ください。<br><img src="../resources/manual/exportCityModels/importedCity.png" alt=""></p>
+<p>都市モデルがインポートされていることが前提です。<br>インポートの方法については <a href="ImportCityModels.html">都市モデルのインポート</a> をご覧ください。<br><img src="../resources/manual/exportCityModels/importedCity.png" alt=""></p>
 <h2 id="エクスポート手順">エクスポート手順</h2>
 <h3 id="エクスポート対象の指定">エクスポート対象の指定</h3>
 <ul>
 <li><p>Unityのメニューバーから <code>PLATEAU → PLATEAU SDK</code> を選択します。<br>表示されるウィンドウの上部に3つのタブ「インポート、モデル調整、エクスポート、属性情報」があります。<br>このうちエクスポートを選択します。  </p>
 <p><img src="../resources/manual/exportCityModels/exportWindow.png" alt=""></p>
 </li>
-<li><p><code>選択オブジェクト</code> からエクスポート対象を選択します。</p>
+<li><p><code>選択オブジェクト</code> からエクスポート対象を選択します。調整対象として「シーンに配置されたオブジェクト」または「動的タイル」を選択できます。</p>
 <ul>
+<li>「シーンに配置されたオブジェクト」が対象の場合<ul>
 <li>対象として選択できるのはインポート時に生成されたゲームオブジェクトのうち、<br>親子関係における最上位のものです。</li>
 <li>親子関係の最上位には自動で <code>PLATEAUInstancedCityModel</code> コンポーネントが付与されています。<br>このコンポーネントを持つゲームオブジェクトが選択対象となります。</li>
+</ul>
+</li>
+<li>「動的タイル」が対象の場合<ul>
+<li>選択したPLATEAUTileManagerが保持する全タイルが対象となります。</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>出力形式を選択します。<ul>

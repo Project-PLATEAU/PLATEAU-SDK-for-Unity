@@ -124,6 +124,197 @@
   </h3>
   
   
+  <a id="PLATEAU_Util_TransformEx_FindChildOfNamedParent_" data-uid="PLATEAU.Util.TransformEx.FindChildOfNamedParent*"></a>
+  <h4 id="PLATEAU_Util_TransformEx_FindChildOfNamedParent_Transform_System_String_" data-uid="PLATEAU.Util.TransformEx.FindChildOfNamedParent(Transform,System.String)">FindChildOfNamedParent(Transform, String)</h4>
+  <div class="markdown level1 summary"><p>/// 指定された名前を持つ親Transformを探し、その直下の子から条件に合うTransformを1つ返す /// </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Transform FindChildOfNamedParent(this Transform origin, string parentName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">origin</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">parentName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_TransformEx_GetAllChildren_" data-uid="PLATEAU.Util.TransformEx.GetAllChildren*"></a>
+  <h4 id="PLATEAU_Util_TransformEx_GetAllChildren_Transform_" data-uid="PLATEAU.Util.TransformEx.GetAllChildren(Transform)">GetAllChildren(Transform)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Transform&gt; GetAllChildren(this Transform parent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Transform</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_TransformEx_GetAllChildrenWithComponent_" data-uid="PLATEAU.Util.TransformEx.GetAllChildrenWithComponent*"></a>
+  <h4 id="PLATEAU_Util_TransformEx_GetAllChildrenWithComponent__1_Transform_" data-uid="PLATEAU.Util.TransformEx.GetAllChildrenWithComponent``1(Transform)">GetAllChildrenWithComponent&lt;T&gt;(Transform)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Transform&gt; GetAllChildrenWithComponent&lt;T&gt;(this Transform parent)
+    where T : Component</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Transform</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_TransformEx_GetChildren_" data-uid="PLATEAU.Util.TransformEx.GetChildren*"></a>
+  <h4 id="PLATEAU_Util_TransformEx_GetChildren_Transform_" data-uid="PLATEAU.Util.TransformEx.GetChildren(Transform)">GetChildren(Transform)</h4>
+  <div class="markdown level1 summary"><p>self.childCountとself.GetChild(i)から直下の子をIEnumerableで取得する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Transform&gt; GetChildren(this Transform self)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Transform</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="PLATEAU_Util_TransformEx_GetParents_" data-uid="PLATEAU.Util.TransformEx.GetParents*"></a>
   <h4 id="PLATEAU_Util_TransformEx_GetParents_Transform_" data-uid="PLATEAU.Util.TransformEx.GetParents(Transform)">GetParents(Transform)</h4>
   <div class="markdown level1 summary"><p>自分の親をすべて取得する. 近い親から順に取得する</p>
@@ -161,6 +352,54 @@
     <tbody>
       <tr>
         <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Transform</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_Util_TransformEx_GetPathToParent_" data-uid="PLATEAU.Util.TransformEx.GetPathToParent*"></a>
+  <h4 id="PLATEAU_Util_TransformEx_GetPathToParent_Transform_System_String_" data-uid="PLATEAU.Util.TransformEx.GetPathToParent(Transform,System.String)">GetPathToParent(Transform, String)</h4>
+  <div class="markdown level1 summary"><p>/// 指定した名前の親までのPathを返す /// </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetPathToParent(this Transform origin, string parentName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">origin</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">parentName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>

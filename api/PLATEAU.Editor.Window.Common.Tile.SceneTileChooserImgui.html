@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Struct DistanceWithIndex
+    <title>Class SceneTileChooserImgui
    | PLATEAU SDK for Unity </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Struct DistanceWithIndex
+    <meta name="title" content="Class SceneTileChooserImgui
    | PLATEAU SDK for Unity ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,28 +78,25 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PLATEAU.DynamicTile.DistanceWithIndex">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.Editor.Window.Common.Tile.SceneTileChooserImgui">
   
   
-  <h1 id="PLATEAU_DynamicTile_DistanceWithIndex" data-uid="PLATEAU.DynamicTile.DistanceWithIndex" class="text-break">Struct DistanceWithIndex
+  <h1 id="PLATEAU_Editor_Window_Common_Tile_SceneTileChooserImgui" data-uid="PLATEAU.Editor.Window.Common.Tile.SceneTileChooserImgui" class="text-break">Class SceneTileChooserImgui
   </h1>
-  <div class="markdown level0 summary"><p>タイルの距離とインデックスを保持する構造体。</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">IComparable</span>&lt;<a class="xref" href="PLATEAU.DynamicTile.DistanceWithIndex.html">DistanceWithIndex</a>&gt;</div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SceneTileChooserImgui</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.ValueType.Equals(System.Object)</span>
+      <span class="xref">System.Object.ToString()</span>
     </div>
     <div>
-      <span class="xref">System.ValueType.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.ValueType.ToString()</span>
+      <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
@@ -108,26 +105,32 @@
       <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
     <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
       <span class="xref">System.Object.GetType()</span>
     </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.DynamicTile.html">PLATEAU.DynamicTile</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.Editor.Window.Common.Tile.html">PLATEAU.Editor.Window.Common.Tile</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="PLATEAU_DynamicTile_DistanceWithIndex_syntax">Syntax</h5>
+  <h5 id="PLATEAU_Editor_Window_Common_Tile_SceneTileChooserImgui_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly struct DistanceWithIndex</code></pre>
+    <pre><code class="lang-csharp hljs">public class SceneTileChooserImgui</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="PLATEAU_DynamicTile_DistanceWithIndex__ctor_" data-uid="PLATEAU.DynamicTile.DistanceWithIndex.#ctor*"></a>
-  <h4 id="PLATEAU_DynamicTile_DistanceWithIndex__ctor_System_Single_System_Int32_" data-uid="PLATEAU.DynamicTile.DistanceWithIndex.#ctor(System.Single,System.Int32)">DistanceWithIndex(Single, Int32)</h4>
+  <a id="PLATEAU_Editor_Window_Common_Tile_SceneTileChooserImgui__ctor_" data-uid="PLATEAU.Editor.Window.Common.Tile.SceneTileChooserImgui.#ctor*"></a>
+  <h4 id="PLATEAU_Editor_Window_Common_Tile_SceneTileChooserImgui__ctor_Action_PLATEAU_Editor_Window_Common_Tile_SceneTileChooserType__" data-uid="PLATEAU.Editor.Window.Common.Tile.SceneTileChooserImgui.#ctor(Action{PLATEAU.Editor.Window.Common.Tile.SceneTileChooserType})">SceneTileChooserImgui(Action&lt;SceneTileChooserType&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DistanceWithIndex(float distance, int index)</code></pre>
+    <pre><code class="lang-csharp hljs">public SceneTileChooserImgui(Action&lt;SceneTileChooserType&gt; onSelectionChanged = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -140,29 +143,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">distance</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">index</span></td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="PLATEAU.Editor.Window.Common.Tile.SceneTileChooserType.html">SceneTileChooserType</a>&gt;</td>
+        <td><span class="parametername">onSelectionChanged</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="fields">Fields
+  <h3 id="properties">Properties
   </h3>
   
   
-  <h4 id="PLATEAU_DynamicTile_DistanceWithIndex_Distance" data-uid="PLATEAU.DynamicTile.DistanceWithIndex.Distance">Distance</h4>
+  <a id="PLATEAU_Editor_Window_Common_Tile_SceneTileChooserImgui_SelectedType_" data-uid="PLATEAU.Editor.Window.Common.Tile.SceneTileChooserImgui.SelectedType*"></a>
+  <h4 id="PLATEAU_Editor_Window_Common_Tile_SceneTileChooserImgui_SelectedType" data-uid="PLATEAU.Editor.Window.Common.Tile.SceneTileChooserImgui.SelectedType">SelectedType</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly float Distance</code></pre>
+    <pre><code class="lang-csharp hljs">public SceneTileChooserType SelectedType { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -172,31 +171,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="PLATEAU_DynamicTile_DistanceWithIndex_Index" data-uid="PLATEAU.DynamicTile.DistanceWithIndex.Index">Index</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly int Index</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="PLATEAU.Editor.Window.Common.Tile.SceneTileChooserType.html">SceneTileChooserType</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -205,13 +180,13 @@
   </h3>
   
   
-  <a id="PLATEAU_DynamicTile_DistanceWithIndex_CompareTo_" data-uid="PLATEAU.DynamicTile.DistanceWithIndex.CompareTo*"></a>
-  <h4 id="PLATEAU_DynamicTile_DistanceWithIndex_CompareTo_PLATEAU_DynamicTile_DistanceWithIndex_" data-uid="PLATEAU.DynamicTile.DistanceWithIndex.CompareTo(PLATEAU.DynamicTile.DistanceWithIndex)">CompareTo(DistanceWithIndex)</h4>
+  <a id="PLATEAU_Editor_Window_Common_Tile_SceneTileChooserImgui_AddHandlers_" data-uid="PLATEAU.Editor.Window.Common.Tile.SceneTileChooserImgui.AddHandlers*"></a>
+  <h4 id="PLATEAU_Editor_Window_Common_Tile_SceneTileChooserImgui_AddHandlers_Action_Action_" data-uid="PLATEAU.Editor.Window.Common.Tile.SceneTileChooserImgui.AddHandlers(Action,Action)">AddHandlers(Action, Action)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly int CompareTo(DistanceWithIndex other)</code></pre>
+    <pre><code class="lang-csharp hljs">public void AddHandlers(Action scene, Action tile)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -224,30 +199,68 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="PLATEAU.DynamicTile.DistanceWithIndex.html">DistanceWithIndex</a></td>
-        <td><span class="parametername">other</span></td>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">scene</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">tile</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
+  
+  
+  <a id="PLATEAU_Editor_Window_Common_Tile_SceneTileChooserImgui_Draw_" data-uid="PLATEAU.Editor.Window.Common.Tile.SceneTileChooserImgui.Draw*"></a>
+  <h4 id="PLATEAU_Editor_Window_Common_Tile_SceneTileChooserImgui_Draw" data-uid="PLATEAU.Editor.Window.Common.Tile.SceneTileChooserImgui.Draw">Draw()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Draw()</code></pre>
+  </div>
+  
+  
+  <a id="PLATEAU_Editor_Window_Common_Tile_SceneTileChooserImgui_DrawAndInvoke_" data-uid="PLATEAU.Editor.Window.Common.Tile.SceneTileChooserImgui.DrawAndInvoke*"></a>
+  <h4 id="PLATEAU_Editor_Window_Common_Tile_SceneTileChooserImgui_DrawAndInvoke_Action_Action_" data-uid="PLATEAU.Editor.Window.Common.Tile.SceneTileChooserImgui.DrawAndInvoke(Action,Action)">DrawAndInvoke(Action, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawAndInvoke(Action scene, Action tile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">scene</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">tile</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">IComparable&lt;&gt;</span>
+  
+  
+  <a id="PLATEAU_Editor_Window_Common_Tile_SceneTileChooserImgui_InvokeHandler_" data-uid="PLATEAU.Editor.Window.Common.Tile.SceneTileChooserImgui.InvokeHandler*"></a>
+  <h4 id="PLATEAU_Editor_Window_Common_Tile_SceneTileChooserImgui_InvokeHandler" data-uid="PLATEAU.Editor.Window.Common.Tile.SceneTileChooserImgui.InvokeHandler">InvokeHandler()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InvokeHandler()</code></pre>
   </div>
 </article>
           </div>

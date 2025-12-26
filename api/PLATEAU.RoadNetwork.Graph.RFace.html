@@ -102,9 +102,6 @@
       <a class="xref" href="PLATEAU.RoadNetwork.ARnPartsBase.html#PLATEAU_RoadNetwork_ARnPartsBase_DebugMemo">ARnPartsBase.DebugMemo</a>
     </div>
     <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
@@ -134,12 +131,12 @@
   
   
   <a id="PLATEAU_RoadNetwork_Graph_RFace__ctor_" data-uid="PLATEAU.RoadNetwork.Graph.RFace.#ctor*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Graph_RFace__ctor_PLATEAU_RoadNetwork_Graph_RGraph_PLATEAUCityObjectGroup_PLATEAU_RoadNetwork_Graph_RRoadTypeMask_System_Int32_" data-uid="PLATEAU.RoadNetwork.Graph.RFace.#ctor(PLATEAU.RoadNetwork.Graph.RGraph,PLATEAUCityObjectGroup,PLATEAU.RoadNetwork.Graph.RRoadTypeMask,System.Int32)">RFace(RGraph, PLATEAUCityObjectGroup, RRoadTypeMask, Int32)</h4>
+  <h4 id="PLATEAU_RoadNetwork_Graph_RFace__ctor_PLATEAU_RoadNetwork_Graph_RGraph_PLATEAUCityObjectGroup_PLATEAU_RoadNetwork_RnCityObjectGroupKey_PLATEAU_RoadNetwork_Graph_RRoadTypeMask_System_Int32_" data-uid="PLATEAU.RoadNetwork.Graph.RFace.#ctor(PLATEAU.RoadNetwork.Graph.RGraph,PLATEAUCityObjectGroup,PLATEAU.RoadNetwork.RnCityObjectGroupKey,PLATEAU.RoadNetwork.Graph.RRoadTypeMask,System.Int32)">RFace(RGraph, PLATEAUCityObjectGroup, RnCityObjectGroupKey, RRoadTypeMask, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RFace(RGraph graph, PLATEAUCityObjectGroup cityObjectGroup, RRoadTypeMask roadType, int lodLevel)</code></pre>
+    <pre><code class="lang-csharp hljs">public RFace(RGraph graph, PLATEAUCityObjectGroup cityObjectGroup, RnCityObjectGroupKey primaryCityObjectGroupKey, RRoadTypeMask roadType, int lodLevel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -162,6 +159,11 @@
         <td></td>
       </tr>
       <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.RnCityObjectGroupKey.html">RnCityObjectGroupKey</a></td>
+        <td><span class="parametername">primaryCityObjectGroupKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
         <td><a class="xref" href="PLATEAU.RoadNetwork.Graph.RRoadTypeMask.html">RRoadTypeMask</a></td>
         <td><span class="parametername">roadType</span></td>
         <td></td>
@@ -179,7 +181,7 @@
   
   <a id="PLATEAU_RoadNetwork_Graph_RFace_CityObjectGroup_" data-uid="PLATEAU.RoadNetwork.Graph.RFace.CityObjectGroup*"></a>
   <h4 id="PLATEAU_RoadNetwork_Graph_RFace_CityObjectGroup" data-uid="PLATEAU.RoadNetwork.Graph.RFace.CityObjectGroup">CityObjectGroup</h4>
-  <div class="markdown level1 summary"><p>関連するCityObjectGroup</p>
+  <div class="markdown level1 summary"><p>元のメッシュが所属していたPLATEAUCityObjectGroup</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -300,6 +302,32 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_RFace_PrimaryCityObjectGroupKey_" data-uid="PLATEAU.RoadNetwork.Graph.RFace.PrimaryCityObjectGroupKey*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_RFace_PrimaryCityObjectGroupKey" data-uid="PLATEAU.RoadNetwork.Graph.RFace.PrimaryCityObjectGroupKey">PrimaryCityObjectGroupKey</h4>
+  <div class="markdown level1 summary"><p>対応する主要地物の道路モデルを表すキー</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RnCityObjectGroupKey PrimaryCityObjectGroupKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.RnCityObjectGroupKey.html">RnCityObjectGroupKey</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -531,6 +559,33 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_RFace_ToString_" data-uid="PLATEAU.RoadNetwork.Graph.RFace.ToString*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_RFace_ToString" data-uid="PLATEAU.RoadNetwork.Graph.RFace.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
   
   
   <a id="PLATEAU_RoadNetwork_Graph_RFace_TryMergeTo_" data-uid="PLATEAU.RoadNetwork.Graph.RFace.TryMergeTo*"></a>

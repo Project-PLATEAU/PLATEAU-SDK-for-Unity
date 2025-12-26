@@ -1,0 +1,504 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DynamicTileTool
+   | PLATEAU SDK for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DynamicTileTool
+   | PLATEAU SDK for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLATEAU.DynamicTile.DynamicTileTool">
+  
+  
+  <h1 id="PLATEAU_DynamicTile_DynamicTileTool" data-uid="PLATEAU.DynamicTile.DynamicTileTool" class="text-break">Class DynamicTileTool
+  </h1>
+  <div class="markdown level0 summary"><p>DynamicTileのBoundsまわりの処理をまとめたクラス。
+zoomLevel 9 ～ zoomLevel 11まで対応　(zoomLevel追加時は改修が必要）</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DynamicTileTool</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLATEAU.DynamicTile.html">PLATEAU.DynamicTile</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="PLATEAU_DynamicTile_DynamicTileTool_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DynamicTileTool</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="PLATEAU_DynamicTile_DynamicTileTool_AssignParentTiles_" data-uid="PLATEAU.DynamicTile.DynamicTileTool.AssignParentTiles*"></a>
+  <h4 id="PLATEAU_DynamicTile_DynamicTileTool_AssignParentTiles_List_PLATEAU_DynamicTile_PLATEAUDynamicTile__" data-uid="PLATEAU.DynamicTile.DynamicTileTool.AssignParentTiles(List{PLATEAU.DynamicTile.PLATEAUDynamicTile})">AssignParentTiles(List&lt;PLATEAUDynamicTile&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AssignParentTiles(List&lt;PLATEAUDynamicTile&gt; tiles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.DynamicTile.PLATEAUDynamicTile.html">PLATEAUDynamicTile</a>&gt;</td>
+        <td><span class="parametername">tiles</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_DynamicTileTool_GetDefaultDenominatorFromZoomLevel_" data-uid="PLATEAU.DynamicTile.DynamicTileTool.GetDefaultDenominatorFromZoomLevel*"></a>
+  <h4 id="PLATEAU_DynamicTile_DynamicTileTool_GetDefaultDenominatorFromZoomLevel_System_Int32_" data-uid="PLATEAU.DynamicTile.DynamicTileTool.GetDefaultDenominatorFromZoomLevel(System.Int32)">GetDefaultDenominatorFromZoomLevel(Int32)</h4>
+  <div class="markdown level1 summary"><p>ズームレベルからデフォルトの解像度の分母を取得します。(固定値)
+[9: 1/4, 10: 1/2, 11: 1/1]</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetDefaultDenominatorFromZoomLevel(int zoomLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">zoomLevel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_DynamicTileTool_GetExtentFromMeshCode_" data-uid="PLATEAU.DynamicTile.DynamicTileTool.GetExtentFromMeshCode*"></a>
+  <h4 id="PLATEAU_DynamicTile_DynamicTileTool_GetExtentFromMeshCode_System_String_GeoReference_" data-uid="PLATEAU.DynamicTile.DynamicTileTool.GetExtentFromMeshCode(System.String,GeoReference)">GetExtentFromMeshCode(String, GeoReference)</h4>
+  <div class="markdown level1 summary"><p>メッシュコードからタイルの範囲を初期化する。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Bounds GetExtentFromMeshCode(string meshcode, GeoReference geo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">meshcode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">GeoReference</span></td>
+        <td><span class="parametername">geo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Bounds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_DynamicTileTool_GetMeshCodeFromAddress_" data-uid="PLATEAU.DynamicTile.DynamicTileTool.GetMeshCodeFromAddress*"></a>
+  <h4 id="PLATEAU_DynamicTile_DynamicTileTool_GetMeshCodeFromAddress_System_String_" data-uid="PLATEAU.DynamicTile.DynamicTileTool.GetMeshCodeFromAddress(System.String)">GetMeshCodeFromAddress(String)</h4>
+  <div class="markdown level1 summary"><p>メッシュコードを取得する。
+GameObject名：tile_zoom_(タイルのズームレベル)<em>grid</em>(タイルの位置を示すメッシュコード)<em>(従来のゲームオブジェクト名)</em>(同名の場合のID)
+例:tile_zoom_0_grid_meshcode_gameobjectname_0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetMeshCodeFromAddress(string Address)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Address</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_DynamicTileTool_GetPackage_" data-uid="PLATEAU.DynamicTile.DynamicTileTool.GetPackage*"></a>
+  <h4 id="PLATEAU_DynamicTile_DynamicTileTool_GetPackage_System_String_" data-uid="PLATEAU.DynamicTile.DynamicTileTool.GetPackage(System.String)">GetPackage(String)</h4>
+  <div class="markdown level1 summary"><p>Addressからパッケージを取得する。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PredefinedCityModelPackage GetPackage(string address)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">address</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PredefinedCityModelPackage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_DynamicTileTool_GetZoomLevelFromAddress_" data-uid="PLATEAU.DynamicTile.DynamicTileTool.GetZoomLevelFromAddress*"></a>
+  <h4 id="PLATEAU_DynamicTile_DynamicTileTool_GetZoomLevelFromAddress_System_String_" data-uid="PLATEAU.DynamicTile.DynamicTileTool.GetZoomLevelFromAddress(System.String)">GetZoomLevelFromAddress(String)</h4>
+  <div class="markdown level1 summary"><p>ZoomLevelを取得する。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetZoomLevelFromAddress(string Address)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Address</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_DynamicTileTool_ReplaceBounds_" data-uid="PLATEAU.DynamicTile.DynamicTileTool.ReplaceBounds*"></a>
+  <h4 id="PLATEAU_DynamicTile_DynamicTileTool_ReplaceBounds_List_PLATEAU_DynamicTile_PLATEAUDynamicTile__List_PLATEAU_DynamicTile_PLATEAUDynamicTile__" data-uid="PLATEAU.DynamicTile.DynamicTileTool.ReplaceBounds(List{PLATEAU.DynamicTile.PLATEAUDynamicTile},List{PLATEAU.DynamicTile.PLATEAUDynamicTile})">ReplaceBounds(List&lt;PLATEAUDynamicTile&gt;, List&lt;PLATEAUDynamicTile&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReplaceBounds(List&lt;PLATEAUDynamicTile&gt; inner, List&lt;PLATEAUDynamicTile&gt; outer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.DynamicTile.PLATEAUDynamicTile.html">PLATEAUDynamicTile</a>&gt;</td>
+        <td><span class="parametername">inner</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.DynamicTile.PLATEAUDynamicTile.html">PLATEAUDynamicTile</a>&gt;</td>
+        <td><span class="parametername">outer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_DynamicTileTool_SetParent_" data-uid="PLATEAU.DynamicTile.DynamicTileTool.SetParent*"></a>
+  <h4 id="PLATEAU_DynamicTile_DynamicTileTool_SetParent_List_PLATEAU_DynamicTile_PLATEAUDynamicTile__List_PLATEAU_DynamicTile_PLATEAUDynamicTile__" data-uid="PLATEAU.DynamicTile.DynamicTileTool.SetParent(List{PLATEAU.DynamicTile.PLATEAUDynamicTile},List{PLATEAU.DynamicTile.PLATEAUDynamicTile})">SetParent(List&lt;PLATEAUDynamicTile&gt;, List&lt;PLATEAUDynamicTile&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetParent(List&lt;PLATEAUDynamicTile&gt; inner, List&lt;PLATEAUDynamicTile&gt; outer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.DynamicTile.PLATEAUDynamicTile.html">PLATEAUDynamicTile</a>&gt;</td>
+        <td><span class="parametername">inner</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.DynamicTile.PLATEAUDynamicTile.html">PLATEAUDynamicTile</a>&gt;</td>
+        <td><span class="parametername">outer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_DynamicTile_DynamicTileTool_UpdateBounds_" data-uid="PLATEAU.DynamicTile.DynamicTileTool.UpdateBounds*"></a>
+  <h4 id="PLATEAU_DynamicTile_DynamicTileTool_UpdateBounds_List_PLATEAU_DynamicTile_PLATEAUDynamicTile__" data-uid="PLATEAU.DynamicTile.DynamicTileTool.UpdateBounds(List{PLATEAU.DynamicTile.PLATEAUDynamicTile})">UpdateBounds(List&lt;PLATEAUDynamicTile&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UpdateBounds(List&lt;PLATEAUDynamicTile&gt; tiles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="PLATEAU.DynamicTile.PLATEAUDynamicTile.html">PLATEAUDynamicTile</a>&gt;</td>
+        <td><span class="parametername">tiles</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            PLATEAU SDK for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -125,12 +125,12 @@
   
   
   <a id="PLATEAU_RoadNetwork_Graph_RFaceGroup__ctor_" data-uid="PLATEAU.RoadNetwork.Graph.RFaceGroup.#ctor*"></a>
-  <h4 id="PLATEAU_RoadNetwork_Graph_RFaceGroup__ctor_PLATEAU_RoadNetwork_Graph_RGraph_PLATEAUCityObjectGroup_IEnumerable_PLATEAU_RoadNetwork_Graph_RFace__" data-uid="PLATEAU.RoadNetwork.Graph.RFaceGroup.#ctor(PLATEAU.RoadNetwork.Graph.RGraph,PLATEAUCityObjectGroup,IEnumerable{PLATEAU.RoadNetwork.Graph.RFace})">RFaceGroup(RGraph, PLATEAUCityObjectGroup, IEnumerable&lt;RFace&gt;)</h4>
+  <h4 id="PLATEAU_RoadNetwork_Graph_RFaceGroup__ctor_PLATEAU_RoadNetwork_Graph_RGraph_PLATEAUCityObjectGroup_PLATEAU_RoadNetwork_RnCityObjectGroupKey_IEnumerable_PLATEAU_RoadNetwork_Graph_RFace__" data-uid="PLATEAU.RoadNetwork.Graph.RFaceGroup.#ctor(PLATEAU.RoadNetwork.Graph.RGraph,PLATEAUCityObjectGroup,PLATEAU.RoadNetwork.RnCityObjectGroupKey,IEnumerable{PLATEAU.RoadNetwork.Graph.RFace})">RFaceGroup(RGraph, PLATEAUCityObjectGroup, RnCityObjectGroupKey, IEnumerable&lt;RFace&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RFaceGroup(RGraph graph, PLATEAUCityObjectGroup cityObjectGroup, IEnumerable&lt;RFace&gt; faces)</code></pre>
+    <pre><code class="lang-csharp hljs">public RFaceGroup(RGraph graph, PLATEAUCityObjectGroup cityObjectGroup, RnCityObjectGroupKey primaryCityObjectGroupKey, IEnumerable&lt;RFace&gt; faces)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -153,6 +153,11 @@
         <td></td>
       </tr>
       <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.RnCityObjectGroupKey.html">RnCityObjectGroupKey</a></td>
+        <td><span class="parametername">primaryCityObjectGroupKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
         <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="PLATEAU.RoadNetwork.Graph.RFace.html">RFace</a>&gt;</td>
         <td><span class="parametername">faces</span></td>
         <td></td>
@@ -165,7 +170,8 @@
   
   <a id="PLATEAU_RoadNetwork_Graph_RFaceGroup_CityObjectGroup_" data-uid="PLATEAU.RoadNetwork.Graph.RFaceGroup.CityObjectGroup*"></a>
   <h4 id="PLATEAU_RoadNetwork_Graph_RFaceGroup_CityObjectGroup" data-uid="PLATEAU.RoadNetwork.Graph.RFaceGroup.CityObjectGroup">CityObjectGroup</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>元のメッシュが所属していたPLATEAUCityObjectGroup</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -258,6 +264,32 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="PLATEAU_RoadNetwork_Graph_RFaceGroup_PrimaryCityObjectGroupKey_" data-uid="PLATEAU.RoadNetwork.Graph.RFaceGroup.PrimaryCityObjectGroupKey*"></a>
+  <h4 id="PLATEAU_RoadNetwork_Graph_RFaceGroup_PrimaryCityObjectGroupKey" data-uid="PLATEAU.RoadNetwork.Graph.RFaceGroup.PrimaryCityObjectGroupKey">PrimaryCityObjectGroupKey</h4>
+  <div class="markdown level1 summary"><p>グルーピング用の主要地物のグループキー</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RnCityObjectGroupKey PrimaryCityObjectGroupKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PLATEAU.RoadNetwork.RnCityObjectGroupKey.html">RnCityObjectGroupKey</a></td>
         <td></td>
       </tr>
     </tbody>

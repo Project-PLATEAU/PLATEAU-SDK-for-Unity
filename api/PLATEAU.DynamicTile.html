@@ -90,11 +90,12 @@
       <h4><a class="xref" href="PLATEAU.DynamicTile.AddressableLoader.html">AddressableLoader</a></h4>
       <section><p>Addressableを使用してカタログとMeta情報をロードするクラス。</p>
 </section>
-      <h4><a class="xref" href="PLATEAU.DynamicTile.DynamicTileExporter.html">DynamicTileExporter</a></h4>
-      <section><p>都市モデルをDynamicTile用にプレハブ化し、一括でアセットバンドルとして出力する。</p>
-</section>
       <h4><a class="xref" href="PLATEAU.DynamicTile.DynamicTileProcessingContext.html">DynamicTileProcessingContext</a></h4>
       <section><p>DynamicTile処理で必要なデータを保持するコンテキストクラス</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.DynamicTile.DynamicTileTool.html">DynamicTileTool</a></h4>
+      <section><p>DynamicTileのBoundsまわりの処理をまとめたクラス。
+zoomLevel 9 ～ zoomLevel 11まで対応　(zoomLevel追加時は改修が必要）</p>
 </section>
       <h4><a class="xref" href="PLATEAU.DynamicTile.MultiResolutionPrefabCreator.html">MultiResolutionPrefabCreator</a></h4>
       <section></section>
@@ -105,14 +106,19 @@
       <section><p>DynamicTileの情報を保持するクラス。</p>
 </section>
       <h4><a class="xref" href="PLATEAU.DynamicTile.PLATEAUDynamicTileJobSystem.html">PLATEAUDynamicTileJobSystem</a></h4>
-      <section><p>Jobsystemを使用したタイルロード処理
-今のところカメラ距離計算、SortのみJob Systemを使用する。</p>
+      <section><p>Jobsystemを使用したタイルロード処理</p>
 </section>
       <h4><a class="xref" href="PLATEAU.DynamicTile.PLATEAUDynamicTileMetaInfo.html">PLATEAUDynamicTileMetaInfo</a></h4>
-      <section><p>Addressに紐づく情報を保持するデータクラス。</p>
+      <section><p>Addressに紐づく情報を保持するデータクラス。
+TODO : lodは使用しないので、将来的に削除する可能性があります。</p>
 </section>
       <h4><a class="xref" href="PLATEAU.DynamicTile.PLATEAUDynamicTileMetaStore.html">PLATEAUDynamicTileMetaStore</a></h4>
       <section><p>Addressに紐づく情報のリストを保持するScriptableObject。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.DynamicTile.PLATEAUEditingTile.html">PLATEAUEditingTile</a></h4>
+      <section><p>編集中の動的タイルです。
+これを再ビルドすることによってタイルの編集が反映されます。
+<seealso cref="!:TileRebuilder"></seealso></p>
 </section>
       <h4><a class="xref" href="PLATEAU.DynamicTile.PLATEAUEditorEventListener.html">PLATEAUEditorEventListener</a></h4>
       <section><p>Unity Editorの起動時やシーンオープン時にPLATEAUTileManagerを初期化や、SceneViewCameraTrackerの初期化を行うするクラス。</p>
@@ -134,10 +140,39 @@ PLATEAUTileManager側のStart,Update処理で代用することも可能</p>
       <section><p>PrefabTextureResizer
 TextureImporterを使用して元画像の設定を変更し、解像度を変更した画像を新規に保存する</p>
 </section>
+      <h4><a class="xref" href="PLATEAU.DynamicTile.TileCatalogSearcher.html">TileCatalogSearcher</a></h4>
+      <section><p>Addressables のカタログファイルを検索します。
+Unity 2022 では json、Unity 6 では bin 拡張子になるため両方に対応します。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.DynamicTile.TileConvertCommon.html">TileConvertCommon</a></h4>
+      <section></section>
+      <h4><a class="xref" href="PLATEAU.DynamicTile.TileConvertCommon.EditAndSaveTilesParams.html">TileConvertCommon.EditAndSaveTilesParams</a></h4>
+      <section><p>EditAndSaveSelectedTilesAsyncのCallback用パラメータクラス</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.DynamicTile.TileFilter.html">TileFilter</a></h4>
+      <section></section>
     <h3 id="structs">Structs
   </h3>
-      <h4><a class="xref" href="PLATEAU.DynamicTile.DistanceWithIndex.html">DistanceWithIndex</a></h4>
-      <section><p>タイルの距離とインデックスを保持する構造体。</p>
+      <h4><a class="xref" href="PLATEAU.DynamicTile.ChildTileIndices.html">ChildTileIndices</a></h4>
+      <section><p>タイルの子タイル(下位ズームレベル)を保持する構造体。
+<a class="xref" href="PLATEAU.DynamicTile.PLATEAUDynamicTile.html#PLATEAU_DynamicTile_PLATEAUDynamicTile_ChildrenTiles">ChildrenTiles</a>の情報を配列indexで保持する。
+fixed配列だとunsafeにする必要があるため、構造体で保持する。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.DynamicTile.FillTileHolesJob.html">FillTileHolesJob</a></h4>
+      <section></section>
+      <h4><a class="xref" href="PLATEAU.DynamicTile.FloatMinMax.html">FloatMinMax</a></h4>
+      <section><p>各Zoomレベルごとのカメラからのロード距離を保持する構造体。
+NativeLoadDistancesで使用される。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.DynamicTile.HighResolutionTileLoadStateUpdateJob.html">HighResolutionTileLoadStateUpdateJob</a></h4>
+      <section><p>常に高解像度で表示したいタイルが設定されている際に関連タイルのロード状態を更新するJobSystemのJob</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.DynamicTile.NativeHighResolutionTileConfig.html">NativeHighResolutionTileConfig</a></h4>
+      <section><p>高解像度タイルの設定を保持する構造体</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.DynamicTile.ParentTileInfo.html">ParentTileInfo</a></h4>
+      <section><p>親タイルの情報を保持する構造体。
+<a class="xref" href="PLATEAU.DynamicTile.NativeHighResolutionTileConfig.html">NativeHighResolutionTileConfig</a>で使用される。</p>
 </section>
       <h4><a class="xref" href="PLATEAU.DynamicTile.PLATEAURuntimeCameraTracker.CustomUpdateDelegete.html">PLATEAURuntimeCameraTracker.CustomUpdateDelegete</a></h4>
       <section></section>
@@ -149,6 +184,14 @@ TextureImporterを使用して元画像の設定を変更し、解像度を変�
 </section>
       <h4><a class="xref" href="PLATEAU.DynamicTile.TileDistanceCheckJob.html">TileDistanceCheckJob</a></h4>
       <section><p>タイルの距離を計算するJobSystemのJob</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.DynamicTile.TileDistanceInfo.html">TileDistanceInfo</a></h4>
+      <section><p>タイルの距離、元のインデックス、ロード状態を保持する構造体。
+<a class="xref" href="PLATEAU.DynamicTile.SortDistancesJob.html">SortDistancesJob</a>でのソート用にIComparableを実装。</p>
+</section>
+      <h4><a class="xref" href="PLATEAU.DynamicTile.TileRangeCheckJob.html">TileRangeCheckJob</a></h4>
+      <section><p>タイルの範囲をチェックするJobSystemのJob
+範囲内であればLoadStateをLoadに設定し、範囲外であればUnloadに設定する。</p>
 </section>
     <h3 id="enums">Enums
   </h3>
