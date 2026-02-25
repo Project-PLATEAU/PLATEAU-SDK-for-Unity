@@ -13,9 +13,6 @@
 
 ![動的タイルで新宿区の全建物を表示した例](../resources/manual/dynamicTile/dynamicTileShinjuku.png)
 
-> [!NOTE]
-> 現在の動的タイルでは、道路ネットワーク編集機能を利用できません。  
-> 将来的に対応予定です。
 
 
 ## 描画負荷が軽減される仕組み
