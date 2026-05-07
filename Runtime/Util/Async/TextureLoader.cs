@@ -18,7 +18,7 @@ namespace PLATEAU.Util.Async
         /// </summary>
         public static async Task<Texture2D> LoadAsync(string url, int timeOutSec)
         {
-            Uri uri = new Uri(url); 
+            Uri uri = new Uri(url);
             var request = UnityWebRequestTexture.GetTexture(uri);
 
             request.timeout = timeOutSec;
@@ -37,17 +37,17 @@ namespace PLATEAU.Util.Async
             return texture;
         }
 
-        
+
         /// <summary>
         /// テクスチャのURL（パス） から、PLATEAUのテクスチャを非同期でロードします。
         /// 内容は<see cref="LoadAsync"/>に、PLATEAUテクスチャ用の処理を加えたものになります。
-        /// メインスレッドで実行する必要があります。 
+        /// メインスレッドで実行する必要があります。
         /// </summary>
         public static async Task<Texture2D> LoadPlateauTextureAsync(string texturePath)
         {
             if (string.IsNullOrEmpty(texturePath))
                 return null;
-            
+
 
             Debug.Log($"Loading Texture : {texturePath}");
 
@@ -65,7 +65,7 @@ namespace PLATEAU.Util.Async
             compressedTex.name = Path.GetFileName(texturePath);
             return compressedTex;
         }
-        
+
         // テクスチャを圧縮します。
         private static Texture2D Compress(Texture2D src)
         {
@@ -89,7 +89,7 @@ namespace PLATEAU.Util.Async
             RenderTexture.ReleaseTemporary(rt);
 
             // 圧縮のキモです。
-            dst.Compress(true);
+            // dst.Compress(true);
             return dst;
         }
     }
