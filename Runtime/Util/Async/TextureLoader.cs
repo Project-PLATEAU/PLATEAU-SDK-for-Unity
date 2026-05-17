@@ -57,6 +57,11 @@ namespace PLATEAU.Util.Async
             if (texture == null)
                 return null;
 
+#if UNITY_IOS || UNITY_TVOS
+            Debug.Log("Skipping runtime texture compression on iOS/tvOS because DXT5/BC3 is not supported.");
+            texture.name = Path.GetFileName(texturePath);
+            return texture;
+#else
             // この Compress によってテクスチャ容量が 6分の1 になります。
             // 松山市のLOD2の建物モデルで計測したところ、 テクスチャのメモリ使用量が 2.6GB から 421.3MB になりました。
             // 画質は下がりますが、メモリ使用量を適正にするために必須と思われます。
@@ -64,6 +69,7 @@ namespace PLATEAU.Util.Async
 
             compressedTex.name = Path.GetFileName(texturePath);
             return compressedTex;
+#endif
         }
 
         // テクスチャを圧縮します。
