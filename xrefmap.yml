@@ -11754,6 +11754,51 @@ references:
   commentId: F:PLATEAU.Editor.DynamicTile.ImportToDynamicTile.TileProgressTitle
   fullName: PLATEAU.Editor.DynamicTile.ImportToDynamicTile.TileProgressTitle
   nameWithType: ImportToDynamicTile.TileProgressTitle
+- uid: PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow
+  name: TileImportProcessWorkflow
+  href: api/PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.html
+  commentId: T:PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow
+  fullName: PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow
+  nameWithType: TileImportProcessWorkflow
+- uid: PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.#ctor
+  name: TileImportProcessWorkflow()
+  href: api/PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.html#PLATEAU_Editor_DynamicTile_TileImportProcessWorkflow__ctor
+  commentId: M:PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.#ctor
+  fullName: PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.TileImportProcessWorkflow()
+  nameWithType: TileImportProcessWorkflow.TileImportProcessWorkflow()
+- uid: PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.#ctor*
+  name: TileImportProcessWorkflow
+  href: api/PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.html#PLATEAU_Editor_DynamicTile_TileImportProcessWorkflow__ctor_
+  commentId: Overload:PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.#ctor
+  isSpec: "True"
+  fullName: PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.TileImportProcessWorkflow
+  nameWithType: TileImportProcessWorkflow.TileImportProcessWorkflow
+- uid: PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.PostProcess
+  name: PostProcess()
+  href: api/PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.html#PLATEAU_Editor_DynamicTile_TileImportProcessWorkflow_PostProcess
+  commentId: M:PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.PostProcess
+  fullName: PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.PostProcess()
+  nameWithType: TileImportProcessWorkflow.PostProcess()
+- uid: PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.PostProcess*
+  name: PostProcess
+  href: api/PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.html#PLATEAU_Editor_DynamicTile_TileImportProcessWorkflow_PostProcess_
+  commentId: Overload:PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.PostProcess
+  isSpec: "True"
+  fullName: PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.PostProcess
+  nameWithType: TileImportProcessWorkflow.PostProcess
+- uid: PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.PreProcess
+  name: PreProcess()
+  href: api/PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.html#PLATEAU_Editor_DynamicTile_TileImportProcessWorkflow_PreProcess
+  commentId: M:PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.PreProcess
+  fullName: PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.PreProcess()
+  nameWithType: TileImportProcessWorkflow.PreProcess()
+- uid: PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.PreProcess*
+  name: PreProcess
+  href: api/PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.html#PLATEAU_Editor_DynamicTile_TileImportProcessWorkflow_PreProcess_
+  commentId: Overload:PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.PreProcess
+  isSpec: "True"
+  fullName: PLATEAU.Editor.DynamicTile.TileImportProcessWorkflow.PreProcess
+  nameWithType: TileImportProcessWorkflow.PreProcess
 - uid: PLATEAU.Editor.DynamicTile.TileModule
   name: PLATEAU.Editor.DynamicTile.TileModule
   href: api/PLATEAU.Editor.DynamicTile.TileModule.html
@@ -16635,12 +16680,12 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Editor.TileAddressables.AddressablesUtility.BackToDefaultProfile
   nameWithType: AddressablesUtility.BackToDefaultProfile
-- uid: PLATEAU.Editor.TileAddressables.AddressablesUtility.BuildAddressables(PLATEAU.Editor.TileAddressables.AddressablesUtility.TileBuildMode)
-  name: BuildAddressables(AddressablesUtility.TileBuildMode)
-  href: api/PLATEAU.Editor.TileAddressables.AddressablesUtility.html#PLATEAU_Editor_TileAddressables_AddressablesUtility_BuildAddressables_PLATEAU_Editor_TileAddressables_AddressablesUtility_TileBuildMode_
-  commentId: M:PLATEAU.Editor.TileAddressables.AddressablesUtility.BuildAddressables(PLATEAU.Editor.TileAddressables.AddressablesUtility.TileBuildMode)
-  fullName: PLATEAU.Editor.TileAddressables.AddressablesUtility.BuildAddressables(PLATEAU.Editor.TileAddressables.AddressablesUtility.TileBuildMode)
-  nameWithType: AddressablesUtility.BuildAddressables(AddressablesUtility.TileBuildMode)
+- uid: PLATEAU.Editor.TileAddressables.AddressablesUtility.BuildAddressables(PLATEAU.Editor.TileAddressables.AddressablesUtility.TileBuildMode,System.String)
+  name: BuildAddressables(AddressablesUtility.TileBuildMode, String)
+  href: api/PLATEAU.Editor.TileAddressables.AddressablesUtility.html#PLATEAU_Editor_TileAddressables_AddressablesUtility_BuildAddressables_PLATEAU_Editor_TileAddressables_AddressablesUtility_TileBuildMode_System_String_
+  commentId: M:PLATEAU.Editor.TileAddressables.AddressablesUtility.BuildAddressables(PLATEAU.Editor.TileAddressables.AddressablesUtility.TileBuildMode,System.String)
+  fullName: PLATEAU.Editor.TileAddressables.AddressablesUtility.BuildAddressables(PLATEAU.Editor.TileAddressables.AddressablesUtility.TileBuildMode, System.String)
+  nameWithType: AddressablesUtility.BuildAddressables(AddressablesUtility.TileBuildMode, String)
 - uid: PLATEAU.Editor.TileAddressables.AddressablesUtility.BuildAddressables*
   name: BuildAddressables
   href: api/PLATEAU.Editor.TileAddressables.AddressablesUtility.html#PLATEAU_Editor_TileAddressables_AddressablesUtility_BuildAddressables_
@@ -16703,19 +16748,6 @@ references:
   isSpec: "True"
   fullName: PLATEAU.Editor.TileAddressables.AddressablesUtility.SaveAddressableSettings
   nameWithType: AddressablesUtility.SaveAddressableSettings
-- uid: PLATEAU.Editor.TileAddressables.AddressablesUtility.SetGroupIncludeInBuild(System.String,System.Boolean)
-  name: SetGroupIncludeInBuild(String, Boolean)
-  href: api/PLATEAU.Editor.TileAddressables.AddressablesUtility.html#PLATEAU_Editor_TileAddressables_AddressablesUtility_SetGroupIncludeInBuild_System_String_System_Boolean_
-  commentId: M:PLATEAU.Editor.TileAddressables.AddressablesUtility.SetGroupIncludeInBuild(System.String,System.Boolean)
-  fullName: PLATEAU.Editor.TileAddressables.AddressablesUtility.SetGroupIncludeInBuild(System.String, System.Boolean)
-  nameWithType: AddressablesUtility.SetGroupIncludeInBuild(String, Boolean)
-- uid: PLATEAU.Editor.TileAddressables.AddressablesUtility.SetGroupIncludeInBuild*
-  name: SetGroupIncludeInBuild
-  href: api/PLATEAU.Editor.TileAddressables.AddressablesUtility.html#PLATEAU_Editor_TileAddressables_AddressablesUtility_SetGroupIncludeInBuild_
-  commentId: Overload:PLATEAU.Editor.TileAddressables.AddressablesUtility.SetGroupIncludeInBuild
-  isSpec: "True"
-  fullName: PLATEAU.Editor.TileAddressables.AddressablesUtility.SetGroupIncludeInBuild
-  nameWithType: AddressablesUtility.SetGroupIncludeInBuild
 - uid: PLATEAU.Editor.TileAddressables.AddressablesUtility.SetGroupLoadAndBuildPath(System.String)
   name: SetGroupLoadAndBuildPath(String)
   href: api/PLATEAU.Editor.TileAddressables.AddressablesUtility.html#PLATEAU_Editor_TileAddressables_AddressablesUtility_SetGroupLoadAndBuildPath_System_String_

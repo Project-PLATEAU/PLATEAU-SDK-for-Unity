@@ -136,13 +136,17 @@
   
   
   <a id="PLATEAU_Editor_TileAddressables_AddressablesUtility_BuildAddressables_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.BuildAddressables*"></a>
-  <h4 id="PLATEAU_Editor_TileAddressables_AddressablesUtility_BuildAddressables_PLATEAU_Editor_TileAddressables_AddressablesUtility_TileBuildMode_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.BuildAddressables(PLATEAU.Editor.TileAddressables.AddressablesUtility.TileBuildMode)">BuildAddressables(AddressablesUtility.TileBuildMode)</h4>
-  <div class="markdown level1 summary"><p>Addressablesのビルドを実行します。</p>
+  <h4 id="PLATEAU_Editor_TileAddressables_AddressablesUtility_BuildAddressables_PLATEAU_Editor_TileAddressables_AddressablesUtility_TileBuildMode_System_String_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.BuildAddressables(PLATEAU.Editor.TileAddressables.AddressablesUtility.TileBuildMode,System.String)">BuildAddressables(AddressablesUtility.TileBuildMode, String)</h4>
+  <div class="markdown level1 summary"><p>Addressablesのビルドを実行します。
+ビルド前にタイルグループ以外の IncludeInBuild を無効化し、ビルド後に復元します。
+また、BuildPlayerContent を直接使わずビルダーを呼び出すことで、
+RuntimeSettingsFilename / RuntimeCatalogFilename を PLATEAU専用に変更し、
+SDK利用者の settings.json / catalog.bin を上書きしません。</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void BuildAddressables(AddressablesUtility.TileBuildMode buildMode)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void BuildAddressables(AddressablesUtility.TileBuildMode buildMode, string tileGroupName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -157,7 +161,14 @@
       <tr>
         <td><a class="xref" href="PLATEAU.Editor.TileAddressables.AddressablesUtility.TileBuildMode.html">AddressablesUtility.TileBuildMode</a></td>
         <td><span class="parametername">buildMode</span></td>
-        <td></td>
+        <td><p>ビルドモード</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tileGroupName</span></td>
+        <td><p>ビルド対象のタイルグループ名</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -307,39 +318,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void SaveAddressableSettings()</code></pre>
   </div>
-  
-  
-  <a id="PLATEAU_Editor_TileAddressables_AddressablesUtility_SetGroupIncludeInBuild_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.SetGroupIncludeInBuild*"></a>
-  <h4 id="PLATEAU_Editor_TileAddressables_AddressablesUtility_SetGroupIncludeInBuild_System_String_System_Boolean_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.SetGroupIncludeInBuild(System.String,System.Boolean)">SetGroupIncludeInBuild(String, Boolean)</h4>
-  <div class="markdown level1 summary"><p>指定したグループの IncludeInBuild を設定します。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetGroupIncludeInBuild(string groupName, bool includeInBuild)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">groupName</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">includeInBuild</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="PLATEAU_Editor_TileAddressables_AddressablesUtility_SetGroupLoadAndBuildPath_" data-uid="PLATEAU.Editor.TileAddressables.AddressablesUtility.SetGroupLoadAndBuildPath*"></a>
