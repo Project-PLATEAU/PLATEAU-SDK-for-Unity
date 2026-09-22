@@ -1,0 +1,16 @@
+{
+    "name": "plateau-cluster-presentation",
+    "version": "1.0.0",
+    "private": true,
+    "description": "PLATEAUの3D都市データをClusterワールドへ組み込む手順を説明するMarpスライド",
+    "scripts": {
+        "build": "marp slides.md --pdf --allow-local-files -o dist/slides.pdf",
+        "build:html": "marp slides.md --html --allow-local-files -o dist/slides.html",
+        "watch": "marp -w slides.md --allow-local-files",
+        "diagrams": "mmdc -i diagrams/flow.mmd -o diagrams/flow.png -b transparent && mmdc -i diagrams/architecture.mmd -o diagrams/architecture.png -b transparent"
+    },
+    "devDependencies": {
+        "@marp-team/marp-cli": "^3.4.0",
+        "@mermaid-js/mermaid-cli": "^10.9.1"
+    }
+}
