@@ -10,7 +10,7 @@
         "diagrams": "mmdc -i diagrams/flow.mmd -o diagrams/flow.png -b transparent && mmdc -i diagrams/architecture.mmd -o diagrams/architecture.png -b transparent"
     },
     "devDependencies": {
-        "@marp-team/marp-cli": "^3.4.0",
-        "@mermaid-js/mermaid-cli": "^10.9.1"
+        "@marp-team/marp-cli": "^4.5.1",
+        "@mermaid-js/mermaid-cli": "^11.12.0"
     }
 }
